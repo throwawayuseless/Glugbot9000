@@ -3518,6 +3518,7 @@
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
 #include "modular_pentest\modules\hair_styles\code\hair.dm"
+#include "modular_pentest\modules\protein_powder\protein_powder.dm"
 #include "modular_pentest\modules\serenity_clothes\code\turf.dm"
 #include "modular_pentest\modules\serenity_clothes\code\worn.dm"
 #include "modular_pentest\modules\umbrella\code\umbrellas.dm"
