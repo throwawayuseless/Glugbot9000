@@ -12,21 +12,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
-"ag" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 8
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "ah" = (
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
@@ -559,6 +544,11 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
+"bY" = (
+/obj/effect/turf_decal/corner/opaque/white/diagonal,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/wood/ebony,
+/area/ship/crew/canteen)
 "bZ" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 9
@@ -912,6 +902,14 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
+"dw" = (
+/obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/machinery/door/poddoor{
+	id = "cheyenne_disposals";
+	name = "Disposals Blast Door"
+	},
+/turf/open/floor/plating,
+/area/ship/hangar)
 "dy" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/ntspaceworks_big/two,
@@ -1371,6 +1369,14 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/engine)
+"fU" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "fV" = (
 /obj/effect/turf_decal/corner/opaque/brown{
 	dir = 8
@@ -2991,6 +2997,13 @@
 	},
 /turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
+"nr" = (
+/obj/structure/window/reinforced/spawner,
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/turf/open/floor/plasteel,
+/area/ship/hallway/aft)
 "nv" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
@@ -3396,19 +3409,6 @@
 /obj/structure/curtain/cloth/grey,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/dorm/dormfour)
-"pt" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/structure/railing{
-	dir = 4
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/obj/effect/spawner/lootdrop/salvage_50,
-/turf/open/floor/plating,
-/area/ship/hangar)
 "pw" = (
 /obj/effect/turf_decal/corner/opaque/blue/half{
 	dir = 4
@@ -3445,6 +3445,13 @@
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
+"pI" = (
+/obj/effect/turf_decal/corner/opaque/white/diagonal,
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/turf/open/floor/wood/ebony,
+/area/ship/crew/canteen)
 "pM" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -3511,6 +3518,15 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/crew/crewthree)
+"pX" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/wood/walnut,
+/area/ship/crew/canteen)
 "pZ" = (
 /obj/effect/turf_decal/corner/opaque/nsorange{
 	dir = 1
@@ -3988,6 +4004,15 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/engine)
+"sm" = (
+/obj/machinery/button/massdriver{
+	id = "cheyenne_disposals";
+	name = "disposals button";
+	pixel_x = 0;
+	pixel_y = 10
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/hangar)
 "sp" = (
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -4745,13 +4770,6 @@
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/engineering/communications)
-"uy" = (
-/obj/structure/window/reinforced/spawner,
-/obj/structure/disposalpipe/segment{
-	dir = 6
-	},
-/turf/open/floor/plasteel,
-/area/ship/hallway/aft)
 "uz" = (
 /obj/effect/turf_decal/corner/opaque/blue/half{
 	dir = 1
@@ -5755,14 +5773,6 @@
 	},
 /turf/open/floor/circuit,
 /area/ship/engineering/communications)
-"yU" = (
-/obj/effect/turf_decal/industrial/warning/fulltile,
-/obj/machinery/door/poddoor{
-	id = "cheyenne_disposals";
-	name = "Disposals Blast Door"
-	},
-/turf/open/floor/plating,
-/area/ship/hangar)
 "yV" = (
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 4
@@ -7078,14 +7088,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/fore)
-"DZ" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/structure/disposalpipe/segment{
-	dir = 9
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "Eb" = (
 /obj/machinery/camera,
 /turf/open/floor/plasteel/dark,
@@ -7294,12 +7296,6 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/crewfive)
-"EW" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/storage/eva)
 "EZ" = (
 /obj/machinery/airalarm/directional/north,
 /obj/effect/spawner/lootdrop/beaker_loot_spawner,
@@ -7863,6 +7859,21 @@
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
+"Hk" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "Hl" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
@@ -8163,13 +8174,6 @@
 	},
 /turf/open/floor/wood/ebony,
 /area/ship/crew/dorm/dormtwo)
-"IR" = (
-/obj/effect/turf_decal/corner/opaque/white/diagonal,
-/obj/structure/disposalpipe/segment{
-	dir = 6
-	},
-/turf/open/floor/wood/ebony,
-/area/ship/crew/canteen)
 "IS" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -8328,6 +8332,19 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
+"JI" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/effect/spawner/lootdrop/salvage_50,
+/turf/open/floor/plating,
+/area/ship/hangar)
 "JK" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -8448,6 +8465,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/cargo)
+"Kf" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/conveyor_switch/oneway{
+	id = "cheyenne_garbage"
+	},
+/turf/open/floor/plasteel/patterned,
+/area/ship/hangar)
 "Kh" = (
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
 /obj/structure/table/wood,
@@ -8613,13 +8637,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/hallway/starboard)
-"KG" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/conveyor_switch/oneway{
-	id = "Cheyenne_garbage"
-	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/hangar)
 "KP" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
@@ -9567,15 +9584,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/hangar)
-"Ou" = (
-/obj/machinery/button/massdriver{
-	id = "cheyenne_disposals";
-	name = "disposals button";
-	pixel_x = 0;
-	pixel_y = 10
-	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/hangar)
 "Ov" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 10
@@ -10087,15 +10095,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
-"Qm" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/wood/walnut,
-/area/ship/crew/canteen)
 "Qn" = (
 /obj/machinery/door/window{
 	dir = 1
@@ -10472,6 +10471,15 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
+"RU" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel,
+/area/ship/hallway/aft)
 "RY" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -10782,15 +10790,6 @@
 /obj/machinery/disposal/bin,
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/fore)
-"Tj" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel,
-/area/ship/hallway/aft)
 "Tk" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/cable{
@@ -11506,11 +11505,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
-"VJ" = (
-/obj/effect/turf_decal/corner/opaque/white/diagonal,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/wood/ebony,
-/area/ship/crew/canteen)
 "VN" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
@@ -11987,6 +11981,12 @@
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
+"Ya" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/storage/eva)
 "Yd" = (
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -13021,7 +13021,7 @@ Sb
 Sb
 Jp
 JK
-Tj
+RU
 xr
 sq
 AI
@@ -13121,7 +13121,7 @@ yO
 tX
 Hs
 sX
-yU
+dw
 PJ
 "}
 (15,1,1) = {"
@@ -13160,10 +13160,10 @@ mF
 pM
 pM
 pM
-DZ
+fU
 tb
-KG
-Ou
+Kf
+sm
 PJ
 "}
 (16,1,1) = {"
@@ -13185,7 +13185,7 @@ Zh
 Zh
 mh
 Cr
-uy
+nr
 Gl
 ai
 fa
@@ -13202,7 +13202,7 @@ oe
 oe
 oe
 kK
-pt
+JI
 Zm
 ca
 Zt
@@ -13222,8 +13222,8 @@ lt
 Zh
 Zh
 Mg
-IR
-VJ
+pI
+bY
 Yr
 mh
 qY
@@ -13349,9 +13349,9 @@ tx
 tx
 tt
 gw
-Qm
-Qm
-Qm
+pX
+pX
+pX
 xV
 aW
 Gy
@@ -13677,7 +13677,7 @@ jy
 sJ
 jy
 qB
-EW
+Ya
 oP
 Tp
 hw
@@ -14077,7 +14077,7 @@ DT
 oS
 vX
 Fm
-ag
+Hk
 rv
 ex
 rG
