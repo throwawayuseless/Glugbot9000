@@ -206,14 +206,15 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
 "bi" = (
-/obj/machinery/door/airlock/glass{
-	dir = 4
-	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
+	},
+/obj/machinery/door/airlock/glass{
+	dir = 4;
+	name = "Mess Hall"
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew/canteen)
@@ -276,7 +277,7 @@
 	dir = 1
 	},
 /obj/machinery/door/airlock/glass{
-	name = "Laundry room"
+	name = "Laundry Room"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew)
@@ -1596,7 +1597,7 @@
 	dir = 1
 	},
 /obj/machinery/door/airlock/glass{
-	name = "Crew quarters"
+	name = "Crew Quarters"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
@@ -2125,6 +2126,19 @@
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/hallway/central)
+"nS" = (
+/obj/machinery/door/airlock/glass{
+	dir = 4;
+	name = "Mess Hall"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/turf/open/floor/plasteel/patterned,
+/area/ship/crew/canteen)
 "nT" = (
 /obj/machinery/light/floor,
 /obj/item/radio/intercom/directional/north,
@@ -2525,7 +2539,9 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
-/obj/machinery/door/airlock/medical,
+/obj/machinery/door/airlock/medical{
+	name = "Trauma Center"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/medical)
 "qx" = (
@@ -2900,7 +2916,7 @@
 	},
 /obj/machinery/door/airlock/glass{
 	dir = 4;
-	name = "Laundry room"
+	name = "Laundry Room"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
@@ -3534,7 +3550,7 @@
 	},
 /obj/machinery/door/airlock/glass{
 	dir = 4;
-	name = "Laundry room"
+	name = "Laundry Room"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew)
@@ -4104,7 +4120,7 @@
 	},
 /obj/machinery/door/airlock/glass{
 	dir = 4;
-	name = "Crew quarters"
+	name = "Crew Quarters"
 	},
 /turf/open/floor/plasteel,
 /area/ship/crew/dorm)
@@ -4781,7 +4797,7 @@
 /area/ship/engineering/engines/port)
 "GM" = (
 /obj/machinery/door/airlock/command{
-	name = "Bridge";
+	name = "Combat Information Center";
 	req_access_txt = "19"
 	},
 /obj/structure/cable{
@@ -5044,7 +5060,7 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/command{
-	name = "Combat information center";
+	name = "Combat Information Center";
 	dir = 4
 	},
 /turf/open/floor/material,
@@ -5322,7 +5338,7 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/command{
-	name = "Combat information center";
+	name = "Combat Information Center";
 	dir = 4
 	},
 /turf/open/floor/material,
@@ -6035,7 +6051,9 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
-/obj/machinery/door/airlock/glass,
+/obj/machinery/door/airlock/glass{
+	name = "Mess Hall"
+	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew/canteen)
 "OE" = (
@@ -6137,7 +6155,9 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/hallway/central)
 "Pl" = (
-/obj/machinery/door/airlock/glass,
+/obj/machinery/door/airlock/glass{
+	name = "Mess Hall"
+	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -8614,7 +8634,7 @@ AT
 eN
 sL
 sL
-bi
+nS
 bi
 sL
 sL
