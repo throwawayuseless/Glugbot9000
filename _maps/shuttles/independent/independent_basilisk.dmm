@@ -275,7 +275,9 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
-/obj/machinery/door/airlock/glass,
+/obj/machinery/door/airlock/glass{
+	name = "Laundry room"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew)
 "bB" = (
@@ -509,16 +511,6 @@
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/hallway/central)
-"dJ" = (
-/obj/machinery/light/directional/south,
-/obj/effect/turf_decal/corner_steel_grid{
-	dir = 10
-	},
-/obj/effect/turf_decal/trimline/opaque/green/filled/line{
-	dir = 1
-	},
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/crew/dorm)
 "dR" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -663,7 +655,6 @@
 /obj/effect/turf_decal/corner/opaque/purple/bordercorner{
 	dir = 1
 	},
-/obj/structure/salvageable/protolathe,
 /obj/machinery/light_switch{
 	dir = 4;
 	pixel_x = -20;
@@ -962,16 +953,16 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
 	},
-/obj/structure/closet{
-	name = "Glove locker"
-	},
-/obj/item/clothing/gloves/combat,
-/obj/item/clothing/gloves/combat,
-/obj/item/clothing/gloves/combat,
-/obj/item/clothing/gloves/combat,
-/obj/item/clothing/gloves/combat,
-/obj/item/clothing/gloves/combat,
 /obj/effect/turf_decal/trimline/opaque/green/filled/line,
+/obj/structure/closet,
+/obj/item/clothing/suit/hooded/wintercoat/security,
+/obj/item/clothing/suit/hooded/wintercoat/security,
+/obj/item/clothing/suit/hooded/wintercoat/security,
+/obj/item/clothing/suit/hooded/wintercoat/security,
+/obj/item/clothing/neck/stripedredscarf,
+/obj/item/clothing/neck/stripedredscarf,
+/obj/item/clothing/neck/stripedredscarf,
+/obj/item/clothing/neck/stripedredscarf,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew)
 "hc" = (
@@ -1049,6 +1040,12 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 4
 	},
+/obj/item/radio/headset/alt,
+/obj/item/radio/headset/alt,
+/obj/item/radio/headset/alt,
+/obj/item/radio/headset/alt,
+/obj/item/radio/headset/alt,
+/obj/item/radio/headset/alt,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "hp" = (
@@ -1067,8 +1064,8 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew/canteen)
 "hE" = (
-/obj/structure/mecha_wreckage/gygax/dark,
-/turf/open/floor/mech_bay_recharge_floor,
+/obj/item/mecha_parts/mecha_equipment/thrusters/ion,
+/turf/open/floor/plasteel,
 /area/ship/science/robotics)
 "hH" = (
 /obj/effect/turf_decal/box/corners{
@@ -1362,9 +1359,6 @@
 "jm" = (
 /obj/item/circuitboard/mecha/ripley/peripherals,
 /obj/item/circuitboard/mecha/ripley/main,
-/obj/effect/turf_decal/box/corners{
-	dir = 4
-	},
 /obj/item/radio/intercom/directional/east,
 /turf/open/floor/plasteel,
 /area/ship/science/robotics)
@@ -1456,12 +1450,8 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/crew)
 "jQ" = (
-/obj/effect/turf_decal/box/corners{
-	dir = 1
-	},
-/obj/item/mecha_parts/mecha_equipment/thrusters/ion,
-/turf/open/floor/plasteel,
-/area/ship/science/robotics)
+/turf/closed/wall/mineral/plastitanium,
+/area/ship/engineering/engines/port)
 "jW" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1605,7 +1595,9 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
-/obj/machinery/door/airlock/glass,
+/obj/machinery/door/airlock/glass{
+	name = "Crew quarters"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
 "kP" = (
@@ -1747,9 +1739,12 @@
 /turf/open/floor/engine/n2,
 /area/ship/engineering/atmospherics)
 "lM" = (
-/obj/machinery/mech_bay_recharge_port,
 /obj/machinery/light/directional/north,
-/turf/open/floor/circuit/green,
+/obj/effect/turf_decal/box/corners{
+	dir = 1
+	},
+/obj/item/mecha_parts/mecha_equipment/conversion_kit/ripley,
+/turf/open/floor/plasteel,
 /area/ship/science/robotics)
 "lR" = (
 /obj/machinery/door/airlock/engineering{
@@ -1765,16 +1760,11 @@
 	dir = 8
 	},
 /obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
-"lZ" = (
-/obj/machinery/light/directional/north,
-/obj/effect/turf_decal/corner_steel_grid{
-	dir = 5
-	},
-/obj/effect/turf_decal/trimline/opaque/green/filled/line,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/crew/dorm)
 "mm" = (
 /obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/tech,
@@ -1785,7 +1775,7 @@
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 8
 	},
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/crew/office)
 "mw" = (
@@ -1795,6 +1785,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 1
 	},
+/obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "my" = (
@@ -1973,6 +1964,7 @@
 /obj/item/clothing/neck/cloak/gezena/command{
 	desc = "The “Aziulhauz”, or “rank-cape”, is the method with which Tiziran military members display their rank to others. Wearing one while on duty is required by uniform code. This variant displays the wearer's rank as an officer."
 	},
+/obj/item/clothing/suit/hooded/wintercoat/captain,
 /turf/open/floor/wood/mahogany,
 /area/ship/bridge)
 "mY" = (
@@ -2335,6 +2327,7 @@
 /area/ship/storage)
 "pp" = (
 /obj/effect/turf_decal/corner/opaque/green/diagonal,
+/obj/machinery/light/floor,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
 "px" = (
@@ -2459,6 +2452,8 @@
 /obj/item/spacecash/bundle/c1000,
 /obj/item/spacecash/bundle/c1000,
 /obj/item/spacecash/bundle/c1000,
+/obj/item/clothing/suit/hooded/wintercoat/captain,
+/obj/item/radio/headset/heads/captain/alt,
 /turf/open/floor/wood/mahogany,
 /area/ship/bridge)
 "qe" = (
@@ -2745,11 +2740,11 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew/canteen)
 "rX" = (
-/obj/structure/table/reinforced,
 /obj/machinery/light/directional/north,
 /obj/effect/turf_decal/trimline/opaque/ntblue/filled/line{
 	dir = 1
 	},
+/obj/structure/filingcabinet/double/grey,
 /turf/open/floor/material,
 /area/ship/bridge)
 "sb" = (
@@ -2904,7 +2899,8 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/glass{
-	dir = 4
+	dir = 4;
+	name = "Laundry room"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
@@ -3225,9 +3221,8 @@
 /turf/open/floor/material,
 /area/ship/bridge)
 "vK" = (
-/obj/item/mecha_parts/mecha_equipment/conversion_kit/ripley,
-/turf/open/floor/plasteel,
-/area/ship/science/robotics)
+/turf/open/floor/engine/hull,
+/area/ship/engineering/atmospherics)
 "vP" = (
 /obj/effect/turf_decal/corner/opaque/brown/border{
 	dir = 1
@@ -3261,7 +3256,7 @@
 "vT" = (
 /obj/item/reagent_containers/glass/chem_jug/carbon{
 	pixel_y = 3;
-	pixel_x = 4
+	pixel_x = -15
 	},
 /obj/item/reagent_containers/glass/chem_jug/oxygen,
 /obj/structure/table/chem,
@@ -3418,6 +3413,12 @@
 /obj/effect/turf_decal/trimline/opaque/green/filled/line{
 	dir = 1
 	},
+/obj/item/clothing/gloves/combat,
+/obj/item/clothing/gloves/combat,
+/obj/item/clothing/gloves/combat,
+/obj/item/clothing/gloves/combat,
+/obj/item/clothing/gloves/combat,
+/obj/item/clothing/gloves/combat,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew)
 "xc" = (
@@ -3463,12 +3464,10 @@
 /obj/item/paper_bin{
 	pixel_y = 5
 	},
-/obj/item/pen/fourcolor{
-	pixel_y = 5
-	},
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 6
 	},
+/obj/item/pen/collectible/corporatewar,
 /turf/open/floor/material,
 /area/ship/bridge)
 "xu" = (
@@ -3534,7 +3533,8 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/glass{
-	dir = 4
+	dir = 4;
+	name = "Laundry room"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew)
@@ -3643,13 +3643,13 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/obj/machinery/light/directional/north,
 /obj/effect/turf_decal/corner_steel_grid/full{
 	dir = 8
 	},
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 4
 	},
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "yz" = (
@@ -3694,9 +3694,6 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/storage/secure/safe/sc_ssafe{
-	pixel_y = -34
-	},
 /turf/open/floor/wood/mahogany,
 /area/ship/bridge)
 "zo" = (
@@ -4106,7 +4103,8 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/glass{
-	dir = 4
+	dir = 4;
+	name = "Crew quarters"
 	},
 /turf/open/floor/plasteel,
 /area/ship/crew/dorm)
@@ -4520,6 +4518,7 @@
 	},
 /obj/effect/turf_decal/corner/opaque/green/diagonal,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/floor,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
 "Fn" = (
@@ -4602,6 +4601,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/opaque/green/diagonal,
+/obj/machinery/light/floor,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
 "FM" = (
@@ -4828,6 +4828,8 @@
 /obj/structure/sign/poster/contraband/twelve_gauge{
 	pixel_x = 30
 	},
+/obj/item/clothing/mask/gas/clip,
+/obj/item/clothing/mask/gas/clip,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "GV" = (
@@ -5042,8 +5044,7 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/command{
-	name = "Bridge";
-	req_access_txt = "19";
+	name = "Combat information center";
 	dir = 4
 	},
 /turf/open/floor/material,
@@ -5117,6 +5118,9 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
+"Jk" = (
+/turf/closed/wall/mineral/plastitanium,
+/area/ship/engineering/engines/starboard)
 "Jl" = (
 /obj/effect/turf_decal/corner_steel_grid/full{
 	dir = 4
@@ -5193,10 +5197,6 @@
 	desc = "A cargo lift platform. As you peer through it, the cold abyss of the lower freight level stares back at you."
 	},
 /obj/structure/closet/crate/trashcart,
-/obj/effect/spawner/lootdrop/stockparts,
-/obj/effect/spawner/lootdrop/stockparts,
-/obj/effect/spawner/lootdrop/stockparts,
-/obj/effect/spawner/lootdrop/stockparts,
 /turf/open/floor/plasteel/elevatorshaft{
 	planetary_atmos = 1
 	},
@@ -5322,8 +5322,7 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/command{
-	name = "Bridge";
-	req_access_txt = "19";
+	name = "Combat information center";
 	dir = 4
 	},
 /turf/open/floor/material,
@@ -5419,7 +5418,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/obj/machinery/light/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/corner_steel_grid/full{
 	dir = 1
@@ -5427,6 +5425,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 8
 	},
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "Ky" = (
@@ -5962,7 +5961,9 @@
 /area/ship/medical)
 "Oe" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/brigdoor/eastright,
+/obj/machinery/door/window/brigdoor/eastright{
+	req_access_txt = "1"
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "Oh" = (
@@ -6184,6 +6185,7 @@
 "PF" = (
 /obj/effect/turf_decal/corner/opaque/green/diagonal,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/floor,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
 "PN" = (
@@ -6839,6 +6841,9 @@
 /obj/item/mecha_parts/part/ripley_right_leg,
 /obj/item/mecha_parts/part/ripley_torso,
 /obj/effect/decal/cleanable/oil,
+/obj/effect/turf_decal/box/corners{
+	dir = 4
+	},
 /turf/open/floor/mech_bay_recharge_floor,
 /area/ship/science/robotics)
 "TH" = (
@@ -7360,7 +7365,9 @@
 "WK" = (
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/tank/internals/emergency_oxygen/double,
-/obj/item/clothing/suit/space/eva,
+/obj/item/clothing/suit/space/hardsuit/mining/heavy{
+	name = "TL1 Hazardous Environment Suit"
+	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/crew/office)
 "WM" = (
@@ -7374,7 +7381,6 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "WR" = (
-/obj/machinery/light/directional/south,
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 10
 	},
@@ -7934,7 +7940,7 @@
 /obj/item/gun/ballistic/revolver/mateba,
 /obj/item/ammo_box/a357/match,
 /obj/item/ammo_box/a357/match,
-/obj/item/ammo_box/a357_box/match,
+/obj/item/ammo_box/a357_box,
 /turf/open/floor/wood/mahogany,
 /area/ship/bridge)
 "ZT" = (
@@ -8071,7 +8077,7 @@ CC
 up
 XE
 wX
-CC
+vK
 gq
 gq
 gq
@@ -8103,7 +8109,7 @@ AX
 uv
 zV
 wX
-CC
+vK
 gq
 gq
 gq
@@ -8174,7 +8180,7 @@ gq
 "}
 (8,1,1) = {"
 gq
-OT
+jQ
 gq
 gq
 GL
@@ -8201,7 +8207,7 @@ mm
 wX
 gq
 gq
-OT
+Jk
 gq
 "}
 (9,1,1) = {"
@@ -9153,11 +9159,11 @@ yo
 fB
 JF
 HR
-lZ
+ZH
 Wx
 ys
 Vf
-dJ
+wm
 gb
 Da
 Rz
@@ -9200,7 +9206,7 @@ gb
 yl
 MR
 lM
-jQ
+Wr
 hH
 Cc
 HS
@@ -9264,7 +9270,7 @@ OT
 CC
 MR
 PY
-vK
+Wr
 xu
 OE
 ih
@@ -9281,11 +9287,11 @@ kL
 dc
 Ma
 HR
-lZ
+ZH
 wV
 cD
 ds
-dJ
+wm
 gb
 XS
 Nl
