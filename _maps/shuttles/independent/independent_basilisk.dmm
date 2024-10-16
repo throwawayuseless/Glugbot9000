@@ -284,10 +284,10 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/airalarm/directional/west,
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 8
 	},
+/obj/machinery/airalarm/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "bC" = (
@@ -330,7 +330,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/directional/south,
 /turf/open/floor/pod,
 /area/ship/storage)
 "ce" = (
@@ -381,12 +381,11 @@
 	},
 /area/ship/storage)
 "cy" = (
-/obj/machinery/light/floor,
-/obj/effect/turf_decal/trimline/opaque/brown/filled/warning{
-	dir = 4
+/obj/structure/marker_beacon{
+	picked_color = "Jade"
 	},
-/turf/open/floor/plasteel/patterned,
-/area/ship/storage)
+/turf/open/floor/engine/hull,
+/area/ship/external)
 "cz" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -698,9 +697,11 @@
 /area/ship/bridge)
 "eX" = (
 /obj/machinery/porta_turret/ship/syndicate{
-	lethal_projectile = /obj/projectile/beam/laser/heavylaser;
-	lethal_projectile_sound = 'sound/weapons/laser4.ogg';
-	name = "HL-75 Heavy Laser Cannon"
+	lethal_projectile = /obj/projectile/beam/hitscan/kalix/pgf/sniper;
+	lethal_projectile_sound = sound/weapons/gun/laser/heavy_laser.ogg;
+	name = "HL-75 Heavy Laser Cannon";
+	faction = list("neutral","turret");
+	armor = list("melee" = 70, "bullet" = 50, "laser" = 50, "energy" = 40, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90)
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -1280,7 +1281,6 @@
 /obj/effect/turf_decal/corner/opaque/brown/bordercorner{
 	dir = 4
 	},
-/obj/machinery/light/floor,
 /obj/effect/turf_decal/industrial/traffic{
 	dir = 1
 	},
@@ -1367,6 +1367,7 @@
 /obj/effect/turf_decal/trimline/opaque/terragovgold/line{
 	dir = 10
 	},
+/obj/machinery/firealarm/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "iP" = (
@@ -1519,7 +1520,8 @@
 "jy" = (
 /obj/machinery/porta_turret/ship{
 	lethal_projectile = /obj/projectile/beam/laser/heavylaser;
-	lethal_projectile_sound = 'sound/weapons/laser4.ogg'
+	lethal_projectile_sound = 'sound/weapons/laser4.ogg';
+	name = "HL-25 Light Laser Turret"
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
@@ -2504,8 +2506,8 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/north,
 /obj/effect/spawner/lootdrop/maintenance,
+/obj/machinery/light/directional/north,
 /turf/open/floor/pod,
 /area/ship/storage)
 "oM" = (
@@ -2825,7 +2827,9 @@
 /turf/open/floor/plasteel,
 /area/ship/cargo)
 "qM" = (
-/obj/structure/marker_beacon,
+/obj/structure/marker_beacon{
+	picked_color = "Burgundy"
+	},
 /turf/open/floor/engine/hull,
 /area/ship/external)
 "qO" = (
@@ -2977,6 +2981,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/floor,
 /turf/open/floor/plasteel/patterned,
 /area/ship/storage)
 "rS" = (
@@ -3072,6 +3077,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/cargo)
+"sq" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
 "sw" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -3883,6 +3897,9 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 1
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "yh" = (
@@ -4181,6 +4198,10 @@
 /obj/effect/turf_decal/trimline/opaque/terragovgold/line,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
+"AD" = (
+/obj/machinery/firealarm/directional/north,
+/turf/open/floor/pod,
+/area/ship/storage)
 "AF" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -4977,10 +4998,12 @@
 /area/ship/bridge)
 "Fr" = (
 /obj/structure/catwalk/over,
-/obj/structure/marker_beacon,
 /obj/docking_port/mobile{
 	dir = 8;
 	name = "Basi docking port"
+	},
+/obj/structure/marker_beacon{
+	picked_color = "Jade"
 	},
 /turf/open/floor/plating,
 /area/ship/external)
@@ -5134,6 +5157,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "Gq" = (
+/obj/machinery/light/floor,
 /turf/open/floor/plasteel/patterned,
 /area/ship/storage)
 "Gs" = (
@@ -5348,6 +5372,14 @@
 /obj/item/storage/box/emptysandbags,
 /obj/item/shovel,
 /obj/item/shovel,
+/obj/item/stack/sheet/mineral/sandbags,
+/obj/item/stack/sheet/mineral/sandbags,
+/obj/item/stack/sheet/mineral/sandbags,
+/obj/item/stack/sheet/mineral/sandbags,
+/obj/item/stack/sheet/mineral/sandbags,
+/obj/item/stack/sheet/mineral/sandbags,
+/obj/item/stack/sheet/mineral/sandbags,
+/obj/item/stack/sheet/mineral/sandbags,
 /turf/open/floor/plasteel/elevatorshaft{
 	planetary_atmos = 1
 	},
@@ -6048,7 +6080,7 @@
 /obj/structure/elevator_platform{
 	desc = "A cargo lift platform. As you peer through it, the cold abyss of the lower freight level stares back at you."
 	},
-/obj/machinery/firealarm/directional/east,
+/obj/machinery/light/directional/east,
 /turf/open/floor/plasteel/elevatorshaft{
 	planetary_atmos = 1
 	},
@@ -6317,7 +6349,9 @@
 /area/ship/crew)
 "LG" = (
 /obj/structure/catwalk/over,
-/obj/structure/marker_beacon,
+/obj/structure/marker_beacon{
+	picked_color = "Burgundy"
+	},
 /turf/open/floor/plating,
 /area/ship/external)
 "LT" = (
@@ -6558,16 +6592,12 @@
 /turf/open/floor/plating,
 /area/ship/crew/dorm)
 "No" = (
-/obj/effect/turf_decal/corner_steel_grid{
-	dir = 6
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
 	},
-/obj/effect/turf_decal/corner/opaque/vired/half{
-	dir = 8
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
-	dir = 8
-	},
-/obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Nt" = (
@@ -6794,7 +6824,8 @@
 "OT" = (
 /obj/machinery/porta_turret/ship{
 	lethal_projectile = /obj/projectile/beam/laser/heavylaser;
-	lethal_projectile_sound = 'sound/weapons/laser4.ogg'
+	lethal_projectile_sound = 'sound/weapons/laser4.ogg';
+	name = "HL-25 Light Laser Turret"
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -7909,6 +7940,7 @@
 /obj/effect/turf_decal/trimline/opaque/terragovgold/line{
 	dir = 9
 	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Vm" = (
@@ -8797,6 +8829,15 @@
 	},
 /turf/open/floor/pod,
 /area/ship/storage)
+"ZZ" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
 
 (1,1,1) = {"
 gq
@@ -9574,7 +9615,7 @@ MW
 Yq
 kj
 Ij
-qg
+AD
 Ky
 np
 Ra
@@ -9599,7 +9640,7 @@ Xh
 OT
 "}
 (26,1,1) = {"
-qM
+cy
 YX
 rE
 KZ
@@ -9770,7 +9811,7 @@ iq
 ka
 si
 my
-cy
+Rv
 Rv
 wv
 VF
@@ -9887,7 +9928,7 @@ Xh
 vK
 "}
 (35,1,1) = {"
-qM
+cy
 UU
 UU
 sC
@@ -9919,7 +9960,7 @@ Xh
 qM
 "}
 (36,1,1) = {"
-OT
+gs
 MR
 MR
 MR
@@ -9963,7 +10004,7 @@ aA
 kf
 kL
 Vk
-No
+QV
 kv
 ET
 oU
@@ -9997,7 +10038,7 @@ kL
 rX
 wL
 lw
-xs
+sq
 yf
 yo
 yo
@@ -10061,8 +10102,8 @@ kL
 vH
 Eg
 Fw
-xs
-yf
+No
+ZZ
 yo
 yo
 JF
