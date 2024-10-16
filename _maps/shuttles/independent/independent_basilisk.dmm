@@ -3055,11 +3055,11 @@
 /obj/docking_port/stationary{
 	dwidth = 6;
 	height = 15;
-	name = "eternal victory exterior dock";
+	name = "basi victory exterior dock";
 	width = 30
 	},
-/turf/open/floor/engine/hull,
-/area/ship/external)
+/turf/template_noop,
+/area/template_noop)
 "so" = (
 /obj/machinery/light/floor,
 /obj/effect/turf_decal/borderfloorblack{
@@ -4998,12 +4998,15 @@
 /area/ship/bridge)
 "Fr" = (
 /obj/structure/catwalk/over,
-/obj/docking_port/mobile{
-	dir = 8;
-	name = "Basi docking port"
-	},
 /obj/structure/marker_beacon{
 	picked_color = "Jade"
+	},
+/obj/docking_port/mobile{
+	can_move_docking_ports = 1;
+	name = "basi docking port";
+	port_direction = 8;
+	preferred_direction = 4;
+	dir = 2
 	},
 /turf/open/floor/plating,
 /area/ship/external)
@@ -8870,8 +8873,10 @@ gq
 gq
 gq
 gq
+gq
 "}
 (2,1,1) = {"
+gq
 gq
 gq
 gq
@@ -8908,6 +8913,7 @@ gq
 gq
 gq
 gq
+gq
 GL
 Tu
 gq
@@ -8936,6 +8942,7 @@ gq
 gq
 "}
 (4,1,1) = {"
+gq
 gq
 gq
 gq
@@ -8971,6 +8978,7 @@ gq
 gq
 gq
 gq
+gq
 jO
 GL
 XM
@@ -9000,6 +9008,7 @@ gq
 gq
 "}
 (6,1,1) = {"
+gq
 gq
 gq
 gq
@@ -9036,6 +9045,7 @@ gq
 gq
 gq
 gq
+gq
 GL
 GL
 lR
@@ -9064,6 +9074,7 @@ gq
 gq
 "}
 (8,1,1) = {"
+gq
 gq
 jQ
 gq
@@ -9097,6 +9108,7 @@ gq
 "}
 (9,1,1) = {"
 gq
+gq
 GL
 Az
 qM
@@ -9128,6 +9140,7 @@ wX
 gq
 "}
 (10,1,1) = {"
+gq
 gq
 GL
 XY
@@ -9161,6 +9174,7 @@ gq
 "}
 (11,1,1) = {"
 gq
+gq
 GL
 mQ
 DR
@@ -9193,6 +9207,7 @@ gq
 "}
 (12,1,1) = {"
 gq
+gq
 GL
 qY
 te
@@ -9224,6 +9239,7 @@ wX
 gq
 "}
 (13,1,1) = {"
+gq
 gq
 OT
 GL
@@ -9258,6 +9274,7 @@ gq
 (14,1,1) = {"
 gq
 gq
+gq
 lr
 Yi
 Yi
@@ -9288,6 +9305,7 @@ gq
 gq
 "}
 (15,1,1) = {"
+gq
 gq
 gq
 gq
@@ -9324,6 +9342,7 @@ gq
 gq
 gq
 gq
+gq
 vd
 Hv
 zY
@@ -9352,6 +9371,7 @@ gq
 gq
 "}
 (17,1,1) = {"
+gq
 gq
 gq
 gq
@@ -9388,6 +9408,7 @@ gq
 gq
 gq
 gq
+gq
 vd
 Hv
 zY
@@ -9416,6 +9437,7 @@ gq
 gq
 "}
 (19,1,1) = {"
+gq
 OT
 gq
 gq
@@ -9448,6 +9470,7 @@ gq
 OT
 "}
 (20,1,1) = {"
+gq
 Yi
 wk
 gq
@@ -9480,6 +9503,7 @@ qR
 Su
 "}
 (21,1,1) = {"
+gq
 Yi
 Ly
 wk
@@ -9512,6 +9536,7 @@ De
 Su
 "}
 (22,1,1) = {"
+gq
 Yi
 tt
 MK
@@ -9544,6 +9569,7 @@ Qf
 Su
 "}
 (23,1,1) = {"
+gq
 Yi
 Or
 LT
@@ -9576,6 +9602,7 @@ RJ
 Su
 "}
 (24,1,1) = {"
+gq
 Yi
 Yi
 Yi
@@ -9608,6 +9635,7 @@ Su
 Su
 "}
 (25,1,1) = {"
+gq
 OT
 Fu
 SI
@@ -9640,6 +9668,7 @@ Xh
 OT
 "}
 (26,1,1) = {"
+gq
 cy
 YX
 rE
@@ -9672,6 +9701,7 @@ Xh
 qM
 "}
 (27,1,1) = {"
+gq
 vK
 AL
 zF
@@ -9705,6 +9735,7 @@ vK
 "}
 (28,1,1) = {"
 sl
+vK
 AL
 SM
 sp
@@ -9736,6 +9767,7 @@ Xh
 vK
 "}
 (29,1,1) = {"
+gq
 vK
 AL
 Sc
@@ -9768,6 +9800,7 @@ Xh
 vK
 "}
 (30,1,1) = {"
+gq
 vK
 AL
 zF
@@ -9800,6 +9833,7 @@ Xh
 vK
 "}
 (31,1,1) = {"
+gq
 yK
 yb
 rE
@@ -9832,6 +9866,7 @@ av
 vK
 "}
 (32,1,1) = {"
+gq
 vK
 ot
 mq
@@ -9864,6 +9899,7 @@ av
 vK
 "}
 (33,1,1) = {"
+gq
 vK
 ot
 WK
@@ -9896,6 +9932,7 @@ av
 vK
 "}
 (34,1,1) = {"
+gq
 vK
 ot
 zX
@@ -9928,6 +9965,7 @@ Xh
 vK
 "}
 (35,1,1) = {"
+gq
 cy
 UU
 UU
@@ -9960,6 +9998,7 @@ Xh
 qM
 "}
 (36,1,1) = {"
+gq
 gs
 MR
 MR
@@ -9992,6 +10031,7 @@ gb
 OT
 "}
 (37,1,1) = {"
+gq
 yl
 MR
 MR
@@ -10024,6 +10064,7 @@ gb
 gb
 "}
 (38,1,1) = {"
+gq
 yl
 MR
 uV
@@ -10056,6 +10097,7 @@ gb
 gb
 "}
 (39,1,1) = {"
+gq
 yl
 MR
 RK
@@ -10088,6 +10130,7 @@ gb
 gb
 "}
 (40,1,1) = {"
+gq
 yl
 MR
 lM
@@ -10120,6 +10163,7 @@ gb
 gb
 "}
 (41,1,1) = {"
+gq
 OT
 MR
 hE
@@ -10152,6 +10196,7 @@ gb
 OT
 "}
 (42,1,1) = {"
+gq
 vK
 MR
 PY
@@ -10185,6 +10230,7 @@ vK
 "}
 (43,1,1) = {"
 gq
+gq
 MR
 TC
 jm
@@ -10216,6 +10262,7 @@ gb
 gq
 "}
 (44,1,1) = {"
+gq
 gq
 MR
 MR
@@ -10249,6 +10296,7 @@ gq
 "}
 (45,1,1) = {"
 gq
+gq
 nl
 rS
 MR
@@ -10280,6 +10328,7 @@ gq
 gq
 "}
 (46,1,1) = {"
+gq
 gq
 nl
 OT
@@ -10313,6 +10362,7 @@ gq
 "}
 (47,1,1) = {"
 gq
+gq
 nl
 gq
 MR
@@ -10344,6 +10394,7 @@ gq
 gq
 "}
 (48,1,1) = {"
+gq
 gq
 nl
 gq
@@ -10377,6 +10428,7 @@ gq
 "}
 (49,1,1) = {"
 gq
+gq
 nl
 gq
 nl
@@ -10408,6 +10460,7 @@ gq
 gq
 "}
 (50,1,1) = {"
+gq
 gq
 nl
 gq
@@ -10441,6 +10494,7 @@ gq
 "}
 (51,1,1) = {"
 gq
+gq
 Fr
 gq
 nl
@@ -10472,6 +10526,7 @@ gq
 gq
 "}
 (52,1,1) = {"
+gq
 gq
 gq
 gq
