@@ -108,6 +108,9 @@
 /obj/effect/turf_decal/trimline/opaque/terragovgold/filled/shrink_cw{
 	dir = 8
 	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "aI" = (
@@ -226,7 +229,7 @@
 	dir = 1
 	},
 /turf/open/floor/engine/hull/interior,
-/area/ship/external)
+/area/ship/external/dark)
 "bt" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 9
@@ -385,7 +388,7 @@
 	picked_color = "Jade"
 	},
 /turf/open/floor/engine/hull,
-/area/ship/external)
+/area/ship/external/dark)
 "cz" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -1497,7 +1500,7 @@
 	dir = 4
 	},
 /turf/open/floor/engine/hull/interior,
-/area/ship/external)
+/area/ship/external/dark)
 "js" = (
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/crewtwo)
@@ -1576,7 +1579,7 @@
 	dir = 4
 	},
 /turf/open/floor/engine/hull/interior,
-/area/ship/external)
+/area/ship/external/dark)
 "jP" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
@@ -1817,6 +1820,17 @@
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/pod,
 /area/ship/storage)
+"lk" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/light/directional/east,
+/obj/effect/turf_decal/trimline/opaque/vired/filled/line{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/hallway/central)
 "lm" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/machinery/firealarm/directional/south,
@@ -2198,7 +2212,7 @@
 "nl" = (
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
-/area/ship/external)
+/area/ship/external/dark)
 "nn" = (
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -2290,6 +2304,15 @@
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew/office)
+"nN" = (
+/obj/effect/turf_decal/trimline/opaque/lime/filled/line{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/hallway/central)
 "nO" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/industrial/outline/yellow,
@@ -2831,7 +2854,7 @@
 	picked_color = "Burgundy"
 	},
 /turf/open/floor/engine/hull,
-/area/ship/external)
+/area/ship/external/dark)
 "qO" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 9
@@ -3155,12 +3178,14 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
@@ -3435,7 +3460,6 @@
 /turf/open/floor/engine/n2,
 /area/ship/engineering/atmospherics)
 "uY" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -3444,6 +3468,9 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
@@ -3538,7 +3565,7 @@
 /area/ship/bridge)
 "vK" = (
 /turf/open/floor/engine/hull,
-/area/ship/external)
+/area/ship/external/dark)
 "vP" = (
 /obj/effect/turf_decal/corner/opaque/brown/border{
 	dir = 1
@@ -3992,7 +4019,7 @@
 	icon_state = "0-2"
 	},
 /turf/open/floor/engine/hull,
-/area/ship/external)
+/area/ship/external/dark)
 "yM" = (
 /obj/machinery/door/window,
 /turf/open/floor/plasteel/patterned,
@@ -5009,7 +5036,7 @@
 	dir = 2
 	},
 /turf/open/floor/plating,
-/area/ship/external)
+/area/ship/external/dark)
 "Fu" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/cargo)
@@ -5622,7 +5649,7 @@
 	dir = 10
 	},
 /turf/open/floor/engine/hull/interior,
-/area/ship/external)
+/area/ship/external/dark)
 "IX" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -6356,7 +6383,7 @@
 	picked_color = "Burgundy"
 	},
 /turf/open/floor/plating,
-/area/ship/external)
+/area/ship/external/dark)
 "LT" = (
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -6645,6 +6672,9 @@
 	dir = 4;
 	pixel_x = -20;
 	pixel_y = -11
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -9555,7 +9585,7 @@ dI
 hU
 WZ
 Lf
-Lf
+nN
 es
 Pz
 yI
@@ -9588,7 +9618,7 @@ BE
 nc
 bd
 UY
-ce
+lk
 Dt
 qC
 ce
