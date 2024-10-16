@@ -698,7 +698,7 @@
 "eX" = (
 /obj/machinery/porta_turret/ship/syndicate{
 	lethal_projectile = /obj/projectile/beam/hitscan/kalix/pgf/sniper;
-	lethal_projectile_sound = sound/weapons/gun/laser/heavy_laser.ogg;
+	lethal_projectile_sound = 'sound/weapons/gun/laser/heavy_laser.ogg';
 	name = "HL-75 Heavy Laser Cannon";
 	faction = list("neutral","turret");
 	armor = list("melee" = 70, "bullet" = 50, "laser" = 50, "energy" = 40, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90)
