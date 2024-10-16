@@ -1371,6 +1371,7 @@
 	dir = 10
 	},
 /obj/machinery/firealarm/directional/south,
+/obj/structure/easel,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "iP" = (
@@ -2176,6 +2177,7 @@
 	},
 /obj/item/clothing/suit/hooded/wintercoat/captain,
 /obj/item/modular_computer/tablet/preset/advanced,
+/obj/item/clothing/shoes/laceup,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/crewthree)
 "mY" = (
@@ -3035,22 +3037,6 @@
 /obj/effect/spawner/lootdrop/ration,
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew/canteen)
-"rX" = (
-/obj/effect/turf_decal/corner_steel_grid{
-	dir = 10
-	},
-/obj/effect/turf_decal/corner/opaque/vired/half{
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
-	dir = 1
-	},
-/obj/structure/filingcabinet/double/grey{
-	pixel_y = 17
-	},
-/obj/machinery/light/directional/north,
-/turf/open/floor/plasteel/dark,
-/area/ship/bridge)
 "sb" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/machinery/firealarm/directional/north,
@@ -4453,13 +4439,13 @@
 /turf/open/floor/plasteel,
 /area/ship/storage)
 "BY" = (
-/obj/structure/safe,
 /obj/item/folder/documents/syndicate/blue,
 /obj/item/reagent_containers/food/drinks/bottle/champagne,
 /obj/item/reagent_containers/food/drinks/modglass,
 /obj/item/reagent_containers/food/drinks/modglass,
 /obj/item/reagent_containers/food/drinks/modglass,
 /obj/item/reagent_containers/food/drinks/modglass,
+/obj/structure/safe,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/crewthree)
 "BZ" = (
@@ -4493,7 +4479,7 @@
 /area/ship/crew/canteen)
 "Ck" = (
 /obj/structure/table/wood,
-/obj/item/modular_computer/laptop,
+/obj/item/modular_computer/laptop/preset/civilian,
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/crewtwo)
 "Ct" = (
@@ -5042,6 +5028,7 @@
 /area/ship/cargo)
 "Fw" = (
 /obj/structure/table/wood,
+/obj/item/laser_pointer/blue,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Fy" = (
@@ -10106,7 +10093,7 @@ MR
 fo
 mW
 kL
-rX
+vH
 wL
 lw
 sq
