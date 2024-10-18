@@ -222,6 +222,7 @@
 	dir = 4;
 	name = "Mess Hall"
 	},
+/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew/canteen)
 "bm" = (
@@ -266,7 +267,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/ship/security)
 "bA" = (
 /obj/structure/cable{
@@ -897,6 +898,12 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "gD" = (
@@ -1357,6 +1364,12 @@
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/dorm)
@@ -2192,6 +2205,12 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/corner/opaque/vired/mono,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "nc" = (
@@ -2376,6 +2395,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
+/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew/canteen)
 "nT" = (
@@ -3145,6 +3165,9 @@
 /obj/item/mining_scanner,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/machinery/airalarm/directional/north,
+/obj/machinery/firealarm/directional/east{
+	pixel_y = -8
+	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew/office)
 "sH" = (
@@ -6792,6 +6815,7 @@
 /obj/machinery/door/airlock/glass{
 	name = "Mess Hall"
 	},
+/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew/canteen)
 "OE" = (
@@ -6928,6 +6952,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
+/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew/canteen)
 "Pm" = (
@@ -7531,7 +7556,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/ship/security)
 "SM" = (
 /obj/effect/turf_decal/industrial/warning{
@@ -9653,7 +9678,7 @@ Su
 "}
 (25,1,1) = {"
 gq
-OT
+jy
 Fu
 SI
 MW
@@ -9682,7 +9707,7 @@ rA
 pJ
 eY
 Xh
-OT
+jy
 "}
 (26,1,1) = {"
 gq
@@ -10016,7 +10041,7 @@ qM
 "}
 (36,1,1) = {"
 gq
-gs
+jy
 MR
 MR
 MR
@@ -10045,7 +10070,7 @@ gb
 ta
 uh
 gb
-OT
+jy
 "}
 (37,1,1) = {"
 gq
