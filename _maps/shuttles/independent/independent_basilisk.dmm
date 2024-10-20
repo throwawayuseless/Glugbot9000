@@ -415,7 +415,6 @@
 /obj/structure/elevator_platform{
 	desc = "A cargo lift platform. As you peer through it, the cold abyss of the lower freight level stares back at you."
 	},
-/obj/structure/crate_shelf,
 /obj/structure/closet/crate/freezer/blood,
 /turf/open/floor/plasteel/elevatorshaft{
 	planetary_atmos = 1
@@ -688,6 +687,7 @@
 	pixel_x = -20;
 	pixel_y = 12
 	},
+/obj/structure/closet/emcloset/wall/directional/south,
 /turf/open/floor/plasteel/patterned,
 /area/ship/science/robotics)
 "eV" = (
@@ -705,7 +705,8 @@
 	lethal_projectile_sound = 'sound/weapons/gun/laser/heavy_laser.ogg';
 	name = "HL-75 Heavy Laser Cannon";
 	faction = list("neutral","turret");
-	armor = list("melee" = 70, "bullet" = 50, "laser" = 50, "energy" = 40, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90)
+	armor = list("melee" = 70, "bullet" = 50, "laser" = 50, "energy" = 40, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90);
+	desc = "The penultimate turret in the HL-XX series. This heavy monstrosity sports a plasteel cover and robust armor to protect it's devastating energy beam armament."
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -801,6 +802,14 @@
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew)
+"fx" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/trimline/opaque/vired/filled/line,
+/obj/structure/closet/firecloset/wall/directional/south,
+/turf/open/floor/plasteel/dark,
+/area/ship/hallway/central)
 "fy" = (
 /obj/effect/turf_decal/corner/opaque/vired/half,
 /obj/effect/turf_decal/trimline/opaque/terragovgold/line,
@@ -967,9 +976,6 @@
 /turf/open/floor/engine/o2,
 /area/ship/engineering/atmospherics)
 "gR" = (
-/obj/structure/chair{
-	dir = 1
-	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -1536,9 +1542,8 @@
 /area/ship/hallway/central)
 "jy" = (
 /obj/machinery/porta_turret/ship{
-	lethal_projectile = /obj/projectile/beam/laser/heavylaser;
-	lethal_projectile_sound = 'sound/weapons/laser4.ogg';
-	name = "HL-25 Light Laser Turret"
+	name = "HL-25 Light Laser Turret";
+	desc = "The initial offering of the HL-XX series of ship defense emplacements. This light turret is decently armored with a respectable laser projectile armament."
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
@@ -2102,6 +2107,10 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/techfloor/hole,
+/obj/structure/curtain,
+/obj/machinery/door/window/survival_pod{
+	dir = 1
+	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew/crewthree)
 "mP" = (
@@ -2122,10 +2131,12 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
 "mR" = (
-/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
-/obj/structure/closet/crate/bin,
-/turf/open/floor/plasteel/patterned,
-/area/ship/crew/canteen)
+/obj/structure/table/wood,
+/obj/machinery/light/small/directional/west,
+/obj/item/paper_bin,
+/obj/item/pen/collectible/bicblack,
+/turf/open/floor/wood/ebony,
+/area/ship/crew/dorm/dormtwo)
 "mT" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2430,10 +2441,18 @@
 "oe" = (
 /obj/structure/table/reinforced,
 /obj/item/radio/intercom/directional/north,
-/obj/machinery/recharger,
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 1
 	},
+/obj/item/paper_bin{
+	pixel_y = 5;
+	pixel_x = 8
+	},
+/obj/item/flashlight/lamp{
+	pixel_x = -6;
+	pixel_y = 10
+	},
+/obj/item/pen,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "oj" = (
@@ -2903,6 +2922,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
 	},
+/obj/structure/closet/crate/bin,
 /turf/open/floor/carpet/red,
 /area/ship/crew/canteen)
 "qY" = (
@@ -3286,6 +3306,10 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/techfloor/hole/right,
+/obj/structure/curtain,
+/obj/machinery/door/window/survival_pod{
+	dir = 1
+	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew/crewtwo)
 "tz" = (
@@ -3611,15 +3635,15 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew)
 "wj" = (
-/obj/machinery/computer/security{
-	dir = 1
-	},
 /obj/effect/turf_decal/corner/opaque/vired/three_quarters{
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/opaque/terragovgold/line{
 	dir = 10
 	},
+/obj/structure/table/reinforced,
+/obj/item/paper_bin,
+/obj/item/pen,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "wk" = (
@@ -3964,10 +3988,14 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/science/robotics)
 "yo" = (
-/obj/structure/chair{
-	dir = 1
+/obj/machinery/porta_turret/ship{
+	lethal_projectile = /obj/projectile/beam/laser/heavylaser;
+	lethal_projectile_sound = 'sound/weapons/laser4.ogg';
+	name = "HL-50 'Welcome Mat' Medium Laser Turret";
+	desc = "A medium las-turret sporting a robust front facing shield and decent armor penetration.";
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 90)
 	},
-/turf/open/floor/plasteel/dark,
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "ys" = (
 /obj/effect/turf_decal/corner/opaque/green/diagonal,
@@ -4101,7 +4129,7 @@
 "zt" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1;
-	name = "Helm"
+	name = "Shuttle seat"
 	},
 /obj/machinery/light/directional/east,
 /obj/effect/turf_decal/corner/opaque/vired/half{
@@ -4232,6 +4260,7 @@
 /obj/item/radio/intercom/directional/south,
 /obj/effect/turf_decal/corner/opaque/vired/half,
 /obj/effect/turf_decal/trimline/opaque/terragovgold/line,
+/obj/item/paicard,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "AD" = (
@@ -4398,6 +4427,7 @@
 /obj/effect/turf_decal/trimline/opaque/terragovgold/line{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "BL" = (
@@ -4851,16 +4881,16 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/atmospherics)
 "EH" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 1;
-	name = "Helm"
-	},
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/opaque/terragovgold/line{
 	dir = 8
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 1;
+	name = "Shuttle seat"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -5143,9 +5173,9 @@
 "Gg" = (
 /obj/machinery/light/floor,
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/structure/reagent_dispensers/watertank,
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/mop,
+/obj/structure/reagent_dispensers/watertank/high,
 /turf/open/floor/pod,
 /area/ship/storage)
 "Gj" = (
@@ -5380,6 +5410,11 @@
 /obj/effect/turf_decal/trimline/opaque/terragovgold/line{
 	dir = 6
 	},
+/obj/structure/reagent_dispensers/water_cooler,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
+"Hh" = (
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Hj" = (
@@ -5420,6 +5455,7 @@
 /obj/item/stack/sheet/mineral/sandbags,
 /obj/item/stack/sheet/mineral/sandbags,
 /obj/item/stack/sheet/mineral/sandbags,
+/obj/item/stack/marker_beacon/thirty,
 /turf/open/floor/plasteel/elevatorshaft{
 	planetary_atmos = 1
 	},
@@ -5434,6 +5470,30 @@
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
+"Hp" = (
+/obj/effect/turf_decal/corner_steel_grid{
+	dir = 5
+	},
+/obj/effect/turf_decal/corner/opaque/vired/half,
+/obj/effect/turf_decal/trimline/opaque/terragovgold/line,
+/obj/machinery/light/directional/south,
+/obj/structure/table/reinforced,
+/obj/item/chair/plastic{
+	pixel_y = 15
+	},
+/obj/item/chair/plastic{
+	pixel_y = 12
+	},
+/obj/item/chair/plastic{
+	pixel_y = 8
+	},
+/obj/item/chair/plastic{
+	pixel_y = 5
+	},
+/obj/item/chair/plastic,
+/obj/item/chair/plastic,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
 "Hs" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
@@ -5683,6 +5743,7 @@
 	},
 /obj/effect/turf_decal/corner/opaque/vired,
 /obj/effect/turf_decal/trimline/opaque/terragovgold/filled/corner,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Ja" = (
@@ -5845,6 +5906,7 @@
 	desc = "A cargo lift platform. As you peer through it, the cold abyss of the lower freight level stares back at you."
 	},
 /obj/structure/closet/crate/trashcart,
+/obj/effect/spawner/lootdrop/maintenance/five,
 /turf/open/floor/plasteel/elevatorshaft{
 	planetary_atmos = 1
 	},
@@ -5881,6 +5943,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half,
 /obj/effect/turf_decal/trimline/opaque/terragovgold/line,
 /obj/machinery/light/directional/south,
+/obj/structure/closet/crate/bin,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "JI" = (
@@ -6190,7 +6253,7 @@
 	},
 /obj/structure/closet/crate{
 	icon_state = "engi_e_crate";
-	name = "Hazrez crate"
+	name = "Storm crate"
 	},
 /turf/open/floor/plasteel/elevatorshaft{
 	planetary_atmos = 1
@@ -6511,11 +6574,10 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/science/robotics)
 "MT" = (
-/obj/structure/table/reinforced,
 /obj/machinery/light/directional/south,
-/obj/machinery/recharger,
 /obj/effect/turf_decal/corner/opaque/vired/half,
 /obj/effect/turf_decal/trimline/opaque/terragovgold/line,
+/obj/machinery/photocopier,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "MU" = (
@@ -6842,6 +6904,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/opaque/vired/filled/line,
+/obj/structure/closet/emcloset/wall/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "OM" = (
@@ -6867,9 +6930,8 @@
 /area/ship/security)
 "OT" = (
 /obj/machinery/porta_turret/ship{
-	lethal_projectile = /obj/projectile/beam/laser/heavylaser;
-	lethal_projectile_sound = 'sound/weapons/laser4.ogg';
-	name = "HL-25 Light Laser Turret"
+	name = "HL-25 Light Laser Turret";
+	desc = "The initial offering of the HL-XX series of ship defense emplacements. This light turret is decently armored with a respectable laser projectile armament."
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -7417,6 +7479,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /obj/effect/turf_decal/corner/opaque/vired/half,
 /obj/effect/turf_decal/trimline/opaque/terragovgold/line,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Sl" = (
@@ -8207,11 +8270,11 @@
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced/spawner/east,
 /obj/structure/window/reinforced/spawner/north,
-/obj/item/radio/intercom/wideband/table{
-	dir = 4
-	},
 /obj/effect/turf_decal/corner_steel_grid/full{
 	dir = 8
+	},
+/obj/item/radio/intercom/wideband/table{
+	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -8465,6 +8528,7 @@
 /obj/machinery/airalarm/directional/south,
 /obj/effect/turf_decal/corner/opaque/vired/half,
 /obj/effect/turf_decal/trimline/opaque/terragovgold/line,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "XM" = (
@@ -8600,7 +8664,6 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Yw" = (
-/obj/structure/chair/comfy/shuttle,
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 8
@@ -8608,6 +8671,8 @@
 /obj/effect/turf_decal/trimline/opaque/terragovgold/line{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/chair/comfy/shuttle,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Yz" = (
@@ -8656,6 +8721,17 @@
 /obj/item/pen/collectible/bicblue{
 	pixel_x = 5;
 	pixel_y = 5
+	},
+/obj/item/stamp{
+	pixel_x = -10;
+	pixel_y = 10
+	},
+/obj/item/stamp/denied{
+	pixel_x = -10;
+	pixel_y = 5
+	},
+/obj/item/stamp/head_of_personnel{
+	pixel_x = -10
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -9469,7 +9545,7 @@ Ti
 jA
 hr
 jA
-mR
+jA
 Sl
 tV
 FB
@@ -9678,7 +9754,7 @@ Su
 "}
 (25,1,1) = {"
 gq
-jy
+yo
 Fu
 SI
 MW
@@ -9792,7 +9868,7 @@ pV
 Pb
 Ij
 dE
-uG
+fx
 aC
 yv
 mP
@@ -10041,7 +10117,7 @@ qM
 "}
 (36,1,1) = {"
 gq
-jy
+yo
 MR
 MR
 MR
@@ -10123,9 +10199,9 @@ wL
 lw
 sq
 yf
-yo
-yo
-JF
+xo
+xo
+Hp
 HR
 ZH
 Wx
@@ -10189,8 +10265,8 @@ Eg
 Fw
 No
 ZZ
-yo
-yo
+xo
+xo
 JF
 HR
 ZH
@@ -10362,7 +10438,7 @@ nZ
 Ng
 Jf
 UZ
-nZ
+mR
 gb
 gb
 gb
@@ -10518,7 +10594,7 @@ HR
 HR
 fB
 xo
-xo
+Hh
 fy
 oT
 HR
