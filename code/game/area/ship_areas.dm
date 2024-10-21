@@ -128,6 +128,9 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	lighting_colour_tube = "#ffce99"
 	lighting_colour_bulb = "#ffdbb4"
 	lighting_brightness_tube = 6
+	
+/area/ship/bridge/briefing
+	name = "Briefing"
 
 /// Crew Quarters ///
 /area/ship/crew

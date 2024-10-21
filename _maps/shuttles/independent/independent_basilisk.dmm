@@ -45,6 +45,9 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
+"au" = (
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge/briefing)
 "av" = (
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/machinery/door/poddoor/shutters{
@@ -242,7 +245,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "bw" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -914,7 +917,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "gD" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 9
@@ -926,7 +929,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "gJ" = (
 /obj/machinery/light_switch{
 	dir = 4;
@@ -980,7 +983,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "gS" = (
 /obj/machinery/door/airlock,
 /obj/machinery/door/firedoor/border_only,
@@ -1193,7 +1196,7 @@
 	pixel_y = -11
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "hS" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /obj/effect/turf_decal/industrial/loading,
@@ -1392,7 +1395,7 @@
 /obj/machinery/firealarm/directional/south,
 /obj/structure/easel,
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "iP" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 10
@@ -1404,7 +1407,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "iQ" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
@@ -1421,7 +1424,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "iS" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
@@ -1724,7 +1727,7 @@
 	},
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "kx" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
@@ -1907,7 +1910,7 @@
 	pixel_x = -4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "ly" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -2086,7 +2089,7 @@
 	icon_state = "1-8"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "mN" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2107,7 +2110,6 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/techfloor/hole,
-/obj/structure/curtain,
 /obj/machinery/door/window/survival_pod{
 	dir = 1
 	},
@@ -2223,7 +2225,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "nc" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -2531,27 +2533,6 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
 "oD" = (
-/obj/structure/closet/secure_closet/empty/warden{
-	name = "Armory CQC locker"
-	},
-/obj/item/gun/ballistic/shotgun/brimstone,
-/obj/item/gun/ballistic/shotgun/brimstone,
-/obj/item/clothing/suit/armor/vest/marine/medium{
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50);
-	name = "LBC 6052 Heavy";
-	desc = "The LBC 6052 is an advanced plate carrier built for rugged military applications. Made from lightweight plasteel, it combines high durability with mobility, designed to withstand the rigors of diverse environments. The carrier features a modular design, allowing for customizable armor configurations to meet specific mission needs. With an emphasis on utilitarian functionality, the LBC 6052 is ergonomically designed for comfort, making it a reliable choice for soldiers seeking robust protection and versatility in the field."
-	},
-/obj/item/clothing/suit/armor/vest/marine/medium{
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50);
-	name = "LBC 6052 Heavy";
-	desc = "The LBC 6052 is an advanced plate carrier built for rugged military applications. Made from lightweight plasteel, it combines high durability with mobility, designed to withstand the rigors of diverse environments. The carrier features a modular design, allowing for customizable armor configurations to meet specific mission needs. With an emphasis on utilitarian functionality, the LBC 6052 is ergonomically designed for comfort, making it a reliable choice for soldiers seeking robust protection and versatility in the field."
-	},
-/obj/item/grenade/c4,
-/obj/item/grenade/c4,
-/obj/item/ammo_box/a12g,
-/obj/item/ammo_box/a12g,
-/obj/item/storage/box/techshot,
-/obj/item/storage/box/techshot,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "oE" = (
@@ -2604,7 +2585,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "oV" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/engineering/atmospherics)
@@ -3134,7 +3115,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "sw" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -3285,7 +3266,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "ts" = (
 /obj/structure/closet/secure_closet/engineering_electrical,
 /obj/item/radio/intercom/directional/west,
@@ -3306,7 +3287,6 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/techfloor/hole/right,
-/obj/structure/curtain,
 /obj/machinery/door/window/survival_pod{
 	dir = 1
 	},
@@ -3576,6 +3556,9 @@
 /obj/structure/table/wood,
 /obj/item/paper_bin,
 /obj/item/pen/collectible/tacticool,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 8
+	},
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/crewtwo)
 "vF" = (
@@ -3595,7 +3578,7 @@
 	},
 /obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "vK" = (
 /turf/open/floor/engine/hull,
 /area/ship/external/dark)
@@ -3669,7 +3652,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "wm" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 10
@@ -3717,7 +3700,7 @@
 	pixel_x = -5
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "wO" = (
 /obj/machinery/power/port_gen/pacman/super,
 /obj/structure/cable/yellow{
@@ -3828,6 +3811,9 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 6
+	},
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/crewtwo)
 "xo" = (
@@ -3841,7 +3827,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "xu" = (
 /obj/effect/decal/cleanable/greenglow,
 /obj/structure/cable{
@@ -3961,7 +3947,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "yh" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -4236,6 +4222,9 @@
 	},
 /turf/open/floor/pod,
 /area/ship/storage)
+"Ap" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/ship/bridge/briefing)
 "Aq" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -4837,7 +4826,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "Ek" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/maintenance/starboard)
@@ -4871,6 +4860,18 @@
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
+"Eu" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/turf/open/floor/wood/mahogany,
+/area/ship/crew/crewtwo)
 "EF" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
@@ -4966,7 +4967,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "EX" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 5
@@ -5061,7 +5062,7 @@
 	icon_state = "2-8"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "Fr" = (
 /obj/structure/catwalk/over,
 /obj/structure/marker_beacon{
@@ -5083,7 +5084,7 @@
 /obj/structure/table/wood,
 /obj/item/laser_pointer/blue,
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "Fy" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 5
@@ -5336,7 +5337,7 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/power/apc/auto_name/directional/south,
 /turf/open/floor/plating,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "GL" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/engineering/engines/port)
@@ -5412,7 +5413,7 @@
 	},
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "Hh" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
@@ -5493,7 +5494,7 @@
 /obj/item/chair/plastic,
 /obj/item/chair/plastic,
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "Hs" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
@@ -5681,7 +5682,7 @@
 	name = "Briefing"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "ID" = (
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/siding/wood{
@@ -5845,13 +5846,14 @@
 "Jq" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/item/gun/energy/kalix{
-	pixel_y = 10
+/obj/item/gun/energy/laser{
+	pixel_y = 8
 	},
-/obj/item/gun/energy/kalix{
-	pixel_y = 2
+/obj/item/gun/energy/laser{
+	pixel_y = 4
 	},
-/obj/item/gun/energy/kalix{
+/obj/item/gun/energy/laser,
+/obj/item/gun/energy/laser{
 	pixel_y = -5
 	},
 /turf/open/floor/plasteel/dark,
@@ -5945,7 +5947,7 @@
 /obj/machinery/light/directional/south,
 /obj/structure/closet/crate/bin,
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "JI" = (
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable{
@@ -6039,7 +6041,7 @@
 	name = "Briefing"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "Kh" = (
 /obj/structure/table,
 /obj/machinery/computer/helm/viewscreen/directional/east{
@@ -6441,6 +6443,10 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 1
+	},
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/crewtwo)
 "LF" = (
@@ -6604,25 +6610,23 @@
 /obj/structure/window/reinforced/spawner/west{
 	dir = 4
 	},
-/obj/item/stock_parts/cell/gun/pgf{
-	pixel_y = 12;
-	pixel_x = -3
+/obj/item/stock_parts/cell/gun{
+	pixel_x = -6;
+	pixel_y = 7
 	},
-/obj/item/stock_parts/cell/gun/pgf{
-	pixel_y = 10;
-	pixel_x = 2
+/obj/item/stock_parts/cell/gun{
+	pixel_y = 7
 	},
-/obj/item/stock_parts/cell/gun/pgf{
-	pixel_y = 8;
-	pixel_x = 8
+/obj/item/stock_parts/cell/gun{
+	pixel_x = 6;
+	pixel_y = 7
 	},
-/obj/item/stock_parts/cell/gun/pgf{
-	pixel_y = 6;
-	pixel_x = -9
+/obj/item/stock_parts/cell/gun{
+	pixel_x = -6
 	},
-/obj/item/stock_parts/cell/gun/pgf{
-	pixel_y = 4;
-	pixel_x = -3
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun{
+	pixel_x = 6
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
@@ -6701,7 +6705,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "Nt" = (
 /obj/structure/chair/comfy/shuttle,
 /obj/machinery/light/directional/east,
@@ -7193,10 +7197,10 @@
 /area/ship/maintenance/starboard)
 "Qq" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/clothing/suit/space/hardsuit/mining/heavy{
 	name = "TL1 Hazardous Environment Suit"
 	},
+/obj/item/tank/jetpack/oxygen/harness,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "Qy" = (
@@ -7253,7 +7257,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "Ra" = (
 /obj/effect/turf_decal/industrial/loading{
 	dir = 1
@@ -7341,12 +7345,28 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
 "RE" = (
-/obj/structure/rack,
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/item/tank/jetpack/oxygen/harness{
-	pixel_y = 10
+/obj/structure/closet/secure_closet/empty/warden{
+	name = "Armory CQC locker"
 	},
-/obj/item/tank/jetpack/oxygen/harness,
+/obj/item/storage/box/techshot,
+/obj/item/storage/box/techshot,
+/obj/item/ammo_box/a12g,
+/obj/item/ammo_box/a12g,
+/obj/item/grenade/c4,
+/obj/item/grenade/c4,
+/obj/item/clothing/suit/armor/vest/marine/medium{
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50);
+	name = "LBC 6052 Heavy";
+	desc = "The LBC 6052 is an advanced plate carrier built for rugged military applications. Made from lightweight plasteel, it combines high durability with mobility, designed to withstand the rigors of diverse environments. The carrier features a modular design, allowing for customizable armor configurations to meet specific mission needs. With an emphasis on utilitarian functionality, the LBC 6052 is ergonomically designed for comfort, making it a reliable choice for soldiers seeking robust protection and versatility in the field."
+	},
+/obj/item/clothing/suit/armor/vest/marine/medium{
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50);
+	name = "LBC 6052 Heavy";
+	desc = "The LBC 6052 is an advanced plate carrier built for rugged military applications. Made from lightweight plasteel, it combines high durability with mobility, designed to withstand the rigors of diverse environments. The carrier features a modular design, allowing for customizable armor configurations to meet specific mission needs. With an emphasis on utilitarian functionality, the LBC 6052 is ergonomically designed for comfort, making it a reliable choice for soldiers seeking robust protection and versatility in the field."
+	},
+/obj/item/gun/ballistic/shotgun/brimstone,
+/obj/item/gun/ballistic/shotgun/brimstone,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "RI" = (
@@ -7455,15 +7475,15 @@
 "RZ" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/item/gun/energy/kalix/pistol{
-	pixel_y = -6
+/obj/item/gun/energy/e_gun/mini{
+	pixel_y = 5
 	},
-/obj/item/gun/energy/kalix/pistol,
-/obj/item/gun/energy/kalix/pistol{
-	pixel_y = 6
+/obj/item/gun/energy/e_gun/mini,
+/obj/item/gun/energy/e_gun/mini{
+	pixel_y = -5
 	},
-/obj/item/gun/energy/kalix/pistol{
-	pixel_y = 10
+/obj/item/gun/energy/e_gun/mini{
+	pixel_y = -10
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
@@ -7693,6 +7713,13 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
+/obj/item/toy/cards/deck/cas{
+	pixel_x = 5
+	},
+/obj/item/toy/cards/deck/cas/black{
+	pixel_y = 8;
+	pixel_x = 5
+	},
 /turf/open/floor/carpet,
 /area/ship/crew/canteen)
 "Tj" = (
@@ -7711,7 +7738,7 @@
 "To" = (
 /obj/structure/chair/comfy/beige,
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "Tu" = (
 /obj/machinery/power/shuttle/engine/electric,
 /obj/structure/cable{
@@ -7773,6 +7800,9 @@
 /obj/item/radio/intercom/wideband/table{
 	dir = 1
 	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 8
+	},
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/crewtwo)
 "TR" = (
@@ -7791,7 +7821,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "TS" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/hallway/central)
@@ -7907,7 +7937,6 @@
 	},
 /obj/machinery/door/airlock/security{
 	dir = 4;
-	id_tag = "basi_armory";
 	name = "Armory";
 	req_access_txt = "1"
 	},
@@ -7916,10 +7945,10 @@
 "UN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/clothing/suit/space/hardsuit/mining/heavy{
 	name = "TL1 Hazardous Environment Suit"
 	},
+/obj/item/tank/jetpack/oxygen/harness,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "UR" = (
@@ -8050,7 +8079,7 @@
 	},
 /obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "Vm" = (
 /obj/structure/railing{
 	layer = 4.1
@@ -8600,6 +8629,10 @@
 	pixel_y = 12
 	},
 /obj/machinery/firealarm/directional/west,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 1
+	},
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/crewtwo)
 "Yi" = (
@@ -8734,7 +8767,7 @@
 	pixel_x = -10
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 "YM" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -8958,7 +8991,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/bridge)
+/area/ship/bridge/briefing)
 
 (1,1,1) = {"
 gq
@@ -10128,12 +10161,12 @@ MR
 kL
 kL
 kL
-HR
-HR
-HR
+Ap
+Ap
+Ap
 Kg
 Io
-HR
+Ap
 aC
 aC
 aC
@@ -10169,7 +10202,7 @@ oU
 hM
 QV
 iK
-HR
+Ap
 Rb
 oj
 Nm
@@ -10199,10 +10232,10 @@ wL
 lw
 sq
 yf
-xo
-xo
+au
+au
 Hp
-HR
+Ap
 ZH
 Wx
 ys
@@ -10235,7 +10268,7 @@ Fo
 gR
 gR
 GK
-HR
+Ap
 Ro
 FF
 cD
@@ -10265,10 +10298,10 @@ Eg
 Fw
 No
 ZZ
-xo
-xo
+au
+au
 JF
-HR
+Ap
 ZH
 Jh
 ys
@@ -10301,7 +10334,7 @@ mG
 gD
 bt
 Hc
-HR
+Ap
 Fy
 Fd
 cD
@@ -10326,15 +10359,15 @@ MR
 hp
 kL
 kL
-HR
-HR
-HR
+Ap
+Ap
+Ap
 mY
 gC
-HR
-HR
-HR
-HR
+Ap
+Ap
+Ap
+Ap
 ZH
 wV
 cD
@@ -10488,7 +10521,7 @@ MR
 eL
 VX
 xj
-xj
+Eu
 Yc
 Lz
 kd
