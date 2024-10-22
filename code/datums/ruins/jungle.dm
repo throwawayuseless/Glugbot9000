@@ -22,37 +22,13 @@
 	description = "An odd coffin shaped pirate hut that the inhabitant of died in."
 	suffix = "jungle_surface_coffinpirate.dmm"
 
-//far more tasteful than its predecessor...
-/datum/map_template/ruin/jungle/lessonintrickery
-	name = "Bombmaker's Cabin"
-	id = "bombmakers-cabin"
-	description = "Playing with bombs again, are we?"
-	suffix = "jungle_surface_bombmakers_cabin.dmm"
-
-/datum/map_template/ruin/jungle/weedshack
-	name = "Stoner's Cabin"
-	id = "weed-shack"
-	description = "The Industrial Revolution and its consequences have been a disaster for the human race."
-	suffix = "jungle_surface_weed_shack.dmm"
-
 //vae's jungle ruins from bungalowstation
-/datum/map_template/ruin/jungle/pizzawave
-	name = "Jungle Pizzawave"
-	id = "pizzawave"
-	description = "Get some pizza my dude."
-	suffix = "jungle_pizzawave.dmm"
 
 /datum/map_template/ruin/jungle/nest
 	name = "Jungle Xenonest"
 	id = "xenonestjungle"
 	description = "A Xeno nest crammed into the Jungle."
 	suffix = "jungle_nest.dmm"
-
-/datum/map_template/ruin/jungle/seedling
-	name = "Seedling ruin"
-	id = "seedling"
-	description = "A rare seedling plant."
-	suffix = "jungle_seedling.dmm"
 
 /datum/map_template/ruin/jungle/hangar
 	name = "Abandoned Hangar"
@@ -83,12 +59,6 @@
 	id = "roommates"
 	description = "A shack once inhabited by a clown and a mime... and they were roommates."
 	suffix = "jungle_surface_roommates.dmm"
-
-/datum/map_template/ruin/jungle/ninjashrine
-	name = "Ninja Shrine"
-	id = "ninjashrine"
-	description = "A ninja shrine."
-	suffix = "jungle_surface_ninjashrine.dmm"
 
 /datum/map_template/ruin/jungle/interceptor
 	name = "Old Crashed Interceptor"
