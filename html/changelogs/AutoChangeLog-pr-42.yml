@@ -1,0 +1,4 @@
+author: Ossa88
+changes:
+  - {rscadd: Wideband Radio Wall Terminal added to cargo}
+delete-after: true

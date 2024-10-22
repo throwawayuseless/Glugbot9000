@@ -243,6 +243,15 @@
 	crate_name = "laser mining drill crate"
 	crate_type = /obj/structure/closet/crate/engineering
 
+/datum/supply_pack/machinery/wideband
+	name = "Wideband Intercom Crate"
+	desc = "For the crew who broke their wideband. Ossa Inc is kindly allowing you, to order a new one. Anchored for YOUR security... Unanchor to use properly."
+	cost = 1500
+	contains = list(
+		/obj/item/radio/intercom/wideband/unscrewed
+	)
+	crate_name = "wideband intercom crate"
+	crate_type = /obj/structure/closet/crate/engineering
 
 /*
 		Power generation machines
