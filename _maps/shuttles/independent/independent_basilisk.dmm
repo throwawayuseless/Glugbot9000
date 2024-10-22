@@ -1100,15 +1100,15 @@
 	desc = "The Modular Head Protection System or MHPS was a 2500s era project to manufacture a mass-producable helmet capable of keeping up with the evolving threat profile of the ever expanding galaxy."
 	},
 /obj/effect/turf_decal/corner_steel_grid/full,
-/obj/effect/turf_decal/corner/opaque/vired/half{
+/obj/item/radio/headset/alt,
+/obj/item/radio/headset/alt,
+/obj/item/radio/headset/alt,
+/obj/item/radio/headset/alt,
+/obj/item/radio/headset/alt,
+/obj/item/radio/headset/alt,
+/obj/effect/turf_decal/corner/opaque/vired{
 	dir = 4
 	},
-/obj/item/radio/headset/alt,
-/obj/item/radio/headset/alt,
-/obj/item/radio/headset/alt,
-/obj/item/radio/headset/alt,
-/obj/item/radio/headset/alt,
-/obj/item/radio/headset/alt,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "hp" = (
@@ -2037,7 +2037,7 @@
 /obj/machinery/door/airlock/science/glass{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/patterned,
 /area/ship/science/robotics)
 "mE" = (
 /obj/structure/window/plasma/reinforced/spawner/east,
@@ -4001,10 +4001,8 @@
 /obj/effect/turf_decal/corner_steel_grid/full{
 	dir = 8
 	},
-/obj/effect/turf_decal/corner/opaque/vired/half{
-	dir = 4
-	},
 /obj/machinery/light/small/directional/north,
+/obj/effect/turf_decal/corner/opaque/vired,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "yz" = (
@@ -4238,7 +4236,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/patterned,
 /area/ship/science/robotics)
 "Az" = (
 /obj/machinery/power/shuttle/engine/fueled/plasma,
@@ -5384,14 +5382,14 @@
 /obj/effect/turf_decal/corner_steel_grid/full{
 	dir = 4
 	},
-/obj/effect/turf_decal/corner/opaque/vired/half{
-	dir = 8
-	},
 /obj/structure/sign/poster/contraband/twelve_gauge{
 	pixel_x = 30
 	},
 /obj/item/clothing/mask/gas/clip,
 /obj/item/clothing/mask/gas/clip,
+/obj/effect/turf_decal/corner/opaque/vired{
+	dir = 1
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "GV" = (
@@ -6132,14 +6130,13 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/corner_steel_grid/full{
 	dir = 1
 	},
-/obj/effect/turf_decal/corner/opaque/vired/half{
+/obj/machinery/light/small/directional/north,
+/obj/effect/turf_decal/corner/opaque/vired{
 	dir = 8
 	},
-/obj/machinery/light/small/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "Ky" = (
@@ -10315,7 +10312,7 @@ gb
 "}
 (41,1,1) = {"
 gq
-OT
+jy
 MR
 hE
 Qh
@@ -10344,7 +10341,7 @@ gb
 nk
 Pm
 gb
-OT
+jy
 "}
 (42,1,1) = {"
 gq
