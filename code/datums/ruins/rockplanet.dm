@@ -12,36 +12,11 @@
 	description = "something dangerous"
 	suffix = "rockplanet_heirophant.dmm"
 
-/* TODO: GREEBLE
-/datum/map_template/ruin/rockplanet/dangerpod
-	name = "Dangerous pod"
-	id = "dangerpod"
-	description = "A pod holding a dangerous threat."
-	suffix = "wasteplanet_dangerpod.dmm"
-*/
-
-/*	//TODO: MAKE THIS A MINOR RUIN
-/datum/map_template/ruin/rockplanet/pioneer
-	name = "Krusty Krab Pizza"
-	id = "pioneer"
-	description = "The pioneers used to ride these babies for miles!"
-	suffix = "rockplanet_pioneer.dmm"
-*/
-
-/*greeble
-/datum/map_template/ruin/rockplanet/house
-	name = "baracaded house"
-	id = "house"
-	description = "Some sort of house, baracaded in. It must be baracaded for a reason.."
-	suffix = "rockplanet_house.dmm"
-*/
-
 /datum/map_template/ruin/rockplanet/mining_expedition
 	name = "Mining Expedition"
 	id = "expedition"
 	description = "A mining operation gone wrong."
 	suffix = "rockplanet_miningexpedition.dmm"
-
 
 /datum/map_template/ruin/rockplanet/boxsci
 	name = "Abandoned science wing"
@@ -73,7 +48,6 @@
 	id = "rockplanet_budgetcuts"
 	suffix = "rockplanet_budgetcuts.dmm"
 
-
 /datum/map_template/ruin/rockplanet/shippingdock
 	name = "Abandoned Shipping Dock"
 	description = "An abandoned shipping dock used by small cargo freighters and smugglers alike. Some malicious group seems to have trapped the place to eliminate scavengers."
@@ -85,4 +59,3 @@
 	description = "A Crashed Arrow & Axe Interceptor. A long forgotten Crew. They tried their best to survive..."
 	id = "rockplanet_nomadcrash"
 	suffix = "rockplanet_nomadcrash.dmm"
-
