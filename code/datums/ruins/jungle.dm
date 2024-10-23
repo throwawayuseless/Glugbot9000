@@ -4,6 +4,7 @@
 	prefix = "_maps/RandomRuins/JungleRuins/"
 	ruin_type = RUINTYPE_JUNGLE
 
+/*
 /datum/map_template/ruin/jungle/jungle_botany_ruin
 	id = "jungle_botany-ruin"
 	suffix = "jungle_botany.dmm"
@@ -15,6 +16,7 @@
 	id = "ikea-ai"
 	description = "A Space Ikea Brand AI Core and Necessities Crate, it seems to have missed its intended target."
 	suffix = "jungle_surface_ikea_ai.dmm"
+*/
 
 /datum/map_template/ruin/jungle/coffinpirate
 	name = "Coffin-Shaped Pirate Hut"
@@ -24,17 +26,13 @@
 
 //vae's jungle ruins from bungalowstation
 
+/*
 /datum/map_template/ruin/jungle/nest
 	name = "Jungle Xenonest"
 	id = "xenonestjungle"
 	description = "A Xeno nest crammed into the Jungle."
 	suffix = "jungle_nest.dmm"
-
-/datum/map_template/ruin/jungle/hangar
-	name = "Abandoned Hangar"
-	id = "hangar"
-	description = "An abandoned hangar containing exosuits."
-	suffix = "jungle_hangar.dmm"
+*/
 
 /datum/map_template/ruin/jungle/pirate
 	name = "Jungle Pirates"
@@ -47,18 +45,6 @@
 	id = "syndicatebunkerjungle"
 	description = "A small bunker owned by the Syndicate."
 	suffix = "jungle_syndicate.dmm"
-
-/datum/map_template/ruin/jungle/village
-	name = "Monkey Village"
-	id = "monkeyvillage"
-	description = "A small village of monkeys."
-	suffix = "jungle_village.dmm"
-
-/datum/map_template/ruin/jungle/roommates
-	name = "Roommates"
-	id = "roommates"
-	description = "A shack once inhabited by a clown and a mime... and they were roommates."
-	suffix = "jungle_surface_roommates.dmm"
 
 /datum/map_template/ruin/jungle/interceptor
 	name = "Old Crashed Interceptor"
