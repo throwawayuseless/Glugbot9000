@@ -3588,7 +3588,7 @@
 #include "modular_pentest\mapping\ruins_icemoon\modular_icemoon.dm"
 #include "modular_pentest\mapping\ruins_jungle\modular_jungle.dm"
 #include "modular_pentest\mapping\ruins_lavaland\modular_lavaland.dm"
-#include "modular_pentest\mapping\ruins_lavaland\modular_RockRuins.dm"
+#include "modular_pentest\mapping\ruins_rockplanet\modular_rockplanet.dm"
 #include "modular_pentest\modules\hair_styles\code\hair.dm"
 #include "modular_pentest\modules\serenity_clothes\code\turf.dm"
 #include "modular_pentest\modules\serenity_clothes\code\worn.dm"
