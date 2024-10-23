@@ -16,23 +16,15 @@
 	id = "ikea-ai"
 	description = "A Space Ikea Brand AI Core and Necessities Crate, it seems to have missed its intended target."
 	suffix = "jungle_surface_ikea_ai.dmm"
-*/
 
-/datum/map_template/ruin/jungle/coffinpirate
-	name = "Coffin-Shaped Pirate Hut"
-	id = "coffinpirate"
-	description = "An odd coffin shaped pirate hut that the inhabitant of died in."
-	suffix = "jungle_surface_coffinpirate.dmm"
-
-//vae's jungle ruins from bungalowstation
-
-/*
 /datum/map_template/ruin/jungle/nest
 	name = "Jungle Xenonest"
 	id = "xenonestjungle"
 	description = "A Xeno nest crammed into the Jungle."
 	suffix = "jungle_nest.dmm"
 */
+
+//vae's jungle ruins from bungalowstation
 
 /datum/map_template/ruin/jungle/syndicate
 	name = "Jungle Syndicate Bunker"
