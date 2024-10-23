@@ -34,12 +34,6 @@
 	suffix = "jungle_nest.dmm"
 */
 
-/datum/map_template/ruin/jungle/pirate
-	name = "Jungle Pirates"
-	id = "piratejungle"
-	description = "A group of pirates on a small ship in the jungle."
-	suffix = "jungle_pirate.dmm"
-
 /datum/map_template/ruin/jungle/syndicate
 	name = "Jungle Syndicate Bunker"
 	id = "syndicatebunkerjungle"
