@@ -30,37 +30,11 @@
 	name = "Pandora Arena"
 	description = "Some... thing has settled here."
 
-/* Greeble
-/datum/map_template/ruin/wasteplanet/pod
-	name = "Derelict pod"
-	id = "oldpod"
-	description = "A large, old pod."
-	suffix = "wasteplanet_pod.dmm"
-*/
-
-/datum/map_template/ruin/wasteplanet/crash_kitchen
-	name = "Crashed Kitchen"
-	description = "A crashed part of some unlucky ship."
-	id = "crash_kitchen"
-	suffix = "wasteplanet_crash_kitchen.dmm"
-
 /datum/map_template/ruin/wasteplanet/radiation
 	name = "Honorable deeds storage"
 	id = "wasteplanet_radiation"
 	description = "A dumping ground for nuclear waste."
 	suffix = "wasteplanet_unhonorable.dmm"
-
-/datum/map_template/ruin/wasteplanet/tradepost
-	name = "Tradepost"
-	id = "oldpod"
-	description = "An abandoned tradepost."
-	suffix = "wasteplanet_tradepost.dmm"
-
-/datum/map_template/ruin/wasteplanet/tarpit
-	name = "Tar pit"
-	id = "tarpit"
-	description = "A facility once constructed over a asphalt deposit."
-	suffix = "wasteplanet_tarpit.dmm"
 
 /datum/map_template/ruin/wasteplanet/abandoned_mechbay
 	name = "Abandoned Mech Bay"
