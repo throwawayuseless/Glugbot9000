@@ -15,6 +15,7 @@
 	cost = 10
 	allow_duplicates = FALSE
 
+/*
 /datum/map_template/ruin/lavaland/xeno_nest
 	name = "Xenomorph Nest"
 	id = "xeno-nest"
@@ -22,6 +23,7 @@
 	Quality memes."
 	suffix = "lavaland_surface_xeno_nest.dmm"
 	cost = 20
+*/
 
 /datum/map_template/ruin/lavaland/elephant_graveyard
 	name = "Elephant Graveyard"
@@ -37,11 +39,13 @@
 	description = "An ancient temple belonging to some long-gone inhabitants, wrecked and buried by the volcanic activity of it's home planet."
 	suffix = "lavaland_surface_buried_shrine.dmm"
 
+/*
 /datum/map_template/ruin/lavaland/codelab
 	name = "Nanotrasen Genetic Research Facility"
 	id = "codelab"
 	description = "A Nanotrasen genetic research facility, abandoned and ripe for looting. Whats that goo over there?"
 	suffix = "lavaland_surface_codelab.dmm"
+*/
 
 /datum/map_template/ruin/lavaland/lava_canyon
 	name = "Lava Canyon"

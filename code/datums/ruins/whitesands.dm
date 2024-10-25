@@ -17,11 +17,6 @@
 	suffix = "whitesands_surface_pubbyslopcrash.dmm"
 
 //////////OUTSIDE SETTLEMENTS/RUINS//////////
-/datum/map_template/ruin/whitesands/survivors/drugstore
-	name = "Abandoned Store"
-	id = "ws-drugstore"
-	description = "A store that once sold a variety of items and equipment."
-	suffix = "whitesands_surface_camp_drugstore.dmm"
 
 /datum/map_template/ruin/whitesands/survivors/saloon
 	name = "Hermit Saloon"

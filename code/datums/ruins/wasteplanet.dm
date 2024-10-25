@@ -6,23 +6,11 @@
 	cost = 5
 	ruin_type = RUINTYPE_WASTE
 
-/datum/map_template/ruin/wasteplanet/fortress
-	name = "Fortress of Solitide"
-	id = "solitude"
-	description = "A fortress, although one you are probably more familiar with."
-	suffix = "wasteplanet_fortress_of_solitide.dmm"
-
 /datum/map_template/ruin/wasteplanet/weaponstest
 	name = "Weapons testing facility"
 	id = "guntested"
 	description = "A abandoned Nanotrasen weapons facility, presumably the place where the X-01 was manufactured."
 	suffix = "wasteplanet_lab.dmm"
-
-/datum/map_template/ruin/wasteplanet/oreprocess
-	name = "Ore Processing Facility"
-	id = "oreprocess"
-	description = "A fortress, although one you are probably more familiar with.."
-	suffix = "wasteplanet_ore_proccessing_facility.dmm"
 
 /datum/map_template/ruin/wasteplanet/pandora
 	id = "pandora_arena"
