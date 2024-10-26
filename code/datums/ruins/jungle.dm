@@ -4,26 +4,6 @@
 	prefix = "_maps/RandomRuins/JungleRuins/"
 	ruin_type = RUINTYPE_JUNGLE
 
-/*
-/datum/map_template/ruin/jungle/jungle_botany_ruin
-	id = "jungle_botany-ruin"
-	suffix = "jungle_botany.dmm"
-	name = "Ruined Botany Research Facility"
-	description = "A research facility of great botany discoveries. Long since abandoned, willingly or not..."
-
-/datum/map_template/ruin/jungle/ai_ikea
-	name = "Space Ikea AI Shipment"
-	id = "ikea-ai"
-	description = "A Space Ikea Brand AI Core and Necessities Crate, it seems to have missed its intended target."
-	suffix = "jungle_surface_ikea_ai.dmm"
-
-/datum/map_template/ruin/jungle/nest
-	name = "Jungle Xenonest"
-	id = "xenonestjungle"
-	description = "A Xeno nest crammed into the Jungle."
-	suffix = "jungle_nest.dmm"
-*/
-
 //vae's jungle ruins from bungalowstation
 
 /datum/map_template/ruin/jungle/syndicate
