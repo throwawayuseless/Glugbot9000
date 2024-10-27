@@ -246,7 +246,7 @@
 				adjustHealth(-rand(1,3) / rating)
 
 			// Harvest code
-			if(age > (myseed.production * 15) && (age - lastproduce) > (myseed.production * 15) && (!harvest && !dead))
+			if(age > (myseed.production * 1.5) && (age - lastproduce) > (myseed.production * 1.5) && (!harvest && !dead))
 				if(myseed && myseed.yield != -1) // Unharvestable shouldn't be harvested
 					harvest = TRUE
 				else
