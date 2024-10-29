@@ -61,7 +61,7 @@
 /datum/quirk/brainproblems/on_process()
 	if(quirk_holder.stat != DEAD)
 		if(!quirk_holder.isLivingSSD())
-			quirk_holder.adjustOrganLoss(ORGAN_SLOT_BRAIN, 0.1)
+			quirk_holder.adjustOrganLoss(ORGAN_SLOT_BRAIN, 0.05)
 
 /datum/quirk/deafness
 	name = "Deaf"

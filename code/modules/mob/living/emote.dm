@@ -405,6 +405,7 @@
 	stat_allowed = UNCONSCIOUS
 	/// Timer for the blink to wear off
 	var/snore_timer = TIMER_ID_NULL
+	logged = FALSE
 
 /datum/emote/living/snore/run_emote(mob/user, params, type_override, intentional)
 	. = ..()
