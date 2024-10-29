@@ -302,7 +302,7 @@ export const ShipSelect = (props, context) => {
                     <a
                       href={
                         'https://github.com/PentestSS13/Pentest/tree/master/_maps/shuttles/_images/' +
-                        template.name +
+                        template.name + // template.name is the ships map_name from its .json file
                         '.png'
                       }
                       target="_blank"
@@ -320,8 +320,7 @@ export const ShipSelect = (props, context) => {
                     >
                       Here
                     </a>
-                  </LabeledList.Item>
-*/}
+                  </LabeledList.Item>*/}
                 </LabeledList>
               </Collapsible>
             ))}
