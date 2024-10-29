@@ -298,6 +298,20 @@ export const ShipSelect = (props, context) => {
                       data.autoMeet
                     )}
                   </LabeledList.Item>
+                  <LabeledList.Item label="Ship Github Image Link">
+                    <a
+                      href={
+                        'https://github.com/PentestSS13/Pentest/tree/master/_maps/shuttles/_images/' +
+                        template.name +
+                        '.png'
+                      }
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Here
+                    </a>
+                  </LabeledList.Item>
+                  {/*
                   <LabeledList.Item label="Wiki Link">
                     <a
                       href={'https://shiptest.net/wiki/' + template.name}
@@ -307,6 +321,7 @@ export const ShipSelect = (props, context) => {
                       Here
                     </a>
                   </LabeledList.Item>
+*/}
                 </LabeledList>
               </Collapsible>
             ))}
