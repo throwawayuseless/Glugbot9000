@@ -1,0 +1,4 @@
+author: Vect0r2
+changes:
+  - {rscadd: Halves brain damage from the brain tumor trait}
+delete-after: true
