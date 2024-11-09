@@ -1,0 +1,4 @@
+author: Yobrocharlie
+changes:
+  - {rscdel: Makes Daniel an admin only spawn}
+delete-after: true
