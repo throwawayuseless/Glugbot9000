@@ -1,0 +1,4 @@
+author: Ossa88
+changes:
+  - {bugfix: Ship Selects Wiki Page now links to Github Images}
+delete-after: true

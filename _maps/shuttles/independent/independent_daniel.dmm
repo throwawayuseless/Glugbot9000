@@ -489,12 +489,13 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "js" = (
-/obj/structure/mirror/magic{
-	pixel_y = 31
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/sink{
 	pixel_y = 23
+	},
+/obj/structure/mirror{
+	pixel_y = 32;
+	layer = 2
 	},
 /turf/open/floor/mineral/titanium/white,
 /area/ship/crew)
@@ -2208,6 +2209,14 @@
 /obj/item/clothing/under/rank/security/officer/military,
 /obj/item/clothing/under/rank/security/officer/military,
 /obj/item/gun_voucher/syndicate,
+/obj/item/clothing/neck/cloak/gezena{
+	name = "A cool cape";
+	desc = "A cape made to look like a Aziulhauz as such its quite culturally insensitive"
+	},
+/obj/item/clothing/neck/cloak/gezena{
+	name = "A cool cape";
+	desc = "A cape made to look like a Aziulhauz as such its quite culturally insensitive"
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "Ve" = (
