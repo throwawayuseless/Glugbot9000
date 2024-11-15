@@ -1,11 +1,11 @@
 {
-	"$schema": "https://raw.githubusercontent.com/constellado/Pentest/master/_maps/ship_config_schema.json",
+	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Daniel-class Exploration Vessel",
 	"prefix": "SV",
 	"namelists": ["NATURAL"],
 	"map_short_name": "Daniel-class",
 	"map_path": "_maps/shuttles/independent/independent_daniel.dmm",
-	"description": "The Daniel-Class is daniels house, yea its just his house (It would be hilarious if you spawned this in while daniel was already in one).",
+	"description": "The Daniel-class is daniels house, yea its just his house (It would be hilarious if you spawned this in while daniel was already in one).",
 	"tags": [
 		"RP Focus"
 	],
