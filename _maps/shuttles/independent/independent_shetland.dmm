@@ -377,6 +377,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/cyan/visible/layer5,
 /obj/item/radio/intercom/directional/east,
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/engine)
 "dl" = (
@@ -930,9 +933,6 @@
 /obj/machinery/atmospherics/pipe/simple/cyan/visible/layer5{
 	dir = 5
 	},
-/obj/structure/cable/yellow{
-	icon_state = "4-10"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
@@ -944,6 +944,12 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/dark/visible{
 	dir = 10
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/engine)
@@ -2145,6 +2151,9 @@
 /obj/structure/cable{
 	icon_state = "1-6"
 	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/engine)
 "sb" = (
@@ -2698,9 +2707,6 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/engine)
 "wW" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-6"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 6
 	},
@@ -2709,6 +2715,12 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/dark/visible{
 	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-5"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-6"
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
@@ -3130,14 +3142,11 @@
 /obj/effect/turf_decal/number/zero{
 	dir = 8
 	},
-/obj/structure/cable/yellow{
-	icon_state = "5-9"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "5-10"
-	},
 /obj/machinery/atmospherics/pipe/layer_manifold/visible{
 	dir = 4
+	},
+/obj/structure/cable/yellow{
+	icon_state = "9-10"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/engine)
@@ -4057,6 +4066,10 @@
 /obj/machinery/atmospherics/pipe/simple/green/visible,
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable{
+	icon_state = "0-6"
+	},
 /turf/open/floor/plating,
 /area/ship/hallway/aft)
 "Jb" = (
@@ -5783,6 +5796,9 @@
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-10"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/engine)
