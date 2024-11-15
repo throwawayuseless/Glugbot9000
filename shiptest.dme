@@ -3596,5 +3596,4 @@
 #include "modular_pentest\modules\serenity_clothes\code\turf.dm"
 #include "modular_pentest\modules\serenity_clothes\code\worn.dm"
 #include "modular_pentest\modules\umbrella\code\umbrellas.dm"
-#include "modular_pentest\ruins\ruins.dm"
 // END_INCLUDE
