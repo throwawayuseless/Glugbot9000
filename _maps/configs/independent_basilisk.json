@@ -50,5 +50,9 @@
 	"limit": 1,
 	"starting_funds": 2000,
 	"enabled": true,
-	"space_spawn": false
+	"space_spawn": false,
+	"architect": "Culls-The-Leviathan",
+	"contributors": [
+		"No Contributors"
+	]
 }
