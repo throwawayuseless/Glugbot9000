@@ -189,9 +189,9 @@
 			"description": "Pentest Exclusive: Select ships have been given custom overmap icons. The icon name is placed here. This is for when docked in space.",
 			"default": null
 		},
-		"lead_architect":{
+		"architect":{
 			"title": "Navel Yard Architect",
-			"type": [ "null", "string" ],
+			"type": "string",
 			"description": "Pentest Exclusive: Tribute to the orginal designer.",
 			"default": null
 		},
