@@ -30,5 +30,8 @@
 	"starting_funds": 6000,
 	"enabled": false,
 	"space_spawn": false,
-	"lead_architect": "Daniel Cola"
+	"architect": "Daniel Cola",
+	"contributors": [
+		"No Contributors"
+	]
 }

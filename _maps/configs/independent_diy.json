@@ -28,5 +28,9 @@
 	"limit": 2,
 	"starting_funds": 0,
 	"enabled": false,
-	"space_spawn": false
+	"space_spawn": false,
+	"architect": "Unknown",
+	"contributors": [
+		"Ossa / SYNAPSE - Porting to Pentest"
+	]
 }

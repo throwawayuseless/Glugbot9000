@@ -79,7 +79,11 @@
 	"starting_funds": 2000,
 	"enabled": true,
 	"space_spawn": false,
+
 	"ship_icon": "cheyenne",
 	"empty_space_icon": "cheyenne_space",
-	"lead_architect": "Ossa/SYNAPSE"
+	"architect": "Ossa / SYNAPSE",
+	"contributors": [
+		"No Contributors"
+	]
 }
