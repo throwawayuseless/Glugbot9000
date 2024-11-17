@@ -12,29 +12,33 @@
 
 /////////////
 
-/area/ruin/space/way_home
-	name = "\improper Salvation"
-	icon_state = "away"
-	always_unpowered = FALSE
+//astraeus
 
-// Onehalf Ruin
+/area/ruin/space/has_grav/astraeus/hallway
+	name = "Hallway"
+	icon_state = "hallC"
 
-/area/ruin/space/has_grav/onehalf
-	name = "Station Fragment"
-	icon_state = "away"
+/area/ruin/space/has_grav/astraeus/munitions
+	name = "Munitions Bay"
+	icon_state = "engine"
 
-//Dinner For Two
+/area/ruin/space/has_grav/astraeus/dorms_med
+	name = "Conference Room"
+	icon_state = "Sleep"
 
-/area/ruin/space/has_grav/powered/dinner_for_two
-	name = "Dinner for Two"
+/area/ruin/space/has_grav/astraeus/bridge
+	name = "Bridge"
+	icon_state = "bridge"
 
-//Aesthetic
+/area/ruin/space/has_grav/astraeus/disposals
+	name = "Disposals"
+	icon_state = "yellow"
 
-/area/ruin/space/has_grav/powered/aesthetic
-	name = "Aesthetic"
-	ambientsounds = list('sound/ambience/ambivapor1.ogg')
+/area/ruin/space/has_grav/astraeus/custodial
+	name = "Custodial Closet"
+	icon_state = "green"
 
-//Ruin of Derelict Oupost
+//big derelect 1
 
 /area/ruin/space/has_grav/derelictoutpost
 	name = "Derelict Outpost"
@@ -55,6 +59,111 @@
 /area/ruin/space/has_grav/derelictoutpost/dockedship
 	name = "Derelict Outpost Docked Ship"
 	icon_state = "red"
+
+//Corporate Mining Ruin
+
+/area/ruin/space/has_grav/corporatemine/crewquarters
+	name = "Corporate Mine Crew Quarters"
+	icon_state = "purple"
+
+/area/ruin/space/has_grav/corporatemine/bridge
+	name = "Corporate Mine Bridge"
+	icon_state = "bridge"
+
+/area/ruin/space/has_grav/corporatemine/hall
+	name = "Corporate Mine Hall"
+	icon_state = "hallC"
+
+// Onehalf Ruin
+
+/area/ruin/space/has_grav/onehalf
+	name = "Station Fragment"
+	icon_state = "away"
+
+//POWER PUZZLE
+
+/area/ruin/space/has_grav/powerpuzzle
+	name = "Central Storage"
+	icon_state = "hallC"
+
+/area/ruin/space/has_grav/powerpuzzle/secure
+	name = "Security Wing"
+	icon_state = "red"
+
+/area/ruin/space/has_grav/powerpuzzle/engineering
+	name = "Engineering Wing"
+	icon_state = "yellow"
+
+//Singularity Lab
+
+/area/ruin/space/has_grav/singularitylab
+	name = "Asteroid Halls"
+	icon_state = "hallC"
+
+/area/ruin/space/has_grav/singularitylab/reactor
+	name = "Singularity Reactor"
+	icon_state = "engine"
+
+/area/ruin/space/has_grav/singularitylab/engineering
+	name = "Asteroid Engineering"
+	icon_state = "blue"
+
+/area/ruin/space/has_grav/singularitylab/lab
+	name = "High Energy Applications Research Facility"
+	icon_state = "green"
+
+/area/ruin/space/has_grav/singularitylab/cargo
+	name = "Asteroid Cargo"
+	icon_state = "storage"
+
+/area/ruin/space/has_grav/singularitylab/hangar
+	name = "Asteroid Hangar"
+	icon_state = "yellow"
+
+/area/ruin/space/has_grav/singularitylab/civvie
+	name = "Asteroid Housing"
+	icon_state = "Sleep"
+
+//Space Mall
+
+/area/ruin/space/has_grav/spacemall
+	name = "Hallway"
+	icon_state = "hallC"
+
+/area/ruin/space/has_grav/spacemall/shop
+	name = "Space Mall Shop"
+	icon_state = "red"
+
+/area/ruin/space/has_grav/spacemall/shop2
+	name = "Space Mall Shop"
+	icon_state = "bluenew"
+
+/area/ruin/space/has_grav/spacemall/maint
+	name = "Space Mall Maintenance"
+	icon_state = "yellow"
+
+/area/ruin/space/has_grav/spacemall/dorms
+	name = "Space Mall Dorms"
+	icon_state = "green"
+
+/area/ruin/space/has_grav/spacemall/shuttle
+	name = "Space Mall Supply Shuttle"
+	icon_state = "blue"
+
+//
+// Legacy Areas Below... Locating where they exist in maps
+//
+
+//Dinner For Two
+
+/area/ruin/space/has_grav/powered/dinner_for_two
+	name = "Dinner for Two"
+
+//Aesthetic
+
+/area/ruin/space/has_grav/powered/aesthetic
+	name = "Aesthetic"
+	ambientsounds = list('sound/ambience/ambivapor1.ogg')
 
 //Ruin of Deep Storage
 
@@ -180,7 +289,6 @@
 	name = "Abandoned Ship"
 	icon_state = "red"
 
-
 //SYNDICATE LISTENING POST STATION
 
 /area/ruin/space/has_grav/listeningstation
@@ -190,234 +298,3 @@
 /area/ruin/space/has_grav/powered/ancient_shuttle
 	name = "Ancient Shuttle"
 	icon_state = "yellow"
-
-//HELL'S FACTORY OPERATING FACILITY
-
-/area/ruin/space/has_grav/hellfactory
-	name = "Hell Factory"
-	icon_state = "yellow"
-
-/area/ruin/space/has_grav/hellfactoryoffice
-	name = "Hell Factory Office"
-	icon_state = "red"
-	area_flags = VALID_TERRITORY | BLOBS_ALLOWED | NOTELEPORT
-
-//Ruin of Transport 18
-
-/area/ruin/space/has_grav/transport18fore
-	name = "Booze Cruise Fore"
-	icon_state = "crew_quarters"
-
-/area/ruin/space/has_grav/transport18mid
-	name = "Booze Cruise Hold"
-	icon_state = "cargo_bay"
-
-/area/ruin/space/transport18aft
-	name = "Booze Cruise Aft"
-	icon_state = "engine"
-
-//Ruin of the rad ship. It's pretty rad.
-
-/area/ruin/space/has_grav/radship/Cargo1
-	name = "Cargo Bay 1"
-	icon_state = "cargo_bay"
-
-/area/ruin/space/has_grav/radship/Cargo2
-	name = "Cargo Bay 2"
-	icon_state = "cargo_bay"
-
-/area/ruin/space/has_grav/radship/Cargo3
-	name = "Cargo Bay 3"
-	icon_state = "cargo_bay"
-
-/area/ruin/space/has_grav/radship/Cargo4
-	name = "Cargo Bay 4"
-	icon_state = "cargo_bay"
-
-/area/ruin/space/has_grav/radship/EngineRoom
-	name = "Engine Room"
-	icon_state = "yellow"
-
-/area/ruin/space/has_grav/radship/Engineering
-	name = "Engineering"
-	icon_state = "engine"
-
-/area/ruin/space/has_grav/radship/MethLab
-	name = "Storage"
-	icon_state = "red"
-
-/area/ruin/space/has_grav/radship/CrewQuarters
-	name = "Crew Quarters"
-	icon_state = "green"
-
-/area/ruin/space/has_grav/radship/Hallway
-	name = "Hallway"
-	icon_state = "away"
-
-//MACSPACE
-
-/area/ruin/space/has_grav/powered/macspace
-	name = "Mac Space Restaurant"
-	icon_state = "yellow"
-
-//POWER PUZZLE
-
-/area/ruin/space/has_grav/powerpuzzle
-	name = "Central Storage"
-	icon_state = "hallC"
-
-/area/ruin/space/has_grav/powerpuzzle/secure
-	name = "Security Wing"
-	icon_state = "red"
-
-/area/ruin/space/has_grav/powerpuzzle/engineering
-	name = "Engineering Wing"
-	icon_state = "yellow"
-
-//scav_mining
-
-/area/ruin/space/has_grav/scav_mining/entrance
-	name = "Asteroid mine entrance"
-	icon_state = "red"
-
-/area/ruin/space/has_grav/scav_mining/core
-	name = "Asteroid mine core"
-	icon_state = "yellow"
-
-/area/ruin/space/has_grav/scav_mining/dorm
-	name = "Asteroid mine dorm"
-	icon_state = "blue"
-
-//astraeus
-
-/area/ruin/space/has_grav/astraeus/hallway
-	name = "Hallway"
-	icon_state = "hallC"
-
-/area/ruin/space/has_grav/astraeus/munitions
-	name = "Munitions Bay"
-	icon_state = "engine"
-
-/area/ruin/space/has_grav/astraeus/dorms_med
-	name = "Conference Room"
-	icon_state = "Sleep"
-
-/area/ruin/space/has_grav/astraeus/bridge
-	name = "Bridge"
-	icon_state = "bridge"
-
-/area/ruin/space/has_grav/astraeus/disposals
-	name = "Disposals"
-	icon_state = "yellow"
-
-/area/ruin/space/has_grav/astraeus/custodial
-	name = "Custodial Closet"
-	icon_state = "green"
-
-/area/ruin/space/has_grav/glade
-	name = "\improper Dark Glade"
-	icon_state = "away"
-	always_unpowered = FALSE
-
-//Syndie battle sphere
-
-/area/ruin/space/has_grav/syndicircle/halls
-	name = "Syndicate Battle Sphere Primary Hallway"
-	icon_state = "dk_yellow"
-	color = "#a5131388"
-
-/area/ruin/space/has_grav/syndicircle/spacewalk
-	name = "Syndicate Battle Sphere Shuttle Launch Site"
-	icon_state = "dk_yellow"
-	color = "#663cb488"
-
-/area/ruin/space/has_grav/syndicircle/research
-	name = "Syndicate Battle Sphere Laboratory"
-	icon_state = "dk_yellow"
-	color = "#228a2b88"
-
-/area/ruin/space/has_grav/syndicircle/escape
-	name = "Syndicate Battle Sphere Escape Shuttle"
-	icon_state = "dk_yellow"
-	color = "#92bb3388"
-
-/area/ruin/space/has_grav/syndicircle/winter
-	name = "Syndicate Battle Sphere Snow Outpost"
-	icon_state = "dk_yellow"
-	color = "#4341c488"
-
-/area/ruin/space/has_grav/syndicircle/training
-	name = "Syndicate Battle Sphere Training Grounds"
-	icon_state = "dk_yellow"
-	color = "#26773a88"
-
-
-//Singularity Lab
-
-/area/ruin/space/has_grav/singularitylab
-	name = "Asteroid Halls"
-	icon_state = "hallC"
-
-/area/ruin/space/has_grav/singularitylab/reactor
-	name = "Singularity Reactor"
-	icon_state = "engine"
-
-/area/ruin/space/has_grav/singularitylab/engineering
-	name = "Asteroid Engineering"
-	icon_state = "blue"
-
-/area/ruin/space/has_grav/singularitylab/lab
-	name = "High Energy Applications Research Facility"
-	icon_state = "green"
-
-/area/ruin/space/has_grav/singularitylab/cargo
-	name = "Asteroid Cargo"
-	icon_state = "storage"
-
-/area/ruin/space/has_grav/singularitylab/hangar
-	name = "Asteroid Hangar"
-	icon_state = "yellow"
-
-/area/ruin/space/has_grav/singularitylab/civvie
-	name = "Asteroid Housing"
-	icon_state = "Sleep"
-
-//Corporate Mining Ruin
-
-/area/ruin/space/has_grav/corporatemine/crewquarters
-	name = "Corporate Mine Crew Quarters"
-	icon_state = "purple"
-
-/area/ruin/space/has_grav/corporatemine/bridge
-	name = "Corporate Mine Bridge"
-	icon_state = "bridge"
-
-/area/ruin/space/has_grav/corporatemine/hall
-	name = "Corporate Mine Hall"
-	icon_state = "hallC"
-
-//Space Mall
-
-/area/ruin/space/has_grav/spacemall
-	name = "Hallway"
-	icon_state = "hallC"
-
-/area/ruin/space/has_grav/spacemall/shop
-	name = "Space Mall Shop"
-	icon_state = "red"
-
-/area/ruin/space/has_grav/spacemall/shop2
-	name = "Space Mall Shop"
-	icon_state = "bluenew"
-
-/area/ruin/space/has_grav/spacemall/maint
-	name = "Space Mall Maintenance"
-	icon_state = "yellow"
-
-/area/ruin/space/has_grav/spacemall/dorms
-	name = "Space Mall Dorms"
-	icon_state = "green"
-
-/area/ruin/space/has_grav/spacemall/shuttle
-	name = "Space Mall Supply Shuttle"
-	icon_state = "blue"

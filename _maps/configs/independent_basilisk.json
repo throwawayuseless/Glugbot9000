@@ -1,22 +1,20 @@
 {
-	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
-	"map_name": "Basilisk-Class Assault Cruiser",
+	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
+	"map_name": "Basilisk-class Assault Cruiser",
+	"map_short_name": "Basilisk-class",
+	"map_path": "_maps/shuttles/independent/independent_basilisk.dmm",
 	"prefix": "ISV",
-	"namelists": [
-		"GENERAL",
-		"SPACE",
-		"NATURAL"
-	],
-	"map_short_name": "Basilisk-Class",
-	"description": "Following the success of the Rigger and Raleigh classes comes the next entry to K-FP's fleet: The Basilisk-Class heavy assault cruiser. Seeking to capitalize on the growing population of independent mercenaries the Basilisk boasts everything an independent gun-for-hire might need.",
+	"description": "Following the success of the Rigger and Raleigh classes comes the next entry to K-FP's fleet: The Basilisk-class heavy assault cruiser. Seeking to capitalize on the growing population of independent mercenaries the Basilisk boasts everything an independent gun-for-hire might need.",
 	"tags": [
 		"Mercenary",
 		"Medical",
 		"Explorer"
 	],
-	"map_path": "_maps/shuttles/independent/independent_basilisk.dmm",
-	"map_id": "independent_victory",
-	"limit": 1,
+	"namelists": [
+		"GENERAL",
+		"SPACE",
+		"NATURAL"
+	],
 	"job_slots": {
 		"Commanding Officer": {
 			"outfit": "/datum/outfit/job/independent/captain/cheap",
@@ -49,5 +47,12 @@
 			"slots": 2
 		}
 	},
-	"enabled": true
+	"limit": 1,
+	"starting_funds": 2000,
+	"enabled": true,
+	"space_spawn": false,
+	"architect": "Culls-The-Leviathan",
+	"contributors": [
+		"No Contributors"
+	]
 }

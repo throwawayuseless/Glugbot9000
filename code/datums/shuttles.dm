@@ -6,6 +6,9 @@
 	var/description
 	var/list/tags
 
+	var/architect
+	var/list/contributors
+
 	var/list/movement_force // If set, overrides default movement_force on shuttle
 
 	var/port_x_offset

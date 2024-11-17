@@ -202,6 +202,12 @@ SUBSYSTEM_DEF(mapping)
 			S.ship_icon = data["ship_icon"]
 		if(istext(data["empty_space_icon"]))
 			S.empty_space_icon = data["empty_space_icon"]
+
+		if(istext(data["architect"]))
+			S.architect = data["architect"]
+		if(islist(data["contributors"]))
+			S.contributors = data["contributors"]
+
 		if(istext(data["map_short_name"]))
 			S.short_name = data["map_short_name"]
 		else

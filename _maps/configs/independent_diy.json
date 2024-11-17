@@ -1,20 +1,19 @@
 {
-	"$schema": "https://raw.githubusercontent.com/Constellado/Pentest/master/_maps/ship_config_schema.json",
+	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "BYOS-class Do-It-Yourself Enthusiast Special",
 	"map_short_name": "BYO-class",
+	"map_path": "_maps/shuttles/independent/independent_diy.dmm",
+	"prefix": "IMV",
 	"description": "Build Your Own Shuttle: Take full control of your spacefaring adventures by designing and constructing your own shuttle from the ground up! Customize its layout, functionality, and appearance to fit your crew’s needs, whether you're seeking a sleek exploration vessel or a heavily armored warship. With limitless possibilities, this feature empowers you to create the perfect ship for any mission in the Frontier.",
 	"tags": [
 		"RP Focus",
 		"Engineering"
 	],
-	"limit": 2,
-	"map_path": "_maps/shuttles/independent/independent_diy.dmm",
 	"namelists": [
 		"GENERAL",
 		"SPACE",
 		"NATURAL"
 	],
-	"prefix": "IMV",
 	"job_slots": {
 		"Architect": {
 			"outfit": "/datum/outfit/job/independent/captain",
@@ -26,5 +25,12 @@
 			"slots": 4
 		}
 	},
-	"enabled": false
+	"limit": 2,
+	"starting_funds": 0,
+	"enabled": false,
+	"space_spawn": false,
+	"architect": "Unknown",
+	"contributors": [
+		"Ossa / SYNAPSE - Porting to Pentest"
+	]
 }
