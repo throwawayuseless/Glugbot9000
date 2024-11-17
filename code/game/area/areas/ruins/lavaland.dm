@@ -26,17 +26,6 @@
 /area/ruin/unpowered/winter_biodome/sauna
 	name = "Biodome Sauna"
 
-//Gluttony
-
-/area/ruin/powered/gluttony
-	icon_state = "dk_yellow"
-
-//Golem Ship
-
-/area/ruin/powered/golem_ship
-	name = "Free Golem Ship"
-	icon_state = "dk_yellow"
-
 //Hierophant Arena
 
 /area/ruin/unpowered/hierophant
@@ -71,16 +60,7 @@
 	power_light = FALSE
 	poweralm = FALSE
 
-// Crashed Pinnance
-
-/area/ruin/unpowered/crashsite
-	name = "Crash Site"
-	icon_state = "green"
-
-/area/ruin/unpowered/crashsite/pinnance
-	name = "Pinnace Wreckage"
-	icon_state = "dk_yellow"
-	always_unpowered = TRUE
+// Code Lab
 
 /area/ruin/unpowered/codelab
 	name = "Nanotrasen Genetic Research Facility"
@@ -144,6 +124,7 @@
 	name ="Dormitory"
 	icon_state = "crew_quarters"
 	requires_power = FALSE
+
 //Buried Shrine
 
 /area/ruin/unpowered/buried_shrine
