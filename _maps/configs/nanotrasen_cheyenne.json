@@ -1,23 +1,19 @@
 {
-	"$schema": "https://raw.githubusercontent.com/constellado/Pentest/master/_maps/ship_config_schema.json",
-	"prefix": "NTSV",
-	"namelists": [
-		"NANOTRASEN",
-		"MYTHOLOGICAL",
-		"WEAPONS"
-	],
+	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Cheyenne Class Flotilla",
 	"map_short_name": "Cheyenne-class",
 	"map_path": "_maps/shuttles/nanotrasen/nanotrasen_cheyenne.dmm",
-	"map_id": "nanotrasen_cheyenne",
-	"description": "The Cheyenne-Class is a state-of-the-art Flotilla style vessel, designed and constructed by NanoTrasen to serve as a central hub for frontier operations. Built with versatility and durability in mind, the Frontier Voyager combines the functionality of a large, stationary space station with the mobility of a capital-class starship. Its vast interior is equipped with all the necessary facilities to support a variety of operations, from scientific research and mineral extraction to security and medical response.",
-	"limit": 1,
-	"ship_icon": "cheyenne",
-	"empty_space_icon": "cheyenne_space",
+	"prefix": "NTSV",
+	"description": "The Cheyenne-class is a state-of-the-art Flotilla style vessel, designed and constructed by NanoTrasen to serve as a central hub for frontier operations. Built with versatility and durability in mind, the Frontier Voyager combines the functionality of a large, stationary space station with the mobility of a capital-class starship. Its vast interior is equipped with all the necessary facilities to support a variety of operations, from scientific research and mineral extraction to security and medical response.",
 	"tags": [
 		"RP Focus",
 		"Generalist",
 		"Cargo"
+	],
+	"namelists": [
+		"NANOTRASEN",
+		"MYTHOLOGICAL",
+		"WEAPONS"
 	],
 	"job_slots": {
 		"Flotilla Commander": {
@@ -79,5 +75,15 @@
 		}
 
 	},
-	"enabled": true
+	"limit": 1,
+	"starting_funds": 2000,
+	"enabled": true,
+	"space_spawn": false,
+
+	"ship_icon": "cheyenne",
+	"empty_space_icon": "cheyenne_space",
+	"architect": "Ossa / SYNAPSE",
+	"contributors": [
+		"No Contributors"
+	]
 }

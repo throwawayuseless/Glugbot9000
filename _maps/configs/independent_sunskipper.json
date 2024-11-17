@@ -1,18 +1,19 @@
 {
-	"$schema": "https://raw.githubusercontent.com/constellado/Pentest/master/_maps/ship_config_schema.json",
+	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Sunskipper-class Culinary Vessel",
-	"prefix": "ISV",
-	"namelists": ["CRUISE", "NATURAL"],
 	"map_short_name": "Sunskipper-class",
 	"map_path": "_maps/shuttles/independent/independent_sunskipper.dmm",
+	"prefix": "ISV",
 	"description": "The Sunskipper-class is a state-of-the-art culinary vessel found in the frontier. It's name is a wordplay between a Kalixcian species of butterfly and ship's unique solar-powered batteries. The Sunskipper is welcomed with open arms by weary spacers of greater paycheks, who are fatigued by the monotony of their everyday meals. The ship features a self-sustaining kitchen with hydroponics and a large, deluxe dining hall, designed to serve starved travelers. It also comes with a fully-stocked bar area that allows them to drink their troubles away, if even for a brief moment.",
 	"tags": [
 		"RP Focus",
 		"Service",
 		"Specialist"
 	],
-	"starting_funds": 3000,
-	"limit": 1,
+	"namelists": [
+		"CRUISE",
+		"NATURAL"
+	],
 	"job_slots": {
 		"Manager": {
 			"outfit": "/datum/outfit/job/independent/captain/manager",
@@ -32,5 +33,8 @@
 			"slots": 2
 		}
 	},
-	"enabled": true
+	"limit": 1,
+	"starting_funds": 3000,
+	"enabled": true,
+	"space_spawn": false
 }

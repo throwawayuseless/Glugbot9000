@@ -1,8 +1,14 @@
 {
-	"$schema": "https://raw.githubusercontent.com/constellado/Pentest/master/_maps/ship_config_schema.json",
+	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Skipper-class Heavy Cruiser",
 	"map_short_name": "Skipper-class",
+	"map_path": "_maps/shuttles/nanotrasen/nanotrasen_skipper.dmm",
 	"prefix": "NTSV",
+	"description": "An example of one of Nanotrasen’s “standard-pattern” cruisers. The Skipper-class is well-equipped by Frontier standards, with ample room for engineering equipment, well-appointed crew accommodations, and a decent supply of defensive weaponry. Notably, the Skipper comes with a larger command section than average, and the officers on Skippers tend to be better-equipped than their peers. Though not as prestigious as a position aboard an Osprey, few Nanotrasen captains would turn down a position commanding a Skipper.",
+	"tags": [
+	"Engineering",
+	"Mining"
+	],
 	"namelists": [
 		"NANOTRASEN",
 		"SPACE",
@@ -10,13 +16,6 @@
 		"WEAPONS",
 		"MERCANTILE"
 	],
-	"map_path": "_maps/shuttles/nanotrasen/nanotrasen_skipper.dmm",
-	"description": "An example of one of Nanotrasen’s “standard-pattern” cruisers. The Skipper-class is well-equipped by Frontier standards, with ample room for engineering equipment, well-appointed crew accommodations, and a decent supply of defensive weaponry. Notably, the Skipper comes with a larger command section than average, and the officers on Skippers tend to be better-equipped than their peers. Though not as prestigious as a position aboard an Osprey, few Nanotrasen captains would turn down a position commanding a Skipper.",
-	"tags": [
-	"Engineering",
-	"Mining"
-	],
-	"starting_funds": 4500,
 	"job_slots": {
 		"Captain": {
 			"outfit": "/datum/outfit/job/nanotrasen/captain",
@@ -59,5 +58,8 @@
 			"slots": 3
 		}
 	},
-	"enabled": true
+	"limit": 2,
+	"starting_funds": 4500,
+	"enabled": true,
+	"space_spawn": false
 }

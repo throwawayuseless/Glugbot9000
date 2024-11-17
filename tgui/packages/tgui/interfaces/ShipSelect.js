@@ -321,6 +321,14 @@ export const ShipSelect = (props, context) => {
                       Here
                     </a>
                   </LabeledList.Item>*/}
+                  <LabeledList.Item label="Lead Architect">
+                    {template.architect || 'Unknown Architect'}
+                  </LabeledList.Item>
+                  <LabeledList.Item label="Contributors">
+                    {(template.contributors &&
+                      template.contributors.join(', ')) ||
+                      'Unknown Contributors'}
+                  </LabeledList.Item>
                 </LabeledList>
               </Collapsible>
             ))}

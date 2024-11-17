@@ -1,16 +1,15 @@
 {
-	"prefix": "SV",
+	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Aegis-class Long Term Exploration Ship",
 	"map_short_name": "Aegis-class",
 	"map_path": "_maps/shuttles/syndicate/syndicate_aegis.dmm",
+	"prefix": "SV",
 	"description": "After the war with the Xeomorphs, two recently discharged military personnel designed this ship to be as self-sufficient as possible. Given the significant investment of time and money, many questioned their motives. One of the ship's owners simply responded, 'To be left alone.'",
 	"tags": [
 		"Botany",
 		"Medical",
 		"RP Focus"
 	],
-	"map_id": "syndicate_aegis",
-	"limit": 1,
 	"namelists": [
 		"SUNS",
 		"SPACE",
@@ -58,5 +57,8 @@
 			"slots": 1
 		}
 	},
-	"enabled": true
+	"limit": 1,
+	"starting_funds": 2000,
+	"enabled": true,
+	"space_spawn": false
 }
