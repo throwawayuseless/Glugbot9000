@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
-	"map_name": "Cheyenne Class Flotilla",
+	"map_name": "Cheyenne-class Flotilla",
 	"map_short_name": "Cheyenne-class",
 	"map_path": "_maps/shuttles/nanotrasen/nanotrasen_cheyenne.dmm",
 	"prefix": "NTSV",
