@@ -150,7 +150,7 @@ GLOBAL_LIST_INIT(ai_core_display_screens, sortList(list(
 	"President",
 	"Random",
 	"Rainbow",
-	"Rainbowslime"
+	"Rainbowslime",
 	"RandomGod",
 	"Red",
 	"Red October",
