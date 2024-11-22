@@ -27,6 +27,7 @@
 	var/only_forced_audio = FALSE //can only code call this event instead of the player.
 	var/cooldown = 0.8 SECONDS
 	var/static/regex/stop_bad_mime = regex(@"says|exclaims|yells|asks")
+	var/logged = TRUE //! Is this logged?
 
 /datum/emote/New()
 	if (ispath(mob_type_allowed_typecache))
@@ -59,8 +60,8 @@
 
 	if(!msg)
 		return
-
-	user.log_message(msg, LOG_EMOTE)
+	if(logged)
+		user.log_message(msg, LOG_EMOTE)
 	var/space = should_have_space_before_emote(html_encode(msg)[1]) ? " " : ""
 	var/dchatmsg = "<b>[user]</b>[space][msg]"
 

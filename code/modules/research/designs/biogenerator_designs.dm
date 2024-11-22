@@ -42,6 +42,14 @@
 	make_reagents = list(/datum/reagent/consumable/blackpepper = 10)
 	category = list("initial","Food")
 
+/datum/design/sugar
+	name = "10u Sugar"
+	id = "sugar"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass= 25)
+	make_reagents = list(/datum/reagent/consumable/sugar = 10)
+	category = list("initial","Food")
+
 /datum/design/enzyme
 	name = "10u Universal Enzyme"
 	id = "enzyme"

@@ -1,0 +1,20 @@
+author: Ossa88
+changes:
+  - {bugfix: Planets should no longer spawn without ruins when generating due to bad
+      map datums}
+  - {rscadd: Added 1 remixed Beach ruin}
+  - {rscdel: Removed 1 Beach ruin}
+  - {bugfix: Updated Ice Moon Engineering Outpost}
+  - {rscadd: Added 1 remixed 1 Jungle ruin}
+  - {rscdel: Removed 8 Jungle ruins}
+  - {rscadd: Added 1 remixed Lava ruin}
+  - {rscdel: Removed 8 Lavaland ruins}
+  - {rscadd: Added 1 remixed Rockplanet ruin}
+  - {rscdel: Removed 7 Rockplanet ruins}
+  - {rscdel: Removed 6 Sandplanet ruins}
+  - {bugfix: Adjusted the loot on 2 Space ruins}
+  - {rscdel: Removed 6 Space ruins}
+  - {rscadd: Added 1 remixed Wasteland ruin}
+  - {rscdel: Removed 5 Wasteland ruins}
+  - {refactor: Prepped Area Modularization for Mappers}
+delete-after: true

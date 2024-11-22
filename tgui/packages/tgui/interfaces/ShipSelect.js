@@ -298,6 +298,20 @@ export const ShipSelect = (props, context) => {
                       data.autoMeet
                     )}
                   </LabeledList.Item>
+                  <LabeledList.Item label="Ship Github Image Link">
+                    <a
+                      href={
+                        'https://github.com/PentestSS13/Pentest/tree/master/_maps/shuttles/_images/' +
+                        template.name + // template.name is the ships map_name from its .json file
+                        '.png'
+                      }
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Here
+                    </a>
+                  </LabeledList.Item>
+                  {/*
                   <LabeledList.Item label="Wiki Link">
                     <a
                       href={'https://shiptest.net/wiki/' + template.name}
@@ -306,6 +320,14 @@ export const ShipSelect = (props, context) => {
                     >
                       Here
                     </a>
+                  </LabeledList.Item>*/}
+                  <LabeledList.Item label="Lead Architect">
+                    {template.architect || 'Unknown Architect'}
+                  </LabeledList.Item>
+                  <LabeledList.Item label="Contributors">
+                    {(template.contributors &&
+                      template.contributors.join(', ')) ||
+                      'Unknown Contributors'}
                   </LabeledList.Item>
                 </LabeledList>
               </Collapsible>

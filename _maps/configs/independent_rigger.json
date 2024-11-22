@@ -1,21 +1,20 @@
 {
-	"$schema": "https://raw.githubusercontent.com/Constellado/Pentest/master/_maps/ship_config_schema.json",
+	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Riggs-class Sloop",
-	"prefix": "SV",
-	"namelists": [
-		"GENERAL",
-		"SPACE",
-		"NATURAL"
-	],
 	"map_short_name": "Riggs-class",
+	"map_path": "_maps/shuttles/independent/independent_rigger.dmm",
+	"prefix": "SV",
 	"description": "The Riggs-class is Kasagi-Fischer Partnership’s mainstay in the independent ship market. Spacious, affordable, and versatile, the Riggs offers basic capabilities for everything a Frontier spacer might need in a convenient, easy-to-modify platform, and by default come equipped with a basic medbay, a small security office, atmospherics recycling and equipment to support an APLU utility mech. Thanks to this versatility, the Riggs has become extremely popular among moderately-wealthy independent captains, and can be found doing everything from mining to shipping to surveying Frontier planets.",
 	"tags": [
 		"Mining",
 		"Medical",
 		"Generalist"
 	],
-	"map_path": "_maps/shuttles/independent/independent_rigger.dmm",
-	"limit": 1,
+	"namelists": [
+		"GENERAL",
+		"SPACE",
+		"NATURAL"
+	],
 	"job_slots": {
 		"Captain": {
 			"outfit": "/datum/outfit/job/independent/captain/western",
@@ -48,5 +47,8 @@
 			"slots": 2
 		}
 	},
-	"enabled": true
+	"limit": 1,
+	"starting_funds": 2000,
+	"enabled": true,
+	"space_spawn": false
 }

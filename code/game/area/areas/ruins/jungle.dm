@@ -1,9 +1,4 @@
-//Thneed Factory
-
-/area/ruin/jungle/onceler/main
-	requires_power = FALSE
-	name = "Thneed Factory"
-	icon_state = "engine"
+//Jungle Ruins
 
 //Interceptor Crash Site
 
@@ -89,11 +84,8 @@
 	name = "cargo dump"
 	icon_state = "dk_yellow"
 
-/area/ruin/jungle/roommates/shack
-	name = "clown and mime hideout"
-	icon_state = "crew_quarters"
-
 // Bombed Syndicate Starport
+
 /area/ruin/jungle/starport
 	name = "Bombed Air Base"
 	icon_state = "green"
