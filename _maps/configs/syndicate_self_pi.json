@@ -1,5 +1,5 @@
 {
-	"$schema": "https://raw.githubusercontent.com/constellado/Pentest/master/_maps/ship_config_schema.json",
+	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Pi-class Robotics Cruiser",
 	"prefix": "SEV",
 	"faction_name": "Sentient Engine Liberation Front",
@@ -52,6 +52,7 @@
 		"vect0r - Modularization Help",
 		"Constellado - Design Feedback and also telling me that I need to tick the .dm file in VSCode so it can actually load in game",
 		"thedragmeme - Design Feedback",
-		"Iusedtoplayxbox - Design Feedback"
+		"Iusedtoplayxbox - Design Feedback",
+		"Ossa - Design Feedback"
 	]
 }
