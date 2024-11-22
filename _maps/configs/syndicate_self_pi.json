@@ -46,5 +46,12 @@
 			"slots": 3
 		}
 	},
-	"enabled": true
+	"enabled": true,
+	"architect": "secc",
+	"contributors": [
+		"vect0r - Modularization Help",
+		"Constellado - Design Feedback and also telling me that I need to tick the .dm file in VSCode so it can actually load in game",
+		"thedragmeme - Design Feedback",
+		"Iusedtoplayxbox - Design Feedback"
+	]
 }
