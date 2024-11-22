@@ -72,8 +72,15 @@
 		"Bartender": {
 			"outfit": "/datum/outfit/job/bartender",
 			"slots": 1
+		},
+		"Clown":{
+			"outfit": "/datum/outfit/job/clown",
+			"slots": 1
+		},
+		"Mime":{
+			"outfit": "/datum/outfit/job/mime",
+			"slots": 1
 		}
-
 	},
 	"limit": 1,
 	"starting_funds": 2000,
