@@ -3573,10 +3573,10 @@
 #include "interface\menu.dm"
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
-#include "modular_pentest\areas\ship_areas.dm"
 #include "modular_pentest\modules\hair_styles\code\hair.dm"
 #include "modular_pentest\modules\serenity_clothes\code\turf.dm"
 #include "modular_pentest\modules\serenity_clothes\code\worn.dm"
 #include "modular_pentest\modules\umbrella\code\umbrellas.dm"
 #include "modular_pentest\ruins\ruins.dm"
+#include "modular_pentest\areas\ship_areas.dm"
 // END_INCLUDE
