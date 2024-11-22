@@ -2927,10 +2927,6 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/science/robotics)
 "FJ" = (
-/obj/item/reagent_containers/food/condiment/enzyme{
-	pixel_x = -8;
-	pixel_y = 6
-	},
 /obj/machinery/reagentgrinder{
 	name = "blender";
 	pixel_y = 8;
@@ -2938,6 +2934,10 @@
 	},
 /obj/machinery/light/small/directional/south,
 /obj/structure/table/chem,
+/obj/item/reagent_containers/condiment/enzyme{
+	pixel_x = -8;
+	pixel_y = 6
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/port)
 "FM" = (
@@ -3325,10 +3325,6 @@
 /obj/item/reagent_containers/food/snacks/meat/slab,
 /obj/item/reagent_containers/food/snacks/meat/slab,
 /obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/condiment/soymilk,
-/obj/item/reagent_containers/food/condiment/soymilk,
-/obj/item/reagent_containers/food/condiment/milk,
-/obj/item/reagent_containers/food/condiment/milk,
 /obj/effect/spawner/lootdrop/donkpockets,
 /obj/structure/closet/secure_closet/freezer{
 	name = "refrigerator"
@@ -3339,6 +3335,10 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
+/obj/item/reagent_containers/condiment/milk,
+/obj/item/reagent_containers/condiment/milk,
+/obj/item/reagent_containers/condiment/soymilk,
+/obj/item/reagent_containers/condiment/soymilk,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/port)
 "KL" = (
