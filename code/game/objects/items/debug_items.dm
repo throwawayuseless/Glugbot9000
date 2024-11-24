@@ -26,10 +26,12 @@
 
 /obj/item/debug/omnitool
 	name = "omnitool"
-	desc = "The original hypertool, born before them all. Use it in hand to unleash it's true power."
+	desc = "The original hypertool, born before them all. Use it in hand to unleash its true power."
 	icon = 'icons/obj/device.dmi'
 	icon_state = "hypertool"
 	item_state = "hypertool"
+	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
 	toolspeed = 0.1
 	tool_behaviour = null
 
@@ -51,8 +53,7 @@
 	return null
 
 /obj/item/debug/omnitool/get_all_tool_behaviours()
-	return list(
-	TOOL_ANALYZER,
+	return list(TOOL_ANALYZER,
 	TOOL_CAUTERY,
 	TOOL_CROWBAR,
 	TOOL_DRILL,
