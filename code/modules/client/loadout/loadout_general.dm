@@ -182,3 +182,7 @@
 /datum/gear/parasol
 	display_name = "umbrella (black parasol)"
 	path = /obj/item/melee/transforming/umbrella/parasol
+
+/datum/gear/spess_knife
+	display_name = "Stationeer's Primary Engineering & Survival System Knife"
+	path = /obj/item/spess_knife
