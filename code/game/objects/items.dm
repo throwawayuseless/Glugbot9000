@@ -1278,4 +1278,28 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 
 	return discover_after
 
+/**
+ * Used to update the weight class of the item in a way that other atoms can react to the change.
+ *
+ * Arguments:
+ * * new_w_class - The new weight class of the item.
+ *
+ * Returns:
+ * * TRUE if weight class was successfully updated
+ * * FALSE otherwise
+ *
+ * Code was pulled from TG Stations items.dm
+ */
+
+/obj/item/proc/update_weight_class(new_w_class)
+	if(w_class == new_w_class)
+		return FALSE
+
+	var/old_w_class = w_class
+	w_class = new_w_class
+	SEND_SIGNAL(src, COMSIG_ITEM_WEIGHT_CLASS_CHANGED, old_w_class, new_w_class)
+	if(!isnull(loc))
+		SEND_SIGNAL(loc, COMSIG_ATOM_CONTENTS_WEIGHT_CLASS_CHANGED, src, old_w_class, new_w_class)
+	return TRUE
+
 #undef MAX_MATS_PER_BITE
