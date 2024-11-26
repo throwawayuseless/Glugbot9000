@@ -936,6 +936,16 @@
 /obj/effect/turf_decal/corner/opaque/mauve/half,
 /obj/machinery/firealarm/directional/south,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/table/chem,
+/obj/machinery/cell_charger,
+/obj/item/borg/upgrade/ai,
+/obj/item/mmi/posibrain{
+	pixel_x = 8
+	},
+/obj/item/mmi/posibrain{
+	pixel_y = 7;
+	pixel_x = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/science/robotics)
 "jT" = (
@@ -1120,7 +1130,9 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "mm" = (
-/obj/structure/closet/crate/secure/weapon,
+/obj/structure/closet/crate/secure/weapon{
+	name = "armor crate"
+	},
 /obj/item/clothing/head/helmet/swat,
 /obj/item/clothing/head/helmet/swat,
 /obj/item/clothing/head/helmet/swat,
@@ -2200,7 +2212,6 @@
 /obj/structure/closet/crate/medical,
 /obj/item/storage/belt/utility/full,
 /obj/item/storage/belt/utility/full,
-/obj/item/storage/firstaid,
 /obj/effect/turf_decal/corner/transparent/brown/diagonal,
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -2210,6 +2221,7 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 4
 	},
+/obj/item/storage/firstaid/regular,
 /turf/open/floor/plasteel,
 /area/ship/cargo)
 "yz" = (
@@ -2395,6 +2407,7 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
+/obj/machinery/space_heater,
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
 "AN" = (
@@ -2506,6 +2519,8 @@
 "BI" = (
 /obj/effect/turf_decal/industrial/warning,
 /obj/machinery/airalarm/directional/west,
+/obj/structure/table,
+/obj/machinery/cell_charger,
 /turf/open/floor/plasteel,
 /area/ship/cargo)
 "Ca" = (
@@ -2654,8 +2669,8 @@
 	},
 /obj/machinery/turretid{
 	pixel_y = 32;
-	req_access = null;
-	req_access_txt = "150"
+	req_access_txt = "19";
+	req_access = null
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -3095,7 +3110,12 @@
 /obj/structure/closet/crate,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/effect/spawner/lootdrop/maintenance/five,
+/obj/effect/spawner/lootdrop/salvage_matter_bin,
+/obj/effect/spawner/lootdrop/salvage_matter_bin,
+/obj/effect/spawner/lootdrop/salvage_manipulator,
+/obj/effect/spawner/lootdrop/salvage_manipulator,
+/obj/effect/spawner/lootdrop/salvage_scanning,
+/obj/effect/spawner/lootdrop/maintenance/three,
 /turf/open/floor/plasteel,
 /area/ship/cargo)
 "Ho" = (
@@ -3507,8 +3527,8 @@
 "Ma" = (
 /obj/machinery/light/directional/south,
 /obj/structure/closet/crate,
+/obj/effect/spawner/lootdrop/techstorage/rnd,
 /obj/effect/spawner/lootdrop/maintenance/five,
-/obj/effect/spawner/lootdrop/techstorage,
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
 "Mc" = (
@@ -3705,6 +3725,10 @@
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/cable_coil/random,
 /obj/item/stack/cable_coil/random,
+/obj/item/borg/upgrade/restart,
+/obj/item/borg/upgrade/restart,
+/obj/item/borg/upgrade/syndicate,
+/obj/item/borg/upgrade/syndicate,
 /turf/open/floor/plasteel,
 /area/ship/science/robotics)
 "NS" = (
@@ -4116,6 +4140,7 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
+/obj/machinery/space_heater,
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
 "Th" = (
