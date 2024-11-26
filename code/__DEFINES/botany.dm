@@ -2,8 +2,8 @@
 #define YIELD_WEED_MINIMUM 3
 #define YIELD_WEED_MAXIMUM 10
 #define STATIC_NUTRIENT_CAPACITY 10
-#define CYCLE_DELAY_DEFAULT 2000 //About 100 seconds / cycle
-#define CYCLE_DELAY_SLOW 5000 //About 250 seconds / cycle
+#define CYCLE_DELAY_DEFAULT 250 //About 25 seconds / cycle
+#define CYCLE_DELAY_SLOW 620 //About 62 seconds / cycle
 
 //Both available scanning modes for the plant analyzer.
 #define PLANT_SCANMODE_STATS 0
