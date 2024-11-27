@@ -59,11 +59,11 @@
 	)
 	for (var/upgradetype in subtypesof(/obj/item/borg/upgrade)-excluded_upgrades)
 		var/obj/item/borg/upgrade/upgrade = new upgradetype()
-		if(upgrade.module_type) // Only show upgrades that can be given. Cannot initial() lists either.
+		if(upgrade.model_type) // Only show upgrades that can be given. Cannot initial() lists either.
 			// is_type_in_list() doesn't work, so this:
 			var/has_req_module = FALSE
-			for(var/req_module_type in upgrade.module_type)
-				if(borg.module.type == req_module_type)
+			for(var/req_model_type in upgrade.model_type)
+				if(borg.module.type == req_model_type)
 					has_req_module = TRUE
 					break
 			if(!has_req_module)
