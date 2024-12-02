@@ -55,7 +55,8 @@
 		/obj/item/borg/upgrade/hypospray, //hypospray is a dummy parent for hypospray upgrades
 		/obj/item/borg/upgrade/transform,
 		/obj/item/borg/upgrade/rename,
-		/obj/item/borg/upgrade/restart
+		/obj/item/borg/upgrade/restart,
+		/obj/item/borg/upgrade/modkit,
 	)
 	for (var/upgradetype in subtypesof(/obj/item/borg/upgrade)-excluded_upgrades)
 		var/obj/item/borg/upgrade/upgrade = new upgradetype()
