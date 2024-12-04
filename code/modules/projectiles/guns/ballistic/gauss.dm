@@ -105,3 +105,14 @@
 	desc = "A Terran carbine, unusually modern for its producers. It's just modern enough for SUNS, however, who have painted the weapon in their colors. Launches ferromagnetic lances at alarming speeds."
 	icon_state = "gar_suns"
 	item_state = "gar_suns"
+
+/obj/item/gun/ballistic/automatic/powered/gauss/horizon
+name = "Horizon 'Bardiche'gauss rifle"
+	desc = "A magnetic rifle of unknown orgin, the toploading magazine is inserted into the stock."
+	icon_state = "gauss"
+	mag_type = /obj/item/ammo_box/magazine/gauss/horizon
+	fire_select_icon_state_prefix = "lance_"
+	show_magazine_on_sprite = FALSE
+	empty_indicator = FALSE
+	icon = 'icons/obj/guns/48x32guns.dmi'
+	icon_state = "horizon_gauss"
