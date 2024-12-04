@@ -30,8 +30,8 @@
 	icon_state = "gar-mag-[!!ammo_count()]"
 
 /obj/item/ammo_box/magazine/gauss/horizon
-name = "gauss magazine (ferromagnetic lances)"
-desc = "A 20-round magazine for the horizon gauss rifle. Ferromagnetic lances do good damage with significant armor penetration."
-ammo_type = /obj/item/ammo_casing/caseless/gauss/lance
-caliber = "lance"
-max_ammo = 20
+	name = "gauss magazine (ferromagnetic lances)"
+	desc = "A 20-round magazine for the horizon gauss rifle. Ferromagnetic lances do good damage with significant armor penetration."
+	ammo_type = /obj/item/ammo_casing/caseless/gauss/lance
+	caliber = "lance"
+	max_ammo = 20

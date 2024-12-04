@@ -107,7 +107,7 @@
 	item_state = "gar_suns"
 
 /obj/item/gun/ballistic/automatic/powered/gauss/horizon
-name = "Horizon 'Bardiche'gauss rifle"
+	name = "Horizon 'Bardiche'gauss rifle"
 	desc = "A magnetic rifle of unknown orgin, the toploading magazine is inserted into the stock."
 	mag_type = /obj/item/ammo_box/magazine/gauss/horizon
 	fire_select_icon_state_prefix = "lance_"
