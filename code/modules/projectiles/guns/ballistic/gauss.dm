@@ -115,3 +115,4 @@
 	empty_indicator = FALSE
 	icon = 'icons/obj/guns/48x32guns.dmi'
 	icon_state = "horizon_gauss"
+	item_state = "horizon_gauss"
