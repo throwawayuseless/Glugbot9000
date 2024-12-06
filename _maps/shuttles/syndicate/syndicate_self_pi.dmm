@@ -979,6 +979,7 @@
 	dir = 8
 	},
 /obj/item/clothing/suit/space/hardsuit/syndi/ablative,
+/obj/item/radio/intercom/wideband/directional/south,
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
 "ke" = (
@@ -3226,6 +3227,14 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
+/obj/structure/AIcore,
+/obj/item/circuitboard/aicore,
+/obj/item/mmi/posibrain,
+/obj/item/stack/sheet/rglass,
+/obj/item/stack/sheet/rglass,
+/obj/item/stack/sheet/rglass,
+/obj/item/stack/sheet/rglass,
+/obj/item/stack/sheet/rglass,
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
 "JX" = (
@@ -3486,6 +3495,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
 	},
+/obj/item/radio/intercom/directional/west,
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
 "LP" = (
@@ -4514,7 +4524,6 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/radio/intercom/wideband/directional/west,
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
 "Xj" = (
@@ -4677,7 +4686,6 @@
 /area/ship/science/robotics)
 "YX" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/item/radio/intercom/directional/west,
 /obj/effect/turf_decal/corner/transparent/syndiered/border{
 	dir = 8
 	},
