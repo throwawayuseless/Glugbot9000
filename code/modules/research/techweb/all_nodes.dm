@@ -340,9 +340,18 @@
 	display_name = "Cyborg Upgrades: Utility"
 	description = "Utility upgrades for cyborgs."
 	prereq_ids = list("adv_robotics")
-	design_ids = list("borg_upgrade_thrusters", "borg_upgrade_selfrepair", "borg_upgrade_expand", "borg_upgrade_disablercooler", "borg_upgrade_trashofholding", "borg_upgrade_advancedmop")
+	design_ids = list("borg_upgrade_thrusters", "borg_upgrade_selfrepair", "borg_upgrade_expand", "borg_upgrade_disablercooler")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
-	export_price = 5000
+	export_price = 4000
+
+/datum/techweb_node/cyborg_upg_service
+	id = "cyborg_upg_util"
+	display_name = "Cyborg Upgrades: Janitor & Service"
+	description = "Upgrades for Service cyborgs."
+	prereq_ids = list("adv_robotics")
+	design_ids = list("borg_upgrade_trashofholding", "borg_upgrade_advancedmop", "borg_upgrade_plunger", "borg_upgrade_high_capacity_replacer", "borg_upgrade_broomer", "borg_upgrade_drink_apparatus", "borg_upgrade_rolling_table", "borg_upgrade_service_apparatus", "borg_upgrade_silicon_knife", "borg_upgrade_condiment_synthesizer")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
+	export_price = 4000
 
 /datum/techweb_node/cyborg_upg_engiminer
 	id = "cyborg_upg_engiminer"
@@ -369,7 +378,7 @@
 	prereq_ids = list("adv_robotics")
 	design_ids = list("aifixer", "aicore", "safeguard_module", "onehuman_module", "protectstation_module", "quarantine_module", "oxygen_module", "freeform_module",
 	"reset_module", "purge_module", "remove_module", "freeformcore_module", "asimov_module", "paladin_module", "tyrant_module", "overlord_module", "corporate_module",
-	"default_module", "borg_ai_control", "mecha_tracking_ai_control", "aiupload", "intellicard")
+	"default_module", "borg_ai_control", "mecha_tracking_ai_control", "aiupload", "intellicard", "borg_upgrade_survey_scanner")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	export_price = 5000
 
