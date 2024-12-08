@@ -1,0 +1,4 @@
+author: Constellado
+changes:
+  - {bugfix: fixes the ice outpost's electrolyser}
+delete-after: true

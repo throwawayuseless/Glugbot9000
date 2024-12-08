@@ -31,6 +31,6 @@
 	},
 	"limit": 2,
 	"starting_funds": 2000,
-	"enabled": false,
+	"enabled": true,
 	"space_spawn": false
 }

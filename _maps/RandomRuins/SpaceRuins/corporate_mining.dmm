@@ -601,8 +601,8 @@
 /area/ruin/space/has_grav/corporatemine/crewquarters)
 "nN" = (
 /obj/structure/closet/cabinet,
-/obj/item/gun/ballistic/automatic/pistol/suppressed,
-/obj/item/ammo_box/magazine/m10mm,
+/obj/item/gun/ballistic/automatic/pistol/ringneck,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
 /obj/item/clothing/under/syndicate/donk,
 /obj/item/clothing/suit/hazardvest/donk/qm,
 /obj/item/reagent_containers/food/snacks/donkpocket,
@@ -2803,7 +2803,7 @@ Al
 Al
 Al
 VM
-TO
+Iv
 Al
 Al
 Al

@@ -5,13 +5,7 @@
 	name = "Magic Disk of Smithing"
 	illustration = "sword"
 	color = "#6F6F6F"
-
-/obj/item/disk/design_disk/adv/knight_gear/Initialize()
-	. = ..()
-	var/datum/design/knight_armour/A = new
-	var/datum/design/knight_helmet/H = new
-	blueprints[1] = A
-	blueprints[2] = H
+	starting_blueprints= list(/datum/design/knight_armour, /datum/design/knight_helmet)
 
 //lavaland_surface_seed_vault.dmm
 //Seed Vault
@@ -46,14 +40,14 @@
 
 /datum/outfit/lavaland_syndicate
 	name = "Lavaland Syndicate Agent"
-	r_hand = /obj/item/gun/ballistic/automatic/sniper_rifle
+	r_hand = /obj/item/gun/ballistic/automatic/marksman/taipan
 	uniform = /obj/item/clothing/under/syndicate
 	suit = /obj/item/clothing/suit/toggle/labcoat
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
 	ears = /obj/item/radio/headset/syndicate/alt
 	back = /obj/item/storage/backpack
-	r_pocket = /obj/item/gun/ballistic/automatic/pistol
+	r_pocket = /obj/item/gun/ballistic/automatic/pistol/ringneck
 	id = /obj/item/card/id/syndicate/anyone
 	implants = list(/obj/item/implant/weapons_auth)
 
