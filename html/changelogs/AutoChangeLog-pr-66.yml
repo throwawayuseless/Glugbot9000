@@ -1,0 +1,4 @@
+author: Constellado
+changes:
+  - {rscadd: Added new guns and tweaks from shiptest}
+delete-after: true
