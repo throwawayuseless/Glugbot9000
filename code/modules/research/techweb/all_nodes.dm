@@ -345,7 +345,7 @@
 	export_price = 4000
 
 /datum/techweb_node/cyborg_upg_service
-	id = "cyborg_upg_util"
+	id = "cyborg_upg_service"
 	display_name = "Cyborg Upgrades: Janitor & Service"
 	description = "Upgrades for Service cyborgs."
 	prereq_ids = list("adv_robotics")
