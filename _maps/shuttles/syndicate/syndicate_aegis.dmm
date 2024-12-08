@@ -71,8 +71,8 @@
 	pixel_x = 9;
 	pixel_y = 4
 	},
-/obj/item/ammo_box/magazine/smgm45,
-/obj/item/ammo_box/magazine/smgm45,
+/obj/item/ammo_box/magazine/m45_cobra,
+/obj/item/ammo_box/magazine/m45_cobra,
 /turf/open/floor/wood/walnut,
 /area/ship/security/armory)
 "aB" = (
@@ -474,18 +474,18 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "dH" = (
-/obj/structure/guncase,
+/obj/structure/guncloset,
 /obj/effect/turf_decal/box/red,
-/obj/item/gun/ballistic/automatic/sniper_rifle/syndicate/no_mag{
+/obj/item/gun/ballistic/automatic/marksman/taipan/no_mag{
 	pixel_x = -3;
 	pixel_y = 6;
 	desc = "You're a sniper!"
 	},
-/obj/item/gun/ballistic/automatic/smg/c20r/no_mag{
+/obj/item/gun/ballistic/automatic/smg/cobra/no_mag{
 	pixel_y = 3
 	},
 /obj/machinery/light/small/directional/north,
-/obj/item/gun/ballistic/automatic/smg/mini_uzi,
+/obj/item/gun/ballistic/automatic/marksman/f4,
 /turf/open/floor/plating,
 /area/ship/security/armory)
 "dL" = (

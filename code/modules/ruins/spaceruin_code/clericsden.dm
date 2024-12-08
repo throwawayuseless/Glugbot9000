@@ -5,11 +5,7 @@
 	name = "Enshrined Disc of Smiting"
 	illustration = "sword"
 	color = "#6F6F6F"
-
-/obj/item/disk/design_disk/adv/cleric_mace/Initialize()
-	. = ..()
-	var/datum/design/cleric_mace/M = new
-	blueprints[1] = M
+	starting_blueprints= list(/datum/design/cleric_mace)
 
 /obj/item/paper/fluff/ruins/clericsden/contact
 	default_raw_text = "Father Aurellion, the ritual is complete, and soon our brothers at the bastion will see the error of our ways. After all, a god of clockwork or blood? Preposterous. Only the TRUE GOD should have so much power. Signed, Father Odivallus."

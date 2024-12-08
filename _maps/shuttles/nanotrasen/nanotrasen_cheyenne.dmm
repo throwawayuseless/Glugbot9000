@@ -7543,13 +7543,13 @@
 "FN" = (
 /obj/structure/window/reinforced/spawner,
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/smg/proto{
+/obj/item/gun/ballistic/automatic/smg/cm5{
 	pixel_y = 3
 	},
-/obj/item/gun/ballistic/automatic/smg/proto{
+/obj/item/gun/ballistic/automatic/smg/cm5{
 	pixel_y = -2
 	},
-/obj/item/gun/ballistic/automatic/smg/proto{
+/obj/item/gun/ballistic/automatic/smg/cm5{
 	pixel_y = -7
 	},
 /obj/machinery/light/directional/west,
