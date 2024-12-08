@@ -115,7 +115,6 @@
 	mag_type = /obj/item/ammo_box/magazine/gauss/horizon
 	fire_sound = 'sound/weapons/gun/gauss/magrifle.ogg'
 	load_sound = 'sound/weapons/gun/gauss/rifle_reload.ogg'
-	can_suppress = FALSE
 	burst_size = 1
 	fire_delay = 0.3 SECONDS
 	spread = 0
