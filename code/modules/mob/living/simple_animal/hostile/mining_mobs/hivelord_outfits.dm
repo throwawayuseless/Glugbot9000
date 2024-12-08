@@ -46,8 +46,8 @@
 		belt = pickweight(list(
 			/obj/item/gun/ballistic/automatic/pistol/candor = 2,
 			/obj/item/gun/ballistic/automatic/pistol/commander = 1,
-			/obj/item/gun/ballistic/automatic/pistol = 1,
-			/obj/item/gun/ballistic/revolver = 1,
+			/obj/item/gun/ballistic/automatic/pistol/ringneck = 1,
+			/obj/item/gun/ballistic/revolver/viper = 1,
 			/obj/item/gun/ballistic/revolver/firebrand = 1,
 			)
 		)
@@ -304,8 +304,6 @@
 		suit = pick(/obj/item/clothing/suit/toggle/labcoat, /obj/item/clothing/suit/apron/surgical ,/obj/item/clothing/suit/hooded/wintercoat/medical)
 	if(prob(75))
 		back = pick(/obj/item/storage/backpack/medic, /obj/item/storage/backpack/satchel/med, /obj/item/storage/backpack/duffelbag/med, /obj/item/storage/backpack/messenger/med)
-	else if (prob(75))
-		back = /obj/item/defibrillator/loaded
 	if(prob(75))
 		belt = pickweight(list(/obj/item/storage/belt/medical = 5, /obj/item/defibrillator/compact/loaded = 1))
 	if(prob(75))
