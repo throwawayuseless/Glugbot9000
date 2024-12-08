@@ -3458,7 +3458,6 @@
 /area/ship/engineering/engines/starboard)
 "LG" = (
 /obj/structure/closet/crate/secure/weapon,
-/obj/item/gun/ballistic/automatic/smg/c20r,
 /obj/item/ammo_box/c45,
 /obj/item/gun/energy/laser,
 /obj/item/gun/energy/laser,
@@ -3467,8 +3466,9 @@
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/box,
-/obj/item/ammo_box/magazine/smgm45,
-/obj/item/ammo_box/magazine/smgm45,
+/obj/item/gun/ballistic/automatic/smg/cobra/sc_c20r,
+/obj/item/ammo_box/magazine/m45_cobra,
+/obj/item/ammo_box/magazine/m45_cobra,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "LJ" = (
