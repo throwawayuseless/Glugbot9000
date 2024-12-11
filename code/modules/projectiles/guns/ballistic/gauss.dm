@@ -121,31 +121,3 @@
 	desc = "A Terran carbine, unusually modern for its producers. It's just modern enough for SUNS, however, who have painted the weapon in their colors. Launches ferromagnetic lances at alarming speeds."
 	icon_state = "gar_suns"
 	item_state = "gar_suns"
-
-/obj/item/gun/ballistic/automatic/powered/gauss/horizon
-	name = "Horizon 'Bardiche' gauss rifle"
-	desc = "A magnetic rifle produced by Horizons RnD team Delta, adapted from Nanotrasen Blueprints."
-	icon_state = "gauss_horizon"
-	item_state = "arg"
-	slot_flags = 0
-	mag_type = /obj/item/ammo_box/magazine/gauss/horizon
-	fire_sound = 'sound/weapons/gun/gauss/magrifle.ogg'
-	load_sound = 'sound/weapons/gun/gauss/rifle_reload.ogg'
-	burst_size = 1
-	fire_delay = 0.3 SECONDS
-	spread = 0
-	show_magazine_on_sprite = TRUE
-	empty_indicator = TRUE
-	weapon_weight = WEAPON_MEDIUM
-	w_class = WEIGHT_CLASS_BULKY
-	charge_sections = 4
-	ammo_x_offset = 2
-	manufacturer = MANUFACTURER_NONE
-
-	spread = 0
-	spread_unwielded = 25
-	recoil = 0
-	recoil_unwielded = 4
-	wield_slowdown = 0.75
-	wield_delay = 1 SECONDS
-	fire_select_icon_state_prefix = "lance_"
