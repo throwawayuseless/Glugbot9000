@@ -125,7 +125,6 @@
 /obj/item/gun/ballistic/automatic/powered/gauss/horizon
 	name = "Horizon 'Bardiche' gauss rifle"
 	desc = "A magnetic rifle produced by Horizons RnD team Delta, adapted from Nanotrasen Blueprints."
-	icon = 'modular_pentest/modules/horizon'
 	icon_state = "gauss_horizon"
 	item_state = "arg"
 	slot_flags = 0
