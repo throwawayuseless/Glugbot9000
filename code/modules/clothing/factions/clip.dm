@@ -203,6 +203,15 @@
 
 	armor = list("melee" = 35, "bullet" = 25, "laser" = 20,"energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75)
 
+/obj/item/clothing/suit/space/hardsuit/clip_patroller/horizon_prototype
+	name = "\improper X-03 'Dagonet' Hardsuit"
+	desc = "A Horizon produced prototype Hardsuit. Adapted from a rejected Nanotrasen design."
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/clip_patroller/horizon_prototype
+
+/obj/item/clothing/head/helmet/space/hardsuit/clip_patroller/horizon_prototype
+	name = "\improper X-03 'Dagonet' Hardsuit helmet"
+	desc = "A Horizon produced prototype Hardsuit. Adapted from a rejected Nanotrasen design."
+
 /obj/item/clothing/suit/space/hardsuit/clip_spotter
 	name = "CM-490 'Spotter' Combat Hardsuit"
 	desc = "CLIP's standard EVA combat hardsuit. Due to CLIP's doctrine on range, it doesn't have advanced components that allow swift movement, and thus slows down the user despite the heavy armor."
