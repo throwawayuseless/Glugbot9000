@@ -1,0 +1,5 @@
+author: Ossa88
+changes:
+  - {bugfix: Elite Survey Scanner is no longer named Experimental Survey Scanner}
+  - {rscadd: Experimental Survey Scanner is now unique with its own sprite.}
+delete-after: true

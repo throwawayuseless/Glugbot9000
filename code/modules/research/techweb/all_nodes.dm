@@ -19,7 +19,7 @@
 		// Security Stuff
 		"sec_rshot", "sec_beanbag_slug", "sec_slug", "sec_Islug", "sec_dart", 	"sec_38", "buckshot_shell", "beanbag_slug", "rubber_shot",
 		//Handgun Ammo (Security)
-		"commanderammo", "stechkinammo", "candorammo", "m9cammo", "c9mm", "c10mm", "c45", "c556mmHITP", "rubbershot9mm", "rubbershot10mm", "rubbershot45", "rubbershot556mmHITP",
+		"commanderammo", "ringneckammo", "candorammo", "m9cammo", "c9mm", "c10mm", "c45", "c556mmHITP", "rubbershot9mm", "rubbershot10mm", "rubbershot45", "rubbershot556mmHITP",
 		// Construction Materials
 		"rglass", "plasteel", "plastitanium", "plasmaglass", "plasmareinforcedglass", "titaniumglass", "plastitaniumglass",
 		// You People Are Animals
@@ -840,8 +840,8 @@
 
 /datum/techweb_node/mech_scattershot
 	id = "mecha_tools"
-	display_name = "Exosuit Weapon (LBX AC 10 \"Scattershot\")"
-	description = "An advanced piece of mech weaponry"
+	display_name = "Exosuit Weapon (LBX-10 \"Scattershot\")"
+	description = "An advanced piece of exosuit weaponry"
 	prereq_ids = list("ballistic_weapons")
 	design_ids = list("mech_scattershot", "mech_scattershot_ammo")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
@@ -849,8 +849,8 @@
 
 /datum/techweb_node/mech_carbine
 	id = "mech_carbine"
-	display_name = "Exosuit Weapon (FNX-99 \"Hades\" Carbine)"
-	description = "An advanced piece of mech weaponry"
+	display_name = "Exosuit Weapon (FNX-99 \"Phoenix\" Carbine)"
+	description = "An advanced piece of exosuit weaponry"
 	prereq_ids = list("ballistic_weapons")
 	design_ids = list("mech_carbine", "mech_carbine_ammo")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
@@ -948,8 +948,8 @@
 
 /datum/techweb_node/mech_lmg
 	id = "mech_lmg"
-	display_name = "Exosuit Weapon (\"Ultra AC 2\" LMG)"
-	description = "An advanced piece of mech weaponry"
+	display_name = "Exosuit Weapon (\"UMG-2\" LMG)"
+	description = "An advanced piece of exosuit weaponry"
 	prereq_ids = list("ballistic_weapons")
 	design_ids = list("mech_lmg", "mech_lmg_ammo")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)

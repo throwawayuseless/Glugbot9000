@@ -2143,7 +2143,7 @@
 /area/ship/engineering/engine)
 "UK" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/guncase,
+/obj/structure/guncloset,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "US" = (
@@ -2152,7 +2152,7 @@
 	icon_state = "marine";
 	icon_vend = "null";
 	light_mask = "marine-mask";
-	voucher_items = list("P-16" = /obj/item/gun/ballistic/automatic/assault/p16, "sniper rifle" = /obj/item/gun/ballistic/automatic/sniper_rifle, "C-20r SMG" = /obj/item/gun/ballistic/automatic/smg/c20r, "Bulldog Shotgun" = /obj/item/gun/ballistic/shotgun/bulldog)
+	voucher_items = list("P-16" = /obj/item/gun/ballistic/automatic/assault/p16, "sniper rifle" = /obj/item/gun/ballistic/automatic/marksman/taipan, "C-20r SMG" = /obj/item/gun/ballistic/automatic/smg/cobra, "Bulldog Shotgun" = /obj/item/gun/ballistic/shotgun/bulldog)
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
@@ -2424,7 +2424,7 @@
 /turf/open/floor/wood/birch,
 /area/ship/crew)
 "YG" = (
-/obj/structure/guncase,
+/obj/structure/guncloset,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "YT" = (

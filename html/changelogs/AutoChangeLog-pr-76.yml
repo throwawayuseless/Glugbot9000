@@ -1,0 +1,4 @@
+author: Constellado
+changes:
+  - {bugfix: fixes V's outpost ruin}
+delete-after: true
