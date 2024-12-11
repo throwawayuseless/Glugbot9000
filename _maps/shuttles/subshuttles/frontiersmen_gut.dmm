@@ -434,7 +434,8 @@
 /area/ship/storage)
 "Dr" = (
 /turf/open/floor/plasteel/stairs{
-	icon = 'icons/obj/stairs.dmi';
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "stairs_modern_dark";
 	dir = 1
 	},
 /area/ship/storage)

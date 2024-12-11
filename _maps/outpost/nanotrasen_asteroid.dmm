@@ -237,7 +237,8 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/stairs{
-	icon = 'icons/obj/stairs.dmi';
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "stairs_modern_dark";
 	dir = 8
 	},
 /area/outpost/engineering/atmospherics)
@@ -1689,7 +1690,8 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/stairs{
-	icon = 'icons/obj/stairs.dmi';
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "stairs_modern_dark";
 	dir = 1
 	},
 /area/outpost/crew/cryo)
@@ -6517,7 +6519,8 @@
 /area/outpost/crew/cryo)
 "wY" = (
 /turf/open/floor/plasteel/stairs{
-	icon = 'icons/obj/stairs.dmi';
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "stairs_modern_dark";
 	dir = 1
 	},
 /area/outpost/engineering)
@@ -9395,7 +9398,8 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/stairs{
-	icon = 'icons/obj/stairs.dmi';
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "stairs_modern_dark";
 	dir = 1
 	},
 /area/outpost/engineering)
@@ -9581,7 +9585,8 @@
 /area/outpost/crew/canteen)
 "HE" = (
 /turf/open/floor/plasteel/stairs{
-	icon = 'icons/obj/stairs.dmi';
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "stairs_modern_dark";
 	dir = 8
 	},
 /area/outpost/engineering/atmospherics)
@@ -13160,7 +13165,8 @@
 	icon_state = "0-8"
 	},
 /turf/open/floor/plasteel/stairs{
-	icon = 'icons/obj/stairs.dmi';
+	icon = 'icons/turf/floors.dmi';
+	icon_state = "stairs_modern_dark";
 	dir = 8
 	},
 /area/outpost/engineering/atmospherics)
