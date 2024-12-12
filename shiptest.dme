@@ -3611,6 +3611,7 @@
 #include "modular_pentest\modules\hair_styles\code\hair.dm"
 #include "modular_pentest\modules\pi_items\code\clothing.dm"
 #include "modular_pentest\modules\pi_items\code\flooring_decals.dm"
+#include "modular_pentest\modules\pi_items\code\loadout_selfrelated.dm"
 #include "modular_pentest\modules\pi_items\code\outfits.dm"
 #include "modular_pentest\modules\pi_items\code\plushes.dm"
 #include "modular_pentest\modules\serenity_clothes\code\turf.dm"

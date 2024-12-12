@@ -231,12 +231,13 @@
 /obj/structure/closet/toolcloset/empty,
 /obj/item/storage/toolbox/syndicate,
 /obj/item/storage/toolbox/syndicate,
-/obj/item/storage/toolbox/electrical,
 /obj/item/clothing/glasses/welding,
-/obj/item/multitool,
 /obj/effect/turf_decal/industrial/warning/cee{
 	dir = 4
 	},
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/electrical,
+/obj/item/multitool,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/engines/port)
 "cj" = (
@@ -759,7 +760,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/plasteel/patterned,
+/turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
 "hQ" = (
 /obj/machinery/door/airlock{
@@ -1832,6 +1833,9 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/science/robotics)
+"uw" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ship/security/armory)
 "uC" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/bridge)
@@ -3537,7 +3541,6 @@
 "Ma" = (
 /obj/machinery/light/directional/south,
 /obj/structure/closet/crate,
-/obj/effect/spawner/lootdrop/techstorage/rnd,
 /obj/effect/spawner/lootdrop/maintenance/five,
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
@@ -3739,6 +3742,9 @@
 /obj/item/borg/upgrade/restart,
 /obj/item/borg/upgrade/syndicate,
 /obj/item/borg/upgrade/syndicate,
+/obj/item/stock_parts/cell/high,
+/obj/item/stock_parts/cell/high,
+/obj/item/stock_parts/cell/high,
 /turf/open/floor/plasteel,
 /area/ship/science/robotics)
 "NS" = (
@@ -3874,6 +3880,7 @@
 /obj/item/mecha_parts/part/ripley_right_arm,
 /obj/item/mecha_parts/part/ripley_left_leg,
 /obj/item/mecha_parts/part/ripley_left_arm,
+/obj/item/stock_parts/cell/high,
 /turf/open/floor/plasteel,
 /area/ship/science/robotics)
 "PA" = (
@@ -4102,7 +4109,7 @@
 /area/ship/hallway/port)
 "Su" = (
 /obj/machinery/porta_turret/ship/syndicate/weak,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/bridge)
 "SA" = (
 /obj/machinery/computer/rdconsole{
@@ -4514,6 +4521,9 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/cargo)
+"WQ" = (
+/turf/closed/wall/r_wall/syndicate/nodiagonal,
+/area/ship/storage)
 "WV" = (
 /obj/structure/sign/poster/contraband/syndicate,
 /turf/closed/wall,
@@ -5061,7 +5071,7 @@ sw
 (11,1,1) = {"
 Dh
 jK
-rL
+WQ
 Gw
 Ld
 pl
@@ -5090,7 +5100,7 @@ Aj
 (12,1,1) = {"
 Dh
 Lz
-rL
+WQ
 Of
 aY
 Tk
@@ -5520,7 +5530,7 @@ HU
 tD
 hY
 mm
-HU
+uw
 "}
 (27,1,1) = {"
 Aj
@@ -5549,7 +5559,7 @@ HU
 FA
 FP
 LG
-HU
+uw
 "}
 (28,1,1) = {"
 Aj
