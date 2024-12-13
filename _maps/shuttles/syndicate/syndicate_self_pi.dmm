@@ -1891,10 +1891,10 @@
 /obj/machinery/airalarm/directional/north,
 /obj/structure/table/reinforced,
 /obj/item/areaeditor/shuttle,
-/obj/item/pen/collectible/esword,
 /obj/item/paper_bin,
 /obj/item/folder,
 /obj/effect/turf_decal/corner/transparent/syndiered/full,
+/obj/item/pen/collectible/secborg,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "vk" = (
@@ -4522,8 +4522,9 @@
 /turf/open/floor/plasteel,
 /area/ship/cargo)
 "WQ" = (
+/obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/storage)
+/area/ship/crew/cryo)
 "WV" = (
 /obj/structure/sign/poster/contraband/syndicate,
 /turf/closed/wall,
@@ -5070,8 +5071,8 @@ sw
 "}
 (11,1,1) = {"
 Dh
-jK
-WQ
+CG
+rL
 Gw
 Ld
 pl
@@ -5099,8 +5100,8 @@ Aj
 "}
 (12,1,1) = {"
 Dh
-Lz
 WQ
+rL
 Of
 aY
 Tk
