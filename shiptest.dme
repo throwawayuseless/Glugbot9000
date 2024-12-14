@@ -3609,7 +3609,6 @@
 #include "modular_pentest\_maps\ruins_wasteplanet\_modular_wasteplanet.dm"
 #include "modular_pentest\_maps\ships\_areas_ships.dm"
 #include "modular_pentest\modules\hair_styles\code\hair.dm"
-#include "modular_pentest\modules\protein_powder\protein_powder.dm"
 #include "modular_pentest\modules\protein_powder\code\protein_powder.dm"
 #include "modular_pentest\modules\serenity_clothes\code\turf.dm"
 #include "modular_pentest\modules\serenity_clothes\code\worn.dm"
