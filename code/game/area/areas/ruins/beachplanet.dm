@@ -1,5 +1,4 @@
-
-//tropical ruins here
+//Beach Ruins
 
 //Beachside Town
 
@@ -24,12 +23,6 @@
 
 /area/ruin/beach/oceantown/house
 
-//Knight's Rest
-
-/area/ruin/beachplanet/knight
-	name = "Knight's Rest"
-	icon_state = "dkyellow"
-
 //Ancient Complex
 
 /area/ruin/beach/complex //seems quite simple to me
@@ -44,31 +37,6 @@
 /area/ruin/beach/complex/shuttle
 	name = "Syndicate Shuttle"
 	icon_state = "green"
-
-//Pirate Scrap Village
-
-/area/ruin/beach/piratecrash
-	name = "Fishing Hut"
-	icon_state = "hallC"
-
-/area/ruin/beach/piratecrash/shuttle
-	name = "Crashed Shuttle"
-	icon_state = "red"
-
-/area/ruin/beach/piratecrash/storage
-	name = "Scrap Hut"
-
-//beach_crashed_starwalker
-
-/area/ruin/beach/starwalker
-	name = "Crashed Pirate Ship"
-	icon_state = "green"
-
-//beach_treasure_cove, the beeginning
-
-/area/ruin/beach/treasure_cove
-	name = "Pirate Cavern"
-	icon_state = "purple"
 
 //beach_float_resort --> keeping resort open for a land based ruin
 

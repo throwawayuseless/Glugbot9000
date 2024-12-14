@@ -1,18 +1,19 @@
 {
-	"$schema": "https://raw.githubusercontent.com/constellado/Pentest/master/_maps/ship_config_schema.json",
+	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Beluga-class Transport",
-	"prefix": "SV",
-	"namelists": ["CRUISE", "NATURAL"],
 	"map_short_name": "Beluga-class",
 	"map_path": "_maps/shuttles/independent/independent_beluga.dmm",
-	"description": "The Beluga-Class is a transport vessel for those with especially rich blood. Featuring a modest kitchen, hired Inteq security, and luxurious decoration, the Beluga is a first choice pick for many wealthy spacers trying to get from point A to B. The independent ship features several rooms for its guests and a well furnished meeting room for any corporate occassion.",
+	"prefix": "SV",
+	"description": "The Beluga-class is a transport vessel for those with especially rich blood. Featuring a modest kitchen, hired Inteq security, and luxurious decoration, the Beluga is a first choice pick for many wealthy spacers trying to get from point A to B. The independent ship features several rooms for its guests and a well furnished meeting room for any corporate occassion.",
 	"tags": [
 		"RP Focus",
 		"Riot",
 		"Service"
 	],
-	"starting_funds": 4000,
-	"limit": 2,
+	"namelists": [
+		"CRUISE",
+		"NATURAL"
+	],
 	"job_slots": {
 		"Captain": {
 			"outfit": "/datum/outfit/job/independent/captain",
@@ -32,7 +33,7 @@
 			"outfit": "/datum/outfit/job/inteq/security/beluga",
 			"slots": 2
 		},
-		"High-Class Passenger": {
+		"High-class Passenger": {
 			"outfit": "/datum/outfit/job/independent/lawyer",
 			"slots": 4
 		},
@@ -49,5 +50,8 @@
 			"slots": 2
 		}
 	},
-	"enabled": true
+	"limit": 2,
+	"starting_funds": 4000,
+	"enabled": true,
+	"space_spawn": false
 }

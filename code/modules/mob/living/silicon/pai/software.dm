@@ -117,8 +117,6 @@ GLOBAL_LIST_INIT(pai_faces_icons, list(
 															"atmosphere sensor" = 5,
 															"photography module" = 5,
 															"remote signaller" = 10,
-															"medical records" = 10,
-															"security records" = 10,
 															"camera zoom" = 10,
 															"host scan" = 10,
 															//"camera jack" = 10,
@@ -157,10 +155,6 @@ GLOBAL_LIST_INIT(pai_faces_icons, list(
 				left_part = downloadSoftware()
 			if("manifest")
 				left_part = softwareManifest()
-			if("medicalrecord")
-				left_part = softwareMedicalRecord()
-			if("securityrecord")
-				left_part = softwareSecurityRecord()
 			if("encryptionkeys")
 				left_part = softwareEncryptionKeys()
 			if("translator")
@@ -306,24 +300,6 @@ GLOBAL_LIST_INIT(pai_faces_icons, list(
 						var/target = locate(href_list["target"]) in GLOB.PDAs
 						aiPDA.create_message(src, target)
 
-			if("medicalrecord") // Accessing medical records
-				if(subscreen == 1)
-					medicalActive1 = find_record("id", href_list["med_rec"], GLOB.data_core.general)
-					if(medicalActive1)
-						medicalActive2 = find_record("id", href_list["med_rec"], GLOB.data_core.medical)
-					if(!medicalActive2)
-						medicalActive1 = null
-						temp = "Unable to locate requested security record. Record may have been deleted, or never have existed."
-
-			if("securityrecord")
-				if(subscreen == 1)
-					securityActive1 = find_record("id", href_list["sec_rec"], GLOB.data_core.general)
-					if(securityActive1)
-						securityActive2 = find_record("id", href_list["sec_rec"], GLOB.data_core.security)
-					if(!securityActive2)
-						securityActive1 = null
-						temp = "Unable to locate requested security record. Record may have been deleted, or never have existed."
-
 			if("securityhud")
 				if(href_list["toggle"])
 					secHUD = !secHUD
@@ -390,7 +366,7 @@ GLOBAL_LIST_INIT(pai_faces_icons, list(
 	dat += "<A href='byond://?src=[REF(src)];software=radio;sub=0'>Radio Configuration</A><br>"
 	dat += "<A href='byond://?src=[REF(src)];software=image'>Screen Display</A><br>"
 	dat += "<a href='byond://?src=[REF(src)];software=pdamessage;sub=0'>Digital Messenger</a> <br>" //WS Start -- pAIs get messanger and manifest for free
-	dat += "<a href='byond://?src=[REF(src)];software=manifest;sub=0'>Crew Manifest</a> <br>" //WS end
+	dat += "<a href='byond://?src=[REF(src)];software=manifest;sub=0'>Sector Log</a> <br>" //WS end
 	//dat += "Text Messaging <br>"
 	dat += "<br>"
 
@@ -399,10 +375,6 @@ GLOBAL_LIST_INIT(pai_faces_icons, list(
 	for(var/s in software)
 		if(s == "host scan")
 			dat += "<a href='byond://?src=[REF(src)];software=hostscan;sub=0'>Host Health Scan</a> <br>"
-		if(s == "medical records")
-			dat += "<a href='byond://?src=[REF(src)];software=medicalrecord;sub=0'>Medical Records</a> <br>"
-		if(s == "security records")
-			dat += "<a href='byond://?src=[REF(src)];software=securityrecord;sub=0'>Security Records</a> <br>"
 		if(s == "camera")
 			dat += "<a href='byond://?src=[REF(src)];software=[s]'>Camera Jack</a> <br>"
 		if(s == "remote signaller")
@@ -527,56 +499,13 @@ GLOBAL_LIST_INIT(pai_faces_icons, list(
 	<A href='byond://?src=[REF(src)];software=signaller;send=1'>Send Signal</A><BR>"}
 	return dat
 
-// Crew Manifest
+// Sector Log (aka the old crew manifest)
 /mob/living/silicon/pai/proc/softwareManifest()
-	. += "<h2>Crew Manifest</h2><br><br>"
+	. += "<h2>Sector Log</h2><br><br>"
 	if(GLOB.data_core.general)
 		for(var/datum/data/record/t in sortRecord(GLOB.data_core.general))
 			. += "[t.fields["name"]] - [t.fields["rank"]]<BR>"
 	. += "</body></html>"
-	return .
-
-// Medical Records
-/mob/living/silicon/pai/proc/softwareMedicalRecord()
-	switch(subscreen)
-		if(0)
-			. += "<h3>Medical Records</h3><HR>"
-			if(GLOB.data_core.general)
-				for(var/datum/data/record/R in sortRecord(GLOB.data_core.general))
-					. += "<A href='?src=[REF(src)];med_rec=[R.fields["id"]];software=medicalrecord;sub=1'>[R.fields["id"]]: [R.fields["name"]]<BR>"
-		if(1)
-			. += "<CENTER><B>Medical Record</B></CENTER><BR>"
-			if(medicalActive1 in GLOB.data_core.general)
-				. += "Name: [medicalActive1.fields["name"]] ID: [medicalActive1.fields["id"]]<BR>\nGender: [medicalActive1.fields["gender"]]<BR>\nAge: [medicalActive1.fields["age"]]<BR>\nFingerprint: [medicalActive1.fields["fingerprint"]]<BR>\nPhysical Status: [medicalActive1.fields["p_stat"]]<BR>\nMental Status: [medicalActive1.fields["m_stat"]]<BR>"
-			else
-				. += "<pre>Requested medical record not found.</pre><BR>"
-			if(medicalActive2 in GLOB.data_core.medical)
-				. += "<BR>\n<CENTER><B>Medical Data</B></CENTER><BR>\nBlood Type: <A href='?src=[REF(src)];field=blood_type'>[medicalActive2.fields["blood_type"]]</A><BR>\nDNA (UE): <A href='?src=[REF(src)];field=b_dna'>[medicalActive2.fields["b_dna"]]</A><BR>\n<BR>\nMinor Disabilities: <A href='?src=[REF(src)];field=mi_dis'>[medicalActive2.fields["mi_dis"]]</A><BR>\nDetails: <A href='?src=[REF(src)];field=mi_dis_d'>[medicalActive2.fields["mi_dis_d"]]</A><BR>\n<BR>\nMajor Disabilities: <A href='?src=[REF(src)];field=ma_dis'>[medicalActive2.fields["ma_dis"]]</A><BR>\nDetails: <A href='?src=[REF(src)];field=ma_dis_d'>[medicalActive2.fields["ma_dis_d"]]</A><BR>\n<BR>\nAllergies: <A href='?src=[REF(src)];field=alg'>[medicalActive2.fields["alg"]]</A><BR>\nDetails: <A href='?src=[REF(src)];field=alg_d'>[medicalActive2.fields["alg_d"]]</A><BR>\n<BR>\nCurrent Diseases: <A href='?src=[REF(src)];field=cdi'>[medicalActive2.fields["cdi"]]</A> (per disease info placed in log/comment section)<BR>\nDetails: <A href='?src=[REF(src)];field=cdi_d'>[medicalActive2.fields["cdi_d"]]</A><BR>\n<BR>\nImportant Notes:<BR>\n\t<A href='?src=[REF(src)];field=notes'>[medicalActive2.fields["notes"]]</A><BR>\n<BR>\n<CENTER><B>Comments/Log</B></CENTER><BR>"
-			else
-				. += "<pre>Requested medical record not found.</pre><BR>"
-			. += "<BR>\n<A href='?src=[REF(src)];software=medicalrecord;sub=0'>Back</A><BR>"
-	return .
-
-// Security Records
-/mob/living/silicon/pai/proc/softwareSecurityRecord()
-	. = ""
-	switch(subscreen)
-		if(0)
-			. += "<h3>Security Records</h3><HR>"
-			if(GLOB.data_core.general)
-				for(var/datum/data/record/R in sortRecord(GLOB.data_core.general))
-					. += "<A href='?src=[REF(src)];sec_rec=[R.fields["id"]];software=securityrecord;sub=1'>[R.fields["id"]]: [R.fields["name"]]<BR>"
-		if(1)
-			. += "<h3>Security Record</h3>"
-			if(securityActive1 in GLOB.data_core.general)
-				. += "Name: <A href='?src=[REF(src)];field=name'>[securityActive1.fields["name"]]</A> ID: <A href='?src=[REF(src)];field=id'>[securityActive1.fields["id"]]</A><BR>\nGender: <A href='?src=[REF(src)];field=gender'>[securityActive1.fields["gender"]]</A><BR>\nAge: <A href='?src=[REF(src)];field=age'>[securityActive1.fields["age"]]</A><BR>\nRank: <A href='?src=[REF(src)];field=rank'>[securityActive1.fields["rank"]]</A><BR>\nFingerprint: <A href='?src=[REF(src)];field=fingerprint'>[securityActive1.fields["fingerprint"]]</A><BR>\nPhysical Status: [securityActive1.fields["p_stat"]]<BR>\nMental Status: [securityActive1.fields["m_stat"]]<BR>"
-			else
-				. += "<pre>Requested security record not found,</pre><BR>"
-			if(securityActive2 in GLOB.data_core.security)
-				. += "<BR>\nSecurity Data<BR>\nCriminal Status: [securityActive2.fields["criminal"]]<BR>\n<BR>\nCrimes: <A href='?src=[REF(src)];field=mcrim'>[securityActive2.fields["crim"]]</A><BR>\nDetails: <A href='?src=[REF(src)];field=crim_d'>[securityActive2.fields["crim_d"]]</A><BR>\n<BR>\nImportant Notes:<BR>\n\t<A href='?src=[REF(src)];field=notes'>[securityActive2.fields["notes"]]</A><BR>\n<BR>\n<CENTER><B>Comments/Log</B></CENTER><BR>"
-			else
-				. += "<pre>Requested security record not found,</pre><BR>"
-			. += "<BR>\n<A href='?src=[REF(src)];software=securityrecord;sub=0'>Back</A><BR>"
 	return .
 
 // Encryption Keys

@@ -440,6 +440,7 @@
 /area/ship/hallway/central)
 "dO" = (
 /obj/machinery/atmospherics/components/trinary/mixer/flipped/layer4,
+/obj/item/paper/guides/jobs/engi/combustion_thruster,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/atmospherics)
 "dS" = (
@@ -2620,11 +2621,11 @@
 /obj/effect/turf_decal/corner/opaque/white/mono,
 /obj/structure/table/reinforced,
 /obj/item/kitchen/rollingpin,
-/obj/item/reagent_containers/food/condiment/peppermill{
+/obj/item/reagent_containers/condiment/peppermill{
 	pixel_x = -2;
 	pixel_y = 11
 	},
-/obj/item/reagent_containers/food/condiment/saltshaker{
+/obj/item/reagent_containers/condiment/saltshaker{
 	pixel_y = 6;
 	pixel_x = -8
 	},
@@ -3366,9 +3367,6 @@
 "AG" = (
 /obj/structure/cable{
 	icon_state = "1-2"
-	},
-/obj/item/paper/crumpled{
-	default_raw_text = "66% Oxy (Node 1) to 34% Plasma (Node 2) works great at 500 kPa."
 	},
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 8;
@@ -4975,11 +4973,11 @@
 /obj/effect/turf_decal/corner/opaque/neutral/half{
 	dir = 1
 	},
-/obj/item/reagent_containers/food/condiment/saltshaker{
+/obj/item/reagent_containers/condiment/saltshaker{
 	pixel_y = 6;
 	pixel_x = -8
 	},
-/obj/item/reagent_containers/food/condiment/peppermill{
+/obj/item/reagent_containers/condiment/peppermill{
 	pixel_x = -2;
 	pixel_y = 11
 	},
@@ -5146,12 +5144,12 @@
 /obj/structure/closet/secure_closet/freezer{
 	anchored = 1
 	},
-/obj/item/reagent_containers/food/condiment/enzyme,
-/obj/item/reagent_containers/food/condiment/sugar,
-/obj/item/reagent_containers/food/condiment/rice,
-/obj/item/reagent_containers/food/condiment/flour,
-/obj/item/reagent_containers/food/condiment/milk,
-/obj/item/reagent_containers/food/condiment/soymilk,
+/obj/item/reagent_containers/condiment/enzyme,
+/obj/item/reagent_containers/condiment/sugar,
+/obj/item/reagent_containers/condiment/rice,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/milk,
+/obj/item/reagent_containers/condiment/soymilk,
 /obj/effect/turf_decal/corner/opaque/green/mono,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen/kitchen)

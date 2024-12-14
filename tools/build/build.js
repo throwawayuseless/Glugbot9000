@@ -85,6 +85,7 @@ export const DmTarget = new Juke.Target({
     "html/**",
     "icons/**",
     "interface/**",
+    "modular_pentest/**",
     `${DME_NAME}.dme`,
     NamedVersionFile,
   ],

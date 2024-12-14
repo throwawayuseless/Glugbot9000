@@ -1,0 +1,6 @@
+author: monsterlord59
+changes:
+  - {imageadd: Replaced the SWAT Mk. 2 and Captain's SWAT suit sprites.}
+  - {imageadd: Added digitigrade compatibility for the SWAT Mk. 2 and Captain's SWAT
+      suit sprites.}
+delete-after: true

@@ -1,0 +1,5 @@
+author: Ossa88
+changes:
+  - {rscadd: Ship Purchase Screen now notes the original Architect of a ship.}
+  - {refactor: Updated ship .json files}
+delete-after: true

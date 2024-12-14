@@ -1,0 +1,4 @@
+author: Blacklist897
+changes:
+  - {rscadd: Hound is enabled again}
+delete-after: true

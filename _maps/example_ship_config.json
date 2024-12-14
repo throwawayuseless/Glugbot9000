@@ -1,25 +1,40 @@
 {
-	"$schema": "https://raw.githubusercontent.com/Constellado/Pentest/master/_maps/ship_config_schema.json",
+	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Example-class Experimental Ship",
-	"map_short_name": "Test-class",
+	"map_short_name": "example-class",
+	"map_path": "_maps/shuttles/faction/faction_class.dmm",
 	"prefix": "STSV",
-	"namelists": ["GENERAL", "SPACE", "MYTHOLOGICAL", "WEAPONS"],
-	"map_path": "_maps/shuttles/shiptest/null.dmm",
-	"limit": 2,
-	"spawn_time_coeff": 1.5,
-	"officer_time_coeff": 0.5,
+	"description": "The description goes here. Must be at least 50 characters long.",
+	"tags": [
+		"these are tags",
+		"Useful for searching types",
+		"Short Words"
+	],
+	"namelists": [
+		"GENERAL",
+		"SPACE",
+		"MYTHOLOGICAL",
+		"WEAPONS"
+	],
 	"job_slots": {
 		"The First Slot will always be the 'captain' that the purchaser becomes.": {
 			"outfit": "/datum/outfit/job/captain",
 			"officer": true,
 			"slots": 1
 		},
-		"Second Custom Job showing minimum possible arguments": {
+		"Second Custom Job. Officers cant be adjusted ingame. Once spawned its job closes.": {
+			"outfit": "/datum/outfit/job",
+			"officer": true,
+			"slots": 2
+		},
+		"Third Custom Job showing minimum possible arguments. Officer isnt required as it defaults false.": {
 			"outfit": "/datum/outfit/job",
 			"slots": 2
 		},
 		"Assistant": 3
 	},
+	"limit": 2,
+	"starting_funds": 2000,
 	"enabled": true,
 	"space_spawn": false
 }

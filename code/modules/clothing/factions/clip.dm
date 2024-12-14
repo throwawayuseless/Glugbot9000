@@ -203,6 +203,15 @@
 
 	armor = list("melee" = 35, "bullet" = 25, "laser" = 20,"energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75)
 
+/obj/item/clothing/suit/space/hardsuit/clip_patroller/horizon_prototype
+	name = "\improper X-03 'Dagonet' Hardsuit"
+	desc = "A Horizon produced prototype Hardsuit. Adapted from a rejected Nanotrasen design."
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/clip_patroller/horizon_prototype
+
+/obj/item/clothing/head/helmet/space/hardsuit/clip_patroller/horizon_prototype
+	name = "\improper X-03 'Dagonet' Hardsuit helmet"
+	desc = "A Horizon produced prototype Hardsuit. Adapted from a rejected Nanotrasen design."
+
 /obj/item/clothing/suit/space/hardsuit/clip_spotter
 	name = "CM-490 'Spotter' Combat Hardsuit"
 	desc = "CLIP's standard EVA combat hardsuit. Due to CLIP's doctrine on range, it doesn't have advanced components that allow swift movement, and thus slows down the user despite the heavy armor."
@@ -415,25 +424,30 @@
 
 	supports_variations = VOX_VARIATION
 
-/obj/item/storage/belt/military/clip/p16/PopulateContents()
+/obj/item/storage/belt/military/clip/cm82/PopulateContents()
 	for(var/i in 1 to 4)
 		new /obj/item/ammo_box/magazine/p16(src)
 	new /obj/item/grenade/frag(src)
 
-/obj/item/storage/belt/military/clip/gal/PopulateContents()
+/obj/item/storage/belt/military/clip/f4/PopulateContents()
 	for(var/i in 1 to 4)
-		new /obj/item/ammo_box/magazine/gal(src)
+		new /obj/item/ammo_box/magazine/f4_308(src)
 	new /obj/item/grenade/frag(src)
 
 /obj/item/storage/belt/military/clip/cm5/PopulateContents()
 	for(var/i in 1 to 4)
-		new /obj/item/ammo_box/magazine/smgm9mm(src)
+		new /obj/item/ammo_box/magazine/cm5_9mm(src)
 	new /obj/item/grenade/frag(src)
 
 /obj/item/storage/belt/military/clip/cm15/PopulateContents()
 	for(var/i in 1 to 5)
-		new /obj/item/ammo_box/magazine/cm15_mag(src)
+		new /obj/item/ammo_box/magazine/cm15_12g(src)
 	new /obj/item/grenade/frag(src)
+
+/obj/item/storage/belt/military/clip/e50/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.max_w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/storage/belt/military/clip/e50/PopulateContents()
 	for(var/i in 1 to 5)

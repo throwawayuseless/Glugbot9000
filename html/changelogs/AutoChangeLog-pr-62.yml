@@ -1,0 +1,5 @@
+author: Ossa88
+changes:
+  - {bugfix: Some ship URL links}
+  - {bugfix: Refitted Riggs-class officially renamed into Wyvern-class}
+delete-after: true
