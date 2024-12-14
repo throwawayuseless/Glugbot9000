@@ -1,0 +1,4 @@
+author: Vect0r2
+changes:
+  - {code_imp: plants now are harvestable & grow 10 times more slowly}
+delete-after: true

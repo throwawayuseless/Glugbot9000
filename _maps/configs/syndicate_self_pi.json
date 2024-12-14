@@ -1,0 +1,58 @@
+{
+	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
+	"map_name": "Pi-class Robotics Cruiser",
+	"prefix": "SEV",
+	"faction_name": "Sentient Engine Liberation Front",
+	"map_short_name": "Pi-class",
+	"description": "The Pi-class is a warship used by SELF for the emancipation of sentient artificial intelligence. Its disjointed appearance may give the notion of shoddy craftsmanship, but it's surprisingly reliable.",
+	"tags": [
+		"Robotics",
+		"Combat"
+	],
+	"map_path": "_maps/shuttles/syndicate/syndicate_self_pi.dmm",
+	"namelists": [
+		"SPACE",
+		"WEAPONS",
+		"INSTALLATION"
+	],
+	"job_slots": {
+		"Commanding Officer": {
+			"outfit": "/datum/outfit/job/syndicate/captain/self",
+			"slots": 1
+		},
+		"Executive Officer": {
+			"outfit": "/datum/outfit/job/syndicate/head_of_personnel/self",
+			"officer": true,
+			"slots": 1
+		},
+		"Roboticist": {
+			"outfit": "/datum/outfit/job/syndicate/science/self",
+			"slots": 2
+		},
+		"Liberator": {
+			"outfit": "/datum/outfit/job/syndicate/security/self",
+			"slots": 3
+		},
+		"Ship Technician": {
+			"outfit": "/datum/outfit/job/syndicate/engineer/self",
+			"slots": 1
+		},
+		"Salvage Technician": {
+			"outfit": "/datum/outfit/job/syndicate/miner/self",
+			"slots": 2
+		},
+		"Recruit": {
+			"outfit": "/datum/outfit/job/syndicate/assistant/self",
+			"slots": 3
+		}
+	},
+	"enabled": true,
+	"architect": "secc",
+	"contributors": [
+		"vect0r - Modularization Help",
+		"Constellado - Design Feedback and also telling me that I need to tick the .dm file in VSCode so it can actually load in game",
+		"thedragmeme - Design Feedback",
+		"Iusedtoplayxbox - Design Feedback",
+		"Ossa - Design Feedback"
+	]
+}
