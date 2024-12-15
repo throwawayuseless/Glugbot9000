@@ -118,9 +118,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark
 	dir = 1
 	},
 /area/ship/science/robotics)
@@ -1106,9 +1104,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark
 	dir = 1
 	},
 /area/ship/bridge)
@@ -3094,9 +3090,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/atmospherics)
 "lI" = (
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark
 	dir = 4
 	},
 /area/ship/hangar)
@@ -3584,9 +3578,7 @@
 	dir = 4;
 	layer = 4.1
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark
 	dir = 1
 	},
 /area/ship/bridge)
@@ -4218,9 +4210,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark
 	dir = 1
 	},
 /area/ship/maintenance/central)
@@ -6399,9 +6389,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark
 	dir = 1
 	},
 /area/ship/crew/office)
@@ -6540,9 +6528,7 @@
 /obj/structure/railing/corner{
 	dir = 1
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark
 	dir = 4
 	},
 /area/ship/hangar)
@@ -7516,9 +7502,7 @@
 /obj/machinery/atmospherics/pipe/simple/orange/hidden{
 	dir = 4
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark
 	dir = 4
 	},
 /area/ship/hangar)
@@ -7532,9 +7516,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark
 	dir = 4
 	},
 /area/ship/crew/office)
@@ -9984,9 +9966,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark
 	dir = 1
 	},
 /area/ship/bridge)
@@ -10728,9 +10708,7 @@
 /area/ship/crew/canteen/kitchen)
 "NM" = (
 /obj/machinery/light/directional/north,
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark
 	dir = 4
 	},
 /area/ship/hangar)
@@ -12933,9 +12911,7 @@
 /obj/structure/sign/poster/retro/smile{
 	pixel_x = -32
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark
 	dir = 1
 	},
 /area/ship/bridge)

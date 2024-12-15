@@ -497,9 +497,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark
 	dir = 8
 	},
 /area/ship/storage/eva)

@@ -236,9 +236,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark
 	dir = 8
 	},
 /area/outpost/engineering/atmospherics)
@@ -1689,9 +1687,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark
 	dir = 1
 	},
 /area/outpost/crew/cryo)
@@ -6518,9 +6514,7 @@
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/cryo)
 "wY" = (
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark
 	dir = 1
 	},
 /area/outpost/engineering)
@@ -9397,9 +9391,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark
 	dir = 1
 	},
 /area/outpost/engineering)
@@ -9584,9 +9576,7 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/outpost/crew/canteen)
 "HE" = (
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark
 	dir = 8
 	},
 /area/outpost/engineering/atmospherics)
@@ -13164,9 +13154,7 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark
 	dir = 8
 	},
 /area/outpost/engineering/atmospherics)
