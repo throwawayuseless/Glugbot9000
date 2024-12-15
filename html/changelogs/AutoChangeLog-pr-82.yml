@@ -1,0 +1,5 @@
+author: Ossa88
+changes:
+  - {bugfix: Terragov lockers are no longer cloaked.}
+  - {bugfix: Solgov lockers removed from code.}
+delete-after: true
