@@ -1,0 +1,6 @@
+author: Constellado
+changes:
+  - {balance: "The cursed businessman's bank account is no longer extensive, and has
+      had its curse dispelled."}
+  - {bugfix: The business man's mask now replaces all the proper words.}
+delete-after: true
