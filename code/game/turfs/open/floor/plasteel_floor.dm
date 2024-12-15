@@ -184,7 +184,7 @@
 	icon_state = "stairs_modern_light"
 	base_icon_state = "stairs_modern_light"
 
-/turf/open/floor/plasteel/stairs/modern/dark{
+/turf/open/floor/plasteel/stairs/modern/dark
 	icon_state = "stairs_modern_dark"
 	base_icon_state = "stairs_modern_dark"
 
