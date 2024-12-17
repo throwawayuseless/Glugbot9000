@@ -1807,7 +1807,7 @@
 /obj/item/codespeak_manual{
 	charges = 2
 	},
-/obj/item/gun/ballistic/revolver,
+/obj/item/gun/ballistic/revolver/viper,
 /obj/item/megaphone/sec{
 	name = "syndicate megaphone"
 	},
