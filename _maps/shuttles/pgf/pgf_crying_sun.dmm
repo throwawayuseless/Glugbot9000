@@ -736,11 +736,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
-	dir = 2
-	},
+/turf/open/floor/plasteel/stairs/modern/dark,
 /area/ship/bridge)
 "gM" = (
 /obj/machinery/door/airlock{
@@ -918,9 +914,7 @@
 	pixel_x = 19;
 	pixel_y = 9
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark{
 	dir = 1
 	},
 /area/ship/crew/dorm/dormtwo)
@@ -1502,9 +1496,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark{
 	dir = 1
 	},
 /area/ship/security)
@@ -4312,9 +4304,7 @@
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "Ir" = (
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark{
 	dir = 1
 	},
 /area/ship/bridge)
@@ -5125,11 +5115,7 @@
 /turf/open/floor/vault,
 /area/ship/security/armory)
 "Pb" = (
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
-	dir = 2
-	},
+/turf/open/floor/plasteel/stairs/modern/dark,
 /area/ship/bridge)
 "Pd" = (
 /obj/machinery/power/terminal{
@@ -6344,9 +6330,7 @@
 /turf/open/floor/vault,
 /area/ship/security/armory)
 "XD" = (
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/turf/floors.dmi';
-	icon_state = "stairs_modern_dark";
+/turf/open/floor/plasteel/stairs/modern/dark{
 	dir = 4
 	},
 /area/ship/crew/cryo)
