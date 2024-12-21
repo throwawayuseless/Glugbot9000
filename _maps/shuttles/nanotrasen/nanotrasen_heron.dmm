@@ -3500,9 +3500,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/obj/stairs.dmi'
-	},
+/turf/open/floor/plasteel/stairs/modern/dark,
 /area/ship/engineering)
 "mY" = (
 /obj/effect/turf_decal/siding/thinplating{
