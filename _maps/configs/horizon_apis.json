@@ -48,7 +48,7 @@
 	},
 	"limit": 1,
 	"starting_funds": 2000,
-	"enabled": true,
+	"enabled": false,
 	"space_spawn": false,
 	"architect": "Blacklist897/Alexander Moore",
 	"contributors": [
