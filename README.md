@@ -18,6 +18,9 @@ This was origially made because half of us is banned from another server named S
 
 Named Pentest, based on the story of how a person got banned on Shiptest for stealing a pen!
 
+|![image](https://github.com/user-attachments/assets/4bf03439-bf0b-4929-93e0-489d1629ff65) |
+|:--:| 
+| *Flying a ship* |
                     
 ## DOWNLOADING
 
