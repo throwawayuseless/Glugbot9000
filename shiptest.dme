@@ -3608,6 +3608,7 @@
 #include "modular_pentest\_maps\ruins_wasteplanet\_areas_wasteplanet.dm"
 #include "modular_pentest\_maps\ruins_wasteplanet\_modular_wasteplanet.dm"
 #include "modular_pentest\_maps\ships\_areas_ships.dm"
+#include "modular_pentest\modules\faction_horizon\code\horizon_gauss.dm"
 #include "modular_pentest\modules\hair_styles\code\hair.dm"
 #include "modular_pentest\modules\pi_items\code\clothing.dm"
 #include "modular_pentest\modules\pi_items\code\flooring_decals.dm"

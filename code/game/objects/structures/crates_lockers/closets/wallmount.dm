@@ -19,7 +19,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/closet/wall/red, 28)
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/closet/wall/orange, 28)
 
 /obj/structure/closet/wall/blue
-	icon_state = "solgov_wall"
+	icon_state = "terragov_wall"
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/closet/wall/blue, 28)
 

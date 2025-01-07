@@ -1,0 +1,4 @@
+author: Constellado
+changes:
+  - {bugfix: fixes the shotgun in the fast food ruin}
+delete-after: true
