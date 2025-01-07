@@ -2160,7 +2160,7 @@
 	icon_state = "1-4"
 	},
 /obj/structure/closet/secure_closet/wall/directional/east{
-	icon_state = "solgov_wall";
+	icon_state = "terragov_wall";
 	name = "Executive officer closet";
 	req_access_txt = "20";
 	pixel_y = -28;
@@ -4126,7 +4126,7 @@
 /area/ship/bridge)
 "zz" = (
 /obj/structure/closet/secure_closet/wall/directional/east{
-	icon_state = "solgov_wall";
+	icon_state = "terragov_wall";
 	name = "Firearm locker";
 	req_access_txt = "20";
 	pixel_y = 28;
@@ -5756,7 +5756,7 @@
 	desc = "The “iho-usks”, translating to “gear-holder”, is a lightweight harness covered in pouches, supplied to the ground troops of the Tiziran Royal Guard. This variant is designed for carrying ammunition."
 	},
 /obj/structure/closet/secure_closet/wall/directional/east{
-	icon_state = "solgov_wall";
+	icon_state = "terragov_wall";
 	name = "captain's closet";
 	req_access_txt = "20"
 	},

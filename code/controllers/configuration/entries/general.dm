@@ -239,7 +239,7 @@
 	config_entry_value = "https://github.com/tgstation/common_core"
 
 /datum/config_entry/string/rulesurl
-	config_entry_value = "https://pentest.com.co/rules.html"
+	config_entry_value = "https://web.pentest.com.co/rules.html"
 
 /datum/config_entry/string/githuburl
 	config_entry_value = "https://github.com/PentestSS13/Pentest"
