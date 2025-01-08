@@ -3749,7 +3749,7 @@
 /area/ship/engineering/atmospherics)
 "QQ" = (
 /obj/structure/closet/secure_closet/wall/directional/west{
-	icon_state = "solgov_wall";
+	icon_state = "terragov_wall";
 	name = "first mate's closet";
 	req_access_txt = "57"
 	},
@@ -3930,7 +3930,7 @@
 "SS" = (
 /obj/item/clothing/glasses/sunglasses,
 /obj/structure/closet/secure_closet/wall/directional/east{
-	icon_state = "solgov_wall";
+	icon_state = "terragov_wall";
 	name = "captain's closet";
 	req_access_txt = "20"
 	},

@@ -4874,20 +4874,12 @@
 /obj/effect/turf_decal/box,
 /obj/machinery/light/small/directional/north,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/ammo_box/magazine/gauss,
-/obj/item/ammo_box/magazine/gauss,
-/obj/item/ammo_box/magazine/gauss,
-/obj/item/ammo_box/magazine/gauss,
-/obj/item/gun/ballistic/automatic/powered/gauss{
-	name = "horizon prototype gauss rifle";
-	manufacturer = "Horizon RnD team Delta ";
-	desc = "An experimental rifle with a high capacity. Useful for putting down crowds. Chambered in ferromagnetic pellets."
-	},
-/obj/item/gun/ballistic/automatic/powered/gauss{
-	name = "horizon prototype gauss rifle";
-	manufacturer = "Horizon RnD team Delta ";
-	desc = "An experimental rifle with a high capacity. Useful for putting down crowds. Chambered in ferromagnetic pellets."
-	},
+/obj/item/gun/ballistic/automatic/powered/gauss/horizon,
+/obj/item/gun/ballistic/automatic/powered/gauss/horizon,
+/obj/item/ammo_box/magazine/gauss/horizon,
+/obj/item/ammo_box/magazine/gauss/horizon,
+/obj/item/ammo_box/magazine/gauss/horizon,
+/obj/item/ammo_box/magazine/gauss/horizon,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "QR" = (

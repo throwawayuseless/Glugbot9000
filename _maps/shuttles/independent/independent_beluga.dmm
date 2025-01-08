@@ -2774,8 +2774,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/obj/stairs.dmi';
+/turf/open/floor/plasteel/stairs/modern/dark{
 	dir = 8
 	},
 /area/ship/engineering)
@@ -4487,8 +4486,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/obj/stairs.dmi';
+/turf/open/floor/plasteel/stairs/modern/dark{
 	dir = 8
 	},
 /area/ship/engineering)

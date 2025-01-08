@@ -43,15 +43,28 @@
 	var/drawtype
 	var/text_buffer = ""
 
-	var/static/list/graffiti = list("face","guy","end","body")
-	var/static/list/code = list("getout","empty","unsafe","camp","safepath","jackpot","dismantle")
-	var/static/list/symbols = list("danger","firedanger","electricdanger","biohazard","radiation","safe","evac","space","med","trade","shop","food","peace","like","skull","nay","heart","credit")
-	var/static/list/drawings = list("smallbrush","brush","splatter","snake","carp","ghost","taser","disk","fireaxe","toolbox","corgi","cat","toilet","blueprint","beepsky","scroll","bottle","shotgun")
-	var/static/list/oriented = list("arrow","line","thinline","shortline","body","chevron","footprint","clawprint","pawprint","dogo","nogo") // These turn to face the same way as the drawer
+	var/static/list/graffiti = list(
+		"face","guy","end","body","amyjon","antilizard","cyka","dwarf","engie","matt","prolizard","revolution","star","uboa","Omni","Newton","Clandestine","Prima","Zero-G","Osiron","Psyke","Diablo","Blasto","North","Donk","Sleeping Carp","Gene","Cyber","Tunnel","Sirius","Waffle","Max","Gib"
+	)
+	var/static/list/code = list(
+		"getout","empty","unsafe","camp","safepath","jackpot","dismantle"
+	)
+	var/static/list/symbols = list(
+		"danger","firedanger","electricdanger","biohazard","radiation","safe","evac","space","med","trade","shop","food","peace","like","skull","nay","heart","credit"
+	)
+	var/static/list/drawings = list(
+		"largebrush","smallbrush","brush","splatter","snake","carp","ghost","taser","disk","fireaxe","toolbox","corgi","cat","clown","toilet","blueprint","beepsky","scroll","bottle","shotgun","stickman"
+	)
+	var/static/list/oriented = list(
+		"arrow","line","thinline","shortline","body","chevron","footprint","clawprint","pawprint","dogo","nogo"
+	) // These turn to face the same way as the drawer
+	var/static/list/runes = list(
+		"rune1","rune2","rune3","rune4","rune5","rune6"
+	)
 	var/static/list/randoms = list(RANDOM_ANY, RANDOM_RUNE, RANDOM_ORIENTED,
 		RANDOM_NUMBER, RANDOM_GRAFFITI, RANDOM_LETTER, RANDOM_SYMBOL, RANDOM_PUNCTUATION, RANDOM_DRAWING)
 
-	var/static/list/all_drawables = graffiti + code + symbols + drawings + oriented
+	var/static/list/all_drawables = graffiti + code + symbols + drawings + oriented + runes
 
 	var/paint_mode = PAINT_NORMAL
 
@@ -302,6 +315,8 @@
 			drawing = pick(graffiti)
 		if(RANDOM_ORIENTED)
 			drawing = pick(oriented)
+		if(RANDOM_RUNE)
+			drawing = pick(runes)
 		if(RANDOM_NUMBER)
 			drawing = ascii2text(rand(48, 57)) // 0-9
 		if(RANDOM_ANY)

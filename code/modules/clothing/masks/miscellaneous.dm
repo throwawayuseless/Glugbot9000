@@ -70,7 +70,7 @@
 	icon_state = "joy"
 
 /obj/item/clothing/mask/spamton
-	name = "Cursed Businessman's Mask"
+	name = "Businessman's Mask"
 	icon_state = "big_shot"
 	item_state = "big_shot"
 	clothing_flags = ALLOWINTERNALS
@@ -86,14 +86,11 @@
 /obj/item/clothing/mask/spamton/attack_self(mob/user)
 	if(cooldown < world.time)
 		SSblackbox.record_feedback("amount", "saving_uses", 1)
-		cooldown = world.time + 1600
+		cooldown = world.time + 2600
 		var/mob/living/U = user
-		U.apply_damage(25, BRUTE, pick(BODY_ZONE_L_ARM, BODY_ZONE_R_ARM))
-		to_chat(user, "<span class='warning'>BLOOD PRICE ACCEPTED. WITHDRAWING KRONOR FROM OFFSHORE FUND...</span>")
-		pick(
-						new /obj/item/spacecash/bundle/mediumrand(user.drop_location()),
-						new /obj/item/spacecash/bundle/smallrand(user.drop_location()),
-						new /obj/item/holochip(user.drop_location(), 5000))
+		U.apply_damage(15, BRUTE, pick(BODY_ZONE_L_ARM, BODY_ZONE_R_ARM))
+		to_chat(user, "<span class='warning'>BLOOD PRICE ACCEPTED. WITHDRAWING CREDITS FROM OFFSHORE FUND...</span>")
+		new /obj/item/holochip(user.drop_location(), 50)
 	else
 		to_chat(user, "<span class='warning'>[src]'s savings account can't yet be accessed!</span>")
 
@@ -113,10 +110,6 @@
 			message = replacetextEx(message, " [key]", " [value]")
 
 	speech_args[SPEECH_MESSAGE] = trim(message)
-
-/obj/item/clothing/mask/spamton/Initialize()
-	. = ..()
-	ADD_TRAIT(src, TRAIT_NODROP, CURSED_MASK_TRAIT)
 
 /obj/item/clothing/mask/pig
 	name = "pig mask"
