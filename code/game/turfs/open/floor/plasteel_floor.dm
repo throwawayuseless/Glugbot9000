@@ -180,6 +180,14 @@
 	icon_state = "stairs-old"
 	base_icon_state = "stairs-old"
 
+/turf/open/floor/plasteel/stairs/modern
+	icon_state = "stairs_modern_light"
+	base_icon_state = "stairs_modern_light"
+
+/turf/open/floor/plasteel/stairs/modern/dark
+	icon_state = "stairs_modern_dark"
+	base_icon_state = "stairs_modern_dark"
+
 /turf/open/floor/plasteel/stairs/wood
 	color = "#5B3E1D"
 	icon_state = "stairs-wood"

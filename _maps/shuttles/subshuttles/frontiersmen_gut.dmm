@@ -433,8 +433,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
 "Dr" = (
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/obj/stairs.dmi';
+/turf/open/floor/plasteel/stairs/modern/dark{
 	dir = 1
 	},
 /area/ship/storage)

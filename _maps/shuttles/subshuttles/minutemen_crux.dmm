@@ -333,8 +333,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/obj/stairs.dmi';
+/turf/open/floor/plasteel/stairs/modern/dark{
 	dir = 8
 	},
 /area/ship/bridge)
