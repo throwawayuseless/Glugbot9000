@@ -738,8 +738,12 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/hallway/central)
 "nm" = (
-/obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/structure/bed{
+	dir = 1
+	},
+/obj/item/bedsheet/dorms{
+	dir = 1
+	},
 /obj/structure/curtain/bounty,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew)
@@ -899,8 +903,12 @@
 /area/ship/hallway/fore)
 "pa" = (
 /obj/structure/curtain/cloth/fancy,
-/obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/structure/bed{
+	dir = 1
+	},
+/obj/item/bedsheet/dorms{
+	dir = 1
+	},
 /obj/item/radio/intercom/directional/south,
 /turf/open/floor/carpet/red_gold,
 /area/ship/bridge)
@@ -2650,9 +2658,13 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
 	},
-/obj/structure/bed,
+/obj/structure/bed{
+	dir = 1
+	},
 /obj/structure/curtain/bounty,
-/obj/item/bedsheet/dorms,
+/obj/item/bedsheet/dorms{
+	dir = 1
+	},
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew)
 "VT" = (
