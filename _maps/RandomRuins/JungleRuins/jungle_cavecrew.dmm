@@ -567,8 +567,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/obj/stairs.dmi';
+/turf/open/floor/plasteel/stairs/modern/dark{
 	dir = 8
 	},
 /area/ruin/jungle/cavecrew/engineering)
@@ -595,8 +594,7 @@
 	dir = 2;
 	layer = 4.1
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/obj/stairs.dmi';
+/turf/open/floor/plasteel/stairs/modern/dark{
 	dir = 8
 	},
 /area/ruin/powered)
@@ -3184,8 +3182,7 @@
 	dir = 2;
 	layer = 4.1
 	},
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/obj/stairs.dmi';
+/turf/open/floor/plasteel/stairs/modern/dark{
 	dir = 8
 	},
 /area/ruin/powered)
@@ -4147,8 +4144,7 @@
 	},
 /area/ruin/jungle/cavecrew/hallway)
 "Yw" = (
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/obj/stairs.dmi';
+/turf/open/floor/plasteel/stairs/modern/dark{
 	dir = 1
 	},
 /area/ship/storage)

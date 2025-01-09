@@ -453,9 +453,7 @@
 /turf/open/floor/plating,
 /area/ship/crew/crewthree)
 "em" = (
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/obj/stairs.dmi'
-	},
+/turf/open/floor/plasteel/stairs/modern/dark,
 /area/ship/bridge)
 "en" = (
 /obj/machinery/light/directional/west,
@@ -2883,9 +2881,8 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/plasteel/stairs{
-	dir = 8;
-	icon = 'icons/obj/stairs.dmi'
+/turf/open/floor/plasteel/stairs/modern/dark{
+	dir = 8
 	},
 /area/ship/crew/crewfive)
 "xK" = (
@@ -6254,9 +6251,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/obj/stairs.dmi'
-	},
+/turf/open/floor/plasteel/stairs/modern/dark,
 /area/ship/bridge)
 "Xr" = (
 /obj/machinery/light_switch{
