@@ -1419,12 +1419,12 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/survival_pod,
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/door/airlock/grunge,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
 "Ak" = (
@@ -1446,7 +1446,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "Ba" = (
-/turf/closed/wall/mineral/titanium/survival/pod,
+/turf/closed/wall/mineral/titanium/survival,
 /area/ship/cargo)
 "Be" = (
 /obj/effect/turf_decal/techfloor/orange{
@@ -2595,12 +2595,12 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/shuttle,
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/door/airlock/research,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/science)
 "Vf" = (
