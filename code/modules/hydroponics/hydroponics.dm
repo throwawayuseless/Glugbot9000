@@ -573,7 +573,7 @@
 		to_chat(user, examine_block(msg))
 		return
 
-	else if(istype(O, /obj/item/cultivator))
+	else if(istype(O, /obj/item/cultivator) || istype(O, /obj/item/borg/cyborg_omnitool/botany) && O.tool_behaviour == TOOL_CULTIVATOR)
 		if(weedlevel > 0)
 			user.visible_message("[user] uproots the weeds.", "<span class='notice'>You remove the weeds from [src].</span>")
 			weedlevel = 0
@@ -589,7 +589,7 @@
 	else if(default_unfasten_wrench(user, O))
 		return
 
-	else if(istype(O, /obj/item/shovel/spade))
+	else if(istype(O, /obj/item/shovel/spade || istype(O, /obj/item/borg/cyborg_omnitool/botany) && O.tool_behaviour == TOOL_SHOVEL))
 		if(!myseed && !weedlevel)
 			to_chat(user, "<span class='warning'>[src] doesn't have any plants or weeds!</span>")
 			return
@@ -607,6 +607,7 @@
 				desc = initial(desc)
 			weedlevel = 0 //Has a side effect of cleaning up those nasty weeds
 			update_appearance()
+
 	else if(istype(O, /obj/item/gun/energy/floragun))
 		var/obj/item/gun/energy/floragun/flowergun = O
 		if(flowergun.cell.charge < REVOLUTION_CHARGE) // In case an admin var edits the gun or guns gain the ability to have their cell upgraded
