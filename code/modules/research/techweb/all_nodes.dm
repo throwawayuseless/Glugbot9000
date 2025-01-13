@@ -349,7 +349,7 @@
 	display_name = "Cyborg Upgrades: Janitor & Service"
 	description = "Upgrades for Service cyborgs."
 	prereq_ids = list("adv_robotics")
-	design_ids = list("borg_upgrade_trashofholding", "borg_upgrade_advancedmop", "borg_upgrade_plunger", "borg_upgrade_high_capacity_replacer", "borg_upgrade_broomer", "borg_upgrade_drink_apparatus", "borg_upgrade_rolling_table", "borg_upgrade_service_apparatus", "borg_upgrade_silicon_knife", "borg_upgrade_condiment_synthesizer")
+	design_ids = list("borg_upgrade_trashofholding", "borg_upgrade_advancedmop", "borg_upgrade_plunger", "borg_upgrade_high_capacity_replacer", "borg_upgrade_broomer", "borg_upgrade_botany", "borg_upgrade_drink_apparatus", "borg_upgrade_rolling_table", "borg_upgrade_service_apparatus", "borg_upgrade_silicon_knife", "borg_upgrade_condiment_synthesizer")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
 	export_price = 4000
 
