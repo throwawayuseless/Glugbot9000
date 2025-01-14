@@ -3621,6 +3621,7 @@
 #include "modular_pentest\modules\robots\code\_robot_omnitool.dm"
 #include "modular_pentest\modules\robots\code\_robot_omnitool_items.dm"
 #include "modular_pentest\modules\robots\code\_robot_upgrades.dm"
+#include "modular_pentest\modules\robots\code\ai_borg.dm"
 #include "modular_pentest\modules\robots\code\clown_borg.dm"
 #include "modular_pentest\modules\robots\code\default_borg.dm"
 #include "modular_pentest\modules\robots\code\engi_borg.dm"
