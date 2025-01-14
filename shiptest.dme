@@ -3616,6 +3616,7 @@
 #include "modular_pentest\modules\pi_items\code\loadout_selfrelated.dm"
 #include "modular_pentest\modules\pi_items\code\outfits.dm"
 #include "modular_pentest\modules\pi_items\code\plushes.dm"
+#include "modular_pentest\modules\protein_powder\code\protein_powder.dm"
 #include "modular_pentest\modules\serenity_clothes\code\turf.dm"
 #include "modular_pentest\modules\serenity_clothes\code\worn.dm"
 #include "modular_pentest\modules\shotshells\code\converter.dm"
