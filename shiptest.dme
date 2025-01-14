@@ -3634,6 +3634,7 @@
 #include "modular_pentest\modules\robots\code\sec_borg.dm"
 #include "modular_pentest\modules\robots\code\serv_borg.dm"
 #include "modular_pentest\modules\robots\code\synd_borg.dm"
+#include "modular_pentest\modules\protein_powder\code\protein_powder.dm"
 #include "modular_pentest\modules\serenity_clothes\code\turf.dm"
 #include "modular_pentest\modules\serenity_clothes\code\worn.dm"
 #include "modular_pentest\modules\shotshells\code\converter.dm"
