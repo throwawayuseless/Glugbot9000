@@ -676,6 +676,18 @@
 /area/ship/bridge)
 "nZ" = (
 /obj/structure/safe,
+/obj/item/attachment/laser_sight,
+/obj/item/attachment/laser_sight,
+/obj/item/attachment/laser_sight,
+/obj/item/attachment/rail_light,
+/obj/item/attachment/rail_light,
+/obj/item/attachment/rail_light,
+/obj/item/attachment/silencer,
+/obj/item/attachment/silencer,
+/obj/item/attachment/silencer,
+/obj/item/attachment/bayonet,
+/obj/item/attachment/bayonet,
+/obj/item/attachment/bayonet,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "oa" = (
@@ -2116,6 +2128,7 @@
 "Uo" = (
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/suit/space/hardsuit/swat,
+/obj/item/clothing/mask/gas/sechailer/swat,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "Ut" = (
@@ -2330,6 +2343,7 @@
 /obj/item/clothing/suit/space/hardsuit/swat,
 /obj/machinery/light/dim/directional/south,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/mask/gas/sechailer/swat,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "Xr" = (
