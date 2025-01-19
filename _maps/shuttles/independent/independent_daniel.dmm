@@ -369,7 +369,6 @@
 /obj/item/pinpointer/crew,
 /obj/item/gps,
 /obj/item/gps,
-/obj/item/gps,
 /obj/item/implanter,
 /obj/item/implantcase/mindshield,
 /obj/item/implantcase/mindshield,
@@ -377,8 +376,6 @@
 /obj/item/storage/box/ids,
 /obj/item/storage/wallet,
 /obj/item/storage/wallet,
-/obj/item/storage/wallet,
-/obj/item/card/bank,
 /obj/item/card/bank,
 /obj/item/card/bank,
 /obj/structure/closet,
@@ -1516,14 +1513,10 @@
 /area/ship/engineering/engine)
 "HP" = (
 /obj/structure/closet/cabinet,
-/obj/item/storage/box/syndimaid,
 /obj/item/clothing/shoes/combat/coldres,
-/obj/item/toy/plush/moth/firewatch,
 /obj/item/toy/plush/moth,
-/obj/item/clothing/under/rank/command/captain/suit/skirt,
 /obj/item/clothing/head/wig/natural,
 /obj/item/storage/backpack/duffelbag/syndie,
-/obj/item/flashlight/lantern,
 /obj/item/flashlight/lantern,
 /turf/open/floor/carpet/lone,
 /area/ship/crew)
@@ -1873,13 +1866,13 @@
 /turf/open/floor/mineral/gold,
 /area/ship/crew/library)
 "PJ" = (
-/obj/item/bedsheet/double/captain{
-	dir = 4
-	},
-/obj/structure/bed/double{
-	dir = 4
-	},
 /obj/structure/curtain/bounty,
+/obj/structure/bed{
+	dir = 4
+	},
+/obj/item/bedsheet/captain{
+	dir = 4
+	},
 /turf/open/floor/carpet/lone,
 /area/ship/crew)
 "PP" = (
