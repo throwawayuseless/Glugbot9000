@@ -382,7 +382,6 @@
 /obj/item/gun/energy/e_gun,
 /obj/item/stock_parts/cell/gun/empty,
 /obj/item/stock_parts/cell/gun/empty,
-/obj/item/stock_parts/cell/gun/empty,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "he" = (
