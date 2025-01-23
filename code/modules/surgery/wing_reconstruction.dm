@@ -13,8 +13,9 @@
 		Note 1: This should also work on subjects who have had moth wings inserted into their body via "organ manipulation" surgery
 		Note 2: Whatever wing variation the target had prior to the surgery will be overwrote. To include "Burned Off" which is its own variation
 	*/
-	if("moth_wings" in target.dna.species.mutant_bodyparts)
-		return TRUE //Yes surgery
+	if ishuman(target)
+		if("moth_wings" in target.dna.species.mutant_bodyparts)
+			return TRUE //Yes surgery
 	return FALSE //No surgery
 
 /datum/surgery_step/wing_reconstruction
