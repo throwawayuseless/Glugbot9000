@@ -468,7 +468,7 @@
 				)
 
 /obj/effect/spawner/lootdrop/ripley
-	name = "25% mech 75% wreckage ripley spawner"
+	name = "25% exosuit 75% wreckage ripley spawner"
 	loot = list(/obj/mecha/working/ripley/mining = 1,
 				/obj/structure/mecha_wreckage/ripley = 5)
 	lootdoubles = FALSE
@@ -808,6 +808,7 @@
 		/obj/effect/anomaly/plasmasoul/planetary,
 		/obj/effect/anomaly/phantom/planetary,
 		/obj/effect/anomaly/melter/planetary,
+		/obj/effect/anomaly/transfusion/planetary,
 	)
 
 /obj/effect/spawner/lootdrop/anomaly/safe
@@ -818,6 +819,7 @@
 		/obj/effect/anomaly/sparkler/planetary,
 		/obj/effect/anomaly/veins/planetary,
 		/obj/effect/anomaly/phantom/planetary,
+		/obj/effect/anomaly/transfusion/planetary,
 	)
 
 /obj/effect/spawner/lootdrop/anomaly/dangerous
@@ -1002,8 +1004,8 @@
 
 /obj/effect/spawner/lootdrop/anomaly/storm
 	loot = list(
-		/obj/effect/anomaly/flux,
-		/obj/effect/anomaly/pyro,
+		/obj/effect/anomaly/flux/storm,
+		/obj/effect/anomaly/pyro/storm,
 		/obj/effect/anomaly/sparkler,
 		/obj/effect/anomaly/veins,
 		/obj/effect/anomaly/phantom,
@@ -1031,7 +1033,7 @@
 	)
 
 /obj/effect/spawner/lootdrop/waste/mechwreck
-	name = "wasteplanet mech wreckage"
+	name = "wasteplanet exosuit wreckage"
 	loot = list(
 		/obj/structure/mecha_wreckage/ripley = 15,
 		/obj/structure/mecha_wreckage/ripley/firefighter = 9,

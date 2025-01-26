@@ -126,8 +126,8 @@
 		/obj/item/skub = 1,
 		/obj/item/clothing/suit/hooded/mysticrobe = 1)
 	refill_canister = /obj/item/vending_refill/autodrobe
-	default_price = 180
-	extra_price = 360
+	default_price = 90
+	extra_price = 180
 	light_mask="theater-light-mask"
 
 /obj/machinery/vending/autodrobe/canLoadItem(obj/item/I,mob/user)

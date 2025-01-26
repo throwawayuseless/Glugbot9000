@@ -164,7 +164,7 @@
 		if(stored_mob)
 			stored_mob.forceMove(get_turf(src))
 			stored_mob = null
-		else if(fromtendril)
+		else if(from_nest)
 			new /obj/effect/mob_spawn/human/corpse/charredskeleton(T)
 		else if(dwarf_mob)
 			new /obj/effect/mob_spawn/human/corpse/damaged/legioninfested/dwarf(T)
@@ -172,11 +172,11 @@
 			new /obj/effect/mob_spawn/human/corpse/damaged/legioninfested(T)
 	..(gibbed)
 
-/mob/living/simple_animal/hostile/asteroid/hivelord/legion/tendril
-	fromtendril = TRUE
+/mob/living/simple_animal/hostile/asteroid/hivelord/legion/nest
+	from_nest = TRUE
 
-/mob/living/simple_animal/hostile/asteroid/hivelord/legion/dwarf/tendril
-	fromtendril = TRUE
+/mob/living/simple_animal/hostile/asteroid/hivelord/legion/dwarf/nest
+	from_nest = TRUE
 
 /mob/living/simple_animal/hostile/asteroid/hivelord/legion/dwarf/death(gibbed)
 	move_force = MOVE_FORCE_DEFAULT
@@ -297,6 +297,8 @@
 
 /// track our timers and reagents
 /obj/item/organ/legion_skull/proc/skull_check()
+	if(!owner)
+		return
 	if(!malignance)
 		malignance = new()
 		malignance.infect(owner, FALSE)
@@ -363,7 +365,7 @@
 	del_on_death = TRUE
 	sentience_type = SENTIENCE_BOSS
 	loot = list(/obj/item/organ/regenerative_core/legion = 3, /obj/effect/mob_spawn/human/corpse/damaged/legioninfested = 5, /obj/effect/mob_spawn/human/corpse/damaged/legioninfested = 5, /obj/effect/mob_spawn/human/corpse/damaged/legioninfested = 5)
-	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
+	atmos_requirements = IMMUNE_ATMOS_REQS
 	minbodytemp = 0
 	maxbodytemp = INFINITY
 	move_to_delay = 7
@@ -388,7 +390,7 @@
 
 /mob/living/simple_animal/hostile/big_legion/Initialize()
 	.=..()
-	AddComponent(/datum/component/spawner, list(/mob/living/simple_animal/hostile/asteroid/hivelord/legion/tendril), 200, faction, "peels itself off from", 3)
+	AddComponent(/datum/component/spawner, list(/mob/living/simple_animal/hostile/asteroid/hivelord/legion/nest), 200, faction, "peels itself off from", 3)
 
 // Snow Legion
 /mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow
@@ -413,8 +415,8 @@
 	icon_aggro = "snowlegion_head"
 	icon_dead = "snowlegion_head"
 
-/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow/tendril
-	fromtendril = TRUE
+/mob/living/simple_animal/hostile/asteroid/hivelord/legion/snow/nest
+	from_nest = TRUE
 
 /mob/living/simple_animal/hostile/asteroid/hivelord/legion/crystal
 	name = "disfigured legion"
@@ -444,7 +446,7 @@
 		P.fire(i*(360/5))
 	return ..()
 
-//Tendril-spawned Legion remains, the charred skeletons of those whose bodies sank into lava or fell into chasms.
+//nest-spawned Legion remains, the charred skeletons of those whose bodies sank into lava or fell into chasms.
 /obj/effect/mob_spawn/human/corpse/charredskeleton
 	name = "charred skeletal remains"
 	burn_damage = 1000
@@ -481,19 +483,16 @@
 		)
 	)
 
-	switch(type)
-		if("Miner")
-			outfit = /datum/outfit/generic/miner
-		if("Assistant")
-			outfit = /datum/outfit/generic
-		if("Engineer")
-			outfit = /datum/outfit/generic/engineer
-		if("Doctor")
-			outfit = /datum/outfit/generic/doctor
-		if("Scientist")
-			outfit = /datum/outfit/generic/science
-		if("Cargo")
-			outfit = /datum/outfit/generic/cargo
-		if("Security")
-			outfit = /datum/outfit/generic/security
+	var/outfit_map = list(
+			"Miner" = /datum/outfit/generic/miner,
+			"Assistant" = /datum/outfit/generic,
+			"Engineer" = /datum/outfit/generic/engineer,
+			"Doctor" = /datum/outfit/generic/doctor,
+			"Scientist" = /datum/outfit/generic/science,
+			"Cargo" = /datum/outfit/generic/cargo,
+			"Security" = /datum/outfit/generic/security
+		)
+
+	outfit = outfit_map[type]  // Access outfit directly
+
 	. = ..()

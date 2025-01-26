@@ -326,6 +326,10 @@
 	M.Jitter(5)
 	..()
 
+/datum/reagent/consumable/icecoffee/overdose_process(mob/living/M)
+	M.Jitter(5)
+	..()
+
 /datum/reagent/consumable/icecoffee/on_mob_life(mob/living/carbon/M)
 	M.dizziness = max(0,M.dizziness-5)
 	M.drowsyness = max(0,M.drowsyness-3)
@@ -345,6 +349,10 @@
 	glass_icon_state = "hoticecoffee"
 	glass_name = "hot ice coffee"
 	glass_desc = "A sharp drink, this can't have come cheap."
+
+/datum/reagent/consumable/hot_ice_coffee/overdose_process(mob/living/M)
+	M.Jitter(5)
+	..()
 
 /datum/reagent/consumable/hot_ice_coffee/overdose_process(mob/living/M)
 	M.Jitter(5)
@@ -634,6 +642,10 @@
 	M.Jitter(5)
 	..()
 
+/datum/reagent/consumable/soy_latte/overdose_process(mob/living/M)
+	M.Jitter(5)
+	..()
+
 /datum/reagent/consumable/soy_latte/on_mob_life(mob/living/carbon/M)
 	M.dizziness = max(0,M.dizziness-5)
 	M.drowsyness = max(0,M.drowsyness-3)
@@ -654,6 +666,10 @@
 	glass_icon_state = "cafe_latte"
 	glass_name = "cafe latte"
 	glass_desc = "A nice, strong and refreshing beverage while you're reading."
+
+/datum/reagent/consumable/cafe_latte/overdose_process(mob/living/M)
+	M.Jitter(5)
+	..()
 
 /datum/reagent/consumable/cafe_latte/overdose_process(mob/living/M)
 	M.Jitter(5)

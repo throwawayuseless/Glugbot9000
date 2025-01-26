@@ -190,14 +190,39 @@ Override makes it so the alert is not replaced until cleared by a clear_alert wi
 	icon_state = "gross3"
 
 /atom/movable/screen/alert/hot
-	name = "Too Hot"
-	desc = "You're flaming hot! Get somewhere cooler and take off any insulating clothing like a fire suit."
+	name = "Hot"
+	desc = "It's quite warm. Get somewhere cooler and take off any insulating clothing like a fire suit."
+	icon_state = "hot"
+
+/atom/movable/screen/alert/warm
+	name = "Warm"
+	desc = "It's a bit warm, but not unbearably so."
 	icon_state = "hot"
 
 /atom/movable/screen/alert/cold
-	name = "Too Cold"
-	desc = "You're freezing cold! Get somewhere warmer and take off any insulating clothing like a space suit."
+	name = "Cold"
+	desc = "It's quite cold. Get somewhere warmer and take off any insulating clothing like a space suit."
 	icon_state = "cold"
+
+/atom/movable/screen/alert/chilly
+	name = "Chilly"
+	desc = "It's a bit chilly, but not unbearably so."
+	icon_state = "cold"
+
+/atom/movable/screen/alert/sweat
+	name = "Sweating"
+	desc = "You're sweating and the heat is starting to hurt. Get somewhere cooler and take off any insulating clothing like a fire suit."
+	icon_state = "sweat"
+
+/atom/movable/screen/alert/shiver
+	name = "Shivering"
+	desc = "You're shivering and the cold is starting to hurt. Get somewhere warmer and take off any insulating clothing like a space suit."
+	icon_state = "shiver"
+
+/atom/movable/screen/alert/fans
+	name = "High Fan Speed"
+	desc = "Your fans are spinning quite fast, and your components are reaching a dangerous temperature! Get somewhere cooler and take off any insulating clothing like a fire suit."
+	icon_state = "fans"
 
 /atom/movable/screen/alert/lowpressure
 	name = "Low Pressure"
@@ -561,25 +586,24 @@ or shoot a gun to move around via Newton's 3rd Law of Motion."
 
 /atom/movable/screen/alert/nocell
 	name = "Missing Power Cell"
-	desc = "Unit has no power cell. No modules available until a power cell is reinstalled. Robotics may provide assistance."
+	desc = "Unit has no power cell. No modules are available until a power cell is reinstalled."
 	icon_state = "nocell"
 
 /atom/movable/screen/alert/emptycell
 	name = "Out of Power"
-	desc = "Unit's power cell has no charge remaining. No modules available until power cell is recharged. \
-Recharging stations are available in robotics, the dormitory bathrooms, and the AI satellite."
+	desc = "Unit's power cell has no charge remaining. No modules are available until power cell is recharged."
 	icon_state = "emptycell"
 
 /atom/movable/screen/alert/lowcell
 	name = "Low Charge"
-	desc = "Unit's power cell is running low. Recharging stations are available in robotics, the dormitory bathrooms, and the AI satellite."
+	desc = "Unit's power cell is running low. All modules may be disabled soon unless recharged."
 	icon_state = "lowcell"
 
 //Ethereal
 
 /atom/movable/screen/alert/etherealcharge
 	name = "Low Blood Charge"
-	desc = "Your blood's electric charge is running low, find a source of charge for your blood. Use a recharging station found in robotics or the dormitory bathrooms, or eat some Ethereal-friendly food."
+	desc = "Your blood's electric charge is running low, find a source of charge for your blood. Use a recharging station, or eat some Elzuose-friendly food."
 	icon_state = "etherealcharge"
 
 /atom/movable/screen/alert/ethereal_overcharge
@@ -590,12 +614,12 @@ Recharging stations are available in robotics, the dormitory bathrooms, and the 
 //MODsuit unique
 /atom/movable/screen/alert/nocore
 	name = "Missing Core"
-	desc = "Unit has no core. No modules available until a core is reinstalled. Robotics may provide assistance."
+	desc = "Unit has no core. No modules are available until a core is reinstalled."
 	icon_state = "no_cell"
 
 /atom/movable/screen/alert/emptycell/plasma
 	name = "Out of Power"
-	desc = "Unit's plasma core has no charge remaining. No modules available until plasma core is recharged. \
+	desc = "Unit's plasma core has no charge remaining. No modules are available until plasma core is recharged. \
 		Unit can be refilled through plasma fuel."
 
 /atom/movable/screen/alert/emptycell/plasma/update_desc()
@@ -618,8 +642,8 @@ Recharging stations are available in robotics, the dormitory bathrooms, and the 
 
 /atom/movable/screen/alert/locked
 	name = "Locked Down"
-	desc = "Unit has been remotely locked down. Usage of a Robotics Control Console like the one in the Research Director's \
-office by your AI master or any qualified human may resolve this matter. Robotics may provide further assistance if necessary."
+	desc = "Unit has been remotely locked down. Usage of a Robotics Control Console by an AI or any qualified \
+	humanoid may resolve this matter."
 	icon_state = "locked"
 
 /atom/movable/screen/alert/newlaw
@@ -648,11 +672,11 @@ so as to remain in compliance with the most up-to-date laws."
 	if(T)
 		AI.eyeobj.setLoc(T)
 
-//MECHS
+//EXOSUITS
 
 /atom/movable/screen/alert/low_mech_integrity
-	name = "Mech Damaged"
-	desc = "Mech integrity is low."
+	name = "Exosuit Damaged"
+	desc = "Exosuit integrity is low."
 	icon_state = "low_mech_integrity"
 
 

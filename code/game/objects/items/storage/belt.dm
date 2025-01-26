@@ -274,6 +274,7 @@
 	STR.set_holdable(list(
 		/obj/item/melee/baton,
 		/obj/item/melee/classic_baton,
+		/obj/item/kitchen/knife,
 		/obj/item/grenade,
 		/obj/item/reagent_containers/spray/pepper,
 		/obj/item/restraints/handcuffs,
@@ -356,6 +357,7 @@
 		/obj/item/clothing/gloves,
 		/obj/item/resonator,
 		/obj/item/mining_scanner,
+		/obj/item/pinpointer/mineral,
 		/obj/item/pickaxe,
 		/obj/item/shovel,
 		/obj/item/stack/sheet/animalhide,
@@ -380,8 +382,7 @@
 		/obj/item/storage/bag/plants,
 		/obj/item/stack/marker_beacon,
 		/obj/item/restraints/legcuffs/bola/watcher,
-		/obj/item/claymore/bone,
-		/obj/item/key/lasso
+		/obj/item/claymore/bone
 		))
 
 
