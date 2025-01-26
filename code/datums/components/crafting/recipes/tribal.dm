@@ -103,14 +103,6 @@
 	result = /obj/structure/headpike/bone
 	category = CAT_PRIMAL
 
-/datum/crafting_recipe/lasso
-	name = "Bone Lasso"
-	reqs = list(
-			/obj/item/stack/sheet/bone = 1,
-			/obj/item/stack/sheet/sinew = 5)
-	result = /obj/item/key/lasso
-	category = CAT_PRIMAL
-
 /datum/crafting_recipe/heavybonearmor
 	name = "Heavy Bone Armor"
 	result = /obj/item/clothing/suit/hooded/cloak/bone

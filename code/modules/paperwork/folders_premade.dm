@@ -52,6 +52,10 @@
 /obj/item/folder/documents/syndicate/mining
 	document = /obj/item/documents/syndicate/mining
 
+/obj/item/folder/documents/syndicate/ngr
+	document = /obj/item/documents/syndicate/ngr
+	icon_state = "folder_ngr"
+
 /obj/item/folder/documents/terragov
 	document = /obj/item/documents/terragov
 	desc = "A blue folder with a TerraGov seal."

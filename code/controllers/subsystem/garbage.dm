@@ -101,6 +101,7 @@ SUBSYSTEM_DEF(garbage)
 	for(var/path in items)
 		var/datum/qdel_item/I = items[path]
 		dellog += "Path: [path]"
+		dellog += "Path: [path]"
 		if (I.qdel_flags & QDEL_ITEM_SUSPENDED_FOR_LAG)
 			dellog += "\tSUSPENDED FOR LAG"
 		if (I.failures)
@@ -320,6 +321,7 @@ SUBSYSTEM_DEF(garbage)
 	var/hard_delete_time = 0 //!Total amount of milliseconds spent hard deleting this type.
 	var/hard_delete_max = 0 //!Highest time spent hard_deleting this in ms.
 	var/hard_deletes_over_threshold = 0 //!Number of times hard deletes took longer than the configured threshold
+	var/most_refs = 0 //!The highest amount of refs its had after failing to qdel
 	var/no_respect_force = 0 //!Number of times it's not respected force=TRUE
 	var/no_hint = 0 //!Number of times it's not even bother to give a qdel hint
 	var/slept_destroy = 0 //!Number of times it's slept in its destroy

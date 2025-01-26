@@ -1,5 +1,5 @@
 /obj/mecha
-	name = "mecha"
+	name = "exosuit"
 	desc = "Exosuit"
 	icon = 'icons/mecha/mecha.dmi'
 	density = TRUE //Dense. To raise the heat.
@@ -137,7 +137,7 @@
 	add_scanmod()
 	add_capacitor()
 	START_PROCESSING(SSobj, src)
-	GLOB.poi_list |= src
+	SSpoints_of_interest.make_point_of_interest(src)
 	log_message("[src.name] created.", LOG_MECHA)
 	GLOB.mechas_list += src //global mech list
 	prepare_huds()
@@ -176,7 +176,7 @@
 		AI.gib() //No wreck, no AI to recover
 		AI = null
 	STOP_PROCESSING(SSobj, src)
-	GLOB.poi_list.Remove(src)
+	SSpoints_of_interest.remove_point_of_interest(src)
 	equipment.Cut()
 
 	for(var/datum/atom_hud/data/diagnostic/diag_hud in GLOB.huds)
@@ -403,13 +403,13 @@
 		var/integrity = obj_integrity/max_integrity*100
 		switch(integrity)
 			if(30 to 45)
-				occupant.throw_alert("mech damage", /atom/movable/screen/alert/low_mech_integrity, 1)
+				occupant.throw_alert("exosuit damage", /atom/movable/screen/alert/low_mech_integrity, 1)
 			if(15 to 35)
-				occupant.throw_alert("mech damage", /atom/movable/screen/alert/low_mech_integrity, 2)
+				occupant.throw_alert("exosuit damage", /atom/movable/screen/alert/low_mech_integrity, 2)
 			if(-INFINITY to 15)
-				occupant.throw_alert("mech damage", /atom/movable/screen/alert/low_mech_integrity, 3)
+				occupant.throw_alert("exosuit damage", /atom/movable/screen/alert/low_mech_integrity, 3)
 			else
-				occupant.clear_alert("mech damage")
+				occupant.clear_alert("exosuit damage")
 		var/atom/checking = occupant.loc
 		// recursive check to handle all cases regarding very nested occupants,
 		// such as brainmob inside brainitem inside MMI inside mecha
@@ -418,7 +418,7 @@
 				// hit a turf before hitting the mecha, seems like they have
 				// been moved out
 				occupant.clear_alert("charge")
-				occupant.clear_alert("mech damage")
+				occupant.clear_alert("exosuit damage")
 				RemoveActions(occupant, human_occupant=1)
 				occupant = null
 				break
@@ -1023,10 +1023,10 @@
 				final_exit_delay = exit_delay/2
 
 	if(do_after(occupant, has_gravity() ? final_exit_delay : 0 , target = src))
-		to_chat(occupant, "<span class='notice'>You exit the mech.</span>")
+		to_chat(occupant, "<span class='notice'>You exit the exosuit.</span>")
 		go_out()
 	else
-		to_chat(occupant, "<span class='notice'>You stop exiting the mech. Weapons are enabled again.</span>")
+		to_chat(occupant, "<span class='notice'>You stop exiting the exosuit. Weapons are enabled again.</span>")
 	is_currently_ejecting = FALSE
 
 /obj/mecha/Exited(atom/movable/M, atom/newloc)
@@ -1051,7 +1051,7 @@
 		return
 	var/atom/movable/mob_container
 	occupant.clear_alert("charge")
-	occupant.clear_alert("mech damage")
+	occupant.clear_alert("exosuit damage")
 	if(ishuman(occupant))
 		mob_container = occupant
 		RemoveActions(occupant, human_occupant=1)
