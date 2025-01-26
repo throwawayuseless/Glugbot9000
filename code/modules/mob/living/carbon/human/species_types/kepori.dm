@@ -18,12 +18,14 @@
 	species_eye_path = 'icons/mob/species/kepori/kepori_eyes.dmi'
 	heatmod = 0.67
 	coldmod = 1.5
-	brutemod = 1.5
-	burnmod = 1.5
-	speedmod = -0.25
+	// brutemod = 1.5
+	// burnmod = 1.5
+	speedmod = -0.10
 	bodytemp_normal = HUMAN_BODYTEMP_NORMAL + 30
 	bodytemp_heat_damage_limit = HUMAN_BODYTEMP_HEAT_DAMAGE_LIMIT + 30
 	bodytemp_cold_damage_limit = HUMAN_BODYTEMP_COLD_DAMAGE_LIMIT + 30
+	max_temp_comfortable = HUMAN_BODYTEMP_NORMAL + 40
+	min_temp_comfortable = HUMAN_BODYTEMP_NORMAL - 3
 	mutanttongue = /obj/item/organ/tongue/kepori
 	species_language_holder = /datum/language_holder/kepori
 	var/datum/action/innate/keptackle/keptackle
@@ -58,6 +60,9 @@
 	species_robotic_r_leg = /obj/item/bodypart/leg/right/robot/surplus/kepori
 
 	robotic_eyes = /obj/item/organ/eyes/robotic/kepori
+
+	//I'm not emotionally prepared to spend ten more hours splicing overlays together
+	damage_overlay_type = ""
 
 /datum/species/kepori/New()
 	. = ..()

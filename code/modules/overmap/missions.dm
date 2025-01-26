@@ -39,6 +39,7 @@
 	return ..()
 
 /datum/mission/proc/accept(datum/overmap/ship/controlled/acceptor, turf/accept_loc)
+	SSblackbox.record_feedback("nested tally", "mission", 1, list(name, "accepted"))
 	accepted = TRUE
 	servant = acceptor
 	LAZYREMOVE(source_outpost.missions, src)
@@ -64,9 +65,12 @@
 
 /datum/mission/proc/turn_in()
 	servant.ship_account.adjust_money(value, "mission")
+	SSblackbox.record_feedback("tally", "mission_succeeded", 1, name)
+	SSblackbox.record_feedback("tally", "mission_payout", value, name)
 	qdel(src)
 
 /datum/mission/proc/give_up()
+	SSblackbox.record_feedback("tally", "mission_abandoned", 1, name)
 	qdel(src)
 
 /datum/mission/proc/can_complete()

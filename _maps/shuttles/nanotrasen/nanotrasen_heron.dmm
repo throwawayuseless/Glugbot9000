@@ -1544,6 +1544,10 @@
 	pixel_y = -1
 	},
 /obj/machinery/firealarm/directional/south,
+/obj/item/stamp/nanotrasen{
+	pixel_y = 11;
+	pixel_x = -6
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "gz" = (
@@ -2001,7 +2005,7 @@
 	dir = 1
 	},
 /obj/machinery/door/airlock/research{
-	name = "Mech Bay"
+	name = "Exosuit Bay"
 	},
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/science/robotics)
@@ -3058,9 +3062,9 @@
 	pixel_x = -5;
 	pixel_y = 3
 	},
-/obj/item/stamp/qm{
-	pixel_x = 8;
-	pixel_y = 9
+/obj/item/stamp/nanotrasen{
+	pixel_y = 9;
+	pixel_x = 8
 	},
 /obj/item/stamp{
 	pixel_x = 8;
@@ -3478,7 +3482,7 @@
 	dir = 1
 	},
 /obj/machinery/door/airlock/research{
-	name = "Mech Bay"
+	name = "Exosuit Bay"
 	},
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/science/robotics)
@@ -4550,7 +4554,7 @@
 	},
 /obj/machinery/door/poddoor{
 	id = "heron_mechbayshut";
-	name = "Mechbay Shutters"
+	name = "Exosuit Bay Shutters"
 	},
 /turf/open/floor/plasteel/patterned/ridged,
 /area/ship/science/robotics)
@@ -7273,7 +7277,7 @@
 "AC" = (
 /obj/machinery/door/poddoor{
 	id = "heron_mechbayshut";
-	name = "Mechbay Shutters"
+	name = "Exosuit Bay Shutters"
 	},
 /turf/open/floor/plasteel/patterned/ridged,
 /area/ship/science/robotics)
@@ -8891,7 +8895,7 @@
 	pixel_x = 6;
 	pixel_y = 4
 	},
-/obj/item/stamp/hos{
+/obj/item/stamp/nanotrasen/vigilitas/security{
 	pixel_y = 9;
 	pixel_x = -6
 	},
@@ -9148,11 +9152,11 @@
 	pixel_x = -6;
 	pixel_y = 4
 	},
-/obj/item/stamp/head_of_personnel{
+/obj/item/stamp/nanotrasen/officer{
 	pixel_x = -6;
 	pixel_y = 10
 	},
-/obj/item/stamp/captain{
+/obj/item/stamp/nanotrasen/captain{
 	pixel_x = -7;
 	pixel_y = 4
 	},
@@ -9177,6 +9181,10 @@
 	pixel_x = -5
 	},
 /obj/machinery/airalarm/directional/west,
+/obj/item/stamp/nanotrasen/central{
+	pixel_x = 6;
+	pixel_y = 10
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "HP" = (
@@ -11841,7 +11849,7 @@
 	},
 /obj/machinery/door/poddoor{
 	id = "heron_mechbayshut";
-	name = "Mechbay Shutters"
+	name = "Exosuit Bay Shutters"
 	},
 /turf/open/floor/plasteel/patterned/ridged,
 /area/ship/science/robotics)
@@ -12425,7 +12433,7 @@
 /obj/item/pen{
 	pixel_x = -6
 	},
-/obj/item/stamp/qm{
+/obj/item/stamp/nanotrasen/ns{
 	pixel_x = 6;
 	pixel_y = 9
 	},

@@ -79,6 +79,9 @@
 	allowed_roles = list("Station Engineer", "Atmospheric Technician", "Chief Engineer")
 
 //Soft caps
+/datum/gear/hat/softcap/
+	display_name = "cap, grey"
+	path = /obj/item/clothing/head/soft/grey
 
 /datum/gear/hat/softcap/red
 	display_name = "cap, red"

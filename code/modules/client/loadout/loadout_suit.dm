@@ -88,6 +88,10 @@
 	path = /obj/item/clothing/suit/toggle/hazard
 
 //Suspenders
+/datum/gear/suit/suspenders
+	display_name = "suspenders, blue"
+	path = /obj/item/clothing/suit/toggle/suspenders/blue
+
 /datum/gear/suit/suspenders/red
 	display_name = "suspenders, red"
 	path = /obj/item/clothing/suit/toggle/suspenders

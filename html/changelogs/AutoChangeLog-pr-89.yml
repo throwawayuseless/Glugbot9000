@@ -1,0 +1,6 @@
+author: monsterlord59
+changes:
+  - {rscadd: Re-enables the Junker-class.}
+  - {bugfix: 'Changed the pod walls of the Junker-class to regular titanium, and adds
+      more vents and scrubbers.'}
+delete-after: true

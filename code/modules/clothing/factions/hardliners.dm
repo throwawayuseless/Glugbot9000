@@ -114,6 +114,28 @@
 	lightweight = 1
 	jetpack = null
 
+/obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/hl
+	name = "elite white-red hardsuit helmet"
+	desc = "An elite version of the infamous white-red Hardliner hardsuit, with improved armor and fireproofing. It is in EVA mode. Property of Gorlex Marauders."
+	alt_desc = "An elite version of the infamous white-red Hardliner hardsuit, with improved armor and fireproofing. It is in combat mode. Property of Gorlex Marauders."
+	icon_state = "hardsuit0-hlelite"
+	hardsuit_type = "hlelite"
+	icon = 'icons/obj/clothing/faction/hardliners/head.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/faction/hardliners/head.dmi'
+
+/obj/item/clothing/suit/space/hardsuit/syndi/elite/hl
+	name = "elite white-red hardsuit"
+	desc = "An elite version of the infamous white-red Hardliner hardsuit, with improved armor and fireproofing. It is in travel mode."
+	alt_desc = "An elite version of the infamous white-red Hardliner hardsuit, with improved armor and fireproofing. It is in combat mode."
+	icon_state = "hardsuit0-hlelite"
+	item_state = "hardsuit0-hlelite"
+	hardsuit_type = "hlelite"
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite/hl
+	icon = 'icons/obj/clothing/faction/hardliners/suits.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/faction/hardliners/suits.dmi'
+	lightweight = 1
+	jetpack = null
+
 /////////
 //Hats//
 ////////
@@ -150,7 +172,7 @@
 
 /obj/item/clothing/head/helmet/hardliners/swat
 	name = "hardliners pilot helmet"
-	desc = "A modified X-11 helmet utilized by regular pilots, as well as the feared mech pilots of the Hardliner movement. The attached visor helps protect against sudden flashes from explosions."
+	desc = "A modified X-11 helmet utilized by regular pilots, as well as the feared exosuit pilots of the Hardliner movement. The attached visor helps protect against sudden flashes from explosions."
 	flash_protect = FLASH_PROTECTION_WELDER
 	icon_state = "hl_pilot"
 	item_state = "hl_pilot"

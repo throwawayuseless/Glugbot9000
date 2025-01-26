@@ -204,16 +204,13 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "bT" = (
-/obj/item/storage/box/flashbangs{
-	pixel_x = -7;
-	pixel_y = 7
-	},
 /obj/item/storage/box/zipties{
 	pixel_y = 7;
-	pixel_x = 8
+	pixel_x = 4
 	},
 /obj/item/storage/box/flashes{
-	pixel_y = -1
+	pixel_y = -1;
+	pixel_x = -7
 	},
 /obj/item/screwdriver{
 	pixel_x = -8;
@@ -415,11 +412,12 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engines/starboard)
 "du" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 6
-	},
 /obj/structure/cable{
 	icon_state = "0-8"
+	},
+/obj/machinery/porta_turret/ship/pgf/light{
+	dir = 6;
+	mode = 1
 	},
 /turf/open/floor/engine/hull,
 /area/ship/external/dark)
@@ -1010,10 +1008,11 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/machinery/porta_turret/ship/weak{
-	dir = 4
-	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/porta_turret/ship/pgf/light{
+	dir = 4;
+	mode = 1
+	},
 /turf/open/floor/plating/airless,
 /area/ship/external/dark)
 "ih" = (
@@ -2263,15 +2262,13 @@
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
-"tU" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 5
+"tY" = (
+/obj/machinery/modular_computer/console/preset/command{
+	dir = 1
 	},
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/turf/open/floor/engine/hull,
-/area/ship/external/dark)
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ship/bridge)
 "uh" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
@@ -2283,35 +2280,38 @@
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "uo" = (
-/obj/item/grenade/frag{
-	pixel_x = -8;
-	pixel_y = -1
-	},
-/obj/item/grenade/frag{
-	pixel_x = -3;
-	pixel_y = -8
-	},
-/obj/item/grenade/smokebomb{
-	pixel_y = 3;
-	pixel_x = 13
-	},
-/obj/item/grenade/smokebomb{
-	pixel_y = 1;
-	pixel_x = 7
-	},
-/obj/item/grenade/smokebomb{
-	pixel_x = 11;
-	pixel_y = -5
-	},
 /obj/structure/closet/secure_closet/wall/directional/west{
 	icon_state = "sec_wall";
-	name = "equipment locker"
+	name = "ordnance locker"
 	},
 /obj/structure/window/reinforced{
 	dir = 1
 	},
 /obj/effect/turf_decal/corner/opaque/purple{
 	dir = 10
+	},
+/obj/item/storage/box/flashbangs{
+	pixel_y = 6
+	},
+/obj/item/grenade/frag{
+	pixel_x = -10;
+	pixel_y = -1
+	},
+/obj/item/grenade/frag{
+	pixel_x = -5;
+	pixel_y = -6
+	},
+/obj/item/grenade/smokebomb{
+	pixel_y = 2;
+	pixel_x = 13
+	},
+/obj/item/grenade/smokebomb{
+	pixel_x = 7;
+	pixel_y = -2
+	},
+/obj/item/grenade/smokebomb{
+	pixel_x = 11;
+	pixel_y = -5
 	},
 /turf/open/floor/vault,
 /area/ship/security/armory)
@@ -3349,11 +3349,12 @@
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "CF" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 10
-	},
 /obj/structure/cable{
 	icon_state = "0-4"
+	},
+/obj/machinery/porta_turret/ship/pgf/light{
+	dir = 10;
+	mode = 1
 	},
 /turf/open/floor/engine/hull,
 /area/ship/external/dark)
@@ -3631,10 +3632,11 @@
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
 "Eu" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 5
-	},
 /obj/structure/cable,
+/obj/machinery/porta_turret/ship/pgf/light{
+	dir = 5;
+	mode = 1
+	},
 /turf/open/floor/engine/hull,
 /area/ship/external/dark)
 "EA" = (
@@ -3894,11 +3896,12 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
 "FJ" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 5
-	},
 /obj/structure/cable{
 	icon_state = "0-4"
+	},
+/obj/machinery/porta_turret/ship/pgf/light{
+	dir = 5;
+	mode = 1
 	},
 /turf/open/floor/engine/hull,
 /area/ship/external/dark)
@@ -3914,11 +3917,12 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engines/starboard)
 "FO" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 8
-	},
 /obj/structure/cable{
 	icon_state = "0-4"
+	},
+/obj/machinery/porta_turret/ship/pgf/light{
+	dir = 8;
+	mode = 1
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external/dark)
@@ -4142,11 +4146,12 @@
 /turf/open/floor/vault,
 /area/ship/security/armory)
 "Hb" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 4
-	},
 /obj/structure/cable{
 	icon_state = "0-2"
+	},
+/obj/machinery/porta_turret/ship/pgf/light{
+	dir = 5;
+	mode = 1
 	},
 /turf/open/floor/engine/hull,
 /area/ship/external/dark)
@@ -7675,7 +7680,7 @@ xz
 xz
 xz
 xz
-tU
+Hb
 xk
 UE
 pW
