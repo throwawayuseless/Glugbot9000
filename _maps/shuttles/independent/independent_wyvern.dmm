@@ -1440,8 +1440,6 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/door/airlock/maintenance{
 	name = "Starboard Thrusters"
 	},
@@ -2742,13 +2740,28 @@
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
 /area/ship/maintenance/fore)
+"EQ" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/catwalk/over,
+/turf/open/floor/plating,
+/area/ship/engineering/engine)
 "ES" = (
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
 /obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "Fe" = (
@@ -4187,11 +4200,13 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
 /obj/structure/catwalk/over,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 9
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "Vq" = (
@@ -4305,19 +4320,6 @@
 /obj/item/clothing/head/helmet,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
-"WH" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/structure/catwalk/over,
-/turf/open/floor/plating,
-/area/ship/engineering/engine)
 "WM" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -4813,7 +4815,7 @@ fn
 ge
 gn
 Su
-WH
+EQ
 Su
 Ly
 Ly
@@ -4847,7 +4849,7 @@ Jb
 ge
 FJ
 Su
-WH
+EQ
 Su
 Ly
 Ly
@@ -4881,7 +4883,7 @@ Ij
 ge
 CA
 Su
-WH
+EQ
 Su
 Ly
 Ly
@@ -4915,7 +4917,7 @@ sV
 ge
 da
 Su
-WH
+EQ
 vO
 Ly
 Ly
