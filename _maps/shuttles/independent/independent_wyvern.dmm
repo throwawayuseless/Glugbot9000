@@ -2697,9 +2697,6 @@
 /obj/structure/window/spawner/north,
 /turf/open/floor/plasteel/dark,
 /area/ship/construction)
-"Ei" = (
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/maintenance/central)
 "Em" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -3079,9 +3076,6 @@
 "Iq" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/security)
-"Ir" = (
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/maintenance/central)
 "Iw" = (
 /obj/machinery/light/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
@@ -4323,7 +4317,7 @@
 	},
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
-/area/ship/maintenance/central)
+/area/ship/engineering/engine)
 "WM" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -4818,9 +4812,9 @@ BZ
 fn
 ge
 gn
-Ei
+Su
 WH
-Ei
+Su
 Ly
 Ly
 Ly
@@ -4852,9 +4846,9 @@ vR
 Jb
 ge
 FJ
-Ei
+Su
 WH
-Ei
+Su
 Ly
 Ly
 Ly
@@ -4886,9 +4880,9 @@ HD
 Ij
 ge
 CA
-Ei
+Su
 WH
-Ei
+Su
 Ly
 Ly
 Ly
@@ -4920,9 +4914,9 @@ wk
 sV
 ge
 da
-Ei
+Su
 WH
-Ir
+vO
 Ly
 Ly
 Ly
