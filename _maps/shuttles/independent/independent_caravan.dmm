@@ -311,10 +311,6 @@
 /area/ship/engineering/atmospherics)
 "fv" = (
 /obj/machinery/door/window/northleft,
-/obj/structure/closet/wall{
-	dir = 4;
-	pixel_x = -29
-	},
 /obj/item/clothing/shoes/galoshes,
 /obj/item/reagent_containers/spray/cleaner,
 /obj/item/reagent_containers/spray/cleaner,
@@ -328,6 +324,7 @@
 	},
 /obj/item/storage/box/lights/mixed,
 /obj/item/storage/box/lights/mixed,
+/obj/structure/closet/wall/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/janitor)
 "fw" = (
@@ -1262,9 +1259,7 @@
 /obj/item/clothing/glasses/meson/engine/tray,
 /obj/item/pipe_dispenser,
 /obj/item/multitool,
-/obj/structure/closet/wall/orange{
-	pixel_y = 32
-	},
+/obj/structure/closet/wall/orange/directional/north,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "xg" = (
@@ -1311,14 +1306,13 @@
 /obj/structure/closet/crate/science,
 /obj/item/circuitboard/machine/circuit_imprinter,
 /obj/item/circuitboard/machine/rdserver,
-/obj/item/disk/nanite_program,
-/obj/item/nanite_scanner,
 /obj/item/reagent_scanner,
 /obj/item/clothing/glasses/hud/diagnostic,
 /obj/item/clothing/glasses/science,
 /obj/item/clothing/glasses/science/prescription,
 /obj/item/circuitboard/machine/experimentor,
 /obj/item/circuitboard/machine/protolathe/department/cargo,
+/obj/item/circuitboard/machine/mechfab,
 /turf/open/floor/plasteel/white,
 /area/ship/science)
 "yw" = (
@@ -1768,10 +1762,6 @@
 /obj/effect/turf_decal/borderfloor{
 	dir = 8
 	},
-/obj/structure/closet/wall{
-	dir = 4;
-	pixel_x = -32
-	},
 /obj/item/kinetic_crusher,
 /obj/item/storage/bag/ore,
 /obj/item/mining_scanner,
@@ -1781,6 +1771,7 @@
 /obj/item/pickaxe,
 /obj/item/pickaxe,
 /obj/item/pickaxe,
+/obj/structure/closet/wall/directional/west,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
 "FL" = (
@@ -1974,11 +1965,6 @@
 /turf/open/floor/plating,
 /area/ship/external)
 "JR" = (
-/obj/structure/closet/secure_closet/wall{
-	dir = 4;
-	name = "kitchen freezer";
-	pixel_x = -28
-	},
 /obj/item/storage/fancy/egg_box,
 /obj/item/storage/fancy/egg_box,
 /obj/item/reagent_containers/condiment/enzyme{
@@ -1992,6 +1978,7 @@
 /obj/item/reagent_containers/condiment/flour,
 /obj/item/reagent_containers/condiment/sugar,
 /obj/item/reagent_containers/condiment/sugar,
+/obj/structure/closet/secure_closet/wall/directional/west,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew)
 "JV" = (
