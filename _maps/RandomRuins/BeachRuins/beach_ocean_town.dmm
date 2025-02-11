@@ -730,12 +730,6 @@
 	},
 /turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
-"iT" = (
-/obj/structure/flora/tree/jungle{
-	icon_state = "tree5"
-	},
-/turf/open/floor/plating/grass/beach/lit,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "iW" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Grocery Store";
@@ -909,9 +903,7 @@
 /turf/open/floor/carpet,
 /area/ruin/beach/oceantown/hotel)
 "lk" = (
-/obj/structure/flora/tree/jungle{
-	icon_state = "tree3"
-	},
+/obj/structure/flora/tree/jungle,
 /turf/open/floor/plating/grass/jungle,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "ly" = (
@@ -1325,12 +1317,6 @@
 	},
 /turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
-"rz" = (
-/obj/structure/flora/tree/jungle{
-	icon_state = "tree10"
-	},
-/turf/open/floor/plating/grass,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "rH" = (
 /obj/machinery/vending/boozeomat,
 /turf/open/floor/plasteel,
@@ -1727,12 +1713,6 @@
 	dir = 10
 	},
 /turf/open/water/beach,
-/area/overmap_encounter/planetoid/beachplanet/explored)
-"wQ" = (
-/obj/structure/flora/tree/jungle{
-	icon_state = "tree6"
-	},
-/turf/open/floor/plating/grass,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "wS" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -2170,12 +2150,6 @@
 	},
 /turf/open/water/beach,
 /area/overmap_encounter/planetoid/beachplanet/explored)
-"Cc" = (
-/obj/structure/flora/tree/jungle{
-	icon_state = "tree5"
-	},
-/turf/open/floor/plating/grass,
-/area/overmap_encounter/planetoid/beachplanet/explored)
 "Cd" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/brflowers,
@@ -2503,9 +2477,7 @@
 /area/ruin/beach/oceantown)
 "FC" = (
 /obj/structure/flora/ausbushes/lavendergrass,
-/obj/structure/flora/tree/jungle{
-	icon_state = "tree9"
-	},
+/obj/structure/flora/tree/jungle,
 /turf/open/floor/plating/grass,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "FF" = (
@@ -2786,12 +2758,6 @@
 /turf/open/floor/wood{
 	light_range = 2
 	},
-/area/overmap_encounter/planetoid/beachplanet/explored)
-"HR" = (
-/obj/structure/flora/tree/jungle{
-	icon_state = "tree3"
-	},
-/turf/open/floor/plating/grass,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "HW" = (
 /obj/structure/table,
@@ -3243,9 +3209,7 @@
 /turf/open/floor/plating/asteroid/sand/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "ME" = (
-/obj/structure/flora/tree/jungle{
-	icon_state = "tree7"
-	},
+/obj/structure/flora/tree/jungle,
 /turf/open/floor/plating/grass/beach/lit,
 /area/overmap_encounter/planetoid/beachplanet/explored)
 "MF" = (
@@ -4674,7 +4638,7 @@ fG
 sD
 sD
 Mi
-HR
+Mq
 rl
 rl
 Mi
@@ -5406,7 +5370,7 @@ ue
 mX
 gb
 Mi
-HR
+Mq
 sD
 sD
 Mi
@@ -6596,7 +6560,7 @@ GE
 Ru
 Ru
 fG
-wQ
+Mq
 Mi
 qw
 wF
@@ -7554,7 +7518,7 @@ Ho
 mi
 Mi
 Mi
-Cc
+Mq
 gb
 gb
 Mi
@@ -8138,7 +8102,7 @@ Ru
 fG
 rl
 Mi
-iT
+ME
 Mi
 id
 Mi
@@ -8401,7 +8365,7 @@ rl
 rl
 rl
 Mi
-Cc
+Mq
 sD
 Ts
 sD
@@ -8785,7 +8749,7 @@ Mi
 hu
 hu
 Mi
-rz
+Mq
 id
 Mi
 hu
@@ -9265,7 +9229,7 @@ rl
 rl
 Mi
 Mi
-wQ
+Mq
 gn
 Mi
 wS

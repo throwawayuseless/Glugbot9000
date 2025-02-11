@@ -47,9 +47,11 @@
 
 /turf/closed/indestructible/splashscreen
 	name = "Space Station 13"
+	desc = null //NON MODULE CHANGE
 	icon = 'icons/blank_title.png'
 	icon_state = ""
 	layer = SPLASHSCREEN_LAYER
+	pixel_x = -96 //NON MODULE CHANGE
 	plane = SPLASHSCREEN_PLANE
 	bullet_bounce_sound = null
 
@@ -57,7 +59,19 @@
 	SStitle.splash_turf = src
 	if(SStitle.icon)
 		icon = SStitle.icon
+	handle_generic_titlescreen_sizes()
 	..()
+
+//--**NON MODULE CHANGE BLOCK**--
+///helper proc that will center the screen if the icon is changed to a generic width, to make admins have to fudge around with pixel_x less. returns null
+/turf/closed/indestructible/splashscreen/proc/handle_generic_titlescreen_sizes()
+	var/icon/size_check = icon(icon, icon_state)
+	var/width = size_check.Width()
+	if(width == 480) // 480x480 is nonwidescreen
+		pixel_x = 0
+	else if(width == 736) // 736x480 is widescreen
+		pixel_x = -96
+//--**NON MODULE CHANGE BLOCK END**--
 
 /turf/closed/indestructible/splashscreen/vv_edit_var(var_name, var_value)
 	. = ..()
@@ -65,7 +79,14 @@
 		switch(var_name)
 			if(NAMEOF(src, icon))
 				SStitle.icon = icon
+				handle_generic_titlescreen_sizes() //NON MODULE CHANGE
 
+//--**NON MODULE CHANGE BLOCK**--
+/turf/closed/indestructible/start_area
+	name = null
+	desc = null
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+//--**NON MODULE CHANGE BLOCK END**--
 
 /turf/closed/indestructible/reinforced
 	name = "reinforced wall"
