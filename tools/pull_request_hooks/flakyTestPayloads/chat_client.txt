@@ -39,7 +39,7 @@
 2022-10-27T05:35:33.7797278Z Getting action download info
 2022-10-27T05:35:33.9844802Z Download action repository 'actions/checkout@v3' (SHA:93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8)
 2022-10-27T05:35:34.3746562Z Download action repository 'actions/cache@v3' (SHA:1c73980b09e7aea7201f325a7aa3ad00beddcdda)
-2022-10-27T05:35:34.6080813Z Download action repository 'actions/upload-artifact@v3' (SHA:83fd05a356d7e2593de66fc9913b3002723633cb)
+2022-10-27T05:35:34.6080813Z Download action repository 'actions/upload-artifact@v4' (SHA:83fd05a356d7e2593de66fc9913b3002723633cb)
 2022-10-27T05:35:34.9999481Z ##[group]Checking docker version
 2022-10-27T05:35:35.0019606Z ##[command]/usr/bin/docker version --format '{{.Server.APIVersion}}'
 2022-10-27T05:35:35.2352575Z '1.41'
