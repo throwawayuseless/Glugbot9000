@@ -3642,6 +3642,7 @@
 #include "modular_pentest\modules\serenity_clothes\code\worn.dm"
 #include "modular_pentest\modules\shotshells\code\converter.dm"
 #include "modular_pentest\modules\shotshells\code\shotshells.dm"
+#include "modular_pentest\modules\simplemobs\code\revive_fix.dm"
 #include "modular_pentest\modules\spessknife\code\spess_knife.dm"
 #include "modular_pentest\modules\umbrella\code\umbrellas.dm"
 // END_INCLUDE
