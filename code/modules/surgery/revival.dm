@@ -26,16 +26,9 @@
 
 /// Extra checks which can be overridden
 /datum/surgery/revival/proc/is_valid_target(mob/living/patient)
-	if (iscarbon(patient))
-		return FALSE
+//	if (iscarbon(patient))
+//		return FALSE
 	if (!(patient.mob_biotypes & (MOB_ORGANIC|MOB_HUMANOID)))
-		return FALSE
-	return TRUE
-
-/datum/surgery/revival/mechanic/is_valid_target(mob/living/patient)
-	if (iscarbon(patient))
-		return FALSE
-	if (!(patient.mob_biotypes & (MOB_ROBOTIC|MOB_HUMANOID)))
 		return FALSE
 	return TRUE
 
