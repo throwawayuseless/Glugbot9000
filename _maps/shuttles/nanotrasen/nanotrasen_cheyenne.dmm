@@ -613,10 +613,9 @@
 "ci" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/door/firedoor/border_only{
-	dir = 1
-	},
 /obj/machinery/door/firedoor/border_only,
+/obj/structure/extinguisher_cabinet/directional/east,
+/obj/machinery/door/window/northright,
 /turf/open/floor/plasteel/stairs,
 /area/ship/engineering/engine)
 "cq" = (
@@ -1127,7 +1126,6 @@
 /turf/open/floor/plasteel,
 /area/ship/cargo)
 "eH" = (
-/obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
@@ -1167,7 +1165,6 @@
 /area/ship/engineering/engine)
 "eU" = (
 /obj/structure/closet/wall/directional/south,
-/obj/item/spacecash/bundle/c100,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
@@ -1594,6 +1591,7 @@
 /obj/structure/railing,
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
 /obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/sloth/paperwork,
 /turf/open/floor/plasteel,
 /area/ship/cargo)
 "gR" = (
@@ -2518,7 +2516,6 @@
 /area/ship/security)
 "ll" = (
 /obj/structure/closet/wall/directional/east,
-/obj/item/spacecash/bundle/c100,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/dorm/dormtwo)
@@ -2840,14 +2837,6 @@
 /obj/item/radio/intercom/wideband/directional/west,
 /turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
-"mJ" = (
-/obj/machinery/door/firedoor/border_only,
-/obj/machinery/door/firedoor/border_only{
-	dir = 1
-	},
-/obj/structure/extinguisher_cabinet/directional/east,
-/turf/open/floor/plasteel/stairs,
-/area/ship/engineering/engine)
 "mL" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -3551,7 +3540,6 @@
 	dir = 4
 	},
 /obj/item/radio/intercom/directional/east,
-/obj/effect/spawner/lootdrop/salvage,
 /turf/open/floor/plasteel/tech,
 /area/ship/storage/eva)
 "qf" = (
@@ -4680,12 +4668,13 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
 "ul" = (
-/obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/light/directional/east,
+/obj/machinery/door/window/southright,
 /turf/open/floor/plasteel/stairs{
 	dir = 1
 	},
@@ -5015,11 +5004,11 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
-/obj/machinery/door/firedoor/border_only,
 /obj/machinery/light_switch{
 	dir = 4;
 	pixel_x = -23
 	},
+/obj/machinery/door/window/southleft,
 /turf/open/floor/plasteel/stairs{
 	dir = 1
 	},
@@ -7967,16 +7956,17 @@
 /obj/effect/turf_decal/industrial/outline/blue,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/medical)
-"HK" = (
-/obj/structure/railing,
-/obj/effect/turf_decal/corner/opaque/yellow/diagonal,
-/mob/living/simple_animal/hostile/mining_drone{
-	desc = "A minebot with the name \"Wall-y\" painted on the side in careful cursive writing. He may be cute, but he still constantly gets in the way.";
-	name = "\improper Wall-y";
-	faction = list("playerNanotrasen")
+"HE" = (
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
-/turf/open/floor/plasteel,
-/area/ship/cargo)
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/effect/turf_decal/corner/opaque/ntblue/half{
+	dir = 4
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/hallway/fore)
 "HN" = (
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal{
 	dir = 8
@@ -8006,10 +7996,6 @@
 /turf/open/floor/plasteel,
 /area/ship/hallway/aft)
 "HS" = (
-/obj/machinery/door/airlock/command{
-	name = "Captain's Quarters";
-	req_access_txt = "20"
-	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -8021,6 +8007,10 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/door/airlock/command{
+	name = "Adminal's Quarters";
+	req_access_txt = "20"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew)
 "HU" = (
@@ -8056,10 +8046,6 @@
 /obj/effect/spawner/lootdrop/materials{
 	pixel_x = 8;
 	pixel_y = 8
-	},
-/obj/effect/spawner/lootdrop/materials{
-	pixel_x = -4;
-	pixel_y = -4
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/engine)
@@ -9036,19 +9022,8 @@
 /area/ship/hangar)
 "Mb" = (
 /obj/structure/crate_shelf,
-/obj/effect/spawner/lootdrop/techstorage/engineering,
 /obj/structure/closet/crate/secure/engineering,
 /turf/open/floor/plasteel/dark,
-/area/ship/engineering/engine)
-"Mc" = (
-/obj/machinery/door/firedoor/border_only{
-	dir = 1
-	},
-/obj/machinery/door/firedoor/border_only,
-/obj/machinery/light/directional/east,
-/turf/open/floor/plasteel/stairs{
-	dir = 1
-	},
 /area/ship/engineering/engine)
 "Me" = (
 /obj/machinery/airalarm/directional/west,
@@ -9482,7 +9457,8 @@
 /obj/item/storage/toolbox/fishing,
 /obj/item/fishing_rod,
 /obj/structure/plaque/static_plaque/golden/captain{
-	pixel_y = 32
+	pixel_y = 32;
+	name = "The Most Robust Admiral Award for Robustness"
 	},
 /turf/open/floor/carpet/green,
 /area/ship/crew)
@@ -9827,20 +9803,20 @@
 "Pc" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/reinforced,
+/obj/machinery/light/directional/east,
 /obj/item/storage/toolbox/emergency{
 	pixel_x = -1;
 	pixel_y = 8
-	},
-/obj/item/stack/cable_coil/red{
-	pixel_x = 2;
-	pixel_y = 6
 	},
 /obj/item/storage/toolbox/electrical,
 /obj/item/storage/toolbox/mechanical{
 	pixel_x = 1;
 	pixel_y = -8
 	},
-/obj/machinery/light/directional/east,
+/obj/item/stack/cable_coil/red{
+	pixel_x = 2;
+	pixel_y = 6
+	},
 /obj/item/poster/random_official,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/engine)
@@ -10983,36 +10959,37 @@
 	},
 /obj/item/card/id/captains_spare,
 /obj/item/storage/photo_album/Captain,
+/obj/structure/closet/secure_closet/empty{
+	icon_state = "cap"
+	},
 /obj/item/stock_parts/cell/gun/upgraded,
 /obj/item/gun/energy/e_gun/adv_stopping,
 /obj/item/storage/belt/sabre,
 /obj/item/clothing/glasses/hud/security/sunglasses/gars/supergars,
-/obj/item/radio/headset/heads/captain,
-/obj/item/radio/headset/heads/captain/alt,
 /obj/item/storage/box/silver_ids,
-/obj/item/cartridge/captain,
-/obj/item/clothing/suit/armor/nanotrasen/captain/parade,
-/obj/item/clothing/suit/armor/vest/capcarapace,
-/obj/item/clothing/head/caphat/parade,
-/obj/item/clothing/head/nanotrasen/captain/peaked,
-/obj/item/clothing/under/rank/command/captain/suit,
-/obj/item/clothing/under/rank/command/captain/skirt,
 /obj/item/clothing/shoes/sneakers/brown,
-/obj/item/pet_carrier,
 /obj/item/clothing/neck/petcollar,
-/obj/item/storage/backpack/duffelbag/captain,
-/obj/item/storage/backpack/captain,
-/obj/item/clothing/suit/hooded/wintercoat/captain,
-/obj/item/storage/backpack/messenger/com,
-/obj/item/clothing/head/beret/captain,
-/obj/item/clothing/gloves/color/captain/nt,
-/obj/item/clothing/head/beret/centcom_formal,
-/obj/structure/closet/secure_closet/empty{
-	icon_state = "cap"
+/obj/item/pet_carrier,
+/obj/item/storage/backpack/admiral,
+/obj/item/storage/backpack/duffelbag/admiral,
+/obj/item/storage/backpack/messenger/admiral,
+/obj/item/storage/backpack/satchel/admiral,
+/obj/item/clothing/under/nanotrasen/admiral/skirt,
+/obj/item/clothing/under/nanotrasen/admiral,
+/obj/item/clothing/suit/hooded/wintercoat/admiral,
+/obj/item/clothing/suit/armor/nanotrasen/admiral/parade,
+/obj/item/clothing/suit/armor/nanotrasen/admiral,
+/obj/item/clothing/neck/cloak/admiral,
+/obj/item/clothing/head/nanotrasen/admiral,
+/obj/item/clothing/head/nanotrasen/admiral/peaked,
+/obj/item/clothing/gloves/color/admiral/nt,
+/obj/item/clothing/head/beret/captain{
+	armor = list("melee" = 10, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50);
+	name = "admiral beret"
 	},
-/obj/item/clothing/neck/cloak/cap{
-	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
-	},
+/obj/item/cartridge/captain,
+/obj/item/radio/headset/nanotrasen/alt/admiral,
+/obj/item/radio/headset/nanotrasen/admiral,
 /turf/open/floor/carpet/green,
 /area/ship/crew)
 "Tv" = (
@@ -11329,9 +11306,11 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
 "Uq" = (
-/obj/item/clothing/suit/space/hardsuit/swat/captain,
 /obj/machinery/suit_storage_unit/inherit,
 /obj/machinery/firealarm/directional/north,
+/obj/item/clothing/suit/space/hardsuit/swat/captain{
+	name = "admiral's SWAT suit"
+	},
 /turf/open/floor/carpet/green,
 /area/ship/crew)
 "Us" = (
@@ -11405,17 +11384,6 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
-"UR" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/effect/turf_decal/corner/opaque/ntblue/half{
-	dir = 4
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/hallway/fore)
 "US" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 10
@@ -11843,12 +11811,12 @@
 /area/ship/hallway/port)
 "WW" = (
 /obj/machinery/door/firedoor/border_only,
-/obj/machinery/door/firedoor/border_only{
-	dir = 1
-	},
 /obj/machinery/light_switch{
 	dir = 4;
 	pixel_x = -23
+	},
+/obj/machinery/door/window/northleft{
+	req_ship_access = 1
 	},
 /turf/open/floor/plasteel/stairs,
 /area/ship/engineering/engine)
@@ -12868,7 +12836,7 @@ tJ
 bV
 If
 KS
-Mc
+DH
 Cx
 LL
 rX
@@ -12890,7 +12858,7 @@ Pc
 ue
 NG
 Su
-mJ
+DH
 Ig
 Ig
 le
@@ -13851,7 +13819,7 @@ MT
 cR
 Rq
 Gj
-HK
+FO
 Wu
 BB
 kn
@@ -14564,9 +14532,9 @@ gW
 gW
 gW
 IS
-UR
-UR
-UR
+HE
+HE
+HE
 fG
 Vv
 Pl
