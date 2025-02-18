@@ -1,0 +1,7 @@
+author: Ossa88
+changes:
+  - {rscadd: Paperwork the sloth}
+  - {rscdel: Wall-y the pain in my side Minebot}
+  - {bugfix: Swapped the Flotilla Commander for Flotilla Admiral}
+  - {rscadd: Admiral named gear and a new pentest modular faction_nanotrasen file}
+delete-after: true
