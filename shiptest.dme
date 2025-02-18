@@ -3614,6 +3614,8 @@
 #include "modular_pentest\master_files\code\game\pentest_proc.dm"
 #include "modular_pentest\master_files\code\modules\research\techweb\all_nodes.dm"
 #include "modular_pentest\modules\faction_horizon\code\horizon_gauss.dm"
+#include "modular_pentest\modules\faction_nanotrasen\code\pentest_nanotrasen_items.dm"
+#include "modular_pentest\modules\faction_nanotrasen\code\pentest_nanotrasen_outfits.dm"
 #include "modular_pentest\modules\hair_styles\code\hair.dm"
 #include "modular_pentest\modules\pi_items\code\clothing.dm"
 #include "modular_pentest\modules\pi_items\code\flooring_decals.dm"
