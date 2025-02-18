@@ -16,8 +16,8 @@
 		"WEAPONS"
 	],
 	"job_slots": {
-		"Flotilla Commander": {
-			"outfit": "/datum/outfit/job/nanotrasen/captain/centcom",
+		"Flotilla Admiral": {
+			"outfit": "/datum/outfit/job/nanotrasen/admiral",
 			"officer": true,
 			"slots": 1
 		},
@@ -37,12 +37,13 @@
 			"slots": 1
 		},
 		"Chief Medical Officer":{
-			"outfit": "/datum/outfit/job/cmo",
+			"outfit": "/datum/outfit/job/nanotrasen/cmo",
 			"officer": true,
 			"slots": 1
 		},
 		"Quartermaster": {
-			"outfit": "/datum/outfit/job/nanotrasen/quartermaster",
+			"outfit": "/datum/outfit/job/nanotrasen/quartermaster/officer",
+			"officer": true,
 			"slots": 1
 		},
 		"Security Officer": {
@@ -57,7 +58,7 @@
 			"outfit": "/datum/outfit/job/nanotrasen/engineer",
 			"slots": 1
 		},
-				"Atmospheric Technician": {
+		"Atmospheric Technician": {
 			"outfit": "/datum/outfit/job/nanotrasen/atmos",
 			"slots": 1
 		},
