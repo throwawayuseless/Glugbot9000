@@ -1,0 +1,5 @@
+author: Ossa88
+changes:
+  - {rscadd: Simple Pet Revival Surgery.}
+  - {bugfix: Wing Reconstruction checks that the target is humanoid.}
+delete-after: true
