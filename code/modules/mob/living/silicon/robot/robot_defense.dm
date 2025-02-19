@@ -186,7 +186,7 @@ GLOBAL_LIST_INIT(blacklisted_borg_hats, typecacheof(list( //Hats that don't real
 		var/obj/item/borg/upgrade/U = W
 		if(!opened)
 			to_chat(user, "<span class='warning'>You must access the cyborg's internals!</span>")
-		else if(!src.module && U.require_module)
+		else if(!src.module && U.require_model)
 			to_chat(user, "<span class='warning'>The cyborg must choose a module before it can be upgraded!</span>")
 		else if(U.locked)
 			to_chat(user, "<span class='warning'>The upgrade is locked and cannot be used yet!</span>")

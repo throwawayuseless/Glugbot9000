@@ -676,7 +676,13 @@
 				"floating face" = 'icons/mob/ai.dmi',
 				"xeno queen" = 'icons/mob/alien.dmi',
 				"horror" = 'icons/mob/ai.dmi',
-				"clock" = 'icons/mob/ai.dmi'
+				"clock" = 'icons/mob/ai.dmi',
+				"holo-angel" = 'modular_pentest/modules/robots/icons/mob/aiholo.dmi',
+				"holo-borb" = 'modular_pentest/modules/robots/icons/mob/aiholo.dmi',
+				"holo-biggestfan" = 'modular_pentest/modules/robots/icons/mob/aiholo.dmi',
+				"holo-cloudkat" = 'modular_pentest/modules/robots/icons/mob/aiholo.dmi',
+				"holo-donut" = 'modular_pentest/modules/robots/icons/mob/aiholo.dmi',
+				"holo-frostphoenix" = 'modular_pentest/modules/robots/icons/mob/aiholo.dmi'
 				)
 
 			input = input("Please select a hologram:") as null|anything in sortList(icon_list)
