@@ -369,7 +369,6 @@
 /obj/item/pinpointer/crew,
 /obj/item/gps,
 /obj/item/gps,
-/obj/item/gps,
 /obj/item/implanter,
 /obj/item/implantcase/mindshield,
 /obj/item/implantcase/mindshield,
@@ -377,13 +376,10 @@
 /obj/item/storage/box/ids,
 /obj/item/storage/wallet,
 /obj/item/storage/wallet,
-/obj/item/storage/wallet,
-/obj/item/card/bank,
 /obj/item/card/bank,
 /obj/item/card/bank,
 /obj/structure/closet,
 /obj/item/gun/energy/e_gun,
-/obj/item/stock_parts/cell/gun/empty,
 /obj/item/stock_parts/cell/gun/empty,
 /obj/item/stock_parts/cell/gun/empty,
 /turf/open/floor/mineral/plastitanium,
@@ -680,6 +676,18 @@
 /area/ship/bridge)
 "nZ" = (
 /obj/structure/safe,
+/obj/item/attachment/laser_sight,
+/obj/item/attachment/laser_sight,
+/obj/item/attachment/laser_sight,
+/obj/item/attachment/rail_light,
+/obj/item/attachment/rail_light,
+/obj/item/attachment/rail_light,
+/obj/item/attachment/silencer,
+/obj/item/attachment/silencer,
+/obj/item/attachment/silencer,
+/obj/item/attachment/bayonet,
+/obj/item/attachment/bayonet,
+/obj/item/attachment/bayonet,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "oa" = (
@@ -1516,14 +1524,10 @@
 /area/ship/engineering/engine)
 "HP" = (
 /obj/structure/closet/cabinet,
-/obj/item/storage/box/syndimaid,
 /obj/item/clothing/shoes/combat/coldres,
-/obj/item/toy/plush/moth/firewatch,
 /obj/item/toy/plush/moth,
-/obj/item/clothing/under/rank/command/captain/suit/skirt,
 /obj/item/clothing/head/wig/natural,
 /obj/item/storage/backpack/duffelbag/syndie,
-/obj/item/flashlight/lantern,
 /obj/item/flashlight/lantern,
 /turf/open/floor/carpet/lone,
 /area/ship/crew)
@@ -1873,13 +1877,13 @@
 /turf/open/floor/mineral/gold,
 /area/ship/crew/library)
 "PJ" = (
-/obj/item/bedsheet/double/captain{
-	dir = 4
-	},
-/obj/structure/bed/double{
-	dir = 4
-	},
 /obj/structure/curtain/bounty,
+/obj/structure/bed{
+	dir = 4
+	},
+/obj/item/bedsheet/captain{
+	dir = 4
+	},
 /turf/open/floor/carpet/lone,
 /area/ship/crew)
 "PP" = (
@@ -2124,6 +2128,7 @@
 "Uo" = (
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/suit/space/hardsuit/swat,
+/obj/item/clothing/mask/gas/sechailer/swat,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "Ut" = (
@@ -2338,6 +2343,7 @@
 /obj/item/clothing/suit/space/hardsuit/swat,
 /obj/machinery/light/dim/directional/south,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/mask/gas/sechailer/swat,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "Xr" = (
