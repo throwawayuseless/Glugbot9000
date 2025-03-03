@@ -1,0 +1,35 @@
+name: Update from shiptest
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 4,5 * * *"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  pr_title: 'Upstream mirror'
+  pr_body: This is an automated pull request to merge the latest changes from shiptest.
+  pr_branch: mirror
+  pr_label: mirror
+  upstream_repo: shiptest-ss13/Shiptest
+  upstream_branch: master
+  commiter_name: penbot[bot]
+  commiter_email: 181007896+penbot[bot]@users.noreply.github.com
+  tracked_files: SQL/database_changelog.md,config/,tools/tgs_scripts/,tools/autowiki/,tools/test_merge_bot/,dependencies.sh
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      -name: Checkout
+      -uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+      -name: Fetch Upstream
+        run: |
+          git remote add upstream "https://github.com/$upstream_repo.git"
+          git fetch upstream $upstream_branch
+        -name: Check Tracked Files
