@@ -1,0 +1,162 @@
+2025-03-03:
+  ? ''
+  : - rscadd: A strange modified shetland has been spotted in the sector
+  Blacklist897:
+  - rscadd: Hound is enabled again
+  - rscdel: Apis disabled
+  Blacklist897, Kuma:
+  - rscadd: A strange model of magnetic weapon has been spotted in the sector
+  Constellado:
+  - rscdel: Removed same name respawn check
+  - config: changed the text that shows up when you respawn
+  - rscadd: Added Umbrellas
+  - bugfix: fixes the ice outpost's electrolyser
+  - bugfix: Title screen art now fills the screen
+  - rscadd: Added new guns and tweaks from shiptest
+  - imageadd: Changes the wall sprites
+  - balance: The cursed businessman's bank account is no longer extensive, and has
+      had its curse dispelled.
+  - bugfix: The business man's mask now replaces all the proper words.
+  - rscadd: Updates a rare ruin.
+  - rscadd: Adds protein powder
+  - bugfix: fixes V's outpost ruin
+  - balance: Umbrellas no longer have razor blades as fabric.
+  - rscadd: A bunch of PRs from shiptest
+  - server: replaces youtube-dl with yt-dlp
+  - imageadd: An updated legate sprite
+  - bugfix: fixes the shotgun in the fast food ruin
+  - rscadd: Added many things from shiptest
+  - bugfix: many fixes from shiptest
+  KnigTheThrasher:
+  - rscadd: Added Caravan ship back to the game
+  OnlineGirlfriend:
+  - balance: Removed pAI access to universal security and medical records
+  Ossa88:
+  - bugfix: Tarcity Gun Fixed
+  - bugfix: Fixes some stair sprites so they are stairs and not void
+  - rscadd: Wideband Radio Wall Terminal added to cargo
+  - bugfix: Fish mobs can now be revived properly.
+  - rscadd: S.P.E.S.S. Knife
+  - bugfix: Beach Town has trees again.
+  - rscdel: RNG R&D Lootbox
+  - bugfix: Planets should no longer spawn without ruins when generating due to bad
+      map datums
+  - rscadd: Added 1 remixed Beach ruin
+  - rscdel: Removed 1 Beach ruin
+  - bugfix: Updated Ice Moon Engineering Outpost
+  - rscadd: Added 1 remixed 1 Jungle ruin
+  - rscdel: Removed 8 Jungle ruins
+  - rscadd: Added 1 remixed Lava ruin
+  - rscdel: Removed 8 Lavaland ruins
+  - rscadd: Added 1 remixed Rockplanet ruin
+  - rscdel: Removed 7 Rockplanet ruins
+  - rscdel: Removed 6 Sandplanet ruins
+  - bugfix: Adjusted the loot on 2 Space ruins
+  - rscdel: Removed 6 Space ruins
+  - rscadd: Added 1 remixed Wasteland ruin
+  - rscdel: Removed 5 Wasteland ruins
+  - refactor: Prepped Area Modularization for Mappers
+  - bugfix: Some ship URL links
+  - bugfix: Refitted Riggs-class officially renamed into Wyvern-class
+  - rscadd: Mudskipper-Class added blueprint
+  - rscadd: Rigger-Class added blueprint
+  - rscadd: Shetland-Class added blueprint
+  - rscadd: Sunskipper-Class added blueprint
+  - rscadd: Wyvern-Class added blueprint
+  - rscadd: Valor-Class added blueprint
+  - rscadd: Vaquero-Class added blueprint
+  - rscadd: Meta-Class added blueprint
+  - rscadd: Ranger-Class added blueprint
+  - rscadd: Skipper-Class added blueprint
+  - rscadd: Crying Sun-Class added blueprint
+  - rscadd: Noderider-Class added blueprint
+  - rscadd: Tortuga-Class added blueprint
+  - rscadd: Elder-Class added blueprint
+  - rscadd: Cybersun-Class added blueprint
+  - rscadd: Gorlax Hyena-Class added blueprint
+  - rscadd: Twinkleshine-Class added blueprint
+  - rscadd: Chronicle-Class added blueprint
+  - rscadd: Inkwell-Class added blueprint
+  - rscadd: Paracelsus-Class added blueprint
+  - rscadd: 'MALP-Class Shuttle: 9mmAP Ammo Box added to locker'
+  - rscadd: 'MALP-Class Shuttle: Medical Supply Boxes added to Crate'
+  - rscadd: 'MALP-Class Shuttle: Small Scrubber Network added for out of hanger use.'
+  - rscadd: 'Sierra-Class Shuttle: Small Scrubber Network added for out of hanger
+      use.'
+  - bugfix: 'MALP-Class Shuttle: removed duplicate light'
+  - bugfix: Fixed Self Repair Module Code
+  - rscadd: New AI Core Sprites
+  - rscadd: New AI Hologram Sprites
+  - rscadd: NuMeka Borg Sprites
+  - rscdel: Servbot Borg Sprites
+  - rscdel: Wall-E, Wall-A, EVE, Fallout Borg Sprites.
+  - rscadd: Medical Omnitools
+  - rscadd: Engineering Omnitools
+  - rscadd: Service Cyborg Botany Tools
+  - rscadd: Service Cyborg Condiment Synthesizer
+  - rscadd: Service Cyborg Silicon Knife
+  - rscadd: Service Cyborg Service Apparatus
+  - rscadd: Science Cyborg
+  - rscadd: Science Cyborg Scanner Upgrade
+  - rscadd: Ninja Cyborg
+  - bugfix: Terragov lockers are no longer cloaked.
+  - bugfix: Solgov lockers removed from code.
+  - bugfix: Shetland Power Cables
+  - bugfix: Shetland missing APC
+  - rscadd: Boyardee-class Entertainment Vessel
+  - rscadd: Ship Purchase Screen now notes the original Architect of a ship.
+  - refactor: Updated ship .json files
+  - code_imp: Prep for Omnitool code
+  - rscadd: More Graffiti
+  - bugfix: Restores the Runes for the Random Rune button.
+  - rscadd: BYO-Shuttle
+  - bugfix: Fixes Tests
+  - rscadd: Paperwork the sloth
+  - rscdel: Wall-y the pain in my side Minebot
+  - bugfix: Swapped the Flotilla Commander for Flotilla Admiral
+  - rscadd: Admiral named gear and a new pentest modular faction_nanotrasen file
+  - bugfix: Rules links to rules
+  - bugfix: Ship Selects Wiki Page now links to Github Images
+  - bugfix: Twinkleshine Revolver Fix
+  - bugfix: Wasteplanet Revolver Fix
+  - bugfix: Elite Survey Scanner is no longer named Experimental Survey Scanner
+  - rscadd: Experimental Survey Scanner is now unique with its own sprite.
+  - balance: Cheyenne-Class redesigned - Too much to note see PR
+  - bugfix: fixed wyvern
+  - rscadd: Simple Pet Revival Surgery.
+  - bugfix: Wing Reconstruction checks that the target is humanoid.
+  - rscadd: Biogenerator can make Sugar
+  Vect0r2:
+  - rscadd: shotshells
+  - code_imp: plants now are harvestable & grow 10 times more slowly
+  - refactor: refactored modular pentest
+  - bugfix: ships docked to eachother now share gravity
+  - rscadd: Daniel's it back up
+  - balance: brain tumors no longer damage you while you are SSD and brain damage
+      is halved
+  - rscadd: Halves brain damage from the brain tumor trait
+  - rscadd: Ships can now have unique icons for spaceflight & docking, keep an eye
+      out!
+  - rscadd: The cheyenne now has a unique overmap icon!
+  - admin: automatic snore emote no longer is logged
+  - rscadd: Commander pistols now have mags in them
+  Yobrocharlie:
+  - rscdel: Makes Daniel an admin only spawn
+  Zxaber, Vect0r:
+  - rscadd: Material sheet manipulator
+  monsterlord59:
+  - bugfix: Colossus atmospherics now no longer has its tanks being contaminated with
+      the other's gases.
+  - rscadd: Re-enables the Junker-class.
+  - bugfix: Changed the pod walls of the Junker-class to regular titanium, and adds
+      more vents and scrubbers.
+  - rscadd: Added collectable pens, one for each ship. Except Chronicle, it gets two.
+  - imageadd: Replaced the SWAT Mk. 2 and Captain's SWAT suit sprites.
+  - imageadd: Added digitigrade compatibility for the SWAT Mk. 2 and Captain's SWAT
+      suit sprites.
+  - rscadd: Adds the Pi-class.
+  - spellcheck: Terragov finally stopped sourcing their weapons from Switzerland,
+      entire Solar System population rejoices.
+  zxaber:
+  - balance: Engineer Borgs now have a tool to manipulate material stacks (and also
+      tile stacks). This replaces the R-Glass tool.

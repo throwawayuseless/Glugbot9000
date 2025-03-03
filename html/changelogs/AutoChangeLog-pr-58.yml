@@ -1,5 +1,0 @@
-author: monsterlord59
-changes:
-  - {bugfix: Colossus atmospherics now no longer has its tanks being contaminated
-      with the other's gases.}
-delete-after: true

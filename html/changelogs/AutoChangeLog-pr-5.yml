@@ -1,4 +1,0 @@
-author: Vect0r2
-changes:
-  - {bugfix: ships docked to eachother now share gravity}
-delete-after: true

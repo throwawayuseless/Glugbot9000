@@ -1,5 +1,0 @@
-author: Constellado
-changes:
-  - {rscadd: Added many things from shiptest}
-  - {bugfix: many fixes from shiptest}
-delete-after: true

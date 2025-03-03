@@ -1,4 +1,0 @@
-author: Constellado
-changes:
-  - {server: replaces youtube-dl with yt-dlp}
-delete-after: true

@@ -1,5 +1,0 @@
-author: Constellado
-changes:
-  - {rscdel: Removed same name respawn check}
-  - {config: changed the text that shows up when you respawn}
-delete-after: true

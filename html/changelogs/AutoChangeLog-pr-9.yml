@@ -1,5 +1,0 @@
-author: monsterlord59
-changes:
-  - {rscadd: 'Added collectable pens, one for each ship. Except Chronicle, it gets
-      two.'}
-delete-after: true
