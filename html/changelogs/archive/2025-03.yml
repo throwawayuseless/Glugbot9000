@@ -160,3 +160,6 @@
   zxaber:
   - balance: Engineer Borgs now have a tool to manipulate material stacks (and also
       tile stacks). This replaces the R-Glass tool.
+2025-03-04:
+  Vect0r2:
+  - rscadd: Mirrorbot (hopefully)
