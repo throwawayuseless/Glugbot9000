@@ -15,7 +15,8 @@ jobs:
       - name: CodeOwnersParser
         id: CodeOwnersParser
         uses: tgstation/CodeOwnersParser@v1
-
+        with:
+          fileLimit: 3000
       #Request reviews
       - name: Request reviews
         if: steps.CodeOwnersParser.outputs.owners != ''
