@@ -1,7 +1,7 @@
 //A slow but strong beast that tries to stun using its tentacles
 /mob/living/simple_animal/hostile/asteroid/goliath
 	name = "goliath"
-	desc = "A territorial species of megaherbivore mysteriously found throughout the Frontier that uses its burrowing tendrils to unearth roots, fungus, and occasional minerals. When agitated, it uses these tendrils to ensnare, and subsequently pulverize, perceived threats. CLIP-BARD recommends maintaining a very healthy distance."
+	desc = "A territorial species of megaherbivore mysteriously found throughout the Frontier that uses its burrowing tendrils to unearth roots, fungus, and occasional minerals. When agitated, it uses these tendrils to ensnare, and subsequently pulverize, perceived threats. Nanotrasen Survey Corps recommends maintaining a very healthy distance."
 	icon = 'icons/mob/lavaland/lavaland_monsters_wide.dmi'
 	icon_state = "ancient_goliath"
 	icon_living = "ancient_goliath"
@@ -139,7 +139,7 @@
 //Lavaland Goliath
 /mob/living/simple_animal/hostile/asteroid/goliath/beast
 	name = "goliath"
-	desc = "A territorial species of megaherbivore mysteriously found throughout the Frontier that uses its burrowing tendrils to unearth roots, fungus, and occasional minerals. When agitated, it uses these tendrils to ensnare, and subsequently pulverize, perceived threats. CLIP-BARD recommends maintaining a very healthy distance."
+	desc = "A territorial species of megaherbivore mysteriously found throughout the Frontier that uses its burrowing tendrils to unearth roots, fungus, and occasional minerals. When agitated, it uses these tendrils to ensnare, and subsequently pulverize, perceived threats. Nanotrasen Survey Corps recommends maintaining a very healthy distance."
 	icon = 'icons/mob/lavaland/lavaland_monsters_wide.dmi'
 	icon_state = "goliath"
 	icon_living = "goliath"
