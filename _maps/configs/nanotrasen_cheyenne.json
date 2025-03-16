@@ -93,5 +93,6 @@
 	"architect": "Ossa / SYNAPSE",
 	"contributors": [
 		"No Contributors"
-	]
+	],
+	"run_test": "true"
 }

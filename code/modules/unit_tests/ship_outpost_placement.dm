@@ -3,6 +3,8 @@
 	// disabled or intended as subshuttles
 	for(var/name as anything in SSmapping.shuttle_templates)
 		var/datum/map_template/shuttle/map = SSmapping.shuttle_templates[name]
+		if(!map.run_test) //Pentest edit
+			continue //Pentest edit
 		log_test("Loading [map.name]")
 		try
 			// they'll spawn in empty space, and won't be docked
@@ -16,6 +18,8 @@
 		log_test("Testing [test_outpost.type]")
 
 		for(var/datum/overmap/ship/controlled/cur_ship as anything in SSovermap.controlled_ships)
+			if(!map.run_test) //Pentest edit
+				continue //Pentest edit
 			log_test(" - Docking [cur_ship.source_template.name]")
 
 			// already-docked ships are ignored.
