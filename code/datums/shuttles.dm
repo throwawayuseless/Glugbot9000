@@ -40,7 +40,7 @@
 	// When a player attempts to spawn a ship via the join menu, officer time requirements are ignored even if the "captain" job is an officer.
 	var/spawn_time_coeff = 1
 	var/officer_time_coeff = 1
-
+	var/run_test = TRUE //PENTEST EDIT
 	var/static/list/outfits
 
 /datum/map_template/shuttle/proc/prerequisites_met()
