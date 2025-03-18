@@ -3610,6 +3610,7 @@
 #include "modular_pentest\_maps\ruins_space\_modular_space.dm"
 #include "modular_pentest\_maps\ruins_wasteplanet\_areas_wasteplanet.dm"
 #include "modular_pentest\_maps\ruins_wasteplanet\_modular_wasteplanet.dm"
+#include "modular_pentest\master_files\code\modules\overmap\helm.dm"
 #include "modular_pentest\_maps\ships\_areas_ships.dm"
 #include "modular_pentest\master_files\code\game\pentest_proc.dm"
 #include "modular_pentest\master_files\code\modules\research\techweb\all_nodes.dm"
