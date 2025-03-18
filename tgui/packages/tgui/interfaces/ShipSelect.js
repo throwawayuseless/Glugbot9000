@@ -320,7 +320,6 @@ export const ShipSelect = (props, context) => {
                       'Unknown Contributors'}
                   </LabeledList.Item>
                 </LabeledList>
-                <Divider horizontal />
                 <Collapsible
                   title={
                     'Ship Image (Click image to open in browser for finer detail)'
@@ -341,6 +340,7 @@ export const ShipSelect = (props, context) => {
                     />
                   </a>
                 </Collapsible>
+                <Divider horizontal />
               </Collapsible>
             ))}
           </Section>
