@@ -337,9 +337,9 @@
 				if(calibrating)
 					cancel_jump()
 					return
-				if(!current_ship.shipkey == usr.get_active_held_item())
-					to_chat(usr, "<span class='warning'>You must have the key.</span>")
-					return
+				if(!current_ship.shipkey == usr.get_active_held_item()) //PENTEST EDIT
+					to_chat(usr, "<span class='warning'>You must have the key.</span>")//PENTEST EDIT
+					return//PENTEST EDIT
 				else
 					if(tgui_alert(usr, "Do you want to bluespace jump? Your ship and everything on it will be removed from the round.", "Jump Confirmation", list("Yes", "No")) != "Yes")
 						return
