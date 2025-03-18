@@ -334,10 +334,7 @@
 				current_ship.change_heading(BURN_NONE)
 				return
 			if("bluespace_jump")
-				minor_announce("lmao")
-				minor_announce("[current_ship.shipkey ] + [usr.get_active_held_item()]")
 				if(!(current_ship.shipkey == usr.get_active_held_item())) //PENTEST EDIT
-					minor_announce("123")
 					to_chat(usr, "<span class='warning'>You must have the key.</span>")//PENTEST EDIT
 					return//PENTEST EDIT
 				if(calibrating)
