@@ -334,12 +334,15 @@
 				current_ship.change_heading(BURN_NONE)
 				return
 			if("bluespace_jump")
+				minor_announce("lmao")
+				minor_announce("[current_ship.shipkey ] + [usr.get_active_held_item()]")
+				if(!(current_ship.shipkey == usr.get_active_held_item())) //PENTEST EDIT
+					minor_announce("123")
+					to_chat(usr, "<span class='warning'>You must have the key.</span>")//PENTEST EDIT
+					return//PENTEST EDIT
 				if(calibrating)
 					cancel_jump()
 					return
-				if(!current_ship.shipkey == usr.get_active_held_item()) //PENTEST EDIT
-					to_chat(usr, "<span class='warning'>You must have the key.</span>")//PENTEST EDIT
-					return//PENTEST EDIT
 				else
 					if(tgui_alert(usr, "Do you want to bluespace jump? Your ship and everything on it will be removed from the round.", "Jump Confirmation", list("Yes", "No")) != "Yes")
 						return
