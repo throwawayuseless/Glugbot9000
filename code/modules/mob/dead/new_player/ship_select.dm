@@ -116,7 +116,10 @@
 
 /datum/asset/simple/shipselect/register()
 	for(var/template_name as anything in SSmapping.ship_purchase_list)
-		assets[template_name] = images_path + template_name + ".png"
+		var/filep = images_path + template_name + ".png"
+		if(!fexists(filep))
+			continue
+		assets[template_name] = filep
 	return ..()
 
 /datum/ship_select/ui_data(mob/user)
