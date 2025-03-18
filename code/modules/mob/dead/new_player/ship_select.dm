@@ -107,6 +107,18 @@
 				to_chat(spawnee, "<span class='danger'>Ship spawned, but you were unable to be spawned. You can likely try to spawn in the ship through joining normally, but if not, please contact an admin.</span>")
 				spawnee.new_player_panel()
 
+/datum/ship_select/ui_assets(mob/user)
+	. = ..()
+	. += get_asset_datum(/datum/asset/simple/shipselect)
+
+/datum/asset/simple/shipselect
+	var/static/images_path = "_maps/shuttles/_images/"
+
+/datum/asset/simple/shipselect/register()
+	for(var/template_name as anything in SSmapping.ship_purchase_list)
+		assets[template_name] = images_path + template_name + ".png"
+	return ..()
+
 /datum/ship_select/ui_data(mob/user)
 	. = list()
 	.["shipSpawning"] = SSovermap.ship_spawning

@@ -7,7 +7,10 @@ import {
   Table,
   LabeledList,
   Collapsible,
+  Divider,
 } from '../components';
+
+import { resolveAsset } from '../assets';
 import { Window } from '../layouts';
 import { createSearch, decodeHtmlEntities } from 'common/string';
 import { logger } from '../logging';
@@ -298,19 +301,6 @@ export const ShipSelect = (props, context) => {
                       data.autoMeet
                     )}
                   </LabeledList.Item>
-                  <LabeledList.Item label="Ship Github Image Link">
-                    <a
-                      href={
-                        'https://github.com/PentestSS13/Pentest/tree/master/_maps/shuttles/_images/' +
-                        template.name + // template.name is the ships map_name from its .json file
-                        '.png'
-                      }
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Here
-                    </a>
-                  </LabeledList.Item>
                   {/*
                   <LabeledList.Item label="Wiki Link">
                     <a
@@ -330,6 +320,27 @@ export const ShipSelect = (props, context) => {
                       'Unknown Contributors'}
                   </LabeledList.Item>
                 </LabeledList>
+                <Divider horizontal />
+                <Collapsible
+                  title={
+                    'Ship Image (Click image to open in browser for finer detail)'
+                  }
+                  key={template.name + ' Image'}
+                >
+                  <a
+                    href={
+                      'https://github.com/PentestSS13/Pentest/tree/master/_maps/shuttles/_images/' +
+                      template.name + // template.name is the ships map_name from its .json file
+                      '.png?raw=true'
+                    }
+                    rel="noreferrer"
+                  >
+                    <img
+                      src={template.name ? resolveAsset(template.name) : ''}
+                      width={'100%'}
+                    />
+                  </a>
+                </Collapsible>
               </Collapsible>
             ))}
           </Section>
