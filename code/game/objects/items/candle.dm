@@ -118,10 +118,8 @@
 		update_appearance()
 		set_light(0)
 
-
 /obj/item/candle/tribal_torch/update_appearance()
 	icon_state = "torch[lit ? "_lit" : "_unlit"]"
-	item_state = "torch[lit ? "-on" : ""]"
-	return ..()
+	item_state = "torch[lit ? "_lit" : "_unlit"]"
 
 #undef CANDLE_LUMINOSITY
