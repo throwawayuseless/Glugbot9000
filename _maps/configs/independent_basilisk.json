@@ -3,7 +3,9 @@
 	"map_name": "Basilisk-class Assault Cruiser",
 	"map_short_name": "Basilisk-class",
 	"map_path": "_maps/shuttles/independent/independent_basilisk.dmm",
+	"faction": "/datum/faction/independent",
 	"prefix": "ISV",
+	"manufacturer": "UNKNOWN",
 	"description": "Following the success of the Rigger and Raleigh classes comes the next entry to K-FP's fleet: The Basilisk-class heavy assault cruiser. Seeking to capitalize on the growing population of independent mercenaries the Basilisk boasts everything an independent gun-for-hire might need.",
 	"tags": [
 		"Mercenary",
@@ -51,6 +53,7 @@
 	"starting_funds": 2000,
 	"enabled": true,
 	"space_spawn": false,
+
 	"architect": "Culls-The-Leviathan",
 	"contributors": [
 		"No Contributors"

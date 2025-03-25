@@ -8,10 +8,9 @@
 		if(ispAI(M))
 			return FALSE
 		// return TRUE	//AI can do whatever it wants
-		//if (check_ship_ai_access(M))
+		if (check_ship_ai_access(M))
 			// No, AI can't do whatever it wants anymore :)
-		//>:( Fuck you. It can do what it wants!!! *raspberry*
-		return TRUE
+			return TRUE
 	if(isAdminGhostAI(M))
 		//Access can't stop the abuse
 		return TRUE
@@ -126,7 +125,6 @@
 
 	return FALSE
 
-//TODO: actually fix this, it doesn't work.
 /obj/proc/check_ship_ai_access(mob/living/silicon/robot)
 	var/datum/overmap/ship/controlled/ship = SSshuttle.get_ship(src)
 	if (gen_ship_access(ship))
@@ -135,8 +133,7 @@
 	if (robot.has_ship_access(ship))
 		return TRUE
 
-	//silicon remote access should work too
-	return TRUE
+	return FALSE
 
 /proc/get_centcom_access(job)
 	switch(job)
@@ -380,13 +377,10 @@
 			return "Science Exosuit Access"
 		if(ACCESS_MECH_ENGINE)
 			return "Engineering Exosuit Access"
-
-//WS Begin
 		if(ACCESS_CLONING)
 			return "Cloning Room"
 		if(ACCESS_TERRAGOV)
 			return "TerraGov Office"
-//WS End
 
 /proc/get_centcom_access_desc(A)
 	switch(A)
@@ -412,11 +406,8 @@
 /proc/get_all_jobs()
 	return list("Assistant", "Captain", "Head of Personnel", "Bartender", "Cook", "Botanist", "Quartermaster", "Cargo Technician",
 				"Shaft Miner", "Clown", "Mime", "Janitor", "Curator", "Lawyer", "Chaplain", "Chief Engineer", "Station Engineer",
-				"Atmospheric Technician", "Chief Medical Officer", "Medical Doctor", "Chemist", "Geneticist", "Virologist", "Paramedic", "Prisoner", "Psychologist",
-				"Research Director", "Scientist", "Roboticist", "Head of Security", "Warden", "Detective", "Security Officer", "Brig Physician", "TerraGov Representative")
-
-/proc/get_all_job_icons() //For all existing HUD icons
-	return get_all_jobs() + list("Emergency Response Team Commander", "Security Response Officer", "Engineering Response Officer", "Medical Response Officer", "Entertainment Response Officer", "Religious Response Officer", "Janitorial Response Officer", "Death Commando")
+				"Atmospheric Technician", "Chief Medical Officer", "Medical Doctor", "Chemist", "Geneticist", "Virologist", "Paramedic", "Prisoner", "Psychologist", //WS Edit - Brig Phys / TerraGov Rep
+				"Research Director", "Scientist", "Roboticist", "Head of Security", "Warden", "Detective", "Security Officer", "Brig Physician", "TerraGov Representative") //WS Edit - Brig Phys / TerraGov Rep
 
 /proc/get_all_centcom_jobs()
 	return list("Central Command","VIP Guest","Custodian","Thunderdome Overseer","CentCom Official","Medical Officer","Research Officer","Special Ops Officer","Admiral","CentCom Commander","CentCom Bartender","Private Security Force")

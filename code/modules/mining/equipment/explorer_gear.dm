@@ -147,10 +147,10 @@
 
 /obj/item/clothing/gloves/explorer/old
 	name = "prototype exploration gauntlets"
-	desc = "Thick-fingered gloves with a heavy layer of armor plating, meant to stop all but the most brutal of stovetop-touching accidents in the field. This premium pre-run prototype comes with an added layer of electrical insulation."
+	desc = "Thick-fingered gloves with a heavy layer of armor plating, meant to stop all but the most brutal of stovetop-touching accidents in the field."
 	icon_state = "explorerold"
 	armor = list("melee" = 25, "bullet" = 10, "laser" = 15, "energy" = 15, "bomb" = 65, "bio" = 100, "rad" = 75, "fire" = 75, "acid" = 75)
-	siemens_coefficient = 0
+	siemens_coefficient = 0.5
 	permeability_coefficient = 0.05
 
 /obj/item/clothing/suit/hooded/survivor
@@ -190,3 +190,37 @@
 /obj/item/clothing/head/hooded/survivor_hood/Initialize()
 	. = ..()
 	AddComponent(/datum/component/armor_plate)
+
+/obj/item/clothing/suit/hooded/scrap
+	name = "scrap suit"
+	desc = "A ragged makeshift suit."
+	lefthand_file = 'icons/mob/inhands/clothing_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/clothing_righthand.dmi'
+	icon_state = "survivor"
+	item_state = "survivor_suit"
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	min_cold_protection_temperature = (FIRE_SUIT_MIN_TEMP_PROTECT * 2)
+	cold_protection = CHEST|GROIN|LEGS|ARMS
+	max_heat_protection_temperature = (FIRE_SUIT_MAX_TEMP_PROTECT / 2)
+	heat_protection = CHEST|GROIN|LEGS|ARMS
+	hoodtype = /obj/item/clothing/head/hooded/scrap
+	armor = list("melee" = 15, "bullet" = 10, "laser" = 10, "energy" = 15, "bomb" = 20, "bio" = 100, "rad" = 20, "fire" = 50, "acid" = 30)
+	allowed = list(/obj/item/flashlight, /obj/item/tank/internals)
+	resistance_flags = FIRE_PROOF
+	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION
+
+/obj/item/clothing/head/hooded/scrap
+	name = "scrap hood"
+	desc = "A loose-fitting hood. It gets the job done."
+	icon_state = "explorerold"
+	suit = /obj/item/clothing/suit/hooded/scrap
+	body_parts_covered = HEAD
+	flags_inv = HIDEHAIR|HIDEEARS
+	armor = list("melee" = 15, "bullet" = 10, "laser" = 10, "energy" = 15, "bomb" = 20, "bio" = 100, "rad" = 20, "fire" = 50, "acid" = 30)
+
+/obj/item/clothing/suit/armor/vest/scrap
+	name = "scrap armor"
+	desc = "An 'armor' vest consisting of sheet metal held together with cable. Who thought this was a good idea?"
+	icon_state = "scraparmor"
+	item_state = "scraparmor"
+	armor = list("melee" = 15, "bullet" = 10, "laser" = 10, "energy" = 15, "bomb" = 20, "bio" = 100, "rad" = 20, "fire" = 50, "acid" = 30)

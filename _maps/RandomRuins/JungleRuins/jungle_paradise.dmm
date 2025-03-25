@@ -292,8 +292,9 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 5
 	},
-/obj/item/storage/backpack/duffelbag/med/surgery{
-	pixel_y = 9
+/obj/item/storage/case/surgery{
+	pixel_x = 0;
+	pixel_y = 4
 	},
 /turf/open/floor/pod/light,
 /area/ruin/jungle/paradise/med)
@@ -531,10 +532,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/obj/structure/girder{
-	icon = 'icons/effects/32x64.dmi';
-	icon_state = "crystal"
-	},
+/obj/structure/girder/crystal,
 /turf/open/water/jungle,
 /area/overmap_encounter/planetoid/cave/explored)
 "do" = (
@@ -685,7 +683,7 @@
 /turf/open/floor/plating/grass/jungle,
 /area/overmap_encounter/planetoid/cave/explored)
 "ei" = (
-/obj/effect/spawner/lootdrop/glowstick,
+/obj/effect/spawner/random/decoration/glowstick,
 /turf/open/floor/plating/dirt/jungle/dark,
 /area/overmap_encounter/planetoid/cave/explored)
 "el" = (
@@ -798,7 +796,7 @@
 /area/ruin/jungle/paradise/construction)
 "eY" = (
 /obj/structure/table/reinforced,
-/obj/item/kitchen/knife/butcher,
+/obj/item/melee/knife/butcher,
 /obj/item/clothing/gloves/butchering,
 /turf/open/floor/pod/dark,
 /area/overmap_encounter/planetoid/cave/explored)
@@ -861,7 +859,6 @@
 /obj/structure/closet/crate/miningcar,
 /obj/item/resonator,
 /obj/item/t_scanner/adv_mining_scanner/lesser,
-/obj/item/gun/energy/kinetic_accelerator/old,
 /turf/open/floor/plating/dirt/jungle/dark,
 /area/overmap_encounter/planetoid/cave/explored)
 "fz" = (
@@ -990,7 +987,7 @@
 /obj/structure/bed{
 	icon_state = "dirty_mattress"
 	},
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/railing{
 	color = "#A47449";
@@ -1447,7 +1444,7 @@
 	dir = 4;
 	layer = 3.9
 	},
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/cable/yellow{
 	icon_state = "1-9"
 	},
@@ -2071,7 +2068,7 @@
 /area/overmap_encounter/planetoid/cave/explored)
 "mr" = (
 /obj/machinery/light/directional/north,
-/obj/structure/radioactive/stack,
+/obj/structure/hazard/radioactive/stack,
 /turf/open/floor/plating/dirt/jungle,
 /area/overmap_encounter/planetoid/cave/explored)
 "mt" = (
@@ -2152,10 +2149,7 @@
 /area/overmap_encounter/planetoid/cave/explored)
 "mQ" = (
 /obj/structure/flora/grass/jungle/b,
-/obj/structure/girder{
-	icon = 'icons/effects/32x64.dmi';
-	icon_state = "crystal"
-	},
+/obj/structure/girder/crystal,
 /turf/open/floor/plating/dirt/jungle/dark,
 /area/overmap_encounter/planetoid/cave/explored)
 "mW" = (
@@ -2551,7 +2545,7 @@
 /obj/effect/turf_decal/box/corners{
 	dir = 4
 	},
-/obj/structure/radioactive/stack,
+/obj/structure/hazard/radioactive/stack,
 /obj/effect/turf_decal/techfloor/corner{
 	dir = 4
 	},
@@ -3205,7 +3199,7 @@
 /obj/structure/bed{
 	icon_state = "dirty_mattress"
 	},
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/cable/yellow{
 	icon_state = "0-5"
 	},
@@ -3391,7 +3385,7 @@
 	},
 /area/overmap_encounter/planetoid/cave/explored)
 "uB" = (
-/obj/structure/radioactive{
+/obj/structure/hazard/radioactive{
 	pixel_x = 7;
 	pixel_y = 9
 	},
@@ -4345,11 +4339,11 @@
 /obj/effect/turf_decal/techfloor/corner{
 	dir = 1
 	},
-/obj/effect/spawner/lootdrop/three_course_meal,
-/obj/effect/spawner/lootdrop/three_course_meal,
-/obj/effect/spawner/lootdrop/donkpockets,
-/obj/effect/spawner/lootdrop/donkpockets,
-/obj/effect/spawner/lootdrop/donkpockets,
+/obj/effect/spawner/random/food_or_drink/three_course_meal,
+/obj/effect/spawner/random/food_or_drink/three_course_meal,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/jungle/paradise/cargo)
 "AT" = (
@@ -4449,10 +4443,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/spacevine,
 /obj/structure/spacevine,
-/obj/structure/girder{
-	icon = 'icons/effects/32x64.dmi';
-	icon_state = "crystal"
-	},
+/obj/structure/girder/crystal,
 /turf/open/floor/plating/dirt/jungle,
 /area/overmap_encounter/planetoid/cave/explored)
 "BG" = (
@@ -5033,10 +5024,7 @@
 /turf/open/floor/pod,
 /area/ruin/jungle/paradise/comms)
 "Fw" = (
-/obj/structure/girder{
-	icon = 'icons/effects/32x64.dmi';
-	icon_state = "crystal"
-	},
+/obj/structure/girder/crystal,
 /turf/open/water/jungle,
 /area/overmap_encounter/planetoid/cave/explored)
 "FD" = (
@@ -5131,9 +5119,7 @@
 	start_charge = 0
 	},
 /obj/structure/cable/yellow,
-/turf/open/floor/plasteel/stairs{
-	icon = 'icons/obj/stairs.dmi'
-	},
+/turf/open/floor/plasteel/stairs/modern/dark,
 /area/ruin/jungle/paradise/power)
 "Gf" = (
 /obj/structure/girder,
@@ -5182,7 +5168,7 @@
 	pixel_x = 7;
 	pixel_y = 6
 	},
-/obj/structure/fireaxecabinet{
+/obj/structure/cabinet/fireaxe{
 	pixel_y = 28
 	},
 /turf/open/floor/mineral/titanium,
@@ -5350,9 +5336,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/obj/structure/girder{
-	icon = 'icons/effects/32x64.dmi';
-	icon_state = "crystal";
+/obj/structure/girder/crystal{
 	pixel_x = 10;
 	pixel_y = -4
 	},
@@ -5765,9 +5749,9 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-6"
 	},
-/obj/effect/spawner/lootdrop/three_course_meal,
-/obj/effect/spawner/lootdrop/three_course_meal,
-/obj/effect/spawner/lootdrop/three_course_meal,
+/obj/effect/spawner/random/food_or_drink/three_course_meal,
+/obj/effect/spawner/random/food_or_drink/three_course_meal,
+/obj/effect/spawner/random/food_or_drink/three_course_meal,
 /obj/item/reagent_containers/food/snacks/meat/slab,
 /obj/item/reagent_containers/food/snacks/meat/slab,
 /obj/item/reagent_containers/food/snacks/meat/slab,
@@ -5897,10 +5881,7 @@
 	},
 /area/overmap_encounter/planetoid/cave/explored)
 "LL" = (
-/obj/structure/girder{
-	icon = 'icons/effects/32x64.dmi';
-	icon_state = "crystal"
-	},
+/obj/structure/girder/crystal,
 /obj/effect/turf_decal/weather/dirt/corner{
 	dir = 1
 	},
@@ -7186,7 +7167,7 @@
 /obj/structure/bed{
 	icon_state = "dirty_mattress"
 	},
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /turf/open/floor/wood/walnut,
 /area/ruin/jungle/paradise/dorms)
 "UC" = (
@@ -7412,7 +7393,7 @@
 	},
 /area/overmap_encounter/planetoid/cave/explored)
 "VV" = (
-/obj/effect/spawner/lootdrop/glowstick,
+/obj/effect/spawner/random/decoration/glowstick,
 /turf/open/floor/plating/dirt/jungle,
 /area/overmap_encounter/planetoid/cave/explored)
 "VW" = (
@@ -7508,7 +7489,7 @@
 /obj/structure/chair/plastic{
 	dir = 8
 	},
-/obj/effect/mob_spawn/human/corpse/nanotrasensoldier,
+/obj/effect/mob_spawn/human/corpse/vigilitas_private,
 /obj/effect/decal/cleanable/vomit/old,
 /obj/item/food/breadslice/moldy{
 	pixel_x = -4;

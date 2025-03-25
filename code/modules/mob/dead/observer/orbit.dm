@@ -119,7 +119,10 @@
 		var/misc_data = list(other_data[1])
 
 		if(istype(atom_poi, /obj/machinery/computer/helm))
-			ships += misc_data
+			if(istype(atom_poi, /obj/machinery/computer/helm/npc))
+				continue
+			else
+				ships += misc_data
 		else
 			misc += misc_data
 

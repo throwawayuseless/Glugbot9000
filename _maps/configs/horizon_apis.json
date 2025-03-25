@@ -3,7 +3,9 @@
 	"map_name": "Apis-Class Engineering Platform",
 	"map_short_name": "Apis-class",
 	"map_path": "_maps/shuttles/independent/horizon_apis.dmm",
+	"faction": "/datum/faction/independent",
 	"prefix": "ISV",
+	"manufacturer": "UNKNOWN",
 	"description": "The Apis class is Horizons first venture into shipbuilding. Retrofitted from secondhand shetland class hulls, the Apis is expected to become the backbone of Horizons human auxiliarys. This prototype has been converted for long range operations outside of a fleet.",
 	"tags": [
         "Generalist",
@@ -50,6 +52,7 @@
 	"starting_funds": 2000,
 	"enabled": false,
 	"space_spawn": false,
+
 	"architect": "Blacklist897/Alexander Moore",
 	"contributors": [
 		"Secc - Help setting up git",

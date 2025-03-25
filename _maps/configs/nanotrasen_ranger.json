@@ -3,7 +3,9 @@
 	"map_name": "Ranger-class Aid Vessel",
 	"map_short_name": "Ranger-class",
 	"map_path": "_maps/shuttles/nanotrasen/nanotrasen_ranger.dmm",
+	"faction": "/datum/faction/nt",
 	"prefix": "NTSV",
+	"manufacturer": "Nanotrasen Spaceworks",
 	"description": "A Nanotrasen rescue and aid vessel. Equipped with an AI core, moderate combat gear, and equipment fit for rescue and general aid operations. Nanotrasen often deploys these ships in lieu of a proper ERT to aid their allies in the Frontier without committing their full might. The shipowner is the Lieutenant of a Loss Prevention squad, with a Commissioner to aid with operations on the ship proper.",
 	"tags": [
 		"Combat",
@@ -44,6 +46,11 @@
 	"limit": 1,
 	"starting_funds": 4000,
 	"enabled": true,
-	"space_spawn": false
+	"space_spawn": false,
+
+	"architect": "SweetBlueSylveon",
+	"contributors": [
+		"Unknown"
+	]
 }
 

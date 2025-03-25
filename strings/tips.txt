@@ -19,33 +19,26 @@ You can screwdriver any non-chemical grenade to shorten fuses from 5 seconds, to
 If you find yourself in a fistfight with another player, staying on the offensive is usually the smart move. Running away often won't accomplish much.
 Different weapons have different strengths. Some weapons, such as spears, floor tiles, and throwing stars, deal more damage when thrown compared to when attacked normally.
 A thrown glass of water can make a slippery tile, allowing you to slow down your pursuers in a pinch.
-When dealing with security, you can often get your sentence negated entirely through cooperation and deception.
-Experiment with different setups of the supermatter engine to maximize output, but don't risk the crew's safety to do so!
 We were all new once, be patient and guide new players in the right direction.
 On most clothing items that go in the exosuit slot, you can put certain small items into your suit storage, such as a spraycan, your emergency oxygen tank, or a flashlight.
 Most job-related exosuit clothing can fit job-related items into it, such as the atmospheric technician's hardsuit/winter coat holding an RPD, or labcoats holding most medicine.
 If you're using hotkey mode, you can stop pulling things using H.
 If there's something you need from others, try asking! This game isn't singleplayer and you'd be surprised what you can get accomplished together!
 You'll quickly lose your interest in the game if you play to win and kill. If you find yourself doing this, take a step back and talk to people - it's a much better experience!
-Felinids get temporarily distracted by laser pointers. Use this to your advantage when being pursued by one.
 Don't be afraid to ask for help, whether from your peers or from mentors.
 As the Captain, you have absolute access and control over your ship, but this does not mean that being a horrible person won't result in mutiny and a ban.
 A medical  hardsuit can hold an entire medkit in its suit storage!
-While both heal toxin damage, the difference between charcoal and antitoxin is that charcoal will actively remove all other reagents from one's body, while antitoxin only removes various toxins - but can overdose.
-You can surgically implant or extract things from people's chests. This can range from putting in a bomb to pulling out an alien larva.
+While both heal toxin damage, the difference between charcoal and dylovene is that charcoal will actively remove all other reagents from one's body, while dylovene only removes various toxins - but can overdose.
+You can surgically implant or extract things from people's chests using either organ manipulation or cavity implant surgeries. This can range from putting in a bomb to pulling out an alien larva.
 Using disarm attempt will intentionally fail a surgery step.
 Corpses with the "...and their soul has departed" description no longer have a ghost attached to them and aren't revivable or clonable.
-Treating plasmamen is not impossible! Salbutamol stops them from suffocating and showers stop them from burning alive. You can even perform surgery on them by doing the procedure on a roller bed under a shower.
+Treating plasmamen is not impossible! Salbutamol stops them from suffocating and showers or stasis beds stop them from burning alive. You can even perform surgery on them by doing the procedure on a roller bed under a shower.
 You can extract implants by holding an empty implant case in your offhand while performing the extraction step.
 There are dozens of chemicals that can heal, and even more that can cause harm. Experiment!
 Some chemicals can only be synthesized by heating up the contents with a chemical heater or manually with lighters and similar tools.
 You can recharge a chemical dispenser with an inducer or by replacing its cell.
 Water and Potassium mixed together will create an explosion, with power scaling by amount used. Don't do it.
-You can eject someone from cloning early by disabling power in the room. Note that they will suffer more genetic damage and may lose vital organs from this.
-Being a hulk makes you capable of dealing high melee damage, stunlocking people, and punching through walls. However, you can't fire guns, will lose your hulk status if you go into critical condition.
 You can take AIs out of their cores by loading them into an intelliCard, which lets you see their laws, It can also be placed into an AI system integrity restorer computer to revive and/or repair them.
-You can use the mutation toxin obtained from green slimes to create various mutation toxins by mixing it with various chemicals!
-You can maximize the number of uses you get out of a slime by feeding it slime steroid, created from purple slimes, while alive. You can then apply extract enhancer, created from cerulean slimes, on each extract.
 You can repair your cyborgs with a welding tool if they have brute damage, if they have burn damage, you can remove their battery, expose the wiring with a screwdriver and replace their wires with a cable coil.
 You can reset a cyborg's module by cutting and mending the reset wire with a wire cutter.
 You can augment people with cyborg limbs. Augmented limbs can easily be repaired with cables and welders.
@@ -55,45 +48,33 @@ As a AI, you can take pictures with your camera and upload them to newscasters.
 As a AI, you can use CTRL + 1-9 to set a location hotkey for your camera, allowing you to save the location and jump to it at will. Tilde and zero will return you to the last spot you jumped from, and the numpad numbers act as aliases to the regular number keys.
 As a Cyborg, choose your module carefully, as only cutting and mending your reset wire will let you repick it. If possible, refrain from choosing a module until a situation that requires one occurs.
 As a Cyborg, you are immune to most forms of stunning, and excel at almost everything far better than humans. However, flashes can easily stunlock you and you cannot do any precision work as you lack hands.
-As a Cyborg, you are impervious to fires and heat. If you are rogue, you can release plasma fires everywhere and walk through them without a care in the world!
-As a Cyborg, you are extremely vulnerable to EMPs as EMPs both stun you and damage you. The ion rifle in the armory or a traitor with an EMP kit can kill you in seconds.
+As a Cyborg, you are impervious to fires and heat.
+As a Cyborg, you are extremely vulnerable to EMPs as EMPs both stun you and damage you.
 As a Service Cyborg, your spray can knocks people down. However, it is blocked by masks and glasses.
 As an Engineering Cyborg, you can attach air alarm/fire alarm/APC frames to walls by placing them on the floor and using a screwdriver on them.
 As a Medical Cyborg, you can fully perform surgery and even augment people.
 You can rename areas or create entirely new ones using your ship expansion permit.
 The chief engineer’s hardsuit is significantly better than other engineering hardsuits. It has the best features of both engineering and atmospherics hardsuits - boasting nigh-invulnerability to radiation and all atmospheric conditions.
 The supermatter shard is an extremely dangerous piece of equipment: touching it will disintegrate you. So will touching it with telepathy.
-You can electrify grilles by placing wire "nodes" beneath them: the big seemingly unconnected bulges from a half completed wiring job.
+Wire "nodes" (big, seemingly unconnected bulges from half completed wiring jobs) are able to do several things: link up thrusters to prechargers, hook up PACMAN generators, and shock grilles among other things.
 You can cool a supermatter crystal by spraying it with a fire extinguisher. Only for the brave!
 You can repair windows by using a welding tool on them while on any intent other than harm.
-Don't underestimate the humble P.A.C.M.A.N. generators.
 A RCD can be reloaded with metal, glass or plasteel sheets instead of just compressed matter cartridges.
 You can unwrench a pipe regardless of the pressures of the gases inside, but if they're too high they can burst out and injure you!
-ATMOS holofan projector blocks gases while allowing objects to pass through. With it, you can quickly contain gas spills, fires and hull breaches. Or, use it to seal a plasmaman cloning room.
+ATMOS holofan projector blocks gases while allowing objects to pass through. With it, you can quickly contain gas spills, fires and hull breaches. Beware, they wear off after an amount of time highlighted by numbers on the fans.
 You can change the layer of a pipe by clicking with it on a wrenched pipe or other atmos component of the desired layer.
-As a Clown, if you lose your banana peel, you can still slip people with your PDA! Honk!
-As a Clown, eating bananas heals you slightly. Honk!
-As a Clown, your Grail is the mineral bananium, which can be used to build you a fun and robust mech beloved by everyone.
-As a Clown, you can use your stamp on a sheet of cardboard as the first step of making a honkbot. Fun for the whole crew!
-As a Clown, spice your gimmicks up! Nobody likes a one-trick pony.
-The null rod has anti magic functions: it makes you immune to magic.
 Books can be turned into a container that can store small items using wire cutters, bibles have this ability without needing to cut it.
 You can hack the MegaSeed Vendor to get access to more exotic seeds. These seeds can alternatively be ordered from a express console
 You can mutate the plants with unstable mutagen or, as an alternative, grow glowshrooms for their radium which also mutates plants to start you up!
 While growing plants you should look into increasing the potency of your plants. This increases the size, amount of chemicals, points gained from grinding them in the biogenerator, and lets people know you are a proficient botanist.
 You can create a very wide variety of food with the crafting menu. You can find it by looking for the hammer icon near your intents.
 You can rename custom food with a pen.
-any cooked food will be much healthier than the junk food found in vendors. Having the crew routinely eating cooked will provide minor buffs.
+Any cooked food will be much healthier than the junk food found in vendors.
 Most non-custom foods will have a secondary effect, ranging from healing you to making you move at lightspeed. Experiment!
 Mousetraps can be used to create bombs or booby-trap containers.
-You can order contraband items from a express console without hacking it.
-You can earn more cargo points by shipping back crates, liquid containers, plasma sheets, rare seeds from hydroponics, and more!
-The express supply console can instantly delivers crates by drop pod. The impact will cause a small explosion as well.
 Every monster has a pattern you can exploit to minimize damage from the encounters.
 You can harvest goliath plates from goliaths and upgrade your explorer's suit, mining hardsuits as well as Firefighter APLUs with them, greatly reducing incoming melee damage.
 You can craft a variety of equipment from the local fauna. Bone axes, lava boats and ash drake armour are just a few of them!
-As a Monkey, you can crawl through air or scrubber vents by alt+left clicking them. You must drop everything you are wearing and holding to do this, however.
-As a Monkey, you can still wear a few human items, such as backpacks, gas masks and hats, and still have two free hands.
 As a Drone, you can ping other drones to alert them of areas in need of repair.
 As a Ghost, you can see the inside of a container on the ground by clicking on it.
 As a Ghost, you can double click on just about anything to follow it. Or just warp around!

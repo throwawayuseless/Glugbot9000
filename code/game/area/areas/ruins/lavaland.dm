@@ -1,10 +1,5 @@
 //Lavaland Ruins
 
-// Beach
-
-/area/ruin/powered/beach
-	icon_state = "dk_yellow"
-
 // Winter Biodome
 
 /area/ruin/unpowered/winter_biodome
@@ -32,62 +27,7 @@
 	name = "Hierophant's Arena"
 	icon_state = "dk_yellow"
 
-
-//Elephant Graveyard
-
-/area/ruin/unpowered/elephant_graveyard
-	name = "Elephant Graveyard"
-	icon_state = "dk_yellow"
-
-/area/ruin/powered/graveyard_shuttle
-	name = "Elephant Graveyard"
-	icon_state = "green"
-
-//Syndicate Comms Outpost
-
-/area/ruin/unpowered/syndicate_outpost
-	name = "Syndicate Comm Outpost"
-	icon_state = "dk_yellow"
-
-
-//Xeno Nest
-
-/area/ruin/unpowered/xenonest
-	name = "The Hive"
-	always_unpowered = TRUE
-	power_environ = FALSE
-	power_equip = FALSE
-	power_light = FALSE
-	poweralm = FALSE
-
-// Code Lab
-
-/area/ruin/unpowered/codelab
-	name = "Nanotrasen Genetic Research Facility"
-	icon_state = "bluenew"
-
-/area/ruin/unpowered/codelab/exterior
-	name = "Nanotrasen Genetic Research Facility Exterior"
-
-/area/ruin/unpowered/codelab/reception
-	name = "Nanotrasen Genetic Research Reception"
-	icon_state = "green"
-
-/area/ruin/unpowered/codelab/subjectrooms
-	name = "Nanotrasen Genetic Research Test Subject Storage"
-	icon_state = "Sleep"
-
-/area/ruin/unpowered/codelab/storage
-	name = "Nanotrasen Genetic Research Storage"
-	icon_state = "cargo_bay"
-
-/area/ruin/unpowered/codelab/laboratory
-	name = "Nanotrasen Genetic Research Laboratory"
-	icon_state = "bridge"
-
-/area/ruin/unpowered/codelab/maintenance
-	name = "Nanotrasen Genetic Research Maintenance"
-	icon_state = "dk_yellow"
+//Lava Canyon
 
 /area/ruin/unpowered/scorched_hut
 	name = "Scorched Hut"
@@ -124,10 +64,34 @@
 	name ="Dormitory"
 	icon_state = "crew_quarters"
 	requires_power = FALSE
-
 //Buried Shrine
 
 /area/ruin/unpowered/buried_shrine
 	name = "Buried Shrine"
 	icon_state = "red"
 
+//Crashed Starwalker
+
+/area/ruin/unpowered/crashed_starwalker
+	name = "Crashed Pirate Ship"
+// Abandoned Listening Post
+
+/area/ruin/unpowered/listening_post
+	name = "Listening Post Lobby"
+	icon_state = "yellow"
+
+/area/ruin/unpowered/listening_post/commons
+	name = "Listening Post Commons"
+	icon_state = "green"
+
+/area/ruin/unpowered/listening_post/canteen
+	name = "Listening Post Canteen"
+	icon_state = "purple"
+
+/area/ruin/unpowered/listening_post/operations
+	name = "Listening Post Operations"
+	icon_state = "hallC"
+
+/area/ruin/unpowered/listening_post/engineering
+	name = "Listening Post Engineering"
+	icon_state = "dk_yellow"

@@ -1,5 +1,5 @@
 /datum/outfit/job/terragov
-	name = "terragov Base Outfit"
+	name = "TerraGov Base Outfit"
 
 	faction_icon = "bg_terragov"
 
@@ -8,9 +8,10 @@
 	if(visualsOnly)
 		return
 	H.faction |= list(FACTION_PLAYER_TERRAGOV)
+	//H.grant_language(/datum/language/solarian) - PENTEST OVERRIDE
 
 /datum/outfit/job/terragov/assistant
-	name = "terragov - Scribe"
+	name = "TerraGov - Scribe"
 	id_assignment = "Scribe"
 	jobtype = /datum/job/assistant
 	job_icon = "scribe"
@@ -21,7 +22,7 @@
 	suit = /obj/item/clothing/suit/terragov
 
 /datum/outfit/job/terragov/bureaucrat
-	name = "terragov - Bureaucrat"
+	name = "TerraGov - Bureaucrat"
 	id_assignment = "Bureaucrat"
 	jobtype = /datum/job/curator
 	job_icon = "curator"
@@ -39,7 +40,7 @@
 	)
 
 /datum/outfit/job/terragov/captain
-	name = "terragov - Captain"
+	name = "TerraGov - Captain"
 	jobtype = /datum/job/captain
 	job_icon = "solgovrepresentative" // idk
 
@@ -47,7 +48,7 @@
 	gloves = /obj/item/clothing/gloves/combat
 	ears = /obj/item/radio/headset/terragov/alt/captain
 	uniform =  /obj/item/clothing/under/terragov/formal/captain
-	suit = /obj/item/clothing/suit/armor/vest/bulletproof/terragov/captain
+	suit = /obj/item/clothing/suit/armor/vest/terragov/captain
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/terragov/captain
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
@@ -61,18 +62,18 @@
 
 	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/captain)
 
-/datum/outfit/job/terragov/sonnensoldner
-	name = "terragov - Sonnensöldner"
-	id_assignment = "Sonnensöldner"
+/datum/outfit/job/terragov/shocktrooper
+	name = "TerraGov - Shock Trooper"
+	id_assignment = "Shock Trooper"
 	jobtype = /datum/job/officer
-	job_icon = "sonnensoldner"
+	job_icon = "Sonnensöldner"
 
 	id = /obj/item/card/id/terragov
 	uniform = /obj/item/clothing/under/terragov
-	suit = /obj/item/clothing/suit/armor/vest/bulletproof/terragov
+	suit = /obj/item/clothing/suit/armor/vest/terragov
 	ears = /obj/item/radio/headset/terragov/alt
 	gloves = /obj/item/clothing/gloves/combat
-	head = /obj/item/clothing/head/terragov/sonnensoldner
+	head = /obj/item/clothing/head/terragov/shocktrooper
 	r_pocket = null
 	l_pocket = null
 	shoes = /obj/item/clothing/shoes/workboots
@@ -81,7 +82,7 @@
 	backpack_contents = list(/obj/item/crowbar/power)
 
 /datum/outfit/job/terragov/representative
-	name = "terragov - Terran Representative"
+	name = "TerraGov - Terran Representative"
 	jobtype = /datum/job/terragov
 	job_icon = "solgovrepresentative"
 
@@ -101,11 +102,11 @@
 	implants = list(/obj/item/implant/mindshield)
 
 	backpack_contents = list(
-		/obj/item/kitchen/knife/letter_opener = 1
+		/obj/item/melee/knife/letter_opener = 1
 	)
 
 /datum/outfit/job/terragov/overseer
-	name = "terragov - Overseer"
+	name = "TerraGov - Overseer"
 	id_assignment = "Overseer"
 	jobtype = /datum/job/head_of_personnel
 	job_icon = "headofpersonnel"
@@ -115,16 +116,16 @@
 	uniform = /obj/item/clothing/under/terragov/formal
 	head = /obj/item/clothing/head/terragov
 	neck = /obj/item/clothing/neck/cloak/overseer
-	suit = /obj/item/clothing/suit/armor/vest/bulletproof/terragov/overseer
+	suit = /obj/item/clothing/suit/armor/vest/terragov/overseer
 	shoes = /obj/item/clothing/shoes/laceup
 
 	backpack_contents = list(/obj/item/storage/box/ids=1,\
 		/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced = 1)
 
-	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/head_of_personnel)
+	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/officer)
 
 /datum/outfit/job/terragov/doctor
-	name = "terragov - Medical Doctor"
+	name = "TerraGov - Medical Doctor"
 	jobtype = /datum/job/doctor
 	job_icon = "medicaldoctor"
 
@@ -143,7 +144,7 @@
 	box = /obj/item/storage/box/survival/medical
 
 /datum/outfit/job/terragov/miner
-	name = "terragov - Field Engineer"
+	name = "TerraGov - Field Engineer"
 	id_assignment = "Field Engineer"
 	jobtype = /datum/job/mining
 	job_icon = "shaftminer"
@@ -159,7 +160,7 @@
 	r_pocket = /obj/item/storage/bag/ore	//causes issues if spawned in backpack
 	backpack_contents = list(
 		/obj/item/flashlight/seclite=1,\
-		/obj/item/kitchen/knife/combat/survival=1,\
+		/obj/item/melee/knife/survival=1,\
 		/obj/item/stack/marker_beacon/ten=1)
 
 	backpack = /obj/item/storage/backpack/explorer
@@ -168,7 +169,7 @@
 	box = /obj/item/storage/box/survival/mining
 
 /datum/outfit/job/terragov/psychologist
-	name = "terragov - Psychologist"
+	name = "TerraGov - Psychologist"
 	jobtype = /datum/job/psychologist
 	job_icon = "psychologist"
 
@@ -185,7 +186,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 
 /datum/outfit/job/terragov/patient
-	name = "terragov - Attentive Care Patient"
+	name = "TerraGov - Attentive Care Patient"
 	id_assignment = "Attentive Care Patient"
 	jobtype = /datum/job/prisoner
 	job_icon = "assistant" // todo: bug rye for patient icon // rye. rye. give me 50 gazillion billion dollars paypal
@@ -196,7 +197,7 @@
 	shoes = /obj/item/clothing/shoes/sandal/slippers
 
 /datum/outfit/job/terragov/engineer
-	name = "terragov - Ship Engineer"
+	name = "TerraGov - Ship Engineer"
 	id_assignment = "Ship Engineer"
 	jobtype = /datum/job/engineer
 	job_icon = "stationengineer"
@@ -219,7 +220,7 @@
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
 
 /datum/outfit/job/terragov/quartermaster
-	name = "terragov - Logistics Deck Officer"
+	name = "TerraGov - Logistics Deck Officer"
 	id_assignment = "Logistics Deck Officer"
 	jobtype = /datum/job/qm
 	job_icon = "quartermaster"

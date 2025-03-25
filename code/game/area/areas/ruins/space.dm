@@ -11,6 +11,47 @@
 	requires_power = FALSE
 
 /////////////
+// Onehalf Ruin
+
+/area/ruin/space/has_grav/onehalf
+	name = "Station Fragment"
+	icon_state = "away"
+
+//Ruin of Derelict Oupost
+
+/area/ruin/space/has_grav/derelictoutpost
+	name = "Derelict Outpost"
+	icon_state = "green"
+
+/area/ruin/space/has_grav/derelictoutpost/cargostorage
+	name = "Derelict Outpost Cargo Storage"
+	icon_state = "storage"
+
+/area/ruin/space/has_grav/derelictoutpost/cargobay
+	name = "Derelict Outpost Cargo Bay"
+	icon_state = "quartstorage"
+
+/area/ruin/space/has_grav/derelictoutpost/powerstorage
+	name = "Derelict Outpost Power Storage"
+	icon_state = "engine_smes"
+
+/area/ruin/space/has_grav/derelictoutpost/dockedship
+	name = "Derelict Outpost Docked Ship"
+	icon_state = "red"
+
+//POWER PUZZLE
+
+/area/ruin/space/has_grav/powerpuzzle
+	name = "Central Storage"
+	icon_state = "hallC"
+
+/area/ruin/space/has_grav/powerpuzzle/secure
+	name = "Security Wing"
+	icon_state = "red"
+
+/area/ruin/space/has_grav/powerpuzzle/engineering
+	name = "Engineering Wing"
+	icon_state = "yellow"
 
 //astraeus
 
@@ -37,62 +78,6 @@
 /area/ruin/space/has_grav/astraeus/custodial
 	name = "Custodial Closet"
 	icon_state = "green"
-
-//big derelect 1
-
-/area/ruin/space/has_grav/derelictoutpost
-	name = "Derelict Outpost"
-	icon_state = "green"
-
-/area/ruin/space/has_grav/derelictoutpost/cargostorage
-	name = "Derelict Outpost Cargo Storage"
-	icon_state = "storage"
-
-/area/ruin/space/has_grav/derelictoutpost/cargobay
-	name = "Derelict Outpost Cargo Bay"
-	icon_state = "quartstorage"
-
-/area/ruin/space/has_grav/derelictoutpost/powerstorage
-	name = "Derelict Outpost Power Storage"
-	icon_state = "engine_smes"
-
-/area/ruin/space/has_grav/derelictoutpost/dockedship
-	name = "Derelict Outpost Docked Ship"
-	icon_state = "red"
-
-//Corporate Mining Ruin
-
-/area/ruin/space/has_grav/corporatemine/crewquarters
-	name = "Corporate Mine Crew Quarters"
-	icon_state = "purple"
-
-/area/ruin/space/has_grav/corporatemine/bridge
-	name = "Corporate Mine Bridge"
-	icon_state = "bridge"
-
-/area/ruin/space/has_grav/corporatemine/hall
-	name = "Corporate Mine Hall"
-	icon_state = "hallC"
-
-// Onehalf Ruin
-
-/area/ruin/space/has_grav/onehalf
-	name = "Station Fragment"
-	icon_state = "away"
-
-//POWER PUZZLE
-
-/area/ruin/space/has_grav/powerpuzzle
-	name = "Central Storage"
-	icon_state = "hallC"
-
-/area/ruin/space/has_grav/powerpuzzle/secure
-	name = "Security Wing"
-	icon_state = "red"
-
-/area/ruin/space/has_grav/powerpuzzle/engineering
-	name = "Engineering Wing"
-	icon_state = "yellow"
 
 //Singularity Lab
 
@@ -124,6 +109,20 @@
 	name = "Asteroid Housing"
 	icon_state = "Sleep"
 
+//Corporate Mining Ruin
+
+/area/ruin/space/has_grav/corporatemine/crewquarters
+	name = "Corporate Mine Crew Quarters"
+	icon_state = "purple"
+
+/area/ruin/space/has_grav/corporatemine/bridge
+	name = "Corporate Mine Bridge"
+	icon_state = "bridge"
+
+/area/ruin/space/has_grav/corporatemine/hall
+	name = "Corporate Mine Hall"
+	icon_state = "hallC"
+
 //Space Mall
 
 /area/ruin/space/has_grav/spacemall
@@ -149,152 +148,3 @@
 /area/ruin/space/has_grav/spacemall/shuttle
 	name = "Space Mall Supply Shuttle"
 	icon_state = "blue"
-
-//
-// Legacy Areas Below... Locating where they exist in maps
-//
-
-//Dinner For Two
-
-/area/ruin/space/has_grav/powered/dinner_for_two
-	name = "Dinner for Two"
-
-//Aesthetic
-
-/area/ruin/space/has_grav/powered/aesthetic
-	name = "Aesthetic"
-	ambientsounds = list('sound/ambience/ambivapor1.ogg')
-
-//Ruin of Deep Storage
-
-/area/ruin/space/has_grav/deepstorage
-	name = "Deep Storage"
-	icon_state = "storage"
-
-/area/ruin/space/has_grav/deepstorage/airlock
-	name = "Deep Storage Airlock"
-	icon_state = "quart"
-
-/area/ruin/space/has_grav/deepstorage/power
-	name = "Deep Storage Power and Atmospherics Room"
-	icon_state = "engi_storage"
-
-/area/ruin/space/has_grav/deepstorage/hydroponics
-	name = "Deep Storage Hydroponics"
-	icon_state = "garden"
-
-/area/ruin/space/has_grav/deepstorage/armory
-	name = "Deep Storage Secure Storage"
-	icon_state = "armory"
-
-/area/ruin/space/has_grav/deepstorage/storage
-	name = "Deep Storage Storage"
-	icon_state = "storage_wing"
-
-/area/ruin/space/has_grav/deepstorage/dorm
-	name = "Deep Storage Dormitory"
-	icon_state = "crew_quarters"
-
-/area/ruin/space/has_grav/deepstorage/kitchen
-	name = "Deep Storage Kitchen"
-	icon_state = "kitchen"
-
-/area/ruin/space/has_grav/deepstorage/crusher
-	name = "Deep Storage Recycler"
-	icon_state = "storage"
-
-//DERELICT
-
-/area/ruin/space/derelict
-	name = "Derelict Station"
-	icon_state = "storage"
-
-/area/ruin/space/derelict/hallway/primary
-	name = "Derelict Primary Hallway"
-	icon_state = "hallP"
-
-/area/ruin/space/derelict/hallway/secondary
-	name = "Derelict Secondary Hallway"
-	icon_state = "hallS"
-
-/area/ruin/space/derelict/hallway/primary/port
-	name = "Derelict Port Hallway"
-	icon_state = "hallFP"
-
-/area/ruin/space/derelict/arrival
-	name = "Derelict Arrival Centre"
-	icon_state = "yellow"
-
-/area/ruin/space/derelict/storage/equipment
-	name = "Derelict Equipment Storage"
-
-/area/ruin/space/derelict/bridge
-	name = "Derelict Control Room"
-	icon_state = "bridge"
-
-/area/ruin/space/derelict/bridge/access
-	name = "Derelict Control Room Access"
-	icon_state = "auxstorage"
-
-/area/ruin/space/derelict/bridge/ai_upload
-	name = "Derelict Computer Core"
-	icon_state = "ai"
-
-/area/ruin/space/derelict/solar_control
-	name = "Derelict Solar Control"
-	icon_state = "engine"
-
-/area/ruin/space/derelict/se_solar
-	name = "South East Solars"
-	icon_state = "engine"
-
-/area/ruin/space/derelict/medical
-	name = "Derelict Medbay"
-	icon_state = "medbay"
-
-/area/ruin/space/derelict/medical/chapel
-	name = "Derelict Chapel"
-	icon_state = "chapel"
-
-/area/solar/derelict_starboard
-	name = "Derelict Starboard Solar Array"
-	icon_state = "panelsS"
-
-/area/solar/derelict_aft
-	name = "Derelict Aft Solar Array"
-	icon_state = "yellow"
-
-/area/ruin/space/derelict/singularity_engine
-	name = "Derelict Singularity Engine"
-	icon_state = "engine"
-
-/area/ruin/space/derelict/gravity_generator
-	name = "Derelict Gravity Generator Room"
-	icon_state = "red"
-
-/area/ruin/space/derelict/atmospherics
-	name = "Derelict Atmospherics"
-	icon_state = "red"
-
-//OLD AI SAT
-
-/area/tcommsat/oldaisat
-	name = "Abandoned Satellite"
-	icon_state = "tcomsatcham"
-
-//ABANDONED BOX WHITESHIP
-
-/area/ruin/space/has_grav/whiteship/box
-
-	name = "Abandoned Ship"
-	icon_state = "red"
-
-//SYNDICATE LISTENING POST STATION
-
-/area/ruin/space/has_grav/listeningstation
-	name = "Listening Post"
-	icon_state = "yellow"
-
-/area/ruin/space/has_grav/powered/ancient_shuttle
-	name = "Ancient Shuttle"
-	icon_state = "yellow"

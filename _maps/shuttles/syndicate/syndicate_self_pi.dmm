@@ -223,7 +223,7 @@
 /obj/machinery/airalarm/directional/north,
 /obj/structure/closet/crate/bin,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/cryo)
 "cg" = (
@@ -574,7 +574,7 @@
 /turf/open/floor/plasteel,
 /area/ship/hallway/port)
 "fz" = (
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/cargo{
 	dir = 8;
 	icon_state = "computer-left"
 	},
@@ -598,16 +598,16 @@
 /obj/structure/closet/crate{
 	name = "ration crate"
 	},
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/donkpockets,
-/obj/effect/spawner/lootdrop/donkpockets,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
 /turf/open/floor/plasteel,
 /area/ship/cargo)
 "gh" = (
@@ -680,7 +680,7 @@
 "ha" = (
 /obj/structure/table,
 /obj/effect/turf_decal/corner/transparent/syndiered/diagonal,
-/obj/effect/spawner/lootdrop/donut,
+/obj/effect/spawner/random/food_or_drink/donut,
 /turf/open/floor/plasteel,
 /area/ship/hallway/starboard)
 "he" = (
@@ -958,7 +958,7 @@
 /obj/machinery/atmospherics/pipe/simple/dark/visible{
 	dir = 10
 	},
-/obj/effect/spawner/lootdrop/glowstick,
+/obj/effect/spawner/random/decoration/glowstick,
 /turf/open/floor/plating,
 /area/ship/engineering/engines/starboard)
 "jY" = (
@@ -1688,15 +1688,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/science/robotics)
-"sH" = (
-/obj/structure/table,
-/obj/effect/turf_decal/corner/transparent/syndiered/diagonal,
-/obj/effect/spawner/lootdrop/donut{
-	pixel_x = 4;
-	pixel_y = 6
-	},
-/turf/open/floor/plasteel,
-/area/ship/hallway/starboard)
 "sI" = (
 /obj/structure/chair/sofa/brown/old/directional,
 /obj/effect/turf_decal/corner/transparent/syndiered/diagonal,
@@ -1783,7 +1774,7 @@
 /obj/item/clothing/under/syndicate/self/officer/skirt,
 /obj/item/clothing/head/caphat/self,
 /obj/item/clothing/head/beret/self,
-/obj/item/melee/transforming/energy/sword/saber,
+/obj/item/melee/energy/sword/saber,
 /obj/item/clothing/neck/cloak/self,
 /obj/item/clothing/glasses/hud/diagnostic,
 /obj/effect/turf_decal/corner/transparent/purple/three_quarters{
@@ -1912,7 +1903,7 @@
 /obj/machinery/atmospherics/pipe/simple/dark/visible{
 	dir = 9
 	},
-/obj/effect/spawner/lootdrop/waste/atmos_can,
+/obj/effect/spawner/random/waste/atmos_can,
 /turf/open/floor/plating,
 /area/ship/engineering/engines/starboard)
 "vs" = (
@@ -2284,7 +2275,7 @@
 /area/ship/hallway/port)
 "zi" = (
 /obj/item/cutting_board,
-/obj/item/kitchen/knife,
+/obj/item/melee/knife/kitchen,
 /obj/effect/decal/cleanable/food/tomato_smudge,
 /obj/structure/table/chem,
 /turf/open/floor/plasteel/dark,
@@ -2571,8 +2562,8 @@
 	id = "pi_engines"
 	},
 /obj/structure/closet/crate,
-/obj/effect/spawner/lootdrop/aimodule_harmful,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/aimodule_harmful,
+/obj/effect/spawner/random/maintenance/three,
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
 "CG" = (
@@ -2642,7 +2633,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/glowstick,
+/obj/effect/spawner/random/decoration/glowstick,
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
 "Dh" = (
@@ -2741,7 +2732,7 @@
 /area/ship/crew/cryo)
 "DS" = (
 /obj/effect/turf_decal/box,
-/obj/effect/spawner/lootdrop/waste/mechwreck,
+/obj/effect/spawner/random/waste/mechwreck,
 /obj/effect/decal/cleanable/oil,
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -3115,12 +3106,12 @@
 /obj/structure/closet/crate,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/effect/spawner/lootdrop/salvage_matter_bin,
-/obj/effect/spawner/lootdrop/salvage_matter_bin,
-/obj/effect/spawner/lootdrop/salvage_manipulator,
-/obj/effect/spawner/lootdrop/salvage_manipulator,
-/obj/effect/spawner/lootdrop/salvage_scanning,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/salvage_matter_bin,
+/obj/effect/spawner/random/salvage_matter_bin,
+/obj/effect/spawner/random/salvage_manipulator,
+/obj/effect/spawner/random/salvage_manipulator,
+/obj/effect/spawner/random/salvage_scanning,
+/obj/effect/spawner/random/maintenance/three,
 /turf/open/floor/plasteel,
 /area/ship/cargo)
 "Ho" = (
@@ -3165,7 +3156,7 @@
 /obj/machinery/light/directional/south,
 /obj/structure/closet/crate/bin,
 /obj/item/organ/brain,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plasteel/dark,
 /area/ship/science/robotics)
 "It" = (
@@ -3362,7 +3353,7 @@
 /obj/item/reagent_containers/food/snacks/meat/slab,
 /obj/item/reagent_containers/food/snacks/meat/slab,
 /obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/effect/spawner/lootdrop/donkpockets,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
 /obj/structure/closet/secure_closet/freezer{
 	name = "refrigerator"
 	},
@@ -3462,7 +3453,7 @@
 /area/ship/engineering/engines/starboard)
 "LG" = (
 /obj/structure/closet/crate/secure/weapon,
-/obj/item/ammo_box/c45,
+/obj/item/storage/box/ammo/c45,
 /obj/item/gun/energy/laser,
 /obj/item/gun/energy/laser,
 /obj/item/gun/energy/laser,
@@ -3470,7 +3461,7 @@
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/machinery/light/small/directional/east,
 /obj/effect/turf_decal/box,
-/obj/item/gun/ballistic/automatic/smg/cobra/sc_c20r,
+/obj/item/gun/ballistic/automatic/smg/cobra,
 /obj/item/ammo_box/magazine/m45_cobra,
 /obj/item/ammo_box/magazine/m45_cobra,
 /turf/open/floor/mineral/plastitanium/red,
@@ -3541,7 +3532,7 @@
 "Ma" = (
 /obj/machinery/light/directional/south,
 /obj/structure/closet/crate,
-/obj/effect/spawner/lootdrop/maintenance/five,
+/obj/effect/spawner/random/maintenance/five,
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
 "Mc" = (
@@ -3614,8 +3605,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/crate/bin,
 /obj/effect/decal/cleanable/vomit/old,
-/obj/effect/spawner/lootdrop/random_prosthetic,
-/obj/effect/spawner/lootdrop/random_prosthetic,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "Mz" = (
@@ -4438,7 +4427,7 @@
 /obj/effect/turf_decal/corner/transparent/purple/full,
 /obj/machinery/light/directional/north,
 /obj/structure/closet/crate/bin,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/item/trash/boritos,
 /turf/open/floor/plasteel,
 /area/ship/hallway/port)
@@ -5356,7 +5345,7 @@ Zo
 Ho
 wC
 iW
-sH
+ha
 ET
 "}
 (21,1,1) = {"

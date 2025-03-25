@@ -270,11 +270,6 @@
 	desc = "A old poster urging people to join the ACLF for not only the right cause, but to explore the galaxy. This is probably outdated."
 	icon_state = "poster_aclf_enlistment"
 
-/obj/structure/sign/poster/contraband/clown
-	name = "Clown"
-	desc = "A poster making fun of the 'clown planet incident' You almost cut yourself on the edge of this poster."
-	icon_state = "poster_honk"
-
 /obj/structure/sign/poster/contraband/smoke
 	name = "Smoke"
 	desc = "A poster advertising some brand of cigarettes."
@@ -519,7 +514,7 @@
 /obj/structure/sign/poster/contraband/m90
 	name = "M90 SMG"
 	desc = "A poster advertising the Scarborough M90. Burst action with a grenade launcher, for some reason."
-	icon_state = "poster-bulldog"
+	icon_state = "poster-m90"
 
 /obj/structure/sign/poster/contraband/inteq_nt
 	name = "Inteq Recruitment"
@@ -867,8 +862,8 @@
 
 /obj/structure/sign/poster/terragov/terragov_logo
 	name = "Terragov"
-	desc = "There are two alternate Versions of the Terragov coat of arms. The scars of the referendum can still be seen today."
-	icon_state = "poster-terragov"
+	desc = "The coat of arms of the Terran Goverment, or more boringly known as TerraGov. \"Life is a sapling: Waters of change may drown it, and rays of fear may wither it, but well-tended it will one day bear fruit.\""
+	icon_state = "poster-solgov"
 
 /obj/structure/sign/poster/terragov/terra
 	name = "Terra"
@@ -882,7 +877,7 @@
 
 /obj/structure/sign/poster/terragov/luna
 	name = "Luna"
-	desc = "Luna, the only moon of Terra. Culturally significant to the terrans historically as a symbol of time, harvest, and new frontiers. This poster in particular is trying to attract tourists to Luna, listing attractions like the massive spaceport and white flags scattered across the surface, a relic from ages past."
+	desc = "Luna, the only moon of Terra. Culturally significant to the Terran people historically as a symbol of time, harvest, and new frontiers. This poster in particular is trying to attract tourists to Luna, listing attractions like the massive spaceport and white flags scattered across the surface, a relic from ages past."
 	icon_state = "poster-solgov-luna"
 
 /obj/structure/sign/poster/terragov/kepler
@@ -903,15 +898,15 @@
 /obj/structure/sign/poster/terragov/terragov
 	name = "TerraGov"
 	desc = "The coat of arms of TerraGov and the Terran Regency, which the latter still exists to this day."
-	icon_state = "poster-terragov"
+	icon_state = "poster-solgov-old"
 
 /obj/structure/sign/poster/terragov/paperwork
 	name = "Paperwork"
 	desc = "A poster reminding civil servants that it is their duty to keep detailed records."
 	icon_state = "poster-solgov-paperwork"
 
-/obj/structure/sign/poster/terragov/sonnensoldner
-	name = "The Sonnensöldners"
+/obj/structure/sign/poster/terragov/shocktrooper
+	name = "The Shock Troopers"
 	desc = "The symbol of the many Solar Companies."
 	icon_state = "poster-solgov-sonnensoldner"
 
@@ -931,12 +926,12 @@
 
 /obj/structure/sign/poster/terragov/nanomichi_ad
 	name = "Nanomichi Ad"
-	desc = " A poster advertising a early post-NOF terran computer. Severely outdated, but the advert is now a pretty nifty decoration."
+	desc = " A poster advertising a early post-NOF solarian computer. Severely outdated, but the advert is now a pretty nifty decoration."
 	icon_state = "poster_nanomichi"
 
 /obj/structure/sign/poster/terragov/suns
 	name = "Student Union of Natural Sciences"
-	desc = "SUNS, best known for it's diverse variety of top students from various terran universities, dealing with internal fighting via dueling with swords, and being sued by Nanotrasen for trademark infrigement on their old name \"NSV.\""
+	desc = "SUNS, best known for it's diverse variety of top students from various solarian universities, dealing with internal fighting via dueling with swords, and being sued by Nanotrasen for trademark infrigement on their old name \"NSV.\""
 	icon_state = "poster-solgov_suns"
 
 //CLIP poster pool. This is quite limited, so don't use more than 3 random ones at once. Expect to see these on CLIP ships.

@@ -337,10 +337,6 @@
 	pixel_x = -8;
 	pixel_y = 7
 	},
-/obj/item/stamp/head_of_personnel{
-	pixel_x = -7;
-	pixel_y = -3
-	},
 /obj/item/folder/red{
 	pixel_x = -8;
 	pixel_y = 11
@@ -472,7 +468,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "dZ" = (
-/obj/structure/fireaxecabinet{
+/obj/structure/cabinet/fireaxe{
 	pixel_y = -29
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
@@ -1675,7 +1671,7 @@
 /area/ship/external)
 "mI" = (
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/cloth/grey,
 /obj/structure/sign/poster/official/random{
 	pixel_x = -30
@@ -1734,7 +1730,7 @@
 	pixel_x = 1;
 	pixel_y = 5
 	},
-/obj/item/kitchen/knife/letter_opener{
+/obj/item/melee/knife/letter_opener{
 	desc = "A military combat utility survival knife, imported from Earth. An expensive paperweight indeed.";
 	pixel_x = 4;
 	pixel_y = 5
@@ -2607,7 +2603,7 @@
 	dir = 10
 	},
 /obj/structure/table/reinforced,
-/obj/item/kitchen/knife,
+/obj/item/melee/knife/kitchen,
 /obj/item/cutting_board,
 /obj/effect/turf_decal/corner/opaque/green/mono,
 /turf/open/floor/plasteel,
@@ -4046,7 +4042,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "Hb" = (
-/obj/machinery/vending/cola/random,
+/obj/effect/spawner/random/vending/cola,
 /turf/open/floor/carpet/nanoweave,
 /area/ship/hallway/central)
 "Hd" = (
@@ -4235,7 +4231,7 @@
 "JA" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/cargo{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -5307,7 +5303,7 @@
 /turf/open/floor/carpet/nanoweave,
 /area/ship/hallway/central)
 "Tz" = (
-/obj/machinery/vending/snack/random,
+/obj/effect/spawner/random/vending/snack,
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
@@ -5442,7 +5438,7 @@
 "UA" = (
 /obj/structure/bed,
 /obj/structure/curtain/cloth/grey,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /turf/open/floor/carpet/blue,
 /area/ship/crew/dorm)
 "UD" = (
@@ -5738,7 +5734,7 @@
 /area/ship/engineering/atmospherics)
 "Xl" = (
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/cloth/grey,
 /turf/open/floor/carpet/blue,
 /area/ship/crew/dorm)

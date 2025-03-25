@@ -23,10 +23,6 @@
 	display_name = "leather jacket"
 	path = /obj/item/clothing/suit/jacket/leather
 
-/datum/gear/suit/jacket/leather/overcoat
-	display_name = "leather overcoat"
-	path = /obj/item/clothing/suit/jacket/leather/overcoat
-
 /datum/gear/suit/jacket/leather/duster
 	display_name = "leather duster"
 	path = /obj/item/clothing/suit/jacket/leather/duster
@@ -79,6 +75,10 @@
 	display_name = "hoodie, T4L1"
 	path = /obj/item/clothing/suit/hooded/hoodie/rilena
 
+/datum/gear/suit/jacket/hoodie_baw
+	display_name = "hoodie, black w grey hood"
+	path = /obj/item/clothing/suit/hooded/hoodie/blackwa
+
 /datum/gear/suit/jacket/highvis
 	display_name = "industrial jacket"
 	path = /obj/item/clothing/suit/toggle/industrial
@@ -87,10 +87,13 @@
 	display_name = "hazard jacket"
 	path = /obj/item/clothing/suit/toggle/hazard
 
+/datum/gear/suit/jacket/windbreaker
+	display_name = "windbreaker, colorable"
+	path = /obj/item/clothing/suit/toggle/windbreaker
+
 //Suspenders
 /datum/gear/suit/suspenders
-	display_name = "suspenders, blue"
-	path = /obj/item/clothing/suit/toggle/suspenders/blue
+	subtype_path = /datum/gear/suit/suspenders
 
 /datum/gear/suit/suspenders/red
 	display_name = "suspenders, red"
@@ -105,10 +108,6 @@
 	path = /obj/item/clothing/suit/toggle/suspenders/gray
 
 //Misc
-/datum/gear/suit/grponcho
-	display_name = "poncho, green"
-	path = /obj/item/clothing/suit/poncho/green
-
 /datum/gear/suit/overalls
 	display_name = "overalls"
 	path = /obj/item/clothing/suit/apron/overalls
@@ -118,7 +117,7 @@
 	path = /obj/item/clothing/suit/toggle/labcoat
 
 /datum/gear/suit/raincoat
-	display_name = "Cybersun labcoat"
+	display_name = "translucent labcoat"
 	description = "Designer lab safety equipment. You're pretty sure this is just a raincoat."
 	path = /obj/item/clothing/suit/toggle/labcoat/raincoat
 

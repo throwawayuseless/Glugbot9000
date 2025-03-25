@@ -792,7 +792,7 @@
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/closet/secure_closet/security/sec,
-/obj/item/ammo_box/c9mm/ap,
+/obj/item/storage/box/ammo/c9mm_ap,
 /turf/open/floor/plating,
 /area/ship/bridge)
 

@@ -37,8 +37,11 @@
 	/// The maximum number of currently active missions that a ship may take on.
 	var/max_missions = 2
 
-	/// Manifest list of people on the ship
+	/// Manifest list of people on the ship. Indexed by mob REAL NAME. value is JOB INSTANCE
 	var/list/manifest = list()
+
+	/// List of mob refs indexed by their job instance
+	var/list/datum/weakref/job_holder_refs = list()
 
 	var/list/datum/mind/owner_candidates
 
@@ -70,18 +73,24 @@
 	///Stations the ship has been blacklisted from landing at, associative station = reason
 	var/list/blacklisted = list()
 
+	var/datum/faction/faction_datum
+
 /datum/overmap/ship/controlled/Rename(new_name, force = FALSE)
 	var/oldname = name
 	if(!..() || (!COOLDOWN_FINISHED(src, rename_cooldown) && !force))
 		return FALSE
 	message_admins("[key_name_admin(usr)] renamed vessel '[oldname]' to '[new_name]'")
 	log_admin("[key_name(src)] has renamed vessel '[oldname]' to '[new_name]'")
+	SSblackbox.record_feedback("text", "ship_renames", 1, new_name)
 	shuttle_port?.name = new_name
 	ship_account.account_holder = new_name
 	if(shipkey)
 		shipkey.name = "ship key ([new_name])"
 	for(var/area/shuttle_area as anything in shuttle_port?.shuttle_areas)
 		shuttle_area.rename_area("[new_name] [initial(shuttle_area.name)]")
+	for(var/datum/weakref/stupid_fax in shuttle_port?.fax_list)
+		var/obj/machinery/fax/our_fax = stupid_fax.resolve()
+		our_fax.fax_name = "[get_area_name(our_fax)] Fax Machine"
 	if(!force)
 		COOLDOWN_START(src, rename_cooldown, 5 MINUTES)
 		if(shuttle_port?.virtual_z() == null)
@@ -99,10 +108,10 @@
 		source_template = creation_template
 		unique_ship_access = source_template.unique_ship_access
 		job_slots = source_template.job_slots?.Copy()
-		if(source_template.ship_icon)
-			token_icon_state = source_template.ship_icon
-			base_token_icon_state = source_template.ship_icon
-		if(source_template.empty_space_icon)
+		if(source_template.ship_icon) //PENTEST ADDITION
+			token_icon_state = source_template.ship_icon //PENTEST ADDITION
+			base_token_icon_state = source_template.ship_icon //PENTEST ADDITION
+		if(source_template.empty_space_icon) //PENTEST ADDITION
 			space_dock_icon = source_template.empty_space_icon
 		if(create_shuttle)
 			shuttle_port = SSshuttle.load_template(creation_template, src)
@@ -115,6 +124,7 @@
 
 			refresh_engines()
 		ship_account = new(name, source_template.starting_funds)
+		faction_datum = source_template.faction_datum
 
 #ifdef UNIT_TESTS
 	Rename("[source_template]", TRUE)
@@ -139,6 +149,7 @@
 	if(!QDELETED(shipkey))
 		QDEL_NULL(shipkey)
 	manifest.Cut()
+	job_holder_refs.Cut()
 	job_slots.Cut()
 	blacklisted.Cut()
 	for(var/a_key in applications)
@@ -211,9 +222,9 @@
 	if(!E)
 		E = new(list("x" = x, "y" = y))
 	if(E) //Don't make this an else
-		var/obj/overmap/token = E.token
-		if(space_dock_icon)
-			token.icon_state = space_dock_icon
+		var/obj/overmap/token = E.token //PENTEST ADDITION
+		if(space_dock_icon) //PENTEST ADDITION
+			token.icon_state = space_dock_icon //PENTEST ADDITION
 		Dock(E)
 
 /datum/overmap/ship/controlled/burn_engines(percentage = 100, deltatime)
@@ -309,6 +320,10 @@
 	RegisterSignal(H.mind, COMSIG_PARENT_QDELETING, PROC_REF(crew_mind_deleting))
 	if(!owner_mob)
 		set_owner_mob(H)
+
+	if(!(human_job in job_holder_refs))
+		job_holder_refs[human_job] = list()
+	job_holder_refs[human_job] += WEAKREF(H)
 
 /**
  * adds a mob's real name to a crew's guestbooks

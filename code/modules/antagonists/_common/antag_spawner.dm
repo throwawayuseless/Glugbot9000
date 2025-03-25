@@ -195,7 +195,7 @@
 	borg_to_spawn = "Commando"
 	locked = FALSE
 
-/obj/item/antag_spawner/nuke_ops/borg_tele/spawn_antag(client/C, turf/T, kind, datum/mind/user)
+/*/obj/item/antag_spawner/nuke_ops/borg_tele/spawn_antag(client/C, turf/T, kind, datum/mind/user) //PENTEST REMOVED - USE SHOW BORG PANEL - START
 	var/mob/living/silicon/robot/R
 	var/datum/antagonist/nukeop/creator_op = user.has_antag_datum(/datum/antagonist/nukeop,TRUE)
 	if(!creator_op && nukieonly)
@@ -232,7 +232,7 @@
 	new_borg.send_to_spawnpoint = FALSE
 	if(nukieonly)
 		R.mind.add_antag_datum(new_borg,creator_op.nuke_team)
-	R.mind.special_role = "Syndicate Cyborg"
+	R.mind.special_role = "Syndicate Cyborg"*/ //PENTEST REMOVED - USE SHOW BORG PANEL - START
 
 ///////////SLAUGHTER DEMON
 

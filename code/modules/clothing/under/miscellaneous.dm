@@ -63,6 +63,9 @@
 	var/extinguishes_left = 5
 	cuttable = FALSE
 
+	//remove when plasmamen suck less
+	equip_delay_self = null
+
 /obj/item/clothing/under/plasmaman/skirt //WS edit plasmaman customization
 	name = "plasma enviroskirt"
 	icon_state = "plasmaskirt"

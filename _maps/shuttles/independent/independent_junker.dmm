@@ -48,7 +48,7 @@
 /area/ship/maintenance/port)
 "aq" = (
 /obj/item/trash/sosjerky,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/item/areaeditor/shuttle{
 	pixel_y = 7
 	},
@@ -68,7 +68,7 @@
 /obj/item/storage/backpack/explorer,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /obj/item/pickaxe/rusted,
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
@@ -76,7 +76,7 @@
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/broken/directional/north,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/maintenance/three,
 /obj/item/flashlight/pen,
 /turf/open/floor/wood/walnut{
 	icon_state = "wood-broken"
@@ -92,7 +92,7 @@
 	pixel_x = 4;
 	pixel_y = 9
 	},
-/obj/item/kitchen/knife{
+/obj/item/melee/knife/kitchen{
 	pixel_y = -3;
 	pixel_x = 10
 	},
@@ -401,7 +401,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "hb" = (
@@ -862,7 +862,7 @@
 "qm" = (
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/maintenance/three,
 /obj/item/reagent_containers/food/snacks/canned/peaches/maint,
 /turf/open/floor/plating,
 /area/ship/construction)
@@ -1251,7 +1251,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
-/obj/effect/spawner/lootdrop/maintenance/eight,
+/obj/effect/spawner/random/maintenance/eight,
 /obj/structure/safe/floor{
 	number_of_tumblers = 5
 	},
@@ -1629,7 +1629,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 6
 	},
-/obj/effect/spawner/lootdrop/grille_or_trash,
+/obj/effect/spawner/random/trash/grille_or_waste,
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "Df" = (
@@ -1699,8 +1699,8 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
@@ -1750,7 +1750,7 @@
 /obj/item/reagent_containers/glass/bottle/welding_fuel,
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/effect/decal/cleanable/cobweb,
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /turf/open/floor/plating,
 /area/ship/storage/eva)
 "Fz" = (
@@ -1805,7 +1805,7 @@
 /obj/structure/cable{
 	icon_state = "5-10"
 	},
-/obj/item/kitchen/knife{
+/obj/item/melee/knife/kitchen{
 	pixel_y = 1;
 	pixel_x = 8
 	},
@@ -1826,7 +1826,7 @@
 /area/ship/storage/eva)
 "Hj" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /obj/item/decal_painter,
 /obj/item/storage/box/mousetraps,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -2058,7 +2058,7 @@
 "JZ" = (
 /obj/structure/rack,
 /obj/machinery/light/small/broken/directional/west,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/maintenance/three,
 /obj/item/toner,
 /obj/item/clothing/neck/stethoscope,
 /turf/open/floor/plating,
@@ -2109,7 +2109,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/machinery/light/small/directional/north,
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /turf/open/floor/wood/walnut{
 	icon_state = "wood-broken3"
 	},
@@ -2255,7 +2255,7 @@
 	dir = 1
 	},
 /mob/living/simple_animal/hostile/cockroach/glockroach,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/machinery/light_switch{
 	dir = 8;
 	pixel_x = 20;
@@ -2301,7 +2301,7 @@
 	},
 /obj/effect/decal/cleanable/glass,
 /obj/structure/safe/floor,
-/obj/item/circuitboard/computer/cargo/express,
+/obj/item/circuitboard/computer/cargo,
 /turf/open/floor/pod/dark,
 /area/ship/crew/office)
 "Rj" = (
@@ -2513,7 +2513,7 @@
 	},
 /obj/effect/decal/cleanable/sprayweb,
 /obj/effect/decal/cleanable/cobweb,
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /turf/open/floor/pod/light,
 /area/ship/maintenance/aft)
 "Wv" = (
@@ -2616,7 +2616,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
 	},
-/obj/effect/landmark/observer_start,
 /turf/open/floor/pod/dark,
 /area/ship/cargo)
 "XM" = (
@@ -2756,7 +2755,7 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/effect/spawner/lootdrop/grille_or_trash,
+/obj/effect/spawner/random/trash/grille_or_waste,
 /obj/machinery/door/firedoor,
 /turf/open/floor/plating,
 /area/ship/maintenance/port)

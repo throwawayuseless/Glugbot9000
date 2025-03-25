@@ -34,6 +34,8 @@
 	/// store an ntnet relay for tablets on the ship
 	var/obj/machinery/ntnet_relay/integrated/ntnet_relay
 
+	COOLDOWN_DECLARE(silicon_access_print_cooldown) //PENTEST ADDITION
+
 /obj/machinery/computer/helm/retro
 	icon = 'icons/obj/machines/retro_computer.dmi'
 	icon_state = "computer-retro"
@@ -292,6 +294,21 @@
 			allow_ai_control = !allow_ai_control
 			say(allow_ai_control ? "AI Control has been enabled." : "AI Control is now disabled.")
 			return
+		if ("PRG_printsiliconaccess" ) //PENTEST CHANGE - START
+			if(issilicon(usr))
+				to_chat(usr, "<span class='warning'>You are unable to print a Silicon Access Chip.</span>")
+				return
+			if(!current_ship)
+				return
+			if(!COOLDOWN_FINISHED(src, silicon_access_print_cooldown))
+				say("Printer unavailable. Please allow a short time before attempting to print.")
+				return
+			if (current_ship)
+				var/obj/item/borg/upgrade/ship_access_chip/chip = new(get_turf(src), current_ship)
+				chip.ship = current_ship
+				COOLDOWN_START(src, silicon_access_print_cooldown, 60 SECONDS)
+			playsound('sound/machines/terminal_prompt_confirm.ogg', 50, FALSE)
+			return //PENTEST UPGRADE - END
 
 	if(jump_state != JUMP_STATE_OFF)
 		say("Bluespace Jump in progress. Controls suspended.")
@@ -360,7 +377,7 @@
 	// Unregister map objects
 	if(current_ship)
 		user.client?.clear_map(current_ship.token.map_name)
-		if(current_ship.burn_direction > BURN_NONE && !length(concurrent_users) && !viewer) // If accelerating with nobody else to stop it
+		if(current_ship.burn_direction > BURN_NONE && !length(concurrent_users) && !viewer && is_living) // If accelerating with nobody else to stop it
 			say("Pilot absence detected, engaging acceleration safeties.")
 			current_ship.change_heading(BURN_NONE)
 

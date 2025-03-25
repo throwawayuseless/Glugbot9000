@@ -665,11 +665,11 @@
 /obj/item/clothing/suit/ianshirt,
 /obj/item/clothing/suit/vapeshirt,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/firealarm/directional/west,
+/obj/item/radio/intercom/wideband/directional/west,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "nJ" = (
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/cargo{
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -677,15 +677,8 @@
 "nZ" = (
 /obj/structure/safe,
 /obj/item/attachment/laser_sight,
-/obj/item/attachment/laser_sight,
-/obj/item/attachment/laser_sight,
-/obj/item/attachment/rail_light,
-/obj/item/attachment/rail_light,
 /obj/item/attachment/rail_light,
 /obj/item/attachment/silencer,
-/obj/item/attachment/silencer,
-/obj/item/attachment/silencer,
-/obj/item/attachment/bayonet,
 /obj/item/attachment/bayonet,
 /obj/item/attachment/bayonet,
 /turf/open/floor/mineral/plastitanium/red,
@@ -705,9 +698,9 @@
 /obj/item/target,
 /obj/item/target/alien,
 /obj/item/target/alien,
-/obj/item/target/clown,
-/obj/item/target/clown,
-/obj/item/target/clown,
+/obj/item/target,
+/obj/item/target,
+/obj/item/target,
 /obj/item/target/syndicate,
 /obj/item/target/syndicate,
 /obj/item/target/syndicate,
@@ -743,6 +736,12 @@
 "op" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/wall/red/directional/north,
+/obj/item/stock_parts/cell/gun/large,
+/obj/item/stock_parts/cell/gun/large,
+/obj/item/stock_parts/cell/gun/large,
+/obj/item/ammo_box/magazine/m45_cobra,
+/obj/item/ammo_box/magazine/m45_cobra,
+/obj/item/ammo_box/magazine/m45_cobra,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "oG" = (
@@ -824,28 +823,16 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "ql" = (
-/obj/machinery/power/terminal{
-	dir = 8
+/obj/structure/rack,
+/obj/item/gun/ballistic/automatic/smg/cobra/no_mag{
+	pixel_y = 3
 	},
-/obj/structure/cable{
-	icon_state = "0-4"
+/obj/item/gun/ballistic/automatic/smg/cobra/no_mag{
+	pixel_y = -2;
+	pixel_x = 3
 	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 8
-	},
-/obj/structure/closet/crate/secure/weapon,
-/obj/item/ammo_box/magazine/p16,
-/obj/item/ammo_box/magazine/p16,
-/obj/item/ammo_box/magazine/p16,
-/obj/item/ammo_box/magazine/p16,
-/obj/item/ammo_box/magazine/p16,
-/obj/item/ammo_box/magazine/p16,
-/obj/item/ammo_box/magazine/p16,
-/obj/item/ammo_box/magazine/p16,
-/obj/item/ammo_box/magazine/p16,
-/obj/item/ammo_box/magazine/p16,
-/turf/open/floor/plating,
-/area/ship/engineering/engine)
+/turf/open/floor/mineral/plastitanium/red,
+/area/ship/security/armory)
 "qw" = (
 /obj/machinery/stasis,
 /turf/open/floor/hangar/plasteel/white,
@@ -1066,7 +1053,6 @@
 /area/ship/engineering/engine)
 "vH" = (
 /obj/structure/destructible/cult/tome,
-/obj/item/book/codex_gigas,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
 	},
@@ -1274,7 +1260,6 @@
 /area/ship/crew)
 "BX" = (
 /obj/machinery/rnd/server,
-/obj/item/radio/intercom/wideband/directional/west,
 /obj/machinery/camera,
 /turf/open/floor/circuit,
 /area/ship/science/ai_chamber)
@@ -1293,14 +1278,13 @@
 /area/ship/medical)
 "Cq" = (
 /obj/structure/closet/cardboard,
-/obj/effect/spawner/lootdrop/donut,
-/obj/effect/spawner/lootdrop/donut,
+/obj/effect/spawner/random/food_or_drink/donut,
+/obj/effect/spawner/random/food_or_drink/donut,
 /obj/item/circuitboard/machine/ltsrbt,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/salvage/gold,
-/obj/effect/spawner/lootdrop/stockparts,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/salvage/gold,
+/obj/effect/spawner/random/stockparts,
 /obj/item/circuitboard/machine/autolathe,
-/obj/item/stack/tile/carpet/royalblack/fifty,
 /obj/item/stack/tile/carpet/royalblue/fifty,
 /obj/item/stack/tile/carpet/purple/fifty,
 /obj/item/stack/tile/carpet/orange/fifty,
@@ -1393,13 +1377,6 @@
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew)
 "Ep" = (
-/obj/structure/AIcore,
-/obj/item/circuitboard/aicore,
-/obj/item/stack/sheet/rglass,
-/obj/item/stack/sheet/rglass,
-/obj/item/stack/sheet/rglass,
-/obj/item/stack/sheet/rglass,
-/obj/item/stack/sheet/rglass,
 /obj/item/radio/intercom/directional/west,
 /obj/machinery/holopad/emergency,
 /turf/open/floor/circuit,
@@ -1497,10 +1474,15 @@
 /turf/open/floor/circuit,
 /area/ship/science/ai_chamber)
 "Hr" = (
-/obj/machinery/airalarm/directional/south,
-/obj/machinery/firealarm/directional/south,
-/obj/effect/decal/cleanable/robot_debris/up,
-/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/AIcore,
+/obj/item/circuitboard/aicore,
+/obj/item/stack/sheet/rglass,
+/obj/item/stack/sheet/rglass,
+/obj/item/stack/sheet/rglass,
+/obj/item/stack/sheet/rglass,
+/obj/item/stack/sheet/rglass,
+/obj/machinery/holopad/emergency,
+/obj/item/radio/intercom/wideband/directional/south,
 /turf/open/floor/circuit,
 /area/ship/science/ai_chamber)
 "HI" = (
@@ -1829,7 +1811,7 @@
 /area/ship/cargo)
 "OT" = (
 /obj/structure/closet/crate/secure/plasma,
-/obj/effect/spawner/lootdrop/maintenance/six,
+/obj/effect/spawner/random/maintenance/six,
 /turf/open/floor/plating,
 /area/ship/cargo)
 "Ph" = (
@@ -1884,7 +1866,7 @@
 /obj/item/bedsheet/captain{
 	dir = 4
 	},
-/turf/open/floor/carpet/lone,
+/obj/item/restraints/legcuffs/bola,
 /area/ship/crew)
 "PP" = (
 /obj/structure/cable{
@@ -1936,13 +1918,6 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
-/obj/structure/closet/crate/secure/weapon,
-/obj/item/ammo_box/magazine/sniper_rounds,
-/obj/item/ammo_box/magazine/sniper_rounds,
-/obj/item/ammo_box/magazine/sniper_rounds,
-/obj/item/ammo_box/magazine/sniper_rounds,
-/obj/item/ammo_box/magazine/sniper_rounds,
-/obj/item/ammo_box/magazine/sniper_rounds,
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "Ri" = (
@@ -2152,12 +2127,10 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
 "US" = (
-/obj/machinery/vending/security/marine/syndicate{
-	icon_deny = "marine-deny";
-	icon_state = "marine";
-	icon_vend = "null";
-	light_mask = "marine-mask";
-	voucher_items = list("P-16" = /obj/item/gun/ballistic/automatic/assault/p16, "sniper rifle" = /obj/item/gun/ballistic/automatic/marksman/taipan, "C-20r SMG" = /obj/item/gun/ballistic/automatic/smg/cobra, "Bulldog Shotgun" = /obj/item/gun/ballistic/shotgun/bulldog)
+/obj/structure/rack,
+/obj/item/gun/energy/kalix/pgf/heavy/sniper{
+	pixel_x = -3;
+	pixel_y = 2
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
@@ -2195,25 +2168,10 @@
 /turf/open/floor/mineral/gold,
 /area/ship/crew/library)
 "Vd" = (
-/obj/item/gun_voucher/syndicate,
-/obj/item/gun_voucher/syndicate,
-/obj/item/clothing/suit/armor/vest/marine{
-	slowdown = 0
-	},
-/obj/item/clothing/head/helmet/marine{
-	slowdown = 0
-	},
-/obj/item/clothing/suit/armor/vest/marine/heavy{
-	slowdown = 0
-	},
-/obj/item/clothing/head/helmet/marine/security{
-	slowdown = 0
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/wall/red/directional/west,
 /obj/item/clothing/under/rank/security/officer/military,
 /obj/item/clothing/under/rank/security/officer/military,
-/obj/item/gun_voucher/syndicate,
 /obj/item/clothing/neck/cloak/gezena{
 	name = "A cool cape";
 	desc = "A cape made to look like a Aziulhauz as such its quite culturally insensitive"
@@ -2221,6 +2179,22 @@
 /obj/item/clothing/neck/cloak/gezena{
 	name = "A cool cape";
 	desc = "A cape made to look like a Aziulhauz as such its quite culturally insensitive"
+	},
+/obj/item/clothing/head/helmet/marine{
+	name = "well used tactical combat helmet";
+	armor = list("melee" = 50, "bullet" = 60, "laser" = 55, "energy" = 25, "bomb" = 60, "bio" = 100, "fire" = 70, "acid" = 50)
+	},
+/obj/item/clothing/suit/armor/vest/marine/medium{
+	armor = list("melee" = 50, "bullet" = 60, "laser" = 55, "energy" = 25, "bomb" = 60, "bio" = 100, "fire" = 70, "acid" = 50);
+	name = "well used medium tactical armor vest"
+	},
+/obj/item/clothing/suit/armor/vest/marine/heavy{
+	armor = list("melee" = 50, "bullet" = 60, "laser" = 55, "energy" = 25, "bomb" = 60, "bio" = 100, "fire" = 70, "acid" = 50);
+	name = "well used large tactical armor vest"
+	},
+/obj/item/clothing/head/helmet/marine/security{
+	armor = list("melee" = 50, "bullet" = 60, "laser" = 55, "energy" = 25, "bomb" = 60, "bio" = 100, "fire" = 70, "acid" = 50);
+	name = "well used marine heavy helmet"
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
@@ -2379,7 +2353,7 @@
 /area/ship/engineering/engine)
 "Xx" = (
 /obj/structure/closet/crate/eva,
-/obj/effect/spawner/lootdrop/maintenance/four,
+/obj/effect/spawner/random/maintenance/four,
 /turf/open/floor/plating,
 /area/ship/cargo)
 "XO" = (
@@ -2450,13 +2424,14 @@
 /area/ship/bridge)
 "YW" = (
 /obj/structure/closet/crate/secure/exo,
-/obj/effect/spawner/lootdrop/maintenance/six,
+/obj/effect/spawner/random/maintenance/six,
 /turf/open/floor/plating,
 /area/ship/cargo)
 "Zq" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
+/obj/machinery/firealarm/directional/west,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "Zz" = (
@@ -2527,13 +2502,13 @@ wy
 wy
 tK
 cW
-AO
+Re
 AO
 KY
 jD
 oa
 Re
-ql
+Re
 ms
 BZ
 wy
@@ -2822,7 +2797,7 @@ Hg
 Ig
 FR
 Ut
-US
+ql
 Tm
 YG
 wB

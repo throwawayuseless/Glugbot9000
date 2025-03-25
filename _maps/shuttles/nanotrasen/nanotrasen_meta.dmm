@@ -156,9 +156,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen)
 "ax" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -240,9 +238,9 @@
 	icon_state = "crateopen";
 	opened = 1
 	},
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/maintenance/three,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/gloves,
+/obj/effect/spawner/random/clothing/gloves,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "aF" = (
@@ -274,15 +272,11 @@
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
 "aL" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/fueled/plasma,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "aM" = (
-/obj/machinery/atmospherics/components/unary/shuttle/heater{
-	dir = 4
-	},
+/obj/machinery/atmospherics/components/unary/shuttle/heater,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -576,9 +570,9 @@
 	dir = 4
 	},
 /obj/structure/closet/crate,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/maintenance/three,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/glowstick,
+/obj/effect/spawner/random/decoration/glowstick,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "bX" = (
@@ -631,9 +625,11 @@
 /area/ship/crew/canteen)
 "ce" = (
 /obj/structure/table,
-/obj/machinery/fax,
 /obj/machinery/light/small/directional/west,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/fax/nanotrasen{
+	pixel_y = 6
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "cf" = (
@@ -1108,7 +1104,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "dg" = (
-/obj/machinery/computer/cargo/express/retro{
+/obj/machinery/computer/cargo/retro{
 	dir = 8
 	},
 /obj/effect/turf_decal/corner/opaque/blue/three_quarters{
@@ -1525,14 +1521,11 @@
 	pixel_x = 8;
 	pixel_y = 5
 	},
-/obj/item/pen/collectible/bluespace,
 /obj/item/areaeditor/shuttle,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "fb" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -1682,6 +1675,13 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/plating,
 /area/ship/cargo)
+"jo" = (
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "meta_grid";
+	dir = 4
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/crew)
 "jw" = (
 /obj/effect/turf_decal/corner/transparent/bar/diagonal,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1787,9 +1787,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen)
 "lC" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -1995,7 +1993,7 @@
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen/kitchen)
 "pF" = (
-/obj/machinery/vending/snack/random,
+/obj/effect/spawner/random/vending/snack,
 /obj/effect/turf_decal/corner/transparent/bar/diagonal,
 /obj/machinery/light/directional/east,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2167,8 +2165,8 @@
 /obj/effect/turf_decal/ntspaceworks_big/two,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/crate,
-/obj/effect/spawner/lootdrop/tool_surgery_common,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/medical/surgery_tool/common,
+/obj/effect/spawner/random/maintenance/three,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "uk" = (
@@ -2201,6 +2199,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
+"uT" = (
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "meta_grid";
+	dir = 4
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/crew/canteen/kitchen)
 "ve" = (
 /obj/effect/turf_decal/box/corners,
 /obj/machinery/light/broken/directional/south,
@@ -2382,11 +2387,18 @@
 /obj/structure/table,
 /obj/item/cutting_board,
 /obj/item/kitchen/rollingpin,
-/obj/item/kitchen/knife,
+/obj/item/melee/knife/kitchen,
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen/kitchen)
+"yF" = (
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "meta_grid";
+	dir = 5
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/engineering)
 "yS" = (
 /obj/structure/table,
 /obj/item/storage/box/lights/mixed{
@@ -2499,8 +2511,8 @@
 /obj/effect/decal/cleanable/oil,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/crate,
-/obj/effect/spawner/lootdrop/maintenance/two,
-/obj/effect/spawner/lootdrop/random_prosthetic,
+/obj/effect/spawner/random/maintenance/two,
+/obj/effect/spawner/random/medical/prosthetic,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "Ai" = (
@@ -2650,7 +2662,7 @@
 /area/ship/cargo)
 "Du" = (
 /obj/effect/turf_decal/corner/transparent/neutral/full,
-/obj/machinery/computer/cargo/express/retro{
+/obj/machinery/computer/cargo/retro{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2662,7 +2674,7 @@
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/radio/intercom/directional/east,
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /obj/item/extinguisher/mini,
 /obj/item/stamp/nanotrasen/ns,
 /turf/open/floor/plasteel/dark,
@@ -2827,7 +2839,7 @@
 	dir = 8
 	},
 /obj/structure/closet/crate,
-/obj/effect/spawner/lootdrop/maintenance/four,
+/obj/effect/spawner/random/maintenance/four,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/spacecash/bundle/pocketchange,
 /turf/open/floor/plasteel/dark,
@@ -2915,10 +2927,9 @@
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/turretid{
+/obj/machinery/turretid/ship{
 	pixel_y = -24;
-	req_access = null;
-	locked = 0
+	id = "meta_grid"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -3046,7 +3057,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "La" = (
-/obj/machinery/vending/cola/random,
+/obj/effect/spawner/random/vending/cola,
 /obj/effect/turf_decal/corner/transparent/bar/diagonal,
 /obj/machinery/light/broken/directional/east,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -3064,11 +3075,12 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "Lo" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 1
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "meta_grid";
+	dir = 6
 	},
 /turf/closed/wall/mineral/titanium,
-/area/ship/bridge)
+/area/ship/engineering)
 "Lq" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -3244,7 +3256,6 @@
 	dir = 4
 	},
 /obj/docking_port/mobile{
-	can_move_docking_ports = 1;
 	name = "Salvage Ship";
 	port_direction = 2;
 	preferred_direction = 4;
@@ -3389,15 +3400,10 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood,
 /area/ship/crew/canteen/kitchen)
-"Rf" = (
-/obj/effect/turf_decal/corner/transparent/neutral/full,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/landmark/observer_start,
-/turf/open/floor/plasteel/dark,
-/area/ship/cargo)
 "Rv" = (
 /obj/machinery/door/airlock{
-	name = "Bathroom"
+	name = "Bathroom";
+	id_tag = "meta_bathroom"
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
@@ -3463,6 +3469,20 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
+"TR" = (
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "meta_grid";
+	dir = 10
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/crew/canteen)
+"TV" = (
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "meta_grid";
+	dir = 9
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/crew)
 "Uk" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -3660,16 +3680,25 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/button/door{
+	dir = 8;
+	id = "meta_bathroom";
+	normaldoorcontrol = 1;
+	specialfunctions = 4;
+	name = "Bathroom Lock";
+	pixel_x = 20;
+	pixel_y = 10
+	},
 /turf/open/floor/plasteel/freezer,
 /area/ship/crew)
 "Zf" = (
 /obj/effect/turf_decal/corner/transparent/bar/diagonal,
 /obj/structure/table,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration{
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration{
 	pixel_x = 7
 	},
-/obj/effect/spawner/lootdrop/ration{
+/obj/effect/spawner/random/food_or_drink/ration{
 	pixel_x = -8
 	},
 /obj/machinery/button/door{
@@ -3866,7 +3895,7 @@ aa
 "}
 (6,1,1) = {"
 aa
-Lo
+yF
 ac
 ri
 Pr
@@ -4026,7 +4055,7 @@ Xs
 aA
 aF
 aF
-Rf
+aF
 aF
 af
 hv
@@ -4191,7 +4220,7 @@ aa
 "}
 (19,1,1) = {"
 aa
-Lo
+TV
 ai
 ai
 MU
@@ -4211,7 +4240,7 @@ sA
 Uk
 an
 bD
-Lo
+TR
 aa
 "}
 (20,1,1) = {"
@@ -4417,12 +4446,12 @@ aa
 (28,1,1) = {"
 aa
 aa
-Lo
+jo
 ai
 ai
 ai
 ai
-Lo
+jo
 aa
 aa
 aa
@@ -4430,12 +4459,12 @@ aa
 aa
 aa
 aa
-Lo
+uT
 cO
 cO
 cO
 cO
-Lo
+uT
 aa
 aa
 "}

@@ -267,7 +267,7 @@
 /obj/item/door_remote/captain,
 /obj/item/storage/belt/sabre/terragov,
 /obj/item/clothing/under/terragov/dress,
-/obj/item/clothing/suit/armor/vest/bulletproof/terragov/captain,
+/obj/item/clothing/suit/armor/vest/terragov/captain,
 /obj/item/stamp/terragov,
 /obj/item/clothing/suit/armor/terragov_trenchcoat,
 /obj/item/spacecash/bundle/loadsamoney,
@@ -351,7 +351,7 @@
 /turf/open/floor/wood,
 /area/ship/crew)
 "da" = (
-/obj/machinery/computer/cargo/express/terragov{
+/obj/machinery/computer/cargo/terragov{
 	dir = 4
 	},
 /obj/item/radio/intercom/directional/west,
@@ -570,7 +570,7 @@
 /obj/item/clothing/suit/hazardvest/terragov,
 /obj/item/clothing/accessory/armband/cargo,
 /obj/item/clothing/shoes/workboots,
-/obj/item/kitchen/knife/combat/survival,
+/obj/item/melee/knife/survival,
 /obj/item/clothing/gloves/combat,
 /obj/item/storage/backpack,
 /obj/machinery/light/small/directional/north,
@@ -938,11 +938,11 @@
 "id" = (
 /obj/structure/closet/secure_closet/security{
 	populate = 0;
-	name = "sonnensöldners's locker";
+	name = "Shock Troopers's locker";
 	anchored = 1
 	},
-/obj/item/clothing/head/terragov/sonnensoldner,
-/obj/structure/sign/poster/terragov/sonnensoldner{
+/obj/item/clothing/head/terragov/shocktrooper,
+/obj/structure/sign/poster/terragov/shocktrooper{
 	pixel_y = 30
 	},
 /obj/item/radio{
@@ -956,7 +956,7 @@
 /obj/item/clothing/gloves/combat,
 /obj/item/radio/headset/terragov/alt,
 /obj/item/storage/backpack,
-/obj/item/clothing/suit/armor/vest/bulletproof/terragov,
+/obj/item/clothing/suit/armor/vest/terragov,
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
@@ -4109,7 +4109,7 @@
 /area/ship/crew/office)
 "OU" = (
 /obj/item/clothing/neck/cloak/overseer,
-/obj/item/clothing/suit/armor/vest/bulletproof/terragov/overseer,
+/obj/item/clothing/suit/armor/vest/terragov/overseer,
 /obj/structure/closet/secure_closet/head_of_personnel{
 	anchored = 1;
 	name = "\proper overseer's locker";
@@ -4437,7 +4437,7 @@
 "RX" = (
 /obj/structure/table/wood,
 /obj/item/cutting_board,
-/obj/item/kitchen/knife,
+/obj/item/melee/knife/kitchen,
 /obj/machinery/newscaster/directional/north,
 /obj/structure/sink{
 	pixel_y = 20;

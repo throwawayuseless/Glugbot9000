@@ -3,7 +3,9 @@
 	"map_name": "BYOS-class Do-It-Yourself Enthusiast Special",
 	"map_short_name": "BYO-class",
 	"map_path": "_maps/shuttles/independent/independent_diy.dmm",
+	"faction": "/datum/faction/independent",
 	"prefix": "IMV",
+	"manufacturer": "IKEA",
 	"description": "Build Your Own Shuttle: Take full control of your spacefaring adventures by designing and constructing your own shuttle from the ground up! Customize its layout, functionality, and appearance to fit your crew’s needs, whether you're seeking a sleek exploration vessel or a heavily armored warship. With limitless possibilities, this feature empowers you to create the perfect ship for any mission in the Frontier.",
 	"tags": [
 		"RP Focus",
@@ -29,8 +31,9 @@
 	"starting_funds": 0,
 	"enabled": false,
 	"space_spawn": false,
+
 	"architect": "Unknown",
 	"contributors": [
-		"Ossa / SYNAPSE - Porting to Pentest"
+		"Ossa / SYNAPSE - Pulled the Blueprints"
 	]
 }

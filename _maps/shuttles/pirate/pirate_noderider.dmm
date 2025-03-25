@@ -1494,7 +1494,7 @@
 /obj/item/storage/box/handcuffs,
 /obj/item/clothing/glasses/meson,
 /obj/item/megaphone,
-/obj/item/melee/transforming/energy/sword/saber/red,
+/obj/item/melee/energy/sword/saber/red,
 /obj/item/pinpointer/crew,
 /obj/item/clothing/mask/gas/atmos,
 /obj/item/clothing/mask/whistle,
@@ -3018,8 +3018,10 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 4
 	},
-/obj/structure/table,
 /obj/machinery/light/small/directional/south,
+/obj/machinery/computer/cargo{
+	dir = 1
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "Xw" = (

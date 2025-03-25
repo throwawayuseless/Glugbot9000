@@ -3,7 +3,9 @@
 	"map_name": "Tortuga-class Converted Cargo Freighter",
 	"map_short_name": "Tortuga-class",
 	"map_path": "_maps/shuttles/pirate/pirate_tortuga.dmm",
+	"faction": "/datum/faction/frontier",
 	"prefix": "ISV",
+	"manufacturer": "Miskilamo Spacefaring",
 	"description": "Originally a cargo transport vessel, the Tortuga is an improvised combat vessel used by the Frontiersmen fleet. Civilian transports are modified with shuttle handling facilities, and asteroid rubble is belted to the exterior of the hull as a form of cheap improvised armor and concealment. The Tortuga serves a dual purpose as a reconnaissance element and a vessel capable of establishing forward bases within a sector. While the Brawler-class shuttle carried by the Tortuga offers a surprising degree of speed and range to its boarding parties, the Tortuga itself is sluggish and nearly helpless without its shuttle.",
 	"tags": [
 		"Combat",
@@ -44,5 +46,10 @@
 	"limit": 1,
 	"starting_funds": 2000,
 	"enabled": false,
-	"space_spawn": false
+	"space_spawn": false,
+
+	"architect": "meemofcourse",
+	"contributors": [
+		"No Contributors"
+	]
 }

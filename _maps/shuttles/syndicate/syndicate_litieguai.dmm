@@ -266,7 +266,7 @@
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/medical)
 "fX" = (
-/obj/machinery/vending/snack/random,
+/obj/effect/spawner/random/vending/snack,
 /obj/effect/turf_decal/trimline/opaque/red/filled/line{
 	dir = 8
 	},
@@ -397,8 +397,8 @@
 /area/ship/crew)
 "jh" = (
 /obj/structure/table,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /obj/item/radio/intercom/directional/west,
 /turf/open/floor/wood/ebony,
 /area/ship/crew)
@@ -538,7 +538,7 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/maintenance/port)
 "na" = (
-/obj/machinery/vending/cola/random,
+/obj/effect/spawner/random/vending/cola,
 /obj/effect/turf_decal/trimline/opaque/red/filled/line{
 	dir = 8
 	},
@@ -1490,9 +1490,9 @@
 "BD" = (
 /obj/item/storage/belt/medical,
 /obj/item/healthanalyzer/advanced,
-/obj/item/hypospray/mkii/CMO,
+/obj/item/hypospray/mkii,
 /obj/structure/closet/secure_closet/wall/directional/west{
-	icon_state = "terragov_wall";
+	icon_state = "solgov_wall";
 	name = "chief medical officer's closet";
 	req_access_txt = "40"
 	},
@@ -2609,7 +2609,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "TA" = (
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/cargo{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
@@ -2846,7 +2846,7 @@
 /obj/item/megaphone/command,
 /obj/item/clothing/glasses/sunglasses,
 /obj/structure/closet/secure_closet/wall/directional/west{
-	icon_state = "terragov_wall";
+	icon_state = "solgov_wall";
 	name = "captain's closet";
 	req_access_txt = "20"
 	},
