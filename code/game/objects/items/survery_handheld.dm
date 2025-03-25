@@ -17,17 +17,10 @@
 	survey_delay = 3 SECONDS
 
 /obj/item/survey_handheld/elite
-	name = "Elite Survey Handheld"
+	name = "Experimental Survey Handheld" //REF: PENTEST OVERRIDE
 	desc = "An improvement on even the Advanced version; this handheld was designed to be extremely fast in collecting data."
 	icon_state = "survey-elite"
 	survey_value = 650
-	survey_delay = 2 SECONDS
-
-/obj/item/survey_handheld/experimental
-	name = "Experimental Survey Handheld"
-	desc = "An experimental improvement on even the elite version; more antena means it goes faster right? This handheld was designed to be the best in collecting data."
-	icon_state = "survey-exp"
-	survey_value = 750
 	survey_delay = 2 SECONDS
 
 /obj/item/survey_handheld/attack_self(mob/user)
@@ -125,17 +118,16 @@
 	name = "Experimental Survey Handheld"
 	id = "survey-handheld-exp"
 	build_type = PROTOLATHE
-	build_path = /obj/item/survey_handheld/experimental
+	build_path = /obj/item/survey_handheld/elite //REF: PENTEST OVERRIDE
 	materials = list(
-		/datum/material/iron = 6000,
-		/datum/material/silver = 6000,
-		/datum/material/gold = 4000,
-		/datum/material/uranium = 4000,
+		/datum/material/iron = 5000,
+		/datum/material/silver = 5000,
+		/datum/material/gold = 3000,
+		/datum/material/uranium = 3000,
 		/datum/material/diamond = 3000,
 		/datum/material/bluespace = 3000,
 	)
 	category = list("Tool Designs")
-	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
 
 /obj/structure/anomaly
 	name = "Defaultic Bind"

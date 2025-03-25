@@ -1,0 +1,54 @@
+{
+	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
+	"map_name": "Derecho-class Wrecking Tug",
+	"map_short_name": "Derecho-class",
+	"map_path": "_maps/shuttles/syndicate/syndicate_ngr_derecho.dmm",
+	"faction": "/datum/faction/syndicate/ngr",
+	"prefix": "NGRV",
+	"manufacturer": "Hardline Salvage and Mining",
+	"description": "The Derecho-class is a series of salvage ships commissioned by the New Gorlex Republic almost as soon as the Republic was founded for the prodigious task of cleaning the space around New Gorlex of countless ICW-era shipwrecks. In recent years, Derechos are operated as auxiliary ships typically tasked with surveying, assessment, and their original mission of salvaging in space controlled or contested by the NGR.",
+	"tags": [
+		"Mining",
+		"Salvage",
+		"Combat"
+	],
+	"namelists": [
+		"GORLEX",
+		"NATURAL_AGGRESSIVE",
+		"BEASTS",
+		"WEAPONS"
+	],
+	"job_slots": {
+		"Captain": {
+			"outfit": "/datum/outfit/job/syndicate/captain/ngr",
+			"officer": true,
+			"slots": 1
+		},
+		"Foreman": {
+			"outfit": "/datum/outfit/job/syndicate/ce/ngr",
+			"officer": true,
+			"slots": 1
+		},
+		"Mechanic": {
+			"outfit": "/datum/outfit/job/syndicate/engineer/ngr",
+			"slots": 1
+		},
+		"Wrecker": {
+			"outfit": "/datum/outfit/job/syndicate/miner/ngr",
+			"slots": 2
+		},
+		"Initiate": {
+			"outfit": "/datum/outfit/job/syndicate/assistant/ngr",
+			"slots": 2
+		}
+	},
+	"limit": 1,
+	"starting_funds": 2000,
+	"enabled": true,
+	"space_spawn": false,
+
+	"architect": "Apogee-dev",
+	"contributors": [
+		"No Contributors"
+	]
+}

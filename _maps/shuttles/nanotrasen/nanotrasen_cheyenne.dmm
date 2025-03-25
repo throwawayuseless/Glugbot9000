@@ -139,8 +139,8 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 1
 	},
-/obj/effect/spawner/lootdrop/maintenance,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/item/storage/bag/trash{
 	pixel_x = 1;
 	pixel_y = 0
@@ -211,11 +211,6 @@
 /area/ship/security)
 "aS" = (
 /obj/item/storage/belt/security/webbing,
-/obj/item/gun/energy/disabler{
-	pixel_x = 3;
-	pixel_y = -2
-	},
-/obj/item/ammo_box/magazine/co9mm,
 /obj/structure/closet/secure_closet/security/sec,
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	dir = 5
@@ -225,6 +220,10 @@
 	},
 /obj/machinery/camera{
 	dir = 9
+	},
+/obj/item/ammo_box/magazine/co9mm{
+	pixel_x = 0;
+	pixel_y = 0
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
@@ -337,7 +336,7 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/medical)
 "bi" = (
-/obj/effect/spawner/lootdrop/materials,
+/obj/effect/spawner/random/materials,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/structure/disposalpipe/segment{
@@ -353,15 +352,9 @@
 /area/ship/science)
 "bm" = (
 /obj/structure/railing,
-/obj/item/target/clown,
+/obj/item/target,
 /turf/open/floor/wood/birch,
 /area/ship/crew/canteen)
-"bo" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/engineering/communications)
 "bp" = (
 /obj/item/radio/intercom/directional/north,
 /obj/machinery/vending/games,
@@ -1055,7 +1048,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/fore)
 "eo" = (
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/bed,
 /obj/item/toy/plush/spider{
 	layer = 4
@@ -1210,11 +1203,6 @@
 "fk" = (
 /obj/effect/turf_decal/siding/wideplating/dark,
 /obj/effect/turf_decal/trimline/opaque/red/line,
-/obj/effect/spawner/lootdrop/random_gun_protolathe_lootdrop{
-	pixel_x = 0;
-	pixel_y = 0
-	},
-/obj/effect/spawner/lootdrop/random_ammo_protolathe_lootdrop,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "fm" = (
@@ -1407,7 +1395,7 @@
 /turf/open/floor/plasteel,
 /area/ship/hallway/aft)
 "gf" = (
-/obj/effect/spawner/lootdrop/three_course_meal,
+/obj/effect/spawner/random/food_or_drink/three_course_meal,
 /obj/structure/table/wood/fancy/royalblack,
 /obj/machinery/light/floor,
 /turf/open/floor/wood/walnut,
@@ -1627,7 +1615,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 2
 	},
-/obj/effect/spawner/lootdrop/salvage_50,
+/obj/effect/spawner/random/salvage/half,
 /turf/open/floor/pod,
 /area/ship/hangar)
 "hd" = (
@@ -2014,10 +2002,6 @@
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/canteen)
-"jj" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/hangar)
 "jm" = (
 /obj/effect/turf_decal/corner/opaque/blue{
 	dir = 4
@@ -2145,7 +2129,7 @@
 /obj/machinery/camera,
 /obj/machinery/light/directional/west,
 /obj/structure/closet/secure_closet/engineering_personal,
-/obj/effect/spawner/lootdrop/tool_engie_adv,
+/obj/effect/spawner/random/engineering/tool/adv,
 /obj/item/stack/sheet/mineral/titanium/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/circuitboard/machine/thermomachine/heater,
@@ -2394,7 +2378,7 @@
 "kK" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/structure/railing{
 	dir = 4
 	},
@@ -2733,7 +2717,7 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/crew/canteen)
 "mi" = (
-/obj/machinery/vending/cola/random,
+/obj/effect/spawner/random/vending/cola,
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
@@ -2759,14 +2743,8 @@
 "ms" = (
 /obj/structure/table/wood,
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
-/obj/effect/spawner/lootdrop/ration{
-	pixel_x = 4;
-	pixel_y = 2
-	},
-/obj/effect/spawner/lootdrop/ration{
-	pixel_x = -9;
-	pixel_y = 9
-	},
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/canteen)
 "mt" = (
@@ -3188,7 +3166,7 @@
 /turf/open/floor/pod,
 /area/ship/hangar)
 "or" = (
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/bed,
 /obj/item/toy/plush/moth{
 	pixel_x = 3;
@@ -3265,7 +3243,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 2
 	},
-/obj/effect/spawner/lootdrop/salvage_50,
+/obj/effect/spawner/random/salvage/half,
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
 	},
@@ -3281,14 +3259,11 @@
 /area/ship/storage/eva)
 "oS" = (
 /obj/effect/turf_decal/corner/opaque/brown/half,
-/obj/effect/spawner/lootdrop/maintenance/two{
-	pixel_x = 7;
-	pixel_y = -4
-	},
-/obj/effect/spawner/lootdrop/random_computer_circuit_rare,
+/obj/effect/spawner/random/maintenance/two,
+/obj/effect/spawner/random/circuit/computer/rare,
 /obj/item/storage/bag/trash,
-/obj/effect/spawner/lootdrop/random_computer_circuit_common,
-/obj/effect/spawner/lootdrop/random_computer_circuit_common,
+/obj/effect/spawner/random/circuit/computer/common,
+/obj/effect/spawner/random/circuit/computer/common,
 /obj/structure/closet/crate/trashcart,
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/plasteel,
@@ -3319,7 +3294,7 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 8
 	},
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/cargo{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
@@ -3382,7 +3357,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/engine)
 "ps" = (
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/bed,
 /obj/item/toy/plush/hornet/gay{
 	layer = 2.1;
@@ -3499,10 +3474,6 @@
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/cryo)
-"pW" = (
-/obj/structure/catwalk/over/plated_catwalk/dark,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/crew/crewthree)
 "pX" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -3637,7 +3608,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/effect/spawner/lootdrop/random_machine_circuit_mech,
+/obj/effect/spawner/random/circuit/machine/mech,
 /obj/structure/frame/machine,
 /turf/open/floor/plasteel,
 /area/ship/science)
@@ -3819,7 +3790,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 6
 	},
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
@@ -3972,7 +3943,7 @@
 /obj/structure/railing,
 /obj/machinery/light/directional/east,
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /turf/open/floor/plasteel,
 /area/ship/cargo)
 "si" = (
@@ -4145,7 +4116,7 @@
 /obj/item/clothing/glasses/meson/gar{
 	pixel_y = 8
 	},
-/obj/effect/spawner/lootdrop/tool_engie_adv,
+/obj/effect/spawner/random/engineering/tool/adv,
 /obj/item/clothing/neck/cloak/ce{
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
 	},
@@ -4193,11 +4164,6 @@
 "sH" = (
 /obj/machinery/light/directional/east,
 /obj/item/storage/belt/security/webbing,
-/obj/item/gun/energy/disabler{
-	pixel_x = 3;
-	pixel_y = -2
-	},
-/obj/item/ammo_box/magazine/co9mm,
 /obj/structure/closet/secure_closet/security/sec,
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	dir = 4
@@ -4205,18 +4171,16 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 4
 	},
+/obj/item/ammo_box/magazine/co9mm{
+	pixel_x = 1;
+	pixel_y = 0
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "sI" = (
 /obj/machinery/computer/cryopod/directional/south,
-/obj/effect/spawner/lootdrop/glowstick{
-	pixel_x = 4;
-	pixel_y = 3
-	},
-/obj/effect/spawner/lootdrop/glowstick{
-	pixel_x = -10;
-	pixel_y = 1
-	},
+/obj/effect/spawner/random/decoration/glowstick,
+/obj/effect/spawner/random/decoration/glowstick,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
 "sJ" = (
@@ -4242,7 +4206,7 @@
 /area/ship/hallway/starboard)
 "sO" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/salvage_50,
+/obj/effect/spawner/random/salvage/half,
 /turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
 "sS" = (
@@ -4507,7 +4471,7 @@
 "tJ" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/obj/effect/spawner/lootdrop/tool_engie_common,
+/obj/effect/spawner/random/engineering/tool/common,
 /obj/item/clothing/gloves/color/black,
 /obj/item/clothing/suit/hooded/wintercoat/engineering/atmos,
 /obj/structure/closet/secure_closet/atmospherics,
@@ -4836,13 +4800,6 @@
 	},
 /turf/open/floor/pod,
 /area/ship/hangar)
-"vb" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/catwalk/over/plated_catwalk/dark,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/crew/crewthree)
 "vc" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
@@ -4904,7 +4861,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/storage/eva)
 "vn" = (
-/obj/machinery/vending/snack/random,
+/obj/effect/spawner/random/vending/snack,
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
@@ -5054,7 +5011,7 @@
 /area/ship/crew/dorm/dormtwo)
 "vU" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/salvage_50,
+/obj/effect/spawner/random/salvage/half,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
 	},
@@ -5266,7 +5223,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
-/obj/effect/spawner/lootdrop/salvage_50,
+/obj/effect/spawner/random/salvage/half,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
@@ -5300,7 +5257,7 @@
 /area/ship/hallway/fore)
 "xb" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/salvage_50,
+/obj/effect/spawner/random/salvage/half,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -5319,7 +5276,7 @@
 /area/ship/hangar)
 "xc" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/crate_spawner,
+/obj/effect/spawner/random/structure/crate_abandoned,
 /turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
 "xe" = (
@@ -5439,7 +5396,7 @@
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal{
 	dir = 8
 	},
-/obj/effect/spawner/lootdrop/salvage,
+/obj/effect/spawner/random/salvage,
 /turf/open/floor/plasteel/dark,
 /area/ship/storage)
 "xG" = (
@@ -5559,7 +5516,7 @@
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	dir = 9
 	},
-/obj/effect/spawner/lootdrop/donut,
+/obj/effect/spawner/random/food_or_drink/donut,
 /turf/open/floor/carpet/red,
 /area/ship/security)
 "yl" = (
@@ -5731,7 +5688,7 @@
 /turf/closed/wall/r_wall,
 /area/ship/crew/crewfour)
 "yO" = (
-/obj/effect/spawner/lootdrop/salvage_50,
+/obj/effect/spawner/random/salvage/half,
 /obj/machinery/firealarm/directional/west,
 /turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
@@ -5981,58 +5938,29 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "zy" = (
-/obj/item/stock_parts/cell/gun{
-	pixel_x = 5;
-	pixel_y = -5
-	},
 /obj/structure/closet/wall/red/directional/north{
 	name = "Ammo locker"
 	},
 /obj/item/stock_parts/cell/gun{
-	pixel_x = 1;
+	pixel_x = 5;
 	pixel_y = -5
 	},
 /obj/item/stock_parts/cell/gun{
 	pixel_x = -3;
 	pixel_y = -5
 	},
-/obj/item/ammo_box/c9mm/ap{
-	pixel_x = 4;
-	pixel_y = 17
-	},
-/obj/item/ammo_box/c9mm{
+/obj/item/storage/box/ammo/c9mm{
 	pixel_x = 4;
 	pixel_y = 9
 	},
-/obj/item/ammo_box/c9mm{
+/obj/item/storage/box/ammo/c9mm{
 	pixel_x = 4;
 	pixel_y = 1
 	},
-/obj/item/ammo_box/c9mm{
+/obj/item/storage/box/ammo/c9mm{
 	pixel_x = 4;
 	pixel_y = -6
 	},
-/obj/item/ammo_box/magazine/smgm9mm{
-	pixel_x = 5;
-	pixel_y = 4
-	},
-/obj/item/ammo_box/magazine/smgm9mm{
-	pixel_x = 5;
-	pixel_y = 4
-	},
-/obj/item/ammo_box/magazine/smgm9mm{
-	pixel_x = 5;
-	pixel_y = 4
-	},
-/obj/item/ammo_box/magazine/smgm9mm{
-	pixel_x = 4;
-	pixel_y = 2
-	},
-/obj/item/ammo_box/magazine/smgm9mm{
-	pixel_x = 2;
-	pixel_y = 1
-	},
-/obj/item/ammo_box/magazine/smgm9mm,
 /obj/item/storage/box/lethalshot{
 	pixel_y = 5
 	},
@@ -6048,6 +5976,27 @@
 /obj/item/ammo_box/magazine/co9mm{
 	pixel_x = -7
 	},
+/obj/item/ammo_box/magazine/cm5_9mm{
+	pixel_x = 10;
+	pixel_y = 0
+	},
+/obj/item/ammo_box/magazine/cm5_9mm{
+	pixel_x = 6;
+	pixel_y = 0
+	},
+/obj/item/ammo_box/magazine/cm5_9mm{
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/obj/item/ammo_box/magazine/cm5_9mm{
+	pixel_x = -5;
+	pixel_y = 0
+	},
+/obj/item/ammo_box/magazine/cm5_9mm{
+	pixel_x = -10;
+	pixel_y = 0
+	},
+/obj/item/ammo_box/magazine/cm5_9mm,
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "zA" = (
@@ -6078,10 +6027,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel,
 /area/ship/hallway/aft)
-"zD" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/engineering/communications)
 "zI" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
@@ -6314,7 +6259,7 @@
 /obj/effect/turf_decal/corner/opaque/beige/border{
 	dir = 1
 	},
-/obj/effect/spawner/lootdrop/salvage,
+/obj/effect/spawner/random/salvage,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
@@ -6916,17 +6861,10 @@
 /turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
 "Dp" = (
-/obj/item/gun/energy/e_gun/smg{
-	pixel_y = 9
-	},
 /obj/structure/rack,
-/obj/item/gun/energy/e_gun/smg{
-	pixel_y = 2
-	},
-/obj/item/gun/ballistic/shotgun/automatic/combat{
+/obj/item/gun/ballistic/shotgun/automatic/bulldog{
 	pixel_y = -3
 	},
-/obj/effect/spawner/lootdrop/armory_contraband/metastation,
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "Dw" = (
@@ -7117,7 +7055,7 @@
 /obj/effect/turf_decal/corner/opaque/brown/half{
 	dir = 1
 	},
-/obj/effect/spawner/lootdrop/stockparts,
+/obj/effect/spawner/random/stockparts,
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/structure/frame/machine,
 /turf/open/floor/plasteel,
@@ -7237,7 +7175,7 @@
 	},
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/grass/green,
-/obj/effect/spawner/lootdrop/flower,
+/obj/effect/spawner/random/flower,
 /turf/open/floor/holofloor/grass,
 /area/ship/hallway/aft)
 "EM" = (
@@ -7267,7 +7205,7 @@
 	dir = 8
 	},
 /obj/machinery/light/directional/east,
-/obj/effect/spawner/lootdrop/prison_contraband,
+/obj/effect/spawner/random/exotic/prison_contraband,
 /obj/machinery/door/window/brigdoor/southright{
 	req_access_txt = "1";
 	req_ship_access = 1
@@ -7340,8 +7278,8 @@
 	pixel_x = -2;
 	pixel_y = 2
 	},
-/obj/effect/spawner/lootdrop/salvage,
-/obj/effect/spawner/lootdrop/stockparts,
+/obj/effect/spawner/random/salvage,
+/obj/effect/spawner/random/stockparts,
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "Fc" = (
@@ -7398,7 +7336,7 @@
 /obj/effect/turf_decal/corner/opaque/beige/border{
 	dir = 1
 	},
-/obj/effect/spawner/lootdrop/materials,
+/obj/effect/spawner/random/materials,
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
@@ -7471,7 +7409,7 @@
 /area/ship/hallway/aft)
 "Fz" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/salvage_50,
+/obj/effect/spawner/random/salvage/half,
 /obj/structure/railing{
 	dir = 8
 	},
@@ -7540,7 +7478,6 @@
 	pixel_y = -7
 	},
 /obj/machinery/light/directional/west,
-/obj/effect/spawner/lootdrop/armory_contraband/donutstation,
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "FO" = (
@@ -7598,7 +7535,6 @@
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/item/gun/energy/e_gun/dragnet,
 /obj/item/deployable_turret_folded{
 	pixel_x = 9
 	},
@@ -7710,7 +7646,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/obj/effect/spawner/lootdrop/crate_spawner,
+/obj/effect/spawner/random/structure/crate_abandoned,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -7771,14 +7707,8 @@
 	pixel_x = -6;
 	pixel_y = 4
 	},
-/obj/effect/spawner/lootdrop/glowstick{
-	pixel_x = -9;
-	pixel_y = 8
-	},
-/obj/effect/spawner/lootdrop/glowstick{
-	pixel_x = 6;
-	pixel_y = -6
-	},
+/obj/effect/spawner/random/decoration/glowstick,
+/obj/effect/spawner/random/decoration/glowstick,
 /obj/structure/railing,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/cryo)
@@ -8025,7 +7955,7 @@
 	pixel_y = -3
 	},
 /obj/effect/turf_decal/industrial/hatch/yellow,
-/obj/effect/spawner/lootdrop/maintenance/seven,
+/obj/effect/spawner/random/maintenance/seven,
 /turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
 "HZ" = (
@@ -8043,7 +7973,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/airalarm/directional/east,
 /obj/structure/table/reinforced,
-/obj/effect/spawner/lootdrop/materials{
+/obj/effect/spawner/random/materials{
 	pixel_x = 8;
 	pixel_y = 8
 	},
@@ -8109,7 +8039,7 @@
 /area/ship/medical)
 "Ix" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/salvage_50,
+/obj/effect/spawner/random/salvage/half,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -8160,7 +8090,7 @@
 /obj/effect/turf_decal/corner/opaque/beige/border{
 	dir = 1
 	},
-/obj/effect/spawner/lootdrop/stockparts,
+/obj/effect/spawner/random/stockparts,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
@@ -8345,7 +8275,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
-/obj/effect/spawner/lootdrop/salvage_50,
+/obj/effect/spawner/random/salvage/half,
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
@@ -8681,7 +8611,7 @@
 /area/ship/crew/canteen)
 "KW" = (
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /obj/item/toy/cattoy{
 	layer = 4
 	},
@@ -8919,9 +8849,9 @@
 /obj/effect/turf_decal/corner/opaque/ntblue/border{
 	dir = 1
 	},
-/obj/effect/spawner/lootdrop/beaker_loot_spawner,
+/obj/effect/spawner/random/medical/beaker,
 /obj/item/reagent_containers/glass/filter,
-/obj/effect/spawner/lootdrop/beaker_loot_spawner,
+/obj/effect/spawner/random/medical/beaker,
 /obj/structure/table/chem,
 /obj/machinery/reagentgrinder{
 	pixel_x = 10;
@@ -9017,7 +8947,7 @@
 /area/ship/crew/canteen)
 "Ma" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
 "Mb" = (
@@ -9135,7 +9065,7 @@
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
 /obj/effect/turf_decal/industrial/hatch/yellow,
-/obj/effect/spawner/lootdrop/crate_spawner,
+/obj/effect/spawner/random/structure/crate_abandoned,
 /turf/open/floor/plasteel,
 /area/ship/cargo)
 "Mx" = (
@@ -9260,14 +9190,8 @@
 "Nc" = (
 /obj/structure/table/wood,
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
-/obj/effect/spawner/lootdrop/donkpockets{
-	pixel_x = 9;
-	pixel_y = 0
-	},
-/obj/effect/spawner/lootdrop/donkpockets{
-	pixel_x = -8;
-	pixel_y = 10
-	},
+/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/canteen)
 "Nf" = (
@@ -9315,14 +9239,8 @@
 "Nz" = (
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
 /obj/structure/table/wood,
-/obj/effect/spawner/lootdrop/ration{
-	pixel_x = 7;
-	pixel_y = 10
-	},
-/obj/effect/spawner/lootdrop/ration{
-	pixel_x = -6;
-	pixel_y = 10
-	},
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /obj/item/reagent_containers/food/snacks/tinychocolate{
 	pixel_x = 7;
 	pixel_y = -5
@@ -9354,11 +9272,6 @@
 "NF" = (
 /obj/item/radio/intercom/directional/south,
 /obj/item/storage/belt/security/webbing,
-/obj/item/gun/energy/disabler{
-	pixel_x = 3;
-	pixel_y = -2
-	},
-/obj/item/ammo_box/magazine/co9mm,
 /obj/structure/closet/secure_closet/security/sec,
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	dir = 6
@@ -9368,6 +9281,10 @@
 	},
 /obj/machinery/camera{
 	dir = 8
+	},
+/obj/item/ammo_box/magazine/co9mm{
+	pixel_x = 1;
+	pixel_y = 0
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
@@ -9612,9 +9529,9 @@
 /obj/item/aicard,
 /obj/item/aiModule/core/freeformcore,
 /obj/item/aiModule/reset/purge,
-/obj/effect/spawner/lootdrop/aimodule_harmful,
-/obj/effect/spawner/lootdrop/aimodule_neutral,
-/obj/effect/spawner/lootdrop/aimodule_harmless,
+/obj/effect/spawner/random/aimodule_harmful,
+/obj/effect/spawner/random/aimodule_neutral,
+/obj/effect/spawner/random/aimodule_harmless,
 /obj/item/borg/upgrade/ai,
 /obj/structure/closet/wall/blue/directional/north,
 /obj/machinery/light/directional/west,
@@ -9677,7 +9594,7 @@
 	},
 /obj/structure/crate_shelf,
 /obj/effect/turf_decal/industrial/hatch/yellow,
-/obj/effect/spawner/lootdrop/crate_spawner,
+/obj/effect/spawner/random/structure/crate_abandoned,
 /turf/open/floor/plasteel/patterned,
 /area/ship/hangar)
 "OD" = (
@@ -9729,13 +9646,11 @@
 /obj/item/clothing/suit/armor/vest/bulletproof,
 /obj/item/clothing/head/helmet/marine,
 /obj/item/clothing/suit/armor/vest/marine/medium,
-/obj/item/clothing/suit/armor/vest/marine/heavy,
 /obj/structure/closet/secure_closet{
 	icon_state = "armory";
 	name = "armor locker";
 	req_access_txt = "1"
 	},
-/obj/item/clothing/head/helmet/marine/security,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "OJ" = (
@@ -9866,7 +9781,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/effect/spawner/lootdrop/three_course_meal,
+/obj/effect/spawner/random/food_or_drink/three_course_meal,
 /obj/item/radio/intercom/wideband/directional/west,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/canteen)
@@ -10035,8 +9950,8 @@
 	pixel_y = 13
 	},
 /obj/item/reagent_containers/medigel/sterilizine,
-/obj/effect/spawner/lootdrop/tool_surgery_adv,
-/obj/effect/spawner/lootdrop/tool_surgery_common,
+/obj/effect/spawner/random/medical/surgery_tool/adv,
+/obj/effect/spawner/random/medical/surgery_tool/common,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/medical)
 "PJ" = (
@@ -10129,10 +10044,6 @@
 /obj/machinery/light/directional/west,
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/crew/crewtwo)
-"Qq" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/engineering/engine)
 "Qr" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -10181,7 +10092,7 @@
 	},
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/pointybush,
-/obj/effect/spawner/lootdrop/chicken,
+/obj/effect/spawner/random/chicken,
 /obj/machinery/light/directional/west,
 /turf/open/floor/holofloor/grass,
 /area/ship/hallway/aft)
@@ -10230,7 +10141,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/storage)
 "QI" = (
-/obj/effect/spawner/lootdrop/salvage_50,
+/obj/effect/spawner/random/salvage/half,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -10349,7 +10260,7 @@
 	},
 /obj/item/radio/intercom/directional/north,
 /obj/structure/frame/machine,
-/obj/effect/spawner/lootdrop/stockparts,
+/obj/effect/spawner/random/stockparts,
 /obj/effect/turf_decal/industrial/outline/orange,
 /turf/open/floor/plasteel,
 /area/ship/science)
@@ -10590,7 +10501,7 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
 	},
@@ -10615,7 +10526,7 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/effect/spawner/lootdrop/salvage,
+/obj/effect/spawner/random/salvage,
 /turf/open/floor/plasteel/dark,
 /area/ship/storage)
 "Su" = (
@@ -10924,7 +10835,7 @@
 /obj/structure/railing,
 /obj/effect/turf_decal/corner/opaque/yellow/diagonal,
 /obj/effect/turf_decal/industrial/hatch/yellow,
-/obj/effect/spawner/lootdrop/salvage_50,
+/obj/effect/spawner/random/salvage/half,
 /turf/open/floor/plasteel,
 /area/ship/cargo)
 "Tp" = (
@@ -11062,7 +10973,7 @@
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/closet/crate/trashcart,
-/obj/effect/spawner/lootdrop/costume,
+/obj/effect/spawner/random/clothing/costume,
 /obj/item/poster/random_official,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
@@ -11299,7 +11210,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
-/obj/effect/spawner/lootdrop/salvage_50,
+/obj/effect/spawner/random/salvage/half,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -11370,12 +11281,6 @@
 	},
 /turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
-"UK" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/catwalk/over/plated_catwalk/dark,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/crew/crewthree)
 "UL" = (
 /obj/item/stack/sheet/glass/five,
 /obj/machinery/camera{
@@ -11879,8 +11784,8 @@
 	},
 /obj/machinery/selling_pad,
 /obj/effect/turf_decal/industrial/outline,
-/obj/effect/spawner/lootdrop/maintenance,
-/obj/effect/spawner/lootdrop/stockparts,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/stockparts,
 /turf/open/floor/plasteel,
 /area/ship/cargo)
 "Xi" = (
@@ -11930,7 +11835,7 @@
 	pixel_x = 6;
 	pixel_y = 9
 	},
-/obj/effect/spawner/lootdrop/random_machine_circuit_rare{
+/obj/effect/spawner/random/circuit/machine/rare{
 	pixel_x = -10;
 	pixel_y = -4
 	},
@@ -12039,7 +11944,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/effect/spawner/lootdrop/salvage_50,
+/obj/effect/spawner/random/salvage/half,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -12196,8 +12101,8 @@
 	dir = 10;
 	layer = 4.1
 	},
-/obj/effect/spawner/lootdrop/costume,
-/obj/effect/spawner/lootdrop/costume,
+/obj/effect/spawner/random/clothing/costume,
+/obj/effect/spawner/random/clothing/costume,
 /turf/open/floor/wood/birch,
 /area/ship/crew/canteen)
 "YR" = (
@@ -12249,7 +12154,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
 	},
-/obj/effect/spawner/lootdrop/salvage_50,
+/obj/effect/spawner/random/salvage/half,
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
@@ -12395,7 +12300,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /obj/structure/table/wood/fancy/royalblack,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/canteen)
@@ -12536,7 +12441,6 @@
 	},
 /obj/structure/window/reinforced/spawner,
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/armory_contraband,
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "ZJ" = (
@@ -12875,7 +12779,7 @@ PJ
 kB
 UU
 UU
-zD
+UU
 UU
 UU
 UU
@@ -12938,11 +12842,11 @@ VT
 qJ
 fT
 pn
-UK
+hQ
 vJ
 Ca
 BC
-pW
+hQ
 EA
 xL
 OJ
@@ -12980,11 +12884,11 @@ DH
 DH
 si
 kt
-vb
+hQ
 sB
 Vn
 ki
-pW
+hQ
 RH
 ch
 TU
@@ -13000,8 +12904,8 @@ PJ
 PJ
 kB
 UU
-zD
-bo
+UU
+UU
 UU
 UU
 UU
@@ -13029,8 +12933,8 @@ hQ
 hQ
 DH
 DH
-Qq
-Qq
+DH
+DH
 DH
 kB
 PJ
@@ -14335,7 +14239,7 @@ Lj
 bF
 vU
 nA
-jj
+Zt
 oZ
 "}
 (42,1,1) = {"

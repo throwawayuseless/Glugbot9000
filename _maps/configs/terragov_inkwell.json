@@ -28,8 +28,8 @@
 			"officer": true,
 			"slots": 1
 		},
-		"Sonnensöldner": {
-			"outfit": "/datum/outfit/job/terragov/sonnensoldner",
+		"Shock Trooper": {
+			"outfit": "/datum/outfit/job/terragov/shocktrooper",
 			"slots": 3
 		},
 		"Ship Engineer": {

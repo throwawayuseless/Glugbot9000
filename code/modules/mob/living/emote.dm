@@ -149,7 +149,7 @@
 	. = ..()
 	if(. && isliving(user))
 		var/mob/living/L = user
-		L.SetSleeping(200)
+		L.set_sleeping(200)
 
 /datum/emote/living/flap
 	key = "flap"
@@ -427,7 +427,6 @@
 	stat_allowed = UNCONSCIOUS
 	/// Timer for the blink to wear off
 	var/snore_timer = TIMER_ID_NULL
-	logged = FALSE
 
 /datum/emote/living/snore/run_emote(mob/user, params, type_override, intentional)
 	. = ..()

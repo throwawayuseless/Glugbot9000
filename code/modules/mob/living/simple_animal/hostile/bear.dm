@@ -98,7 +98,6 @@
 	health = 120
 	maxHealth = 120
 	armored = TRUE
-	gold_core_spawnable = HOSTILE_SPAWN
 
 /mob/living/simple_animal/hostile/bear/cave
 	name = "brown bear"
@@ -115,7 +114,7 @@
 	name = "pile of bear armor"
 	desc = "A scattered pile of various shaped armor pieces fitted for a bear, some duct tape, and a nail filer. Crude instructions \
 		are written on the back of one of the plates. This seems like an awful idea."
-	icon = 'icons/obj/items_and_weapons.dmi'
+	icon = 'icons/obj/items.dmi'
 	icon_state = "bear_armor_upgrade"
 
 /obj/item/bear_armor/afterattack(atom/target, mob/user, proximity_flag)

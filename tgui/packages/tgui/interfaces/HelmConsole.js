@@ -313,6 +313,13 @@ const ShipControlContent = (_props, context) => {
             disabled={aiUser}
             onClick={() => act('toggle_ai_control')}
           />
+          <Button
+            tooltip="Print Silicon Access Chip"
+            tooltipPosition="left"
+            icon="microchip"
+            color="good"
+            onClick={() => act('PRG_printsiliconaccess')}
+          />
         </>
       }
     >

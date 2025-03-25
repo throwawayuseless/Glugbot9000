@@ -21,7 +21,8 @@
 		/datum/language/moffic,
 		/datum/language/sylvan,
 		/datum/language/shadowtongue,
-		/datum/language/ratvar
+		/datum/language/ratvar,
+		//datum/language/solarian
 	))
 
 /obj/item/organ/tongue/Initialize(mapload)
@@ -276,7 +277,7 @@
 
 /obj/item/organ/tongue/robot/emp_act(severity)
 	owner.apply_effect(EFFECT_STUTTER, 120)
-	owner.emote("scream")
+	owner.force_scream()
 	to_chat(owner, "<span class='warning'>Alert: Vocal cords are malfunctioning.</span>")
 
 /obj/item/organ/tongue/robot/handle_speech(datum/source, list/speech_args)

@@ -671,7 +671,7 @@
 	set_module = /obj/item/robot_module/janitor
 	icon_state = "janitor"
 
-/mob/living/silicon/robot/modules/syndicate
+/*/mob/living/silicon/robot/modules/syndicate
 	icon_state = "synd_sec"
 	faction = list(ROLE_SYNDICATE)
 	bubble_icon = "syndibot"
@@ -756,7 +756,7 @@
 						Your cyborg chameleon projector allows you to assume the appearance and registered name of a Nanotrasen engineering borg, and undertake covert actions on the station \
 						Be aware that almost any physical contact or incidental damage will break your camouflage \
 						<i>Help the operatives secure the disk at all costs!</i></b>"
-	set_module = /obj/item/robot_module/saboteur
+	set_module = /obj/item/robot_module/saboteur */
 
 /mob/living/silicon/robot/proc/notify_ai(notifytype, oldname, newname)
 	if(!connected_ai)

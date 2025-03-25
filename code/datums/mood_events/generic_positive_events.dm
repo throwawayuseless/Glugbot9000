@@ -109,11 +109,6 @@
 	mood_change = 3
 	hidden = TRUE
 
-/datum/mood_event/cult
-	description = "<span class='nicegreen'>I have seen the truth, praise the almighty one!</span>\n"
-	mood_change = 10 //maybe being a cultist isnt that bad after all
-	hidden = TRUE
-
 /datum/mood_event/family_heirloom
 	description = span_nicegreen("My family heirloom is safe with me.")
 	mood_change = 1

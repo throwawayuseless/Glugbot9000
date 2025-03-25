@@ -3,7 +3,9 @@
 	"map_name": "Wyvern-class Sloop",
 	"map_short_name": "Wyvern-class",
 	"map_path": "_maps/shuttles/independent/independent_wyvern.dmm",
+	"faction": "/datum/faction/independent",
 	"prefix": "ISV",
+	"manufacturer": "UNKNOWN",
 	"description": "Taking full advantage of Kasagi-Fischer's easily modifiable Riggs class, the Wyvern is an independent mercenary vessel, retrofitted with an armored hull, heavy defense turrets, and an expanded crew quarters. What few factory parts remain have been altered beyond recognition, only the exterior hull is reminiscent of what was once a hardy multi-role ship.",
 	"tags": [
 		"Mercenary",
@@ -51,6 +53,7 @@
 	"starting_funds": 2000,
 	"enabled": true,
 	"space_spawn": false,
+
 	"architect": "Culls-The-Leviathan",
 	"contributors": [
 		"No Contributors"

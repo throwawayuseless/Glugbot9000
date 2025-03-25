@@ -315,11 +315,6 @@
 	icon_state = "science"
 	build_path = /obj/machinery/computer/teleporter
 
-/obj/item/circuitboard/computer/xenobiology
-	name = "circuit board (Xenobiology Console)"
-	icon_state = "science"
-	build_path = /obj/machinery/computer/camera_advanced/xenobio
-
 //Security
 
 /obj/item/circuitboard/computer/gulag_teleporter_console
@@ -362,7 +357,7 @@
 	build_path = /obj/machinery/computer/bounty
 
 /obj/item/circuitboard/computer/cargo
-	name = "Supply Console (Computer Board)"
+	name = "Outpost Comms Console (Computer Board)"
 	icon_state = "supply"
 	build_path = /obj/machinery/computer/cargo
 	var/contraband = FALSE
@@ -380,16 +375,6 @@
 		contraband = TRUE
 		obj_flags |= EMAGGED
 		to_chat(user, "<span class='notice'>You adjust [src]'s routing and receiver spectrum, unlocking special supplies and contraband.</span>")
-
-/obj/item/circuitboard/computer/cargo/express
-	name = "Outpost Comms Console (Computer Board)"
-	build_path = /obj/machinery/computer/cargo/express
-
-/obj/item/circuitboard/computer/cargo/express/multitool_act(mob/living/user)
-	return
-
-/obj/item/circuitboard/computer/cargo/express/emag_act(mob/living/user)
-	return
 
 /obj/item/circuitboard/computer/mining
 	name = "Outpost Status Display (Computer Board)"

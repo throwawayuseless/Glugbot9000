@@ -201,7 +201,7 @@
 /area/ship/hallway/central)
 "cx" = (
 /obj/item/mecha_parts/mecha_equipment/hydraulic_clamp,
-/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/heavy,
+/obj/item/mecha_parts/mecha_equipment/weapon/energy/carbine,
 /obj/item/mecha_parts/mecha_equipment/drill,
 /obj/item/mecha_parts/concealed_weapon_bay,
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/ripley,
@@ -1058,7 +1058,7 @@
 	dir = 4
 	},
 /obj/structure/catwalk/over,
-/obj/structure/fireaxecabinet{
+/obj/structure/cabinet/fireaxe{
 	pixel_y = 26
 	},
 /turf/open/floor/plating,
@@ -1313,7 +1313,7 @@
 /obj/structure/table,
 /obj/structure/window/spawner,
 /obj/structure/window/spawner/east,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/maintenance/three,
 /obj/item/paicard,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
@@ -2403,7 +2403,7 @@
 	dir = 4
 	},
 /obj/item/radio/intercom/directional/north,
-/obj/machinery/computer/cargo/express,
+/obj/machinery/computer/cargo,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Ao" = (
@@ -2775,11 +2775,6 @@
 /obj/item/folder/blue{
 	pixel_x = 3
 	},
-/obj/item/stamp/head_of_personnel{
-	name = "first mate's rubber stamp";
-	pixel_x = 8;
-	pixel_y = 7
-	},
 /obj/item/pen/fourcolor{
 	pixel_x = -2
 	},
@@ -2805,7 +2800,7 @@
 	},
 /obj/structure/closet/crate,
 /obj/machinery/firealarm/directional/west,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/maintenance/three,
 /turf/open/floor/plasteel/tech,
 /area/ship/maintenance/port)
 "Fu" = (
@@ -2871,7 +2866,7 @@
 /obj/machinery/firealarm/directional/west,
 /obj/structure/table,
 /obj/structure/window/spawner,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/maintenance/three,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "Gw" = (
@@ -3082,7 +3077,7 @@
 /area/ship/engineering)
 "Ij" = (
 /obj/structure/table/wood,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/maintenance/three,
 /turf/open/floor/wood/mahogany,
 /area/ship/crew)
 "Iq" = (
@@ -3366,7 +3361,7 @@
 /area/ship/medical)
 "Ne" = (
 /obj/structure/bed,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/bounty,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/dorm)
@@ -3375,7 +3370,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/table,
 /obj/structure/window/spawner,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "NA" = (
@@ -3726,7 +3721,7 @@
 /area/ship/engineering/atmospherics)
 "QQ" = (
 /obj/structure/closet/secure_closet/wall/directional/west{
-	icon_state = "terragov_wall";
+	icon_state = "solgov_wall";
 	name = "first mate's closet";
 	req_access_txt = "57"
 	},
@@ -3848,7 +3843,7 @@
 	},
 /obj/structure/bed,
 /obj/structure/curtain/bounty,
-/obj/item/bedsheet/random,
+/obj/effect/spawner/random/bedsheet,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew/dorm)
 "Sj" = (
@@ -3906,7 +3901,7 @@
 "SS" = (
 /obj/item/clothing/glasses/sunglasses,
 /obj/structure/closet/secure_closet/wall/directional/east{
-	icon_state = "terragov_wall";
+	icon_state = "solgov_wall";
 	name = "captain's closet";
 	req_access_txt = "20"
 	},
@@ -3914,7 +3909,7 @@
 /obj/item/gun/ballistic/revolver/mateba,
 /obj/item/ammo_box/a357,
 /obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357_box,
+/obj/item/storage/box/ammo/a357,
 /obj/item/spacecash/bundle/c1000,
 /obj/item/spacecash/bundle/c1000,
 /obj/item/spacecash/bundle/c1000,
@@ -4022,7 +4017,7 @@
 /obj/effect/landmark/start/assistant,
 /obj/structure/table,
 /obj/item/cutting_board,
-/obj/item/kitchen/knife,
+/obj/item/melee/knife/kitchen,
 /obj/item/kitchen/rollingpin,
 /obj/item/reagent_containers/condiment/saltshaker{
 	pixel_x = -7

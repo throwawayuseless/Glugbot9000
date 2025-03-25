@@ -3,7 +3,9 @@
 	"map_name": "Delta-class Frigate",
 	"map_short_name": "Delta-class",
 	"map_path": "_maps/shuttles/nanotrasen/nanotrasen_delta.dmm",
+	"faction": "/datum/faction/nt",
 	"prefix": "NSSV",
+	"manufacturer": "Nanotrasen Spaceworks",
 	"description": "The Delta is a compact and advanced mining ship that supplements its comparatively small organic crew with a full suite of robotics facilities, including an AI and a host of mining and logistics drones and cyborgs. The Delta's low logistical footprint has thoroughly endeared it to N+S Logistics' upper management, but its cramped accomodations and lackluster defensive armament make it distinctly unpopular with the company's spacefaring employees.",
 	"tags": [
 		"Science",
@@ -38,5 +40,10 @@
 	"limit": 2,
 	"starting_funds": 4000,
 	"enabled": true,
-	"space_spawn": false
+	"space_spawn": false,
+
+	"architect": "Mark Suckerberg",
+	"contributors": [
+		"Unknown"
+	]
 }

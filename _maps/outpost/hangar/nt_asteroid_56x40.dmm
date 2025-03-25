@@ -277,8 +277,8 @@
 /area/hangar)
 "lZ" = (
 /obj/structure/closet/crate,
-/obj/effect/spawner/lootdrop/maintenance,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/machinery/light/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark{
@@ -342,9 +342,6 @@
 /turf/open/floor/plasteel/dark{
 	planetary_atmos = 1
 	},
-/area/hangar)
-"oJ" = (
-/turf/open/space/basic,
 /area/hangar)
 "oL" = (
 /obj/effect/decal/cleanable/dirt,
@@ -472,10 +469,10 @@
 	},
 /area/hangar)
 "sE" = (
-/obj/structure/chair/comfy{
+/obj/effect/turf_decal/siding/wood,
+/obj/structure/chair/comfy/beige/corpo/directional{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/wood,
 /turf/open/floor/carpet/green{
 	planetary_atmos = 1
 	},
@@ -723,7 +720,7 @@
 	},
 /area/hangar)
 "Ed" = (
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/cargo{
 	dir = 8;
 	pixel_x = 7
 	},
@@ -806,7 +803,7 @@
 /area/hangar)
 "Hs" = (
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating{
 	planetary_atmos = 1
 	},
@@ -963,10 +960,7 @@
 /area/hangar)
 "KT" = (
 /obj/structure/catwalk/over/plated_catwalk,
-/obj/effect/spawner/lootdrop/glowstick{
-	pixel_x = 5;
-	pixel_y = 9
-	},
+/obj/effect/spawner/random/decoration/glowstick,
 /turf/open/floor/plating{
 	icon_state = "panelscorched";
 	planetary_atmos = 1
@@ -1141,6 +1135,13 @@
 	pixel_x = 32
 	},
 /turf/open/floor/carpet/red{
+	planetary_atmos = 1
+	},
+/area/hangar)
+"Qn" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/structure/chair/comfy/grey/old/alt/directional/north,
+/turf/open/floor/carpet/green{
 	planetary_atmos = 1
 	},
 /area/hangar)
@@ -1435,15 +1436,15 @@ eH
 eH
 eH
 uO
-oJ
 eH
-eH
-uO
-oJ
 eH
 eH
 uO
-oJ
+eH
+eH
+eH
+uO
+eH
 eH
 eH
 uO
@@ -5346,7 +5347,7 @@ VE
 VE
 VE
 kK
-sE
+Qn
 eH
 eH
 qh

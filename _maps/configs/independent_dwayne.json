@@ -3,11 +3,13 @@
 	"map_name": "Mark.II Dwayne-class Long Range Mining Transport",
 	"map_short_name": "Mk.II Dwayne-class",
 	"map_path": "_maps/shuttles/independent/independent_dwayne.dmm",
-	"prefix": "ISV",
-	"description": "The Dwayne is one of the older classes of ships commonly seen on the Frontier, and one of the few such classes that doesn’t also carry a reputation for nightmarish conditions or high accident rates. Originally conceived of as a “mothership” for Nanotrasen mining shuttles that could enable long-duration mining missions at minimal cost, severe budget overruns and issues with the mining shuttle docking system left Nanotrasen with a massive number of mostly-completed hulls upon the project’s cancellation. These hulls were then quickly refurbished and sold on the civilian market, where they proved an immediate success on the Frontier. Contemporary Dwaynes can typically be found carrying a variety of mining equipment and extensive modifications unique to their captains. Recently-available aftermarket modifications have solved the Dwayne’s longstanding shuttle dock issues, allowing modern Dwaynes to finally serve their original design purpose, provided the captain is able to source a shuttle.",
+	"faction": "/datum/faction/independent",
+	"prefix": "SV",
+	"manufacturer": "Nanotrasen Spaceworks",
+	"description": "The Dwayne is one of the older classes of ships commonly seen on the Frontier, and one of the few such classes that doesn’t also carry a reputation for nightmarish conditions or high accident rates. Originally conceived of as a “mothership” for Nanotrasen mining shuttles that could enable long-duration mining missions at minimal cost, severe budget overruns and issues with the mining shuttle docking system left Nanotrasen with a massive number of mostly-completed hulls upon the project’s cancellation. These hulls were then quickly refurbished and sold on the civilian market, where they proved an immediate success on the Frontier. Contemporary Dwaynes can typically be found carrying a variety of mining equipment and extensive modifications unique to their captains.",
 	"tags": [
 		"Mining",
-		"Generalist"
+		"Cargo"
 	],
 	"namelists": [
 		"GENERAL",
@@ -23,27 +25,29 @@
 		},
 		"Foreman": {
 			"outfit": "/datum/outfit/job/independent/quartermaster/western",
-			"slots": 1
-		},
-		"Ship's Doctor": {
-			"outfit": "/datum/outfit/job/independent/doctor",
-			"slots": 1
-		},
-		"Ship's Engineer": {
-			"outfit": "/datum/outfit/job/independent/engineer",
+			"officer": true,
 			"slots": 1
 		},
 		"Asteroid Miner": {
 			"outfit": "/datum/outfit/job/independent/miner/hazard",
 			"slots": 2
 		},
+		"Mechanic": {
+			"outfit": "/datum/outfit/job/independent/engineer",
+			"slots": 1
+		},
 		"Deckhand": {
 			"outfit": "/datum/outfit/job/independent/assistant",
-			"slots": 3
+			"slots": 1
 		}
 	},
 	"limit": 1,
-	"starting_funds": 2000,
+	"starting_funds": 4000,
 	"enabled": true,
-	"space_spawn": false
+	"space_spawn": false,
+
+	"architect": "MarkSuckerberg",
+	"contributors": [
+		"Sadhorizon - Refit/Redesign"
+	]
 }

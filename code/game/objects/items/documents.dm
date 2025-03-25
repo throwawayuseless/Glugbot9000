@@ -5,7 +5,7 @@
 	icon_state = "docs_generic"
 	item_state = "paper"
 	throwforce = 0
-	w_class = WEIGHT_CLASS_TINY
+	w_class = WEIGHT_CLASS_NORMAL
 	throw_range = 1
 	throw_speed = 1
 	layer = MOB_LAYER
@@ -16,7 +16,7 @@
 	desc = "\"Top Secret\" Nanotrasen documents, filled with complex diagrams and lists of names, dates and coordinates."
 	icon_state = "docs_verified"
 
-/obj/item/documents/terragov
+/obj/item/documents/solgov
 	desc = "\"TOP SECRET\"-level memo, listing a number of black company operatives on various space stations and worlds. Some entries have been crossed out, underlined in red, or even redacted entirely with black ink."
 	icon_state = "docs_verified"
 
@@ -26,6 +26,15 @@
 
 /obj/item/documents/syndicate
 	desc = "\"Top Secret\" documents detailing sensitive Syndicate operational intelligence."
+
+/obj/item/documents/syndicate/cybersun
+	name = "classified Cybersun documents"
+	desc = "\"Top Secret\" documents detailing sensitive Cybersun Virtual Solutions operational intelligence. These documents are verified with a red wax seal."
+	icon_state = "docs_red"
+
+/obj/item/documents/syndicate/cybersun/biodynamics
+	desc = "\"Top Secret\" Cybersun Biodynamics documents, filled with patient lists and unfinished designs. These documents are verified with a teal wax seal."
+	icon_state = "docs_teal"
 
 /obj/item/documents/syndicate/red
 	name = "red secret documents"
@@ -44,6 +53,10 @@
 	name = "Second Battlegroup secret documents"
 	desc = "\"Top Secret\" documents belonging to the Second Battlegroup of New Gorlex Republic. They are filled with sensitive operational intelligence. These documents are verified with a red wax seal."
 	icon_state = "docs_red"
+
+/obj/item/documents/eoehoma // For use in Eoehoma-related ruins.
+	desc = "\"Top Secret\" Eoehoma Firearms documents. Filled with weapon blueprints and eviction notices."
+	icon_state = "docs_blue"
 
 /obj/item/documents/photocopy
 	desc = "A copy of some top-secret documents. Nobody will notice they aren't the originals... right?"

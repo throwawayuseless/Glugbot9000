@@ -165,7 +165,7 @@ GLOBAL_LIST_INIT(ai_core_display_screens, sortList(list(
 	"Triumvirate-M",
 	"Voiddonut",
 	"Vox",
-	"YesMan",
+	"Yes-Man",
 	"Weird")))
 
 /proc/resolve_ai_icon(input)
@@ -219,7 +219,7 @@ GLOBAL_LIST_INIT(uplink_spawn_loc_list, list(UPLINK_PDA, UPLINK_RADIO, UPLINK_PE
 #define PREF_CIG_CARP "Carp Classic Cigarettes"
 #define PREF_CIG_MIDORI "Midori Taboko Rollies"
 #define PREF_CIGAR "Premium Cigars"
-#define PREF_CIGAR_SOLAR "Terran Cigars"
+#define PREF_CIGAR_SOLAR "Terrian Cigars"
 #define PREF_CIGAR_COHIBA "Cohiba Cigars"
 #define PREF_VAPE "Vape Pen"
 #define PREF_PIPE "Fancy Pipe"
@@ -267,9 +267,8 @@ GLOBAL_LIST_INIT(scarySounds, list('sound/weapons/thudswoosh.ogg','sound/weapons
 25 Toxins
 26 Dormitories
 27 Virology
-28 Xenobiology
-29 Law Office
-30 Detective's Office
+28 Law Office
+29 Detective's Office
 */
 
 //The whole system for the sorttype var is determined based on the order of this list,
@@ -285,7 +284,7 @@ GLOBAL_LIST_INIT(TAGGERLOCATIONS, list("Disposals",
 	"Robotics", "Head of Personnel's Office", "Library", "Chapel", "Theatre",
 	"Bar", "Kitchen", "Hydroponics", "Janitor Closet","Genetics",
 	"Experimentor Lab", "Toxins", "Dormitories", "Virology",
-	"Xenobiology", "Law Office","Detective's Office"))
+	"Law Office","Detective's Office"))
 
 GLOBAL_LIST_INIT(station_prefixes, world.file2list("strings/station_prefixes.txt"))
 

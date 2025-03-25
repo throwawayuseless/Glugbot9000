@@ -143,7 +143,7 @@ GLOBAL_LIST_INIT(reinforced_glass_recipes, list ( \
 	null, \
 	new/datum/stack_recipe("directional reinforced window", /obj/structure/window/reinforced/unanchored, time = 0, on_floor = TRUE, window_checks = TRUE), \
 	new/datum/stack_recipe("fulltile reinforced window", /obj/structure/window/reinforced/fulltile/unanchored, 2, time = 0, on_floor = TRUE, window_checks = TRUE), \
-	new/datum/stack_recipe(" reinforced glass tile", /obj/item/stack/tile/glass/reinforced, 1, 4, 20), \
+	new/datum/stack_recipe("reinforced glass tile", /obj/item/stack/tile/glass/reinforced, 1, 4, 20), \
 	new/datum/stack_recipe("glass shard", /obj/item/shard, 1) \
 ))
 
@@ -165,7 +165,24 @@ GLOBAL_LIST_INIT(reinforced_glass_recipes, list ( \
 	add_fingerprint(user)
 	..()
 
+/obj/item/stack/sheet/rglass/cyborg
+	custom_materials = null
+	var/datum/robot_energy_storage/glasource
+	var/metcost = 250
+	var/glacost = 500
 
+/obj/item/stack/sheet/rglass/cyborg/get_amount()
+	return min(round(source.energy / metcost), round(glasource.energy / glacost))
+
+/obj/item/stack/sheet/rglass/cyborg/use(used, transfer = FALSE, check = TRUE) // Requires special checks, because it uses two storages
+	if(get_amount(used)) //ensure we still have enough energy if called in a do_after chain
+		source.use_charge(used * metcost)
+		glasource.use_charge(used * glacost)
+		return TRUE
+
+/obj/item/stack/sheet/rglass/cyborg/add(amount)
+	source.add_charge(amount * metcost)
+	glasource.add_charge(amount * glacost)
 
 /obj/item/stack/sheet/rglass/get_main_recipes()
 	. = ..()
@@ -265,7 +282,7 @@ GLOBAL_LIST_INIT(plastitaniumglass_recipes, list(
 	var/obj/item/stack/sheet/weld_material = /obj/item/stack/sheet/glass
 	embedding = list("embed_chance" = 65)
 
-/obj/item/shard/Initialize()
+/obj/item/shard/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/caltrop, force)
 	AddComponent(/datum/component/butchering, 150, 65)
@@ -283,16 +300,13 @@ GLOBAL_LIST_INIT(plastitaniumglass_recipes, list(
 	if (icon_prefix)
 		icon_state = "[icon_prefix][icon_state]"
 
-	SSblackbox.record_feedback("tally", "station_mess_created", 1, name)
+	if(!mapload)
+		SSblackbox.record_feedback("tally", "station_mess_created", 1, name)
 
 	var/static/list/loc_connections = list(
 		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
 	)
 	AddElement(/datum/element/connect_loc, loc_connections)
-
-/obj/item/shard/Destroy()
-	. = ..()
-	SSblackbox.record_feedback("tally", "station_mess_destroyed", 1, name)
 
 /obj/item/shard/afterattack(atom/A as mob|obj, mob/user, proximity)
 	. = ..()
@@ -322,7 +336,7 @@ GLOBAL_LIST_INIT(plastitaniumglass_recipes, list(
 		var/obj/item/stack/sheet/cotton/cloth/C = I
 		to_chat(user, "<span class='notice'>You begin to wrap the [C] around the [src]...</span>")
 		if(do_after(user, 35, target = src))
-			var/obj/item/kitchen/knife/shiv/S = new /obj/item/kitchen/knife/shiv
+			var/obj/item/melee/knife/shiv/S = new /obj/item/melee/knife/shiv
 			C.use(1)
 			to_chat(user, "<span class='notice'>You wrap the [C] around the [src] forming a makeshift weapon.</span>")
 			remove_item_from_storage(src)
