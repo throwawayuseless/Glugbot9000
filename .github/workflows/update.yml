@@ -12,7 +12,7 @@ permissions:
 
 env:
   pr_title: '[MDB IGNORE] [IDB IGNORE] Upstream mirror'
-  pr_body: This is an automated pull request to merge the latest changes from the upstream repository.
+  pr_body: This is an automated pull request to merge the latest changes from the upstream repository.'
   pr_branch: mirror
   pr_label: mirror
   upstream_repo: shiptest-ss13/Shiptest
@@ -37,34 +37,20 @@ jobs:
 
       - name: Check tracked files
         id: tracking
+        shell: pwsh
         run: |
           $files = @()
-          $tracked = $Env:tracked_files -split ","  # Split the tracked files properly
-
-          foreach ($file in $tracked) {
-            if ($file.EndsWith("/")) {
-              $changes = git rev-list --count HEAD..FETCH_HEAD -- $file
-              if ($changes -ne 0) {
-                $diff_files = git diff --name-only FETCH_HEAD -- $file
-                foreach ($changed_file in $diff_files) {
-                  $ahead = git rev-list --count HEAD..FETCH_HEAD -- $changed_file
-                  if ($ahead -ne 0) { $files += "$changed_file - $ahead commits" }
-                }
-              }
-            } else {
-              $ahead = git rev-list --count HEAD..FETCH_HEAD -- $file
-              if ($ahead -ne 0) { $files += "$file - $ahead commits" }
-            }
+          foreach ($_ in $Env:tracked_files -split ",") {
+            $ahead = (git rev-list --count HEAD..FETCH_HEAD -- $_) 2>$null
+            if ($ahead -ne 0) { $files += "$_ - $ahead commit(s)" }
           }
 
           if ($files.Count -ne 0) {
             echo "tracked_files<<EOF" >> $Env:GITHUB_OUTPUT
-            foreach ($f in $files) { echo "- $f" >> $Env:GITHUB_OUTPUT }
+            echo "The following tracked files have changed:" >> $Env:GITHUB_OUTPUT
+            echo "$($files -join "`n")" >> $Env:GITHUB_OUTPUT
             echo "EOF" >> $Env:GITHUB_OUTPUT
-          } else {
-            echo "tracked_files=No tracked file changes" >> $Env:GITHUB_OUTPUT
           }
-        shell: pwsh
 
       - name: Merge upstream branch
         run: |
@@ -75,18 +61,21 @@ jobs:
 
       - name: Commit with conflicts
         id: commit
-        run: |
-          $files = (git diff --name-only --diff-filter=U)
-
-          if ($files.Length -ne 0) {
-            echo "The following files have conflicts:" >> $Env:GITHUB_OUTPUT
-            foreach ($file in $files) {
-              echo "- [ ] $file" >> $Env:GITHUB_OUTPUT
-            }
-          } else {
-            git commit --all --no-edit
-          }
         shell: pwsh
+        run: |
+          {
+            $files = (git diff --name-only --diff-filter=U)
+            if ($files.Length -ne 0) {
+              echo "conflicts<<EOF" >> $Env:GITHUB_OUTPUT
+              echo "The following files have conflicts:" >> $Env:GITHUB_OUTPUT
+              foreach ($file in $files) {
+                echo "- [ ] $file" >> $Env:GITHUB_OUTPUT
+              }
+              echo "EOF" >> $Env:GITHUB_OUTPUT
+            } else {
+              git commit --all --no-edit
+            }
+          } 2>&1 | Tee-Object -Append -FilePath commit_log.txt
 
       - name: Generate App Token
         id: app-token-generation
