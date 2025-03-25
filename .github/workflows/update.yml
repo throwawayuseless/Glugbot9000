@@ -113,7 +113,12 @@ jobs:
               $head_marker = 0
               $branch_marker = 0
 
+              if (Test-Path $file) {
               $content = Get-Content $file
+              } else {
+              $content = @()  # or just set it to an empty array
+              }
+
 
               foreach ($_ in $content) {
                 if ($head_marker -eq 0 -and $_ -match "<<<<<<<") {
