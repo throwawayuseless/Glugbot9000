@@ -5,18 +5,6 @@
 	icon_state = "beret"
 	dog_fashion = /datum/dog_fashion/head/beret
 
-/obj/item/clothing/head/beret/vintage
-	name = "vintage beret"
-	desc = "A well-worn beret."
-	icon_state = "vintageberet"
-	dog_fashion = null
-
-/obj/item/clothing/head/beret/archaic
-	name = "archaic beret"
-	desc = "An absolutely ancient beret."
-	icon_state = "archaicberet"
-	dog_fashion = null
-
 /obj/item/clothing/head/beret/black
 	name = "black beret"
 	desc = "A black beret."
@@ -190,12 +178,13 @@
 /obj/item/clothing/head/beret/terragov/terragov
 	name = "\improper TerraGov beret"
 	desc = "A beret with TerraGov's emblem emblazoned on it. It's still colored in original TerraGov green."
-	icon_state = "beret_terragov"
+	icon_state = "beret_solgov"
+	icon = ""
 
 /obj/item/clothing/head/beret/terragov/terragov/plain
 	name = "\improper TerraGov beret"
 	desc = "A plain beret colored in original TerraGov green. It looks like it's missing something."
-	icon_state = "beret_terragovplain"
+	icon_state = "beret_solgovplain"
 
 // Inteq
 

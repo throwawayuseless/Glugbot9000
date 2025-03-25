@@ -28,9 +28,9 @@
 
 /obj/item/clothing/gloves/combat
 	name = "combat gloves"
-	desc = "These tactical gloves are fireproof and electrically insulated."
+	desc = "These tactical gloves are extra-durable, offering some fire and acid protection."
 	icon_state = "combat"
-	siemens_coefficient = 0
+	siemens_coefficient = 0.5
 	permeability_coefficient = 0.05
 	strip_delay = 80
 	cold_protection = HANDS
@@ -40,16 +40,6 @@
 	resistance_flags = NONE
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 50)
 	//supports_variations = KEPORI_VARIATION
-
-/obj/item/clothing/gloves/combat/maid
-	name = "combat maid sleeves"
-	desc = "These 'tactical' gloves and sleeves are fireproof and electrically insulated. Warm to boot."
-	icon_state = "syndimaid_arms"
-
-/obj/item/clothing/gloves/combat/maid/inteq
-	name = "inteq combat maid sleeves"
-	desc = "Tacticute and comfy, along with being both fireproof and electrically insulated."
-	icon_state = "inteqmaid_arms"
 
 /obj/item/clothing/gloves/bracer
 	name = "bone bracers"
@@ -143,5 +133,5 @@
 
 /obj/item/clothing/gloves/combat/wizard
 	name = "enchanted gloves"
-	desc = "These gloves have been enchanted with a spell that makes them electrically insulated and fireproof."
+	desc = "These gloves have been enchanted with a spell that makes them fireproof and acid-resistant."
 	icon_state = "wizard"

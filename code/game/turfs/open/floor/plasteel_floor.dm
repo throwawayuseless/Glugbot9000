@@ -59,6 +59,9 @@
 	base_icon_state = "techfloor"
 	floor_tile = /obj/item/stack/tile/plasteel/tech
 
+/turf/open/floor/plasteel/tech/tcomms
+	initial_gas_mix = TCOMMS_ATMOS
+
 /turf/open/floor/plasteel/tech/airless
 	initial_gas_mix = AIRLESS_ATMOS
 
@@ -77,9 +80,17 @@
 /turf/open/floor/plasteel/patterned
 	icon_state = "tile_full"
 	base_icon_state = "tile_full"
+/turf/open/floor/plasteel/patterned/external
+	initial_gas_mix = AIRLESS_ATMOS
+/turf/open/floor/plasteel/patterned/external/handle_decompression_floor_rip(sum)
+	return
 /turf/open/floor/plasteel/patterned/cargo_one
 	icon_state = "cargo_one_full"
 	base_icon_state = "cargo_one_full"
+/turf/open/floor/plasteel/patterned/cargo_one/external
+	initial_gas_mix = AIRLESS_ATMOS
+/turf/open/floor/plasteel/patterned/cargo_one/external/handle_decompression_floor_rip(sum)
+	return
 /turf/open/floor/plasteel/patterned/brushed
 	icon_state = "kafel_full"
 	base_icon_state = "kafel_full"
@@ -151,6 +162,13 @@
 	base_icon_state = "plaque"
 	tiled_dirt = FALSE
 
+/turf/open/floor/plasteel/lightgrey
+	name = "light grey floor"
+	icon_state = "corner_white_full"
+	base_icon_state = "corner_white_full"
+	icon = 'icons/turf/decals/decals.dmi'
+	color = "#a8b2b6"
+
 /turf/open/floor/plasteel/cult/narsie_act()
 	return
 
@@ -180,20 +198,14 @@
 	icon_state = "stairs-old"
 	base_icon_state = "stairs-old"
 
-/turf/open/floor/plasteel/stairs/modern
-	icon_state = "stairs_modern_light"
-	base_icon_state = "stairs_modern_light"
-
-/turf/open/floor/plasteel/stairs/modern/dark
-	icon_state = "stairs_modern_dark"
-	base_icon_state = "stairs_modern_dark"
-
 /turf/open/floor/plasteel/stairs/wood
-	color = "#5B3E1D"
+	color = WOOD_COLOR_GENERIC
 	icon_state = "stairs-wood"
 	base_icon_state = "stairs-wood"
+	footstep = FOOTSTEP_WOOD
 	barefootstep = FOOTSTEP_WOOD_BAREFOOT
-	footstep = FOOTSTEP_WOOD_CLAW
+	clawfootstep = FOOTSTEP_WOOD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/floor/plasteel/stairs/wood/left
 	icon_state = "stairs-wood-l"
@@ -340,6 +352,3 @@
 	icon_state = "tiled_light"
 	base_icon_state = "tiled_light"
 	color = "#938170"
-
-/turf/open/floor/plasteel/icecropolis
-	baseturfs = /turf/open/indestructible/necropolis/air

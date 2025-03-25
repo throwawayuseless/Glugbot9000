@@ -123,7 +123,7 @@ Nothing else in the console has ID requirements.
 	return ..()
 
 /obj/machinery/computer/rdconsole/attackby(obj/item/D, mob/user, params)
-	if(istype(D, /obj/item/slime_extract))
+	if(istype(D, /obj/item/slime_extract)) //PENTEST REVERT START
 		var/obj/item/slime_extract/E = D
 		if(!slime_already_researched[E.type])
 			if(!E.research)
@@ -144,7 +144,7 @@ Nothing else in the console has ID requirements.
 		else
 			visible_message("<span class='notice'>[src] buzzes and displays a message: Slime extract already researched!</span>")
 			playsound(src, 'sound/machines/buzz-sigh.ogg', 50, 3, -1)
-			return
+			return //PENTEST REVERT END
 
 	if(istype(D, /obj/item/seeds))
 		var/obj/item/seeds/E = D

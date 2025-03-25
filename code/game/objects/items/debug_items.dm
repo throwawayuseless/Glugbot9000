@@ -90,7 +90,7 @@
 		"Drill" = image(icon = 'icons/obj/surgery.dmi', icon_state = "drill"),
 		"Scalpel" = image(icon = 'icons/obj/surgery.dmi', icon_state = "scalpel"),
 		"Saw" = image(icon = 'icons/obj/surgery.dmi', icon_state = "saw"),
-		"Knife" = image(icon = 'icons/obj/item/knife.dmi', icon_state = "cleaver"),
+		"Knife" = image(icon = 'icons/obj/weapon/knives/knife.dmi', icon_state = "cleaver"),
 		)
 	var/tool_result = show_radial_menu(user, src, tool_list, custom_check = CALLBACK(src, PROC_REF(check_menu), user), require_near = TRUE, tooltips = TRUE)
 	if(!check_menu(user))

@@ -30,13 +30,10 @@
 
 /datum/supply_pack/emergency/plasmaman_suit
 	name = "Plasmaman Suit Kit"
-	desc = "Keep the Plasmaman in your life comfy with two sets of Plasmaman envirosuits. Each set contains a plasmaman jumpsuit and helmet; refills sold separately."
-	cost = 1000
+	desc = "Keep the Plasmaman in your life comfy with a envirosuit. Refills sold seperately."
+	cost = 500 //halves the price, halves the equipment. It's unlikely you need to equip more than 1 phorid at a time anyway
 	contains = list(/obj/item/clothing/under/plasmaman,
-					/obj/item/clothing/under/plasmaman,
 					/obj/item/clothing/head/helmet/space/plasmaman,
-					/obj/item/clothing/head/helmet/space/plasmaman,
-					/obj/item/clothing/gloves/color/plasmaman,
 					/obj/item/clothing/gloves/color/plasmaman)
 	crate_name = "plasmaman supply kit"
 
@@ -54,15 +51,11 @@
 
 /datum/supply_pack/emergency/firefighting
 	name = "Firefighting Crate"
-	desc = "Only you can prevent plasma fires. Partner up with two firefighter suits, gas masks, extinguishers, and hardhats!"
-	cost = 2000
+	desc = "Only you can prevent plasma fires. Contains a single set of firefighter's equipment."
+	cost = 500
 	contains = list(/obj/item/clothing/suit/fire/firefighter,
-					/obj/item/clothing/suit/fire/firefighter,
-					/obj/item/clothing/mask/gas,
 					/obj/item/clothing/mask/gas,
 					/obj/item/extinguisher,
-					/obj/item/extinguisher,
-					/obj/item/clothing/head/hardhat/red,
 					/obj/item/clothing/head/hardhat/red)
 	crate_name = "firefighting crate"
 	crate_type = /obj/structure/closet/crate/secure

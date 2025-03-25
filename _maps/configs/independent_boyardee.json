@@ -3,7 +3,9 @@
 	"map_name": "Boyardee-class Entertainment Vessel",
 	"map_short_name": "Boyardee-class",
 	"map_path": "_maps/shuttles/independent/independent_boyardee.dmm",
+	"faction": "/datum/faction/independent",
 	"prefix": "ISV",
+	"manufacturer": "Conagra Manufacturing",
 	"description": "Named after an ancient Terran cultural figure celebrated for revolutionizing the preparation and distribution of food, the Boyardee-class remains a beloved civilian vessel renowned for its hospitality and charm. Designed to provide a reprieve from the monotony of synthesized meals and ration packs, these ships are equipped with a fully stocked bar, advanced hydroponics systems, a spacious kitchen, and an expansive dining area, making them a favorite among weary travelers and colonists alike. Over time, various factions have modified the Boyardee-class for purposes ranging from trade hubs to morale-boosting outposts, though these variants are now rare in the Frontier.",
 	"tags": [
 		"Service",
@@ -41,8 +43,9 @@
 	"starting_funds": 5000,
 	"enabled": true,
 	"space_spawn": false,
+
 	"architect": "Unknown",
 	"contributors": [
-		"Unknown"
+		"Ossa - Pulled the Blueprints"
 	]
 }

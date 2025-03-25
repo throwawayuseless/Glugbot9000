@@ -43,7 +43,6 @@
 	// for the sake of cleanliness, though, here they are.
 	status_flags = CANUNCONSCIOUS|CANPUSH
 
-	var/cores = 1 // the number of /obj/item/slime_extract's the slime has left inside
 	var/mutation_chance = 30 // Chance of mutating, should be between 25 and 35
 
 	var/powerlevel = 0 // 1-10 controls how much electricity they are generating
@@ -71,7 +70,6 @@
 	///////////TIME FOR SUBSPECIES
 
 	var/colour = "grey"
-	var/coretype = /obj/item/slime_extract/grey
 	var/list/slime_mutation[4]
 
 	var/static/list/slime_colours = list("rainbow", "grey", "purple", "metal", "orange",
@@ -79,14 +77,7 @@
 	"gold", "green", "adamantine", "oil", "light pink", "bluespace",
 	"cerulean", "sepia", "black", "pyrite")
 
-	///////////CORE-CROSSING CODE
-
-	var/effectmod //What core modification is being used.
-	var/crossbreed_modifier = 1 // modifies how many extracts are needed
-	var/applied = 0 //How many extracts of the modtype have been applied.
-
-
-/mob/living/simple_animal/slime/Initialize(mapload, new_colour="grey", new_is_adult=FALSE)
+/mob/living/simple_animal/slime/Initialize(mapload, new_colour=null, new_is_adult=FALSE)
 	var/datum/action/innate/slime/feed/F = new
 	F.Grant(src)
 
@@ -101,7 +92,8 @@
 		var/datum/action/innate/slime/evolve/E = new
 		E.Grant(src)
 	create_reagents(100)
-	set_colour(new_colour)
+	if(new_colour)
+		set_colour(new_colour)
 	. = ..()
 	set_nutrition(700)
 	AddComponent(/datum/component/footstep, FOOTSTEP_MOB_SLIME, 0)
@@ -119,8 +111,8 @@
 	colour = new_colour
 	update_name()
 	slime_mutation = mutation_table(colour)
-	var/sanitizedcolour = replacetext(colour, " ", "")
-	coretype = text2path("/obj/item/slime_extract/[sanitizedcolour]")
+	var/sanitizedcolour = replacetext(colour, " ", "") //PENTEST REVERT START
+	coretype = text2path("/obj/item/slime_extract/[sanitizedcolour]") //PENTEST REVERT END
 	regenerate_icons()
 
 /mob/living/simple_animal/slime/update_name()
@@ -248,7 +240,7 @@
 			Feedon(Food)
 	return ..()
 
-/mob/living/simple_animal/slime/doUnEquip(obj/item/I, force, newloc, no_move, invdrop = TRUE, silent = FALSE)
+/mob/living/simple_animal/slime/doUnEquip(obj/item/I, force, newloc, no_move, invdrop = TRUE, silent = FALSE, use_unequip_delay = FALSE)
 	return
 
 /mob/living/simple_animal/slime/start_pulling(atom/movable/AM, state, force = move_force, supress_message = FALSE)
@@ -354,7 +346,7 @@
 			force_effect = round(W.force/2)
 		if(prob(10 + force_effect))
 			discipline_slime(user)
-	if(istype(W, /obj/item/storage/bag/bio))
+	if(istype(W, /obj/item/storage/bag/bio)) //PENTEST REVERT START
 		var/obj/item/storage/P = W
 		if(!effectmod)
 			to_chat(user, "<span class='warning'>The slime is not currently being mutated.</span>")
@@ -378,25 +370,9 @@
 				to_chat(user, "<span class='warning'>There are no extracts in the bag that this slime will accept!</span>")
 			else
 				to_chat(user, "<span class='notice'>You feed the slime some extracts from the bag.</span>")
-				playsound(src, 'sound/effects/attackblob.ogg', 50, TRUE)
+				playsound(src, 'sound/effects/attackblob.ogg', 50, TRUE) //PENTEST REVERT END
 		return
 	..()
-
-/mob/living/simple_animal/slime/proc/spawn_corecross()
-	var/static/list/crossbreeds = subtypesof(/obj/item/slimecross)
-	visible_message("<span class='danger'>[src] shudders, its mutated core consuming the rest of its body!</span>")
-	playsound(src, 'sound/magic/smoke.ogg', 50, TRUE)
-	var/crosspath
-	for(var/X in crossbreeds)
-		var/obj/item/slimecross/S = X
-		if(initial(S.colour) == colour && initial(S.effect) == effectmod)
-			crosspath = S
-			break
-	if(crosspath)
-		new crosspath(loc)
-	else
-		visible_message("<span class='warning'>The mutated core shudders, and collapses into a puddle, unable to maintain its form.</span>")
-	qdel(src)
 
 /mob/living/simple_animal/slime/proc/apply_water()
 	adjustBruteLoss(rand(15,20))
@@ -469,10 +445,14 @@
 	docile = 1
 
 /mob/living/simple_animal/slime/can_unbuckle()
-	return 0
+	if(!can_buckle)
+		return 0
+	. = ..()
 
 /mob/living/simple_animal/slime/can_buckle()
-	return 0
+	if(!can_buckle)
+		return 0
+	. = ..()
 
 /mob/living/simple_animal/slime/get_mob_buckling_height(mob/seat)
 	if(..())

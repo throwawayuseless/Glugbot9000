@@ -67,6 +67,8 @@
 	token.color = "#a08444"
 	token.light_color = "#a08444"
 	token.update_appearance()
+	if(safe_speed)
+		token.desc += " You can safely navigate through this if your ship is travelling under [safe_speed] Gm/s."
 
 /datum/overmap/event/meteor/apply_effect()
 	for(var/datum/overmap/ship/controlled/Ship in get_nearby_overmap_objects())
@@ -323,7 +325,7 @@
 /datum/overmap/event/anomaly/affect_ship(datum/overmap/ship/controlled/S)
 	var/area/source_area = pick(S.shuttle_port.shuttle_areas)
 	var/source_object = pick(source_area.contents)
-	new /obj/effect/spawner/lootdrop/anomaly/storm(get_turf(source_object))
+	new /obj/effect/spawner/random/anomaly/storm(get_turf(source_object))
 	for(var/mob/M as anything in GLOB.player_list)
 		if(S.shuttle_port.is_in_shuttle_bounds(M))
 			M.playsound_local(S.shuttle_port, 'sound/effects/bamf.ogg', 100)

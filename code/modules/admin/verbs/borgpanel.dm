@@ -57,6 +57,11 @@
 		/obj/item/borg/upgrade/rename,
 		/obj/item/borg/upgrade/restart,
 		/obj/item/borg/upgrade/modkit,
+		/obj/item/borg/upgrade/transform/commando,
+		/obj/item/borg/upgrade/transform/assault,
+		/obj/item/borg/upgrade/transform/ninja,
+		/obj/item/borg/upgrade/transform/clown,
+		/obj/item/borg/upgrade/ship_access_chip,
 	)
 	for (var/upgradetype in subtypesof(/obj/item/borg/upgrade)-excluded_upgrades)
 		var/obj/item/borg/upgrade/upgrade = new upgradetype()

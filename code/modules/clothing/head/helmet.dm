@@ -6,7 +6,7 @@
 	icon_state = "helmet"
 	item_state = "helmet"
 	var/flashlight_state = "helmet_flight_overlay"
-	armor = list("melee" = 35, "bullet" = 30, "laser" = 30,"energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 35,"energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 	cold_protection = HEAD
 	min_cold_protection_temperature = HELMET_MIN_TEMP_PROTECT
 	heat_protection = HEAD
@@ -15,6 +15,13 @@
 	clothing_flags = SNUG_FIT
 	flags_cover = HEADCOVERSEYES
 	//flags_inv = HIDEHAIR // nah
+
+	equip_sound = 'sound/items/equip/armor_equip.ogg'
+	equipping_sound = EQUIP_SOUND_SHORT_GENERIC
+	unequipping_sound = UNEQUIP_SOUND_SHORT_GENERIC
+	equip_delay_self = EQUIP_DELAY_HELMET
+	equip_delay_other = EQUIP_DELAY_HELMET * 1.5
+	strip_delay = EQUIP_DELAY_HELMET * 1.5
 
 	dog_fashion = /datum/dog_fashion/head/helmet
 
@@ -45,7 +52,7 @@
 	if(attached_light)
 		. += "It has \a [attached_light] [can_flashlight ? "" : "permanently "]mounted on it."
 		if(can_flashlight)
-			. += "<span class='info'>[attached_light] looks like it can be <b>unscrewed</b> from [src].</span>"
+			. += "<span class='info'>[attached_light] looks like it can be unclipped from [src]. You can <b>Alt-Click</b> to detatch it.</span>"
 	else if(can_flashlight)
 		. += "It has a mounting point for a <b>seclite</b>."
 
@@ -120,11 +127,10 @@
 		return
 	return ..()
 
-/obj/item/clothing/head/helmet/screwdriver_act(mob/living/user, obj/item/tool)
+/obj/item/clothing/head/helmet/AltClick(mob/living/user)
 	. = ..()
 	if(can_flashlight && attached_light) //if it has a light but can_flashlight is false, the light is permanently attached.
-		tool.play_tool_sound(src)
-		to_chat(user, "<span class='notice'>You unscrew [attached_light] from [src].</span>")
+		to_chat(user, "<span class='notice'>You unclip [attached_light] from [src].</span>")
 		attached_light.forceMove(drop_location())
 		if(Adjacent(user) && !issilicon(user))
 			user.put_in_hands(attached_light)
@@ -219,6 +225,7 @@
 	can_flashlight = TRUE
 	dog_fashion = null
 	allow_post_reskins = TRUE
+	supports_variations = KEPORI_VARIATION
 	unique_reskin = list(
 		"None" = "helmetalt",
 		"Desert" = "helmetalt_desert",
@@ -227,37 +234,6 @@
 		"Urban" = "helmetalt_urban",
 		)
 	content_overlays = TRUE
-
-/obj/item/clothing/head/helmet/marine
-	name = "tactical combat helmet"
-	desc = "A tactical black helmet, sealed from outside hazards with a reinforced visor."
-	icon_state = "marine_command"
-	item_state = "helmetalt"
-	armor = list("melee" = 50, "bullet" = 75, "laser" = 55, "energy" = 25, "bomb" = 60, "bio" = 100, "fire" = 70, "acid" = 50)
-	slowdown = 0
-	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
-	clothing_flags = STOPSPRESSUREDAMAGE
-	resistance_flags = FIRE_PROOF | ACID_PROOF
-	can_flashlight = TRUE
-	dog_fashion = null
-
-/obj/item/clothing/head/helmet/marine/Initialize(mapload)
-	set_attached_light(new /obj/item/flashlight/seclite)
-	update_helmlight()
-	update_appearance()
-	. = ..()
-
-/obj/item/clothing/head/helmet/marine/security
-	name = "marine heavy helmet"
-	icon_state = "marine_security"
-
-/obj/item/clothing/head/helmet/marine/engineer
-	name = "marine utility helmet"
-	icon_state = "marine_engineer"
-
-/obj/item/clothing/head/helmet/marine/medic
-	name = "marine medic helmet"
-	icon_state = "marine_medic"
 
 /obj/item/clothing/head/helmet/old
 	name = "degrading helmet"
@@ -327,7 +303,7 @@
 	desc = "An extremely robust, space-worthy helmet in a nefarious red and black stripe pattern."
 	icon_state = "swatsyndie"
 	item_state = "swatsyndie"
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 30,"energy" = 40, "bomb" = 50, "bio" = 90, "rad" = 20, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 40, "bullet" = 35, "laser" = 35,"energy" = 40, "bomb" = 50, "bio" = 90, "rad" = 20, "fire" = 100, "acid" = 100)
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
 	heat_protection = HEAD
@@ -336,6 +312,7 @@
 	strip_delay = 80
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	dog_fashion = null
+	can_flashlight = TRUE
 
 /obj/item/clothing/head/helmet/police
 	name = "police officer's hat"
@@ -500,8 +477,9 @@
 	desc = "A robust and spaceworthy helmet with an opaque gold visor. There is an insignia on the earpad with the letters 'IRMG' on it."
 	icon_state = "inteq_swat"
 	item_state = "inteq_swat"
+	can_flashlight = TRUE
 	flags_inv = HIDEHAIR
-	supports_variations = KEPORI_VARIATION
+	supports_variations = KEPORI_VARIATION | VOX_VARIATION
 	content_overlays = TRUE
 
 /obj/item/clothing/head/helmet/inteq
@@ -510,13 +488,13 @@
 	icon_state = "inteq_helmet"
 	icon_state = "inteq_helmet"
 	can_flashlight = TRUE
-	supports_variations = KEPORI_VARIATION
+	supports_variations = KEPORI_VARIATION | VOX_VARIATION
 	content_overlays = TRUE
 
 /obj/item/clothing/head/terragov
 	name = "\improper TerraGov officer's cap"
 	desc = "A blue cap worn by high-ranking officers of TerraGov."
-	icon_state = "cap_terragov"
+	icon_state = "cap_solgov"
 	item_state = "cap_solgov"
 	strip_delay = 80
 
@@ -526,9 +504,9 @@
 	icon_state = "cap_terragov"
 	item_state = "cap_terragov"
 
-/obj/item/clothing/head/terragov/sonnensoldner
-	name = "\improper Sonnensoldner Hat"
-	desc = "A standard-issue terragov hat adorned with a feather, commonly used by Sonnensoldners."
+/obj/item/clothing/head/terragov/shocktrooper
+	name = "\improper Shock Trooper Hat"
+	desc = "A standard-issue TerraGov hat adorned with a feather, commonly used by Shock Troopers."
 	icon_state = "sonnensoldner_hat"
 	item_state = "sonnensoldner_hat"
 	worn_y_offset = 4
@@ -548,18 +526,21 @@
 	icon_state = "solgov_envirohelm"
 	item_state = "solgov_envirohelm"
 
-/obj/item/clothing/head/helmet/operator
+/obj/item/clothing/head/helmet/syndie
 	name = "\improper operator helmet"
 	desc = "A robust combat helmet commonly employed by Syndicate forces, regardless of alignment."
 	icon_state = "operator"
 	item_state = "operator"
 	content_overlays = TRUE
+	can_flashlight = TRUE
 
 /obj/item/clothing/head/helmet/medical
 	name = "\improper trauma team helmet"
 	desc = "A robust combat helmet commonly employed by cybersun medical trauma teams, with its distinctive turquoise."
 	icon_state = "traumahelm"
 	item_state = "traumahelm"
+	can_flashlight = TRUE
+	supports_variations = VOX_VARIATION
 
 /obj/item/clothing/head/helmet/bulletproof/m10
 	name = "\improper M10 pattern Helmet"
@@ -567,6 +548,7 @@
 	icon_state = "m10helm"
 	can_flashlight = TRUE
 	dog_fashion = null
+	supports_variations = null
 	unique_reskin = list(
 		"None" = "m10helm",
 		"Desert" = "m10helm_desert",
@@ -582,6 +564,7 @@
 	can_flashlight = TRUE
 	dog_fashion = null
 	allow_post_reskins = TRUE
+	supports_variations = null
 	unique_reskin = list(
 		"None" = "x11helm",
 		"Desert" = "x11helm_desert",

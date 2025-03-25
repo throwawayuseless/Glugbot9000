@@ -33,6 +33,7 @@
 		first_disposal = GLOB.disposal_pipe_recipes[GLOB.disposal_pipe_recipes[1]][1]
 	if(!first_transit)
 		first_transit = GLOB.transit_tube_recipes[GLOB.transit_tube_recipes[1]][1]
+
 	recipe = first_atmos
 
 /obj/machinery/pipedispenser/ui_assets(mob/user)

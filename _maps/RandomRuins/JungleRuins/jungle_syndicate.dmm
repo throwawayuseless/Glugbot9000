@@ -123,7 +123,7 @@
 /turf/open/floor/plating/rust,
 /area/ruin/jungle/syndifort)
 "ef" = (
-/mob/living/simple_animal/hostile/human/syndicate{
+/mob/living/simple_animal/hostile/human/ramzi{
 	desc = "God dammit Jerry! Why the fuck are you barricading yourself in with all of our weapon supplies?";
 	name = "Jerry";
 	unsuitable_atmos_damage = 0
@@ -180,7 +180,7 @@
 /turf/open/floor/plating/grass/jungle/lit,
 /area/overmap_encounter/planetoid/jungle/explored)
 "fS" = (
-/mob/living/simple_animal/hostile/human/syndicate{
+/mob/living/simple_animal/hostile/human/ramzi{
 	unsuitable_atmos_damage = 0
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -199,8 +199,6 @@
 /area/overmap_encounter/planetoid/jungle/explored)
 "gf" = (
 /obj/structure/closet/crate/secure/gear,
-/obj/item/storage/box/syndimaid,
-/obj/item/storage/box/syndimaid,
 /obj/item/blackmarket_uplink,
 /obj/machinery/light/directional/west,
 /turf/open/floor/plating,
@@ -310,7 +308,7 @@
 /turf/open/floor/plating/rust,
 /area/ruin/jungle/syndifort/jerry)
 "ik" = (
-/obj/item/kitchen/knife/combat{
+/obj/item/melee/knife/combat{
 	name = "bushcutter";
 	force = 18
 	},
@@ -533,10 +531,10 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/jungle/syndifort)
 "rg" = (
-/mob/living/simple_animal/hostile/human/syndicate/space,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space/shotgun,
 /turf/open/floor/plating{
 	icon_state = "panelscorched";
 	initial_gas_mix = "ws_atmos"
@@ -629,7 +627,7 @@
 /area/ruin/jungle/syndifort/jerry)
 "ud" = (
 /obj/structure/table,
-/obj/item/kitchen/knife/combat{
+/obj/item/melee/knife/combat{
 	name = "bushcutter";
 	force = 18
 	},
@@ -664,7 +662,7 @@
 /obj/item/storage/box/donkpockets/donkpocketteriyaki,
 /obj/item/storage/box/donkpockets,
 /obj/item/storage/box/donkpockets/donkpocketberry,
-/obj/effect/spawner/lootdrop/donkpockets,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
 /turf/open/floor/plating,
 /area/ruin/jungle/syndifort)
 "ve" = (
@@ -1102,9 +1100,7 @@
 /area/overmap_encounter/planetoid/jungle/explored)
 "HR" = (
 /obj/structure/chair/plastic,
-/mob/living/simple_animal/hostile/human/syndicate/ranged{
-	unsuitable_atmos_damage = 0
-	},
+/mob/living/simple_animal/hostile/human/ramzi/ranged,
 /turf/open/floor/plating/dirt/jungle/lit,
 /area/overmap_encounter/planetoid/jungle/explored)
 "Il" = (
@@ -1365,7 +1361,7 @@
 /area/ruin/jungle/syndifort)
 "Qs" = (
 /obj/structure/cable,
-/mob/living/simple_animal/hostile/human/syndicate{
+/mob/living/simple_animal/hostile/human/ramzi{
 	unsuitable_atmos_damage = 0
 	},
 /obj/machinery/light/directional/north,
@@ -1598,7 +1594,6 @@
 /obj/item/gun/ballistic/automatic/smg/cobra,
 /obj/item/ammo_box/magazine/m45_cobra,
 /obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/storage/box/syndimaid,
 /turf/open/floor/plating,
 /area/ruin/jungle/syndifort/jerry)
 "WT" = (

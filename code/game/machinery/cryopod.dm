@@ -151,7 +151,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod/retro, 17)
 		/obj/item/reagent_containers/hypospray/CMO,
 		/obj/item/clothing/accessory/medal/gold/captain,
 		/obj/item/clothing/gloves/krav_maga,
-		/obj/item/nullrod,
 		/obj/item/tank/jetpack,
 		/obj/item/documents,
 		/obj/item/nuke_core_container
@@ -219,7 +218,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod/retro, 17)
 		playsound(src, close_sound, 40)
 
 /obj/machinery/cryopod/proc/apply_effects_to_mob(mob/living/carbon/sleepyhead)
-	sleepyhead.SetSleeping(50)
+	sleepyhead.set_sleeping(50)
 	to_chat(sleepyhead, "<span class='boldnotice'>You begin to wake from cryosleep...</span>")
 
 /obj/machinery/cryopod/open_machine()
@@ -303,15 +302,28 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod/retro, 17)
 /obj/machinery/cryopod/proc/despawn_occupant()
 	var/mob/living/mob_occupant = occupant
 
-	if(linked_ship)
-		if(mob_occupant.job in linked_ship.current_ship.job_slots)
-			linked_ship.current_ship.job_slots[mob_occupant.job]++
+	if(!isnull(mob_occupant.mind.original_ship))
+		var/datum/overmap/ship/controlled/original_ship_instance = mob_occupant.mind.original_ship.resolve()
 
-		if(mob_occupant.mind && mob_occupant.mind.assigned_role)
-			//Handle job slot/tater cleanup.
-			if(LAZYLEN(mob_occupant.mind.objectives))
-				mob_occupant.mind.objectives.Cut()
-				mob_occupant.mind.special_role = null
+		var/job_identifier = mob_occupant.job
+
+		var/datum/job/crew_job
+		for(var/datum/job/job as anything in original_ship_instance.job_slots)
+			if(job.name == job_identifier)
+				crew_job = job
+				break
+
+		if(isnull(crew_job))
+			message_admins(span_warning("Failed to identify the job of [key_name_admin(mob_occupant)] belonging to [original_ship_instance.name] at [loc_name(src)]."))
+		else
+			original_ship_instance.job_slots[crew_job]++
+			original_ship_instance.job_holder_refs[crew_job] -= WEAKREF(mob_occupant)
+
+	if(mob_occupant.mind && mob_occupant.mind.assigned_role)
+		//Handle job slot/tater cleanup.
+		if(LAZYLEN(mob_occupant.mind.objectives))
+			mob_occupant.mind.objectives.Cut()
+			mob_occupant.mind.special_role = null
 
 	// Delete them from datacore.
 	var/announce_rank = null
@@ -431,14 +443,14 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod/retro, 17)
 /obj/machinery/cryopod/apply_effects_to_mob(mob/living/carbon/sleepyhead)
 	//it always sucks a little to get up
 	sleepyhead.set_nutrition(200)
-	sleepyhead.SetSleeping(60)
+	sleepyhead.set_sleeping(60)
 
 	var/wakeupmessage = "The cryopod shudders as the pneumatic seals separating you and the waking world let out a hiss."
 	if(prob(60))
 		wakeupmessage += " A sickly feeling along with the pangs of hunger greet you upon your awakening."
 		sleepyhead.set_nutrition(100)
 		sleepyhead.apply_effect(rand(3,10), EFFECT_DROWSY)
-	to_chat(sleepyhead, span_danger(examine_block(wakeupmessage)))
+	to_chat(sleepyhead, span_danger(boxed_message(wakeupmessage)))
 
 /obj/machinery/cryopod/syndicate
 	icon_state = "sleeper_s-open"
@@ -451,7 +463,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/cryopod/retro, 17)
 
 /obj/machinery/cryopod/poor/apply_effects_to_mob(mob/living/carbon/sleepyhead)
 	sleepyhead.set_nutrition(200)
-	sleepyhead.SetSleeping(80)
+	sleepyhead.set_sleeping(80)
 	if(prob(90)) //suffer
 		sleepyhead.apply_effect(rand(5,15), EFFECT_DROWSY)
 	if(prob(75))

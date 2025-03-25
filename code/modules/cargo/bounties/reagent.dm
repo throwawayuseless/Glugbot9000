@@ -71,7 +71,7 @@
 		/datum/reagent/consumable/ethanol/syndicatebomb,\
 		/datum/reagent/consumable/ethanol/tequila_sunrise,\
 		/datum/reagent/consumable/ethanol/manly_dorf,\
-		/datum/reagent/consumable/ethanol/thirteenloko,\
+		/datum/reagent/consumable/ethanol/vimukti,\
 		/datum/reagent/consumable/triple_citrus,\
 		/datum/reagent/consumable/ethanol/vodkamartini,\
 		/datum/reagent/consumable/ethanol/whiskeysoda,\
@@ -100,10 +100,7 @@
 		/datum/reagent/consumable/ethanol/booger,\
 		/datum/reagent/consumable/ethanol/hippies_delight,\
 		/datum/reagent/consumable/ethanol/drunkenblumpkin,\
-		/datum/reagent/consumable/ethanol/fetching_fizz,\
 		/datum/reagent/consumable/ethanol/goldschlager,\
-		/datum/reagent/consumable/ethanol/manhattan_proj,\
-		/datum/reagent/consumable/ethanol/narsour,\
 		/datum/reagent/consumable/ethanol/neurotoxin,\
 		/datum/reagent/consumable/ethanol/patron,\
 		/datum/reagent/consumable/ethanol/quadruple_sec,\
@@ -146,7 +143,6 @@
 		/datum/reagent/medicine/pen_acid,\
 		/datum/reagent/medicine/atropine,\
 		/datum/reagent/drug/aranesp,\
-		/datum/reagent/drug/krokodil,\
 		/datum/reagent/drug/methamphetamine,\
 		/datum/reagent/teslium,\
 		/datum/reagent/toxin/anacea,\
@@ -169,7 +165,7 @@
 		/datum/reagent/medicine/pyroxadone,\
 		/datum/reagent/medicine/rezadone,\
 		/datum/reagent/medicine/regen_jelly,\
-		/datum/reagent/drug/bath_salts,\
+		/datum/reagent/drug/mammoth,\
 		/datum/reagent/hair_dye,\
 		/datum/reagent/consumable/honey,\
 		/datum/reagent/consumable/frostoil,\

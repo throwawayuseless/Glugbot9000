@@ -589,7 +589,6 @@
 /obj/machinery/door/airlock/engineering{
 	dir = 4;
 	name = "Engineering";
-	normalspeed = 0;
 	req_access_txt = "10"
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
@@ -615,7 +614,6 @@
 /obj/machinery/door/airlock/engineering{
 	dir = 4;
 	name = "Engineering";
-	normalspeed = 0;
 	req_access_txt = "10"
 	},
 /obj/machinery/door/firedoor/border_only{
@@ -700,7 +698,7 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew/janitor)
 "gd" = (
-/obj/machinery/vending/snack/random,
+/obj/effect/spawner/random/vending/snack,
 /obj/effect/turf_decal/corner/opaque/neutral/half{
 	dir = 4
 	},
@@ -1638,7 +1636,6 @@
 /obj/machinery/door/airlock/engineering{
 	dir = 4;
 	name = "Engine Room";
-	normalspeed = 0;
 	req_access_txt = "10"
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
@@ -1961,7 +1958,6 @@
 /obj/machinery/door/airlock/engineering{
 	dir = 4;
 	name = "Engineering";
-	normalspeed = 0;
 	req_access_txt = "10"
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
@@ -2223,7 +2219,6 @@
 /obj/machinery/door/airlock/engineering{
 	dir = 4;
 	name = "Engineering";
-	normalspeed = 0;
 	req_access_txt = "10"
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
@@ -2960,7 +2955,7 @@
 /turf/open/floor/plating,
 /area/ship/hallway/port)
 "zr" = (
-/obj/machinery/vending/cola/random,
+/obj/effect/spawner/random/vending/cola,
 /obj/effect/turf_decal/corner/opaque/neutral/three_quarters{
 	dir = 8
 	},
@@ -3704,7 +3699,6 @@
 /obj/machinery/door/airlock/engineering{
 	dir = 4;
 	name = "Engine Room";
-	normalspeed = 0;
 	req_access_txt = "10"
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
@@ -4193,7 +4187,6 @@
 /obj/machinery/door/airlock/engineering{
 	dir = 4;
 	name = "Electrical";
-	normalspeed = 0;
 	req_access_txt = "10"
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
@@ -5154,9 +5147,9 @@
 	pixel_x = -5;
 	pixel_y = 3
 	},
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /obj/item/storage/cans/sixbeer,
 /obj/item/reagent_containers/food/drinks/waterbottle/large{
 	pixel_x = 1;
@@ -5356,7 +5349,7 @@
 /obj/effect/turf_decal/corner/opaque/neutral/three_quarters{
 	dir = 1
 	},
-/obj/machinery/computer/cargo/express/retro,
+/obj/machinery/computer/cargo/retro,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "VD" = (

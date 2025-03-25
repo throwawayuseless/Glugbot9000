@@ -256,7 +256,7 @@
 /turf/open/floor/plasteel,
 /area/ship/external)
 "bt" = (
-/obj/machinery/computer/cargo/express/retro{
+/obj/machinery/computer/cargo/retro{
 	dir = 4
 	},
 /turf/open/floor/plasteel/patterned/cargo_one,
@@ -592,7 +592,7 @@
 /turf/open/floor/wood,
 /area/ship/crew/canteen)
 "dN" = (
-/turf/open/floor/plating/beach/water,
+/turf/open/floor/holofloor/beach/coast_t,
 /area/ship/hallway/central)
 "dP" = (
 /obj/effect/turf_decal/corner/opaque/white/border{
@@ -1370,7 +1370,7 @@
 "iR" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/bag/tray,
-/obj/item/kitchen/knife,
+/obj/item/melee/knife/kitchen,
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
@@ -1509,7 +1509,7 @@
 /area/ship/crew)
 "jI" = (
 /obj/item/toy/seashell,
-/turf/open/floor/plating/beach/sand,
+/turf/open/floor/holofloor/beach/coast_t,
 /area/ship/hallway/central)
 "jM" = (
 /obj/machinery/libraryscanner,
@@ -2356,7 +2356,7 @@
 	},
 /obj/item/clothing/suit/hooded/wintercoat/engineering/atmos,
 /obj/item/clothing/gloves/color/black,
-/obj/structure/fireaxecabinet{
+/obj/structure/cabinet/fireaxe{
 	dir = 8;
 	pixel_x = 28
 	},
@@ -2537,7 +2537,7 @@
 /turf/open/floor/plasteel,
 /area/ship/hallway/fore)
 "qx" = (
-/turf/open/floor/plating/beach/sand,
+/turf/open/floor/plating/asteroid/sand/ship,
 /area/ship/hallway/central)
 "qA" = (
 /obj/structure/chair{
@@ -2891,9 +2891,6 @@
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/light/colour_cycle/dancefloor_b,
 /area/ship/storage)
-"ta" = (
-/turf/open/floor/plating/beach/coastline_t,
-/area/ship/hallway/central)
 "tb" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/crew/dorm)
@@ -3443,7 +3440,6 @@
 /area/ship/hallway/fore)
 "wV" = (
 /obj/structure/mineral_door/sandstone,
-/turf/open/floor/plating/beach/sand,
 /area/ship/hallway/central)
 "wX" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -3856,7 +3852,6 @@
 	dir = 4
 	},
 /obj/item/paper_bin/bundlenatural,
-/obj/item/stamp/head_of_personnel,
 /obj/item/pen/fountain,
 /obj/machinery/firealarm/directional/south,
 /obj/item/pen/collectible/pencil,
@@ -4011,7 +4006,7 @@
 /area/ship/hallway/fore)
 "AI" = (
 /obj/machinery/light/directional/south,
-/turf/open/floor/plating/beach/water,
+/turf/open/water/ship,
 /area/ship/hallway/central)
 "AR" = (
 /obj/structure/railing{
@@ -4768,7 +4763,7 @@
 /obj/structure/table/wood,
 /obj/item/paper_bin,
 /obj/item/pen/fountain,
-/obj/item/kitchen/knife/letter_opener,
+/obj/item/melee/knife/letter_opener,
 /obj/item/pen,
 /turf/open/floor/carpet/black,
 /area/ship/crew/library)
@@ -4893,7 +4888,7 @@
 /area/ship/hallway/aft)
 "GN" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
@@ -5349,7 +5344,7 @@
 /area/ship/crew/janitor)
 "Kd" = (
 /obj/item/toy/beach_ball,
-/turf/open/floor/plating/beach/sand,
+/turf/open/floor/holofloor/beach/coast_t,
 /area/ship/hallway/central)
 "Kh" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -5513,7 +5508,7 @@
 /area/ship/crew/chapel)
 "LD" = (
 /obj/item/reagent_containers/spray/spraytan,
-/turf/open/floor/plating/beach/sand,
+/turf/open/floor/holofloor/beach/coast_t,
 /area/ship/hallway/central)
 "LF" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible{
@@ -6175,7 +6170,7 @@
 /area/ship/hallway/port)
 "QI" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
@@ -6438,7 +6433,7 @@
 /turf/open/floor/wood,
 /area/ship/crew/hydroponics)
 "RR" = (
-/turf/open/floor/plating/beach/coastline_b,
+/turf/open/water/ship,
 /area/ship/hallway/central)
 "RS" = (
 /obj/structure/window/plasma/reinforced/spawner/west,
@@ -6740,7 +6735,7 @@
 	pixel_x = 4;
 	pixel_y = 9
 	},
-/obj/item/melee/skateboard/hoverboard{
+/obj/item/skateboard/hoverboard{
 	pixel_x = -4
 	},
 /turf/open/floor/eighties,
@@ -7516,11 +7511,11 @@
 "Zx" = (
 /obj/structure/flora/tree/palm,
 /obj/effect/overlay/coconut,
-/turf/open/floor/plating/beach/sand,
+/turf/open/floor/plating/asteroid/sand/ship,
 /area/ship/hallway/central)
 "ZA" = (
 /obj/item/clothing/shoes/sandal,
-/turf/open/floor/plating/beach/sand,
+/turf/open/floor/plating/asteroid/sand/ship,
 /area/ship/hallway/central)
 "ZH" = (
 /obj/machinery/atmospherics/components/trinary/mixer/airmix/flipped/inverse{
@@ -8904,7 +8899,7 @@ cP
 gf
 qx
 Kd
-ta
+RR
 RR
 AI
 Pw
@@ -8944,10 +8939,10 @@ BB
 cP
 Mx
 Zx
-qx
-ta
-RR
 dN
+RR
+RR
+RR
 Pw
 wU
 rI
@@ -8985,10 +8980,10 @@ Eg
 cP
 Tt
 qx
-qx
-ta
-RR
 dN
+RR
+RR
+RR
 Pw
 yn
 rI
@@ -9027,9 +9022,9 @@ cP
 Gw
 qx
 LD
-ta
 RR
-dN
+RR
+RR
 Pw
 wU
 rI
@@ -9068,7 +9063,7 @@ BI
 id
 ZA
 jI
-ta
+RR
 RR
 AI
 Pw

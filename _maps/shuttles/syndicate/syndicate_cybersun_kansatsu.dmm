@@ -258,7 +258,7 @@
 /turf/open/floor/plasteel/stairs,
 /area/ship/cargo)
 "fk" = (
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/cargo{
 	dir = 8
 	},
 /obj/machinery/button/door{
@@ -549,7 +549,7 @@
 	dir = 4
 	},
 /obj/item/storage/box/rxglasses/spyglasskit,
-/obj/item/kitchen/knife/letter_opener,
+/obj/item/melee/knife/letter_opener,
 /obj/item/pen/collectible/calligraphybrush,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/office)
@@ -850,9 +850,9 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/obj/effect/spawner/lootdrop/maintenance/five,
-/obj/effect/spawner/lootdrop/donkpockets,
-/obj/effect/spawner/lootdrop/donkpockets,
+/obj/effect/spawner/random/maintenance/five,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
 /obj/item/stack/marker_beacon/thirty,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
@@ -1848,7 +1848,7 @@
 /obj/item/implanter/stealth,
 /obj/item/modular_computer/laptop/preset/civilian,
 /obj/item/clothing/mask/chameleon,
-/obj/item/kitchen/knife/combat,
+/obj/item/melee/knife/combat,
 /obj/item/reagent_containers/pill/cyanide,
 /obj/item/reagent_containers/pill/cyanide,
 /obj/item/reagent_containers/pill/cyanide,
@@ -1952,10 +1952,10 @@
 	layer = 2.91
 	},
 /obj/effect/turf_decal/box,
-/obj/item/kitchen/knife/combat/survival,
-/obj/item/kitchen/knife/combat/survival,
-/obj/item/kitchen/knife/combat/survival,
-/obj/item/kitchen/knife/combat/survival,
+/obj/item/melee/knife/survival,
+/obj/item/melee/knife/survival,
+/obj/item/melee/knife/survival,
+/obj/item/melee/knife/survival,
 /obj/item/pickaxe,
 /obj/item/pickaxe,
 /obj/item/pickaxe,

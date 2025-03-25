@@ -21,6 +21,8 @@
 	//trigger guard on the weapon, hulks can't fire them with their big meaty fingers
 	trigger_guard = TRIGGER_GUARD_NORMAL
 
+	light_system = MOVABLE_LIGHT_DIRECTIONAL
+
 	///The manufacturer of this weapon. For flavor mostly. If none, this will not show.
 	var/manufacturer = MANUFACTURER_NONE
 
@@ -29,12 +31,13 @@
 */
 	///Effect for the muzzle flash of the gun.
 	var/obj/effect/muzzle_flash/muzzle_flash
+
+	light_range = 3
+	light_color = COLOR_VERY_SOFT_YELLOW
+	light_on = FALSE
+
 	///Icon state of the muzzle flash effect.
 	var/muzzleflash_iconstate
-	///Brightness of the muzzle flash effect.
-	var/muzzle_flash_lum = 3
-	///Color of the muzzle flash effect.
-	var/muzzle_flash_color = COLOR_VERY_SOFT_YELLOW
 
 /*
  *  Firing
@@ -56,7 +59,11 @@
 
 //BALLISTIC
 	///Compatible magazines with the gun
-	var/mag_type = /obj/item/ammo_box/magazine/m10mm_ringneck //Removes the need for max_ammo and caliber info
+	var/default_ammo_type
+	///Allowed base types of magazines with the gun
+	var/allowed_ammo_types
+	///Incompatible magazines with the gun
+	var/blacklisted_ammo_types
 	///Whether the gun alarms when empty or not.
 	var/empty_alarm = FALSE
 	///Do we eject the magazine upon runing out of ammo?
@@ -99,7 +106,6 @@
 //ENERGY
 	//What type of power cell this uses
 	var/obj/item/stock_parts/cell/gun/cell
-	var/cell_type = /obj/item/stock_parts/cell/gun
 	//Can it be charged in a recharger?
 	var/can_charge = TRUE
 	var/selfcharge = FALSE
@@ -107,8 +113,6 @@
 	var/charge_delay = 4
 	//whether the gun's cell drains the cyborg user's cell to recharge
 	var/use_cyborg_cell = FALSE
-	///Used for large and small cells
-	var/mag_size = MAG_SIZE_MEDIUM
 	//Time it takes to unscrew the cell
 	var/unscrewing_time = 2 SECONDS
 
@@ -133,6 +137,8 @@
 	var/wielded_fully = FALSE
 	///Slowdown for wielding
 	var/wield_slowdown = 0.1
+	///slowdown for aiming whilst wielding
+	var/aimed_wield_slowdown = 0.1
 	///How long between wielding and firing in tenths of seconds
 	var/wield_delay	= 0.4 SECONDS
 	///Storing value for above
@@ -212,6 +218,8 @@
 
 	///Used if the guns recoil is lower then the min, it clamps the highest recoil
 	var/min_recoil = 0
+	///if we want a min recoil (or lack of it) whilst aiming
+	var/min_recoil_aimed = 0
 
 	var/gunslinger_recoil_bonus = 0
 	var/gunslinger_spread_bonus = 0
@@ -260,20 +268,23 @@
 /*
  *  Attachment
 */
-	///The types of attachments allowed, a list of types. SUBTYPES OF AN ALLOWED TYPE ARE ALSO ALLOWED
+	///The types of attachments allowed, a list of types. SUBTYPES OF AN ALLOWED TYPE ARE ALSO ALLOWED.
 	var/list/valid_attachments = list()
-	///Reference to our attachment holder to prevent subtypes having to call GetComponent
-	var/datum/component/attachment_holder/attachment_holder
+	///The types of attachments that are unique to this gun. Adds it to the base valid_attachments list. So if this gun takes a special stock, add it here.
+	var/list/unique_attachments = list()
+	///The types of attachments that aren't allowed. Removes it from the base valid_attachments list.
+	var/list/refused_attachments
 	///Number of attachments that can fit on a given slot
 	var/list/slot_available = ATTACHMENT_DEFAULT_SLOT_AVAILABLE
 	///Offsets for the slots on this gun. should be indexed by SLOT and then by X/Y
 	var/list/slot_offsets = list()
+	var/underbarrel_prefix = "" // so the action has the right icon for underbarrel gun
 
 /*
  *  Zooming
 */
 	///Whether the gun generates a Zoom action on creation
-	var/zoomable = FALSE
+	var/zoomable = TRUE
 	//Zoom toggle
 	var/zoomed = FALSE
 	///Distance in TURFs to move the user's screen forward (the "zoom" effect)
@@ -299,13 +310,9 @@
 	///Attachments spawned on initialization. Should also be in valid attachments or it SHOULD(once i add that) fail
 	var/list/default_attachments = list()
 
-//BALLISTIC
-	///Whether the gun will spawn loaded with a magazine
-	var/spawnwithmagazine = TRUE
-
 //ENERGY
 	//set to true so the gun is given an empty cell
-	var/dead_cell = FALSE
+	var/spawn_no_ammo = FALSE
 
 // Need to sort
 	///trigger guard on the weapon. Used for hulk mutations and ashies. I honestly dont know how usefult his is, id avoid touching it
@@ -318,7 +325,7 @@
 	/// Our firemodes, subtract and add to this list as needed. NOTE that the autofire component is given on init when FIREMODE_FULLAUTO is here.
 	var/list/gun_firemodes = list(FIREMODE_SEMIAUTO, FIREMODE_BURST, FIREMODE_FULLAUTO, FIREMODE_OTHER, FIREMODE_OTHER_TWO)
 	/// A acoc list that determines the names of firemodes. Use if you wanna be weird and set the name of say, FIREMODE_OTHER to "Underbarrel grenade launcher" for example.
-	var/list/gun_firenames = list(FIREMODE_SEMIAUTO = "single", FIREMODE_BURST = "burst fire", FIREMODE_FULLAUTO = "full auto", FIREMODE_OTHER = "misc. fire", FIREMODE_OTHER_TWO = "very misc. fire")
+	var/list/gun_firenames = list(FIREMODE_SEMIAUTO = "single", FIREMODE_BURST = "burst fire", FIREMODE_FULLAUTO = "full auto", FIREMODE_OTHER = "misc. fire", FIREMODE_OTHER_TWO = "very misc. fire", FIREMODE_UNDERBARREL = "underbarrel weapon")
 	///BASICALLY: the little button you select firing modes from? this is jsut the prefix of the icon state of that. For example, if we set it as "laser", the fire select will use "laser_single" and so on.
 	var/fire_select_icon_state_prefix = ""
 	///If true, we put "safety_" before fire_select_icon_state_prefix's prefix. ex. "safety_laser_single"
@@ -329,7 +336,7 @@
 	///This prevents gun from firing until the coodown is done, affected by lag
 	var/current_cooldown = 0
 
-/obj/item/gun/Initialize()
+/obj/item/gun/Initialize(mapload, spawn_empty)
 	. = ..()
 	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, PROC_REF(on_wield))
 	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, PROC_REF(on_unwield))
@@ -341,13 +348,20 @@
 
 /obj/item/gun/ComponentInitialize()
 	. = ..()
-	attachment_holder = AddComponent(/datum/component/attachment_holder, slot_available, valid_attachments, slot_offsets, default_attachments)
+	var/list/attachment_list = valid_attachments
+	attachment_list += unique_attachments
+	if(refused_attachments)
+		for(var/to_remove in attachment_list)
+			if(refused_attachments.Find(to_remove))
+				attachment_list -= to_remove
+
+	AddComponent(/datum/component/attachment_holder, slot_available, attachment_list, slot_offsets, default_attachments)
 	AddComponent(/datum/component/two_handed)
 
 /// triggered on wield of two handed item
 /obj/item/gun/proc/on_wield(obj/item/source, mob/user)
 	wielded = TRUE
-	INVOKE_ASYNC(src, .proc.do_wield, user)
+	INVOKE_ASYNC(src, PROC_REF(do_wield), user)
 
 /obj/item/gun/proc/do_wield(mob/user)
 	user.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/gun, multiplicative_slowdown = wield_slowdown)
@@ -369,15 +383,15 @@
 		wielded_fully = TRUE
 		return TRUE
 
-/obj/item/gun/proc/is_wielded()
-	return wielded
-
 /// triggered on unwield of two handed item
 /obj/item/gun/proc/on_unwield(obj/item/source, mob/user)
 	wielded = FALSE
 	wielded_fully = FALSE
 	zoom(user, forced_zoom = FALSE)
 	user.remove_movespeed_modifier(/datum/movespeed_modifier/gun)
+
+/obj/item/gun/proc/is_wielded()
+	return wielded
 
 /obj/item/gun/Destroy()
 	if(chambered) //Not all guns are chambered (EMP'ed energy guns etc)
@@ -386,6 +400,8 @@
 		QDEL_NULL(azoom)
 	if(muzzle_flash)
 		QDEL_NULL(muzzle_flash)
+	if(magazine)
+		QDEL_NULL(magazine)
 	return ..()
 
 /obj/item/gun/handle_atom_del(atom/A)
@@ -399,8 +415,16 @@
 	if(has_safety)
 		. += "The safety is [safety ? "<span class='green'>ON</span>" : "<span class='red'>OFF</span>"]. Ctrl-Click to toggle the safety."
 
+	if(gun_firemodes.len > 1)
+		. += "You can change the [src]'s firemode by pressing the <b>secondary action</b> key. By default, this is <b>Shift + Space</b>"
+
 	if(manufacturer)
 		. += "<span class='notice'>It has <b>[manufacturer]</b> engraved on it.</span>"
+
+/obj/item/gun/attackby(obj/item/I, mob/living/user, params)
+	. = ..()
+	if(gun_firemodes[firemode_index] == FIREMODE_UNDERBARREL)
+		return TRUE
 
 /obj/item/gun/equipped(mob/living/user, slot)
 	. = ..()
@@ -653,7 +677,11 @@
 	if(wielded_fully)
 		simulate_recoil(user, recoil, actual_angle)
 	else if(!wielded_fully)
-		simulate_recoil(user, recoil_unwielded, actual_angle)
+		var/recoil_temp = recoil_unwielded
+		var/obj/item/shield/riot/shield = user.get_inactive_held_item()
+		if(istype(shield))
+			recoil_temp += shield.recoil_bonus
+		simulate_recoil(user, recoil_temp, actual_angle)
 
 	if(suppressed)
 		playsound(user, suppressed_sound, suppressed_volume, vary_fire_sound, ignore_walls = FALSE, extrarange = SILENCED_SOUND_EXTRARANGE, falloff_distance = 0)
@@ -868,14 +896,10 @@
 
 /obj/item/gun/proc/handle_muzzle_flash(mob/living/user, firing_angle)
 	var/atom/movable/flash_loc = user
-	var/prev_light = light_range
-
-	if(!light_on && (light_range <= muzzle_flash_lum))
-		set_light_range(muzzle_flash_lum)
-		set_light_color(muzzle_flash_color)
+	if(!light_on)
 		set_light_on(TRUE)
-		update_light()
-		addtimer(CALLBACK(src, PROC_REF(reset_light_range), prev_light), 1 SECONDS)
+		addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, set_light_on), FALSE), 3)
+
 	//Offset the pixels.
 	switch(firing_angle)
 		if(0, 360)
@@ -950,13 +974,6 @@
 
 	addtimer(CALLBACK(src, PROC_REF(remove_muzzle_flash), flash_loc, muzzle_flash), 0.2 SECONDS)
 
-/obj/item/gun/proc/reset_light_range(lightrange)
-	set_light_range(lightrange)
-	set_light_color(initial(light_color))
-	if(lightrange <= 0)
-		set_light_on(FALSE)
-	update_light()
-
 /obj/item/gun/proc/remove_muzzle_flash(atom/movable/flash_loc, obj/effect/muzzle_flash/muzzle_flash)
 	if(!QDELETED(flash_loc))
 		flash_loc.vis_contents -= muzzle_flash
@@ -965,7 +982,7 @@
 // for guns firing on their own without a user
 /obj/item/gun/proc/discharge(cause, seek_chance = 10)
 	var/target
-	if(!safety)
+	if(!safety && has_safety)
 		// someone is very unlucky and about to be shot
 		if(prob(seek_chance))
 			for(var/mob/living/target_mob in range(6, get_turf(src)))
@@ -994,35 +1011,40 @@
 		human_holder = src
 	for(var/obj/item/gun/at_risk in get_all_contents())
 		var/chance_to_fire = round(GUN_NO_SAFETY_MALFUNCTION_CHANCE_MEDIUM * at_risk.safety_multiplier)
+		var/bodyzone = pick_weight(list(BODY_ZONE_HEAD = 1, BODY_ZONE_CHEST = 9, BODY_ZONE_L_ARM = 4, BODY_ZONE_R_ARM = 4, BODY_ZONE_L_LEG = 41, BODY_ZONE_R_LEG = 41))
 		if(human_holder)
 			// gun is less likely to go off in a holster
 			if(at_risk == human_holder.s_store)
 				chance_to_fire = round(GUN_NO_SAFETY_MALFUNCTION_CHANCE_LOW * at_risk.safety_multiplier)
+				bodyzone = pick_weight(list(BODY_ZONE_CHEST = 10, BODY_ZONE_L_LEG = 45, BODY_ZONE_R_LEG = 45))
 		if(at_risk.safety == FALSE && prob(chance_to_fire))
-			var/bodyzone = pick(BODY_ZONE_HEAD, BODY_ZONE_CHEST, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG,BODY_ZONE_R_LEG)
 			if(at_risk.process_fire(src,src,FALSE, null, bodyzone) == TRUE)
 				log_combat(src,src,"misfired",at_risk,"caused by [cause]")
-				visible_message(span_danger("\The [at_risk.name]'s trigger gets caught as [src] falls, suddenly going off into [src]'s [bodyzone]!"), span_danger("\The [at_risk.name]'s trigger gets caught on something as you fall, suddenly going off into your [bodyzone]!"))
-				emote("scream")
+				visible_message(span_danger("\The [at_risk.name]'s trigger gets caught as [src] falls, suddenly going off into [src]'s [get_bodypart(bodyzone)]!"), span_danger("\The [at_risk.name]'s trigger gets caught on something as you fall, suddenly going off into your [get_bodypart(bodyzone)]!"))
+				human_holder.force_scream()
 
 //I need to refactor this into an attachment
 /datum/action/toggle_scope_zoom
-	name = "Toggle Scope"
+	name = "Aim Down Sights"
 	check_flags = AB_CHECK_CONSCIOUS|AB_CHECK_HANDS_BLOCKED|AB_CHECK_IMMOBILE|AB_CHECK_LYING
 	icon_icon = 'icons/mob/actions/actions_items.dmi'
 	button_icon_state = "sniper_zoom"
-	var/obj/item/gun/gun = null
 
 /datum/action/toggle_scope_zoom/Trigger()
+	if(!istype(target, /obj/item/gun) || !..())
+		return
+
+	var/obj/item/gun/gun = target
 	gun.zoom(owner, owner.dir)
+	gun.min_recoil = gun.min_recoil_aimed
 
-/datum/action/toggle_scope_zoom/IsAvailable()
-	. = ..()
-	if(!. && gun)
-		gun.zoom(owner, owner.dir, FALSE)
+/datum/action/toggle_scope_zoom/Remove(mob/user)
+	if(!istype(target, /obj/item/gun))
+		return ..()
 
-/datum/action/toggle_scope_zoom/Remove(mob/living/L)
-	gun.zoom(L, L.dir, FALSE)
+	var/obj/item/gun/gun = target
+	gun.zoom(user, user.dir, FALSE)
+
 	..()
 
 /obj/item/gun/proc/rotate(atom/thing, old_dir, new_dir)
@@ -1040,17 +1062,23 @@
 		if((!zoomed && wielded_fully) || zoomed)
 			zoomed = !zoomed
 		else
-			to_chat(user, "<span class='danger'>You can't look down the scope without wielding [src]!</span>")
+			to_chat(user, span_danger("You can't look down the sights without wielding [src]!"))
 			zoomed = FALSE
 	else
 		zoomed = forced_zoom
 
 	if(zoomed)
 		RegisterSignal(user, COMSIG_ATOM_DIR_CHANGE, PROC_REF(rotate))
+		ADD_TRAIT(user, TRAIT_AIMING, ref(src))
 		user.client.view_size.zoomOut(zoom_out_amt, zoom_amt, direc)
+		min_recoil = min_recoil_aimed
+		user.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/aiming, multiplicative_slowdown = aimed_wield_slowdown)
 	else
 		UnregisterSignal(user, COMSIG_ATOM_DIR_CHANGE)
+		REMOVE_TRAIT(user, TRAIT_AIMING, ref(src))
 		user.client.view_size.zoomIn()
+		min_recoil = initial(min_recoil)
+		user.remove_movespeed_modifier(/datum/movespeed_modifier/aiming)
 	return zoomed
 
 //Proc, so that gun accessories/scopes/etc. can easily add zooming.
@@ -1059,13 +1087,15 @@
 		return
 
 	if(zoomable)
-		azoom = new()
-		azoom.gun = src
+		azoom = new(src)
 
 /obj/item/gun/proc/build_firemodes()
 	if(FIREMODE_FULLAUTO in gun_firemodes)
-		AddComponent(/datum/component/automatic_fire, fire_delay)
+		if(!GetComponent(/datum/component/automatic_fire))
+			AddComponent(/datum/component/automatic_fire, fire_delay)
 		SEND_SIGNAL(src, COMSIG_GUN_DISABLE_AUTOFIRE)
+	for(var/datum/action/item_action/toggle_firemode/old_firemode in actions)
+		old_firemode.Destroy()
 	var/datum/action/item_action/our_action
 
 	if(gun_firemodes.len > 1)
@@ -1109,18 +1139,26 @@
 	for(var/datum/action/current_action as anything in actions)
 		current_action.UpdateButtonIcon()
 
+/obj/item/gun/secondary_action(user)
+	if(gun_firemodes.len > 1)
+		fire_select(user)
+
 /datum/action/item_action/toggle_firemode/UpdateButtonIcon(status_only = FALSE, force = FALSE)
 	var/obj/item/gun/our_gun = target
 
 	var/current_firemode = our_gun.gun_firemodes[our_gun.firemode_index]
 	//tldr; if we have adjust_fire_select_icon_state_on_safety as true, we append "safety_" to the prefix, otherwise nothing.
 	var/safety_prefix = "[our_gun.adjust_fire_select_icon_state_on_safety ? "[our_gun.safety ? "safety_" : ""]" : ""]"
-	button_icon_state = "[safety_prefix][our_gun.fire_select_icon_state_prefix][current_firemode]"
+	if(current_firemode == FIREMODE_UNDERBARREL)
+		button_icon_state = "[safety_prefix][our_gun.underbarrel_prefix][current_firemode]"
+	else
+		button_icon_state = "[safety_prefix][our_gun.fire_select_icon_state_prefix][current_firemode]"
 	return ..()
 
 GLOBAL_LIST_INIT(gun_saw_types, typecacheof(list(
 	/obj/item/gun/energy/plasmacutter,
-	/obj/item/melee/transforming/energy,
+	/obj/item/melee/energy,
+	/obj/item/gear_handle/anglegrinder,
 	)))
 
 ///Handles all the logic of sawing off guns,

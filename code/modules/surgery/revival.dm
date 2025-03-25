@@ -9,8 +9,8 @@
 				/datum/surgery_step/revive,
 				/datum/surgery_step/close)
 
-	target_mobtypes = list(/mob/living/carbon/human, /mob/living/carbon/monkey, /mob/living/simple_animal)
-	possible_locs = list(BODY_ZONE_CHEST)
+	target_mobtypes = list(/mob/living/carbon/human, /mob/living/carbon/monkey, /mob/living/simple_animal)  //PENTEST CHANGE
+	possible_locs = list(BODY_ZONE_CHEST) //PENTEST CHANGE
 	requires_bodypart_type = 0
 
 /datum/surgery/revival/can_start(mob/user, mob/living/carbon/target)
@@ -20,7 +20,7 @@
 		return FALSE
 	if(target.hellbound || HAS_TRAIT(target, TRAIT_HUSK))
 		return FALSE
-	if(!is_valid_target(target))
+	if(!is_valid_target(target)) //PENTEST CHANGE START
 		return FALSE
 	return TRUE
 
@@ -28,7 +28,7 @@
 /datum/surgery/revival/proc/is_valid_target(mob/living/patient)
 //	if (iscarbon(patient))
 //		return FALSE
-	if (!(patient.mob_biotypes & (MOB_ORGANIC|MOB_HUMANOID)))
+	if (!(patient.mob_biotypes & (MOB_ORGANIC|MOB_HUMANOID))) //PENTEST CHANGE END
 		return FALSE
 	return TRUE
 
@@ -49,7 +49,7 @@
 	. = TRUE
 	if(istype(tool, /obj/item/shockpaddles))
 		var/obj/item/shockpaddles/S = tool
-		if((S.req_defib && !S.defib.powered) || !S.wielded || S.cooldown || S.busy)
+		if((S.req_defib && !S.defib.powered) || !HAS_TRAIT(S, TRAIT_WIELDED) || S.cooldown || S.busy)
 			to_chat(user, "<span class='warning'>You need to wield both paddles, and [S.defib] must be powered!</span>")
 			return FALSE
 	if(istype(tool, /obj/item/melee/baton))

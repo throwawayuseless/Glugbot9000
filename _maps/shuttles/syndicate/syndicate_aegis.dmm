@@ -442,7 +442,7 @@
 /area/ship/engineering)
 "dw" = (
 /obj/machinery/airalarm/directional/north,
-/obj/machinery/vending/snack/random,
+/obj/effect/spawner/random/vending/snack,
 /obj/effect/turf_decal/box,
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/dark,
@@ -605,15 +605,9 @@
 /obj/item/reagent_containers/food/snacks/meat/slab,
 /obj/item/reagent_containers/food/snacks/meat/slab,
 /obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/effect/spawner/lootdrop/donkpockets{
-	pixel_x = -4;
-	pixel_y = 6
-	},
-/obj/effect/spawner/lootdrop/donkpockets{
-	pixel_x = 3;
-	pixel_y = 6
-	},
-/obj/effect/spawner/lootdrop/donkpockets,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
 /obj/effect/turf_decal/corner/opaque/white/mono,
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/corner/opaque/blue/mono,
@@ -2033,7 +2027,7 @@
 /obj/effect/turf_decal/corner/opaque/white/mono,
 /obj/structure/table/reinforced,
 /obj/item/cutting_board,
-/obj/item/kitchen/knife,
+/obj/item/melee/knife/kitchen,
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
@@ -2579,7 +2573,7 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/canteen)
 "uM" = (
-/obj/machinery/vending/snack/random,
+/obj/effect/spawner/random/vending/snack,
 /obj/effect/turf_decal/box,
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
@@ -2807,7 +2801,7 @@
 /area/ship/crew/library)
 "wp" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/cloth{
 	color = "#ADD8E6"
 	},
@@ -3943,7 +3937,7 @@
 /turf/open/floor/carpet/blue,
 /area/ship/crew/library)
 "Hg" = (
-/obj/machinery/computer/cargo/express,
+/obj/machinery/computer/cargo,
 /turf/open/floor/wood/walnut,
 /area/ship/bridge)
 "Ho" = (
@@ -5153,7 +5147,7 @@
 /area/ship/crew/dorm/dormtwo)
 "Sg" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/turf_decal/siding/wood,
 /obj/structure/curtain/cloth{
 	color = "#ADD8E6"
@@ -5197,7 +5191,7 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/canteen)
 "Sy" = (
-/obj/structure/fireaxecabinet{
+/obj/structure/cabinet/fireaxe{
 	pixel_y = 28
 	},
 /obj/effect/turf_decal/trimline/opaque/orange/line{

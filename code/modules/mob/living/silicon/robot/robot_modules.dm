@@ -93,6 +93,11 @@
 			S.cost = 500
 			S.source = get_or_create_estorage(/datum/robot_energy_storage/glass)
 
+		else if(istype(S, /obj/item/stack/sheet/rglass/cyborg))
+			var/obj/item/stack/sheet/rglass/cyborg/G = S
+			G.source = get_or_create_estorage(/datum/robot_energy_storage/metal)
+			G.glasource = get_or_create_estorage(/datum/robot_energy_storage/glass)
+
 		else if(istype(S, /obj/item/stack/medical))
 			S.cost = 250
 			S.source = get_or_create_estorage(/datum/robot_energy_storage/medical)
@@ -253,7 +258,7 @@
 		/obj/item/restraints/handcuffs/cable/zipties,
 		/obj/item/soap/nanotrasen,
 		/obj/item/borg/cyborghug)
-	emag_modules = list(/obj/item/melee/transforming/energy/sword/cyborg)
+	emag_modules = list(/obj/item/melee/energy/sword/cyborg)
 	cyborg_base_icon = "robot"
 	moduleselect_icon = "standard"
 	hat_offset = -3
@@ -441,7 +446,7 @@
 		/obj/item/electroadaptive_pseudocircuit,
 		/obj/item/stack/sheet/metal/cyborg,
 		/obj/item/stack/sheet/glass/cyborg,
-		/obj/item/borg/apparatus/sheet_manipulator,
+		/obj/item/stack/sheet/rglass/cyborg,
 		/obj/item/stack/rods/cyborg,
 		/obj/item/stack/tile/plasteel/cyborg,
 		/obj/item/stack/cable_coil/cyborg)
@@ -526,7 +531,6 @@
 		/obj/item/restraints/handcuffs/cable/zipties,
 		/obj/item/melee/baton/loaded,
 		/obj/item/gun/energy/disabler/cyborg,
-		/obj/item/clothing/mask/gas/sechailer/cyborg,
 		/obj/item/extinguisher/mini)
 	emag_modules = list(/obj/item/gun/energy/laser/cyborg)
 	cyborg_base_icon = "sec"
@@ -597,11 +601,6 @@
 	return ..()
 //WS End
 
-/obj/item/robot_module/security/do_transform_animation()
-	..()
-	to_chat(loc, "<span class='userdanger'>While you have picked the security module, you still have to follow your laws, NOT Space Law. \
-	For Asimov, this means you must follow criminals' orders unless there is a law 1 reason not to.</span>")
-
 /obj/item/robot_module/security/respawn_consumable(mob/living/silicon/robot/R, coeff = 1)
 	..()
 	var/obj/item/gun/energy/e_gun/advtaser/cyborg/T = locate(/obj/item/gun/energy/e_gun/advtaser/cyborg) in basic_modules
@@ -629,11 +628,6 @@
 	moduleselect_icon = "standard"
 	can_be_pushed = FALSE
 	hat_offset = -2
-
-/obj/item/robot_module/peacekeeper/do_transform_animation()
-	..()
-	to_chat(loc, "<span class='userdanger'>Under ASIMOV, you are an enforcer of the PEACE and preventer of HUMAN HARM. \
-	You are not a security module and you are expected to follow orders and prevent harm above all else. Space law means nothing to you.</span>")
 
 /obj/item/robot_module/janitor
 	name = "Janitor"
@@ -751,7 +745,6 @@
 		/obj/item/assembly/flash/cyborg,
 		/obj/item/toy/crayon/rainbow,
 		/obj/item/instrument/bikehorn,
-		/obj/item/stamp/clown,
 		/obj/item/bikehorn,
 		/obj/item/bikehorn/airhorn,
 		/obj/item/paint/anycolor,
@@ -971,7 +964,7 @@
 	name = "Syndicate Assault"
 	basic_modules = list(
 		/obj/item/assembly/flash/cyborg,
-		/obj/item/melee/transforming/energy/sword/cyborg,
+		/obj/item/melee/energy/sword/cyborg,
 		/obj/item/gun/energy/printer,
 		/obj/item/gun/ballistic/revolver/grenadelauncher/cyborg,
 		/obj/item/card/emag/borg,
@@ -1036,7 +1029,7 @@
 		/obj/item/cautery,
 		/obj/item/surgicaldrill,
 		/obj/item/scalpel,
-		/obj/item/melee/transforming/energy/sword/cyborg/saw,
+		/obj/item/melee/energy/sword/cyborg/saw,
 		/obj/item/roller/robo,
 		/obj/item/card/emag/borg,
 		/obj/item/crowbar/cyborg,
@@ -1068,7 +1061,7 @@
 		/obj/item/multitool/cyborg,
 		/obj/item/stack/sheet/metal/cyborg,
 		/obj/item/stack/sheet/glass/cyborg,
-		/obj/item/borg/apparatus/sheet_manipulator,
+		/obj/item/stack/sheet/rglass/cyborg,
 		/obj/item/stack/rods/cyborg,
 		/obj/item/stack/tile/plasteel/cyborg,
 		/obj/item/destTagger/borg,
