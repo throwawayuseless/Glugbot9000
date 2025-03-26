@@ -14,8 +14,12 @@
 	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION | KEPORI_VARIATION
 
 	permeability_coefficient = 0.5
-	slowdown = SHOES_SLOWDOWN
-	strip_delay = 1 SECONDS
+
+	equip_delay_self = EQUIP_DELAY_SHOES
+	equip_delay_other = EQUIP_DELAY_SHOES * 1.5
+	strip_delay = EQUIP_DELAY_SHOES * 1.5
+	equip_self_flags = EQUIP_ALLOW_MOVEMENT | EQUIP_SLOWDOWN
+
 	blood_overlay_type = "shoe"
 
 	var/offset = 0
@@ -170,7 +174,7 @@
 		else // if one of us moved
 			user.visible_message("<span class='danger'>[our_guy] stamps on [user]'s hand, mid-shoelace [tied ? "knotting" : "untying"]!</span>", "<span class='userdanger'>Ow! [our_guy] stamps on your hand!</span>", list(our_guy))
 			to_chat(our_guy, "<span class='userdanger'>You stamp on [user]'s hand! What the- [user.p_they()] [user.p_were()] [tied ? "knotting" : "untying"] your shoelaces!</span>")
-			user.emote("scream")
+			user.force_scream()
 			if(istype(L))
 				var/obj/item/bodypart/ouchie = L.get_bodypart(pick(BODY_ZONE_L_ARM, BODY_ZONE_R_ARM))
 				if(ouchie)

@@ -304,8 +304,8 @@ GLOBAL_VAR(restart_counter)
 	var/discord_url
 	var/github_url
 	if(isnull(config))
-		discord_url = "https://shiptest.net/discord"
-		github_url = "https://github.com/shiptest-ss13/Shiptest"
+		discord_url = "https://discord.com/invite/ydGPEejXZB"
+		github_url = "https://github.com/PentestSS13/Pentest"
 	else
 		discord_url = CONFIG_GET(string/discordurl)
 		github_url = CONFIG_GET(string/githuburl)

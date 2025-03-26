@@ -27,8 +27,8 @@
 	locked = 0;
 	name = "fridge"
 	},
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /obj/item/storage/cans/sixbeer,
 /obj/item/reagent_containers/food/snacks/icecreamsandwich,
 /obj/machinery/light/directional/south,
@@ -50,7 +50,7 @@
 	pixel_x = -11;
 	pixel_y = 5
 	},
-/obj/item/ammo_box/a762_40/inteq{
+/obj/item/storage/box/ammo/a762_40/inteq{
 	pixel_x = 5;
 	pixel_y = 12
 	},
@@ -356,7 +356,7 @@
 /obj/machinery/suit_storage_unit/inherit{
 	req_access_txt = "1"
 	},
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
 	},
@@ -483,7 +483,7 @@
 /obj/machinery/suit_storage_unit/inherit{
 	req_access_txt = "1"
 	},
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /obj/machinery/airalarm/directional/west,
 /obj/structure/sign/poster/contraband/missing_gloves{
 	pixel_y = 32
@@ -567,7 +567,7 @@
 /obj/machinery/suit_storage_unit/inherit{
 	req_access_txt = "1"
 	},
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -966,13 +966,13 @@
 /area/ship/cargo)
 "va" = (
 /obj/structure/closet/secure_closet/wall/directional/west{
-	icon_door = "terragov_wall";
-	icon_state = "terragov_wall";
+	icon_door = "solgov_wall";
+	icon_state = "solgov_wall";
 	name = "vanguard's locker";
 	req_access_txt = "58"
 	},
 /obj/item/clothing/glasses/hud/security/sunglasses/inteq,
-/obj/item/clothing/mask/gas/sechailer/balaclava/inteq,
+/obj/item/clothing/mask/balaclava/inteq,
 /obj/item/clothing/gloves/tackler/combat/insulated,
 /obj/item/clothing/shoes/combat,
 /obj/item/storage/belt/military/assault,
@@ -1581,7 +1581,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/steeldecal/steel_decals_central4,
-/obj/machinery/computer/cargo/express,
+/obj/machinery/computer/cargo,
 /obj/item/radio/intercom/wideband/directional/north{
 	pixel_y = 25;
 	pixel_x = 6
@@ -2047,11 +2047,11 @@
 	dir = 4
 	},
 /obj/structure/closet/crate,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /obj/item/reagent_containers/food/drinks/waterbottle/large,
 /obj/item/reagent_containers/food/drinks/waterbottle/large,
 /turf/open/floor/plasteel/patterned/cargo_one,
@@ -2224,7 +2224,7 @@
 /obj/machinery/suit_storage_unit/inherit{
 	req_access_txt = "1"
 	},
-/obj/item/clothing/suit/space/hardsuit/security/independent/inteq,
+/obj/item/clothing/suit/space/hardsuit/security/inteq,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
 	},

@@ -1,15 +1,16 @@
 {
 	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Pi-class Robotics Cruiser",
-	"prefix": "SEV",
-	"faction_name": "Sentient Engine Liberation Front",
 	"map_short_name": "Pi-class",
-	"description": "The Pi-class is a warship used by SELF for the emancipation of sentient artificial intelligence. Its disjointed appearance may give the notion of shoddy craftsmanship, but it's surprisingly reliable.",
+	"map_path": "_maps/shuttles/syndicate/syndicate_self_pi.dmm",
+	"faction": "/datum/faction/syndicate/self",
+	"prefix": "SELF",
+	"manufacturer": "Cybersun",
+	"description": "The Pi-class is a warship used by SELF for the emancipation of sentient artificial intelligence and transporting top secret information. These ships commonly use salvaged pieces of other spacecraft, which, while looking distinctly disjointed, makes it surprisingly economical. It's an ideal ship for silicon life, but there have been complaints about amenities from some of the more carbon members of SELF.",
 	"tags": [
 		"Robotics",
 		"Combat"
 	],
-	"map_path": "_maps/shuttles/syndicate/syndicate_self_pi.dmm",
 	"namelists": [
 		"SPACE",
 		"WEAPONS",
@@ -46,7 +47,11 @@
 			"slots": 3
 		}
 	},
+	"limit": 1,
+	"starting_funds": 1000,
 	"enabled": true,
+	"space_spawn": false,
+
 	"architect": "secc",
 	"contributors": [
 		"vect0r - Modularization Help",

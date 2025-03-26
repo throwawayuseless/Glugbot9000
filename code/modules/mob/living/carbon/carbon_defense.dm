@@ -1,15 +1,17 @@
 /mob/living/carbon/attackby(obj/item/W, mob/user, params)
 	var/obj/item/bodypart/BP = get_bodypart(check_zone(user.zone_selected))
-	if(W.tool_behaviour == TOOL_WELDER && IS_ROBOTIC_LIMB(BP) && BP.brute_dam > 5) //prioritize healing if we're synthetic
+	if(!BP)
+		return ..()
+	var/painless = (HAS_TRAIT(user, TRAIT_ANALGESIA) || HAS_TRAIT(user, TRAIT_PAIN_RESIST))
+	if(W.tool_behaviour == TOOL_WELDER && IS_ROBOTIC_LIMB(BP) && BP.brute_dam) //prioritize healing if we're synthetic
 		return ..()
 	if(user.a_intent != INTENT_HELP || !W.get_temperature() || !BP.can_bandage()) //this will also catch low damage synthetic welding
 		return ..()
 	. = TRUE
 	var/heal_time = 2 SECONDS
-	var/has_painkillers = user.reagents.has_reagent(/datum/reagent/medicine/morphine, needs_metabolizing = TRUE)
 	playsound(user, 'sound/surgery/cautery1.ogg', 20)
 	balloon_alert(user, "cauterizing...")
-	if(src == user && !has_painkillers)
+	if(src == user && !painless)
 		heal_time *= 2 //oof ouch owie
 	user.visible_message(span_nicegreen("[user] holds [W] up to [user == src ? "their" : "[src]'s"] [parse_zone(BP.body_zone)], trying to slow [p_their()] bleeding..."), span_nicegreen("You hold [W] up to [user == src ? "your" : "[src]'s"] [parse_zone(BP.body_zone)], trying to slow [user == src ? "your" : p_their()] bleeding..."))
 	if(do_after(user, heal_time, target = src))
@@ -135,6 +137,9 @@
 
 //ATTACK HAND IGNORING PARENT RETURN VALUE
 /mob/living/carbon/attack_hand(mob/living/carbon/human/user)
+
+	if(SEND_SIGNAL(src, COMSIG_ATOM_ATTACK_HAND, user) & COMPONENT_CANCEL_ATTACK_CHAIN)
+		. = TRUE
 
 	for(var/datum/surgery/S in surgeries)
 		if(body_position != LYING_DOWN && S.lying_required)
@@ -352,13 +357,6 @@
 	if(is_type_in_typecache(active_item, GLOB.shove_disarming_types))
 		visible_message("<span class='warning'>[name] regains their grip on \the [active_item]!</span>", "<span class='warning'>You regain your grip on \the [active_item]</span>", null, COMBAT_MESSAGE_RANGE)
 
-/mob/living/carbon/blob_act(obj/structure/blob/B)
-	if (stat == DEAD)
-		return
-	else
-		show_message("<span class='userdanger'>The blob attacks!</span>")
-		adjustBruteLoss(10)
-
 /mob/living/carbon/emp_act(severity)
 	. = ..()
 	if(. & EMP_PROTECT_CONTENTS)
@@ -392,8 +390,8 @@
 	var/should_stun = (!(flags & SHOCK_TESLA) || siemens_coeff > 0.5) && !(flags & SHOCK_NOSTUN)
 	if(should_stun)
 		Paralyze(40)
-	//Jitter and other fluff.
-	jitteriness += 1000
+	//jitter and other fluff.
+	adjust_jitter(1000, max = 1500)
 	do_jitter_animation(jitteriness)
 	stuttering += 2
 	addtimer(CALLBACK(src, PROC_REF(secondary_shock), should_stun), 20)

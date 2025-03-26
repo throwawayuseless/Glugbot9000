@@ -3,7 +3,9 @@
 	"map_name": "Cheyenne-class Flotilla",
 	"map_short_name": "Cheyenne-class",
 	"map_path": "_maps/shuttles/nanotrasen/nanotrasen_cheyenne.dmm",
+	"faction": "/datum/faction/nt",
 	"prefix": "NTSV",
+	"manufacturer": "Nanotrasen Spaceworks",
 	"description": "The Cheyenne-class is a state-of-the-art Flotilla style vessel, designed and constructed by NanoTrasen to serve as a central hub for frontier operations. Built with versatility and durability in mind, the Frontier Voyager combines the functionality of a large, stationary space station with the mobility of a capital-class starship. Its vast interior is equipped with all the necessary facilities to support a variety of operations, from scientific research and mineral extraction to security and medical response.",
 	"tags": [
 		"RP Focus",

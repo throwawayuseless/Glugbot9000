@@ -3,7 +3,9 @@
 	"map_name": "Beluga-class Transport",
 	"map_short_name": "Beluga-class",
 	"map_path": "_maps/shuttles/independent/independent_beluga.dmm",
+	"faction": "/datum/faction/independent",
 	"prefix": "SV",
+	"manufacturer": "UNKNOWN",
 	"description": "The Beluga-class is a transport vessel for those with especially rich blood. Featuring a modest kitchen, hired Inteq security, and luxurious decoration, the Beluga is a first choice pick for many wealthy spacers trying to get from point A to B. The independent ship features several rooms for its guests and a well furnished meeting room for any corporate occassion.",
 	"tags": [
 		"RP Focus",
@@ -53,5 +55,10 @@
 	"limit": 2,
 	"starting_funds": 4000,
 	"enabled": true,
-	"space_spawn": false
+	"space_spawn": false,
+
+	"architect": "spockye",
+	"contributors": [
+		"No Contributors"
+	]
 }

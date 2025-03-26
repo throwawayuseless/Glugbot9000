@@ -69,7 +69,7 @@
 /obj/structure/table,
 /obj/item/storage/bag/tray,
 /obj/item/reagent_containers/condiment/enzyme,
-/obj/item/kitchen/knife,
+/obj/item/melee/knife/kitchen,
 /obj/item/reagent_containers/condiment/saltshaker{
 	pixel_x = -5;
 	pixel_y = 10
@@ -167,7 +167,7 @@
 /obj/machinery/door/window/brigdoor/northright{
 	dir = 2
 	},
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
@@ -440,7 +440,7 @@
 /area/ship/cargo)
 "fq" = (
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /obj/effect/decal/cleanable/greenglow/filled,
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30";
@@ -462,7 +462,7 @@
 /area/ship/engineering)
 "fM" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 4
 	},
@@ -756,7 +756,7 @@
 /turf/open/floor/wood/walnut,
 /area/ship/crew/canteen)
 "ka" = (
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/cargo{
 	dir = 1
 	},
 /obj/item/radio/intercom/directional/south,
@@ -1176,8 +1176,8 @@
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "pharmlobby"
 	},
-/obj/effect/spawner/lootdrop/maintenance/two,
-/obj/effect/spawner/lootdrop/maintenance/four,
+/obj/effect/spawner/random/maintenance/two,
+/obj/effect/spawner/random/maintenance/four,
 /turf/open/floor/mineral/titanium,
 /area/ship/cargo)
 "qj" = (
@@ -1222,7 +1222,7 @@
 /area/ship/medical)
 "qU" = (
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30";
 	dir = 9
@@ -2064,8 +2064,8 @@
 /obj/item/flashlight/seclite,
 /obj/item/flashlight/seclite,
 /obj/item/flashlight/seclite,
-/obj/item/kitchen/knife/combat/survival,
-/obj/item/kitchen/knife/combat/survival,
+/obj/item/melee/knife/survival,
+/obj/item/melee/knife/survival,
 /obj/structure/sign/poster/retro/lasergun_new{
 	pixel_x = -32
 	},
@@ -2361,7 +2361,7 @@
 /obj/structure/rack,
 /obj/structure/window/reinforced/spawner/east,
 /obj/structure/window/reinforced/spawner/north,
-/obj/effect/spawner/lootdrop/maintenance/four,
+/obj/effect/spawner/random/maintenance/four,
 /obj/machinery/door/window/brigdoor/northright{
 	dir = 8
 	},
@@ -2729,14 +2729,14 @@
 /obj/structure/rack,
 /obj/structure/window/reinforced/spawner/east,
 /obj/structure/window/reinforced/spawner/north,
-/obj/effect/spawner/lootdrop/maintenance/four,
+/obj/effect/spawner/random/maintenance/four,
 /obj/machinery/door/window/brigdoor/northright{
 	dir = 8
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "pharmlobby"
 	},
-/obj/effect/spawner/lootdrop/maintenance/four,
+/obj/effect/spawner/random/maintenance/four,
 /turf/open/floor/wood/walnut,
 /area/ship/cargo)
 "OO" = (
@@ -2978,7 +2978,7 @@
 	pixel_y = -32
 	},
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/bounty,
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
@@ -3051,7 +3051,7 @@
 /obj/item/flashlight/glowstick/blue,
 /obj/item/flashlight/glowstick/cyan,
 /obj/item/storage/pill_bottle/floorpill,
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /obj/effect/turf_decal/siding/wood{
 	color = "#543C30";
 	dir = 1
@@ -3098,7 +3098,7 @@
 	dir = 8
 	},
 /obj/item/storage/pill_bottle/zoom,
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "pharmlobby"
 	},
@@ -3206,7 +3206,7 @@
 /obj/machinery/door/window/brigdoor/northright{
 	dir = 2
 	},
-/obj/effect/spawner/lootdrop/maintenance/two,
+/obj/effect/spawner/random/maintenance/two,
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
@@ -3499,7 +3499,7 @@
 	dir = 1
 	},
 /obj/structure/closet/secure_closet/wall/directional/east{
-	icon_state = "terragov_wall";
+	icon_state = "solgov_wall";
 	name = "Chief Pharmacist's Locker";
 	req_access_txt = "40"
 	},
@@ -3509,7 +3509,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 6
 	},
-/obj/item/storage/box/hypospray/CMO,
+/obj/item/storage/box/hypospray,
 /obj/item/clothing/suit/longcoat/chemist,
 /obj/item/clothing/head/beret/chem,
 /obj/item/clothing/neck/cloak/cmo,

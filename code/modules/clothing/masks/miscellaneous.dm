@@ -8,6 +8,13 @@
 	gas_transfer_coefficient = 0.9
 	equip_delay_other = 20
 
+	equipping_sound = EQUIP_SOUND_VFAST_GENERIC
+	unequipping_sound = UNEQUIP_SOUND_VFAST_GENERIC
+	equip_delay_self = EQUIP_DELAY_MASK
+	equip_delay_other = EQUIP_DELAY_MASK * 1.5
+	strip_delay = EQUIP_DELAY_MASK * 1.5
+	equip_self_flags = EQUIP_ALLOW_MOVEMENT | EQUIP_SLOWDOWN
+
 /obj/item/clothing/mask/muzzle/attack_paw(mob/user)
 	if(iscarbon(user))
 		var/mob/living/carbon/C = user
@@ -30,6 +37,13 @@
 	permeability_coefficient = 0.01
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 25, "rad" = 0, "fire" = 0, "acid" = 0)
 	actions_types = list(/datum/action/item_action/adjust)
+
+	equipping_sound = EQUIP_SOUND_VFAST_GENERIC
+	unequipping_sound = UNEQUIP_SOUND_VFAST_GENERIC
+	equip_delay_self = EQUIP_DELAY_MASK
+	equip_delay_other = EQUIP_DELAY_MASK * 1.5
+	strip_delay = EQUIP_DELAY_MASK * 1.5
+	equip_self_flags = EQUIP_ALLOW_MOVEMENT
 
 /obj/item/clothing/mask/surgical/attack_self(mob/user)
 	adjustmask(user)
@@ -70,7 +84,7 @@
 	icon_state = "joy"
 
 /obj/item/clothing/mask/spamton
-	name = "Businessman's Mask"
+	name = "Cursed Businessman's Mask"
 	icon_state = "big_shot"
 	item_state = "big_shot"
 	clothing_flags = ALLOWINTERNALS
@@ -86,11 +100,14 @@
 /obj/item/clothing/mask/spamton/attack_self(mob/user)
 	if(cooldown < world.time)
 		SSblackbox.record_feedback("amount", "saving_uses", 1)
-		cooldown = world.time + 2600
+		cooldown = world.time + 2600 //PENTEST OVERRIDE - cooldown = world.time + 1600
 		var/mob/living/U = user
-		U.apply_damage(15, BRUTE, pick(BODY_ZONE_L_ARM, BODY_ZONE_R_ARM))
-		to_chat(user, "<span class='warning'>BLOOD PRICE ACCEPTED. WITHDRAWING CREDITS FROM OFFSHORE FUND...</span>")
-		new /obj/item/holochip(user.drop_location(), 50)
+		U.apply_damage(25, BRUTE, pick(BODY_ZONE_L_ARM, BODY_ZONE_R_ARM))
+		to_chat(user, "<span class='warning'>BLOOD PRICE ACCEPTED. WITHDRAWING CREDITS FROM OFFSHORE FUND...</span>") //PENTEST OVERRIDE
+		pick(
+						new /obj/item/spacecash/bundle/mediumrand(user.drop_location()),
+						new /obj/item/spacecash/bundle/smallrand(user.drop_location()),
+						new /obj/item/holochip(user.drop_location(), 2500)) //PENTEST OVERRIDE - (user.drop_location(), 5000)
 	else
 		to_chat(user, "<span class='warning'>[src]'s savings account can't yet be accessed!</span>")
 
@@ -110,6 +127,10 @@
 			message = replacetextEx(message, " [key]", " [value]")
 
 	speech_args[SPEECH_MESSAGE] = trim(message)
+
+/*/obj/item/clothing/mask/spamton/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NODROP, CURSED_MASK_TRAIT) */ //PENTEST REMOVAL
 
 /obj/item/clothing/mask/pig
 	name = "pig mask"
@@ -147,12 +168,12 @@
 	clothing_flags = VOICEBOX_TOGGLABLE
 	modifies_speech = TRUE
 
-/obj/item/clothing/mask/frog/handle_speech(datum/source, list/speech_args) //whenever you speak
-	if(!(clothing_flags & VOICEBOX_DISABLED))
-		if(prob(5)) //sometimes, the angry spirit finds others words to speak.
-			speech_args[SPEECH_MESSAGE] = pick("HUUUUU!!","SMOOOOOKIN'!!","Hello my baby, hello my honey, hello my rag-time gal.", "Feels bad, man.", "GIT DIS GUY OFF ME!!" ,"SOMEBODY STOP ME!!", "NORMIES, GET OUT!!")
-		else
-			speech_args[SPEECH_MESSAGE] = pick("Ree!!", "Reee!!","REEE!!","REEEEE!!") //but its usually just angry gibberish,
+	equipping_sound = EQUIP_SOUND_VFAST_GENERIC
+	unequipping_sound = UNEQUIP_SOUND_VFAST_GENERIC
+	equip_delay_self = EQUIP_DELAY_MASK
+	equip_delay_other = EQUIP_DELAY_MASK * 1.5
+	strip_delay = EQUIP_DELAY_MASK * 1.5
+	equip_self_flags = EQUIP_ALLOW_MOVEMENT
 
 /obj/item/clothing/mask/frog/cursed
 	clothing_flags = NONE
@@ -175,6 +196,13 @@
 	flags_inv = HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	w_class = WEIGHT_CLASS_SMALL
 	modifies_speech = TRUE
+
+	equipping_sound = EQUIP_SOUND_VFAST_GENERIC
+	unequipping_sound = UNEQUIP_SOUND_VFAST_GENERIC
+	equip_delay_self = EQUIP_DELAY_MASK
+	equip_delay_other = EQUIP_DELAY_MASK * 1.5
+	strip_delay = EQUIP_DELAY_MASK * 1.5
+	equip_self_flags = EQUIP_ALLOW_MOVEMENT
 
 /obj/item/clothing/mask/cowmask/handle_speech(datum/source, list/speech_args)
 	if(!(clothing_flags & VOICEBOX_DISABLED))
@@ -200,6 +228,13 @@
 	w_class = WEIGHT_CLASS_SMALL
 	clothing_flags = VOICEBOX_TOGGLABLE
 
+	equipping_sound = EQUIP_SOUND_VFAST_GENERIC
+	unequipping_sound = UNEQUIP_SOUND_VFAST_GENERIC
+	equip_delay_self = EQUIP_DELAY_MASK
+	equip_delay_other = EQUIP_DELAY_MASK * 1.5
+	strip_delay = EQUIP_DELAY_MASK * 1.5
+	equip_self_flags = EQUIP_ALLOW_MOVEMENT
+
 /obj/item/clothing/mask/horsehead/handle_speech(datum/source, list/speech_args)
 	if(!(clothing_flags & VOICEBOX_DISABLED))
 		speech_args[SPEECH_MESSAGE] = pick("NEEIIGGGHHHH!", "NEEEIIIIGHH!", "NEIIIGGHH!", "HAAWWWWW!", "HAAAWWW!")
@@ -222,6 +257,13 @@
 	item_state = "rat"
 	flags_inv = HIDEFACE
 	flags_cover = MASKCOVERSMOUTH
+
+	equipping_sound = EQUIP_SOUND_VFAST_GENERIC
+	unequipping_sound = UNEQUIP_SOUND_VFAST_GENERIC
+	equip_delay_self = EQUIP_DELAY_MASK
+	equip_delay_other = EQUIP_DELAY_MASK * 1.5
+	strip_delay = EQUIP_DELAY_MASK * 1.5
+	equip_self_flags = EQUIP_ALLOW_MOVEMENT
 
 /obj/item/clothing/mask/rat/fox
 	name = "fox mask"

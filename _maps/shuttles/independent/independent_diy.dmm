@@ -427,7 +427,7 @@
 	},
 /obj/item/wallframe/intercom/wideband,
 /obj/item/circuitboard/machine/holopad,
-/obj/item/circuitboard/computer/cargo/express,
+/obj/item/circuitboard/computer/cargo,
 /turf/open/floor/plating/airless,
 /area/ship/construction)
 "Gb" = (

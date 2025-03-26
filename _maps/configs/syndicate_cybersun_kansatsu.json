@@ -3,7 +3,9 @@
 	"map_name": "Kansatsu-class Scout Courier",
 	"map_short_name": "Kansatsu-class",
 	"map_path": "_maps/shuttles/syndicate/syndicate_cybersun_kansatsu.dmm",
+	"faction": "/datum/faction/syndicate/cybersun",
 	"prefix": "CSSV",
+	"manufacturer": "UNKNOWN",
 	"description": "The Kansatsu-class is a Cybersun remodel of the old Type-S TerraGov Courier, rebuilt for rapid package ferrying and light surveillance operations in the Frontier. While fairly cramped, it excels at its design goals, with rapid surveys, scouting, and espionage flowing from its presence. Syndicate deployments typically include a deployment of 5, with a recommended max of 7. This is broken down into 1 captain, an intelligence officer for coordinating the field agents, an engineer, and 2 field agents. The simplicity of the hull has led to the ship becoming a widespread indicator of Syndicate interest in locations, and some models have found their way into private purchasers' hands.",
 	"tags": [
 		"Specialist"
@@ -37,8 +39,13 @@
 			"slots": 2
 		}
 	},
-	"limit": 2,
+	"limit": 1,
 	"starting_funds": 2000,
 	"enabled": true,
-	"space_spawn": false
+	"space_spawn": false,
+
+	"architect": "Erikafox",
+	"contributors": [
+		"No Contributors"
+	]
 }

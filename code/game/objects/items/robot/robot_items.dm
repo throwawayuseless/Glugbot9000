@@ -321,12 +321,12 @@
 				if(1)
 					C.confused += 5
 					C.stuttering += 10
-					C.Jitter(10)
+					C.set_jitter(10)
 				if(2)
 					C.Paralyze(40)
 					C.confused += 10
 					C.stuttering += 15
-					C.Jitter(25)
+					C.set_jitter(25)
 		playsound(get_turf(src), 'sound/machines/warning-buzzer.ogg', 130, 3)
 		cooldown = world.time + 600
 		user.log_message("used an emagged Cyborg Harm Alarm in [AREACOORD(user)]", LOG_ATTACK)
@@ -593,7 +593,7 @@
 	to_chat(user, "<span class='boldnotice'>You [active? "activate":"deactivate"] [src].</span>")
 
 /obj/item/borg/projectile_dampen/update_icon_state()
-	icon_state = "[initial(icon_state)][active]"
+	icon_state = "shield[active]"
 	return ..()
 
 /obj/item/borg/projectile_dampen/proc/activate_field()
@@ -856,7 +856,6 @@
 	. = ..()
 	var/mutable_appearance/arm = mutable_appearance(icon = icon, icon_state = "borg_beaker_apparatus_arm")
 	if(stored)
-		COMPILE_OVERLAYS(stored)
 		stored.pixel_x = 0
 		stored.pixel_y = 0
 		var/mutable_appearance/stored_copy = new /mutable_appearance(stored)
@@ -894,40 +893,6 @@
 	RegisterSignal(stored, COMSIG_ATOM_UPDATE_ICON, TYPE_PROC_REF(/atom, update_icon))
 	update_appearance()
 
-///Apparatus to allow Engineering/Sabo borgs to manipulate any material sheets.
-/obj/item/borg/apparatus/sheet_manipulator
-	name = "material manipulation apparatus"
-	desc = "An apparatus for carrying, deploying, and manipulating sheets of material. The device can also carry custom floor tiles."
-	icon_state = "borg_stack_apparatus"
-	storable = list(/obj/item/stack/sheet,
-					/obj/item/stack/tile)
-
-/obj/item/borg/apparatus/sheet_manipulator/Initialize(mapload)
-	update_appearance()
-	return ..()
-
-/obj/item/borg/apparatus/sheet_manipulator/update_overlays()
-	. = ..()
-	var/mutable_appearance/arm = mutable_appearance(icon, "borg_stack_apparatus_arm1")
-	if(stored)
-		stored.pixel_x = 0
-		stored.pixel_y = 0
-		arm.icon_state = "borg_stack_apparatus_arm2"
-		var/mutable_appearance/stored_copy = new /mutable_appearance(stored)
-		var/underscore = findtext(stored_copy.icon_state, "_")
-		if(underscore)
-			stored_copy.icon_state = initial(stored.icon_state) //how we use the icon_state of single sheets, even with full stacks
-		stored_copy.layer = FLOAT_LAYER
-		stored_copy.plane = FLOAT_PLANE
-		. += stored_copy
-	. += arm
-
-/obj/item/borg/apparatus/sheet_manipulator/examine()
-	. = ..()
-	if(stored)
-		. += "The apparatus currently has [stored] secured."
-	. += span_notice(" <i>Right click/i>  has an option to drop the stored sheets. ")
-
 ////////////////////
 //engi part holder//
 ////////////////////
@@ -947,7 +912,6 @@
 	. = ..()
 	var/mutable_appearance/arm = mutable_appearance(icon, "borg_hardware_apparatus_arm1")
 	if(stored)
-		COMPILE_OVERLAYS(stored)
 		stored.pixel_x = -3
 		stored.pixel_y = 0
 		if(!istype(stored, /obj/item/circuitboard))

@@ -13,7 +13,7 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/structure/fireaxecabinet{
+/obj/structure/cabinet/fireaxe{
 	dir = 8;
 	pixel_x = 32
 	},
@@ -145,6 +145,9 @@
 /area/ship/engineering/atmospherics)
 "cT" = (
 /obj/item/kirbyplants/random,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/science)
 "da" = (
@@ -542,6 +545,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
 	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/science)
 "kb" = (
@@ -558,6 +564,19 @@
 "kv" = (
 /obj/effect/turf_decal/corner/opaque/purple/border,
 /obj/structure/extinguisher_cabinet/directional/south,
+/obj/item/circuitboard/machine/mechfab,
+/obj/item/circuitboard/machine/protolathe/department/cargo,
+/obj/item/circuitboard/machine/experimentor,
+/obj/item/clothing/glasses/science/prescription,
+/obj/item/clothing/glasses/science,
+/obj/item/reagent_scanner,
+/obj/item/clothing/glasses/hud/diagnostic,
+/obj/item/circuitboard/machine/rdserver,
+/obj/item/circuitboard/machine/circuit_imprinter,
+/obj/structure/closet/crate/science,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/science)
 "kx" = (
@@ -582,7 +601,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "kY" = (
@@ -590,7 +609,7 @@
 	dir = 4
 	},
 /obj/structure/closet/crate,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/maintenance/three,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "ll" = (
@@ -611,8 +630,8 @@
 /obj/item/clothing/under/utility,
 /obj/item/clothing/under/utility/skirt,
 /obj/item/clothing/under/utility/skirt,
-/obj/item/bedsheet/dorms,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
+/obj/effect/spawner/random/bedsheet,
 /obj/item/clothing/suit/jacket/leather/duster,
 /obj/item/clothing/suit/jacket/leather/duster,
 /obj/item/clothing/suit/jacket/leather/duster,
@@ -738,9 +757,7 @@
 /obj/structure/bed{
 	dir = 1
 	},
-/obj/item/bedsheet/dorms{
-	dir = 1
-	},
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/bounty,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew)
@@ -842,9 +859,9 @@
 /area/ship/crew)
 "oA" = (
 /obj/structure/table/reinforced,
-/obj/effect/spawner/lootdrop/ration,
-/obj/effect/spawner/lootdrop/ration,
-/obj/item/kitchen/knife,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
+/obj/item/melee/knife/kitchen,
 /obj/item/kitchen/rollingpin,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew)
@@ -903,9 +920,7 @@
 /obj/structure/bed{
 	dir = 1
 	},
-/obj/item/bedsheet/dorms{
-	dir = 1
-	},
+/obj/effect/spawner/random/bedsheet,
 /obj/item/radio/intercom/directional/south,
 /turf/open/floor/carpet/red_gold,
 /area/ship/bridge)
@@ -1103,7 +1118,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/fore)
 "tQ" = (
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /obj/effect/decal/cleanable/oil,
 /obj/effect/turf_decal/number/five{
 	dir = 8
@@ -1182,6 +1197,9 @@
 	icon_state = "1-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/science)
 "vJ" = (
@@ -1275,7 +1293,7 @@
 /area/ship/bridge)
 "xF" = (
 /obj/machinery/atmospherics/pipe/simple/violet/visible,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "xI" = (
@@ -1303,16 +1321,10 @@
 /obj/effect/turf_decal/corner/opaque/purple/border{
 	dir = 10
 	},
-/obj/structure/closet/crate/science,
-/obj/item/circuitboard/machine/circuit_imprinter,
-/obj/item/circuitboard/machine/rdserver,
-/obj/item/reagent_scanner,
-/obj/item/clothing/glasses/hud/diagnostic,
-/obj/item/clothing/glasses/science,
-/obj/item/clothing/glasses/science/prescription,
-/obj/item/circuitboard/machine/experimentor,
-/obj/item/circuitboard/machine/protolathe/department/cargo,
-/obj/item/circuitboard/machine/mechfab,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/ship_gravity,
 /turf/open/floor/plasteel/white,
 /area/ship/science)
 "yw" = (
@@ -1515,7 +1527,7 @@
 /area/ship/bridge)
 "BV" = (
 /obj/structure/closet/crate,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/maintenance/three,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "Ca" = (
@@ -1935,6 +1947,9 @@
 /obj/effect/turf_decal/corner/opaque/purple/border{
 	dir = 6
 	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/science)
 "Jy" = (
@@ -2012,7 +2027,7 @@
 "Ko" = (
 /obj/effect/turf_decal/box/corners,
 /obj/structure/closet/cardboard,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/effect/spawner/random/maintenance/three,
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "Kx" = (
@@ -2097,7 +2112,7 @@
 /obj/item/pen/collectible/unionjack{
 	pixel_x = 9
 	},
-/obj/item/reagent_containers/food/drinks/britcup{
+/obj/item/reagent_containers/food/drinks/mug{
 	pixel_y = 11;
 	pixel_x = 2
 	},
@@ -2282,6 +2297,12 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/hallway/central)
+"Qi" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/white,
+/area/ship/science)
 "Qm" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
@@ -2656,9 +2677,7 @@
 	dir = 1
 	},
 /obj/structure/curtain/bounty,
-/obj/item/bedsheet/dorms{
-	dir = 1
-	},
+/obj/effect/spawner/random/bedsheet,
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew)
 "VT" = (
@@ -2824,7 +2843,7 @@
 /area/ship/engineering/atmospherics)
 "YL" = (
 /obj/machinery/firealarm/directional/south,
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/cargo{
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech/techmaint,
@@ -3265,7 +3284,7 @@ JV
 Vc
 vG
 ka
-FL
+Qi
 cT
 Mi
 bZ

@@ -37,10 +37,16 @@
 	var/token_type = /obj/overmap
 	/// The icon state the token will be set to on init.
 	var/token_icon_state = "object"
-	var/base_token_icon_state
+	var/base_token_icon_state //PENTEST ADDITION
 
 	/// The current docking ticket of this object, if any
 	var/datum/docking_ticket/current_docking_ticket
+
+	/// What's the lifespan of this event? If unset, effectively disables this features.
+	var/lifespan
+	/// The 'death time' of the object. Used for limited lifespan events.
+	var/death_time
+
 
 /datum/overmap/New(position, ...)
 	SHOULD_NOT_OVERRIDE(TRUE) // Use [/datum/overmap/proc/Initialize] instead.
@@ -66,7 +72,7 @@
 
 	Initialize(arglist(args))
 
-/datum/overmap/Destroy(force, ...)
+/datum/overmap/Destroy(force)
 	SSovermap.overmap_objects -= src
 	if(current_docking_ticket)
 		QDEL_NULL(current_docking_ticket)
@@ -78,7 +84,13 @@
 	token.parent = null
 	QDEL_NULL(token)
 	QDEL_LIST(contents)
+	if(lifespan)
+		STOP_PROCESSING(SSfastprocess, src)
 	return ..()
+
+/datum/overmap/process()
+	if(death_time < world.time && lifespan)
+		qdel(src)
 
 /**
  * This proc is called directly after New(). It's done after the basic creation and placement of the token and setup has been completed.

@@ -19,13 +19,14 @@
 	. = ..()
 	base_icon = "melon"
 	icon_state = base_icon
+
 /obj/item/seeds/voidmelon
 	name = "pack of voidmelon seeds"
 	desc = "These seeds grow into voidmelon plants."
 	icon_state = "seed-voidmelon"
 	species = "voidmelon"
 	plantname = "voidmelon Vines"
-	product = /obj/item/reagent_containers/food/snacks/grown/voidmelon
+	product = /obj/item/reagent_containers/food/snacks/grown/voidmelon //PENTEST FIXED
 	lifespan = 50
 	endurance = 40
 	growing_icon = 'icons/obj/hydroponics/growing_fruits.dmi'

@@ -3,8 +3,10 @@
 	"map_name": "Daniel-class Exploration Vessel",
 	"map_short_name": "Daniel-class",
 	"map_path": "_maps/shuttles/independent/independent_daniel.dmm",
+	"faction": "/datum/faction/independent",
 	"prefix": "SV",
-	"description": "The Daniel-class is daniels house, yea its just his house (It would be hilarious if you spawned this in while daniel was already in one).",
+	"manufacturer": "UNKNOWN",
+	"description": "The Daniel-class is a modified varient of the most common version communter shuttle on the market. This thing primarily existed in the SOL Systems, yet they seem to have become very much obsolute. The ship has been converted in such a way that is now a living space for Daniel Cola. Weird that you went into cryo space on it right? By the way this is only this long because I got tired of fighting with the github linters and decided to just keep writing until I passed that 250 character minimum... Think I passed it yet?",
 	"tags": [
 		"RP Focus"
 	],
@@ -30,6 +32,7 @@
 	"starting_funds": 6000,
 	"enabled": false,
 	"space_spawn": false,
+
 	"architect": "Daniel Cola",
 	"contributors": [
 		"No Contributors"

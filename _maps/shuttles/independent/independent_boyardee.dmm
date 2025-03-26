@@ -97,7 +97,7 @@
 	pixel_x = -25;
 	pixel_y = 1
 	},
-/obj/item/ammo_box/a357_box{
+/obj/item/storage/box/ammo/a357{
 	pixel_x = -4;
 	pixel_y = 0
 	},
@@ -248,7 +248,7 @@
 /area/ship/storage)
 "ej" = (
 /obj/structure/table/reinforced,
-/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /obj/effect/turf_decal/corner/opaque/white/half,
 /obj/effect/turf_decal/corner/opaque/white{
 	dir = 4
@@ -435,7 +435,7 @@
 /area/ship/crew)
 "hL" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/bounty,
 /turf/open/floor/wood/walnut,
 /area/ship/crew)
@@ -912,7 +912,7 @@
 /area/ship/maintenance)
 "qZ" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/bounty,
 /obj/effect/turf_decal/siding/wood{
 	dir = 1;
@@ -2309,7 +2309,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/structure/table/wood/poker,
-/obj/item/gun/ballistic/revolver/russian,
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew/canteen)
 "Of" = (
@@ -2339,7 +2338,7 @@
 /area/ship/crew/canteen/kitchen)
 "Qc" = (
 /obj/structure/table/reinforced,
-/obj/effect/spawner/lootdrop/ration,
+/obj/effect/spawner/random/food_or_drink/ration,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -2422,7 +2421,7 @@
 /area/ship/crew/canteen/kitchen)
 "RU" = (
 /obj/structure/bed,
-/obj/item/bedsheet/dorms,
+/obj/effect/spawner/random/bedsheet,
 /obj/structure/curtain/bounty,
 /obj/effect/turf_decal/siding/wood/corner{
 	color = "#543C30";
@@ -2714,10 +2713,10 @@
 /turf/open/floor/plating,
 /area/ship/maintenance)
 "VR" = (
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/cargo{
 	dir = 4
 	},
-/obj/item/ammo_box/a357_box{
+/obj/item/storage/box/ammo/a357{
 	pixel_x = -36;
 	pixel_y = 5
 	},

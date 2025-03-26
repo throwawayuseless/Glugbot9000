@@ -3,7 +3,9 @@
 	"map_name": "Hound-class Corvette",
 	"map_short_name": "Hound-class",
 	"map_path": "_maps/shuttles/inteq/inteq_hound.dmm",
+	"faction": "/datum/faction/inteq",
 	"prefix": "IRMV",
+	"manufacturer": "Hardline Salvage and Mining",
 	"description": "A light, fast picket and interceptor ship operated by Inteq Risk Management, the Hound offers modest crew space sufficient for a 3-man fireteam of Inteq enforcers, a small cargo bay, powerful engines, a well-stocked armory for its size, and little else. Hounds can typically be found on picket and patrol duty, escorting larger and more vulnerable IRMG ships, or performing any duty that calls for a lightning-fast ship and a handful of very well-armed individuals.",
 	"tags": [
 		"Combat"
@@ -32,5 +34,10 @@
 	"limit": 2,
 	"starting_funds": 2000,
 	"enabled": true,
-	"space_spawn": false
+	"space_spawn": false,
+
+	"architect": "Apogee-dev",
+	"contributors": [
+		"No Contributors"
+	]
 }

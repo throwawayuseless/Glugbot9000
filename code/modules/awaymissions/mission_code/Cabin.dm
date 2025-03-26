@@ -1,40 +1,3 @@
-
-/*Cabin areas*/
-/area/awaymission/cabin
-	name = "Cabin"
-	icon_state = "away2"
-	requires_power = TRUE
-	dynamic_lighting = DYNAMIC_LIGHTING_ENABLED
-
-/area/awaymission/cabin/snowforest
-	name = "Snow Forest"
-	icon_state = "away"
-	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
-
-/area/awaymission/cabin/snowforest/sovietsurface
-	name = "Snow Forest"
-	icon_state = "awaycontent29"
-	requires_power = FALSE
-
-/area/awaymission/cabin/lumbermill
-	name = "Lumbermill"
-	icon_state = "away3"
-	requires_power = FALSE
-	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
-
-/area/awaymission/cabin/caves/sovietcave
-	name = "Soviet Bunker"
-	icon_state = "awaycontent4"
-
-/area/awaymission/cabin/caves
-	name = "North Snowdin Caves"
-	icon_state = "awaycontent15"
-	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
-
-/area/awaymission/cabin/caves/mountain
-	name = "North Snowdin Mountains"
-	icon_state = "awaycontent24"
-
 /obj/structure/firepit
 	name = "firepit"
 	desc = "Warm and toasty."
@@ -102,10 +65,10 @@
 		new L.plank_type(src.loc, 1 + round(potency / 25))
 
 /mob/living/simple_animal/chicken/rabbit/normal
-	icon_state = "b_rabbit"
-	icon_living = "b_rabbit"
+	icon_state = "rabbit_brown"
+	icon_living = "rabbit_brown"
 	icon_dead = "b_rabbit_dead"
-	icon_prefix = "b_rabbit"
+	icon_prefix = "rabbit_brown"
 	minbodytemp = 0
 	eggsleft = 0
 	egg_type = null

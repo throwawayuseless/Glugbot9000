@@ -132,8 +132,8 @@ SUBSYSTEM_DEF(blackbox)
 			record_feedback("tally", "radio_usage", 1, "common")
 		if(FREQ_NANOTRASEN)
 			record_feedback("tally", "radio_usage", 1, "nanotrasen")
-		if(FREQ_COMMAND)
-			record_feedback("tally", "radio_usage", 1, "command")
+		if(FREQ_EMERGENCY)
+			record_feedback("tally", "radio_usage", 1, "emergency")
 		if(FREQ_MINUTEMEN)
 			record_feedback("tally", "radio_usage", 1, "minutemen")
 		if(FREQ_INTEQ)
@@ -146,14 +146,8 @@ SUBSYSTEM_DEF(blackbox)
 			record_feedback("tally", "radio_usage", 1, "pgf")
 		if(FREQ_CENTCOM)
 			record_feedback("tally", "radio_usage", 1, "centcom")
-		if(FREQ_TERRAGOV)		//WS/C Edit - TerraGov Rep
-			record_feedback("tally", "radio_usage", 1, "terragov")		//WS/C Edit - TerraGov Rep
-		if(FREQ_AI_PRIVATE)
-			record_feedback("tally", "radio_usage", 1, "ai private")
-		if(FREQ_CTF_RED)
-			record_feedback("tally", "radio_usage", 1, "CTF red team")
-		if(FREQ_CTF_BLUE)
-			record_feedback("tally", "radio_usage", 1, "CTF blue team")
+		if(FREQ_TERRAGOV)		//WS Edit - TerraGov Rep
+			record_feedback("tally", "radio_usage", 1, "terragov")		//WS Edit - TerraGov Rep
 		else
 			record_feedback("tally", "radio_usage", 1, "other")
 
