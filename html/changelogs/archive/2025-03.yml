@@ -166,3 +166,101 @@
 2025-03-18:
   Vect0r2:
   - code_imp: reduced unit test time
+2025-03-26:
+  Ossa88:
+  - admin: Lots of verbs were corrected
+  - code_imp: Updated workflows
+  - rscadd: Ruin - Ruin Tags Added
+  - rscadd: Ruin - Icemoon Lodge
+  - rscadd: Ruin - Icemoon Tesla Lab
+  - rscadd: Ruin - Lavaland Abandoned Listening Outpost
+  - rscadd: Ruin - Lavaland Crashed Starwalker
+  - rscadd: Ruin - Rockplanet Distillery
+  - rscadd: Ruin - Rockplanet Mining Installation
+  - rscadd: Ruin - Whitesand Cave Base
+  - rscadd: Ruin - Whitesands E11 Manufactory
+  - rscadd: Ruin - Wasteplanet ICW Base
+  - rscadd: Ruin - Wasteplanet Tradepost
+  - rscdel: Ruin - Lavaland Elephant Graveyard
+  - bugfix: Ruin - All Other Ruins Updated
+  - rscadd: Ruin - Wasteplanet Yard
+  - rscadd: Ship - Cybersun Cirrus
+  - rscadd: Ship - Cybersun Nimbus
+  - rscadd: Ship - Independent Atol
+  - rscadd: Ship - Independent Corona
+  - rscadd: Ship - Independent Falmouth
+  - rscadd: Ship - Independent Ivory
+  - rscadd: Ship - Independent Releigh
+  - rscadd: Ship - Independent Scarab
+  - rscadd: Ship - Minutemen Arke
+  - rscadd: Ship - Minutemen Atlas
+  - rscadd: Ship - Minutemen Vela
+  - rscadd: Ship - Nanotrasen Harrier
+  - rscadd: Ship - Nanotrasen Tegu
+  - rscadd: Ship - PGF Elated Bolide
+  - rscadd: Ship - PGF Woeful Cthonian
+  - rscadd: Ship - SRM Vagrant
+  - rscadd: Ship - Syndicate Hardliners Banshee
+  - rscadd: Ship - Syndicate NGR Derecho
+  - rscadd: Ship - Syndicate NGR Haboob
+  - rscadd: Ship - Syndicate NGR Kaliandhi
+  - rscadd: Ship - Syndicate Panacea
+  - bugfix: Ship - All Other Ships updated
+  - bugfix: Map - Central Command
+  - bugfix: Outpost - Independent Outpost Remapped w/ Hangars
+  - bugfix: Outpost - Players should no longer be able to to space
+  - bugfix: Outpost - Players should no longer be able to gain access to ERT rooms
+  - rscadd: Outpost - Nanotrasen Asteroid Outpost w/ Hangars
+  - rscadd: AI Controller for Monkey Behavior Tree
+  - rscadd: AI Controller for Corgi Behavior Tree
+  - rscadd: Atmos - CO, Ozone, SO2, Argon, Methane, Ammonia Gasses
+  - bugfix: Atmos - Rockplanet Ddjusted
+  - bugfix: Atmos - Icemoon Adjusted
+  - rscdel: Chat - Most forced says were removed
+  - balance: Chem - Some drugs were renamed
+  - rscadd: Chem - New chemicals added
+  - rscdel: DNA - Swedish, Chav, Elvis
+  - bugfix: Economy - SS13 Department Accounts removed, Credit System Enabled.
+  - rscdel: Emotes - Most forced emotes were removed
+  - bugfix: Factions - Factions are not defines. Allows Factional Cargo, RnD, and
+      more.
+  - bugfix: Food and Drink - Drinkening was removed. New Names and Descriptions for
+      some drinks.
+  - rscdel: Gamemode - Blob
+  - rscdel: Gamemode - Cult
+  - rscadd: Gear - Equipment Delay added to all gear (Pentest Soft Reverted)
+  - balance: Full Body Suits still have a Equipment Delay
+  - rscadd: Gear - Aim Down Sights on Guns
+  - rscadd: Gear - New Deconstruction Tools Added. Plasma Cutter, and Angle Grinder
+  - rscadd: Gear - Body Crameras
+  - balance: Gear - All Weapons were refactored, Rebalanced, Resprited, Everything.
+  - bugfix: Holiday - Re-enabled Easter
+  - bugfix: Magic - Fireball now fireballs
+  - bugfix: Mech - Odysseus was renamed (Pentest Soft Reverted)
+  - bugfix: Mech - Gygax was renamed (Pentest Soft Reverted)
+  - bugfix: Radio - Command Radio is now Emergency
+  - bugfix: Radio - :s for Syndi, :t for Terragov
+  - bugfix: Research - Experimental Survey Scanner no longer has printing requirement
+  - bugfix: Research - Elite and Experimental Survey have the same stats. Just Experimental
+      costs more due to bad printer design.
+  - bugfix: Research - BEPIS returns
+  - bugfix: Research - AI Boards returned
+  - bugfix: Research - Slightly updated Techweb
+  - rscadd: Species - Kepori can hold more things in beak
+  - rscadd: Species - IPC limbs now have integrity. Reduces max HP depending on the
+      amount if non surgical heals are used.
+  - rscadd: Species - Structural Repair Kit for Limb Integrity repair.
+  - bugfix: Storage - Bag Style is now Cosmetic, All carry the same.
+  - rscadd: Turrets - Smarter AI and Targeting. Factional Turrets
+  - rscadd: Removed From Shiptest - Vending machine with lots of Cosmetic Items Shiptest
+      Removed
+  - balance: Lots of crafting things were adjusted. New Items, and Removed Items.
+  - bugfix: Xenobiology - Made Modularized
+  - rscadd: Sound - Radio Sound
+  - rscadd: Sound - New Monkey Screechs
+  - rscadd: Sound - New Equip Sounds
+  - rscadd: Vending Machine - Medical Vending Machines sell Robotic Limb Repair kits
+  - rscadd: Vending Machine - Lots of Removed Costumes readded and placed in outposts.
+  - balance: THIS IS FAR FROM THE COMPLETE LIST OH MY GOD ITS OVER... ITS MERGED.
+  mc-oofert:
+  - code_imp: improved purchase ship ship images
