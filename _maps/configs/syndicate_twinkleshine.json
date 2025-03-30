@@ -59,13 +59,14 @@
 			"slots": 2
 		}
 	},
-	"limit": 1,
+	"limit": 0,
 	"starting_funds": 2000,
-	"enabled": false,
+	"enabled": true,
 	"space_spawn": false,
 
 	"architect": "rye-rice",
 	"contributors": [
 		"No Contributors"
-	]
+	],
+	"run_test": "false"
 }

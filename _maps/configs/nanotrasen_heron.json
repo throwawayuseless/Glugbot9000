@@ -79,13 +79,14 @@
 		"Janitor": 1,
 		"Assistant": 2
 	},
-	"limit": 1,
+	"limit": 0,
 	"starting_funds": 2000,
-	"enabled": false,
+	"enabled": true,
 	"space_spawn": false,
 
 	"architect": "Spockye",
 	"contributors": [
 		"No Contributors"
-	]
+	],
+	"run_test": "false"
 }
