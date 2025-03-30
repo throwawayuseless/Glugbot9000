@@ -7709,10 +7709,6 @@
 "LU" = (
 /turf/closed/indestructible/plastitanium/nodiagnonal,
 /area/outpost/hallway/central)
-"LW" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/closed/indestructible/plastitanium/nodiagnonal,
-/area/outpost/maintenance/central)
 "Ma" = (
 /obj/structure/chair/sofa/brown/old/left,
 /obj/effect/turf_decal/techfloor{
@@ -12203,7 +12199,7 @@ LU
 LU
 LU
 Np
-LW
+kt
 XQ
 Ga
 Np

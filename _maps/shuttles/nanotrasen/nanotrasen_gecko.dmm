@@ -238,8 +238,6 @@
 /turf/closed/wall,
 /area/ship/bridge)
 "bV" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/external)
 "ch" = (
@@ -794,10 +792,6 @@
 	},
 /obj/machinery/atmospherics/components/binary/pump,
 /turf/open/floor/plating,
-/area/ship/engineering/engine)
-"hn" = (
-/obj/effect/decal/fakelattice,
-/turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/engineering/engine)
 "hs" = (
 /obj/machinery/atmospherics/components/binary/valve/digital{
@@ -3631,10 +3625,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
-"Ki" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/maintenance/port)
 "Ko" = (
 /obj/structure/table/reinforced,
 /obj/machinery/microwave,
@@ -3759,10 +3749,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew)
-"LL" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/maintenance/starboard)
 "LU" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
@@ -5376,11 +5362,11 @@ oj
 GM
 dG
 AA
-hn
+Ug
 cK
 CF
 cK
-hn
+Ug
 TK
 UW
 GM
@@ -5452,10 +5438,10 @@ hu
 hu
 "}
 (7,1,1) = {"
-Ki
+tB
 wy
 xh
-Ki
+tB
 hu
 hu
 Ug
@@ -5478,7 +5464,7 @@ hu
 bV
 xh
 OQ
-LL
+wB
 "}
 (8,1,1) = {"
 tB
