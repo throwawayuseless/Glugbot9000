@@ -572,10 +572,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
-"dU" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/security)
 "dW" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/structure/sign/poster/official/build{
@@ -6885,7 +6881,7 @@ Ar
 nf
 qu
 CU
-dU
+CU
 CU
 Wr
 RI

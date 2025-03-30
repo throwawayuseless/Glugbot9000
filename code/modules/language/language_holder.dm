@@ -303,12 +303,14 @@ Key procs
 								/datum/language/moffic = list(LANGUAGE_ATOM),
 								/datum/language/calcic = list(LANGUAGE_ATOM),
 								/datum/language/spider = list(LANGUAGE_ATOM),
-								/datum/language/teceti_unified = list(LANGUAGE_ATOM))
+								/datum/language/teceti_unified = list(LANGUAGE_ATOM),
+/*								/datum/language/solarian = list(LANGUAGE_ATOM)*/) //PENTEST REMOVAL
 	spoken_languages = list(/datum/language/common = list(LANGUAGE_ATOM),
 							/datum/language/machine = list(LANGUAGE_ATOM),
 							/datum/language/draconic = list(LANGUAGE_ATOM),
 							/datum/language/moffic = list(LANGUAGE_ATOM),
-							/datum/language/teceti_unified = list(LANGUAGE_ATOM))
+							/datum/language/teceti_unified = list(LANGUAGE_ATOM),
+/*							/datum/language/solarian = list(LANGUAGE_ATOM)*/) //PENTEST REMOVAL
 
 /datum/language_holder/ipc
 	understood_languages = list(/datum/language/common = list(LANGUAGE_ATOM),
@@ -380,9 +382,9 @@ Key procs
 
 /datum/language_holder/human
 	understood_languages = list(/datum/language/common = list(LANGUAGE_ATOM),
-								/datum/language/solarian = list(LANGUAGE_ATOM))
+/*								/datum/language/solarian = list(LANGUAGE_ATOM)*/) //PENTEST REMOVAL
 	spoken_languages = list(/datum/language/common = list(LANGUAGE_ATOM),
-							/datum/language/solarian = list(LANGUAGE_ATOM))
+/*							/datum/language/solarian = list(LANGUAGE_ATOM)*/) //PENTEST REMOVAL
 
 /datum/language_holder/empty
 	understood_languages = list()

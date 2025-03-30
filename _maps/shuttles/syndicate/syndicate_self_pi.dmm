@@ -4510,10 +4510,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/cargo)
-"WQ" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/crew/cryo)
 "WV" = (
 /obj/structure/sign/poster/contraband/syndicate,
 /turf/closed/wall,
@@ -5089,7 +5085,7 @@ Aj
 "}
 (12,1,1) = {"
 Dh
-WQ
+OG
 rL
 Of
 aY
