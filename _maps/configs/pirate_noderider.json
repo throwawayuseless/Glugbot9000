@@ -36,9 +36,9 @@
 			"slots": 2
 		}
 	},
-	"limit": 0,
+	"limit": 2,
 	"starting_funds": 2000,
-	"enabled": true,
+	"enabled": false,
 	"space_spawn": true,
 
 	"architect": "Erikafox",

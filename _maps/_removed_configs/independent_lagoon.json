@@ -65,14 +65,13 @@
 			"slots": 10
 		}
 	},
-	"limit": 0,
+	"limit": 2,
 	"starting_funds": 3000,
-	"enabled": true,
+	"enabled": false,
 	"space_spawn": false,
 
 	"architect": "TypeVar",
 	"contributors": [
 		"No Contributors"
-	],
-	"run_test": "false"
+	]
 }

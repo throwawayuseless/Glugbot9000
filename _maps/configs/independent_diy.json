@@ -27,9 +27,9 @@
 			"slots": 4
 		}
 	},
-	"limit": 0,
+	"limit": 2,
 	"starting_funds": 0,
-	"enabled": true,
+	"enabled": false,
 	"space_spawn": false,
 
 	"architect": "Unknown",

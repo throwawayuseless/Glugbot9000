@@ -48,9 +48,9 @@
 			"slots": 3
 		}
 	},
-	"limit": 0,
+	"limit": 1,
 	"starting_funds": 2000,
-	"enabled": true,
+	"enabled": false,
 	"space_spawn": false,
 
 	"architect": "Blacklist897/Alexander Moore",
@@ -58,6 +58,5 @@
 		"Secc - Help setting up git",
 		"Ossa - Helped fixing the mistakes I made",
 		"Constellado - strongdmm help"
-	],
-	"run_test": "false"
+	]
 }

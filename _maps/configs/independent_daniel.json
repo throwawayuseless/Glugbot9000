@@ -28,9 +28,9 @@
 			"slots": 2
 		}
 	},
-	"limit": 0,
+	"limit": 1,
 	"starting_funds": 6000,
-	"enabled": true,
+	"enabled": false,
 	"space_spawn": false,
 
 	"architect": "Daniel Cola",
