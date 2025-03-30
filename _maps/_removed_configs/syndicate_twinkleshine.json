@@ -59,7 +59,7 @@
 			"slots": 2
 		}
 	},
-	"limit": 1,
+	"limit": 0,
 	"starting_funds": 2000,
 	"enabled": false,
 	"space_spawn": false,
