@@ -1029,7 +1029,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engines/starboard)
 "kG" = (
-/obj/machinery/porta_turret/ship/syndicate/weak{
+/obj/machinery/porta_turret/ship/ramzi/light{
 	dir = 5
 	},
 /turf/closed/wall/r_wall/syndicate,
@@ -1179,7 +1179,7 @@
 /turf/open/floor/plasteel,
 /area/ship/cargo)
 "mN" = (
-/obj/machinery/porta_turret/ship/syndicate/weak{
+/obj/machinery/porta_turret/ship/ramzi/light{
 	dir = 8
 	},
 /turf/closed/wall/r_wall/syndicate,
@@ -1676,7 +1676,7 @@
 /turf/closed/wall,
 /area/ship/bridge)
 "sw" = (
-/obj/machinery/porta_turret/ship/syndicate/weak,
+/obj/machinery/porta_turret/ship/ramzi/light,
 /turf/closed/wall/r_wall/syndicate,
 /area/ship/bridge)
 "sy" = (
@@ -2301,7 +2301,7 @@
 /turf/open/floor/engine/hull,
 /area/ship/external/dark)
 "zO" = (
-/obj/machinery/porta_turret/ship/syndicate/weak{
+/obj/machinery/porta_turret/ship/ramzi/light{
 	dir = 4
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
@@ -2535,7 +2535,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/science/robotics)
 "Cj" = (
-/obj/machinery/porta_turret/ship/syndicate/weak{
+/obj/machinery/porta_turret/ship/ramzi/light{
 	dir = 4
 	},
 /turf/closed/wall/r_wall/syndicate,
@@ -2807,7 +2807,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/port)
 "ER" = (
-/obj/machinery/porta_turret/ship/syndicate/weak{
+/obj/machinery/porta_turret/ship/ramzi/light{
 	dir = 1
 	},
 /turf/closed/wall/r_wall/syndicate,
@@ -4097,7 +4097,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/port)
 "Su" = (
-/obj/machinery/porta_turret/ship/syndicate/weak,
+/obj/machinery/porta_turret/ship/ramzi/light,
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/bridge)
 "SA" = (
@@ -4361,7 +4361,7 @@
 /area/ship/engineering/engines/starboard)
 "VC" = (
 /obj/structure/sign/number,
-/obj/machinery/porta_turret/ship/syndicate/weak{
+/obj/machinery/porta_turret/ship/ramzi/light{
 	dir = 1
 	},
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
