@@ -53,5 +53,10 @@
 	"limit": 1,
 	"starting_funds": 2000,
 	"enabled": true,
-	"space_spawn": false
+	"space_spawn": false,
+
+	"architect": "Spockye",
+	"contributors": [
+		"No Contributors"
+	]
 }
