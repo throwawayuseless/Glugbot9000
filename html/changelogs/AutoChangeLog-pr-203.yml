@@ -1,0 +1,4 @@
+author: Vect0r2
+changes:
+  - {balance: Ships start in apply mode}
+delete-after: true
