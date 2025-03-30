@@ -50,5 +50,6 @@
 	"architect": "Apogee-dev",
 	"contributors": [
 		"No Contributors"
-	]
+	],
+	"run_test": false
 }

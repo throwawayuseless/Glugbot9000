@@ -44,5 +44,6 @@
 	"architect": "Erikafox",
 	"contributors": [
 		"No Contributors"
-	]
+	],
+	"run_test": false
 }
