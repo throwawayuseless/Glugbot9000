@@ -88,5 +88,5 @@
 	"contributors": [
 		"No Contributors"
 	],
-	"run_test": "FALSE"
+	"run_test": false
 }
