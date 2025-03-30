@@ -91,7 +91,7 @@
 	if(AM in lift_load)
 		return
 	LAZYADD(lift_load, AM)
-	RegisterSignal(AM, COMSIG_PARENT_QDELETING, PROC_REF(RemoveItemFromPlat))
+	RegisterSignal(AM, COMSIG_PARENT_QDELETING, PROC_REF(PlatItemDeleted))
 
 /obj/structure/elevator_platform/proc/RemoveItemFromPlat(datum/source, atom/movable/AM)
 	SIGNAL_HANDLER
@@ -99,6 +99,10 @@
 		return
 	LAZYREMOVE(lift_load, AM)
 	UnregisterSignal(AM, COMSIG_PARENT_QDELETING)
+
+/obj/structure/elevator_platform/proc/PlatItemDeleted(datum/deleted, force)
+	SIGNAL_HANDLER
+	RemoveItemFromPlat(AM = deleted)
 
 /obj/structure/elevator_platform/proc/get_adj_platforms()
 	. = list()
