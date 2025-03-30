@@ -8091,7 +8091,7 @@
 	pixel_y = 9;
 	pixel_x = 8
 	},
-/obj/item/reagent_containers/food/drinks/soda_cans/tadrixx{
+/obj/item/reagent_containers/food/drinks/soda_cans/dr_gibb{
 	pixel_y = 20
 	},
 /turf/open/floor/plasteel/telecomms_floor,

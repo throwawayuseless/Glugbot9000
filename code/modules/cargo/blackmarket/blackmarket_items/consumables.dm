@@ -195,7 +195,7 @@
 	availability_prob = 80
 	unlimited =  TRUE
 
-/datum/blackmarket_item/consumable/vimukti
+/*/datum/blackmarket_item/consumable/vimukti
 	name = "Can of Vimukti"
 	desc = "This product was quietly discontinued after multiple health related incidents. But you aren't a coward, are you?"
 	item = /obj/item/reagent_containers/food/drinks/soda_cans/vimukti
@@ -204,7 +204,7 @@
 	price_max = 50
 	stock_min = 10
 	stock_max = 20
-	availability_prob = 50
+	availability_prob = 50*/
 
 /datum/blackmarket_item/consumable/sutures
 	name = "Sutures"
