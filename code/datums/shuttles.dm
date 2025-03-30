@@ -45,7 +45,7 @@
 	var/spawn_time_coeff = 1
 	var/officer_time_coeff = 1
 
-	var/run_test = TRUE //PENTEST EDIT
+	var/skip_checks = FALSE //PENTEST EDIT
 	var/static/list/outfits
 
 /datum/map_template/shuttle/proc/prerequisites_met()

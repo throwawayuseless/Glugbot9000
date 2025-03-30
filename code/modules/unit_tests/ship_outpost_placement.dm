@@ -3,7 +3,7 @@
 	// disabled or intended as subshuttles
 	for(var/name as anything in SSmapping.shuttle_templates)
 		var/datum/map_template/shuttle/map = SSmapping.shuttle_templates[name]
-		if(!map.run_test || !map.enabled) //Pentest edit
+		if(map.skip_checks || !map.enabled) //Pentest edit
 			continue //Pentest edit
 		log_test("Loading [map.name]")
 		try
