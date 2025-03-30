@@ -3,7 +3,7 @@
 	// disabled or intended as subshuttles
 	for(var/name as anything in SSmapping.shuttle_templates)
 		var/datum/map_template/shuttle/map = SSmapping.shuttle_templates[name]
-		if(!map.run_test) //PENTEST - NO MORE DISABLED SHIPS -OSSA
+		if(map.run_test = TRUE) //PENTEST - NO MORE DISABLED SHIPS -OSSA
 			continue //Pentest edit
 		log_test("Loading [map.name]")
 		try
