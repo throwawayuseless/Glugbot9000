@@ -29,7 +29,7 @@
 	},
 	"limit": 0,
 	"starting_funds": 0,
-	"enabled": false,
+	"enabled": true,
 	"space_spawn": false,
 
 	"architect": "Unknown",
