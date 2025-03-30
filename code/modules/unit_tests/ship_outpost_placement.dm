@@ -4,7 +4,7 @@
 	for(var/name as anything in SSmapping.shuttle_templates)
 		var/datum/map_template/shuttle/map = SSmapping.shuttle_templates[name]
 		if(map.skip_checks || !map.enabled) //Pentest edit
-            log_world("Skipping [map.name] because it's admin spawn or skipped") //Pentest edit
+            log_test("Skipping [map.name] because it's admin spawn or skipped") //Pentest edit
 			continue //Pentest edit
 		log_test("Loading [map.name]")
 		try
