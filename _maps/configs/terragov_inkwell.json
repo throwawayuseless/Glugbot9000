@@ -32,27 +32,32 @@
 		},
 		"Shock Trooper": {
 			"outfit": "/datum/outfit/job/terragov/shocktrooper",
-			"slots": 3
+			"slots": 2
 		},
 		"Ship Engineer": {
 			"outfit": "/datum/outfit/job/terragov/engineer",
-			"slots": 2
+			"slots": 1
 		},
 		"Field Engineer": {
 			"outfit": "/datum/outfit/job/terragov/miner",
-			"slots": 3
+			"slots": 2
 		},
 		"Bureaucrat": {
 			"outfit": "/datum/outfit/job/terragov/bureaucrat",
-			"slots": 2
+			"slots": 1
 		},
 		"Scribe": {
 			"outfit": "/datum/outfit/job/terragov/assistant",
-			"slots" : 6
+			"slots" : 2
 		}
 	},
 	"limit": 1,
 	"starting_funds": 2000,
 	"enabled": true,
-	"space_spawn": false
+	"space_spawn": false,
+
+	"architect": "Imaginos16",
+	"contributors": [
+		"No Contributors"
+	]
 }
