@@ -380,9 +380,6 @@
 	},
 /obj/effect/turf_decal/industrial/warning,
 /obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/structure/cable{
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/tech/techmaint,
@@ -1355,24 +1352,9 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "IJ" = (
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/rack,
-/obj/item/chameleon,
-/obj/item/chameleon,
-/obj/machinery/door/window/brigdoor{
-	name = "Gear Stowage";
-	req_access_txt = "1"
-	},
 /obj/structure/sign/poster/contraband/masked_men{
 	pixel_y = 32
 	},
-/obj/item/storage/box/syndie_kit/chameleon,
-/obj/item/storage/box/syndie_kit/chameleon,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/hallway/central)
 "Jp" = (
@@ -1844,8 +1826,6 @@
 /obj/structure/safe/floor{
 	number_of_tumblers = 3
 	},
-/obj/item/implanter/stealth,
-/obj/item/implanter/stealth,
 /obj/item/modular_computer/laptop/preset/civilian,
 /obj/item/clothing/mask/chameleon,
 /obj/item/melee/knife/combat,

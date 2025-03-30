@@ -1,4 +1,9 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/obj/machinery/conveyor/auto/outpost,
+/obj/effect/landmark/outpost/hangar_crate_spawner,
+/turf/open/floor/plasteel/tech,
+/area/hangar)
 "ae" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 8
@@ -143,6 +148,12 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
+"ga" = (
+/obj/machinery/conveyor/auto/outpost{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech,
+/area/hangar)
 "hB" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -214,6 +225,10 @@
 /turf/open/floor/concrete/slab_1{
 	planetary_atmos = 1
 	},
+/area/hangar)
+"jO" = (
+/obj/structure/sign/departments/cargo,
+/turf/closed/indestructible/reinforced,
 /area/hangar)
 "kK" = (
 /obj/effect/turf_decal/siding/wood/corner{
@@ -377,6 +392,9 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
+"qj" = (
+/turf/closed/indestructible/rock/schist,
+/area/hangar)
 "qD" = (
 /obj/machinery/light/floor/hangar,
 /obj/effect/turf_decal/trimline/opaque/yellow/filled/arrow_ccw,
@@ -491,6 +509,12 @@
 /turf/open/floor/carpet/red{
 	planetary_atmos = 1
 	},
+/area/hangar)
+"ui" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/closed/indestructible/reinforced,
 /area/hangar)
 "uz" = (
 /obj/effect/turf_decal/industrial/traffic/corner{
@@ -633,6 +657,23 @@
 	icon_state = "foam_plating";
 	planetary_atmos = 1
 	},
+/area/hangar)
+"Am" = (
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
+/obj/machinery/conveyor/auto/outpost{
+	dir = 1
+	},
+/obj/structure/disposaloutlet{
+	dir = 1
+	},
+/turf/open/floor/plasteel/tech,
+/area/hangar)
+"As" = (
+/obj/machinery/conveyor/auto/outpost,
+/obj/structure/plasticflaps/outpost,
+/turf/open/floor/plasteel/tech,
 /area/hangar)
 "AT" = (
 /obj/effect/turf_decal/trimline/opaque/yellow/warning{
@@ -801,6 +842,10 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
+"GY" = (
+/obj/effect/turf_decal/industrial/hatch/yellow,
+/turf/open/floor/plasteel/tech,
+/area/hangar)
 "Hs" = (
 /obj/structure/rack,
 /obj/effect/spawner/random/maintenance,
@@ -863,6 +908,13 @@
 /turf/open/floor/concrete/slab_1{
 	planetary_atmos = 1
 	},
+/area/hangar)
+"Iq" = (
+/obj/machinery/conveyor/auto/outpost{
+	dir = 6;
+	verted = -1
+	},
+/turf/open/floor/plasteel/tech,
 /area/hangar)
 "Is" = (
 /obj/structure/railing{
@@ -1075,6 +1127,13 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
+"Ot" = (
+/obj/structure/plasticflaps/outpost,
+/obj/machinery/conveyor/auto/outpost{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech,
+/area/hangar)
 "OB" = (
 /obj/effect/turf_decal/trimline/opaque/yellow/filled/arrow_ccw{
 	dir = 8
@@ -1259,6 +1318,23 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
+"Tj" = (
+/obj/machinery/disposal/deliveryChute{
+	dir = 1
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech,
+/area/hangar)
+"To" = (
+/obj/structure/plasticflaps/outpost,
+/obj/machinery/conveyor/auto/outpost{
+	dir = 5;
+	verted = -1
+	},
+/turf/open/floor/plasteel/tech,
+/area/hangar)
 "Tt" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
@@ -1269,6 +1345,13 @@
 /turf/open/floor/carpet/red{
 	planetary_atmos = 1
 	},
+/area/hangar)
+"TJ" = (
+/obj/machinery/light/dim/directional/north,
+/obj/machinery/conveyor/auto/outpost{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech,
 /area/hangar)
 "TU" = (
 /obj/structure/rack{
@@ -1415,6 +1498,12 @@
 /turf/open/floor/plasteel/dark{
 	planetary_atmos = 1
 	},
+/area/hangar)
+"ZY" = (
+/obj/machinery/conveyor/auto/outpost{
+	dir = 10
+	},
+/turf/open/floor/plasteel/tech,
 /area/hangar)
 
 (1,1,1) = {"
@@ -1581,9 +1670,9 @@ eH
 "}
 (4,1,1) = {"
 eH
-UY
-UY
-UY
+qj
+qj
+qj
 lk
 AT
 AT
@@ -1628,15 +1717,15 @@ AT
 AT
 AT
 Iy
-UY
-UY
-UY
+qj
+qj
+qj
 eH
 "}
 (5,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Rn
 fd
 cj
@@ -1683,14 +1772,14 @@ ca
 cj
 KQ
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (6,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Df
 rw
 cj
@@ -1737,14 +1826,14 @@ cj
 cj
 hL
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (7,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 IV
 rw
 jF
@@ -1791,14 +1880,14 @@ cj
 jF
 NC
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (8,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Lc
 JM
 cj
@@ -1846,13 +1935,13 @@ cj
 hL
 VV
 eH
-UY
+qj
 eH
 "}
 (9,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Rn
 JM
 cj
@@ -1899,13 +1988,13 @@ cj
 cj
 op
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (10,1,1) = {"
 eH
-UY
+qj
 eH
 Df
 rw
@@ -1953,14 +2042,14 @@ cj
 cj
 hL
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (11,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 IV
 fd
 cj
@@ -2007,14 +2096,14 @@ cj
 cj
 KQ
 VV
-UY
-UY
+qj
+qj
 eH
 "}
 (12,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Lc
 rw
 jF
@@ -2061,14 +2150,14 @@ cj
 jF
 NC
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (13,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 uz
 rw
 cj
@@ -2115,14 +2204,14 @@ cj
 cj
 NC
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (14,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Df
 JM
 cj
@@ -2169,14 +2258,14 @@ cj
 cj
 hL
 DT
-UY
-UY
+qj
+qj
 eH
 "}
 (15,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Df
 JM
 cj
@@ -2223,14 +2312,14 @@ cj
 cj
 hL
 VV
-UY
-UY
+qj
+qj
 eH
 "}
 (16,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Lc
 rw
 cj
@@ -2277,14 +2366,14 @@ cj
 cj
 op
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (17,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 uz
 fd
 jF
@@ -2331,14 +2420,14 @@ cj
 jF
 KQ
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (18,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Df
 rw
 cj
@@ -2386,13 +2475,13 @@ cj
 hL
 yL
 eH
-UY
+qj
 eH
 "}
 (19,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Df
 rw
 cj
@@ -2439,14 +2528,14 @@ cj
 cj
 hL
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (20,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 ZX
 JM
 cj
@@ -2493,14 +2582,14 @@ cj
 cj
 NC
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (21,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Rn
 JM
 cj
@@ -2547,14 +2636,14 @@ cj
 cj
 op
 VV
-UY
-UY
+qj
+qj
 eH
 "}
 (22,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Df
 rw
 jF
@@ -2601,14 +2690,14 @@ cj
 jF
 hL
 DT
-UY
-UY
+qj
+qj
 eH
 "}
 (23,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Df
 fd
 cj
@@ -2655,14 +2744,14 @@ cj
 cj
 KQ
 DT
-UY
-UY
+qj
+qj
 eH
 "}
 (24,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Lc
 rw
 cj
@@ -2709,14 +2798,14 @@ cj
 cj
 NC
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (25,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 uz
 rw
 cj
@@ -2763,14 +2852,14 @@ cj
 cj
 NC
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (26,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 IV
 JM
 cj
@@ -2817,13 +2906,13 @@ cj
 cj
 NC
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (27,1,1) = {"
 eH
-UY
+qj
 eH
 Df
 JM
@@ -2871,14 +2960,14 @@ cj
 jF
 hL
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (28,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 ZX
 rw
 cj
@@ -2925,14 +3014,14 @@ cj
 cj
 hL
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (29,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Rn
 fd
 cj
@@ -2979,14 +3068,14 @@ cj
 cj
 KQ
 VV
-UY
-UY
+qj
+qj
 eH
 "}
 (30,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Df
 rw
 cj
@@ -3033,14 +3122,14 @@ cj
 cj
 NC
 VV
-UY
-UY
+qj
+qj
 eH
 "}
 (31,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Df
 rw
 cj
@@ -3087,14 +3176,14 @@ cj
 cj
 NC
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (32,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Lc
 JM
 jF
@@ -3141,14 +3230,14 @@ cj
 jF
 NC
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (33,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Rn
 JM
 cj
@@ -3195,14 +3284,14 @@ cj
 cj
 hL
 VV
-UY
-UY
+qj
+qj
 eH
 "}
 (34,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Df
 rw
 cj
@@ -3250,13 +3339,13 @@ cj
 hL
 VV
 eH
-UY
+qj
 eH
 "}
 (35,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Df
 fd
 cj
@@ -3303,14 +3392,14 @@ cj
 cj
 KQ
 VV
-UY
-UY
+qj
+qj
 eH
 "}
 (36,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 ZX
 rw
 cj
@@ -3357,14 +3446,14 @@ cj
 cj
 NC
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (37,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Rn
 rw
 jF
@@ -3411,13 +3500,13 @@ cj
 jF
 NC
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (38,1,1) = {"
 eH
-UY
+qj
 eH
 Df
 JM
@@ -3465,14 +3554,14 @@ cj
 cj
 NC
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (39,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Df
 JM
 cj
@@ -3519,14 +3608,14 @@ cj
 cj
 hL
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (40,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 ZX
 rw
 cj
@@ -3579,8 +3668,8 @@ eH
 "}
 (41,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Rn
 fd
 cj
@@ -3633,8 +3722,8 @@ eH
 "}
 (42,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Df
 rw
 jF
@@ -3687,8 +3776,8 @@ eH
 "}
 (43,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Df
 rw
 cj
@@ -3735,14 +3824,14 @@ cj
 cj
 NC
 bx
-UY
-UY
+qj
+qj
 eH
 "}
 (44,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 ZX
 JM
 cj
@@ -3789,14 +3878,14 @@ cj
 cj
 NC
 bx
-UY
-UY
+qj
+qj
 eH
 "}
 (45,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Rn
 JM
 cj
@@ -3843,14 +3932,14 @@ cj
 cj
 hL
 bx
-UY
-UY
+qj
+qj
 eH
 "}
 (46,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Df
 rw
 cj
@@ -3897,14 +3986,14 @@ cj
 cj
 hL
 jI
-UY
-UY
+qj
+qj
 eH
 "}
 (47,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Df
 fd
 jF
@@ -3952,13 +4041,13 @@ jF
 KQ
 bx
 eH
-UY
+qj
 eH
 "}
 (48,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 ZX
 rw
 cj
@@ -4005,14 +4094,14 @@ cj
 cj
 NC
 bx
-UY
-UY
+qj
+qj
 eH
 "}
 (49,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Rn
 rw
 cj
@@ -4059,14 +4148,14 @@ cj
 cj
 NC
 bx
-UY
-UY
+qj
+qj
 eH
 "}
 (50,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Df
 JM
 cj
@@ -4113,14 +4202,14 @@ cj
 cj
 sn
 jI
-UY
-UY
+qj
+qj
 eH
 "}
 (51,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Df
 JM
 cj
@@ -4167,14 +4256,14 @@ cj
 cj
 hL
 bx
-UY
-UY
+qj
+qj
 eH
 "}
 (52,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 ZX
 rw
 jF
@@ -4221,14 +4310,14 @@ cj
 jF
 hL
 lN
-UY
-UY
+qj
+qj
 eH
 "}
 (53,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Rn
 qD
 cj
@@ -4275,14 +4364,14 @@ cj
 cj
 KQ
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (54,1,1) = {"
 eH
-UY
-UY
+qj
+qj
 Df
 rw
 cj
@@ -4329,15 +4418,15 @@ cj
 cj
 NC
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (55,1,1) = {"
 eH
-UY
-eH
-Df
+qj
+qj
+jO
 rw
 cj
 cj
@@ -4383,15 +4472,15 @@ cj
 cj
 NC
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (56,1,1) = {"
 eH
-UY
-UY
-ZX
+qj
+qj
+GY
 JM
 cj
 cj
@@ -4443,9 +4532,9 @@ eH
 "}
 (57,1,1) = {"
 eH
-UY
-UY
-Rn
+qj
+qj
+ga
 JM
 jF
 cj
@@ -4497,9 +4586,9 @@ eH
 "}
 (58,1,1) = {"
 eH
-UY
-UY
-Df
+eH
+eH
+TJ
 rw
 cj
 cj
@@ -4551,9 +4640,9 @@ eH
 "}
 (59,1,1) = {"
 eH
-UY
-UY
-Df
+eH
+eH
+ga
 fd
 cj
 cj
@@ -4605,9 +4694,9 @@ eH
 "}
 (60,1,1) = {"
 eH
-UY
-UY
-ZX
+To
+As
+ZY
 rw
 cj
 cj
@@ -4659,9 +4748,9 @@ eH
 "}
 (61,1,1) = {"
 eH
-UY
-UY
-yL
+Ot
+eH
+eH
 Bp
 OB
 OB
@@ -4708,14 +4797,14 @@ vg
 GW
 yL
 Is
-UY
+qj
 eH
 "}
 (62,1,1) = {"
 eH
-UY
-UY
-yL
+Iq
+Am
+eH
 yL
 yL
 yL
@@ -4761,35 +4850,35 @@ yL
 DT
 yL
 yL
-UY
-UY
+qj
+qj
 eH
 "}
 (63,1,1) = {"
 eH
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
+eH
+ui
+eH
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
 eH
 eH
 eH
@@ -4797,54 +4886,54 @@ eH
 hB
 au
 Fs
-UY
-UY
+qj
+qj
 eH
 eH
 Ji
 Ji
 Ji
 eH
-UY
-UY
+qj
+qj
 iT
 au
 YV
-UY
-UY
-UY
-UY
-UY
-UY
-UY
+qj
+qj
+qj
+qj
+qj
+qj
+qj
 eH
 "}
 (64,1,1) = {"
 eH
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
-UY
+aa
+Tj
+eH
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
+qj
 eH
 Gj
 eH
@@ -4852,25 +4941,25 @@ Pj
 NV
 ae
 Ky
-UY
-UY
+qj
+qj
 eH
-UY
-UY
-UY
+qj
+qj
+qj
 eH
-UY
+qj
 Io
 wm
 NV
 YV
 BX
-UY
-UY
-UY
-UY
-UY
-UY
+qj
+qj
+qj
+qj
+qj
+qj
 eH
 "}
 (65,1,1) = {"
@@ -4897,8 +4986,8 @@ eH
 eH
 eH
 eH
-UY
-UY
+qj
+qj
 eH
 eH
 eH
@@ -4907,7 +4996,7 @@ lI
 nD
 Pg
 Ky
-UY
+qj
 eH
 Ji
 Ji
@@ -4920,8 +5009,8 @@ jj
 Sh
 mK
 Ag
-UY
-UY
+qj
+qj
 eH
 eH
 eH
@@ -4951,8 +5040,8 @@ wp
 wp
 wp
 eH
-UY
-UY
+qj
+qj
 LD
 LD
 Rz
@@ -4974,8 +5063,8 @@ Sh
 Dk
 OL
 On
-UY
-UY
+qj
+qj
 eH
 wp
 wp
@@ -5005,9 +5094,9 @@ wp
 wp
 wp
 eH
-UY
-UY
-UY
+qj
+qj
+qj
 LD
 qR
 Rz
@@ -5028,8 +5117,8 @@ OL
 Il
 Dk
 On
-UY
-UY
+qj
+qj
 eH
 wp
 wp
@@ -5059,9 +5148,9 @@ wp
 wp
 wp
 eH
-UY
-UY
-UY
+qj
+qj
+qj
 LD
 LD
 LD
@@ -5083,7 +5172,7 @@ OL
 Sq
 Ig
 rT
-UY
+qj
 eH
 wp
 wp
@@ -5114,9 +5203,9 @@ wp
 wp
 eH
 eH
-UY
-UY
-UY
+qj
+qj
+qj
 LD
 LD
 LD
@@ -5169,7 +5258,7 @@ wp
 wp
 eH
 eH
-UY
+qj
 eH
 Nt
 LD

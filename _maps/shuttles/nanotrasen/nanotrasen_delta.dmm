@@ -412,10 +412,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
-"bW" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/engineering)
 "bY" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1118,10 +1114,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
-"dV" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/science/robotics)
 "em" = (
 /obj/machinery/power/shuttle/engine/fueled/plasma{
 	dir = 4
@@ -3176,7 +3168,7 @@ ai
 aC
 sp
 QH
-bW
+ai
 bB
 bB
 bB
@@ -3446,7 +3438,7 @@ HJ
 HJ
 Ni
 HJ
-dV
+HJ
 HJ
 "}
 (20,1,1) = {"

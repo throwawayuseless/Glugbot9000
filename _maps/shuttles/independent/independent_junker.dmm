@@ -1518,7 +1518,6 @@
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "AR" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/disposalpipe/segment{
 	dir = 8
 	},
@@ -1706,7 +1705,6 @@
 	},
 /area/ship/maintenance/starboard)
 "EH" = (
-/obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/r_wall,
 /area/ship/storage)
 "EM" = (
@@ -2726,11 +2724,6 @@
 	},
 /turf/open/floor/pod/dark,
 /area/ship/crew/office)
-"YS" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/blood/old,
-/turf/closed/wall/rust,
-/area/ship/construction)
 "YU" = (
 /obj/effect/decal/cleanable/blood/footprints{
 	dir = 4
@@ -2992,7 +2985,7 @@ qc
 eS
 Ma
 ua
-YS
+IE
 yz
 Wv
 qm
