@@ -1,5 +1,0 @@
-author: Vect0r2
-changes:
-  - {code_imp: do_checks -> skip_checks}
-  - {code_imp: skip_checks works}
-delete-after: true
