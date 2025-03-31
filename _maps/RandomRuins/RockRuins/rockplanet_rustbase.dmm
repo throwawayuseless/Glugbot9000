@@ -58,9 +58,6 @@
 /obj/machinery/atmospherics/pipe/simple/brown/hidden/layer4{
 	dir = 4
 	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
 /turf/open/floor/plating/rust,
 /area/ruin/rockplanet/rust_base/hallway2)
 "aJ" = (
@@ -235,9 +232,6 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/brown/hidden/layer4{
 	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "1-8"
 	},
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 8
@@ -1366,6 +1360,9 @@
 	pixel_x = 8;
 	pixel_y = 3
 	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
 /turf/open/floor/plating,
 /area/ruin/rockplanet/rust_base/hallway)
 "ne" = (
@@ -1374,9 +1371,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/cyan/hidden/layer2{
 	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
 	},
 /turf/open/floor/plating/rust,
 /area/ruin/rockplanet/rust_base/hallway2)
@@ -2807,9 +2801,6 @@
 /area/ruin/rockplanet/rust_base/dorms)
 "BN" = (
 /obj/structure/table/reinforced,
-/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/layer2{
-	dir = 8
-	},
 /obj/item/radio/intercom/wideband/table{
 	dir = 4;
 	pixel_y = 5
@@ -2817,6 +2808,9 @@
 /obj/item/radio/intercom/table{
 	dir = 4;
 	pixel_y = -10
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 8
 	},
 /turf/open/floor/plasteel/white,
 /area/ruin/rockplanet/rust_base/bridge)
@@ -2904,15 +2898,15 @@
 /turf/open/floor/plasteel/patterned,
 /area/ruin/rockplanet/rust_base/hallway)
 "CF" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/cyan/hidden/layer2{
 	dir = 6
 	},
 /obj/machinery/atmospherics/pipe/simple/brown/hidden/layer4{
 	dir = 6
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
 	},
 /turf/open/floor/plating/rust,
 /area/ruin/rockplanet/rust_base/hallway2)
@@ -3422,10 +3416,6 @@
 /obj/machinery/atmospherics/pipe/simple/cyan/hidden/layer2{
 	dir = 5
 	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/machinery/power/apc/auto_name/directional/west,
 /turf/open/floor/carpet/red,
 /area/ruin/rockplanet/rust_base/hallway2)
 "Hh" = (
@@ -5147,9 +5137,6 @@
 /obj/machinery/atmospherics/pipe/simple/brown/hidden/layer4{
 	dir = 4
 	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
 /turf/open/floor/plating,
 /area/ruin/rockplanet/rust_base/hallway2)
 "YK" = (
@@ -5238,6 +5225,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/brown/hidden/layer4{
 	dir = 9
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/rockplanet/rust_base/hallway2)
