@@ -236,8 +236,8 @@ SUBSYSTEM_DEF(mapping)
 		if(istext(data["description"]))
 			S.description = data["description"]
 
-		if(istext(data["run_test"])) //Pentest edit
-			S.run_test = data["run_test"] //Pentest edit
+		if(istext(data["skip_checks"]) && isnum(data["skip_checks"])) //Pentest edit
+			S.skip_checks = TRUE //Pentest edit
 
 		if(islist(data["tags"]))
 			S.tags = data["tags"]
