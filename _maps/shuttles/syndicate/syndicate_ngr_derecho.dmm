@@ -169,15 +169,15 @@
 "bM" = (
 /obj/structure/chair/handrail,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
-/obj/item/reagent_containers/food/drinks/soda_cans/xeno_energy{
+/obj/item/reagent_containers/food/drinks/soda_cans/monkey_energy{
 	pixel_x = -4;
 	pixel_y = 14
 	},
-/obj/item/reagent_containers/food/drinks/soda_cans/xeno_energy{
+/obj/item/reagent_containers/food/drinks/soda_cans/monkey_energy{
 	pixel_x = 6;
 	pixel_y = 9
 	},
-/obj/item/reagent_containers/food/drinks/soda_cans/pacfuel{
+/obj/item/reagent_containers/food/drinks/soda_cans/pwr_game{
 	pixel_x = -3;
 	pixel_y = 2
 	},
@@ -1480,7 +1480,7 @@
 	pixel_x = 20;
 	pixel_y = -3
 	},
-/obj/item/reagent_containers/food/drinks/soda_cans/pacfuel{
+/obj/item/reagent_containers/food/drinks/soda_cans/pwr_game{
 	pixel_x = 10;
 	pixel_y = 16
 	},
@@ -2239,15 +2239,15 @@
 /obj/structure/chair/plastic{
 	dir = 4
 	},
-/obj/item/reagent_containers/food/drinks/soda_cans/xeno_energy{
+/obj/item/reagent_containers/food/drinks/soda_cans/monkey_energy{
 	pixel_x = -2;
 	pixel_y = 20
 	},
-/obj/item/reagent_containers/food/drinks/soda_cans/pacfuel{
+/obj/item/reagent_containers/food/drinks/soda_cans/pwr_game{
 	pixel_x = 9;
 	pixel_y = 17
 	},
-/obj/item/reagent_containers/food/drinks/soda_cans/crosstalk{
+/obj/item/reagent_containers/food/drinks/soda_cans/grey_bull{
 	pixel_x = 3;
 	pixel_y = 14
 	},
