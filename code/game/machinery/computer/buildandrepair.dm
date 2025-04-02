@@ -122,10 +122,11 @@
 				var/obj/machinery/computer/built_comp = new circuit.build_path (loc, circuit)
 				built_comp.setDir(dir)
 				transfer_fingerprints_to(built_comp)
-				if(!built_comp.unique_icon)
-					built_comp.icon = built_icon
-					built_comp.icon_state = built_icon_state
-				built_comp.deconpath = deconpath
+				if(istype(built_comp)) // i hate solars
+					if(!built_comp.unique_icon)
+						built_comp.icon = built_icon
+						built_comp.icon_state = built_icon_state
+					built_comp.deconpath = deconpath
 				built_comp.update_appearance()
 				qdel(src)
 				return
