@@ -486,6 +486,10 @@
 	},
 /obj/machinery/light/small/directional/north,
 /obj/item/gun/ballistic/automatic/marksman/f4,
+/obj/effect/decal/cleanable/blood/old{
+	pixel_x = 0;
+	pixel_y = 31
+	},
 /turf/open/floor/plating,
 /area/ship/security/armory)
 "dL" = (
@@ -755,10 +759,6 @@
 "gg" = (
 /turf/open/floor/wood/walnut,
 /area/ship/bridge)
-"gh" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/crew/dorm)
 "gl" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
@@ -1062,7 +1062,6 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "ic" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/opaque/black/line,
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/security/armory)
@@ -1776,10 +1775,6 @@
 	},
 /turf/open/floor/plating/ship/snowgrasstall,
 /area/ship/bridge)
-"nY" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/crew/dorm)
 "og" = (
 /obj/effect/turf_decal/corner_techfloor_grid/diagonal{
 	dir = 4
@@ -3899,7 +3894,6 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "GH" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/opaque/black/line,
 /obj/structure/sign/directions/engineering{
 	pixel_y = 8
@@ -4560,10 +4554,6 @@
 	},
 /turf/open/floor/engine/airless,
 /area/ship/external)
-"MV" = (
-/obj/effect/decal/cleanable/blood/old,
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/crew/library)
 "MW" = (
 /obj/machinery/atmospherics/pipe/simple/violet/visible/layer1{
 	dir = 10
@@ -4834,10 +4824,6 @@
 	},
 /turf/open/floor/carpet/blue,
 /area/ship/crew/canteen)
-"Pq" = (
-/obj/effect/decal/cleanable/glass,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/engineering)
 "Pt" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
 	dir = 1
@@ -6411,7 +6397,7 @@ Fv
 Fv
 Dw
 qm
-nY
+Fv
 fL
 Km
 Fv
@@ -6448,9 +6434,9 @@ DC
 Fv
 Fv
 Fv
-nY
+Fv
 ei
-gh
+Vk
 oM
 Sg
 Fv
@@ -7292,7 +7278,7 @@ cE
 pX
 Nn
 BN
-Pq
+iq
 Wm
 PU
 mO
@@ -7363,7 +7349,7 @@ wd
 aS
 ip
 IA
-MV
+aS
 dH
 jo
 La

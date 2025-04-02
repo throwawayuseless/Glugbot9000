@@ -886,7 +886,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "tV" = (
-/obj/machinery/porta_turret/ship/syndicate/weak{
+/obj/machinery/porta_turret/ship/ramzi/light{
 	dir = 4;
 	pixel_x = 8
 	},
@@ -899,7 +899,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "uR" = (
-/obj/machinery/porta_turret/ship/syndicate/weak{
+/obj/machinery/porta_turret/ship/ramzi/light{
 	dir = 9
 	},
 /turf/closed/wall/mineral/plastitanium,
@@ -1132,7 +1132,7 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
 "Ah" = (
-/obj/machinery/porta_turret/ship/syndicate/weak{
+/obj/machinery/porta_turret/ship/ramzi/light{
 	dir = 6
 	},
 /turf/closed/wall/mineral/plastitanium,
@@ -1191,7 +1191,7 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew/dorm)
 "CR" = (
-/obj/machinery/porta_turret/ship/syndicate/weak{
+/obj/machinery/porta_turret/ship/ramzi/light{
 	dir = 10
 	},
 /turf/closed/wall/mineral/plastitanium,
@@ -1308,7 +1308,7 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
 "GV" = (
-/obj/machinery/porta_turret/ship/syndicate/weak{
+/obj/machinery/porta_turret/ship/ramzi/light{
 	dir = 4;
 	pixel_x = 8;
 	pixel_y = 4
@@ -1399,7 +1399,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "KA" = (
-/obj/machinery/porta_turret/ship/syndicate/weak{
+/obj/machinery/porta_turret/ship/ramzi/light{
 	dir = 5
 	},
 /turf/closed/wall/mineral/plastitanium,

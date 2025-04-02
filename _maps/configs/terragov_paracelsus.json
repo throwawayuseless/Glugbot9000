@@ -31,7 +31,7 @@
 		},
 		"Medical Doctor": {
 			"outfit": "/datum/outfit/job/terragov/doctor",
-			"slots": 3
+			"slots": 2
 		},
 		"Ship Engineer": {
 			"outfit": "/datum/outfit/job/terragov/engineer",
@@ -43,19 +43,24 @@
 		},
 		"Field Engineer": {
 			"outfit": "/datum/outfit/job/terragov/miner",
-			"slots": 2
+			"slots": 1
 		},
 		"Scribe": {
 			"outfit": "/datum/outfit/job/terragov/assistant",
-			"slots" : 3
+			"slots" : 2
 		},
 		"Attentive Care Patient": {
 			"outfit": "/datum/outfit/job/terragov/patient",
-			"slots" : 3
+			"slots" : 1
 		}
 	},
 	"limit": 1,
 	"starting_funds": 2000,
 	"enabled": true,
-	"space_spawn": false
+	"space_spawn": false,
+
+	"architect": "Imaginos16",
+	"contributors": [
+		"No Contributors"
+	]
 }

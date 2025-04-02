@@ -43,7 +43,7 @@
 			"officer": true,
 			"slots": 1
 		},
-		"Quartermaster": {
+		"Hangarmaster": {
 			"outfit": "/datum/outfit/job/nanotrasen/quartermaster/officer",
 			"officer": true,
 			"slots": 1
@@ -58,18 +58,10 @@
 		},
 		"Ship Engineer": {
 			"outfit": "/datum/outfit/job/nanotrasen/engineer",
-			"slots": 1
-		},
-		"Atmospheric Technician": {
-			"outfit": "/datum/outfit/job/nanotrasen/atmos",
-			"slots": 1
+			"slots": 2
 		},
 		"Shaft Miner": {
 			"outfit": "/datum/outfit/job/nanotrasen/miner",
-			"slots": 1
-		},
-		"Cargo Technician": {
-			"outfit": "/datum/outfit/job/cargo_tech",
 			"slots": 1
 		},
 		"Bartender": {
@@ -85,7 +77,7 @@
 			"slots": 1
 		}
 	},
-	"limit": 1,
+	"limit": 0,
 	"starting_funds": 2000,
 	"enabled": true,
 	"space_spawn": false,
