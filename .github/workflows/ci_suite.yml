@@ -126,7 +126,7 @@ jobs:
 
       - name: Run OpenDream Linter
         run: |
-          ./DMCompiler_linux-x64/DMCompiler shiptest.dme --suppress-unimplemented --define=CIBUILDING | bash tools/ci/annotate_od.sh
+          ./DMCompiler_linux-x64/DMCompiler shiptest.dme --define=CIBUILDING | bash tools/ci/annotate_od.sh
 
   compile_all_maps:
     name: Compile Maps
