@@ -203,7 +203,7 @@
 	set name = "Toggle Listening"
 	set desc = "Toggle listening channel on or off."
 	set category = "MMI"
-	set src = usr.loc
+//	set src = usr.loc
 	set popup_menu = FALSE
 
 	if(brainmob.stat)
