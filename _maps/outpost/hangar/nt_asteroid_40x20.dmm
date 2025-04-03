@@ -10,7 +10,13 @@
 	},
 /area/hangar)
 "au" = (
-/turf/closed/mineral/random/snow,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/components/unary/passive_vent{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark{
+	planetary_atmos = 1
+	},
 /area/hangar)
 "ba" = (
 /obj/effect/turf_decal/trimline/opaque/yellow/filled/arrow_cw,
@@ -40,14 +46,8 @@
 	},
 /area/hangar)
 "cq" = (
-/obj/structure/closet/crate,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/glass,
-/obj/effect/decal/cleanable/wrapping,
-/turf/open/floor/plating{
-	icon_state = "platingdmg1";
-	planetary_atmos = 1
-	},
+/obj/effect/turf_decal/industrial/hatch/yellow,
+/turf/open/floor/plasteel/tech,
 /area/hangar)
 "cO" = (
 /obj/effect/turf_decal/techfloor{
@@ -276,6 +276,15 @@
 	},
 /turf/open/floor/plasteel/stairs/wood,
 /area/hangar)
+"hV" = (
+/obj/machinery/disposal/deliveryChute{
+	dir = 1
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech,
+/area/hangar)
 "ie" = (
 /turf/closed/indestructible/reinforced,
 /area/hangar)
@@ -381,6 +390,14 @@
 /turf/open/floor/concrete/slab_1{
 	planetary_atmos = 1
 	},
+/area/hangar)
+"kR" = (
+/obj/structure/plasticflaps/outpost,
+/obj/machinery/conveyor/auto/outpost{
+	dir = 5;
+	verted = -1
+	},
+/turf/open/floor/plasteel/tech,
 /area/hangar)
 "kU" = (
 /obj/effect/spawner/random/maintenance,
@@ -514,15 +531,11 @@
 	},
 /area/hangar)
 "oK" = (
-/obj/effect/turf_decal/box/corners{
-	dir = 4
+/obj/machinery/conveyor/auto/outpost{
+	dir = 6;
+	verted = -1
 	},
-/obj/structure/closet/crate,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/vomit,
-/turf/open/floor/plating/rust{
-	planetary_atmos = 1
-	},
+/turf/open/floor/plasteel/tech,
 /area/hangar)
 "oU" = (
 /obj/effect/turf_decal/trimline/opaque/yellow/filled/arrow_cw{
@@ -839,11 +852,11 @@
 	},
 /area/hangar)
 "tH" = (
-/obj/machinery/computer/cargo,
 /obj/item/toy/plush/knight{
 	pixel_y = 25;
 	pixel_x = 9
 	},
+/obj/machinery/computer,
 /turf/open/floor/plating/catwalk_floor{
 	planetary_atmos = 1
 	},
@@ -854,6 +867,10 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/general{
 	dir = 4
+	},
+/obj/machinery/conveyor/auto/outpost{
+	dir = 6;
+	verted = -1
 	},
 /turf/open/floor/plating{
 	icon_state = "platingdmg3";
@@ -973,12 +990,10 @@
 	},
 /area/hangar)
 "xi" = (
-/obj/structure/closet/crate/trashcart/laundry,
-/obj/effect/turf_decal/industrial/hatch/yellow,
-/obj/effect/decal/cleanable/oil,
-/turf/open/floor/plasteel/patterned/cargo_one{
-	planetary_atmos = 1
+/obj/machinery/conveyor/auto/outpost{
+	dir = 10
 	},
+/turf/open/floor/plasteel/tech,
 /area/hangar)
 "xu" = (
 /turf/open/floor/plasteel/stairs{
@@ -1046,15 +1061,8 @@
 	},
 /area/hangar)
 "zs" = (
-/obj/effect/turf_decal/industrial/traffic{
-	dir = 8
-	},
-/obj/effect/turf_decal/box/corners{
-	dir = 8
-	},
-/turf/open/floor/plasteel/patterned/cargo_one{
-	planetary_atmos = 1
-	},
+/obj/structure/sign/departments/cargo,
+/turf/closed/indestructible/reinforced,
 /area/hangar)
 "zy" = (
 /obj/effect/turf_decal/industrial/warning/corner{
@@ -1197,19 +1205,9 @@
 	},
 /area/hangar)
 "Cd" = (
-/obj/effect/turf_decal/industrial/traffic{
-	dir = 8
-	},
-/obj/effect/turf_decal/box/corners{
-	dir = 1
-	},
-/obj/structure/reagent_dispensers/watertank,
-/obj/item/radio/intercom/directional/north{
-	pixel_y = 20
-	},
-/turf/open/floor/plasteel/patterned/cargo_one{
-	planetary_atmos = 1
-	},
+/obj/machinery/conveyor/auto/outpost,
+/obj/structure/plasticflaps/outpost,
+/turf/open/floor/plasteel/tech,
 /area/hangar)
 "Cf" = (
 /obj/effect/turf_decal/industrial/warning,
@@ -1418,10 +1416,7 @@
 	},
 /area/hangar)
 "Jp" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/patterned/cargo_one{
-	planetary_atmos = 1
-	},
+/turf/closed/indestructible/rock/schist,
 /area/hangar)
 "JF" = (
 /obj/structure/catwalk/over/plated_catwalk,
@@ -1677,6 +1672,13 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
+"Qw" = (
+/obj/structure/plasticflaps/outpost,
+/obj/machinery/conveyor/auto/outpost{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech,
+/area/hangar)
 "QA" = (
 /obj/machinery/light/directional/east,
 /obj/structure/catwalk/over/plated_catwalk,
@@ -1717,11 +1719,9 @@
 	},
 /area/hangar)
 "QR" = (
-/obj/machinery/light/directional/north,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/patterned/cargo_one{
-	planetary_atmos = 1
-	},
+/obj/machinery/conveyor/auto/outpost,
+/obj/effect/landmark/outpost/hangar_crate_spawner,
+/turf/open/floor/plasteel/tech,
 /area/hangar)
 "QX" = (
 /obj/effect/turf_decal/arrows,
@@ -1814,14 +1814,10 @@
 	},
 /area/hangar)
 "TV" = (
-/obj/effect/turf_decal/industrial/traffic{
-	dir = 4
+/obj/machinery/conveyor/auto/outpost{
+	dir = 8
 	},
-/obj/effect/turf_decal/box/corners,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/patterned/cargo_one{
-	planetary_atmos = 1
-	},
+/turf/open/floor/plasteel/tech,
 /area/hangar)
 "Uc" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1851,13 +1847,16 @@
 	},
 /area/hangar)
 "UA" = (
-/obj/effect/turf_decal/box/corners{
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
+/obj/machinery/conveyor/auto/outpost{
 	dir = 1
 	},
-/obj/structure/reagent_dispensers/fueltank,
-/turf/open/floor/plasteel/patterned/cargo_one{
-	planetary_atmos = 1
+/obj/structure/disposaloutlet{
+	dir = 1
 	},
+/turf/open/floor/plasteel/tech,
 /area/hangar)
 "UL" = (
 /obj/effect/decal/cleanable/garbage{
@@ -1886,9 +1885,11 @@
 	},
 /area/hangar)
 "We" = (
-/turf/open/floor/plasteel/patterned/cargo_one{
-	planetary_atmos = 1
+/obj/machinery/light/dim/directional/north,
+/obj/machinery/conveyor/auto/outpost{
+	dir = 8
 	},
+/turf/open/floor/plasteel/tech,
 /area/hangar)
 "Wi" = (
 /obj/structure/catwalk/over/plated_catwalk,
@@ -1936,15 +1937,10 @@
 /turf/open/water/beach/deep,
 /area/hangar)
 "Xs" = (
-/obj/effect/turf_decal/industrial/traffic{
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/effect/turf_decal/box/corners{
-	dir = 4
-	},
-/turf/open/floor/plasteel/patterned/cargo_one{
-	planetary_atmos = 1
-	},
+/turf/closed/indestructible/reinforced,
 /area/hangar)
 "XH" = (
 /obj/structure/frame/computer{
@@ -2154,9 +2150,9 @@ gu
 gu
 ie
 ie
-au
-au
-au
+Jp
+Jp
+Jp
 ie
 fI
 HX
@@ -2197,11 +2193,11 @@ gu
 gu
 gu
 ie
-au
-au
-au
-au
-au
+Jp
+Jp
+Jp
+Jp
+Jp
 Zm
 pJ
 pJ
@@ -2224,8 +2220,8 @@ pJ
 pJ
 Oh
 Iy
-au
-au
+Jp
+Jp
 ie
 ie
 gu
@@ -2241,10 +2237,10 @@ gu
 gu
 ie
 ie
-au
-au
-au
-au
+Jp
+Jp
+Jp
+Jp
 QC
 ck
 pJ
@@ -2268,9 +2264,9 @@ pJ
 pJ
 pJ
 Iy
-au
-au
-au
+Jp
+Jp
+Jp
 ie
 gu
 gu
@@ -2284,11 +2280,11 @@ gu
 gu
 ie
 ie
-au
-au
-au
-au
-au
+Jp
+Jp
+Jp
+Jp
+Jp
 QC
 yO
 ZR
@@ -2313,8 +2309,8 @@ pJ
 ZR
 Iy
 ON
-au
-au
+Jp
+Jp
 ie
 gu
 gu
@@ -2327,12 +2323,12 @@ gu
 gu
 ie
 ie
-au
-au
-au
-au
-au
-au
+Jp
+Jp
+Jp
+Jp
+Jp
+Jp
 QC
 yO
 pJ
@@ -2357,8 +2353,8 @@ pJ
 pJ
 rJ
 pT
-au
-au
+Jp
+Jp
 ie
 gu
 gu
@@ -2370,13 +2366,13 @@ gu
 gu
 ie
 ie
-au
-au
-au
-au
+Jp
+Jp
+Jp
+Jp
 wk
 Sj
-au
+Jp
 ed
 yO
 pJ
@@ -2401,8 +2397,8 @@ pJ
 pJ
 rJ
 QC
-au
-au
+Jp
+Jp
 ie
 gu
 gu
@@ -2413,10 +2409,10 @@ gu
 gu
 gu
 ie
-au
-au
-au
-au
+Jp
+Jp
+Jp
+Jp
 jS
 Xq
 to
@@ -2446,7 +2442,7 @@ pJ
 gr
 ON
 ie
-au
+Jp
 ie
 gu
 gu
@@ -2457,9 +2453,9 @@ gu
 gu
 gu
 ie
-au
-au
-au
+Jp
+Jp
+Jp
 Xq
 Xq
 Xq
@@ -2489,8 +2485,8 @@ pJ
 pJ
 Iy
 ON
-au
-au
+Jp
+Jp
 ie
 gu
 gu
@@ -2501,8 +2497,8 @@ gu
 gu
 gu
 ie
-au
-au
+Jp
+Jp
 wo
 gO
 gO
@@ -2533,8 +2529,8 @@ pJ
 ZR
 Iy
 ON
-au
-au
+Jp
+Jp
 ie
 gu
 gu
@@ -2545,8 +2541,8 @@ gu
 gu
 gu
 ie
-au
-au
+Jp
+Jp
 Cf
 LR
 JF
@@ -2577,8 +2573,8 @@ pJ
 pJ
 Iy
 QC
-au
-au
+Jp
+Jp
 ie
 gu
 gu
@@ -2621,8 +2617,8 @@ pJ
 pJ
 Iy
 QC
-au
-au
+Jp
+Jp
 ie
 gu
 gu
@@ -2665,8 +2661,8 @@ pJ
 pJ
 gr
 QC
-au
-au
+Jp
+Jp
 ie
 gu
 gu
@@ -2685,7 +2681,7 @@ dw
 he
 zK
 QC
-ON
+au
 yO
 pJ
 pJ
@@ -2710,7 +2706,7 @@ pJ
 Iy
 QC
 ie
-au
+Jp
 ie
 ie
 gu
@@ -2753,9 +2749,9 @@ pJ
 ZR
 Iy
 ON
-au
-au
-au
+Jp
+Jp
+Jp
 ie
 ie
 "}
@@ -2770,9 +2766,9 @@ ie
 ie
 Fm
 XH
-au
-au
-au
+Jp
+Jp
+Jp
 ON
 Hk
 pJ
@@ -2797,10 +2793,10 @@ pJ
 pJ
 Iy
 ON
-au
-au
-au
-au
+Jp
+Jp
+Jp
+Jp
 ie
 "}
 (18,1,1) = {"
@@ -2811,12 +2807,12 @@ AG
 ie
 ie
 ie
-au
-au
-au
-au
-au
-au
+Jp
+Jp
+Jp
+Jp
+Jp
+Jp
 pT
 yO
 pJ
@@ -2842,9 +2838,9 @@ pJ
 Iy
 ON
 Iv
-au
-au
-au
+Jp
+Jp
+Jp
 ie
 "}
 (19,1,1) = {"
@@ -2853,13 +2849,13 @@ ie
 ie
 ka
 ie
-au
-au
-au
-au
-au
-au
-au
+Jp
+Jp
+Jp
+Jp
+Jp
+Jp
+Jp
 ie
 ON
 yO
@@ -2886,24 +2882,24 @@ pJ
 Iy
 QC
 iV
-au
-au
-au
+Jp
+Jp
+Jp
 ie
 "}
 (20,1,1) = {"
 ie
 ie
-au
+Jp
 nW
 ie
-au
+Jp
 zA
 zA
-au
-au
-au
-au
+Jp
+Jp
+Jp
+Jp
 ie
 QC
 yO
@@ -2931,8 +2927,8 @@ gr
 ON
 vq
 zr
-au
-au
+Jp
+Jp
 ie
 "}
 (21,1,1) = {"
@@ -2944,10 +2940,10 @@ Uj
 zc
 CS
 zA
-au
-au
-au
-au
+Jp
+Jp
+Jp
+Jp
 ie
 QC
 yO
@@ -2975,24 +2971,24 @@ Iy
 ON
 mN
 ai
-au
-au
+Jp
+Jp
 ie
 "}
 (22,1,1) = {"
 ie
-au
-au
-au
+Jp
+Jp
+Jp
 ie
 cn
 CS
 RN
 qH
-au
-au
-au
-au
+Jp
+Jp
+Jp
+Jp
 QC
 yO
 pJ
@@ -3019,8 +3015,8 @@ Iy
 ON
 vJ
 UL
-au
-au
+Jp
+Jp
 ie
 "}
 (23,1,1) = {"
@@ -3029,14 +3025,14 @@ ie
 ie
 ie
 ie
-au
+Jp
 AD
 xN
 xN
 xN
-au
-au
-au
+Jp
+Jp
+Jp
 QC
 Hk
 pJ
@@ -3064,7 +3060,7 @@ pT
 zN
 Ho
 ie
-au
+Jp
 ie
 "}
 (24,1,1) = {"
@@ -3079,8 +3075,8 @@ tF
 tF
 tF
 YK
-au
-au
+Jp
+Jp
 QC
 yO
 pJ
@@ -3107,8 +3103,8 @@ rJ
 ON
 Ao
 QL
-au
-au
+Jp
+Jp
 ie
 "}
 (25,1,1) = {"
@@ -3123,8 +3119,8 @@ jy
 Ia
 NC
 Lc
-au
-au
+Jp
+Jp
 iw
 yO
 pJ
@@ -3151,8 +3147,8 @@ rJ
 ON
 vq
 wi
-au
-au
+Jp
+Jp
 ie
 "}
 (26,1,1) = {"
@@ -3195,8 +3191,8 @@ gr
 ON
 vq
 RB
-au
-au
+Jp
+Jp
 ie
 "}
 (27,1,1) = {"
@@ -3239,8 +3235,8 @@ Iy
 ON
 RH
 xF
-au
-au
+Jp
+Jp
 ie
 "}
 (28,1,1) = {"
@@ -3284,7 +3280,7 @@ QC
 vq
 Hg
 ie
-au
+Jp
 ie
 "}
 (29,1,1) = {"
@@ -3326,9 +3322,9 @@ pJ
 rJ
 QC
 vh
-au
-au
-au
+Jp
+Jp
+Jp
 ie
 "}
 (30,1,1) = {"
@@ -3343,8 +3339,8 @@ JI
 eg
 He
 LI
-au
-au
+Jp
+Jp
 iw
 Ue
 pJ
@@ -3369,10 +3365,10 @@ pJ
 pJ
 rJ
 ON
-au
-au
-au
-au
+Jp
+Jp
+Jp
+Jp
 ie
 "}
 (31,1,1) = {"
@@ -3387,8 +3383,8 @@ ie
 ie
 ie
 ie
-au
-au
+Jp
+Jp
 QC
 Ue
 ZR
@@ -3413,10 +3409,10 @@ pJ
 ZR
 rJ
 pT
-au
-au
-au
-au
+Jp
+Jp
+Jp
+Jp
 ie
 "}
 (32,1,1) = {"
@@ -3431,8 +3427,8 @@ gu
 gu
 ie
 ie
-au
-au
+Jp
+Jp
 QC
 HP
 pJ
@@ -3457,9 +3453,9 @@ pJ
 pJ
 kk
 pT
-au
-au
-au
+Jp
+Jp
+Jp
 ie
 ie
 "}
@@ -3471,12 +3467,12 @@ gu
 gu
 gu
 gu
+gu
+gu
+gu
 ie
-ie
-ie
-au
-au
-au
+Jp
+Jp
 QC
 Ue
 pJ
@@ -3501,9 +3497,9 @@ pJ
 pJ
 rJ
 QC
-au
-au
-au
+Jp
+Jp
+Jp
 ie
 gu
 "}
@@ -3515,11 +3511,11 @@ gu
 gu
 gu
 gu
+gu
+gu
+gu
 ie
-au
-au
-au
-au
+Jp
 yQ
 ON
 Dx
@@ -3545,9 +3541,9 @@ pJ
 pJ
 rJ
 TT
-au
-au
-au
+Jp
+Jp
+Jp
 ie
 gu
 "}
@@ -3559,11 +3555,11 @@ gu
 gu
 gu
 gu
+gu
+gu
+gu
 ie
-au
-au
-au
-ie
+Jp
 tH
 ON
 Dx
@@ -3590,8 +3586,8 @@ pJ
 rJ
 Wo
 Xq
-au
-au
+Jp
+Jp
 ie
 gu
 "}
@@ -3603,9 +3599,9 @@ gu
 gu
 gu
 gu
-ie
-au
-au
+gu
+gu
+gu
 ie
 ie
 pt
@@ -3634,8 +3630,8 @@ ZR
 rJ
 Wo
 Xq
-au
-au
+Jp
+Jp
 ie
 gu
 "}
@@ -3647,11 +3643,11 @@ gu
 gu
 gu
 gu
+gu
+gu
+gu
+gu
 ie
-au
-au
-ie
-Cd
 zs
 vz
 Dx
@@ -3677,9 +3673,9 @@ pJ
 pJ
 rJ
 ns
-au
-au
-au
+Jp
+Jp
+Jp
 ie
 gu
 "}
@@ -3691,11 +3687,11 @@ gu
 gu
 gu
 gu
+gu
+gu
+gu
+gu
 ie
-au
-au
-UA
-Jp
 cq
 px
 ba
@@ -3722,8 +3718,8 @@ pJ
 gr
 qc
 ie
-au
-au
+Jp
+Jp
 ie
 gu
 "}
@@ -3735,12 +3731,12 @@ gu
 gu
 gu
 gu
+gu
+gu
+gu
+gu
 ie
-au
-ie
-QR
-Jp
-We
+TV
 px
 Dx
 pJ
@@ -3765,9 +3761,9 @@ pJ
 pJ
 Iy
 sY
-au
-au
-au
+Jp
+Jp
+Jp
 ie
 gu
 "}
@@ -3779,11 +3775,11 @@ gu
 gu
 gu
 gu
+gu
+gu
 ie
-au
-au
-oK
-We
+ie
+ie
 We
 px
 Dx
@@ -3809,9 +3805,9 @@ pJ
 pJ
 rJ
 vk
-au
-au
-au
+Jp
+Jp
+Jp
 ie
 gu
 "}
@@ -3823,11 +3819,11 @@ gu
 gu
 gu
 gu
+gu
+gu
 ie
-au
-au
-au
-Xs
+ie
+ie
 TV
 vz
 Dx
@@ -3853,9 +3849,9 @@ pJ
 ZR
 Iy
 sY
-au
-au
-au
+Jp
+Jp
+Jp
 ie
 gu
 "}
@@ -3867,11 +3863,11 @@ gu
 gu
 gu
 gu
+gu
+gu
 ie
-ie
-au
-au
-au
+kR
+Cd
 xi
 QC
 Dx
@@ -3897,9 +3893,9 @@ pJ
 pJ
 Iy
 zy
-au
-au
-au
+Jp
+Jp
+Jp
 ie
 gu
 "}
@@ -3912,11 +3908,11 @@ gu
 gu
 gu
 gu
+gu
 ie
-au
-au
-au
-au
+Qw
+ie
+ie
 QC
 Dx
 pJ
@@ -3941,9 +3937,9 @@ pJ
 pJ
 Iy
 ON
-au
-au
-au
+Jp
+Jp
+Jp
 ie
 gu
 "}
@@ -3956,11 +3952,11 @@ gu
 gu
 gu
 gu
+gu
 ie
+oK
+UA
 ie
-au
-au
-au
 QC
 BU
 cY
@@ -3985,8 +3981,8 @@ oU
 oU
 Fw
 QC
-au
-au
+Jp
+Jp
 ie
 ie
 gu
@@ -4002,11 +3998,11 @@ gu
 gu
 gu
 ie
-au
-au
-au
 ie
-au
+Xs
+ie
+ie
+Jp
 Yi
 ON
 ON
@@ -4028,9 +4024,9 @@ ON
 ON
 ON
 QC
-au
-au
-au
+Jp
+Jp
+Jp
 ie
 gu
 gu
@@ -4046,17 +4042,17 @@ gu
 gu
 gu
 ie
+QR
+hV
 ie
-au
-au
-au
-au
-au
-au
-au
+Jp
+Jp
+Jp
+Jp
+Jp
 ie
-au
-au
+Jp
+Jp
 ie
 ie
 wm
@@ -4065,16 +4061,16 @@ wm
 ie
 ie
 UV
-au
-au
-au
-au
+Jp
+Jp
+Jp
+Jp
 ie
-au
-au
-au
-au
-au
+Jp
+Jp
+Jp
+Jp
+Jp
 ie
 gu
 gu
@@ -4089,17 +4085,17 @@ gu
 gu
 gu
 gu
-gu
 ie
 ie
 ie
 ie
-au
-au
-au
-au
-au
-au
+ie
+Jp
+Jp
+Jp
+Jp
+Jp
+Jp
 ie
 ie
 Nw
@@ -4112,11 +4108,11 @@ ie
 ie
 ie
 ie
-au
-au
-au
-au
-au
+Jp
+Jp
+Jp
+Jp
+Jp
 ie
 ie
 ie
@@ -4141,9 +4137,9 @@ ie
 ie
 ie
 ie
-au
-au
-au
+Jp
+Jp
+Jp
 ie
 rt
 ZQ

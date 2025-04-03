@@ -111,8 +111,13 @@
 	icon_state = "stamp-ngr_ensign"
 	dye_color = DYE_QM
 
-/obj/item/stamp/terragov
-	name = "Terragov rubber stamp"
+/obj/item/stamp/hardliners
+	name = "Hardliners rubber stamp"
+	icon_state = "stamp-hardliners"
+	dye_color = DYE_SYNDICATE
+
+/obj/item/stamp/terragov //PENTEST ALTERATION
+	name = "SolGov rubber stamp"
 	icon_state = "stamp-solgov"
 
 /obj/item/stamp/inteq

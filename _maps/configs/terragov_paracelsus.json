@@ -3,7 +3,9 @@
 	"map_name": "Paracelsus-class Medical Corvette",
 	"map_short_name": "Paracelsus-class",
 	"map_path": "_maps/shuttles/terragov/terragov_paracelsus.dmm",
+	"faction": "/datum/faction/terragov",
 	"prefix": "TGSV",
+	"manufacturer": "Red Planet Shipyards",
 	"description": "Fulfilling its role as a medicinal powerhouse of the Terran Navy, the Paracelsus-class is a specially designed corvette to assist terran fleets in medical troubles, as well as supplying such vessels with medication. Scribes pursuing a medical degree often work in these ships to shadow trained medical doctors to complete their residency.",
 	"tags": [
 		"RP Focus",
@@ -29,7 +31,7 @@
 		},
 		"Medical Doctor": {
 			"outfit": "/datum/outfit/job/terragov/doctor",
-			"slots": 3
+			"slots": 2
 		},
 		"Ship Engineer": {
 			"outfit": "/datum/outfit/job/terragov/engineer",
@@ -41,19 +43,24 @@
 		},
 		"Field Engineer": {
 			"outfit": "/datum/outfit/job/terragov/miner",
-			"slots": 2
+			"slots": 1
 		},
 		"Scribe": {
 			"outfit": "/datum/outfit/job/terragov/assistant",
-			"slots" : 3
+			"slots" : 2
 		},
 		"Attentive Care Patient": {
 			"outfit": "/datum/outfit/job/terragov/patient",
-			"slots" : 3
+			"slots" : 1
 		}
 	},
 	"limit": 1,
 	"starting_funds": 2000,
 	"enabled": true,
-	"space_spawn": false
+	"space_spawn": false,
+
+	"architect": "Imaginos16",
+	"contributors": [
+		"No Contributors"
+	]
 }

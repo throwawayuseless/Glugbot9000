@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ab" = (
-/obj/machinery/porta_turret/ship/frontiersmen/light/tesla_lab{
+/obj/machinery/porta_turret/ruin/frontiersmen{
 	dir = 8
 	},
 /turf/open/floor/concrete/slab_1,
@@ -2376,7 +2376,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/icemoon/tesla_lab/central_hall)
 "jM" = (
-/obj/machinery/porta_turret/ship/frontiersmen/tesla_lab,
+/obj/machinery/porta_turret/ruin/frontiersmen/light,
 /turf/open/floor/concrete/slab_1,
 /area/ruin/icemoon/tesla_lab/turrets)
 "jV" = (
@@ -4520,12 +4520,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/concrete/pavement/icemoon/lit,
 /area/overmap_encounter/planetoid/ice/explored)
-"sw" = (
-/obj/machinery/porta_turret/ship/frontiersmen/light/tesla_lab{
-	dir = 10
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ruin/icemoon/tesla_lab/haymaker)
 "sx" = (
 /obj/structure/table,
 /obj/item/folder/blue{
@@ -4544,12 +4538,6 @@
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ruin/icemoon/tesla_lab/office_two)
-"sF" = (
-/obj/machinery/porta_turret/ship/frontiersmen/light/tesla_lab{
-	dir = 9
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ruin/icemoon/tesla_lab/haymaker)
 "sJ" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/blood/drip,
@@ -10921,12 +10909,6 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/icemoon/tesla_lab/containment)
-"RS" = (
-/obj/machinery/porta_turret/ship/frontiersmen/tesla_lab{
-	dir = 6
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ruin/icemoon/tesla_lab/haymaker)
 "RT" = (
 /obj/effect/turf_decal/trimline/opaque/purple/filled/warning{
 	dir = 8
@@ -10981,12 +10963,6 @@
 /obj/item/ammo_casing/spent/rifle_brass,
 /turf/open/floor/plasteel/dark,
 /area/ruin/icemoon/tesla_lab/lab_halls)
-"RZ" = (
-/obj/machinery/porta_turret/ship/frontiersmen/tesla_lab{
-	dir = 5
-	},
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ruin/icemoon/tesla_lab/haymaker)
 "Sd" = (
 /obj/effect/turf_decal/trimline/transparent/blue/line{
 	dir = 9
@@ -11826,18 +11802,18 @@
 /obj/item/reagent_containers/food/drinks/soda_cans/sodawater,
 /obj/item/reagent_containers/food/drinks/soda_cans/sodawater,
 /obj/item/reagent_containers/food/drinks/soda_cans/sodawater,
-/obj/item/reagent_containers/food/drinks/soda_cans/shoal_punch,
-/obj/item/reagent_containers/food/drinks/soda_cans/shoal_punch,
-/obj/item/reagent_containers/food/drinks/soda_cans/crosstalk,
-/obj/item/reagent_containers/food/drinks/soda_cans/crosstalk,
+/obj/item/reagent_containers/food/drinks/soda_cans/shamblers,
+/obj/item/reagent_containers/food/drinks/soda_cans/shamblers,
+/obj/item/reagent_containers/food/drinks/soda_cans/grey_bull,
+/obj/item/reagent_containers/food/drinks/soda_cans/grey_bull,
 /obj/item/reagent_containers/food/drinks/soda_cans/cola,
 /obj/item/reagent_containers/food/drinks/soda_cans/cola,
 /obj/item/reagent_containers/food/drinks/soda_cans/cola,
 /obj/item/reagent_containers/food/drinks/soda_cans/tonic,
 /obj/item/reagent_containers/food/drinks/soda_cans/tonic,
 /obj/item/reagent_containers/food/drinks/soda_cans/tonic,
-/obj/item/reagent_containers/food/drinks/soda_cans/vimukti,
-/obj/item/reagent_containers/food/drinks/soda_cans/vimukti,
+/obj/item/reagent_containers/food/drinks/soda_cans/thirteenloko,
+/obj/item/reagent_containers/food/drinks/soda_cans/thirteenloko,
 /turf/open/floor/plasteel/freezer,
 /area/ruin/icemoon/tesla_lab/lobby)
 "Vn" = (
@@ -12567,9 +12543,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/icemoon/tesla_lab/central_hall)
 "YV" = (
-/obj/machinery/porta_turret/ship/frontiersmen/light/tesla_lab{
-	dir = 2
-	},
+/obj/machinery/porta_turret/ruin/frontiersmen,
 /turf/open/floor/concrete/slab_1,
 /area/ruin/icemoon/tesla_lab/turrets)
 "YY" = (
@@ -13787,7 +13761,7 @@ SK
 SK
 SK
 cM
-RC
+YV
 PH
 Pd
 cM
@@ -14355,7 +14329,7 @@ rM
 rM
 cM
 cM
-jM
+RC
 PH
 cM
 cM
@@ -15099,13 +15073,13 @@ rp
 In
 nN
 SZ
-sF
+dm
 dm
 zV
 oD
 AD
 dm
-sw
+dm
 ax
 Rl
 cM
@@ -15603,13 +15577,13 @@ ee
 Xr
 AE
 Cm
-RZ
+dm
 dm
 wE
 wE
 wE
 dm
-RS
+dm
 ax
 Rl
 cM

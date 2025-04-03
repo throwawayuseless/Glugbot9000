@@ -39,7 +39,7 @@
 		},
 		"Enforcer": {
 			"outfit": "/datum/outfit/job/inteq/security",
-			"slots": 1
+			"slots": 2
 		},
 		"Corpsman": {
 			"outfit": "/datum/outfit/job/inteq/paramedic",
@@ -47,7 +47,7 @@
 		},
 		"Recruit": {
 			"outfit": "/datum/outfit/job/inteq/assistant",
-			"slots": 4
+			"slots": 2
 		}
 	},
 	"limit": 1,

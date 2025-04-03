@@ -144,7 +144,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
-/obj/effect/mapping_helpers/airlock/locked,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
@@ -341,14 +340,8 @@
 /turf/open/floor/pod/dark,
 /area/ship/crew/canteen)
 "fm" = (
-/obj/machinery/cryopod/poor{
-	dir = 4;
-	icon = 'icons/obj/crates.dmi';
-	icon_state = "freezeropen";
-	close_state = "freezer";
-	open_state = "freezeropen"
-	},
 /obj/effect/decal/cleanable/cobweb,
+/obj/machinery/cryopod/poor,
 /turf/open/floor/plastic,
 /area/ship/crew/canteen/kitchen)
 "fW" = (
@@ -387,7 +380,6 @@
 	dir = 1
 	},
 /obj/machinery/door/airlock/maintenance_hatch,
-/obj/effect/mapping_helpers/airlock/locked,
 /obj/effect/decal/cleanable/glass,
 /obj/item/shard,
 /obj/structure/cable{
@@ -1004,7 +996,6 @@
 /obj/machinery/door/airlock/hatch,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/item/assembly/mousetrap/armed,
-/obj/effect/mapping_helpers/airlock/abandoned,
 /turf/open/floor/pod/light,
 /area/ship/maintenance/aft)
 "sY" = (
@@ -1024,14 +1015,8 @@
 /area/ship/maintenance/port)
 "te" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/cryopod/poor{
-	dir = 4;
-	icon = 'icons/obj/crates.dmi';
-	icon_state = "freezeropen";
-	close_state = "freezer";
-	open_state = "freezeropen"
-	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/cryopod/poor,
 /turf/open/floor/plastic,
 /area/ship/crew/canteen/kitchen)
 "to" = (
@@ -1070,15 +1055,13 @@
 /turf/open/floor/plating,
 /area/ship/construction)
 "ts" = (
-/obj/structure/salvageable/computer{
-	desc = "Someone clearly punched the screen of this console. It's broken beyond repair. You may be able to salvage something from this."
-	},
 /obj/machinery/light_switch{
 	dir = 4;
 	pixel_x = -20;
 	pixel_y = -7
 	},
 /obj/effect/decal/cleanable/glass,
+/obj/machinery/computer/card/retro,
 /turf/open/floor/plating,
 /area/ship/bridge)
 "tw" = (
@@ -1234,9 +1217,6 @@
 /turf/open/floor/plastic,
 /area/ship/crew/canteen/kitchen)
 "we" = (
-/mob/living/simple_animal/bot/firebot/rockplanet{
-	icon_state = "firebot1"
-	},
 /obj/structure/sign/warning/chemdiamond{
 	pixel_y = 32
 	},
@@ -1255,8 +1235,9 @@
 /obj/structure/safe/floor{
 	number_of_tumblers = 5
 	},
-/obj/item/card/id/captains_spare,
 /obj/item/circuitboard/machine/autolathe/reployer,
+/obj/item/modular_computer/laptop/preset/civilian/rilena,
+/obj/item/computer_hardware/card_slot,
 /turf/open/floor/plating/rust,
 /area/ship/engineering/electrical)
 "wi" = (
@@ -1518,7 +1499,6 @@
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "AR" = (
-/obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/disposalpipe/segment{
 	dir = 8
 	},
@@ -1706,7 +1686,6 @@
 	},
 /area/ship/maintenance/starboard)
 "EH" = (
-/obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/r_wall,
 /area/ship/storage)
 "EM" = (
@@ -2186,7 +2165,6 @@
 	dir = 4;
 	req_access_txt = "10"
 	},
-/obj/effect/mapping_helpers/airlock/locked,
 /obj/structure/cable{
 	icon_state = "4-9"
 	},
@@ -2423,7 +2401,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
-/obj/effect/mapping_helpers/airlock/abandoned,
 /turf/open/floor/plating,
 /area/ship/maintenance/central)
 "US" = (
@@ -2726,11 +2703,6 @@
 	},
 /turf/open/floor/pod/dark,
 /area/ship/crew/office)
-"YS" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/blood/old,
-/turf/closed/wall/rust,
-/area/ship/construction)
 "YU" = (
 /obj/effect/decal/cleanable/blood/footprints{
 	dir = 4
@@ -2992,7 +2964,7 @@ qc
 eS
 Ma
 ua
-YS
+IE
 yz
 Wv
 qm
