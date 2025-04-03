@@ -17,7 +17,7 @@ def annotate(raw_output):
 
     annotation_regex = r'((?P<type>Error|Warning) (?P<errorcode>OD(?P<errornumber>\d{4})) at (?P<location>(?P<filename>.+):(?P<line>\d+):(?P<column>\d+)|<internal>): (?P<message>.+))'
     failures_detected = False
-    expected_failure_case_detected = True # this is just here so this script breaks if we forget to set it to True when we expect a failure. remove this when we have handled the expected failure
+    expected_failure_case_detected = False # this is just here so this script breaks if we forget to set it to True when we expect a failure. remove this when we have handled the expected failure
 
     print("OpenDream Code Annotations:")
     for annotation in re.finditer(annotation_regex, raw_output):
