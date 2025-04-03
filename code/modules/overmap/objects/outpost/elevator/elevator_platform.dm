@@ -26,6 +26,35 @@
 	// handles behavior
 	var/datum/elevator_master/master_datum
 
+/*
+// dont use the tile variants probably bugged as fuck
+// i'm only fluent in shitcode so if anyone finds a way to fix this please use it the catwalk elevators are ugly
+
+/obj/structure/elevator_platform/tile/
+	icon = 'icons/turf/floors/tiles.dmi'
+	icon_state = "tiled_gray"
+	base_icon_state = "tiled_gray"
+	smoothing_flags = null
+	smoothing_groups = null
+	canSmoothWith = null
+
+/obj/structure/elevator_platform/tile/tech
+	icon = 'icons/turf/floors/techfloor.dmi'
+	icon_state = "techfloor"
+	base_icon_state = "techfloor"
+	smoothing_flags = null
+	smoothing_groups = null
+	canSmoothWith = null
+
+/obj/structure/elevator_platform/tile/dark
+	icon = 'icons/turf/floors/tiles.dmi'
+	icon_state = "tiled_dark"
+	base_icon_state = "tiled_dark"
+	smoothing_flags = null
+	smoothing_groups = null
+	canSmoothWith = null
+*/
+
 /obj/structure/elevator_platform/Initialize(mapload)
 	. = ..()
 
@@ -62,7 +91,7 @@
 	if(AM in lift_load)
 		return
 	LAZYADD(lift_load, AM)
-	RegisterSignal(AM, COMSIG_PARENT_QDELETING, PROC_REF(RemoveItemFromPlat))
+	RegisterSignal(AM, COMSIG_PARENT_QDELETING, PROC_REF(PlatItemDeleted))
 
 /obj/structure/elevator_platform/proc/RemoveItemFromPlat(datum/source, atom/movable/AM)
 	SIGNAL_HANDLER
@@ -70,6 +99,10 @@
 		return
 	LAZYREMOVE(lift_load, AM)
 	UnregisterSignal(AM, COMSIG_PARENT_QDELETING)
+
+/obj/structure/elevator_platform/proc/PlatItemDeleted(datum/deleted, force)
+	SIGNAL_HANDLER
+	RemoveItemFromPlat(AM = deleted)
 
 /obj/structure/elevator_platform/proc/get_adj_platforms()
 	. = list()

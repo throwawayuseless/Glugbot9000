@@ -44,8 +44,8 @@
 		},
 		"Shaft Miner": 2,
 		"Cargo Technician": {
-		"outfit": "/datum/outfit/job/nanotrasen/cargo_tech",
-		"slots": 1
+			"outfit": "/datum/outfit/job/nanotrasen/cargo_tech",
+			"slots": 1
 		},
 		"Security Officer": {
 			"outfit": "/datum/outfit/job/nanotrasen/security",
@@ -60,7 +60,7 @@
 			"slots": 3
 		}
 	},
-	"limit": 2,
+	"limit": 1,
 	"starting_funds": 4500,
 	"enabled": true,
 	"space_spawn": false,

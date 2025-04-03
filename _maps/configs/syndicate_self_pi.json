@@ -32,7 +32,7 @@
 		},
 		"Liberator": {
 			"outfit": "/datum/outfit/job/syndicate/security/self",
-			"slots": 3
+			"slots": 2
 		},
 		"Ship Technician": {
 			"outfit": "/datum/outfit/job/syndicate/engineer/self",
@@ -40,11 +40,11 @@
 		},
 		"Salvage Technician": {
 			"outfit": "/datum/outfit/job/syndicate/miner/self",
-			"slots": 2
+			"slots": 1
 		},
 		"Recruit": {
 			"outfit": "/datum/outfit/job/syndicate/assistant/self",
-			"slots": 3
+			"slots": 1
 		}
 	},
 	"limit": 1,

@@ -42,9 +42,9 @@
 			"slots": 4
 		}
 	},
-	"limit": 2,
+	"limit": 0,
 	"starting_funds": 2000,
-	"enabled": false,
+	"enabled": true,
 	"space_spawn": true,
 
 	"architect": "Apogee-dev",
