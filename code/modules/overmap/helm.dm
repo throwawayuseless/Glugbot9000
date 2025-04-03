@@ -40,7 +40,7 @@
 	icon = 'icons/obj/machines/retro_computer.dmi'
 	icon_state = "computer-retro"
 	deconpath = /obj/structure/frame/computer/retro
-
+ 
 /obj/machinery/computer/helm/terragov
 	icon = 'icons/obj/machines/retro_computer.dmi'
 	icon_state = "computer-solgov"
