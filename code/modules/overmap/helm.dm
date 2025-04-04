@@ -357,7 +357,7 @@
 				else
 					if(tgui_alert(usr, "Do you want to bluespace jump? Your ship and everything on it will be removed from the round.", "Jump Confirmation", list("Yes", "No")) != "Yes")
 						return
-					calibrate_jump()
+					calibrate_jump(user = usr) //USER- PENTEST EDIT
 					return
 			if("dock_empty")
 				current_ship.dock_in_empty_space(usr)
