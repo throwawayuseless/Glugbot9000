@@ -3,7 +3,7 @@
 ///////////////////
 /atom/movable/screen/alert/status_effect/trickwine
 	name = "Trickwine"
-	desc = "Your empowered or weakened by a trickwine!"
+	desc = "You're empowered or weakened by a trickwine!"
 	icon_state = "breakaway_flask"
 
 /atom/movable/screen/alert/status_effect/trickwine/proc/setup(datum/reagent/consumable/ethanol/trickwine/trickwine_reagent)
@@ -62,7 +62,7 @@
 //////////
 /datum/status_effect/trickwine/buff
 	id = "trick_wine_buff"
-	alert_desc = "Your empowered a trickwine!"
+	alert_desc = "You're empowered by a trickwine!"
 
 /datum/status_effect/trickwine/buff/on_creation(mob/living/new_owner, datum/reagent/consumable/ethanol/trickwine/trickwine_reagent)
 	. = ..()
@@ -76,7 +76,7 @@
 ////////////
 /datum/status_effect/trickwine/debuff
 	id = "trick_wine_debuff"
-	alert_desc = "Your weakened a trickwine!"
+	alert_desc = "You're weakened by a trickwine!"
 
 /datum/status_effect/trickwine/debuff/on_creation(mob/living/new_owner, datum/reagent/consumable/ethanol/trickwine/trickwine_reagent, set_duration = null)
 	if(isnum(set_duration))
@@ -140,21 +140,21 @@
 
 /datum/status_effect/trickwine/buff/ash
 	id = "ash_wine_buff"
-	trickwine_examine_text = "SUBJECTPRONOUN seems to be filled with energy and devotion. There eyes are dialated and they seem to be twitching."
-	message_apply_others =  ""
-	message_apply_self = ""
-	message_remove_others = ""
-	message_remove_self = ""
-	alert_desc = ""
+	trickwine_examine_text = "SUBJECTPRONOUN seems to be filled with energy and devotion. Their eyes are dialated and they seem to be twitching."
+	message_apply_others =  "jolts, their eyes dilating."
+	message_apply_self = "Wonderous memories of merry feast and righteous fervor fill your mind!"
+	message_remove_others = "slows, their fervor subsiding."
+	message_remove_self = "The righteous reverie leaves you."
+	alert_desc = "Glorious visions of hunt and reverie surround you! If you are truly fathful, your toxin damage will slowly heal."
 
 /datum/status_effect/trickwine/debuff/ash
 	id = "ash_wine_debuff"
-	trickwine_examine_text = "SUBJECTPRONOUN seems to be covered in a thin layer of ash. They seem to be twitching and jittery."
-	message_apply_others =  ""
-	message_apply_self = ""
-	message_remove_others = ""
-	message_remove_self = ""
-	alert_desc = ""
+	trickwine_examine_text = "SUBJECTPRONOUN seems to be covered in a thin layer of ash. They are twitching and jittery."
+	message_apply_others =  "begins twitching uncontrolably."
+	message_apply_self = "Your vision spins, a dizzying energy overpowering you!"
+	message_remove_others = "stills, their jittering fit subsiding."
+	message_remove_self = "The overpowering disorientation fades."
+	alert_desc = "Disorienting visions have overcame you! You will randomly become dizzy or drugged while the visions last."
 
 /datum/status_effect/trickwine/debuff/ash/tick()
 	switch(pick("jitter", "dizzy", "drug"))
@@ -186,22 +186,22 @@
 
 /datum/status_effect/trickwine/buff/ice
 	id = "ice_wine_buff"
-	trickwine_examine_text = ""
-	message_apply_others =  ""
-	message_apply_self = ""
-	message_remove_others = ""
-	message_remove_self = ""
-	alert_desc = ""
+	trickwine_examine_text = "SUBJECTPRONOUN is coated in a thin layer of icy mist."
+	message_apply_others =  "begins emanating icy mist."
+	message_apply_self = "An internal cold flows through your body."
+	message_remove_others = "stops emanating icy mist."
+	message_remove_self = "Your internal cold dissipates, warmth returning to you."
+	alert_desc = "You're being protected by an inner winter! You will thermoregulate faster when overheating, and you cannot be set aflame."
 	trait = TRAIT_NOFIRE
 
 /datum/status_effect/trickwine/debuff/ice
 	id = "ice_wine_debuff"
-	trickwine_examine_text = ""
-	message_apply_others =  ""
+	trickwine_examine_text = "SUBJECTPRONOUN is encased in cloudy ice."
+	message_apply_others =  "becomes frozen in a cube!"
 	message_apply_self = ""
-	message_remove_others = ""
+	message_remove_others = "is freed, the ice cube imprisoning them melting into nothingness."
 	message_remove_self = ""
-	alert_desc = ""
+	alert_desc = "A block of ice has entrapped you! You will be immobilized until the ice subsides."
 	var/icon/cube
 
 /datum/status_effect/trickwine/debuff/ice/on_apply()
@@ -249,7 +249,7 @@
 	message_apply_self = "You feel like a bolt of lightning!"
 	message_remove_others = "has lost their statis energy."
 	message_remove_self = "Inertia leaves your body!"
-	alert_desc = "You feel faster then lightning and cracking with energy! Your immune to shock damage and move faster!"
+	alert_desc = "You feel faster then lightning and cracking with energy! You're immune to shock damage and move faster!"
 	trait = TRAIT_SHOCKIMMUNE
 
 /datum/status_effect/trickwine/buff/shock/on_apply()
