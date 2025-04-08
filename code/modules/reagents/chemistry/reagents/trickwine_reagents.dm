@@ -141,8 +141,8 @@
 /datum/status_effect/trickwine/buff/ash
 	id = "ash_wine_buff"
 	trickwine_examine_text = "SUBJECTPRONOUN seems to be filled with energy and devotion. Their eyes are dialated and they seem to be twitching."
-	message_apply_others =  "jolts, their eyes dilating."
-	message_apply_self = "Wonderous memories of merry feast and righteous fervor fill your mind!"
+	message_apply_others =  "jolts, their eyes dilating with fervant energy."
+	message_apply_self = "Wonderous thoughts of merry feast and righteous fervor fill your mind!"
 	message_remove_others = "slows, their fervor subsiding."
 	message_remove_self = "The righteous reverie leaves you."
 	alert_desc = "Glorious visions of hunt and reverie surround you! If you are truly fathful, your toxin damage will slowly heal."
