@@ -107,8 +107,8 @@
 	//Suffocate
 	if(losebreath >= 1) //You've missed a breath, take oxy damage
 		losebreath--
-		if(prob(10))
-			emote("gasp")
+		//if(prob(10)) //PENTEST CHANGE - Going to set this to 100% chance to trigger the gasp. Because it was so rare in a 5 min test I only saw it twice.
+		emote("gasp")
 		if(istype(loc, /obj/))
 			var/obj/loc_as_obj = loc
 			loc_as_obj.handle_internal_lifeform(src,0)
