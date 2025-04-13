@@ -206,11 +206,13 @@
 			if(do_after(usr, POCKET_STRIP_DELAY, src))
 				if(internal)
 					internal = null
-					update_internals_hud_icon(0)
+					//update_internals_hud_icon(0) //PENTEST EDIT
+					update_action_buttons_icon()
 				else if(ITEM && istype(ITEM, /obj/item/tank))
 					if((wear_mask && (wear_mask.clothing_flags & ALLOWINTERNALS)) || getorganslot(ORGAN_SLOT_BREATHING_TUBE))
 						internal = ITEM
-						update_internals_hud_icon(1)
+						//update_internals_hud_icon(1)
+						update_action_buttons_icon() //PENTEST EDIT
 
 				visible_message("<span class='danger'>[usr] [internal ? "opens" : "closes"] the valve on [src]'s [ITEM.name].</span>", \
 								"<span class='userdanger'>[usr] [internal ? "opens" : "closes"] the valve on your [ITEM.name].</span>", null, null, usr)
@@ -543,7 +545,7 @@
 		REMOVE_TRAIT(src, TRAIT_HANDS_BLOCKED, STAMINA)
 	else
 		return
-	update_health_hud()
+	update_stamina_hud() //PENTEST EDIT HEALTH TO STAMINA
 
 /mob/living/carbon/update_sight()
 	if(!client)
@@ -768,9 +770,9 @@
 		else
 			hud_used.healths.icon_state = "health7"
 
-/mob/living/carbon/proc/update_internals_hud_icon(internal_state = 0)
+/*/mob/living/carbon/proc/update_internals_hud_icon(internal_state = 0) //PENTEST REMOVAL
 	if(hud_used && hud_used.internals)
-		hud_used.internals.icon_state = "internal[internal_state]"
+		hud_used.internals.icon_state = "internal[internal_state]"*/
 
 /*WS revert
 /mob/living/carbon/proc/update_spacesuit_hud_icon(cell_state = "empty")
@@ -810,6 +812,7 @@
 			set_stat(CONSCIOUS)
 	update_damage_hud()
 	update_health_hud()
+	update_stamina_hud()
 	med_hud_set_status()
 
 
