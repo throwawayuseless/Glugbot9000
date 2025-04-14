@@ -416,7 +416,7 @@
 	icon_state = "1-10"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/cockroach,
+/mob/living/basic/cockroach,
 /obj/machinery/light/dim/directional/east,
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
@@ -474,7 +474,7 @@
 	pixel_x = -10
 	},
 /obj/effect/decal/cleanable/cobweb,
-/mob/living/simple_animal/hostile/cockroach,
+/mob/living/basic/cockroach,
 /turf/open/floor/wood/walnut{
 	icon_state = "wood-broken6"
 	},
@@ -601,9 +601,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/door/firedoor/border_only{
-	dir = 2
-	},
+/obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/airlock/maintenance_hatch,
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
@@ -1066,7 +1064,7 @@
 /area/ship/bridge)
 "tw" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
-/mob/living/simple_animal/hostile/cockroach,
+/mob/living/basic/cockroach,
 /turf/open/floor/pod/dark,
 /area/ship/crew/canteen)
 "tB" = (
@@ -1139,7 +1137,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/cockroach,
+/mob/living/basic/cockroach,
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -2232,7 +2230,7 @@
 /obj/machinery/atmospherics/pipe/simple/purple/hidden{
 	dir = 1
 	},
-/mob/living/simple_animal/hostile/cockroach/glockroach,
+/mob/living/basic/cockroach/glockroach,
 /obj/effect/spawner/random/maintenance,
 /obj/machinery/light_switch{
 	dir = 8;
@@ -2498,7 +2496,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
-/mob/living/simple_animal/hostile/cockroach,
+/mob/living/basic/cockroach,
 /turf/open/floor/plating/rust,
 /area/ship/construction)
 "Ww" = (

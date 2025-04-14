@@ -4,7 +4,7 @@
 	"map_short_name": "Aegis-class",
 	"map_path": "_maps/shuttles/syndicate/syndicate_aegis.dmm",
 	"faction": "/datum/faction/syndicate/suns",
-	"prefix": "SV",
+	"prefix": "SUNS",
 	"manufacturer": "UNKNOWN",
 	"description": "After the war with the Xeomorphs, two recently discharged military personnel designed this ship to be as self-sufficient as possible. Given the significant investment of time and money, many questioned their motives. One of the ship's owners simply responded, 'To be left alone.'",
 	"tags": [

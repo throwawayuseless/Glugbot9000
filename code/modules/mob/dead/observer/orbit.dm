@@ -119,10 +119,7 @@
 		var/misc_data = list(other_data[1])
 
 		if(istype(atom_poi, /obj/machinery/computer/helm))
-			if(istype(atom_poi, /obj/machinery/computer/helm/npc))
-				continue
-			else
-				ships += misc_data
+			ships += misc_data
 		else
 			misc += misc_data
 
@@ -243,7 +240,9 @@
 	if(istype(atom_poi, /obj/machinery/computer/helm))
 		var/obj/machinery/computer/helm/helm_poi = atom_poi
 		if(helm_poi.current_ship)
-			misc["extra"] = "Ship: [helm_poi.current_ship.name]"
+			var/datum/overmap/ship/controlled/helm_ship = helm_poi.current_ship
+			misc["full_name"] = helm_ship.name
+			misc["extra"] = "Crew Size: [length(helm_ship.manifest)]"
 
 		return list(misc, critical)
 

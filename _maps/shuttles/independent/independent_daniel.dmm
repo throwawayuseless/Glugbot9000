@@ -1282,7 +1282,6 @@
 /obj/effect/spawner/random/food_or_drink/donut,
 /obj/item/circuitboard/machine/ltsrbt,
 /obj/effect/spawner/random/food_or_drink/ration,
-/obj/effect/spawner/random/salvage/gold,
 /obj/effect/spawner/random/stockparts,
 /obj/item/circuitboard/machine/autolathe,
 /obj/item/stack/tile/carpet/royalblue/fifty,
