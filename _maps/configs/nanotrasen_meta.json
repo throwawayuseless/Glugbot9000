@@ -3,12 +3,11 @@
 	"map_name": "Meta-class Freighter",
 	"map_short_name": "Meta-class",
 	"map_path": "_maps/shuttles/nanotrasen/nanotrasen_meta.dmm",
-	"faction": "/datum/faction/nt",
-	"prefix": "NTSV",
+	"faction": "/datum/faction/nt/ns_logi",
+	"prefix": "NSSV",
 	"manufacturer": "Nanotrasen Spaceworks",
-	"description": "The Meta-class is a medium freight vessel designed for comfort and sustainability over long journeys of delivering cargo. Most, if not all of these ships are no longer under the direct management of the Company, leaving regulation and professionalism at the behest of individual captains. They can be found running independent contracts, delivering cargo, smuggling illicit goods, and generally trying to stay afloat ever since the collapse of Nanotrasen's operations in the frontier.",
+	"description": "The Meta-class is the mainline freighter of N+S Logistics, boasting incredible cargo capacity, spacious crew areas. It has been through a substantial redesign, aiming to reduce accidents and increase supply throughput. The Meta-class frigate can most often be found in the frontier transporting cargo between outposts, delivering mail, and selling N+S goods and merchandise. N+S is not liable for any health issues, injuries or addictions that may occur while working aboard this vessel.",
 	"tags": [
-		"Generalist",
 		"Cargo"
 	],
 	"namelists": [
@@ -18,39 +17,30 @@
 		"HISTORICAL"
 	],
 	"job_slots": {
-		"Captain": {
-			"outfit": "/datum/outfit/job/nanotrasen/captain",
-			"officer": true,
-			"slots": 1
-		},
 		"Quartermaster": {
-			"outfit": "/datum/outfit/job/nanotrasen/quartermaster",
+			"outfit": "/datum/outfit/job/nanotrasen/captain/ns",
 			"officer": true,
-			"slots": 1
-		},
-		"Medical Doctor": {
-			"outfit": "/datum/outfit/job/nanotrasen/doctor",
-			"slots": 1
-		},
-		"Ship Engineer": {
-			"outfit": "/datum/outfit/job/nanotrasen/engineer",
-			"slots": 1
-		},
-		"Shaft Miner": {
-			"outfit": "/datum/outfit/job/nanotrasen/miner",
 			"slots": 1
 		},
 		"Cargo Technician": {
-			"outfit": "/datum/outfit/job/cargo_tech",
+			"outfit": "/datum/outfit/job/nanotrasen/cargo_tech",
+			"slots": 2
+		},
+		"Field Technician": {
+			"outfit": "/datum/outfit/job/nanotrasen/miner/no_equipment",
 			"slots": 1
 		},
-		"Assistant": {
+		"Engineer": {
+			"outfit": "/datum/outfit/job/nanotrasen/engineer",
+			"slots": 1
+		},
+		"Desk Assistant": {
 			"outfit": "/datum/outfit/job/nanotrasen/assistant",
 			"slots": 2
 		}
 	},
 	"limit": 2,
-	"starting_funds": 5000,
+	"starting_funds": 4000,
 	"enabled": true,
 	"space_spawn": false,
 

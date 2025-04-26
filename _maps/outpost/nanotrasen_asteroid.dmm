@@ -83,7 +83,7 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/power/apc/auto_name/directional/east/outpost,
 /turf/open/floor/plasteel/tech,
 /area/outpost/security/armory)
 "aA" = (
@@ -1137,7 +1137,7 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/power/apc/auto_name/directional/south,
+/obj/machinery/power/apc/auto_name/directional/south/outpost,
 /turf/open/floor/concrete/tiles,
 /area/outpost/hallway/aft)
 "eq" = (
@@ -2190,7 +2190,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/wood,
-/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/power/apc/auto_name/directional/north/outpost,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
@@ -2343,7 +2343,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/power/apc/auto_name/directional/north/outpost,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
@@ -3397,7 +3397,7 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/power/apc/auto_name/directional/east/outpost,
 /obj/structure/chair/pew/left{
 	dir = 8
 	},
@@ -3712,7 +3712,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/machinery/power/apc/auto_name/directional/west,
+/obj/machinery/power/apc/auto_name/directional/west/outpost,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -4757,7 +4757,7 @@
 /turf/open/floor/grass,
 /area/outpost/crew/lounge)
 "qZ" = (
-/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/power/apc/auto_name/directional/north/outpost,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
@@ -5371,7 +5371,7 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/power/apc/auto_name/directional/north/outpost,
 /turf/open/floor/grass,
 /area/outpost/crew/garden)
 "sM" = (
@@ -5798,7 +5798,7 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/power/apc/auto_name/directional/east/outpost,
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
@@ -6492,7 +6492,7 @@
 /obj/machinery/computer/monitor{
 	dir = 1
 	},
-/obj/machinery/power/apc/auto_name/directional/south,
+/obj/machinery/power/apc/auto_name/directional/south/outpost,
 /obj/structure/cable,
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/engineering)
@@ -7315,7 +7315,7 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/power/apc/auto_name/directional/east/outpost,
 /turf/open/floor/plasteel,
 /area/outpost/vacant_rooms)
 "zj" = (
@@ -7323,7 +7323,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/power/apc/auto_name/directional/west,
+/obj/machinery/power/apc/auto_name/directional/west/outpost,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -8275,7 +8275,7 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/power/apc/auto_name/directional/north/outpost,
 /turf/open/floor/plating,
 /area/outpost/maintenance/fore)
 "CE" = (
@@ -9619,7 +9619,7 @@
 	color = "#808080"
 	},
 /obj/effect/decal/cleanable/cobweb,
-/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/power/apc/auto_name/directional/north/outpost,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
@@ -11143,7 +11143,7 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/outpost/hallway/fore)
 "MC" = (
-/obj/machinery/power/apc/auto_name/directional/west,
+/obj/machinery/power/apc/auto_name/directional/west/outpost,
 /obj/structure/cable,
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/plasteel/dark,
@@ -11534,7 +11534,7 @@
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/cryo)
 "NR" = (
-/obj/machinery/power/apc/auto_name/directional/west,
+/obj/machinery/power/apc/auto_name/directional/west/outpost,
 /obj/effect/decal/cleanable/cobweb,
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -12982,7 +12982,7 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/power/apc/auto_name/directional/west,
+/obj/machinery/power/apc/auto_name/directional/west/outpost,
 /turf/open/floor/wood,
 /area/outpost/crew/dorm)
 "Sz" = (
@@ -13125,7 +13125,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/power/apc/auto_name/directional/north/outpost,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
@@ -13437,7 +13437,7 @@
 /turf/open/floor/carpet/royalblue,
 /area/outpost/operations)
 "TW" = (
-/obj/machinery/power/apc/auto_name/directional/south,
+/obj/machinery/power/apc/auto_name/directional/south/outpost,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -14333,7 +14333,7 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 8
 	},
-/obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/power/apc/auto_name/directional/east/outpost,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
@@ -14578,7 +14578,7 @@
 /obj/structure/closet/secure_closet/security/sec,
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/structure/cable,
-/obj/machinery/power/apc/auto_name/directional/south,
+/obj/machinery/power/apc/auto_name/directional/south/outpost,
 /turf/open/floor/plasteel/dark,
 /area/outpost/security)
 "XY" = (
@@ -15061,7 +15061,7 @@
 "Zw" = (
 /obj/machinery/light/directional/east,
 /obj/effect/decal/cleanable/plasma,
-/obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/power/apc/auto_name/directional/east/outpost,
 /obj/structure/cable{
 	icon_state = "0-8"
 	},

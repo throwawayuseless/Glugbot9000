@@ -682,7 +682,7 @@
 	dir = 4
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/power/apc/auto_name/directional/east/outpost,
 /turf/open/floor/plating,
 /area/outpost/engineering/atmospherics)
 "dB" = (
@@ -1072,7 +1072,7 @@
 /obj/effect/turf_decal/steeldecal/steel_decals_central7{
 	dir = 1
 	},
-/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/power/apc/auto_name/directional/north/outpost,
 /turf/open/floor/plasteel/tech,
 /area/outpost/cargo)
 "fe" = (
@@ -2303,7 +2303,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/power/apc/auto_name/directional/south,
+/obj/machinery/power/apc/auto_name/directional/south/outpost,
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
 	},
@@ -2422,7 +2422,7 @@
 /obj/effect/turf_decal/steeldecal/steel_decals_central7{
 	dir = 1
 	},
-/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/power/apc/auto_name/directional/north/outpost,
 /turf/open/floor/plasteel/tech,
 /area/outpost/hallway/central)
 "lE" = (
@@ -2781,7 +2781,7 @@
 	},
 /obj/effect/turf_decal/borderfloorblack,
 /obj/effect/turf_decal/steeldecal/steel_decals_central7,
-/obj/machinery/power/apc/auto_name/directional/south,
+/obj/machinery/power/apc/auto_name/directional/south/outpost,
 /turf/open/floor/plasteel/dark,
 /area/outpost/maintenance/fore)
 "nQ" = (
@@ -3822,7 +3822,7 @@
 /obj/effect/turf_decal/steeldecal/steel_decals_central7{
 	dir = 4
 	},
-/obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/power/apc/auto_name/directional/east/outpost,
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
 "sA" = (
@@ -4294,7 +4294,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
 	},
-/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/power/apc/auto_name/directional/north/outpost,
 /turf/open/floor/plating/rust,
 /area/outpost/maintenance/central)
 "uP" = (
@@ -4962,7 +4962,7 @@
 /obj/effect/turf_decal/steeldecal/steel_decals_central7{
 	dir = 8
 	},
-/obj/machinery/power/apc/auto_name/directional/west,
+/obj/machinery/power/apc/auto_name/directional/west/outpost,
 /turf/open/floor/plasteel/dark,
 /area/outpost/vacant_rooms/shop)
 "xB" = (
@@ -5129,7 +5129,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/light/directional/south,
-/obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/power/apc/auto_name/directional/east/outpost,
 /turf/open/floor/plasteel/elevatorshaft,
 /area/outpost/crew/cryo)
 "yq" = (
@@ -6800,7 +6800,7 @@
 	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/power/apc/auto_name/directional/west,
+/obj/machinery/power/apc/auto_name/directional/west/outpost,
 /obj/structure/cable/yellow,
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo/office)
@@ -6954,7 +6954,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/power/apc/auto_name/directional/north/outpost,
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
 	},
@@ -7327,7 +7327,7 @@
 /obj/effect/turf_decal/steeldecal/steel_decals_central7{
 	dir = 4
 	},
-/obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/power/apc/auto_name/directional/east/outpost,
 /turf/open/floor/plasteel/dark,
 /area/outpost/crew/bar)
 "JG" = (
@@ -9346,7 +9346,7 @@
 /obj/effect/turf_decal/steeldecal/steel_decals_central7{
 	dir = 4
 	},
-/obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/power/apc/auto_name/directional/east/outpost,
 /turf/open/floor/plasteel/tech,
 /area/outpost/crew/lounge)
 "UI" = (
@@ -9551,7 +9551,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
 	},
-/obj/machinery/power/apc/auto_name/directional/south,
+/obj/machinery/power/apc/auto_name/directional/south/outpost,
 /turf/open/floor/plating,
 /area/outpost/crew/dorm)
 "VO" = (
@@ -9971,7 +9971,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/cable/yellow,
-/obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/power/apc/auto_name/directional/east/outpost,
 /turf/open/floor/pod/dark,
 /area/outpost/engineering)
 "XX" = (
