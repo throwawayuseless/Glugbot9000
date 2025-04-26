@@ -2345,9 +2345,6 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/hallway/central)
 "vF" = (

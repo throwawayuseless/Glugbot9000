@@ -1265,6 +1265,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/cryo)
 "nW" = (
@@ -3232,6 +3235,21 @@
 /obj/item/stack/sheet/rglass,
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
+"JT" = (
+/obj/structure/grille,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/obj/machinery/door/poddoor{
+	id = "pi_windows";
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating,
+/area/ship/bridge)
 "JX" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -3305,6 +3323,9 @@
 /obj/machinery/door/poddoor{
 	id = "pi_windows";
 	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
 	},
 /turf/open/floor/plating,
 /area/ship/bridge)
@@ -5689,6 +5710,6 @@ nk
 Ks
 Ks
 Ks
-ke
+JT
 zO
 "}

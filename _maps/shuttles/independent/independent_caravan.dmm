@@ -329,7 +329,7 @@
 /obj/item/storage/box/lights/mixed,
 /obj/structure/closet/wall/directional/west,
 /turf/open/floor/plasteel/dark,
-/area/ship/crew/janitor)
+/area/ship/hallway/fore)
 "fw" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible/layer4,
 /obj/structure/cable{
@@ -358,7 +358,7 @@
 /obj/item/soap,
 /obj/structure/curtain,
 /turf/open/floor/plasteel/dark,
-/area/ship/crew/toilet)
+/area/ship/hallway/fore)
 "gk" = (
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
@@ -851,12 +851,6 @@
 /obj/effect/decal/cleanable/oil,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
-"oz" = (
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/crew)
 "oA" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/random/food_or_drink/ration,
@@ -1160,7 +1154,7 @@
 /obj/item/mop,
 /obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/dark,
-/area/ship/crew/janitor)
+/area/ship/hallway/fore)
 "vy" = (
 /obj/machinery/atmospherics/pipe/layer_manifold{
 	dir = 4
@@ -1919,7 +1913,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
-/area/ship/crew/toilet)
+/area/ship/hallway/fore)
 "IZ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -3396,7 +3390,7 @@ re
 re
 re
 re
-oz
+LR
 WK
 mX
 Ur
