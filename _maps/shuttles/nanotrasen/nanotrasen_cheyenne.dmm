@@ -10552,7 +10552,7 @@
 /area/ship/medical)
 "Sz" = (
 /obj/structure/window/reinforced/spawner,
-/mob/living/simple_animal/mouse{
+/mob/living/basic/mouse{
 	desc = "This rat seems particularly old and crotchety.";
 	name = "Splinter";
 	faction = list("playerNanotrasen")

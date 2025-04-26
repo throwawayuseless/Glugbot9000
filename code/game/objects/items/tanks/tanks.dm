@@ -33,7 +33,7 @@
 	if(breather.internal == src)
 		to_chat(breather, "<span class='notice'>You close [src] valve.</span>")
 		breather.internal = null
-		breather.update_internals_hud_icon(0)
+		//breather.update_internals_hud_icon(0) //PENTEST REMOVAL
 	else
 		if(!breather.getorganslot(ORGAN_SLOT_BREATHING_TUBE))
 			var/obj/item/clothing/clothes_check = breather.wear_mask
@@ -59,7 +59,7 @@
 		else
 			to_chat(breather, "<span class='notice'>You open [src] valve.</span>")
 		breather.internal = src
-		breather.update_internals_hud_icon(1)
+		//breather.update_internals_hud_icon(1) //PENTEST REMOVAL
 	breather.update_action_buttons_icon()
 
 

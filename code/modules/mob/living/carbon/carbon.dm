@@ -206,11 +206,13 @@
 			if(do_after(usr, POCKET_STRIP_DELAY, src))
 				if(internal)
 					internal = null
-					update_internals_hud_icon(0)
+					//update_internals_hud_icon(0) //PENTEST EDIT
+					update_action_buttons_icon()
 				else if(ITEM && istype(ITEM, /obj/item/tank))
 					if((wear_mask && (wear_mask.clothing_flags & ALLOWINTERNALS)) || getorganslot(ORGAN_SLOT_BREATHING_TUBE))
 						internal = ITEM
-						update_internals_hud_icon(1)
+						//update_internals_hud_icon(1)
+						update_action_buttons_icon() //PENTEST EDIT
 
 				visible_message("<span class='danger'>[usr] [internal ? "opens" : "closes"] the valve on [src]'s [ITEM.name].</span>", \
 								"<span class='userdanger'>[usr] [internal ? "opens" : "closes"] the valve on your [ITEM.name].</span>", null, null, usr)
@@ -543,7 +545,7 @@
 		REMOVE_TRAIT(src, TRAIT_HANDS_BLOCKED, STAMINA)
 	else
 		return
-	update_health_hud()
+	update_stamina_hud() //PENTEST EDIT HEALTH TO STAMINA
 
 /mob/living/carbon/update_sight()
 	if(!client)
@@ -581,9 +583,19 @@
 			see_invisible = max(G.invis_view, see_invisible)
 		if(!isnull(G.lighting_alpha))
 			lighting_alpha = min(lighting_alpha, G.lighting_alpha)
+	if(head)
+		var/obj/item/clothing/head/headslot = head
+		sight |= headslot.vision_flags
+		see_in_dark = max(headslot.darkness_view, see_in_dark)
+		if(headslot.invis_override)
+			see_invisible = max(see_invisible, headslot.invis_override)
+		else
+			see_invisible = max(headslot.invis_view, see_invisible)
+		if(!isnull(headslot.lighting_alpha))
+			lighting_alpha = min(lighting_alpha, headslot.lighting_alpha)
 
-	if(HAS_TRAIT(src, TRAIT_NIGHT_VISION))
-		lighting_alpha = min(lighting_alpha, LIGHTING_PLANE_ALPHA_NV_TRAIT)
+	if(HAS_TRAIT(src, TRAIT_NIGHT_VISION)) //PENTEST ADDITION - NIGHT VISION
+		lighting_alpha = min(lighting_alpha, LIGHTING_PLANE_ALPHA_NV_TRAIT) //PENTEST ADDITION
 
 	if(HAS_TRAIT(src, TRAIT_CHEMICAL_NIGHTVISION))
 		lighting_alpha = min(lighting_alpha, LIGHTING_PLANE_ALPHA_NV_DRUG)
@@ -768,9 +780,9 @@
 		else
 			hud_used.healths.icon_state = "health7"
 
-/mob/living/carbon/proc/update_internals_hud_icon(internal_state = 0)
+/*/mob/living/carbon/proc/update_internals_hud_icon(internal_state = 0) //PENTEST REMOVAL
 	if(hud_used && hud_used.internals)
-		hud_used.internals.icon_state = "internal[internal_state]"
+		hud_used.internals.icon_state = "internal[internal_state]"*/
 
 /*WS revert
 /mob/living/carbon/proc/update_spacesuit_hud_icon(cell_state = "empty")
@@ -810,6 +822,7 @@
 			set_stat(CONSCIOUS)
 	update_damage_hud()
 	update_health_hud()
+	update_stamina_hud()
 	med_hud_set_status()
 
 

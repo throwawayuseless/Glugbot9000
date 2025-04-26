@@ -21,7 +21,7 @@
 			"slots": 1,
 			"officer": true
 		},
-		"Medical Administrator":{
+		"Medical Administrator": {
 			"outfit": "/datum/outfit/job/independent/cmo",
 			"slots": 1,
 			"officer": true

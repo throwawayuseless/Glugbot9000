@@ -8,7 +8,7 @@
 	if(visualsOnly)
 		return
 	H.faction |= list(FACTION_PLAYER_TERRAGOV)
-	//H.grant_language(/datum/language/solarian) - PENTEST OVERRIDE
+	H.grant_language(/datum/language/solarian_international)
 
 /datum/outfit/job/terragov/assistant
 	name = "TerraGov - Scribe"

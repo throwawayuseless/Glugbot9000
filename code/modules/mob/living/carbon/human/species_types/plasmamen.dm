@@ -10,9 +10,7 @@
 	mutanttongue = /obj/item/organ/tongue/bone/plasmaman
 	mutantliver = /obj/item/organ/liver/plasmaman
 	mutantstomach = /obj/item/organ/stomach/plasmaman
-	burnmod = 1.5
 	heatmod = 1.5
-	brutemod = 1.5
 	breathid = "tox"
 	damage_overlay_type = ""//let's not show bloody wounds or burns over bones.
 	var/internal_fire = FALSE //If the bones themselves are burning clothes won't help you much
@@ -184,7 +182,8 @@
 
 	H.equipOutfit(O, visualsOnly)
 	H.internal = H.get_item_for_held_index(2)
-	H.update_internals_hud_icon(1)
+	H.update_action_buttons_icon()
+	//H.update_internals_hud_icon(1) //PENTEST EDIT
 	return 0
 
 /datum/species/plasmaman/random_name(gender,unique,lastname)

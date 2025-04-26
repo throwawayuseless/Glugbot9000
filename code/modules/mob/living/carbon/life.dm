@@ -61,7 +61,7 @@
 ///////////////
 
 //Start of a breath chain, calls breathe()
-/mob/living/carbon/handle_breathing(times_fired)
+/mob/living/carbon/handle_breathing(seconds_per_tick, times_fired)
 	var/next_breath = 4
 	var/obj/item/organ/lungs/L = getorganslot(ORGAN_SLOT_LUNGS)
 	var/obj/item/organ/heart/H = getorganslot(ORGAN_SLOT_HEART)
@@ -107,8 +107,8 @@
 	//Suffocate
 	if(losebreath >= 1) //You've missed a breath, take oxy damage
 		losebreath--
-		if(prob(10))
-			emote("gasp")
+		//if(prob(10)) //PENTEST CHANGE - Going to set this to 100% chance to trigger the gasp. Because it was so rare in a 5 min test I only saw it twice.
+		emote("gasp")
 		if(istype(loc, /obj/))
 			var/obj/loc_as_obj = loc
 			loc_as_obj.handle_internal_lifeform(src,0)
@@ -288,12 +288,15 @@
 	if(internal)
 		if(internal.loc != src)
 			internal = null
-			update_internals_hud_icon(0)
+			update_action_buttons_icon() //PENTEST EDIT
+			//update_internals_hud_icon(0)
 		else if (!internals && !getorganslot(ORGAN_SLOT_BREATHING_TUBE)) //WS Port - Citadel Internals
 			internal = null
-			update_internals_hud_icon(0)
+			update_action_buttons_icon() //PENTEST EDIT
+			//update_internals_hud_icon(0)
 		else
-			update_internals_hud_icon(1)
+			update_action_buttons_icon() //PENTEST EDIT
+			//update_internals_hud_icon(1)
 			. = internal.remove_air_volume(volume_needed)
 			if(!.)
 				return FALSE //to differentiate between no internals and active, but empty internals

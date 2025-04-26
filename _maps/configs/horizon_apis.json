@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
-	"map_name": "Apis-Class Engineering Platform",
+	"map_name": "Apis-class Engineering Platform",
 	"map_short_name": "Apis-class",
 	"map_path": "_maps/shuttles/independent/horizon_apis.dmm",
 	"faction": "/datum/faction/independent",

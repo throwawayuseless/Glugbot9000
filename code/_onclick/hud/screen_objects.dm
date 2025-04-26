@@ -302,7 +302,7 @@
 	icon = 'icons/hud/screen_cyborg.dmi'
 	screen_loc = ui_borg_intents
 
-/atom/movable/screen/internals
+/* /atom/movable/screen/internals //PENTEST REMOVAL
 	name = "toggle internals"
 	icon_state = "internal0"
 	screen_loc = ui_internal
@@ -367,7 +367,7 @@
 		else
 			to_chat(breather, "<span class='warning'>You don't have an oxygen tank!</span>")
 			return
-	breather.update_action_buttons_icon()
+	breather.update_action_buttons_icon()*/
 
 /atom/movable/screen/mov_intent
 	name = "run/walk toggle"

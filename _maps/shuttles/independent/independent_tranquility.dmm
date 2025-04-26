@@ -994,10 +994,10 @@
 	},
 /obj/item/reagent_containers/food/drinks/soda_cans/molten,
 /obj/item/reagent_containers/food/drinks/soda_cans/lemon_lime,
+/obj/item/reagent_containers/food/drinks/soda_cans/lemon_lime,
 /obj/item/reagent_containers/food/drinks/soda_cans/pwr_game,
 /obj/item/reagent_containers/food/drinks/soda_cans/pwr_game,
-/obj/item/reagent_containers/food/drinks/soda_cans/random,
-/obj/item/reagent_containers/food/drinks/soda_cans/random,
+/obj/item/reagent_containers/food/drinks/soda_cans/sodawater,
 /obj/item/reagent_containers/food/drinks/soda_cans/sodawater,
 /obj/item/storage/cans/sixsoda,
 /obj/item/reagent_containers/food/snacks/canned/beans,
@@ -1307,7 +1307,7 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/mob/living/simple_animal/mouse/white{
+/mob/living/basic/mouse/white{
 	name = "The Brain"
 	},
 /turf/open/floor/plasteel/white,
@@ -1368,6 +1368,7 @@
 /obj/effect/turf_decal/corner/transparent/bar{
 	dir = 1
 	},
+/obj/item/reagent_containers/food/snacks/store/cheesewheel,
 /turf/open/floor/plasteel/white,
 /area/ship/crew)
 "jK" = (
@@ -1962,7 +1963,7 @@
 	dir = 10
 	},
 /obj/machinery/light/directional/west,
-/mob/living/simple_animal/mouse/brown{
+/mob/living/basic/mouse/brown{
 	name = "Pinkie"
 	},
 /turf/open/floor/plasteel/white,
@@ -3083,7 +3084,6 @@
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/crewthree)
 "zy" = (
-/obj/item/reagent_containers/food/snacks/customizable/cheesewheel,
 /obj/effect/turf_decal/siding/wood,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -3990,6 +3990,7 @@
 	dir = 1
 	},
 /obj/structure/table/wood,
+/obj/item/reagent_containers/food/snacks/store/cheesewheel,
 /turf/open/floor/wood/walnut,
 /area/ship/crew)
 "GG" = (
@@ -5272,7 +5273,6 @@
 /area/ship/security/armory)
 "PV" = (
 /obj/machinery/vending/autodrobe,
-/obj/item/reagent_containers/food/snacks/customizable/cheesewheel,
 /obj/effect/turf_decal/siding/wood/end{
 	dir = 8
 	},

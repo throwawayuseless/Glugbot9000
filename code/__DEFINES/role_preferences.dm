@@ -37,6 +37,7 @@
 #define ROLE_INTERNAL_AFFAIRS "Internal Affairs Agent"
 #define ROLE_FAMILIES "Familes Antagonists"
 #define ROLE_BORER "borer"
+#define ROLE_CULTIST "Cultist"
 
 //Missing assignment means it's not a gamemode specific role, IT'S NOT A BUG OR ERROR.
 //The gamemode specific ones are just so the gamemodes can query whether a player is old enough

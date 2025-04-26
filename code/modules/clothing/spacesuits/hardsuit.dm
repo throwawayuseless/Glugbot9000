@@ -327,20 +327,24 @@
 /obj/item/clothing/head/helmet/space/hardsuit/syndi
 	name = "blood-red hardsuit helmet"
 	desc = "A dual-mode advanced hardsuit designed for special combat operations. It is in EVA mode. Produced by the Gorlex Marauders."
-	alt_desc = "A dual-mode advanced hardsuit designed for special combat operations. It is in combat mode. Produced by the Gorlex Marauders."
+	alt_desc = "A dual-mode advanced hardsuit designed for special combat operations. It is in travel mode. Produced by the Gorlex Marauders."
 	icon_state = "hardsuit1-syndi"
 	item_state = "syndie_helm"
 	hardsuit_type = "syndi"
 	armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90)
-	on = TRUE
+	on = FALSE
 	var/obj/item/clothing/suit/space/hardsuit/syndi/linkedsuit = null
-	actions_types = list(/datum/action/item_action/toggle_helmet_mode)
+	actions_types = list(/datum/action/item_action/toggle_helmet_mode,/datum/action/item_action/toggle_helmet_light)
 	visor_flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEFACIALHAIR|HIDEEARS
 	visor_flags = STOPSPRESSUREDAMAGE
 	var/full_retraction = FALSE //whether or not our full face is revealed or not during combat mode
+	var/eva_mode = TRUE
+
+	kepori_override_icon = 'icons/mob/clothing/head/spacesuits_kepori.dmi'
+	supports_variations = KEPORI_VARIATION
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/update_icon_state()
-	icon_state = "hardsuit[on]-[hardsuit_type]"
+	icon_state = "hardsuit[eva_mode]-[hardsuit_type]"
 	return ..()
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/Initialize()
@@ -348,16 +352,19 @@
 	if(istype(loc, /obj/item/clothing/suit/space/hardsuit/syndi))
 		linkedsuit = loc
 
-/obj/item/clothing/head/helmet/space/hardsuit/syndi/attack_self(mob/user) //Toggle Helmet
-	if(!isturf(user.loc))
-		to_chat(user, "<span class='warning'>You cannot toggle your helmet while in this [user.loc]!</span>" )
-		return
+/obj/item/clothing/head/helmet/space/hardsuit/syndi/attack_self(mob/user)
 	on = !on
-	if(on || force)
-		to_chat(user, "<span class='notice'>You switch your hardsuit to EVA mode, sacrificing speed for space protection.</span>")
+	set_light_on(on)
+
+/obj/item/clothing/head/helmet/space/hardsuit/syndi/proc/toggle_mode(mob/user) //Toggle Helmet
+	if(!isturf(user.loc))
+		to_chat(user, span_notice("You cannot toggle your helmet while in this [user.loc]!") )
+		return
+	eva_mode = !eva_mode
+	if(eva_mode || force)
+		to_chat(user, span_notice("You switch your hardsuit to EVA mode, sealing your visor and protecting you from space."))
 		name = initial(name)
 		desc = initial(desc)
-		set_light_on(TRUE)
 		clothing_flags |= visor_flags
 		cold_protection |= HEAD
 		if(full_retraction)
@@ -366,10 +373,9 @@
 			flags_cover |= HEADCOVERSMOUTH
 		flags_inv |= visor_flags_inv
 	else
-		to_chat(user, "<span class='notice'>You switch your hardsuit to combat mode, sacrificing space protection for improved speed.</span>")
-		name += " (combat)"
+		to_chat(user, span_notice("You switch your hardsuit to travel mode, opening your visor and exposing you to environmental conditions."))
+		name += " (travel)"
 		desc = alt_desc
-		set_light_on(FALSE)
 		clothing_flags &= ~visor_flags
 		cold_protection &= ~HEAD
 		if(full_retraction)
@@ -390,20 +396,20 @@
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/proc/toggle_hardsuit_mode(mob/user) //Helmet Toggles Suit Mode
 	if(linkedsuit)
-		if(on)
+		if(eva_mode)
 			linkedsuit.name = initial(linkedsuit.name)
 			linkedsuit.desc = initial(linkedsuit.desc)
 			linkedsuit.clothing_flags |= STOPSPRESSUREDAMAGE
 			linkedsuit.cold_protection |= CHEST | GROIN | LEGS | FEET | ARMS | HANDS
 		else
-			linkedsuit.name += " (combat)"
+			linkedsuit.name += " (travel)"
 			linkedsuit.desc = linkedsuit.alt_desc
 			linkedsuit.clothing_flags &= ~STOPSPRESSUREDAMAGE
 			linkedsuit.cold_protection &= ~(CHEST | GROIN | LEGS | FEET | ARMS | HANDS)
 			if(linkedsuit.lightweight)
 				linkedsuit.flags_inv &= ~(HIDEGLOVES | HIDESHOES | HIDEJUMPSUIT)
 
-		linkedsuit.icon_state = "hardsuit[on]-[hardsuit_type]"
+		linkedsuit.icon_state = "hardsuit[eva_mode]-[hardsuit_type]"
 		linkedsuit.update_appearance()
 		user.update_inv_wear_suit()
 		user.update_inv_w_uniform()
@@ -413,7 +419,7 @@
 /obj/item/clothing/suit/space/hardsuit/syndi
 	name = "blood-red hardsuit"
 	desc = "A dual-mode advanced hardsuit designed for special combat operations. It is in EVA mode. Produced by the Gorlex Marauders."
-	alt_desc = "A dual-mode advanced hardsuit designed for special combat operations. It is in combat mode. Produced by the Gorlex Marauders."
+	alt_desc = "A dual-mode advanced hardsuit designed for special combat operations. It is in travel mode. Produced by the Gorlex Marauders."
 	icon_state = "hardsuit1-syndi"
 	item_state = "syndie_hardsuit"
 	hardsuit_type = "syndi"
@@ -421,15 +427,17 @@
 	allowed = list(/obj/item/gun, /obj/item/ammo_box,/obj/item/ammo_casing, /obj/item/melee/baton, /obj/item/melee/energy/sword/saber, /obj/item/restraints/handcuffs, /obj/item/tank/internals)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi
 	jetpack = /obj/item/tank/jetpack/suit
-	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION
 	slowdown = 0.5
 	var/lightweight = 0 //used for flags when toggling
+
+	kepori_override_icon = 'icons/mob/clothing/suits/spacesuits_kepori.dmi'
+	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION | KEPORI_VARIATION
 
 //Ramzi Syndie suit
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/ramzi
 	name = "rust-red hardsuit helmet"
 	desc = "A beat-up standardized dual-mode helmet derived from more advanced special operations helmets, its red rusted into a dirty brown. It is in EVA mode. Manufactured by Ramzi Clique."
-	alt_desc = "A beat-up standardized dual-mode helmet derived from more advanced special operations helmets, its red rusted into a dirty brown. It is in combat mode. Manufactured by Ramzi Clique."
+	alt_desc = "A beat-up standardized dual-mode helmet derived from more advanced special operations helmets, its red rusted into a dirty brown. It is in travel mode. Manufactured by Ramzi Clique."
 	icon_state = "hardsuit1-ramzi"
 	item_state = "hardsuit1-ramzi"
 	hardsuit_type = "ramzi"
@@ -438,7 +446,7 @@
 /obj/item/clothing/suit/space/hardsuit/syndi/ramzi
 	name = "rust-red hardsuit"
 	desc = "A beat-up standardized dual-mode hardsuit derived from more advanced special operations hardsuits, its red rusted into a dirty brown. It is in EVA mode. Manufactured by Ramzi Clique."
-	alt_desc = "A beat-up standardized dual-mode hardsuit derived from more advanced special operations hardsuits, its red rusted into a dirty brown. It is in combat mode. Manufactured by Ramzi Clique."
+	alt_desc = "A beat-up standardized dual-mode hardsuit derived from more advanced special operations hardsuits, its red rusted into a dirty brown. It is in travel mode. Manufactured by Ramzi Clique."
 	icon_state = "hardsuit1-ramzi"
 	item_state = "hardsuit1-ramzi"
 	hardsuit_type = "ramzi"
@@ -447,13 +455,13 @@
 	armor = list("melee" = 35, "bullet" = 40, "laser" = 20,"energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75)
 	slowdown = 0.7
 	jetpack = null
-	supports_variations = DIGITIGRADE_VARIATION
+	supports_variations = DIGITIGRADE_VARIATION | KEPORI_VARIATION
 
 //Elite Syndie suit
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite
 	name = "elite syndicate hardsuit helmet"
 	desc = "An elite version of the syndicate helmet, with improved armour and fireproofing. It is in EVA mode. Property of Gorlex Marauders."
-	alt_desc = "An elite version of the syndicate helmet, with improved armour and fireproofing. It is in combat mode. Property of Gorlex Marauders."
+	alt_desc = "An elite version of the syndicate helmet, with improved armour and fireproofing. It is in travel mode. Property of Gorlex Marauders."
 	icon_state = "hardsuit0-syndielite"
 	hardsuit_type = "syndielite"
 	armor = list("melee" = 60, "bullet" = 60, "laser" = 50, "energy" = 60, "bomb" = 55, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 100)
@@ -470,8 +478,8 @@
 
 /obj/item/clothing/suit/space/hardsuit/syndi/elite
 	name = "elite syndicate hardsuit"
-	desc = "An elite version of the syndicate hardsuit, with improved armour and fireproofing. It is in travel mode."
-	alt_desc = "An elite version of the syndicate hardsuit, with improved armour and fireproofing. It is in combat mode."
+	desc = "An elite version of the syndicate hardsuit, with improved armour and fireproofing. It is in EVA mode."
+	alt_desc = "An elite version of the syndicate hardsuit, with improved armour and fireproofing. It is in travel mode."
 	icon_state = "hardsuit0-syndielite"
 	item_state = "elitesyndie_hardsuit"
 	hardsuit_type = "syndielite"
@@ -489,17 +497,17 @@
 /obj/item/clothing/suit/space/hardsuit/syndi/cybersun
 	name = "neutron-star combat hardsuit"
 	desc = "Designed with fighting Nanotrasen weapons in mind, the Cybersun combat hardsuit trades ballistic and blunt protection for top grade laser protection. It is in EVA mode. Produced by Cybersun Industries."
-	alt_desc = "Designed with fighting Nanotrasen weapons in mind, the Cybersun combat hardsuit trades ballistic and blunt protection for top grade laser protection. It is in combat mode. Produced by Cybersun Industries."
+	alt_desc = "Designed with fighting Nanotrasen weapons in mind, the Cybersun combat hardsuit trades ballistic and blunt protection for top grade laser protection. It is in travel mode. Produced by Cybersun Industries."
 	icon_state = "hardsuit1-cybersun"
 	hardsuit_type = "cybersun"
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 50, "energy" = 50, "bomb" = 25, "bio" = 100, "rad" = 60, "fire" = 60, "acid" = 60)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/cybersun
-	supports_variations = VOX_VARIATION
+	supports_variations = VOX_VARIATION | KEPORI_VARIATION
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/cybersun
 	name = "neutron-star combat hardsuit helmet"
 	desc = "Designed with fighting Nanotrasen weapons in mind, the Cybersun combat hardsuit trades ballistic and blunt protection for top grade laser protection. It is in EVA mode. Produced by Cybersun Industries."
-	alt_desc = "Designed with fighting Nanotrasen weapons in mind, the Cybersun combat hardsuit trades ballistic and blunt protection for top grade laser protection. It is in combat mode. Produced by Cybersun Industries."
+	alt_desc = "Designed with fighting Nanotrasen weapons in mind, the Cybersun combat hardsuit trades ballistic and blunt protection for top grade laser protection. It is in travel mode. Produced by Cybersun Industries."
 	icon_state = "hardsuit1-cybersun"
 	hardsuit_type = "cybersun"
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 50, "energy" = 50, "bomb" = 25, "bio" = 100, "rad" = 60, "fire" = 60, "acid" = 60)
@@ -508,18 +516,17 @@
 /obj/item/clothing/suit/space/hardsuit/syndi/cybersun/paramed
 	name = "cybersun medical technician hardsuit"
 	desc = "A stripped down version of the neutron-star hardsuit for use by medical technicians. It is in EVA mode. Produced by Cybersun Industries."
-	alt_desc = "A stripped down version of the neutron-star hardsuit for use by medical technicians. It is in combat mode. Produced by Cybersun Industries."
+	alt_desc = "A stripped down version of the neutron-star hardsuit for use by medical technicians. It is in travel mode. Produced by Cybersun Industries."
 	icon_state = "hardsuit1-cyberparamed"
 	hardsuit_type = "cyberparamed"
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 35, "energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 65, "fire" = 75, "acid" = 40)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/cybersun/paramed
-	supports_variations = VOX_VARIATION
 	jetpack = null
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/cybersun/paramed
 	name = "cybersun medical technician hardsuit helmet"
 	desc = "A stripped down version of the neutron-star hardsuit for use by medical technicians. It is in EVA mode. Produced by Cybersun Industries."
-	alt_desc = "A stripped down version of the neutron-star hardsuit for use by medical technicians. It is in combat mode. Produced by Cybersun Industries"
+	alt_desc = "A stripped down version of the neutron-star hardsuit for use by medical technicians. It is in travel mode. Produced by Cybersun Industries"
 	icon_state = "hardsuit1-cyberparamed"
 	hardsuit_type = "cyberparamed"
 	armor = list("melee" = 25, "bullet" = 25, "laser" = 35, "energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 65, "fire" = 75, "acid" = 40)
@@ -528,21 +535,21 @@
 /obj/item/clothing/suit/space/hardsuit/syndi/inteq
 	name = "pointman hardsuit"
 	desc = "One of Inteq's strudiest and finest combat armors. It is in EVA mode. Retrofitted by the IRMG."
-	alt_desc = "One of Inteq's strudiest and finest combat armors. It is in combat mode. Retrofitted by the IRMG."
+	alt_desc = "One of Inteq's strudiest and finest combat armors. It is in travel mode. Retrofitted by the IRMG."
 	icon_state = "hardsuit1-pointman"
 	hardsuit_type = "pointman"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/syndi/inteq
-	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION
+	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION | KEPORI_VARIATION
 
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/inteq
 	name = "pointman hardsuit helmet"
 	desc = "One of Inteq's strudiest and finest combat armors. It is in EVA mode. Retrofitted by the IRMG."
-	alt_desc = "One of Inteq's strudiest and finest combat armors. It is in combat mode. Retrofitted by the IRMG."
+	alt_desc = "One of Inteq's strudiest and finest combat armors. It is in travel mode. Retrofitted by the IRMG."
 	icon_state = "hardsuit1-pointman"
 	hardsuit_type = "pointman"
 	full_retraction = TRUE
-	supports_variations = VOX_VARIATION
+	supports_variations = VOX_VARIATION | KEPORI_VARIATION
 
 	//Medical hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/medical
