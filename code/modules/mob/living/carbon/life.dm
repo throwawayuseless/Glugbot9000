@@ -497,7 +497,8 @@ All effects don't start immediately, but rather get worse over time; the rate is
 		if(drunkenness >= 51)
 			if(prob(3) && !dna.check_mutation(DORFISM)) //WS Edit - they can handle their drink to keep it down
 				confused += 15
-				vomit() // vomiting clears toxloss, consider this a blessing
+				if(!HAS_TRAIT(src, TRAIT_NOVOMIT)) //If they are physically or mentally incapible of gag reflex for some reason
+					vomit() // vomiting clears toxloss, consider this a blessing
 			Dizzy(25)
 
 		if(drunkenness >= 61)
@@ -508,19 +509,22 @@ All effects don't start immediately, but rather get worse over time; the rate is
 			blur_eyes(5)
 
 		if(drunkenness >= 81)
-			adjustToxLoss(1)
+			if(!HAS_TRAIT(src, TRAIT_BOOZE_NODAMAGE))
+				adjustToxLoss(1)
 			if(prob(5) && !stat)
 				to_chat(src, "<span class='warning'>Maybe you should lie down for a bit...</span>")
 
 		if(drunkenness >= 91)
-			adjustToxLoss(1)
-			adjustOrganLoss(ORGAN_SLOT_BRAIN, 0.4)
-			if(prob(20) && !stat)
-				to_chat(src, "<span class='warning'>Just a quick nap...</span>")
-				Sleeping(900)
+			if(!HAS_TRAIT(src, TRAIT_BOOZE_NODAMAGE)
+				adjustToxLoss(1)
+				adjustOrganLoss(ORGAN_SLOT_BRAIN, 0.4)
+				if(prob(20) && !stat)
+					to_chat(src, "<span class='warning'>Just a quick nap...</span>")
+					Sleeping(900)
 
 		if(drunkenness >= 101)
-			adjustToxLoss(2) //Let's be honest you shouldn't be alive by now
+			if(!HAS_TRAIT(src, TRAIT_BOOZE_NODAMAGE))
+				adjustToxLoss(2) //Let's be honest you shouldn't be alive by now
 
 /// Base carbon environment handler, adds natural stabilization
 /mob/living/carbon/handle_environment(datum/gas_mixture/environment)
