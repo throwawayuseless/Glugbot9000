@@ -515,7 +515,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 				to_chat(src, "<span class='warning'>Maybe you should lie down for a bit...</span>")
 
 		if(drunkenness >= 91)
-			if(!HAS_TRAIT(src, TRAIT_BOOZE_NODAMAGE)
+			if(!HAS_TRAIT(src, TRAIT_BOOZE_NODAMAGE))
 				adjustToxLoss(1)
 				adjustOrganLoss(ORGAN_SLOT_BRAIN, 0.4)
 				if(prob(20) && !stat)
