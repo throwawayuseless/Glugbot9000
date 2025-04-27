@@ -249,8 +249,10 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/canteen)
 "bE" = (
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
+	dir = 1
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/medical)
 "bG" = (
@@ -789,9 +791,6 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/crew/dorm/dormtwo)
 "gu" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 10
@@ -1080,9 +1079,6 @@
 "ij" = (
 /obj/structure/window/plasma/reinforced/spawner/north,
 /obj/structure/window/plasma/reinforced/spawner/east,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/door/poddoor/shutters{
 	id = "aegis_engine";
@@ -1638,9 +1634,6 @@
 "mT" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
 	},
@@ -2223,6 +2216,9 @@
 	pixel_y = 23;
 	pixel_x = 11
 	},
+/obj/machinery/atmospherics/pipe/simple/dark/visible/layer4{
+	dir = 10
+	},
 /turf/open/floor/engine,
 /area/ship/engineering)
 "rT" = (
@@ -2653,9 +2649,6 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "vz" = (
-/obj/machinery/atmospherics/pipe/simple/dark/visible/layer4{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/violet/visible/layer1{
 	dir = 4
 	},
@@ -2663,6 +2656,9 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/dark/visible/layer4{
+	dir = 9
+	},
 /turf/open/floor/engine,
 /area/ship/engineering)
 "vA" = (
@@ -3477,6 +3473,9 @@
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 9
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "CW" = (
@@ -3507,6 +3506,9 @@
 	dir = 1
 	},
 /obj/machinery/airalarm/directional/north,
+/obj/machinery/atmospherics/pipe/simple/dark/visible/layer4{
+	dir = 6
+	},
 /turf/open/floor/engine,
 /area/ship/engineering)
 "Df" = (
@@ -3552,7 +3554,6 @@
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
 	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer2,
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
@@ -3564,6 +3565,9 @@
 	dir = 4
 	},
 /obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 8
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Do" = (
@@ -3686,9 +3690,6 @@
 	},
 /obj/structure/window/plasma/reinforced/spawner/north,
 /obj/structure/cable,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
 /turf/open/floor/plating/airless,
 /area/ship/engineering)
 "EL" = (
@@ -5043,10 +5044,6 @@
 /turf/open/floor/wood/walnut,
 /area/ship/crew/dorm)
 "Ri" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
@@ -5080,15 +5077,13 @@
 /turf/open/floor/plating/ship/snowgrasstall/alt1,
 /area/ship/external)
 "RF" = (
-/obj/machinery/atmospherics/pipe/simple/dark/visible/layer4{
-	dir = 10
-	},
 /obj/machinery/atmospherics/pipe/simple/violet/visible/layer1{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
 	dir = 8
 	},
+/obj/machinery/atmospherics/pipe/layer_manifold/visible,
 /turf/open/floor/engine,
 /area/ship/engineering)
 "RL" = (
@@ -5518,9 +5513,6 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
 /obj/machinery/door/window/eastleft{
 	dir = 1;
 	name = "Engine Access"
@@ -5939,9 +5931,6 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
 /obj/machinery/door/window/eastleft{
 	dir = 1;
 	name = "Engine Access"
@@ -6055,9 +6044,6 @@
 /turf/open/floor/wood/walnut,
 /area/ship/crew/dorm/dormtwo)
 "YX" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
@@ -6092,6 +6078,9 @@
 	dir = 4
 	},
 /obj/machinery/light/directional/north,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Zg" = (

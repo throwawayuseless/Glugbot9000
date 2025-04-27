@@ -274,7 +274,7 @@
 	pixel_y = 5
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/maintenance/fore)
+/area/ship/cargo/office)
 "fi" = (
 /obj/machinery/power/port_gen/pacman/super,
 /obj/effect/turf_decal/radiation/white,
@@ -310,7 +310,7 @@
 	pixel_y = 5
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/maintenance/fore)
+/area/ship/cargo/office)
 "fL" = (
 /obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
 /turf/open/floor/plating,
@@ -616,9 +616,6 @@
 /obj/effect/landmark/start/captain,
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
-"mL" = (
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/maintenance/fore)
 "mX" = (
 /obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
 /turf/open/floor/plating,
@@ -775,7 +772,7 @@
 	pixel_y = 5
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ship/maintenance/fore)
+/area/ship/cargo/office)
 "oz" = (
 /obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
 /obj/machinery/door/poddoor/shutters{
@@ -812,7 +809,7 @@
 /area/ship/cargo)
 "oO" = (
 /turf/closed/wall/mineral/plastitanium,
-/area/ship/maintenance/fore)
+/area/ship/cargo/office)
 "oQ" = (
 /obj/structure/table/reinforced,
 /obj/machinery/button/door{
@@ -1678,7 +1675,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/ship/maintenance/fore)
+/area/ship/cargo/office)
 "DO" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
@@ -2093,7 +2090,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/ship/maintenance/fore)
+/area/ship/cargo/office)
 "Kf" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/storage)
@@ -2134,7 +2131,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/ship/maintenance/fore)
+/area/ship/cargo/office)
 "KA" = (
 /obj/machinery/door/window/northleft{
 	dir = 2;
@@ -2385,7 +2382,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/ship/maintenance/fore)
+/area/ship/cargo/office)
 "Pn" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -2574,7 +2571,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/ship/maintenance/fore)
+/area/ship/cargo/office)
 "RQ" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 4
@@ -2926,7 +2923,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/ship/maintenance/fore)
+/area/ship/cargo/office)
 "VG" = (
 /turf/open/floor/engine/hull,
 /area/ship/external)
@@ -3313,7 +3310,7 @@ nn
 sE
 MF
 TT
-Ua
+MF
 sE
 "}
 (2,1,1) = {"
@@ -3649,7 +3646,7 @@ fL
 Ib
 ol
 yn
-mL
+yn
 oO
 "}
 (18,1,1) = {"
@@ -3671,7 +3668,7 @@ Xj
 ZL
 yn
 Pd
-mL
+yn
 "}
 (19,1,1) = {"
 nn
@@ -3692,7 +3689,7 @@ fL
 fL
 yn
 DF
-mL
+yn
 "}
 (20,1,1) = {"
 nn
@@ -3711,7 +3708,7 @@ Dp
 dA
 Dp
 hh
-mL
+yn
 Kb
 fC
 "}
@@ -3732,7 +3729,7 @@ si
 Wt
 ia
 SE
-mL
+yn
 Ky
 or
 "}
@@ -3753,7 +3750,7 @@ bd
 sA
 wP
 vv
-mL
+yn
 RE
 fg
 "}
@@ -3774,7 +3771,7 @@ Qy
 MP
 tS
 RQ
-mL
+yn
 VD
 fC
 "}
@@ -3795,9 +3792,9 @@ JS
 NS
 sx
 NN
-mL
-mL
-mL
+yn
+yn
+yn
 "}
 (25,1,1) = {"
 nn
@@ -3817,8 +3814,8 @@ nn
 nn
 nn
 oO
-mL
-mL
+yn
+yn
 "}
 (26,1,1) = {"
 nn
@@ -3838,8 +3835,8 @@ nn
 nn
 nn
 nn
-mL
-mL
+yn
+yn
 "}
 (27,1,1) = {"
 nn
@@ -3859,8 +3856,8 @@ nn
 nn
 nn
 nn
-mL
-mL
+yn
+yn
 "}
 (28,1,1) = {"
 nn

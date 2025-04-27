@@ -1390,10 +1390,10 @@
 /obj/item/reagent_containers/glass/filter{
 	pixel_x = 10
 	},
-/obj/structure/extinguisher_cabinet/directional/north,
 /obj/structure/sign/poster/official/moth/meth{
 	pixel_y = -32
 	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/circuit,
 /area/ship/medical)
 "tm" = (
@@ -2412,6 +2412,9 @@
 	},
 /obj/effect/turf_decal/trimline/opaque/orange/filled/warning{
 	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/medical)

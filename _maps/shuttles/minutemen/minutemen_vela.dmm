@@ -7495,10 +7495,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
-"IF" = (
-/obj/structure/grille,
-/turf/open/floor/plating,
-/area/space)
 "IH" = (
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
@@ -12816,7 +12812,7 @@ uM
 uM
 uM
 uM
-IF
+uM
 We
 We
 We

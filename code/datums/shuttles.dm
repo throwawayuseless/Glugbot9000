@@ -15,7 +15,7 @@
 	var/port_y_offset
 	var/port_dir
 
-	var/ship_icon //PENTEST ADDITION
+	var/ship_icon //PENTEST ADDITION -- Might be removed with Overmap 5
 	var/empty_space_icon //PENTEST ADDITION
 
 	var/limit = 2
@@ -340,7 +340,7 @@
 	ship_icon = "shuttle" //PENTEST ADDITION
 	starting_funds = 0
 
-/*/datum/map_template/shuttle/subshuttles/pill
+/datum/map_template/shuttle/subshuttles/pill
 	file_name = "independent_pill"
 	name = "Pill-class Torture Device"
 	prefix = "Pill"
@@ -356,17 +356,17 @@
 	file_name = "independent_superpill"
 	name = "Superpill-class Experimental Engineering Platform"
 	prefix = "Pill"
-	name_categories = list("PILLS")*/
+	name_categories = list("PILLS")
 
 /datum/map_template/shuttle/subshuttles/kunai
 	file_name = "independent_kunai"
 	name = "Kunai Dropship"
 	prefix = "SV"
 
-/*/datum/map_template/shuttle/subshuttles/sugarcube
+/datum/map_template/shuttle/subshuttles/sugarcube
 	file_name = "independent_sugarcube"
 	name = "Sugarcube Transport"
-	prefix = "ISV"*/
+	prefix = "ISV"
 
 //your subshuttle here
 /datum/map_template/shuttle/subshuttles/crux
@@ -374,7 +374,7 @@
 	name = "Crux Dropship"
 	prefix = "CMSV"
 
-/*/datum/map_template/shuttle/subshuttles/ancon
+/datum/map_template/shuttle/subshuttles/ancon
 	file_name = "nanotrasen_ancon"
 	name = "Nanotrasen Ancon-class Command Ship"
 	prefix = "NTSV"
@@ -383,7 +383,7 @@
 /datum/map_template/shuttle/subshuttles/frontiersmen_gut //i need to give this a better name at some point
 	file_name = "frontiersmen_gut"
 	name = "Gut Combat Freighter"
-	prefix = "ISV"*/
+	prefix = "ISV"
 
 /datum/map_template/shuttle/subshuttles/anvil
 	file_name = "inteq_anvil"
@@ -407,20 +407,20 @@
 	name = "Nail-class Boarding Vessel"
 	prefix = "PGF"
 
-/*/datum/map_template/shuttle/subshuttles/tanto
+/datum/map_template/shuttle/subshuttles/tanto
 	file_name = "independent_tanto"
 	name = "Tanto-class Drop Pod"
-	prefix = "SV"*/
+	prefix = "SV"
 
 /datum/map_template/shuttle/subshuttles/brawler
 	file_name = "frontiersmen_brawler"
 	name = "Brawler-class Dropship"
 	prefix = "SV"
 
-/*/datum/map_template/shuttle/subshuttles/haymaker
+/datum/map_template/shuttle/subshuttles/haymaker
 	file_name = "frontiersmen_haymaker"
 	name = "Haymaker-class Command Post"
-	prefix = "SV"*/
+	prefix = "SV"
 
 /datum/map_template/shuttle/subshuttles/skink
 	file_name = "nanotrasen_skink"

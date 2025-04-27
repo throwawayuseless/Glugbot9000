@@ -2182,9 +2182,6 @@
 "Kl" = (
 /obj/effect/turf_decal/box,
 /obj/machinery/vending/hydronutrients,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/hydroponics)
 "KD" = (

@@ -347,6 +347,13 @@
 /obj/structure/chair,
 /turf/open/floor/plastic,
 /area/ship/crew/canteen)
+"bo" = (
+/obj/machinery/door/airlock/engineering/glass,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/engineering/engine)
 "br" = (
 /obj/item/clothing/under/rank/cargo/qm,
 /obj/effect/turf_decal/corner/opaque/yellow/full,
@@ -737,6 +744,9 @@
 	id = "heron_sm_lockdown";
 	name = "Supermatter Lockdown";
 	pixel_y = -24
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/electrical)
@@ -4458,6 +4468,9 @@
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
 	dir = 4
 	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/electrical)
 "qP" = (
@@ -8001,6 +8014,9 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/electrical)
 "DT" = (
@@ -12115,6 +12131,9 @@
 /obj/effect/turf_decal/techfloor/corner{
 	dir = 1
 	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/engine)
 "TE" = (
@@ -12633,6 +12652,10 @@
 /obj/effect/turf_decal/techfloor/corner{
 	dir = 1
 	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/apc/auto_name/directional/east,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/engine)
 "Vl" = (
@@ -14332,7 +14355,7 @@ wk
 Jv
 fR
 TD
-fR
+bo
 qM
 DS
 cX

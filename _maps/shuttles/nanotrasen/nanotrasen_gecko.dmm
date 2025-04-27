@@ -237,9 +237,6 @@
 "bU" = (
 /turf/closed/wall,
 /area/ship/bridge)
-"bV" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/external)
 "ch" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -3247,7 +3244,7 @@
 	pixel_y = -16
 	},
 /turf/open/floor/plating,
-/area/ship/cargo/starboard)
+/area/ship/cargo/port)
 "GQ" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/o2,
 /obj/structure/cable{
@@ -5461,7 +5458,7 @@ Hg
 Ug
 hu
 hu
-bV
+wB
 xh
 OQ
 wB
@@ -5646,9 +5643,9 @@ tB
 tB
 CU
 hu
-Vq
+pe
 GN
-Lo
+VE
 xG
 lZ
 wP
@@ -5675,9 +5672,9 @@ hu
 hu
 hu
 hu
-Vq
-Lo
-Lo
+pe
+VE
+VE
 xr
 Zb
 SK
