@@ -289,7 +289,7 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 /// Granted by prismwine, reflects lasers
 #define TRAIT_REFLECTIVE "reflective"
 #define TRAIT_HEARING_SENSITIVE "hearing_sensitive"
-#define TRAIT_BOOZE_NODAMAGE "booze_nodamage"
+
 /* Traits for ventcrawling.
  * Both give access to ventcrawling, but *_NUDE requires the user to be
  * wearing no clothes and holding no items. If both present, *_ALWAYS
