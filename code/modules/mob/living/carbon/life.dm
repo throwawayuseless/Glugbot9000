@@ -516,11 +516,11 @@ All effects don't start immediately, but rather get worse over time; the rate is
 
 		if(drunkenness >= 91)
 			if(!HAS_TRAIT(src, TRAIT_BOOZE_NODAMAGE))
-		  	adjustToxLoss(1)
-		  	adjustOrganLoss(ORGAN_SLOT_BRAIN, 0.4)
-		  	if(prob(20) && !stat)
-			  	to_chat(src, span_warning("Just a quick nap..."))
-			  	Sleeping(900)
+				adjustToxLoss(1)
+				adjustOrganLoss(ORGAN_SLOT_BRAIN, 0.4)
+				if(prob(20) && !stat)
+					to_chat(src, span_warning("Just a quick nap..."))
+					Sleeping(900)
 
 		if(drunkenness >= 101)
 			if(!HAS_TRAIT(src, TRAIT_BOOZE_NODAMAGE))
