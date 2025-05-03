@@ -51,3 +51,4 @@
 
 /area/ruin/beach/bunker/side_two
 	icon_state = "green"
+
