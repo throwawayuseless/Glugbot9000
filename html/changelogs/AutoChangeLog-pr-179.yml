@@ -1,0 +1,7 @@
+author: OnlineGirlfriend
+changes:
+  - {rscadd: mounted shotgun}
+  - {rscadd: mounted shotgun crate and gun case}
+  - {rscadd: re-enables chainsaw arm and synthetic arm blade}
+  - {imageadd: mounted shotgun icons}
+delete-after: true
