@@ -523,3 +523,11 @@ AUTH_ADMIN_TESTING
 ## HEART COMMENDATIONS ###
 ## Uncomment this if you'd like to enable commendation pollings for this percentage of players near the end of the round (5% suggested)
 COMMENDATION_PERCENT_POLL 0.05
+
+## AUTO SHIP SPAWN LOCKING ##
+## Whether this server uses time and ship roll filled locking. I.E. after x min new ships lock until jobs are filled. FALSE to disable.
+AUTO_SHIP_SPAWN_LOCKING 0
+
+## AUTO SHIP SPAWN LOCKING ##
+## How long before players are not allowed to spawn additional ships until currently open roles are filled.
+SHIP_LOCKING_STARTS 1

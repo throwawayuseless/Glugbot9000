@@ -1840,7 +1840,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
 	},
-/obj/item/toy/plush/ipcplushie,
+/obj/item/toy/plush/pentest/ipcplushie,
 /obj/effect/turf_decal/corner/transparent/purple/full,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
