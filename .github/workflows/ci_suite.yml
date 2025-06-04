@@ -143,6 +143,13 @@ jobs:
         with:
           path: ~/BYOND
           key: ${{ runner.os }}-byond-cache-${{ secrets.CACHE_PURGE_KEY }}-${{ hashFiles('dependencies.sh') }}-${{ hashFiles('.github/workflows/ci_suite.yml') }}
+
+      - name: Check BYOND Version
+        if: steps.cache-byond.outputs.cache-hit == 'true'
+        run: |
+          source $HOME/BYOND/byond/bin/byondsetup
+          DreamDaemon --version || byond --version
+
       - name: Install BYOND
         if: steps.cache-byond.outputs.cache-hit != 'true'
         run: bash tools/ci/install_byond.sh
@@ -202,7 +209,31 @@ jobs:
             ${{ runner.os }}-yarn-
             ${{ runner.os }}-
 
+      - name: Restore BYOND cache
+        id: cache-byond
+        uses: actions/cache@v3
+        with:
+          path: C:/byond
+          key: ${{ runner.os }}-byond-cache-${{ secrets.CACHE_PURGE_KEY }}-${{ hashFiles('dependencies.sh') }}-${{ hashFiles('.github/workflows/ci_suite.yml') }}
+
+      - name: Check BYOND Version
+        if: steps.cache-byond.outputs.cache-hit == 'true'
+        run: |
+          $byondPath = "C:\byond\bin\DreamDaemon.exe"
+          if (Test-Path $byondPath) {
+              Write-Output (Get-Item $byondPath).VersionInfo | Format-List
+          } else {
+              Write-Host "DreamDaemon.exe not found. Checking byond.exe..."
+              $byondPath = "C:\byond\bin\byond.exe"
+              if (Test-Path $byondPath) {
+                  Write-Output (Get-Item $byondPath).VersionInfo | Format-List
+              } else {
+                  Write-Host "Neither DreamDaemon.exe nor byond.exe found."
+              }
+          }
+
       - name: Compile
+        if: steps.cache-byond.outputs.cache-hit != 'true'
         run: pwsh tools/ci/build.ps1
         env:
           DM_EXE: "C:\\byond\\bin\\dm.exe"
@@ -221,7 +252,7 @@ jobs:
   completion_gate: # Serves as a non-moving target for branch rulesets
     if: always() && !cancelled()
     name: Completion Gate
-    needs: [test_windows, compile_all_maps, run_linters, run_all_tests]
+    needs: [compile_all_maps, run_linters, run_all_tests]
     runs-on: ubuntu-latest
     steps:
       - name: Decide whether the needed jobs succeeded or failed

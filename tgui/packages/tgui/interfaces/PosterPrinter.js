@@ -88,6 +88,10 @@ const Options = (props, context) => {
     'Nanotrasen (Retro)',
     'RILENA',
     'TerraGov',
+    'Girlypop', // PENTEST ADDITION - START
+    'Horse',
+    'Horizon',
+    'Dreamers Club', // PENTEST ADDITION - END
   ];
   const selectedType = poster_type ?? 'No Poster Selected';
 

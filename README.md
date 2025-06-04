@@ -14,7 +14,7 @@ This is Constellado's fork of Shiptest.
 
 Pentest is a 2D game built on BYOND in which you fly spaceships in a star system with your friends! Explore, find stuff, fight stuff, upgrade your ship with said stuff and roleplay a character!
 
-This was origially made because half of us is banned from another server named Shiptest or did not like how it was ran. It is also something bigger; a place where we can play our own characters how we want and have our own long term stories!
+This was origially made because we did not like how other servers was ran. It is also something bigger; a place where we can play our own characters how we want and have our own long term stories!
 
 Named Pentest, based on the story of how a person got banned on Shiptest for stealing a pen!
 
