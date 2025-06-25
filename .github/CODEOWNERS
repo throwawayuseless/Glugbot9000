@@ -7,36 +7,29 @@
 # TEAMS
 
 # Map Maintainers
-/_maps/ @shiptest-ss13/maptainers
+/_maps/ @pentestss13/maptainers
 
 # Sprite Maintainers
-/icons/ @shiptest-ss13/spritetainers
+/icons/ @pentestss13/spritetainers
 
 # CI and tool chains
-/tools/ @shiptest-ss13/admins
+/tools/ @pentestss13/admins
+
 
 
 # MAINTAINERS
 
-# FalloutFalcon
+# Constellado
 
-/code/game/objects/items/storage/ration.dm @FalloutFalcon
-/code/modules/food_and_drinks/drinks/drinks/breakawayflask.dm @FalloutFalcon
-/code/modules/food_and_drinks/food/ration.dm @FalloutFalcon
-/code/modules/mob/living/simple_animal/hostile/mining_mobs/hivelord.dm @FalloutFalcon
-/code/modules/projectiles/ @FalloutFalcon
-/code/modules/reagents/chemistry/reagents/trickwine_reagents.dm @FalloutFalcon
-/code/modules/unit_tests/icons/ @FalloutFalcon
-
-# MarkSuckerberg
-
-/code/controllers/subsystem/shuttle.dm @MarkSuckerberg
-/code/modules/shuttle/ @MarkSuckerberg
-/code/modules/overmap/ @MarkSuckerberg
-/_maps/RandomRuins/LavaRuins/lavaland_surface_sloth.dmm @MarkSuckerberg
-
+/config/ @Constellado
+/data/ @Constellado
+/SQL/ @Constellado
 
 # CONTRIBUTORS
 
 
 # MULTIPLE OWNERS
+
+
+# ALL CHANGES
+* @Ossa88 @Constellado

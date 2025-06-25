@@ -2875,6 +2875,9 @@
 /obj/structure/sign/poster/official/here_for_your_safety{
 	pixel_y = -32
 	},
+/obj/machinery/holopad/emergency/bar{
+	holo_range = 99
+	},
 /turf/open/floor/carpet,
 /area/outpost/crew/library)
 "kB" = (
@@ -5023,18 +5026,6 @@
 	},
 /turf/open/floor/wood,
 /area/outpost/crew/library)
-"rM" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/holopad/emergency/engineering{
-	holo_range = 99
-	},
-/turf/open/floor/plasteel/tech,
-/area/outpost/engineering)
 "rN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/industrial/outline/yellow,
@@ -6570,9 +6561,6 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
 	},
-/obj/machinery/vending/wallmed{
-	pixel_x = 22
-	},
 /obj/item/banner/medical,
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/outpost/medical)
@@ -6680,6 +6668,9 @@
 	icon_state = "1-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
+/obj/machinery/holopad/emergency/cargo{
+	holo_range = 99
+	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "xf" = (
@@ -7022,6 +7013,9 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/radio/intercom/directional/north,
+/obj/machinery/holopad/emergency/engineering{
+	holo_range = 99
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/outpost/engineering)
 "ym" = (
@@ -8092,9 +8086,6 @@
 /turf/open/floor/plating/foam,
 /area/outpost/maintenance/aft)
 "BT" = (
-/obj/machinery/holopad/emergency/bar{
-	holo_range = 99
-	},
 /turf/open/floor/plasteel/sepia,
 /area/outpost/crew/library)
 "BV" = (
@@ -8624,21 +8615,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/operations)
-"DX" = (
-/obj/effect/turf_decal/corner_techfloor_gray/diagonal{
-	layer = 2.030
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/holopad/emergency/cargo{
-	holo_range = 99
-	},
-/turf/open/floor/plasteel/dark,
-/area/outpost/cargo)
 "DY" = (
 /obj/structure/railing,
 /obj/machinery/light/directional/south,
@@ -12913,9 +12889,6 @@
 /area/outpost/crew/library)
 "Si" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/holopad/emergency/medical{
-	holo_range = 99
-	},
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/outpost/medical)
 "Sj" = (
@@ -13190,6 +13163,11 @@
 "Tl" = (
 /obj/effect/turf_decal/corner/opaque/ntblue/border{
 	dir = 10
+	},
+/obj/machinery/holopad/emergency/medical{
+	holo_range = 99;
+	pixel_x = -16;
+	pixel_y = -15
 	},
 /turf/open/floor/plasteel/white,
 /area/outpost/medical)
@@ -13552,9 +13530,6 @@
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
-	},
-/obj/machinery/holopad/emergency/clown{
-	holo_range = 99
 	},
 /turf/open/floor/plasteel/tech,
 /area/outpost/hallway/fore)
@@ -23210,7 +23185,7 @@ NL
 QO
 RS
 WL
-rM
+WL
 RS
 eL
 kO
@@ -25204,7 +25179,7 @@ fZ
 bH
 ZM
 Xo
-DX
+jB
 YT
 iL
 wB

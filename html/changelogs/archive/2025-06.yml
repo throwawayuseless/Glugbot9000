@@ -1,0 +1,118 @@
+2025-06-17:
+  Constellado:
+  - config: updated readme
+  FslashN:
+  - bugfix: Chisel corners will now be preserved when the ship moves.
+  - bugfix: Turret controls can be taken down with a crowbar and face the right direction
+      when mounted on a wall.
+  - refactor: Turret controls are now linked to individual turrets through their buffer
+      instead of the other way around (minimizes running back and forth).
+  - rscadd: Mech fabricator can now print in all cardinal directions, selectable from
+      the menu.
+  - bugfix: The fabricator will not print into tiles with dense objects/turfs/mobs,
+      fallback to its own tile.
+  - refactor: The fabricator menu should be snappier with switch().
+  - rscadd: Industrial suit storage can now be built by using a multitool on the circuitboard.
+  OnlineGirlfriend:
+  - rscadd: mounted shotgun
+  - rscadd: mounted shotgun crate and gun case
+  - rscadd: re-enables chainsaw arm and synthetic arm blade
+  - imageadd: mounted shotgun icons
+  - rscadd: girlypop posters
+  - rscadd: horse posters
+  - rscadd: horizon poster
+  - rscadd: dreamers poster
+  - rscadd: pink and lavender crates
+  - rscadd: spatz and winter plushies
+  - bugfix: ipc plushie is now craftable
+  - refactor: moves IPC plushie and secborg pen to modular plushes.dm
+  - rscadd: reinforced plastitanium walls
+  Ossa88:
+  - rscadd: Engineering Cyborg Apparatus Storage handles Cash and Merits
+  - rscdel: Robot Limbs and IPCs no longer have to deal with Integrity. Pending future
+      updates.
+  - bugfix: Abandoned crates now actually give you something between 11-15.
+  - balance: Microtarget with barrel is now Normal-sized instead of Bulky
+  - balance: Decrease Microtarget spread
+  - bugfix: Frontie distillery turret is now a spitter and is no longer destroyed
+      by the fronties
+  - rscadd: placeholder sprite for 8x58 box
+  - bugfix: 8x58 is no longer labeled as .300
+  - rscadd: Added Surgical Disks with T2 and T3 surgeries to the game
+  - rscadd: Most medical ships now have T3 disks, ships with operating consoles but
+      are not medical ships got T2
+  - rscadd: Atoll now has an operating console
+  - rscadd: Cybersun bioware disk to the Cirrus
+  - rscadd: Most ruins with operating consoles now have either T2 or a T3 disk
+  - rscadd: crew percentage based ship locking which gets stricter as the round progresses
+  - rscadd: there's a new item in the security section of cargo, which can be used
+      to repair gun condition.
+  - balance: surplus rounds no longer deal reduced damage, instead doubling the rate
+      at which condition is lost.
+  - balance: some guns gain wear faster or slower than others in their category. If
+      it's made out of scraps and duct tape, it's probably faster, if it's hunter's
+      pride, slower.
+  - bugfix: stops missions from qdeling players, i hope
+  - rscadd: you can now climb railings you're on the same tile of to climb over them
+  - rscadd: Debug outfit is better.
+  - balance: LMG bipod deployment takes 0.5 seconds instead of 2
+  - bugfix: players no longer get a admin message when you examine a overmap token
+  - bugfix: new players show up in the player panel and orbit menu again
+  - rscadd: basic stack trace if a ruin has a bad file path.
+  - rscadd: Ice Lodge Touch ups
+  - rscadd: Commander Tiyak
+  - rscadd: Dynamic Humans support non-human species.
+  - rscadd: New Rock Planet Ruin - River Valley
+  - bugfix: Shoulder holster are now able to fit disablers.
+  - bugfix: IDs can be inserted/removed from unanchored EHFs beaconds
+  - bugfix: removes a random rack event from the nimbus
+  - bugfix: Model 'H' Gauss Pistols can now properly be purchased
+  - bugfix: wire terminals are now properly underfloor
+  - refactor: refactors solar controllers as computers
+  - rscdel: Guns can never jam
+  firebudgy:
+  - bugfix: Shotgun ammo cans correctly have shotgun ammo now
+  - bugfix: Grenades on the market.
+2025-06-20:
+  Ossa88:
+  - imageadd: Added dark steel tiles as a turf.
+  - rscadd: Added the Typhon-class Light Exosuit Carrier
+  - rscadd: Added a non-concealed weapon bay mech module.
+  - rscadd: Added guthen pet and bed to the Mudskipper in the crew dorm
+  - rscdel: You can no longer pull tails.
+  - rscadd: New Vox Sprites for Ramzi Hardsuits.
+  - bugfix: 10mm and 9mm cartridges now use the proper metric name format
+  - bugfix: 6.5mm CLIP renamed to 7.5x64mm CLIP
+  - balance: Landmine bounties have depleted landmine spawns on all but wasteworlds,
+      entirely. For real, this time.
+  - bugfix: Sweet Potato repathed letting you make yaki imo properly
+  - rscdel: Removed the elite kill mission from lavaland_buried_shrine
+  - balance: Butter now requires 5 milk instead of 15
+  - bugfix: Sweet potatoes now have their own plant stats and grow icon independent
+      from being pathed from potato
+  - balance: ipcs take massively reduced damage from dangerous atmos
+  - bugfix: minor smell spelling error
+  - bugfix: ipcs no longer 'burn' their 'eyes' in dangerous atmos
+  - code_imp: removes TRAIT_METALLIC, superceded by checking for robot mobtype
+  - balance: Frontiersman heavies now use slugs in their Shredders
+  - bugfix: The corona/nimbus/cirrus washing machines will no longer randomly become
+      dense.
+  - rscadd: outpost comunications console now has a purchase cart
+  - rscadd: outpost cargo is now bundled when applicable
+  - bugfix: Jungle Bunker tiles now have the correct atmos.
+  - rscadd: added medical area to rock outpost
+  - rscadd: potted plants to rock outpost
+  - rscadd: altered bounty pad locations
+  - rscdel: beats in deciseconds of a song is no longer player facing
+  - rscdel: handful of other jukebox cruft cleanup things
+  - code_imp: rustg version bump to 3.6
+  - refactor: can now determine its own length and cache it, used in jukeboxes so
+      we dont have to add it in the title.
+2025-06-23:
+  Ossa88:
+  - bugfix: Vagrant South room gets power and atmos again
+  - rscdel: Clown Holopad on NT Asteroid
+  - bugfix: Medical Holopad on NT Asteroid
+2025-06-24:
+  Ossa88:
+  - bugfix: Fixes Instant Respawn

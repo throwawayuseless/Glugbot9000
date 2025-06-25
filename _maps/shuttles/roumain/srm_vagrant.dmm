@@ -298,6 +298,22 @@
 /obj/structure/fermenting_barrel/distiller,
 /turf/open/floor/wood/walnut,
 /area/ship/medical)
+"eG" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 1
+	},
+/turf/open/floor/plating/asteroid/rockplanet/safe,
+/area/ship/roumain)
 "eN" = (
 /obj/machinery/door/poddoor/shutters{
 	dir = 4;
@@ -2312,17 +2328,14 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
-	dir = 1
-	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/destructible/tribal_torch,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
 /turf/open/floor/plating/asteroid/rockplanet/safe,
 /area/ship/roumain)
 "MO" = (
@@ -3341,7 +3354,7 @@ Uj
 KD
 gJ
 ZA
-NS
+eG
 gV
 ZF
 jw

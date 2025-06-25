@@ -17,12 +17,6 @@
 	planetary_atmos = 1
 	},
 /area/hangar)
-"bP" = (
-/obj/machinery/computer,
-/turf/open/floor/plating{
-	planetary_atmos = 1
-	},
-/area/hangar)
 "ce" = (
 /obj/effect/turf_decal/industrial/warning,
 /obj/effect/turf_decal/industrial/caution{
@@ -1737,7 +1731,7 @@ DK
 DK
 DK
 FY
-bP
+Er
 Er
 Er
 Er

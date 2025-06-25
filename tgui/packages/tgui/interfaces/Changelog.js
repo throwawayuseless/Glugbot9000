@@ -182,27 +182,27 @@ export class Changelog extends Component {
 
     const header = (
       <Section>
-        <h1>Shiptest SS13</h1>
+        <h1>Pentest SS13</h1>
         <p>
           <b>Thanks to: </b>
-          /TG/station, Whitesands, Baystation 12, /vg/station, NTstation, CDK
-          Station devs, FacepunchStation, GoonStation devs, the original Space
-          Station 13 developers, Invisty for the title image and the countless
-          others who have contributed to the game, issue tracker or wiki over
-          the years.
+          Shiptest SS13, /TG/station, Whitesands, Baystation 12, /vg/station,
+          NTstation, CDK Station devs, FacepunchStation, GoonStation devs, the
+          original Space Station 13 developers, Invisty for the title image and
+          the countless others who have contributed to the game, issue tracker
+          or wiki over the years.
         </p>
         <p>
           {'Current project maintainers can be found '}
-          <a href="https://github.com/shiptest-ss13?tab=members">here</a>
+          <a href="https://github.com/pentest-ss13?tab=members">here</a>
           {', recent GitHub contributors can be found '}
-          <a href="https://github.com/shiptest-ss13/Shiptest/pulse/monthly">
+          <a href="https://github.com/pentest-ss13/Shiptest/pulse/monthly">
             here
           </a>
           .
         </p>
         <p>
           {'You can also join our discord '}
-          <a href="https://discord.gg/shiptest">here</a>.
+          <a href="https://discord.gg/ydGPEejXZB">here</a>.
         </p>
         {dateDropdown}
       </Section>
@@ -237,7 +237,7 @@ export class Changelog extends Component {
           <a href="http://forums.somethingawful.com/">SomethingAwful Goons</a>
           {' only.'}
         </p>
-        <h3>Shiptest SS13 License</h3>
+        <h3>Pentest SS13 License</h3>
         <p>
           {'All code after '}
           <a

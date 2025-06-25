@@ -3485,7 +3485,7 @@
 /area/ship/crew/canteen)
 "Cr" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/grown/potato/sweet{
+/obj/item/reagent_containers/food/snacks/grown/sweet_potato{
 	pixel_x = -16;
 	pixel_y = 1
 	},
