@@ -1,0 +1,68 @@
+{
+	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
+	"map_name": "Paracelsus-class Medical Corvette",
+	"map_short_name": "Paracelsus-class",
+	"map_path": "_maps/shuttles/solgov/solgov_paracelsus.dmm",
+	"faction": "/datum/faction/solgov",
+	"prefix": "SCSV",
+	"manufacturer": "Red Planet Shipyards",
+	"description": "Fulfilling its role as a medicinal powerhouse of the Terran Navy, the Paracelsus-class is a specially designed corvette to assist solarian fleets in medical troubles, as well as supplying such vessels with medication. Scribes pursuing a medical degree often work in these ships to shadow trained medical doctors to complete their residency.",
+	"tags": [
+		"RP Focus",
+		"Medical",
+		"Chemistry"
+	],
+	"namelists": [
+		"SOLGOV",
+		"SPACE",
+		"BRITISH_NAVY",
+		"NATURAL"
+	],
+	"job_slots": {
+		"Captain": {
+			"outfit": "/datum/outfit/job/solgov/captain",
+			"officer": true,
+			"slots": 1
+		},
+		"Overseer": {
+			"outfit": "/datum/outfit/job/solgov/overseer",
+			"officer": true,
+			"slots": 1
+		},
+		"Medical Doctor": {
+			"outfit": "/datum/outfit/job/solgov/doctor",
+			"slots": 2
+		},
+		"Ship Engineer": {
+			"outfit": "/datum/outfit/job/solgov/engineer",
+			"slots": 1
+		},
+		"Psychologist": {
+			"outfit": "/datum/outfit/job/solgov/psychologist",
+			"slots": 1
+		},
+		"Field Engineer": {
+			"outfit": "/datum/outfit/job/solgov/miner",
+			"slots": 1
+		},
+		"Scribe": {
+			"outfit": "/datum/outfit/job/solgov/assistant",
+			"slots" : 2
+		},
+		"Attentive Care Patient": {
+			"outfit": "/datum/outfit/job/solgov/patient",
+			"slots" : 1
+		}
+	},
+	"limit": 1,
+	"starting_funds": 2000,
+	"enabled": false,
+	"space_spawn": false,
+
+	"token_icon_state": "ship_mid_generic",
+
+	"architect": "Imaginos16",
+	"contributors": [
+		"No Contributors"
+	]
+}

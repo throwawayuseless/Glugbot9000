@@ -17,9 +17,9 @@
 #define RADIO_KEY_CENTCOM "e"
 #define RADIO_TOKEN_CENTCOM ":e"
 
-#define RADIO_CHANNEL_TERRAGOV "TerraGov"
-#define RADIO_KEY_TERRAGOV "s" //REF: Pentest Modular Override
-#define RADIO_TOKEN_TERRAGOV ":s" //REF: Pentest Modular Override
+#define RADIO_CHANNEL_SOLGOV "SolGov"
+#define RADIO_KEY_SOLGOV "s" //REF: Pentest Modular Override
+#define RADIO_TOKEN_SOLGOV ":s" //REF: Pentest Modular Override
 
 #define RADIO_CHANNEL_NANOTRASEN "Nanotrasen"
 #define RADIO_KEY_NANOTRASEN "n"
@@ -48,7 +48,7 @@
 
 #define FREQ_SYNDICATE 1213 // Syndicate Coalition comms frequency, dark brown
 #define FREQ_CENTCOM 1337 // NT-CentCom comms frequency, gray
-#define FREQ_TERRAGOV 1345 // TerraGov comms frequency, dark blue WS ADDITION
+#define FREQ_SOLGOV 1345 // SolGov comms frequency, dark blue WS ADDITION
 #define FREQ_INTEQ 1347 // Inteq comms frequency, light brown
 #define FREQ_PGF 1349 // PGF comms frequency, lime green
 #define FREQ_NANOTRASEN 1351 // Nanotrasen comms frequency, plum
@@ -106,6 +106,11 @@
 #define REQ_DEP_TYPE_ASSISTANCE (1<<0)
 #define REQ_DEP_TYPE_SUPPLIES (1<<1)
 #define REQ_DEP_TYPE_INFORMATION (1<<2)
+
+//Interference levels
+#define INTERFERENCE_LEVEL_BREAKUP_HOLOPADS 10
+#define INTERFERENCE_LEVEL_RADIO_PREVENT_ID 35
+#define INTERFERENCE_LEVEL_RADIO_STATIC_SOUND 45
 
 ///give this to can_receive to specify that there is no restriction on what virtual z level this signal is sent to
 #define RADIO_NO_Z_LEVEL_RESTRICTION 0

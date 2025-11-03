@@ -27,7 +27,7 @@
 /area/ship/security)
 "au" = (
 /obj/effect/turf_decal/suns/line/marble,
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold{
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold{
 	dir = 1
 	},
 /obj/machinery/firealarm/directional/north,
@@ -170,7 +170,7 @@
 /obj/effect/turf_decal/suns/line/marble{
 	dir = 10
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold/corner{
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold/corner{
 	dir = 4
 	},
 /obj/structure/cable{
@@ -264,7 +264,7 @@
 	pixel_y = 28
 	},
 /obj/effect/turf_decal/suns/line/marble,
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold{
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold{
 	dir = 1
 	},
 /obj/structure/cable{
@@ -598,7 +598,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
 "jS" = (
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold/corner{
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold/corner{
 	dir = 1
 	},
 /obj/effect/turf_decal/suns/line/marble{
@@ -722,7 +722,7 @@
 /obj/effect/turf_decal/suns/line/marble{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold,
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
@@ -778,7 +778,7 @@
 /area/ship/security)
 "mV" = (
 /obj/effect/turf_decal/suns/line/marble,
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold{
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold{
 	dir = 1
 	},
 /obj/structure/cable{
@@ -973,7 +973,7 @@
 /obj/effect/turf_decal/suns/line/marble{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold,
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -1075,7 +1075,7 @@
 /area/ship/engineering/engines/starboard)
 "rv" = (
 /obj/effect/turf_decal/suns/line/marble/corner,
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold{
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold{
 	dir = 9
 	},
 /obj/machinery/light/directional/west,
@@ -1166,7 +1166,7 @@
 /area/ship/storage)
 "sI" = (
 /obj/effect/turf_decal/suns/line/marble,
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold{
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -1179,7 +1179,7 @@
 /area/ship/cargo)
 "sK" = (
 /obj/effect/turf_decal/suns/line/marble,
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold{
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold{
 	dir = 1
 	},
 /obj/machinery/light/directional/north,
@@ -1199,7 +1199,7 @@
 /area/ship/hallway/central)
 "sQ" = (
 /obj/effect/turf_decal/suns/line/marble,
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold{
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold{
 	dir = 1
 	},
 /obj/machinery/light/directional/north,
@@ -1308,7 +1308,7 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/engines/port)
 "uq" = (
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold/corner{
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold/corner{
 	dir = 8
 	},
 /obj/effect/turf_decal/suns/line/marble{
@@ -1347,7 +1347,7 @@
 /obj/effect/turf_decal/suns/line/marble/corner{
 	dir = 8
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold{
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold{
 	dir = 5
 	},
 /obj/item/radio/intercom/directional/east{
@@ -1566,7 +1566,7 @@
 /area/ship/crew/canteen)
 "yo" = (
 /obj/effect/turf_decal/suns/line/marble/corner,
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold{
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold{
 	dir = 9
 	},
 /obj/structure/reagent_dispensers/water_cooler{
@@ -1666,12 +1666,12 @@
 /obj/effect/turf_decal/suns/line/marble{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold,
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold,
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "zY" = (
 /obj/effect/turf_decal/suns/line/marble/corner,
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold{
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold{
 	dir = 9
 	},
 /obj/structure/cable{
@@ -1692,7 +1692,7 @@
 /obj/effect/turf_decal/suns/line/marble{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold,
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold,
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
@@ -1754,7 +1754,7 @@
 /obj/effect/turf_decal/suns/line/marble/corner{
 	dir = 4
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold{
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold{
 	dir = 10
 	},
 /turf/open/floor/plasteel/white,
@@ -1982,7 +1982,7 @@
 	pixel_x = 12;
 	pixel_y = 14
 	},
-/obj/item/desk_flag/terragov{
+/obj/item/desk_flag/solgov{
 	pixel_x = -11;
 	pixel_y = 14
 	},
@@ -2064,7 +2064,7 @@
 /obj/effect/turf_decal/suns/line/marble{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold,
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold,
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/cable,
 /turf/open/floor/plasteel/white,
@@ -2350,7 +2350,7 @@
 /obj/effect/turf_decal/suns/line/marble{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold,
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold,
 /obj/structure/closet/emcloset/wall/directional/south{
 	populate = 0
 	},
@@ -2411,7 +2411,7 @@
 /area/ship/crew/canteen)
 "Mb" = (
 /obj/effect/turf_decal/suns/line/marble,
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold{
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -2422,7 +2422,7 @@
 /obj/effect/turf_decal/suns/line/marble{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold,
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 1
 	},
@@ -2539,14 +2539,14 @@
 /obj/item/food/bread/plain,
 /obj/item/reagent_containers/condiment/sugar,
 /obj/item/reagent_containers/condiment/sugar,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/grown/cabbage,
-/obj/item/reagent_containers/food/snacks/grown/cabbage,
-/obj/item/reagent_containers/food/snacks/fishmeat,
-/obj/item/reagent_containers/food/snacks/fishmeat,
-/obj/item/reagent_containers/food/snacks/fishmeat,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/grown/cabbage,
+/obj/item/food/grown/cabbage,
+/obj/item/food/fishmeat,
+/obj/item/food/fishmeat,
+/obj/item/food/fishmeat,
 /obj/item/reagent_containers/condiment/milk,
 /obj/item/reagent_containers/condiment/milk,
 /obj/item/reagent_containers/condiment/enzyme,
@@ -2598,7 +2598,7 @@
 /area/ship/hallway/central)
 "Oy" = (
 /obj/effect/turf_decal/suns/line/marble,
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold{
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold{
 	dir = 1
 	},
 /obj/structure/cable{
@@ -2747,7 +2747,7 @@
 /obj/effect/turf_decal/suns/line/marble/corner{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold{
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold{
 	dir = 6
 	},
 /obj/machinery/light/directional/south,
@@ -2798,7 +2798,7 @@
 /obj/effect/turf_decal/suns/line/marble{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold,
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -2885,7 +2885,7 @@
 /area/ship/maintenance/fore)
 "RY" = (
 /obj/effect/turf_decal/suns/line/marble,
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold{
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold{
 	dir = 1
 	},
 /obj/structure/cable{
@@ -3042,10 +3042,6 @@
 /area/ship/bridge)
 "Ua" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/jellysandwich{
-	pixel_x = 0;
-	pixel_y = 8
-	},
 /obj/item/reagent_containers/condiment/saltshaker{
 	pixel_x = -6;
 	pixel_y = -6
@@ -3054,13 +3050,18 @@
 	pixel_x = 6;
 	pixel_y = -6
 	},
+/obj/item/reagent_containers/food/snacks/jellysandwich/cherry{
+	pixel_x = 0;
+	pixel_y = 8;
+	layer = 2.9
+	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew/canteen)
 "Ub" = (
 /obj/effect/turf_decal/suns/line/marble{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold,
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -3075,7 +3076,7 @@
 /obj/effect/turf_decal/suns/line/marble{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold,
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -3087,7 +3088,7 @@
 /obj/effect/turf_decal/suns/line/marble{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold,
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold,
 /obj/machinery/airalarm/directional/south,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
@@ -3108,7 +3109,7 @@
 /obj/effect/turf_decal/suns/line/marble/corner{
 	dir = 8
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold{
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold{
 	dir = 5
 	},
 /obj/structure/extinguisher_cabinet/directional/north,
@@ -3189,7 +3190,7 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/engineering/engines/starboard)
 "VP" = (
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold,
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold,
 /obj/effect/turf_decal/suns/line/marble{
 	dir = 1
 	},
@@ -3229,7 +3230,7 @@
 /turf/open/floor/suns/grid,
 /area/ship/engineering/engines/port)
 "Xj" = (
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold,
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold,
 /obj/effect/turf_decal/suns/line/marble{
 	dir = 1
 	},
@@ -3262,7 +3263,7 @@
 "XJ" = (
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/clothing/suit/space/hardsuit/terragov/suns,
+/obj/item/clothing/suit/space/hardsuit/solgov/suns,
 /obj/item/clothing/mask/gas/suns,
 /obj/machinery/light/directional/north,
 /obj/machinery/atmospherics/pipe/simple/dark/hidden/layer5{
@@ -3278,7 +3279,7 @@
 /obj/effect/turf_decal/suns/line/marble/corner{
 	dir = 4
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold{
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold{
 	dir = 10
 	},
 /obj/machinery/airalarm/directional/south,
@@ -3421,7 +3422,7 @@
 /obj/effect/turf_decal/suns/line/marble{
 	dir = 6
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/terragovgold/corner{
+/obj/effect/turf_decal/spline/fancy/opaque/solgovgold/corner{
 	dir = 1
 	},
 /obj/structure/cable{

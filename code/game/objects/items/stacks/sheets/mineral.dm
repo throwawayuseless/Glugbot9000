@@ -94,6 +94,7 @@ GLOBAL_LIST_INIT(sandbag_recipes, list ( \
  */
 /obj/item/stack/sheet/mineral/diamond
 	name = "diamond"
+	icon = 'icons/obj/materials/ingots.dmi'
 	icon_state = "sheet-diamond"
 	item_state = "sheet-diamond"
 	singular_name = "diamond"
@@ -131,6 +132,7 @@ GLOBAL_LIST_INIT(diamond_recipes, list ( \
  */
 /obj/item/stack/sheet/mineral/uranium
 	name = "uranium"
+	icon = 'icons/obj/materials/sheets.dmi'
 	icon_state = "sheet-uranium"
 	item_state = "sheet-uranium"
 	singular_name = "uranium sheet"
@@ -169,10 +171,11 @@ GLOBAL_LIST_INIT(uranium_recipes, list ( \
  * Plasma
  */
 /obj/item/stack/sheet/mineral/plasma
-	name = "solid plasma"
-	icon_state = "sheet-plasma"
-	item_state = "sheet-plasma"
-	singular_name = "plasma sheet"
+	name = "plasma crystals"
+	icon = 'icons/obj/materials/ingots.dmi'
+	icon_state = "ingot-plasma"
+	item_state = "ingot-plasma"
+	singular_name = "plasma crystal"
 	sheettype = "plasma"
 	resistance_flags = FLAMMABLE
 	max_integrity = 100
@@ -223,6 +226,7 @@ GLOBAL_LIST_INIT(plasma_recipes, list ( \
  */
 /obj/item/stack/sheet/mineral/gold
 	name = "gold"
+	icon = 'icons/obj/materials/sheets.dmi'
 	icon_state = "sheet-gold"
 	item_state = "sheet-gold"
 	singular_name = "gold bar"
@@ -281,6 +285,7 @@ GLOBAL_LIST_INIT(gold_recipes, list ( \
  */
 /obj/item/stack/sheet/mineral/silver
 	name = "silver"
+	icon = 'icons/obj/materials/sheets.dmi'
 	icon_state = "sheet-silver"
 	item_state = "sheet-silver"
 	singular_name = "silver bar"
@@ -336,6 +341,7 @@ GLOBAL_LIST_INIT(silver_recipes, list ( \
  */
 /obj/item/stack/sheet/mineral/titanium
 	name = "titanium"
+	icon = 'icons/obj/materials/sheets.dmi'
 	icon_state = "sheet-titanium"
 	item_state = "sheet-titanium"
 	singular_name = "titanium sheet"
@@ -375,6 +381,7 @@ GLOBAL_LIST_INIT(titanium_recipes, list ( \
  */
 /obj/item/stack/sheet/mineral/plastitanium
 	name = "plastitanium"
+	icon = 'icons/obj/materials/sheets.dmi'
 	icon_state = "sheet-plastitanium"
 	item_state = "sheet-plastitanium"
 	singular_name = "plastitanium sheet"
@@ -463,40 +470,6 @@ GLOBAL_LIST_INIT(abductor_recipes, list ( \
 	. += GLOB.abductor_recipes
 
 /*
- * Coal
- */
-
-/obj/item/stack/sheet/mineral/coal
-	name = "coal"
-	desc = "Someone's gotten on the naughty list."
-	icon = 'icons/obj/ores.dmi'
-	icon_state = "slag"
-	singular_name = "coal lump"
-	merge_type = /obj/item/stack/sheet/mineral/coal
-	grind_results = list(/datum/reagent/carbon = 20)
-	novariants = TRUE
-
-/obj/item/stack/sheet/mineral/coal/attackby(obj/item/W, mob/user, params)
-	if(W.get_temperature() > 300)//If the temperature of the object is over 300, then ignite
-		var/turf/T = get_turf(src)
-		message_admins("Coal ignited by [ADMIN_LOOKUPFLW(user)] in [ADMIN_VERBOSEJMP(T)]")
-		log_game("Coal ignited by [key_name(user)] in [AREACOORD(T)]")
-		fire_act(W.get_temperature())
-		return TRUE
-	else
-		return ..()
-
-/obj/item/stack/sheet/mineral/coal/fire_act(exposed_temperature, exposed_volume)
-	atmos_spawn_air("co2=[amount*10];TEMP=[exposed_temperature]")
-	qdel(src)
-
-/obj/item/stack/sheet/mineral/coal/five
-	amount = 5
-
-/obj/item/stack/sheet/mineral/coal/ten
-	amount = 10
-
-/*
  * Hellstone
  */
 /obj/item/stack/sheet/mineral/hidden
@@ -505,6 +478,7 @@ GLOBAL_LIST_INIT(abductor_recipes, list ( \
 
 /obj/item/stack/sheet/mineral/hidden/hellstone
 	name = "hellstone"
+	icon = 'icons/obj/materials/ingots.dmi'
 	icon_state = "sheet-hellstone"
 	item_state = "sheet-hellstone"
 	singular_name = "hellstone bar"
@@ -527,3 +501,4 @@ GLOBAL_LIST_INIT(abductor_recipes, list ( \
 
 /obj/item/stack/sheet/mineral/hidden/hellstone/five
 	amount = 5
+

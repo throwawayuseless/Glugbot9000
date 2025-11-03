@@ -2670,7 +2670,7 @@
 "uS" = (
 /obj/structure/table/wood,
 /obj/machinery/light/small/directional/west,
-/obj/item/reagent_containers/food/snacks/grown/harebell,
+/obj/item/food/grown/harebell,
 /turf/open/floor/carpet/blue,
 /area/ship/crew/dorm)
 "uT" = (
@@ -2961,9 +2961,9 @@
 /obj/structure/closet/secure_closet/freezer{
 	anchored = 1
 	},
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
 /obj/item/storage/box/ingredients/vegetarian,
 /obj/item/storage/fancy/egg_box,
 /turf/open/floor/plasteel,
@@ -3789,7 +3789,7 @@
 	pixel_x = 5;
 	pixel_y = 2
 	},
-/obj/item/reagent_containers/food/snacks/fortunecookie{
+/obj/item/food/fortunecookie{
 	pixel_y = 7;
 	pixel_x = -7
 	},

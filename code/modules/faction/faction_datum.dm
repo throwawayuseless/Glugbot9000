@@ -76,10 +76,10 @@
 	prefixes = PREFIX_NONE
 	allowed_factions = list(/datum/faction/syndicate)
 
-/datum/faction/terragov
-	name = FACTION_TERRAGOV
-	parent_faction = /datum/faction/terragov
-	prefixes = PREFIX_TERRAGOV
+/datum/faction/solgov
+	name = FACTION_SOLCON
+	parent_faction = /datum/faction/solgov
+	prefixes = PREFIX_SOLCON
 	color = "#444e5f"
 
 /datum/faction/srm

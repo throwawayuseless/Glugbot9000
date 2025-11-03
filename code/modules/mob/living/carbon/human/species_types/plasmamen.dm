@@ -164,8 +164,8 @@
 		if("Clown")
 			O = new /datum/outfit/plasmaman/clown
 
-		if("TerraGov Representative")
-			O = new /datum/outfit/plasmaman/terragov
+		if("SolGov Representative")
+			O = new /datum/outfit/plasmaman/solgov
 
 	var/holder		//WS Edit Begin - Plasma skirtsuit prefs
 	switch(H.jumpsuit_style)

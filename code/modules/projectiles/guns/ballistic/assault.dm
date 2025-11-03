@@ -1,4 +1,6 @@
 /obj/item/gun/ballistic/automatic/assault
+	bad_type = /obj/item/gun/ballistic/automatic/assault
+
 	show_magazine_on_sprite = TRUE
 	w_class = WEIGHT_CLASS_BULKY
 
@@ -151,7 +153,7 @@
 	allowed_ammo_types = list(
 		/obj/item/ammo_box/magazine/swiss,
 	)
-	manufacturer = MANUFACTURER_TERRAARMORIES
+	manufacturer = MANUFACTURER_SOLARARMORIES
 	spread = 8
 	spread_unwielded = 15
 

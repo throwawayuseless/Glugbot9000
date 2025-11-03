@@ -14,8 +14,9 @@
 #define TOOL_DRILL "drill"
 #define TOOL_SCALPEL "scalpel"
 #define TOOL_SAW "saw"
-#define TOOL_KNIFE "knife" //luv me kuh-nyfe
+#define TOOL_KNIFE "knife"
 #define TOOL_DECONSTRUCT "deconstruct"
+#define TOOL_ROLLINGPIN "rollingpin"
 #define TOOL_CULTIVATOR "cultivator" // For Cyborg Botany Omni Tool Checks
 
 // If delay between the start and the end of tool operation is less than MIN_TOOL_SOUND_DELAY,

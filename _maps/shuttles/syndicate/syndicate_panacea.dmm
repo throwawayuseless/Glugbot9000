@@ -3355,7 +3355,7 @@
 	pixel_x = 1;
 	pixel_y = -6
 	},
-/obj/item/clothing/suit/space/hardsuit/terragov/suns{
+/obj/item/clothing/suit/space/hardsuit/solgov/suns{
 	pixel_x = -5
 	},
 /obj/item/clothing/mask/breath/suns{
@@ -5239,7 +5239,7 @@
 /area/ship/engineering)
 "EO" = (
 /obj/machinery/computer/crew,
-/obj/structure/sign/poster/terragov/suns{
+/obj/structure/sign/poster/solgov/suns{
 	pixel_y = 32
 	},
 /turf/open/floor/suns/hatch{
@@ -6532,11 +6532,11 @@
 	pixel_x = -7;
 	pixel_y = -9
 	},
-/obj/item/stock_parts/cell/gun/terragov{
+/obj/item/stock_parts/cell/gun/solgov{
 	pixel_x = 4;
 	pixel_y = 7
 	},
-/obj/item/stock_parts/cell/gun/terragov{
+/obj/item/stock_parts/cell/gun/solgov{
 	pixel_x = 8;
 	pixel_y = 7
 	},

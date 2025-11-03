@@ -30,7 +30,7 @@
 			"slots": 1
 		},
 		"Deckhand": {
-			"outfit": "/datum/outfit/job/independent/assistant",
+			"outfit": "/datum/outfit/job/independent/assistant/cheap",
 			"slots": 1
 		}
 	},
@@ -38,6 +38,10 @@
 	"starting_funds": 1500,
 	"enabled": true,
 	"space_spawn": false,
+
+	"token_icon_state": "ship_small_generic",
+	"tranist_x_offset": -15,
+	"tranist_y_offset": -20,
 
 	"architect": "Okand37",
 	"contributors": [

@@ -100,7 +100,7 @@ export const RADIO_CHANNELS = [
     color: '#2681a5',
   },
   {
-    name: 'TerraGov',
+    name: 'SolGov',
     freq: 1345,
     color: '#7589af',
   },

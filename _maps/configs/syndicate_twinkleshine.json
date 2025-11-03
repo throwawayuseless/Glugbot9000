@@ -64,6 +64,8 @@
 	"enabled": false,
 	"space_spawn": false,
 
+	"token_icon_state": "ship_massive_war",
+
 	"architect": "rye-rice",
 	"contributors": [
 		"No Contributors"

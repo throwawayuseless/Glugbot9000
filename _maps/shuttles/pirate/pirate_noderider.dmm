@@ -2404,7 +2404,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
-/obj/effect/turf_decal/spline/fancy/transparent/terragovgold,
+/obj/effect/turf_decal/spline/fancy/transparent/solgovgold,
 /turf/open/floor/plating,
 /area/ship/cargo)
 "Kn" = (

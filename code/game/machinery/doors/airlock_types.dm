@@ -7,7 +7,7 @@
 	assemblytype = /obj/structure/door_assembly/door_assembly_com
 	normal_integrity = 450
 
-/obj/machinery/door/airlock/terragov
+/obj/machinery/door/airlock/solgov
 	icon = 'icons/obj/doors/airlocks/station/solgov.dmi'
 	assemblytype = /obj/structure/door_assembly/door_assembly_sgv
 	normal_integrity = 450
@@ -88,7 +88,7 @@
 	glass = TRUE
 	normal_integrity = 400
 
-/obj/machinery/door/airlock/terragov/glass
+/obj/machinery/door/airlock/solgov/glass
 	opacity = FALSE
 	glass = TRUE
 	normal_integrity = 400

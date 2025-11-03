@@ -17,10 +17,10 @@
 	icon_state = "computer-retro"
 	deconpath = /obj/structure/frame/computer/retro
 
-/obj/machinery/computer/crew/terragov
+/obj/machinery/computer/crew/solgov
 	icon = 'icons/obj/machines/retro_computer.dmi'
 	icon_state = "computer-solgov"
-	deconpath = /obj/structure/frame/computer/terragov
+	deconpath = /obj/structure/frame/computer/solgov
 
 /obj/machinery/computer/crew/syndie
 	icon_keyboard = "syndie_key"

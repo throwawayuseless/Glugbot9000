@@ -1,5 +1,5 @@
 /datum/supply_pack/costumes_toys
-	group = "Costumes & Toys"
+	category = "Costumes & Toys"
 
 /*
 		Toys
@@ -130,7 +130,7 @@
 					/obj/item/lipstick/random)
 	crate_name = "formalwear crate"
 	crate_type = /obj/structure/closet/crate/wooden
-	faction = /datum/faction/terragov
+	faction = /datum/faction/solgov
 
 // this is technically armor but you aren't buying it for that. it's a joke pack so it goes here
 /datum/supply_pack/costumes_toys/justiceinbound

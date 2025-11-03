@@ -18,15 +18,14 @@ export const HelmConsole = (_props, context) => {
   const { data } = useBackend(context);
   const { mapRef, isViewer } = data;
   return (
-    <Window width={870} height={708} resizable>
-      <div className="CameraConsole__left">
+    <Window width={1150} height={708} resizable>
+      <div className="CameraConsole__helmleft">
         <Window.Content>
           {!isViewer && <ShipControlContent />}
           <ShipContent />
-          <SharedContent />
         </Window.Content>
       </div>
-      <div className="CameraConsole__right">
+      <div className="CameraConsole__helmcenter">
         <div className="CameraConsole__toolbar">
           {!!data.docked && (
             <div className="NoticeBox">Ship docked to: {data.docked}</div>
@@ -40,6 +39,11 @@ export const HelmConsole = (_props, context) => {
           }}
         />
       </div>
+      <div className="CameraConsole__helmright">
+        <Window.Content>
+          <SharedContent />
+        </Window.Content>
+      </div>
     </Window>
   );
 };
@@ -49,6 +53,61 @@ const SharedContent = (_props, context) => {
   const { isViewer, canRename, shipInfo = [], otherInfo = [] } = data;
   return (
     <>
+      <Section title="Radar">
+        <Table>
+          <Table.Row bold>
+            <Table.Cell>Name</Table.Cell>
+            {!isViewer && <Table.Cell>Act</Table.Cell>}
+            {!isViewer && <Table.Cell>Dock</Table.Cell>}
+          </Table.Row>
+          {otherInfo.map((ship) => (
+            <Table.Row key={ship.name}>
+              <Table.Cell>{ship.name}</Table.Cell>
+              {!isViewer && (
+                <Table.Cell>
+                  <Button
+                    tooltip="Interact"
+                    tooltipPosition="left"
+                    icon="circle"
+                    disabled={
+                      // I hate this so much
+                      isViewer
+                    }
+                    onClick={() =>
+                      act('act_overmap', {
+                        ship_to_act: ship.ref,
+                      })
+                    }
+                  />
+                </Table.Cell>
+              )}
+              {!isViewer && (
+                <Table.Cell>
+                  <Button
+                    tooltip="Quick Dock"
+                    tooltipPosition="left"
+                    icon="anchor"
+                    color={'red'}
+                    disabled={
+                      // I hate this so much
+                      isViewer ||
+                      data.speed > 0 ||
+                      data.docked ||
+                      data.docking ||
+                      !ship.candock
+                    }
+                    onClick={() =>
+                      act('quick_dock', {
+                        ship_to_act: ship.ref,
+                      })
+                    }
+                  />
+                </Table.Cell>
+              )}
+            </Table.Row>
+          ))}
+        </Table>
+      </Section>
       <Section
         title={
           <Button.Input
@@ -90,37 +149,6 @@ const SharedContent = (_props, context) => {
           )}
         </LabeledList>
       </Section>
-      <Section title="Radar">
-        <Table>
-          <Table.Row bold>
-            <Table.Cell>Name</Table.Cell>
-            {!isViewer && <Table.Cell>Act</Table.Cell>}
-          </Table.Row>
-          {otherInfo.map((ship) => (
-            <Table.Row key={ship.name}>
-              <Table.Cell>{ship.name}</Table.Cell>
-              {!isViewer && (
-                <Table.Cell>
-                  <Button
-                    tooltip="Interact"
-                    tooltipPosition="left"
-                    icon="circle"
-                    disabled={
-                      // I hate this so much
-                      isViewer || data.speed > 0 || data.docked || data.docking
-                    }
-                    onClick={() =>
-                      act('act_overmap', {
-                        ship_to_act: ship.ref,
-                      })
-                    }
-                  />
-                </Table.Cell>
-              )}
-            </Table.Row>
-          ))}
-        </Table>
-      </Section>
     </>
   );
 };
@@ -135,6 +163,7 @@ const ShipContent = (_props, context) => {
     burnPercentage,
     speed,
     heading,
+    sector,
     eta,
     x,
     y,
@@ -168,6 +197,9 @@ const ShipContent = (_props, context) => {
             <AnimatedNumber value={x} />
             /Y
             <AnimatedNumber value={y} />
+          </LabeledList.Item>
+          <LabeledList.Item label="Sector">
+            <AnimatedNumber value={sector} />
           </LabeledList.Item>
           <LabeledList.Item label="ETA">
             <AnimatedNumber value={eta} />

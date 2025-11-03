@@ -240,6 +240,10 @@
 /obj/effect/turf_decal/corner/opaque/purple/border{
 	dir = 1
 	},
+/obj/item/binoculars{
+	pixel_x = 6;
+	pixel_y = -8
+	},
 /turf/open/floor/vault,
 /area/ship/security/armory)
 "bU" = (
@@ -381,10 +385,6 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
 "cY" = (
-/obj/machinery/camera/autoname{
-	dir = 1;
-	network = list("GEC")
-	},
 /obj/structure/ore_box,
 /turf/open/floor/plasteel/dark,
 /area/ship/construction)
@@ -555,8 +555,7 @@
 	name = "engine fuel pump"
 	},
 /obj/machinery/camera/autoname{
-	dir = 2;
-	network = list("GEC")
+	dir = 2
 	},
 /obj/machinery/light_switch{
 	dir = 2;
@@ -741,14 +740,14 @@
 "gx" = (
 /obj/structure/rack,
 /obj/machinery/light/directional/west,
-/obj/item/gun/energy/kalix/pgf/heavy/sniper{
-	pixel_x = -4;
-	pixel_y = 4
-	},
 /obj/effect/turf_decal/corner/opaque/neutral/full,
 /obj/item/gun/energy/kalix/pgf/medium{
 	pixel_y = -4;
 	pixel_x = -2
+	},
+/obj/item/gun/energy/kalix/pgf/heavy{
+	pixel_x = 0;
+	pixel_y = 5
 	},
 /turf/open/floor/vault,
 /area/ship/security/armory)
@@ -1154,8 +1153,7 @@
 	},
 /obj/machinery/light/floor/hangar,
 /obj/machinery/camera/autoname{
-	dir = 2;
-	network = list("GEC")
+	dir = 2
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external/dark)
@@ -1520,26 +1518,26 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
 	},
+/obj/item/storage/bag/ore{
+	pixel_x = -7
+	},
+/obj/item/storage/bag/ore{
+	pixel_x = -7
+	},
+/obj/item/pickaxe,
+/obj/item/pickaxe,
+/obj/item/mining_scanner{
+	pixel_x = 4;
+	pixel_y = -3
+	},
+/obj/item/mining_scanner{
+	pixel_x = 4;
+	pixel_y = -3
+	},
 /obj/structure/closet/crate{
 	icon_state = "wooden";
 	name = "mining gear";
-	desc = "A rectangular steel crate with 'myning geer' spelled out in crayon on top."
-	},
-/obj/item/storage/bag/ore{
-	pixel_x = -7
-	},
-/obj/item/storage/bag/ore{
-	pixel_x = -7
-	},
-/obj/item/pickaxe,
-/obj/item/pickaxe,
-/obj/item/mining_scanner{
-	pixel_x = 4;
-	pixel_y = -3
-	},
-/obj/item/mining_scanner{
-	pixel_x = 4;
-	pixel_y = -3
+	desc = "A rectangular steel crate with the words 'MINING GEAR' written in crayon on the lid."
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/construction)
@@ -1678,7 +1676,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/camera/autoname{
 	dir = 9;
-	network = list("GEC");
 	pixel_y = 5
 	},
 /turf/open/floor/plasteel/mono,
@@ -2600,8 +2597,7 @@
 "wa" = (
 /obj/structure/filingcabinet/chestdrawer,
 /obj/machinery/camera/autoname{
-	dir = 1;
-	network = list("GEC")
+	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
@@ -2610,8 +2606,7 @@
 	dir = 4
 	},
 /obj/machinery/camera/autoname{
-	dir = 1;
-	network = list("GEC")
+	dir = 1
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
@@ -2709,8 +2704,7 @@
 "wT" = (
 /obj/machinery/computer/cryopod/directional/east,
 /obj/machinery/camera/autoname{
-	dir = 2;
-	network = list("GEC")
+	dir = 2
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/crew/cryo)
@@ -3044,7 +3038,6 @@
 /obj/machinery/iv_drip,
 /obj/machinery/camera/autoname{
 	dir = 8;
-	network = list("GEC");
 	pixel_y = -5
 	},
 /turf/open/floor/mineral/titanium,
@@ -3314,8 +3307,7 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/camera/autoname{
-	dir = 2;
-	network = list("GEC")
+	dir = 2
 	},
 /obj/effect/turf_decal/corner/opaque/purple/border{
 	dir = 8
@@ -3536,8 +3528,7 @@
 	dir = 8
 	},
 /obj/machinery/camera/autoname{
-	dir = 1;
-	network = list("GEC")
+	dir = 1
 	},
 /obj/machinery/button/door{
 	id = "lib_dorm_shut";
@@ -3870,7 +3861,6 @@
 /obj/effect/turf_decal/trimline/opaque/bottlegreen/filled/line,
 /obj/machinery/camera/autoname{
 	dir = 8;
-	network = list("GEC");
 	pixel_y = -5
 	},
 /turf/open/floor/plasteel/white,
@@ -4129,6 +4119,9 @@
 /turf/open/floor/plasteel/sepia,
 /area/ship/crew/dorm/dormthree)
 "GP" = (
+/obj/machinery/camera/autoname{
+	dir = 5
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/construction)
 "GQ" = (
@@ -4586,8 +4579,7 @@
 	name = "engine fuel pump"
 	},
 /obj/machinery/camera/autoname{
-	dir = 1;
-	network = list("GEC")
+	dir = 1
 	},
 /obj/machinery/light_switch{
 	dir = 1;
@@ -5893,8 +5885,7 @@
 	},
 /obj/machinery/light/floor/hangar,
 /obj/machinery/camera/autoname{
-	dir = 1;
-	network = list("GEC")
+	dir = 1
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external/dark)
@@ -6128,7 +6119,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/camera/autoname{
 	dir = 5;
-	network = list("GEC");
 	pixel_y = 8
 	},
 /turf/open/floor/plasteel/mono,
@@ -6797,9 +6787,7 @@
 /obj/machinery/light/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/machinery/camera/autoname{
-	dir = 9;
-	network = list("GEC");
-	pixel_y = 5
+	dir = 9
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)

@@ -1,5 +1,5 @@
 /datum/supply_pack/magazine
-	group = "Magazines"
+	category = "Magazines"
 	crate_type = /obj/structure/closet/crate/secure/gear
 	crate_name = "magazine crate"
 	faction_discount = 0
@@ -288,35 +288,35 @@
 	contains = list(/obj/item/ammo_box/magazine/wt550m9/empty)
 	faction = /datum/faction/nt
 
-/* TerraGov */
+/* SolGov */
 
 /datum/supply_pack/magazine/mag_556mm
 	name = "5.56 Pistole C Magazine Crate"
 	desc = "Contains a 5.56mm magazine for the Pistole C, with a capacity of twelve rounds."
 	contains = list(/obj/item/ammo_box/magazine/pistol556mm/empty)
 	cost = 150
-	faction = /datum/faction/terragov
+	faction = /datum/faction/solgov
 
 /datum/supply_pack/magazine/fms_mag
 	name = "Ferromagnetic Slug Magazine Crate"
 	desc = "Contains a ferromagnetic slug magazine for the Model H pistol, with a capacity of ten rounds."
 	contains = list(/obj/item/ammo_box/magazine/modelh/empty)
 	cost = 350
-	faction = /datum/faction/terragov
+	faction = /datum/faction/solgov
 
 /datum/supply_pack/magazine/gar_ammo
 	name = "GAR Ferromagnetic Lance Magazine Crate"
 	desc = "Contains a ferromagnetic lance magazine for the GAR rifle, with a capacity of thirty two rounds."
 	contains = list(/obj/item/ammo_box/magazine/gar/empty)
 	cost = 500
-	faction = /datum/faction/terragov
+	faction = /datum/faction/solgov
 
 /datum/supply_pack/magazine/claris_ammo
 	name = "Claris Ferromagnetic Pellet Speedloader Crate"
 	desc = "Contains a ferromagnetic pellet speedloader for the Claris rifle, with a capacity of twenty two rounds."
 	contains = list(/obj/item/ammo_box/amagpellet_claris/empty)
 	cost = 400
-	faction = /datum/faction/terragov
+	faction = /datum/faction/solgov
 
 /* Inteq */
 
@@ -360,12 +360,12 @@
 	faction = /datum/faction/nt
 	cost = 500
 
-/datum/supply_pack/magazine/terragovcell
+/datum/supply_pack/magazine/solgovcell
 	name = "SolCon Weapon Cell Crate"
 	desc = "Contains a Solarian weapon cell, compatible with Solarian gauss weaponry."
-	contains = list(/obj/item/stock_parts/cell/gun/terragov)
+	contains = list(/obj/item/stock_parts/cell/gun/solgov)
 	cost = 500
-	faction = /datum/faction/terragov
+	faction = /datum/faction/solgov
 	faction_discount = 0
 	faction_locked = TRUE
 

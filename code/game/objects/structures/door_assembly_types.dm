@@ -13,11 +13,11 @@
 	airlock_type = /obj/machinery/door/airlock/command
 
 /obj/structure/door_assembly/door_assembly_sgv
-	name = "terragov airlock assembly"
+	name = "solgov airlock assembly"
 	icon = 'icons/obj/doors/airlocks/station/solgov.dmi'
-	base_name = "terragov airlock"
-	glass_type = /obj/machinery/door/airlock/terragov/glass
-	airlock_type = /obj/machinery/door/airlock/terragov
+	base_name = "solgov airlock"
+	glass_type = /obj/machinery/door/airlock/solgov/glass
+	airlock_type = /obj/machinery/door/airlock/solgov
 
 /obj/structure/door_assembly/door_assembly_sec
 	name = "security airlock assembly"

@@ -202,10 +202,10 @@ GLOBAL_LIST_EMPTY(atmos_air_controllers)
 	icon_state = "computer-retro"
 	deconpath = /obj/structure/frame/computer/retro
 
-/obj/machinery/computer/atmos_control/tank/oxygen_tank/terragov
+/obj/machinery/computer/atmos_control/tank/oxygen_tank/solgov
 	icon = 'icons/obj/machines/retro_computer.dmi'
 	icon_state = "computer-solgov"
-	deconpath = /obj/structure/frame/computer/terragov
+	deconpath = /obj/structure/frame/computer/solgov
 
 /obj/machinery/computer/atmos_control/tank/toxin_tank
 	name = "Plasma Supply Control"
@@ -219,10 +219,10 @@ GLOBAL_LIST_EMPTY(atmos_air_controllers)
 	icon_state = "computer-retro"
 	deconpath = /obj/structure/frame/computer/retro
 
-/obj/machinery/computer/atmos_control/tank/toxin_tank/terragov
+/obj/machinery/computer/atmos_control/tank/toxin_tank/solgov
 	icon = 'icons/obj/machines/retro_computer.dmi'
 	icon_state = "computer-solgov"
-	deconpath = /obj/structure/frame/computer/terragov
+	deconpath = /obj/structure/frame/computer/solgov
 
 /obj/machinery/computer/atmos_control/tank/air_tank
 	name = "Mixed Air Supply Control"
@@ -236,10 +236,10 @@ GLOBAL_LIST_EMPTY(atmos_air_controllers)
 	icon_state = "computer-retro"
 	deconpath = /obj/structure/frame/computer/retro
 
-/obj/machinery/computer/atmos_control/tank/air_tank/terragov
+/obj/machinery/computer/atmos_control/tank/air_tank/solgov
 	icon = 'icons/obj/machines/retro_computer.dmi'
 	icon_state = "computer-solgov"
-	deconpath = /obj/structure/frame/computer/terragov
+	deconpath = /obj/structure/frame/computer/solgov
 
 /obj/machinery/computer/atmos_control/tank/mix_tank
 	name = "Gas Mix Tank Control"
@@ -253,10 +253,10 @@ GLOBAL_LIST_EMPTY(atmos_air_controllers)
 	icon_state = "computer-retro"
 	deconpath = /obj/structure/frame/computer/retro
 
-/obj/machinery/computer/atmos_control/tank/mix_tank/terragov
+/obj/machinery/computer/atmos_control/tank/mix_tank/solgov
 	icon = 'icons/obj/machines/retro_computer.dmi'
 	icon_state = "computer-solgov"
-	deconpath = /obj/structure/frame/computer/terragov
+	deconpath = /obj/structure/frame/computer/solgov
 
 /obj/machinery/computer/atmos_control/tank/nitrous_tank
 	name = "Nitrous Oxide Supply Control"
@@ -270,10 +270,10 @@ GLOBAL_LIST_EMPTY(atmos_air_controllers)
 	icon_state = "computer-retro"
 	deconpath = /obj/structure/frame/computer/retro
 
-/obj/machinery/computer/atmos_control/tank/nitrous_tank/terragov
+/obj/machinery/computer/atmos_control/tank/nitrous_tank/solgov
 	icon = 'icons/obj/machines/retro_computer.dmi'
 	icon_state = "computer-solgov"
-	deconpath = /obj/structure/frame/computer/terragov
+	deconpath = /obj/structure/frame/computer/solgov
 
 /obj/machinery/computer/atmos_control/tank/nitrogen_tank
 	name = "Nitrogen Supply Control"
@@ -287,10 +287,10 @@ GLOBAL_LIST_EMPTY(atmos_air_controllers)
 	icon_state = "computer-retro"
 	deconpath = /obj/structure/frame/computer/retro
 
-/obj/machinery/computer/atmos_control/tank/nitrogen_tank/terragov
+/obj/machinery/computer/atmos_control/tank/nitrogen_tank/solgov
 	icon = 'icons/obj/machines/retro_computer.dmi'
 	icon_state = "computer-solgov"
-	deconpath = /obj/structure/frame/computer/terragov
+	deconpath = /obj/structure/frame/computer/solgov
 
 /obj/machinery/computer/atmos_control/tank/carbon_tank
 	name = "Carbon Dioxide Supply Control"
@@ -304,10 +304,10 @@ GLOBAL_LIST_EMPTY(atmos_air_controllers)
 	icon_state = "computer-retro"
 	deconpath = /obj/structure/frame/computer/retro
 
-/obj/machinery/computer/atmos_control/tank/carbon_tank/terragov
+/obj/machinery/computer/atmos_control/tank/carbon_tank/solgov
 	icon = 'icons/obj/machines/retro_computer.dmi'
 	icon_state = "computer-solgov"
-	deconpath = /obj/structure/frame/computer/terragov
+	deconpath = /obj/structure/frame/computer/solgov
 
 /obj/machinery/computer/atmos_control/external
 	sensors = list(GAS_MONITOR_SENSOR_EXTERNAL = "External Atmospherics Monitoring")

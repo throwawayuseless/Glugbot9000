@@ -28,7 +28,7 @@
 			"slots": 1
 		},
 		"Shuttle Pilot": {
-			"outfit": "/datum/outfit/job/inteq/warden/pilot",
+			"outfit": "/datum/outfit/job/inteq/pilot/empty",
 			"officer": true,
 			"slots": 1
 		},
@@ -48,7 +48,7 @@
 			"outfit": "/datum/outfit/job/inteq/engineer",
 			"slots": 1
 		},
-		"Recruit": {
+		"Auxiliary": {
 			"outfit": "/datum/outfit/job/inteq/assistant",
 			"slots": 2
 		}
@@ -57,6 +57,8 @@
 	"starting_funds": 2000,
 	"enabled": true,
 	"space_spawn": false,
+
+	"token_icon_state": "ship_big_generic",
 
 	"architect": "meemofcourse",
 	"contributors": [

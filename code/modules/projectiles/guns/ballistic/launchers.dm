@@ -27,6 +27,7 @@
 	name = "multi grenade launcher"
 	icon = 'icons/mecha/mecha_equipment.dmi'
 	icon_state = "mecha_grenadelnchr"
+	bad_type = /obj/item/gun/ballistic/revolver/grenadelauncher/cyborg
 	default_ammo_type = /obj/item/ammo_box/magazine/internal/cylinder/grenademulti
 	allowed_ammo_types = list(
 		/obj/item/ammo_box/magazine/internal/cylinder/grenademulti,
@@ -129,7 +130,7 @@ GLOBAL_LIST_INIT(rpg_scrawlings, list(
 /obj/item/gun/ballistic/rocketlauncher/attack_self_tk(mob/user)
 	return //too difficult to remove the rocket with TK
 
-/obj/item/gun/ballistic/rocketlauncher/terragov
+/obj/item/gun/ballistic/rocketlauncher/solgov
 	name = "Panzerfaust XII"
 	desc = "The standard recoiless rifle of the Terran Federation. Barely varies from previous models." //PENTEST CHANGE
 
@@ -143,4 +144,4 @@ GLOBAL_LIST_INIT(rpg_scrawlings, list(
 
 	icon_state = "panzerfaust"
 	item_state = "panzerfaust"
-	manufacturer = MANUFACTURER_TERRAARMORIES
+	manufacturer = MANUFACTURER_SOLARARMORIES

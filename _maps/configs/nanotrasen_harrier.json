@@ -77,6 +77,8 @@
 	"enabled": true,
 	"space_spawn": false,
 
+	"token_icon_state": "ship_big_generic",
+
 	"architect": "Apogee-dev",
 	"contributors": [
 		"Unknown"

@@ -15,7 +15,7 @@
 	var/list/role_loyalties //Mobs with any of these special roles will be inspired
 	var/warcry
 
-/obj/item/banner/examine(mob/user)
+/*/obj/item/banner/examine(mob/user)
 	. = ..()
 	if(inspiration_available)
 		. += span_notice("Activate it in your hand to inspire nearby allies of this banner's allegiance!")
@@ -56,7 +56,7 @@
 		if(H != user)
 			to_chat(H, span_notice("Your confidence surges as [user] flourishes [user.p_their()] [name]!"))
 		inspiration(H)
-		special_inspiration(H)
+		special_inspiration(H)*/
 
 /obj/item/banner/proc/check_inspiration(mob/living/carbon/human/H) //Banner-specific conditions for being eligible
 	return

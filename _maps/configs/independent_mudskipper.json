@@ -36,6 +36,10 @@
 	"enabled": true,
 	"space_spawn": false,
 
+	"token_icon_state": "ship_small_generic",
+	"tranist_x_offset": -15,
+	"tranist_y_offset": -10,
+
 	"architect": "goober3",
 	"contributors": [
 		"Apogee-dev"

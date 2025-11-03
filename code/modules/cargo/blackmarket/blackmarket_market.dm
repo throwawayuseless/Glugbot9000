@@ -67,19 +67,19 @@
 	for(var/datum/blackmarket_item/I in available_items[category])
 		if(I.type != item)
 			continue
-		var/price = I.price + shipping[method]
-		// I can't get the price of the item and shipping in a clean way to the UI, so I have to do this.
-		if(uplink.money < price)
+		var/cost = I.cost + shipping[method]
+		// I can't get the cost of the item and shipping in a clean way to the UI, so I have to do this.
+		if(uplink.money < cost)
 			to_chat(user, span_warning("You don't have enough credits in [uplink] for [I] with [method] shipping."))
 			return FALSE
 
 		if(I.buy(uplink, user, method))
-			uplink.money -= price
+			uplink.money -= cost
 			return TRUE
 		return FALSE
 
 /datum/blackmarket_market/blackmarket
 	name = "Black Market"
 	shipping = list(SHIPPING_METHOD_LTSRBT	=100,
-					SHIPPING_METHOD_LAUNCH	=10,
+					//SHIPPING_METHOD_LAUNCH	=10,
 					SHIPPING_METHOD_DEAD_DROP = 20)

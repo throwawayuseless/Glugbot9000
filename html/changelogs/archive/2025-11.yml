@@ -1,0 +1,6 @@
+2025-11-02:
+  FslashN:
+  - bugfix: Fixed Bepis UI.
+  - rscadd: Shuttle expansion permit/blueprints can now be bought from the cargo computer.
+  OnlineGirlfriend:
+  - bugfix: journal UI

@@ -2,7 +2,7 @@
 	layer = TURF_PLATING_DECAL_LAYER
 	icon_state = "corner_white"
 
-obj/effect/turf_decal/trimline
+/obj/effect/turf_decal/trimline
 	layer = TURF_PLATING_DECAL_LAYER
 	icon_state = "trimline_box"
 
@@ -131,8 +131,8 @@ TURF_DECAL_COLOR_HELPER(opaque/bottlegreen, "#57967f", 255)
 TURF_DECAL_COLOR_HELPER(opaque/ntblue, "#283674", 255)
 TURF_DECAL_COLOR_HELPER(opaque/nsorange, "#FF6600", 255)
 TURF_DECAL_COLOR_HELPER(opaque/vired, "#d40000", 255)
-TURF_DECAL_COLOR_HELPER(opaque/terragovblue, "#2d2a4e", 255)
-TURF_DECAL_COLOR_HELPER(opaque/terragovgold, "#eeac2e", 255)
+TURF_DECAL_COLOR_HELPER(opaque/solgovblue, "#2d2a4e", 255)
+TURF_DECAL_COLOR_HELPER(opaque/solgovgold, "#eeac2e", 255)
 TURF_DECAL_COLOR_HELPER(opaque/syndiered, "#730622", 255)
 TURF_DECAL_COLOR_HELPER(opaque/inteqbrown, "#4b2a18", 255)
 TURF_DECAL_COLOR_HELPER(opaque/cybersunteal, "#4C9C9C", 255)
@@ -160,8 +160,8 @@ TURF_DECAL_COLOR_HELPER(transparent/bottlegreen, "#57967f", 140)
 TURF_DECAL_COLOR_HELPER(transparent/ntblue, "#283674", 140)
 TURF_DECAL_COLOR_HELPER(transparent/nsorange, "#FF6600", 140)
 TURF_DECAL_COLOR_HELPER(transparent/vired, "#d40000", 140)
-TURF_DECAL_COLOR_HELPER(transparent/terragovblue, "#2d2a4e", 140)
-TURF_DECAL_COLOR_HELPER(transparent/terragovgold, "#eeac2e", 140)
+TURF_DECAL_COLOR_HELPER(transparent/solgovblue, "#2d2a4e", 140)
+TURF_DECAL_COLOR_HELPER(transparent/solgovgold, "#eeac2e", 140)
 TURF_DECAL_COLOR_HELPER(transparent/syndiered, "#730622", 140)
 TURF_DECAL_COLOR_HELPER(transparent/inteqbrown, "#4b2a18", 140)
 TURF_DECAL_COLOR_HELPER(transparent/cybersunteal, "#4C9C9C", 140)
@@ -724,86 +724,86 @@ TURF_DECAL_COLOR_HELPER(transparent/cybersunteal, "#4C9C9C", 140)
 /obj/effect/turf_decal/rechargefloor
 	icon_state = "recharge_floor"
 
-/obj/effect/turf_decal/terragov
+/obj/effect/turf_decal/solgov
 	icon = 'icons/obj/solgov_floor.dmi'
 	icon_state = "top-left"
 
-/obj/effect/turf_decal/terragov/top
+/obj/effect/turf_decal/solgov/top
 	icon_state = "top-center"
 
-/obj/effect/turf_decal/terragov/top_right
+/obj/effect/turf_decal/solgov/top_right
 	icon_state = "top-right"
 
-/obj/effect/turf_decal/terragov/center_left
+/obj/effect/turf_decal/solgov/center_left
 	icon_state = "center-left"
 
-/obj/effect/turf_decal/terragov/center
+/obj/effect/turf_decal/solgov/center
 	icon_state = "center"
 
-/obj/effect/turf_decal/terragov/center_right
+/obj/effect/turf_decal/solgov/center_right
 	icon_state = "center-right"
 
-/obj/effect/turf_decal/terragov/bottom_left
+/obj/effect/turf_decal/solgov/bottom_left
 	icon_state = "bottom-left"
 
-/obj/effect/turf_decal/terragov/bottom_center
+/obj/effect/turf_decal/solgov/bottom_center
 	icon_state = "bottom-center"
 
-/obj/effect/turf_decal/terragov/bottom_right
+/obj/effect/turf_decal/solgov/bottom_right
 	icon_state = "bottom-right"
 
-/obj/effect/turf_decal/terragov/wood
+/obj/effect/turf_decal/solgov/wood
 	icon_state = "top-left-wood"
 
-/obj/effect/turf_decal/terragov/wood/top
+/obj/effect/turf_decal/solgov/wood/top
 	icon_state = "top-center-wood"
 
-/obj/effect/turf_decal/terragov/wood/top_right
+/obj/effect/turf_decal/solgov/wood/top_right
 	icon_state = "top-right-wood"
 
-/obj/effect/turf_decal/terragov/wood/center_left
+/obj/effect/turf_decal/solgov/wood/center_left
 	icon_state = "center-left-wood"
 
-/obj/effect/turf_decal/terragov/wood/center
+/obj/effect/turf_decal/solgov/wood/center
 	icon_state = "center-wood"
 
-/obj/effect/turf_decal/terragov/wood/center_right
+/obj/effect/turf_decal/solgov/wood/center_right
 	icon_state = "center-right-wood"
 
-/obj/effect/turf_decal/terragov/wood/bottom_left
+/obj/effect/turf_decal/solgov/wood/bottom_left
 	icon_state = "bottom-left-wood"
 
-/obj/effect/turf_decal/terragov/wood/bottom_center
+/obj/effect/turf_decal/solgov/wood/bottom_center
 	icon_state = "bottom-center-wood"
 
-/obj/effect/turf_decal/terragov/wood/bottom_right
+/obj/effect/turf_decal/solgov/wood/bottom_right
 	icon_state = "bottom-right-wood"
 
-/obj/effect/turf_decal/terragov/all
+/obj/effect/turf_decal/solgov/all
 	icon_state = "top-left-all"
 
-/obj/effect/turf_decal/terragov/all/top
+/obj/effect/turf_decal/solgov/all/top
 	icon_state = "top-center-all"
 
-/obj/effect/turf_decal/terragov/all/top_right
+/obj/effect/turf_decal/solgov/all/top_right
 	icon_state = "top-right-all"
 
-/obj/effect/turf_decal/terragov/all/center_left
+/obj/effect/turf_decal/solgov/all/center_left
 	icon_state = "center-left-all"
 
-/obj/effect/turf_decal/terragov/all/center
+/obj/effect/turf_decal/solgov/all/center
 	icon_state = "center-all"
 
-/obj/effect/turf_decal/terragov/all/center_right
+/obj/effect/turf_decal/solgov/all/center_right
 	icon_state = "center-right-all"
 
-/obj/effect/turf_decal/terragov/all/bottom_left
+/obj/effect/turf_decal/solgov/all/bottom_left
 	icon_state = "bottom-left-all"
 
-/obj/effect/turf_decal/terragov/all/bottom_center
+/obj/effect/turf_decal/solgov/all/bottom_center
 	icon_state = "bottom-center-all"
 
-/obj/effect/turf_decal/terragov/all/bottom_right
+/obj/effect/turf_decal/solgov/all/bottom_right
 	icon_state = "bottom-right-all"
 
 // suns

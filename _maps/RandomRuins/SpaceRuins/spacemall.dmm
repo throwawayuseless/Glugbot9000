@@ -30,7 +30,7 @@
 /obj/effect/turf_decal/corner/opaque/black/diagonal,
 /obj/effect/turf_decal/siding/wideplating/dark,
 /obj/item/trash/plate,
-/obj/item/reagent_containers/food/snacks/hotdog,
+/obj/item/food/hotdog,
 /obj/structure/table,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/spacemall)
@@ -131,7 +131,7 @@
 /area/ruin/space/has_grav/spacemall/maint)
 "aC" = (
 /obj/effect/turf_decal/corner/transparent/black/diagonal,
-/obj/effect/turf_decal/road/line/transparent/terragovblue,
+/obj/effect/turf_decal/road/line/transparent/solgovblue,
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
@@ -589,7 +589,7 @@
 /obj/machinery/door/window/brigdoor{
 	dir = 8
 	},
-/obj/effect/turf_decal/corner/transparent/terragovgold/three_quarters{
+/obj/effect/turf_decal/corner/transparent/solgovgold/three_quarters{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
@@ -1075,7 +1075,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/spacemall)
 "eg" = (
-/obj/effect/turf_decal/corner/transparent/terragovgold{
+/obj/effect/turf_decal/corner/transparent/solgovgold{
 	dir = 10
 	},
 /obj/machinery/disposal/bin,
@@ -1292,7 +1292,7 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 8
 	},
-/obj/effect/turf_decal/corner/transparent/terragovgold{
+/obj/effect/turf_decal/corner/transparent/solgovgold{
 	dir = 9
 	},
 /turf/open/floor/plasteel,
@@ -1516,7 +1516,7 @@
 /area/ruin/space/has_grav/spacemall)
 "fP" = (
 /obj/structure/rack,
-/obj/effect/turf_decal/corner/transparent/terragovgold/full,
+/obj/effect/turf_decal/corner/transparent/solgovgold/full,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/stack/cable_coil/random/five,
@@ -1921,8 +1921,8 @@
 "hy" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/corner/opaque/red/full,
-/obj/item/reagent_containers/food/snacks/donut/choco,
-/obj/item/reagent_containers/food/snacks/donut/choco{
+/obj/item/food/donut/choco,
+/obj/item/food/donut/choco{
 	pixel_y = 3
 	},
 /turf/open/floor/plasteel,
@@ -1941,7 +1941,7 @@
 /area/ruin/space/has_grav/spacemall/shop)
 "hE" = (
 /obj/structure/rack,
-/obj/effect/turf_decal/corner/transparent/terragovgold/full,
+/obj/effect/turf_decal/corner/transparent/solgovgold/full,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/storage/part_replacer/bluespace,
 /turf/open/floor/plasteel,
@@ -2183,10 +2183,6 @@
 	dir = 1
 	},
 /obj/structure/catwalk/over/plated_catwalk,
-/obj/item/reagent_containers/food/snacks/spiderling{
-	pixel_y = 5;
-	pixel_x = 6
-	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/spacemall/dorms)
 "iE" = (
@@ -2223,9 +2219,9 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/spacemall/maint)
 "iJ" = (
-/obj/effect/turf_decal/trimline/opaque/terragovblue/arrow_cw,
+/obj/effect/turf_decal/trimline/opaque/solgovblue/arrow_cw,
 /obj/effect/turf_decal/corner/transparent/black/diagonal,
-/obj/effect/turf_decal/road/line/transparent/terragovblue,
+/obj/effect/turf_decal/road/line/transparent/solgovblue,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
 	},
@@ -2430,7 +2426,7 @@
 /turf/open/floor/carpet/green,
 /area/ruin/space/has_grav/spacemall/maint)
 "jp" = (
-/obj/effect/turf_decal/road/line/transparent/terragovblue,
+/obj/effect/turf_decal/road/line/transparent/solgovblue,
 /obj/structure/rack,
 /obj/effect/turf_decal/corner/transparent/black/diagonal,
 /obj/item/toy/braintoy,
@@ -2468,7 +2464,7 @@
 	dir = 4
 	},
 /obj/item/trash/plate,
-/obj/item/reagent_containers/food/snacks/burger,
+/obj/item/food/burger,
 /obj/structure/table,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/spacemall)
@@ -2496,7 +2492,7 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 1
 	},
-/obj/effect/turf_decal/corner/transparent/terragovgold{
+/obj/effect/turf_decal/corner/transparent/solgovgold{
 	dir = 5
 	},
 /turf/open/floor/plasteel,
@@ -2918,7 +2914,7 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/ruin/space/has_grav/spacemall/shop2)
 "lp" = (
-/obj/effect/turf_decal/corner/transparent/terragovgold/three_quarters{
+/obj/effect/turf_decal/corner/transparent/solgovgold/three_quarters{
 	dir = 8
 	},
 /obj/structure/cable{
@@ -3965,7 +3961,7 @@
 /area/ruin/space/has_grav/spacemall)
 "pl" = (
 /obj/item/banner/engineering,
-/obj/effect/turf_decal/corner/transparent/terragovgold/diagonal,
+/obj/effect/turf_decal/corner/transparent/solgovgold/diagonal,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/spacemall/shop)
 "pm" = (
@@ -4462,10 +4458,10 @@
 /area/ruin/space/has_grav/spacemall)
 "qH" = (
 /obj/effect/turf_decal/corner/transparent/black/diagonal,
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/spider{
+/obj/item/food/meat/slab/human/mutant/spider{
 	pixel_y = 6
 	},
-/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/spider,
+/obj/item/food/meat/slab/human/mutant/spider,
 /obj/structure/table,
 /turf/open/floor/plasteel/white,
 /area/ruin/space/has_grav/spacemall/dorms)
@@ -4734,7 +4730,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/spacemall/maint)
 "rM" = (
-/obj/effect/turf_decal/corner/transparent/terragovgold{
+/obj/effect/turf_decal/corner/transparent/solgovgold{
 	dir = 6
 	},
 /obj/structure/cable{
@@ -4877,7 +4873,7 @@
 /obj/machinery/door/window/brigdoor{
 	dir = 1
 	},
-/obj/effect/turf_decal/corner/transparent/terragovgold{
+/obj/effect/turf_decal/corner/transparent/solgovgold{
 	dir = 5
 	},
 /turf/open/floor/plasteel,
@@ -5884,7 +5880,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/spacemall/shuttle)
 "vU" = (
-/obj/effect/turf_decal/corner/transparent/terragovgold{
+/obj/effect/turf_decal/corner/transparent/solgovgold{
 	dir = 9
 	},
 /obj/structure/cable{
@@ -5928,10 +5924,6 @@
 	dir = 4
 	},
 /obj/item/trash/candy,
-/obj/item/reagent_containers/food/snacks/spiderling{
-	pixel_y = 5;
-	pixel_x = 6
-	},
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/spacemall/dorms)
 "wd" = (
@@ -6397,7 +6389,7 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 1
 	},
-/obj/effect/turf_decal/corner/transparent/terragovgold/three_quarters{
+/obj/effect/turf_decal/corner/transparent/solgovgold/three_quarters{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
@@ -6517,7 +6509,7 @@
 /turf/open/floor/plasteel/white,
 /area/ruin/space/has_grav/spacemall/shop2)
 "yz" = (
-/obj/effect/turf_decal/corner/transparent/terragovgold/three_quarters{
+/obj/effect/turf_decal/corner/transparent/solgovgold/three_quarters{
 	dir = 1
 	},
 /obj/structure/cable{
@@ -6542,9 +6534,9 @@
 /turf/open/floor/wood,
 /area/ruin/space/has_grav/spacemall/maint)
 "yG" = (
-/obj/effect/turf_decal/trimline/opaque/terragovblue/arrow_cw,
+/obj/effect/turf_decal/trimline/opaque/solgovblue/arrow_cw,
 /obj/effect/turf_decal/corner/transparent/black/diagonal,
-/obj/effect/turf_decal/road/line/transparent/terragovblue,
+/obj/effect/turf_decal/road/line/transparent/solgovblue,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
@@ -6763,13 +6755,6 @@
 	dir = 8
 	},
 /obj/item/trash/plate,
-/obj/item/food/breadslice/moldy{
-	pixel_y = 6
-	},
-/obj/item/reagent_containers/food/snacks/spiderling{
-	pixel_y = 5;
-	pixel_x = 6
-	},
 /obj/structure/table,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/spacemall/dorms)
@@ -6880,7 +6865,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/spacemall/shop)
 "zS" = (
-/obj/effect/turf_decal/corner/transparent/terragovgold/diagonal,
+/obj/effect/turf_decal/corner/transparent/solgovgold/diagonal,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
 	},
@@ -7334,7 +7319,7 @@
 /turf/open/floor/plasteel/white,
 /area/ruin/space/has_grav/spacemall)
 "BT" = (
-/obj/effect/turf_decal/road/line/transparent/terragovblue,
+/obj/effect/turf_decal/road/line/transparent/solgovblue,
 /obj/structure/rack,
 /obj/effect/turf_decal/corner/transparent/black/diagonal,
 /obj/item/toy/plush/moth,
@@ -7372,7 +7357,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/spacemall/maint)
 "Ca" = (
-/obj/effect/turf_decal/corner/transparent/terragovgold/diagonal,
+/obj/effect/turf_decal/corner/transparent/solgovgold/diagonal,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
 	},
@@ -7579,7 +7564,7 @@
 /area/ruin/space/has_grav/spacemall/dorms)
 "CM" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/fulltile/indestructable,
+/obj/structure/window/reinforced/fulltile/indestructible,
 /turf/open/floor/plating{
 	light_range = 3
 	},
@@ -7595,7 +7580,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/spacemall/dorms)
 "CO" = (
-/obj/effect/turf_decal/corner/transparent/terragovgold/diagonal,
+/obj/effect/turf_decal/corner/transparent/solgovgold/diagonal,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
@@ -8195,7 +8180,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/item/reagent_containers/food/snacks/spiderling,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/spacemall/maint)
 "EO" = (
@@ -8708,7 +8692,7 @@
 "GJ" = (
 /obj/effect/turf_decal/corner/opaque/black/diagonal,
 /obj/effect/turf_decal/siding/wideplating/dark,
-/obj/item/reagent_containers/food/snacks/spidereggsham,
+/obj/item/food/spidereggsham,
 /obj/structure/table,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/spacemall)
@@ -8920,7 +8904,7 @@
 /area/ruin/space/has_grav/spacemall/shop)
 "Hv" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/fulltile/indestructable,
+/obj/structure/window/reinforced/fulltile/indestructible,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/spacemall/maint)
 "Hy" = (
@@ -8986,10 +8970,10 @@
 /area/ruin/space/has_grav/spacemall/dorms)
 "HM" = (
 /obj/effect/turf_decal/corner/transparent/black/diagonal,
-/obj/effect/turf_decal/trimline/opaque/terragovblue/arrow_cw{
+/obj/effect/turf_decal/trimline/opaque/solgovblue/arrow_cw{
 	dir = 10
 	},
-/obj/effect/turf_decal/road/line/transparent/terragovblue,
+/obj/effect/turf_decal/road/line/transparent/solgovblue,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/spacemall/shop2)
 "HO" = (
@@ -9172,7 +9156,7 @@
 /area/ruin/space/has_grav/spacemall/maint)
 "Iw" = (
 /obj/effect/turf_decal/corner/transparent/black/diagonal,
-/obj/effect/turf_decal/road/line/transparent/terragovblue,
+/obj/effect/turf_decal/road/line/transparent/solgovblue,
 /obj/machinery/camera/autoname{
 	dir = 5;
 	network = list("mall")
@@ -9927,7 +9911,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/spacemall/dorms)
 "LF" = (
-/obj/effect/turf_decal/road/line/transparent/terragovblue,
+/obj/effect/turf_decal/road/line/transparent/solgovblue,
 /obj/effect/turf_decal/corner/transparent/black/diagonal,
 /obj/structure/rack,
 /obj/item/hot_potato/harmless/toy,
@@ -9975,7 +9959,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/spacemall/shop)
 "LP" = (
-/obj/effect/turf_decal/corner/transparent/terragovgold{
+/obj/effect/turf_decal/corner/transparent/solgovgold{
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -10448,10 +10432,6 @@
 	dir = 4;
 	welded = 1
 	},
-/obj/item/reagent_containers/food/snacks/spiderling{
-	pixel_y = 5;
-	pixel_x = 6
-	},
 /turf/open/floor/plasteel/freezer,
 /area/ruin/space/has_grav/spacemall/dorms)
 "Nr" = (
@@ -10747,7 +10727,7 @@
 /area/ruin/space/has_grav/spacemall/maint)
 "Oo" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/fulltile/indestructable,
+/obj/structure/window/reinforced/fulltile/indestructible,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/spacemall/dorms)
 "Oq" = (
@@ -10766,7 +10746,7 @@
 /area/ruin/space/has_grav/spacemall/maint)
 "Os" = (
 /obj/structure/grille,
-/obj/structure/window/reinforced/fulltile/indestructable,
+/obj/structure/window/reinforced/fulltile/indestructible,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/spacemall)
 "Ot" = (
@@ -10849,10 +10829,6 @@
 /obj/structure/bed,
 /obj/effect/spawner/random/bedsheet,
 /obj/effect/decal/cleanable/blood,
-/obj/item/reagent_containers/food/snacks/spiderling{
-	pixel_y = 5;
-	pixel_x = 6
-	},
 /turf/open/floor/wood,
 /area/ruin/space/has_grav/spacemall/dorms)
 "OO" = (
@@ -11210,7 +11186,7 @@
 /area/ruin/space/has_grav/spacemall/maint)
 "PQ" = (
 /obj/effect/turf_decal/corner/transparent/black/diagonal,
-/obj/effect/turf_decal/road/line/transparent/terragovblue,
+/obj/effect/turf_decal/road/line/transparent/solgovblue,
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
@@ -11311,7 +11287,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/spacemall/dorms)
 "Qx" = (
-/obj/effect/turf_decal/corner/transparent/terragovgold/diagonal,
+/obj/effect/turf_decal/corner/transparent/solgovgold/diagonal,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/spacemall/shop)
 "Qy" = (
@@ -11650,7 +11626,7 @@
 /turf/open/floor/plating/grass,
 /area/ruin/space/has_grav/spacemall)
 "RL" = (
-/obj/effect/turf_decal/corner/transparent/terragovgold/three_quarters,
+/obj/effect/turf_decal/corner/transparent/solgovgold/three_quarters,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
 	},
@@ -12321,9 +12297,9 @@
 /turf/open/floor/plating/grass,
 /area/ruin/space/has_grav/spacemall/dorms)
 "Us" = (
-/obj/effect/turf_decal/trimline/opaque/terragovblue/arrow_cw,
+/obj/effect/turf_decal/trimline/opaque/solgovblue/arrow_cw,
 /obj/effect/turf_decal/corner/transparent/black/diagonal,
-/obj/effect/turf_decal/road/line/transparent/terragovblue,
+/obj/effect/turf_decal/road/line/transparent/solgovblue,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/spacemall/shop2)
 "Ut" = (
@@ -13181,7 +13157,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/spacemall/maint)
 "XL" = (
-/obj/effect/turf_decal/corner/transparent/terragovgold{
+/obj/effect/turf_decal/corner/transparent/solgovgold{
 	dir = 6
 	},
 /obj/structure/cable{
@@ -13696,7 +13672,7 @@
 "ZQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
-/obj/item/reagent_containers/food/snacks/donut/plain,
+/obj/item/food/donut/plain,
 /obj/effect/turf_decal/corner/opaque/red/full,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/spacemall/maint)

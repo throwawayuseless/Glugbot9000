@@ -79,11 +79,11 @@
 /obj/item/encryptionkey/ai //ported from NT, this goes 'inside' the AI.
 	channels = list(RADIO_CHANNEL_EMERGENCY = 1)
 
-/obj/item/encryptionkey/terragov
-	name = "\improper TerraGov encryption key"
+/obj/item/encryptionkey/solgov
+	name = "\improper SolGov encryption key"
 	icon = 'icons/obj/radio.dmi'
 	icon_state = "solgov_cypherkey"
-	channels = list(RADIO_CHANNEL_TERRAGOV = 1)
+	channels = list(RADIO_CHANNEL_SOLGOV = 1)
 
 /obj/item/encryptionkey/wideband
 	name = "wideband encryption key"

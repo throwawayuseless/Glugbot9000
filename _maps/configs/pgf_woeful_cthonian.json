@@ -38,6 +38,8 @@
 	"enabled": true,
 	"space_spawn": false,
 
+	"token_icon_state": "ship_small_generic",
+
 	"architect": "Erikafox",
 	"contributors": [
 		"No Contributors"

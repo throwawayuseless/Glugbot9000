@@ -1,0 +1,16 @@
+2025-09-06:
+  OnlineGirlfriend:
+  - rscadd: signable guestbooks
+  - rscadd: personal journals
+  - rscadd: adds book reskinning to book binder
+  - rscadd: dating survival guide, water bolt tome
+  - bugfix: updated bible and book icons for consistent perspective
+  - bugfix: renamed Koran to Quran
+  Ossa88:
+  - rscdel: Removed items
+  - balance: No more var edited stuff per Ossa The Overlord
+  - rscadd: Missing outpost observer landmark
+  - balance: Makes some space ruins more common and others less.... hopefully.
+  - bugfix: Corrects icon state
+  mc-oofert:
+  - rscadd: Added a new ship, the Ramzi Clique Light

@@ -66,7 +66,7 @@
 
 /obj/item/storage/box/ammo/c556mm
 	name = "box of 5.56mm HITP caseless ammo"
-	desc = "A box of 5.56mm HITP caseless ammo, a TerraGov standard."
+	desc = "A box of 5.56mm HITP caseless ammo, a SolGov standard."
 	icon_state = "556mmHITPbox"
 
 /obj/item/storage/box/ammo/c556mm/PopulateContents()

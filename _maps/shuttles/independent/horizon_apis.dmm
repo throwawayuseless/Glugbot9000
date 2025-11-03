@@ -2677,7 +2677,7 @@
 	pixel_x = -3;
 	pixel_y = 5
 	},
-/obj/item/reagent_containers/food/snacks/meat/steak/killertomato,
+/obj/item/food/meat/steak/killertomato,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "xs" = (

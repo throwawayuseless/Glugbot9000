@@ -92,7 +92,7 @@
 	if(obj_integrity == max_integrity)
 		to_chat(user, span_warning("This sign is already in perfect condition."))
 		return TRUE
-	if(!I.tool_start_check(user, amount=0))
+	if(!I.tool_start_check(user, src, amount=0))
 		return TRUE
 	user.visible_message(
 		span_notice("[user] starts repairing [src]..."), \
@@ -112,7 +112,7 @@
 	if(obj_integrity == max_integrity)
 		to_chat(user, span_warning("This sign is already in perfect condition."))
 		return TRUE
-	if(!I.tool_start_check(user, amount=0))
+	if(!I.tool_start_check(user, src, amount=0))
 		return TRUE
 	user.visible_message(
 		span_notice("[user] starts repairing [src]..."), \
@@ -250,17 +250,17 @@
 	icon_state = "donkco"
 	is_editable = TRUE
 
-// some terragov stuff
-/obj/structure/sign/terragov_seal
-	name = "seal of the terran government"
+// some solgov stuff
+/obj/structure/sign/solgov_seal
+	name = "seal of the solarian government"
 	desc = "A seal emblazened with a gold trim depicting Sol."
 	icon = 'icons/obj/solgov_logos.dmi'
 	icon_state = "solgovseal"
 	pixel_y = 27
 
-/obj/structure/sign/terragov_flag
-	name = "terragov banner"
-	desc = "A large flag displaying the logo of terragov, the government of the Sol system."
+/obj/structure/sign/solgov_flag
+	name = "solgov banner"
+	desc = "A large flag displaying the logo of solgov, the government of the Sol system."
 	icon = 'icons/obj/solgov_logos.dmi'
 	icon_state = "solgovflag-left"
 

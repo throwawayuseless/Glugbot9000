@@ -82,8 +82,8 @@
 	"enabled": true,
 	"space_spawn": false,
 
-	"ship_icon": "cheyenne",
-	"empty_space_icon": "cheyenne_space",
+	"token_icon_state": "ship_carrier",
+
 	"architect": "Ossa / SYNAPSE",
 	"contributors": [
 		"No Contributors"

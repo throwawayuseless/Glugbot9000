@@ -19,6 +19,31 @@ $background-color: rgba(0, 0, 0, 0.33) !default;
   background-color: $background-color;
 }
 
+.CameraConsole__helmleft {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: base.em(250px);
+}
+
+.CameraConsole__helmcenter {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: base.em(250px);
+  right: base.em(250px);
+  background-color: $background-color;
+}
+
+.CameraConsole__helmright {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: base.em(250px);
+}
+
 .CameraConsole__toolbar {
   position: absolute;
   top: 0;

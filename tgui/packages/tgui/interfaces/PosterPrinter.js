@@ -87,7 +87,7 @@ const Options = (props, context) => {
     'Nanotrasen',
     'Nanotrasen (Retro)',
     'RILENA',
-    'TerraGov',
+    'SolGov',
     'Girlypop', // PENTEST ADDITION - START
     'Horse',
     'Horizon',

@@ -272,45 +272,6 @@
 	desc = "A modest blue command beret with a silver rank insignia. Smells of power and the sweat of assistants."
 	icon_state = "beret_com"
 
-// TerraGov
-
-/obj/item/clothing/head/beret/terragov
-	name = "\improper TerraGov beret"
-	desc = "A beret with TerraGov's emblem emblazoned on it. Colored in TerraGov blue."
-	icon_state = "beret_solgov"
-
-/obj/item/clothing/head/beret/terragov/plain
-	name = "\improper TerraGov beret"
-	desc = "A plain blue beret. It looks like it's missing something."
-	icon_state = "beret_solgovplain"
-
-/obj/item/clothing/head/beret/terragov/terragov
-	name = "\improper TerraGov beret"
-	desc = "A beret with TerraGov's emblem emblazoned on it. It's still colored in original TerraGov green."
-	icon_state = "beret_solgov"
-	icon = ""
-
-/obj/item/clothing/head/beret/terragov/terragov/plain
-	name = "\improper TerraGov beret"
-	desc = "A plain beret colored in original TerraGov green. It looks like it's missing something."
-	icon_state = "beret_solgovplain"
-
-// Inteq
-
-/obj/item/clothing/head/beret/sec/inteq
-	name = "inteq beret"
-	desc = "A comfortable looking brown beret with a badge of the golden shield of the IRMG. Denotes the wearer as part of the IRMG."
-	icon_state = "inteq_beret"
-
-/obj/item/clothing/head/beret/sec/hos/inteq
-	name = "inteq vanguard beret"
-	desc = "A comfortable looking brown beret with a badge of the golden shield of the IRMG. Denotes the wearer as a vanguard of the IRMG. The padding inside feels thicker."
-	icon_state = "inteq_beret"
-
-/obj/item/clothing/head/beret/sec/hos/inteq/honorable
-	name = "honorable vanguard beret"
-	desc = "A snow white beret with an air of distinction around it, emblazoned with the golden shield of the IRMG as the badge."
-	icon_state = "inteq_honorable_beret"
 
 // CentCom
 

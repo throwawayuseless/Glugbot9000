@@ -92,16 +92,6 @@
 	resistance_flags = NONE
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/exo/large
 
-/obj/item/clothing/suit/hazardvest/terragov
-	name = "TerraGov hazard vest"
-	desc = "A high-visibility vest used in work zones by terran engineers."
-	icon_state = "hazard_solgov"
-	item_state = "hazard_solgov"
-	blood_overlay_type = "armor"
-	allowed = list(/obj/item/flashlight, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/t_scanner, /obj/item/radio)
-	resistance_flags = NONE
-	pocket_storage_component_path = /datum/component/storage/concrete/pockets/exo/large
-
 /obj/item/clothing/suit/toggle/hazard
 	name = "high-visibility jacket"
 	desc = "A highlighter-yellow jacket with reflective stripes."
@@ -215,67 +205,6 @@
 	desc = "A sterile blue surgical apron."
 	icon_state = "surgical"
 	allowed = MEDICAL_SUIT_ALLOWED_ITEMS
-
-//TerraGov suits
-
-/obj/item/clothing/suit/terragov
-	name = "Terragov robe"
-	desc = "A set of plain Terragov robes, commonly used by civilians."
-	body_parts_covered = CHEST|GROIN|ARMS
-	icon_state = "solgov_robe"
-	item_state = "solgov_robe"
-
-/obj/item/clothing/suit/terragov/dress
-	name = "Terragov dress"
-	desc = "A plain Terragov dress, commonly used by civilians."
-	body_parts_covered = CHEST|GROIN
-	icon_state = "solgov_dress"
-	item_state = "solgov_dress"
-
-/obj/item/clothing/suit/terragov/suit
-	name = "Terragov suit"
-	desc = "A formal Terragov suit, commonly used by civilians."
-	body_parts_covered = CHEST|GROIN
-	icon_state = "solgov_suit"
-	item_state = "solgov_suit"
-
-/obj/item/clothing/suit/terragov/bureaucrat
-	name = "Terragov bureaucrat robe"
-	desc = "A set of unique Terragov robes, utilized by Terran Bureaucrats."
-	body_parts_covered = CHEST|GROIN|ARMS
-	icon_state = "solgov_bureaucrat_robe"
-	item_state = "solgov_bureaucrat_robe"
-
-/obj/item/clothing/suit/terragov/overcoat
-	name = "Terragov overcoat"
-	desc = "A traditional Terran overcoat, used by cilivians and ship crews alike."
-	body_parts_covered = CHEST|GROIN|ARMS
-	icon_state = "solgov_overcoat"
-	item_state = "solgov_overcoat"
-	supports_variations = DIGITIGRADE_VARIATION
-
-/obj/item/clothing/suit/terragov/jacket
-	name = "Terragov jacket"
-	desc = "A plain Terragov jacket, commonly used by civilians."
-	body_parts_covered = CHEST|GROIN|ARMS
-	icon_state = "solgov_jacket"
-	item_state = "solgov_jacket"
-
-/obj/item/clothing/suit/toggle/terragov
-	name = "\improper Terragov coat"
-	desc = "An armored coat worn for special occasions. This one is dyed in Terragov blue."
-	body_parts_covered = CHEST|GROIN|ARMS|HANDS
-	icon_state = "coat_solgov"
-	item_state = "coat_solgov"
-	blood_overlay_type = "coat"
-	togglename = "buttons"
-	armor = list("melee" = 35, "bullet" = 30, "laser" = 30, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
-
-/obj/item/clothing/suit/toggle/terragov/terragov
-	name = "\improper Terragov coat"
-	desc = "An armored coat worn for special occasions. This one is still dyed in original TerraGov green."
-	icon_state = "coat_terragov"
-	item_state = "coat_terragov"
 
 /obj/item/clothing/suit/armor/witchhunter
 	name = "witchunter garb"

@@ -306,6 +306,6 @@
 	to_chat(user, span_notice("[src] [active ? "is now active":"can now be concealed"]."))
 	return COMPONENT_NO_DEFAULT_MESSAGE
 
-/obj/item/melee/energy/ctf/terragov
+/obj/item/melee/energy/ctf/solgov
 	armour_penetration = 40
 	active_force = 34 //desword grade, but 0 blocking

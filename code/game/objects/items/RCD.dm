@@ -435,7 +435,8 @@ RLD
 		"Airlock" = image(icon = 'icons/mob/radial.dmi', icon_state = "airlock"),
 		"Deconstruct" = image(icon= 'icons/mob/radial.dmi', icon_state = "delete"),
 		"Grilles & Windows" = image(icon = 'icons/mob/radial.dmi', icon_state = "grillewindow"),
-		"Floors & Walls" = image(icon = 'icons/mob/radial.dmi', icon_state = "wallfloor")
+		"Floors & Walls" = image(icon = 'icons/mob/radial.dmi', icon_state = "wallfloor"),
+		"Girder" = image(icon = 'icons/obj/structures.dmi', icon_state = "girder"), //PENTEST ADDITION - for girder construction
 	)
 	if(upgrade & RCD_UPGRADE_FRAMES)
 		choices += list(
@@ -455,10 +456,12 @@ RLD
 		choices += list(
 			"Change Window Type" = image(icon = 'icons/mob/radial.dmi', icon_state = "windowtype")
 		)
-	var/choice = show_radial_menu(user, src, choices, custom_check = CALLBACK(src, PROC_REF(check_menu), user), require_near = TRUE, tooltips = TRUE)
+	var/choice = show_radial_menu(user, src, choices, custom_check = CALLBACK(src, PROC_REF(check_menu), user), radius = 42, require_near = TRUE, tooltips = TRUE) //PENTEST ADDITION - radial menu is bigger
 	if(!check_menu(user))
 		return
 	switch(choice)
+		if("Girder") //PENTEST ADDITION - for girder construction
+			mode = RCD_GIRDER //PENTEST ADDITION - for girder construction
 		if("Floors & Walls")
 			mode = RCD_FLOORWALL
 		if("Airlock")

@@ -37,7 +37,7 @@
 			"outfit": "/datum/outfit/job/inteq/security",
 			"slots": 1
 		},
-		"Recruit": {
+		"Auxiliary": {
 			"outfit": "/datum/outfit/job/inteq/assistant",
 			"slots": 1
 		}
@@ -46,6 +46,8 @@
 	"starting_funds": 2000,
 	"enabled": true,
 	"space_spawn": false,
+
+	"token_icon_state": "ship_small_generic",
 
 	"architect": "Apogee-dev",
 	"contributors": [

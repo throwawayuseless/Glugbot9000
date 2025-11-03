@@ -80,6 +80,7 @@
 
 /obj/structure/closet/supplypod/Initialize(mapload, customStyle = FALSE)
 	. = ..()
+	AddComponent(/datum/component/gps, "CR-473", TRUE) //PENTEST ADDITION - GPS component for the supplypod, used to track it and its contents
 	if (!loc)
 		var/area/shipping_lane = GLOB.areas_by_type[/area/centcom/supplypod/supplypod_temp_holding] //temporary holder for supplypods mid-transit
 		forceMove(pick(shipping_lane.contents))

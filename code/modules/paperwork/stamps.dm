@@ -116,7 +116,7 @@
 	icon_state = "stamp-hardliners"
 	dye_color = DYE_SYNDICATE
 
-/obj/item/stamp/terragov //PENTEST ALTERATION
+/obj/item/stamp/solgov
 	name = "SolGov rubber stamp"
 	icon_state = "stamp-solgov"
 

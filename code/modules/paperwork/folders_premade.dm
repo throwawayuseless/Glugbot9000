@@ -15,7 +15,7 @@
 	icon_state = "folder_white"
 
 /obj/item/folder/solgov
-	desc = "A blue folder with a Terragov seal."
+	desc = "A blue folder with a SolGov seal."
 	icon_state = "folder_solgov"
 
 /obj/item/folder/terragov
@@ -67,7 +67,7 @@
 
 /obj/item/folder/documents/solgov
 	document = /obj/item/documents/solgov
-	desc = "A blue folder with a TerraGov seal."
+	desc = "A blue folder with a SolGov seal."
 	icon_state = "folder_solgovred"
 
 /obj/item/folder/documents/terragov

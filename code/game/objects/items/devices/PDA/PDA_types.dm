@@ -183,10 +183,10 @@
 	default_cartridge = /obj/item/cartridge/medical
 	icon_state = "pda-genetics"
 
-/obj/item/pda/terragov
-	name = "terragov officer PDA"
+/obj/item/pda/solgov
+	name = "solgov officer PDA"
 	default_cartridge = /obj/item/cartridge/lawyer
-	inserted_item = /obj/item/pen/fountain/terragov
+	inserted_item = /obj/item/pen/fountain/solgov
 	icon_state = "pda-solgov"
 
 /obj/item/pda/brig_phys

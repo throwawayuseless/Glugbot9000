@@ -94,10 +94,10 @@
 	icon_state = "computer-retro"
 	deconpath = /obj/structure/frame/computer/retro
 
-/obj/machinery/computer/mech_bay_power_console/terragov
+/obj/machinery/computer/mech_bay_power_console/solgov
 	icon = 'icons/obj/machines/retro_computer.dmi'
 	icon_state = "computer-solgov"
-	deconpath = /obj/structure/frame/computer/terragov
+	deconpath = /obj/structure/frame/computer/solgov
 
 /obj/machinery/computer/mech_bay_power_console/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)

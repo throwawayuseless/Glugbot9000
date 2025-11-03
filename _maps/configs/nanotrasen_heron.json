@@ -84,6 +84,8 @@
 	"enabled": false,
 	"space_spawn": false,
 
+	"token_icon_state": "ship_massive_war",
+
 	"architect": "Spockye",
 	"contributors": [
 		"No Contributors"

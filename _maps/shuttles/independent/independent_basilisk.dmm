@@ -108,7 +108,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/filled/shrink_cw{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/shrink_cw{
 	dir = 8
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -241,7 +241,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
@@ -679,7 +679,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
@@ -697,7 +697,7 @@
 /obj/effect/turf_decal/trimline/opaque/vired/filled/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
@@ -761,7 +761,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/three_quarters{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 9
 	},
 /turf/open/floor/plasteel/dark,
@@ -815,14 +815,14 @@
 /area/ship/hallway/central)
 "fy" = (
 /obj/effect/turf_decal/corner/opaque/vired/half,
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line,
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "fB" = (
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -926,7 +926,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/filled/shrink_cw{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/shrink_cw{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
@@ -953,7 +953,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/warning{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/warning{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
@@ -1188,7 +1188,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/filled/shrink_ccw{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/shrink_ccw{
 	dir = 8
 	},
 /obj/machinery/light_switch{
@@ -1255,7 +1255,7 @@
 /obj/machinery/light/directional/south,
 /obj/structure/cable,
 /obj/effect/turf_decal/corner/opaque/vired/three_quarters,
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 6
 	},
 /turf/open/floor/plasteel/dark,
@@ -1292,7 +1292,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/warning{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/warning{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -1390,7 +1390,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/three_quarters{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 10
 	},
 /obj/machinery/firealarm/directional/south,
@@ -1404,7 +1404,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -1415,7 +1415,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/warning{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/warning{
 	dir = 4
 	},
 /obj/effect/turf_decal/corner_steel_grid{
@@ -1514,7 +1514,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
@@ -1584,7 +1584,7 @@
 	dir = 5
 	},
 /obj/effect/turf_decal/corner/opaque/vired,
-/obj/effect/turf_decal/trimline/opaque/terragovgold/filled/corner,
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/corner,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "jH" = (
@@ -1664,7 +1664,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/warning{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/warning{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -1723,7 +1723,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/filled/shrink_cw{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/shrink_cw{
 	dir = 8
 	},
 /obj/machinery/airalarm/directional/west,
@@ -1824,7 +1824,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/warning{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/warning{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
@@ -1907,7 +1907,7 @@
 	name = "Tiziran Desk Flag";
 	desc = "A small banner on a pole depicting the sigil of the Tiziran Empire."
 	},
-/obj/item/desk_flag/terragov{
+/obj/item/desk_flag/solgov{
 	pixel_x = -4
 	},
 /turf/open/floor/plasteel/dark,
@@ -1934,7 +1934,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -2077,7 +2077,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/warning{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/warning{
 	dir = 4
 	},
 /obj/effect/turf_decal/corner_steel_grid{
@@ -2267,7 +2267,7 @@
 /area/ship/storage)
 "nx" = (
 /obj/effect/turf_decal/corner/opaque/vired/three_quarters,
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 6
 	},
 /turf/open/floor/plasteel/dark,
@@ -2578,7 +2578,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/warning{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/warning{
 	dir = 8
 	},
 /obj/effect/turf_decal/corner_steel_grid,
@@ -2696,7 +2696,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/corner/opaque/vired/half,
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line,
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "pM" = (
@@ -2707,7 +2707,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -3193,7 +3193,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
@@ -3260,7 +3260,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/three_quarters{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 5
 	},
 /obj/structure/cable{
@@ -3363,7 +3363,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -3481,7 +3481,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
@@ -3574,7 +3574,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 1
 	},
 /obj/machinery/light/directional/north,
@@ -3622,7 +3622,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/three_quarters{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 10
 	},
 /obj/structure/table/reinforced,
@@ -3646,7 +3646,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 4
 	},
 /obj/structure/cable{
@@ -3967,7 +3967,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/corner/opaque/vired/half,
-/obj/effect/turf_decal/trimline/opaque/terragovgold/warning,
+/obj/effect/turf_decal/trimline/opaque/solgovgold/warning,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "yl" = (
@@ -4056,7 +4056,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/three_quarters{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 5
 	},
 /turf/open/floor/plasteel/dark,
@@ -4074,7 +4074,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
@@ -4120,7 +4120,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
@@ -4247,7 +4247,7 @@
 /obj/structure/table/reinforced,
 /obj/item/radio/intercom/directional/south,
 /obj/effect/turf_decal/corner/opaque/vired/half,
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line,
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line,
 /obj/item/paicard,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -4412,7 +4412,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -4885,7 +4885,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 8
 	},
 /obj/structure/chair/comfy/shuttle{
@@ -4959,7 +4959,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/warning{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/warning{
 	dir = 8
 	},
 /obj/effect/turf_decal/corner_steel_grid{
@@ -4980,7 +4980,7 @@
 /obj/effect/turf_decal/corner/opaque/vired{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/filled/corner{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/corner{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
@@ -5302,7 +5302,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -5407,7 +5407,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/corner/opaque/vired/three_quarters,
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 6
 	},
 /obj/structure/reagent_dispensers/water_cooler,
@@ -5475,7 +5475,7 @@
 	dir = 5
 	},
 /obj/effect/turf_decal/corner/opaque/vired/half,
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line,
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line,
 /obj/machinery/light/directional/south,
 /obj/structure/table/reinforced,
 /obj/item/chair/plastic{
@@ -5742,7 +5742,7 @@
 	dir = 6
 	},
 /obj/effect/turf_decal/corner/opaque/vired,
-/obj/effect/turf_decal/trimline/opaque/terragovgold/filled/corner,
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/corner,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -5942,7 +5942,7 @@
 	dir = 5
 	},
 /obj/effect/turf_decal/corner/opaque/vired/half,
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line,
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line,
 /obj/machinery/light/directional/south,
 /obj/structure/closet/crate/bin,
 /turf/open/floor/plasteel/dark,
@@ -6171,7 +6171,7 @@
 /obj/effect/turf_decal/corner/opaque/vired{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/filled/corner{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/corner{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
@@ -6493,7 +6493,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -6511,7 +6511,7 @@
 /obj/effect/turf_decal/corner/opaque/vired{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/filled/corner{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/corner{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -6580,7 +6580,7 @@
 "MT" = (
 /obj/machinery/light/directional/south,
 /obj/effect/turf_decal/corner/opaque/vired/half,
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line,
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line,
 /obj/machinery/photocopier,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -6713,7 +6713,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
@@ -6739,7 +6739,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/filled/shrink_ccw{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/shrink_ccw{
 	dir = 8
 	},
 /obj/machinery/light_switch{
@@ -7251,7 +7251,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
@@ -7373,7 +7373,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
@@ -7496,7 +7496,7 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /obj/effect/turf_decal/corner/opaque/vired/half,
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line,
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -7559,7 +7559,7 @@
 /obj/effect/turf_decal/corner/opaque/vired{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/filled/corner{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/corner{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
@@ -7812,7 +7812,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/filled/shrink_ccw{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/shrink_ccw{
 	dir = 4
 	},
 /obj/structure/cable{
@@ -8072,7 +8072,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/three_quarters{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 9
 	},
 /obj/structure/extinguisher_cabinet/directional/west,
@@ -8554,7 +8554,7 @@
 "XH" = (
 /obj/machinery/airalarm/directional/south,
 /obj/effect/turf_decal/corner/opaque/vired/half,
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line,
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -8699,7 +8699,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -8942,7 +8942,7 @@
 /obj/effect/turf_decal/corner/opaque/vired/three_quarters{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/line{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 5
 	},
 /turf/open/floor/plasteel/dark,

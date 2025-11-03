@@ -1007,8 +1007,8 @@
 /obj/item/reagent_containers/food/snacks/spacetwinkie,
 /obj/item/reagent_containers/food/snacks/spacetwinkie,
 /obj/item/reagent_containers/food/snacks/spacetwinkie,
-/obj/item/reagent_containers/food/snacks/muffin/berry,
-/obj/item/reagent_containers/food/snacks/muffin,
+/obj/item/food/muffin/berry,
+/obj/item/food/muffin,
 /obj/item/reagent_containers/food/snacks/popsicle/creamsicle_berry,
 /obj/item/reagent_containers/food/snacks/popsicle/creamsicle_orange,
 /obj/item/reagent_containers/food/snacks/popsicle/creamsicle_orange,
@@ -1957,7 +1957,7 @@
 "pJ" = (
 /obj/structure/toilet/secret{
 	dir = 4;
-	secret_type = /obj/item/storage/box/donkpockets/donkpocketgondola
+	secret_type = /obj/item/storage/box/donkpockets
 	},
 /obj/effect/turf_decal/borderfloorwhite{
 	dir = 10
@@ -3485,11 +3485,11 @@
 /area/ship/crew/canteen)
 "Cr" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/grown/sweet_potato{
+/obj/item/food/grown/sweet_potato{
 	pixel_x = -16;
 	pixel_y = 1
 	},
-/obj/item/reagent_containers/food/snacks/grown/cabbage{
+/obj/item/food/grown/cabbage{
 	pixel_x = -1;
 	pixel_y = 9
 	},
@@ -3513,7 +3513,7 @@
 "CH" = (
 /obj/structure/table/wood,
 /obj/item/food/garlicbread,
-/obj/item/reagent_containers/food/snacks/grown/citrus/orange{
+/obj/item/food/grown/citrus/orange{
 	pixel_x = -8;
 	pixel_y = 7
 	},
@@ -4527,14 +4527,14 @@
 "Ky" = (
 /obj/structure/table,
 /obj/item/trash/plate,
-/obj/item/reagent_containers/food/snacks/pancakes/chocolatechip{
+/obj/item/food/pancakes/chocolatechip{
 	pixel_y = 7
 	},
-/obj/item/reagent_containers/food/snacks/pancakes/chocolatechip{
+/obj/item/food/pancakes/chocolatechip{
 	pixel_x = -1;
 	pixel_y = 9
 	},
-/obj/item/reagent_containers/food/snacks/pancakes/chocolatechip{
+/obj/item/food/pancakes/chocolatechip{
 	pixel_y = 12
 	},
 /obj/item/kitchen/fork/plastic{
@@ -5406,12 +5406,12 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
 	},
-/obj/item/reagent_containers/food/snacks/meat/slab/chicken,
-/obj/item/reagent_containers/food/snacks/meat/slab/chicken,
-/obj/item/reagent_containers/food/snacks/meat/slab/synthmeat,
-/obj/item/reagent_containers/food/snacks/meat/slab/synthmeat,
-/obj/item/reagent_containers/food/snacks/meat/slab/synthmeat,
-/obj/item/reagent_containers/food/snacks/meat/slab/synthmeat,
+/obj/item/food/meat/slab/chicken,
+/obj/item/food/meat/slab/chicken,
+/obj/item/food/meat/slab/synthmeat,
+/obj/item/food/meat/slab/synthmeat,
+/obj/item/food/meat/slab/synthmeat,
+/obj/item/food/meat/slab/synthmeat,
 /obj/item/reagent_containers/condiment/milk,
 /obj/item/reagent_containers/condiment/milk,
 /obj/item/reagent_containers/condiment/soymilk,
@@ -5664,12 +5664,12 @@
 /area/ship/crew/crewthree)
 "SG" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/grown/watermelon,
-/obj/item/reagent_containers/food/snacks/grown/grapes{
+/obj/item/food/grown/watermelon,
+/obj/item/food/grown/grapes{
 	pixel_x = -8;
 	pixel_y = 12
 	},
-/obj/item/reagent_containers/food/snacks/grown/aloe{
+/obj/item/food/grown/aloe{
 	pixel_x = 8;
 	pixel_y = 13
 	},

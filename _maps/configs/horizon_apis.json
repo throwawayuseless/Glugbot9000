@@ -53,6 +53,8 @@
 	"enabled": false,
 	"space_spawn": false,
 
+	"token_icon_state": "ship_mid_generic",
+
 	"architect": "Blacklist897/Alexander Moore",
 	"contributors": [
 		"Secc - Help setting up git",

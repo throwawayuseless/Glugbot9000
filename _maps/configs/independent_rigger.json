@@ -54,6 +54,8 @@
 	"enabled": true,
 	"space_spawn": false,
 
+	"token_icon_state": "ship_mid_generic",
+
 	"architect": "Apogee-dev",
 	"contributors": [
 		"No Contributors"

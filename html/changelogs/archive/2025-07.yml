@@ -1,0 +1,106 @@
+2025-07-02:
+  Vect0r2:
+  - rscadd: You can swap marine helmets via using it inhand
+2025-07-14:
+  Shiptest Coders, Ossa:
+  - bugfix: Removes Rachnid names from outpost name pool due to TGUI bugs
+  - bugfix: Evidence bags show up in autolathes for real
+  - balance: Evidence bags are now 100 plastic instead of 500
+  - balance: certain enemies at the end of ruins are now significantly more likely
+      to drop their guns
+  - bugfix: skm fronties no longer have silly loot lists including a guaranteed skm.
+      sorry!
+  - rscdel: Bone axe and bone sword are no longer craftable.
+  - rscadd: Dynamic mission objectives can now properly start inside containers
+  - bugfix: Wrecked Factory and Scrapstation retrieval missions
+  - bugfix: Fixed exosuit radios being unusable
+  - rscadd: Exosuit radios can be talked into directly using .z
+  - bugfix: Fixed scrubbers being able to build up unlimited pressure
+  - rscadd: exosuit salvage saw now has the angle grinder sound effect when used,
+      instead of nothing
+  - balance: salvage saw no longer locks your exosuit in place
+  - bugfix: fixed salvage saw's action not being canceled properly when moving/turning/swapping
+      equipment/etc
+  - bugfix: fixed salvage saw not being able to deconstruct certain things it's supposed
+      to
+  - bugfix: cables should work now.
+  - bugfix: Mercury jellysandwich can now be eaten
+  - spellcheck: Bicardine to Bicaridine
+  - bugfix: machines now take additional damage from items with a demolition mod
+  - rscadd: A couple empty mags near the Commissioners on Waste Tradepost
+  - bugfix: Fixed holofields and wires on Waste Tradepost
+  - rscadd: Added a bag of c4 and a firefighting foam tank to the Typhon-class.
+  - bugfix: Unpowered turrets no longer turn invisible.
+  - rscadd: singular tablet to falmouth and also the kilo the kilo has one too
+  - bugfix: this somehow hasn't stopped anything from working yet so I don't think
+      it's player-facing
+  - bugfix: the wield channel will no longer fail if you move
+  - bugfix: pouches can now be quick-opened from your pockets
+  - admin: Admin AI interact should no longer cause runtimes.
+  - rscadd: An unknown faction's stupid secret cave base has been improved. You can
+      find it on sand worlds. You may explode.
+  - spellcheck: indestructible not indestructable
+  - rscadd: Coffee machines, coffeepots, coffee cups, and other coffee stuff
+  - refactor: buncha refactors to events and holidays from tgstation
+  - rscadd: Added some new descriptions to replace old tg jokes on many foods or to
+      shorten them.
+  - rscadd: Added the new donut crafting category.
+  - rscadd: Added the new Tortilla crafting category, for most Mexican cuisine.
+  - rscadd: Split most of Misc. Food tab off to Bread, Meat, Pastry, and Tortilla.
+  - rscdel: Removed a lot of completely inedible recipes and duplicate, redundant
+      recipes.
+  - rscdel: Removed most shitpost recipes, like the coloured burgers or copypasta.
+  - rscadd: Deckhands on non-Miskilamo ships now start with a black jumpsuit instead
+      of a utility one. Corona deckhands also got fancier.
+  - code_imp: some cleanup for planet spawning
+  - bugfix: prevents you from selling material alloy sheets
+  - rscadd: New Dynamic Mission for the Abandoned Listening Post
+  - balance: pad bounties can now have a set minimum value
+  - balance: materials now deprecate value faster when sold
+  - balance: reduced payment from all missions (ruin and outpost)
+  - balance: storm missions now pay a different dividend per storm.
+  - balance: slightly reduced value of ice to credit transactions (2:5 to 3:10)
+  - balance: Fractures now rely more on received damage and the force of the attack.
+  - spellcheck: Swaps the caliber mentioned in Ramzi Shock Troopers description
+  - rscadd: Added a lot of completely inedible recipies
+  - rscadd: Added a ton of shitpost recipes, like the coloured burgers and copypasta.
+  - rscadd: Added SOUL
+  - bugfix: The "Retrieve War Medal" contract will now have you retrieve the proper
+      medal
+  - balance: the value of storm scanning has been minorly rebalanced again. Overmap
+      5 are now worth a fair bit less.
+  - bugfix: few invisible sprites are now fixed
+  - bugfix: nachos shouldn't have any issues related to crafting anymore
+  - rscdel: deletes the removal of gibtonite from randomgen orespawn because soul.
+2025-07-18:
+  Ossa88:
+  - rscdel: Narsie's Power over the system has dimenished.
+2025-07-20:
+  Ossa88:
+  - rscadd: Dr. Gloop's Ethical BioSolutions is selling Xenobio stuff via cargo.
+  - rscadd: Modsuits are buyable via cargo.
+  - bugfix: Posters have been given a proper catagory.
+2025-07-22:
+  Ossa88:
+  - bugfix: Indestructible Windows ignore Jackhammers
+  - bugfix: Indestructible Windoors ignore everything
+  - bugfix: Phazons Ignore Indestructible objects
+  - bugfix: Outpost Admin areas reinforced
+2025-07-23:
+  Ossa88:
+  - bugfix: Lottery Text just looks better
+2025-07-28:
+  Ossa88:
+  - code_imp: Accessories icons are no-longer hardcoded to one file
+  - code_imp: Moves SolGov and Inteq clothing into a different file
+  - rscdel: Terragov Pentest Version
+  - rscadd: Solgov Shiptest Version
+  - rscdel: Solgov Shiptest Version
+  - rscadd: Dream
+  - rscdel: Test 2
+  - rscdel: Test 1
+  - code_imp: This is the last time... if this doesnt pass Imma cry.
+2025-07-29:
+  Ossa88:
+  - rscdel: changelogs
+  - code_imp: Cleaning up changelog maker

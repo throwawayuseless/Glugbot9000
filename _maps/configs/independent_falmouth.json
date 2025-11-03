@@ -33,7 +33,7 @@
 			"slots": 1
 		},
 		"Deckhand": {
-			"outfit": "/datum/outfit/job/independent/assistant",
+			"outfit": "/datum/outfit/job/independent/assistant/cheap",
 			"slots": 2
 		}
 	},
@@ -41,6 +41,8 @@
 	"starting_funds": 1250,
 	"enabled": true,
 	"space_spawn": false,
+
+	"token_icon_state": "ship_small_generic",
 
 	"architect": "Apogee-dev",
 	"contributors": [

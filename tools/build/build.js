@@ -59,6 +59,7 @@ export const DmMapsIncludeTarget = new Juke.Target({
       ...Juke.glob("_maps/RandomRuins/**/*.dmm"),
       ...Juke.glob("_maps/shuttles/**/*.dmm"),
       ...Juke.glob("_maps/templates/**/*.dmm"),
+      ...Juke.glob("_maps/PentestMaps/**/*.dmm"),
     ];
     const content =
       folders

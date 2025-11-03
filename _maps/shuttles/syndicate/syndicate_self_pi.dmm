@@ -3371,9 +3371,9 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "KE" = (
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
-/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
 /obj/effect/spawner/random/food_or_drink/donkpockets,
 /obj/structure/closet/secure_closet/freezer{
 	name = "refrigerator"

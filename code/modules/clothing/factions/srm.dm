@@ -7,7 +7,6 @@
 	desc = "A simple, hard-wearing suit designed for the hardworking hunters of the Saint-Roumain Militia."
 	icon_state = "rouma_work"
 	item_state = "rouma_work"
-	can_adjust = FALSE
 	icon = 'icons/obj/clothing/faction/srm/uniforms.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/faction/srm/uniforms.dmi'
 	supports_variations = KEPORI_VARIATION
@@ -84,7 +83,7 @@
 //Spacesuits//
 //////////////
 
-/obj/item/clothing/head/helmet/space/hardsuit/terragov/roumain
+/obj/item/clothing/head/helmet/space/hardsuit/solgov/roumain
 	name = "\improper roumain hardsuit helmet"
 	desc = "An armored helmet with an unusual design that recalls both pre-industrial Terran armor and iconography depicting the Ashen Huntsman. Though hand-made, it is surprisingly quite spaceworthy."
 	icon = 'icons/obj/clothing/faction/srm/head.dmi'
@@ -95,14 +94,14 @@
 	worn_y_offset = 4
 	supports_variations = KEPORI_VARIATION
 
-/obj/item/clothing/suit/space/hardsuit/terragov/roumain //i swear to fuck whoever is subtyping these. you will face my wrath.
+/obj/item/clothing/suit/space/hardsuit/solgov/roumain //i swear to fuck whoever is subtyping these. you will face my wrath.
 	name = "\improper roumain hardsuit"
 	desc = "A hand-crafted suit of armor either modified from a set of normal plate armor or designed to resemble one. A powered exoskeleton has been cleverly integrated into the design and, surprisingly, it is completely vacuum-proof. Suits like this are a testament to what the master craftsmen of Hunter's Pride are capable of."
 	icon = 'icons/obj/clothing/faction/srm/suits.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/faction/srm/suits.dmi'
 	icon_state = "hardsuit-roumain"
 	item_state = "hardsuit-roumain"
-	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/terragov/roumain
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/solgov/roumain
 	slowdown = 0.5
 	supports_variations = KEPORI_VARIATION
 
@@ -157,13 +156,10 @@
 //Accessories//
 ///////////////
 
-//These are stored in clothing/accessories.dmi instead of a factional variant due to accessory code being dogwater
-//Please transfer them over to a factional file if accessory code is ever fixed
-
 /obj/item/clothing/accessory/waistcoat/roumain
 	name = "roumain waistcoat"
 	desc = "A warm, red wool waistcoat, worn by any member of the Church of Saint Roumain, though heavily favored by Machinists for the added warmth given to their rather breezy outfit."
 	icon_state = "rouma_waistcoat"
-	icon = 'icons/obj/clothing/accessories.dmi'
-	mob_overlay_icon = 'icons/mob/clothing/accessories.dmi'
+	icon = 'icons/obj/clothing/faction/srm/accessory.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/faction/srm/accessory.dmi'
 	minimize_when_attached = TRUE

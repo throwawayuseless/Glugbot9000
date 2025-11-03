@@ -116,3 +116,34 @@
 2025-06-24:
   Ossa88:
   - bugfix: Fixes Instant Respawn
+2025-06-29:
+  Ossa88:
+  - bugfix: Blackmarket Brokers have fixed their Supply Chain
+  ? ryerice, Imaginos16, spooky, Horizon, Nebula (presumably), MarkSuckerberg, thgvr,
+    Erikafox, Nitha(emotional support), Latentish, The Playerbase
+  : - rscadd: New Overmap resprite
+    - rscadd: 'Most if not all planets have gotten a resprite add: Some new missions.'
+    - rscadd: 'These missions might lead you to a "new" planet... add: Overmap Mechanics
+        have been overhauled'
+    - rscadd: Interactions; you can now choose where exactly to dock and how to dock.
+    - rscadd: Suns should be actually dangerous to go near
+    - rscadd: Suns are actually dangerous
+    - rscadd: 'See https://github.com/shiptest-ss13/Shiptest/pull/3868 for more add:
+        Radio interference based on radio''s location on the overmap. For example,
+        moving next to an nebula might scramble your radio messages. A Telecoms setup
+        with reduce this significantly.'
+    - rscadd: New Ore Overhaul
+    - rscadd: 'Some temperature changes missed by the temp pr should be addressed
+        balance: Fauna balance should be slightly better now tweak: Helm consoles
+        should tell you why you cant dock, rather than staying silent on an error.'
+    - bugfix: Carbon monoxide should work better now.
+    - code_imp: Framework for ship to ship docking
+    - code_imp: 'Overmap code is much more modular and robust now. del: Removes cryosickness'
+    - balance: Explosions, acid and electrocute acts all do alot less damage.
+    - code_imp: Removes redundent signal for ship moving
+    - rscdel: Removed carbon steel and all Overmap 5 minerals like copper, silicon,
+        quartzite, lead
+    - rscadd: Re-added plasteel
+    - balance: Ore yield returned to pre-Overmap 5 levels, all lathe recipes (more
+        or less) returned to their old costs
+    - rscdel: Overmap will no longer randomly recolor 1/10 times

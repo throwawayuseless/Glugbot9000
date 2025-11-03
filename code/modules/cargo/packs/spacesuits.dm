@@ -1,5 +1,5 @@
 /datum/supply_pack/spacesuits
-	group = "Spacesuits"
+	category = "Spacesuits"
 	crate_type = /obj/structure/closet/crate/secure
 
 /*
@@ -8,11 +8,9 @@
 
 /datum/supply_pack/spacesuits/spacesuit
 	name = "Space Suit Crate"
-	desc = "Contains two basic space suits. Although the technology is centuries old, it should protect you from the vacuum of space."
-	cost = 500 //changed the suit type to be the one without pockets, making it more consistent with the rest of the EVA suits available
+	desc = "Contains one basic space suit. Although the technology is centuries old, it should protect you from the vacuum of space."
+	cost = 250 //changed the suit type to be the one without pockets, making it more consistent with the rest of the EVA suits available
 	contains = list(/obj/item/clothing/suit/space/eva,
-					/obj/item/clothing/suit/space/eva,
-					/obj/item/clothing/head/helmet/space/eva,
 					/obj/item/clothing/head/helmet/space/eva)
 
 /datum/supply_pack/spacesuits/pilot_spacesuit
@@ -66,16 +64,16 @@
 	faction_discount = 0
 	faction_locked = TRUE
 
-//terragov
+//solgov
 
-/datum/supply_pack/spacesuits/spacesuit/terragov
+/datum/supply_pack/spacesuits/spacesuit/solgov
 	name = "Solarian Vacsuit Crate"
 	desc = "Contains one Tortoise Microlite Armored Suit, the pride and joy of many Solarian explorers."
 	cost = 600
-	contains = list(/obj/item/clothing/suit/space/terragov,
-					/obj/item/clothing/head/helmet/space/terragov)
+	contains = list(/obj/item/clothing/suit/space/solgov,
+					/obj/item/clothing/head/helmet/space/solgov)
 	crate_name = "space suit crate"
-	faction = /datum/faction/terragov
+	faction = /datum/faction/solgov
 	faction_discount = 0
 	faction_locked = TRUE
 
@@ -239,10 +237,10 @@
 	name = "Solarian Hardsuit Crate"
 	desc = "A heavy duty hardsuit manufactured for the Terran Navy. It provides decent protection while making use of an exoskeleton to stay mobile."
 	cost = 5000
-	contains = list(/obj/item/clothing/suit/space/hardsuit/terragov)
+	contains = list(/obj/item/clothing/suit/space/hardsuit/solgov)
 	crate_name = "solarian hardsuit crate"
 	crate_type = /obj/structure/closet/crate/secure/gear
-	faction = /datum/faction/terragov
+	faction = /datum/faction/solgov
 	faction_discount = 0
 	faction_locked = TRUE
 
@@ -302,7 +300,7 @@
 	name = "Roumain Hardsuit Crate"
 	desc = "A hardsuit hand-crafted to resemble plate armor of yore, the Roumain Hardsuit allows the wearer to swiftly move whilst on the hunt, while protecting them from the beasts around them."
 	cost = 5000
-	contains = list(/obj/item/clothing/suit/space/hardsuit/terragov/roumain)
+	contains = list(/obj/item/clothing/suit/space/hardsuit/solgov/roumain)
 	crate_name = "roumain hardsuit crate"
 	crate_type = /obj/structure/closet/crate/secure/gear
 	faction = /datum/faction/srm

@@ -26,7 +26,7 @@
 			"slots": 1
 		},
 		"Deckhand": {
-			"outfit": "/datum/outfit/job/independent/assistant",
+			"outfit": "/datum/outfit/job/independent/assistant/fancy",
 			"slots": 2
 		}
 	},
@@ -34,6 +34,8 @@
 	"starting_funds": 6000,
 	"enabled": true,
 	"space_spawn": false,
+
+	"token_icon_state": "ship_small_generic",
 
 	"architect": "Moffball",
 	"contributors": [

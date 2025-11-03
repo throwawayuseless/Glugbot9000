@@ -1054,7 +1054,7 @@
 /obj/effect/turf_decal/corner/opaque/tan{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/plain/opaque/terragovgold{
+/obj/effect/turf_decal/spline/plain/opaque/solgovgold{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1076,7 +1076,6 @@
 	name = "Mechanic's Locker"
 	},
 /obj/item/clothing/under/syndicate/ngr,
-/obj/item/storage/toolbox/syndicate,
 /obj/item/radio/headset/alt,
 /obj/effect/turf_decal/corner/opaque/red/mono,
 /obj/item/gear_pack/anglegrinder,
@@ -1100,6 +1099,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/clothing/glasses/welding,
 /obj/item/storage/backpack/industrial,
+/obj/item/storage/toolbox/ngr,
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/engines/port)
 "wc" = (
@@ -1389,7 +1389,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/effect/turf_decal/spline/plain/opaque/terragovgold{
+/obj/effect/turf_decal/spline/plain/opaque/solgovgold{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2102,7 +2102,7 @@
 	dir = 10
 	},
 /obj/effect/turf_decal/trimline/opaque/bar/filled/shrink_cw,
-/obj/effect/turf_decal/spline/plain/opaque/terragovgold{
+/obj/effect/turf_decal/spline/plain/opaque/solgovgold{
 	dir = 4
 	},
 /obj/structure/cable{
@@ -2337,7 +2337,7 @@
 /obj/effect/turf_decal/trimline/opaque/bar/filled/shrink_ccw{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/plain/opaque/terragovgold{
+/obj/effect/turf_decal/spline/plain/opaque/solgovgold{
 	dir = 4
 	},
 /obj/item/radio/intercom/directional/north,

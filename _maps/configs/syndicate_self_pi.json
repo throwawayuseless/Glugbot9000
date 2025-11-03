@@ -52,6 +52,8 @@
 	"enabled": true,
 	"space_spawn": false,
 
+	"token_icon_state": "ship_mid_generic",
+
 	"architect": "secc",
 	"contributors": [
 		"vect0r - Modularization Help",

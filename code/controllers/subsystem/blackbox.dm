@@ -146,8 +146,8 @@ SUBSYSTEM_DEF(blackbox)
 			record_feedback("tally", "radio_usage", 1, "pgf")
 		if(FREQ_CENTCOM)
 			record_feedback("tally", "radio_usage", 1, "centcom")
-		if(FREQ_TERRAGOV)		//WS Edit - TerraGov Rep
-			record_feedback("tally", "radio_usage", 1, "terragov")		//WS Edit - TerraGov Rep
+		if(FREQ_SOLGOV)		//WS Edit - SolGov Rep
+			record_feedback("tally", "radio_usage", 1, "solgov")		//WS Edit - SolGov Rep
 		else
 			record_feedback("tally", "radio_usage", 1, "other")
 

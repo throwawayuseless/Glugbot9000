@@ -3106,10 +3106,10 @@
 /obj/structure/closet/secure_closet/freezer/fridge,
 /obj/effect/spawner/random/food_or_drink/ration,
 /obj/effect/spawner/random/food_or_drink/ration,
-/obj/item/reagent_containers/food/snacks/dough,
-/obj/item/reagent_containers/food/snacks/dough,
-/obj/item/reagent_containers/food/snacks/dough,
-/obj/item/reagent_containers/food/snacks/dough,
+/obj/item/food/dough,
+/obj/item/food/dough,
+/obj/item/food/dough,
+/obj/item/food/dough,
 /obj/structure/sign/poster/contraband/space_cola{
 	pixel_x = 28
 	},
@@ -3657,7 +3657,7 @@
 /obj/item/clothing/under/clip/officer{
 	pixel_x = 13
 	},
-/obj/item/clothing/suit/toggle/lawyer/clip/fo{
+/obj/item/clothing/suit/toggle/lawyer/clip/command{
 	pixel_x = -13
 	},
 /obj/item/storage/backpack/satchel/sec/clip{
@@ -4114,7 +4114,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 8
 	},
-/obj/structure/sign/poster/terragov/recyle{
+/obj/structure/sign/poster/solgov/recyle{
 	pixel_y = 0;
 	pixel_x = -27
 	},
@@ -4759,10 +4759,10 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/filled/warning{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/filled/warning{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning{
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech,
@@ -5714,7 +5714,7 @@
 /obj/item/clothing/head/clip/slouch/officer{
 	pixel_y = 13
 	},
-/obj/item/storage/guncase/cm1,
+/obj/item/storage/guncase/ecm6,
 /obj/item/clothing/shoes/jackboots,
 /turf/open/floor/carpet/blue,
 /area/ship/crew/dorm/captain)
@@ -6278,8 +6278,8 @@
 	name = "Captain's Quarters";
 	req_access = list(20)
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/filled/warning,
-/obj/effect/turf_decal/trimline/opaque/terragovgold/filled/warning{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning,
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning{
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
@@ -8725,10 +8725,10 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/filled/warning{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/terragovgold/filled/warning{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -10145,8 +10145,8 @@
 	dir = 1
 	},
 /obj/machinery/door/firedoor/border_only,
-/obj/effect/turf_decal/trimline/opaque/terragovgold/filled/warning,
-/obj/effect/turf_decal/trimline/opaque/terragovgold/filled/warning{
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning,
+/obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning{
 	dir = 1
 	},
 /obj/machinery/door/airlock/command{

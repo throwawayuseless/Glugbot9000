@@ -76,7 +76,7 @@
 	var/retaliating = FALSE
 
 	/// Same faction mobs will never be shot at, no matter the other settings
-	var/list/faction = list("neutral", "turret")
+	var/list/faction = list("neutral", FACTION_TURRET)
 
 	var/list/target_faction = list("hostile")
 
@@ -129,6 +129,7 @@
 		/mob/living/carbon,
 		/mob/living/silicon,
 		/mob/living/simple_animal,
+		/mob/living/basic,
 		/obj/mecha,
 	))
 
@@ -197,10 +198,7 @@
 	if(machine_stat & BROKEN)
 		icon_state = "[base_icon_state]_broken"
 		return ..()
-	if(!powered())
-		icon_state = "[base_icon_state]_unpowered"
-		return ..()
-	if(!on)
+	if(!on || !powered())
 		icon_state = "[base_icon_state]_off"
 		return ..()
 	if(lethal)
@@ -524,7 +522,7 @@
 			return target(target_mob)
 
 		//this is still a bit gross, but less gross than before
-		var/static/list/dangerous_fauna = typecacheof(list(/mob/living/simple_animal/hostile, /mob/living/carbon/alien, /mob/living/carbon/monkey))
+		var/static/list/dangerous_fauna = typecacheof(list(/mob/living/simple_animal/hostile, /mob/living/basic, /mob/living/carbon/alien, /mob/living/carbon/monkey))
 		if(!is_type_in_typecache(target_mob, dangerous_fauna) || faction_check(list("neutral"), target_mob.faction))
 			return FALSE
 

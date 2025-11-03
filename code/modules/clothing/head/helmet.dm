@@ -471,60 +471,6 @@
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH | PEPPERPROOF | SEALS_EYES
 	strip_delay = 80
 
-/obj/item/clothing/head/helmet/swat/inteq
-	name = "inteq SWAT helmet"
-	desc = "A robust and spaceworthy helmet with an opaque gold visor. There is an insignia on the earpad with the letters 'IRMG' on it."
-	icon_state = "inteq_swat"
-	item_state = "inteq_swat"
-	can_flashlight = TRUE
-	flags_inv = HIDEHAIR
-	supports_variations = KEPORI_VARIATION | VOX_VARIATION
-	content_overlays = TRUE
-
-/obj/item/clothing/head/helmet/inteq
-	name = "inteq helmet"
-	desc = "A standard issue helmet in the colors of the IRMG. It doesn't feel special in any way."
-	icon_state = "inteq_helmet"
-	icon_state = "inteq_helmet"
-	can_flashlight = TRUE
-	supports_variations = KEPORI_VARIATION | VOX_VARIATION
-	content_overlays = TRUE
-
-/obj/item/clothing/head/terragov
-	name = "\improper TerraGov officer's cap"
-	desc = "A blue cap worn by high-ranking officers of TerraGov."
-	icon_state = "cap_solgov"
-	item_state = "cap_solgov"
-	strip_delay = 80
-
-/obj/item/clothing/head/terragov/terragov
-	name = "\improper TerraGov officer's cap"
-	desc = "A cap worn by high-ranking officers of TerraGov. This one is still in original TerraGov green."
-	icon_state = "cap_terragov"
-	item_state = "cap_terragov"
-
-/obj/item/clothing/head/terragov/shocktrooper
-	name = "\improper Shock Trooper Hat"
-	desc = "A standard-issue TerraGov hat adorned with a feather, commonly used by Shock Troopers."
-	icon_state = "sonnensoldner_hat"
-	item_state = "sonnensoldner_hat"
-	worn_y_offset = 4
-	dog_fashion = null
-
-/obj/item/clothing/head/terragov/captain
-	name = "\improper TerraGov bicorne hat"
-	desc = "A unique bicorne hat given to Terran Captains on expeditionary missions."
-	icon_state = "solgov_bicorne"
-	item_state = "solgov_bicorne"
-	worn_y_offset = 2
-	dog_fashion = null
-
-/obj/item/clothing/head/helmet/space/plasmaman/terragov
-	name = "\improper TerraGov envirosuit helmet"
-	desc = "A generic white envirohelmet with a secondary blue."
-	icon_state = "solgov_envirohelm"
-	item_state = "solgov_envirohelm"
-
 /obj/item/clothing/head/helmet/syndie
 	name = "\improper operator helmet"
 	desc = "A robust combat helmet commonly employed by Syndicate forces, regardless of alignment."

@@ -23,9 +23,9 @@
 	allowed_ammo_types = list(
 		/obj/item/ammo_box/magazine/modelh,
 	)
-	default_cell_type = /obj/item/stock_parts/cell/gun/terragov
+	default_cell_type = /obj/item/stock_parts/cell/gun/solgov
 	allowed_cell_types = list(
-		/obj/item/stock_parts/cell/gun/terragov,
+		/obj/item/stock_parts/cell/gun/solgov,
 	)
 
 	slot_flags = ITEM_SLOT_BELT
@@ -33,7 +33,7 @@
 	fire_delay = 0.6 SECONDS //pistol, but heavy caliber.
 	show_magazine_on_sprite = FALSE
 	empty_indicator = FALSE
-	manufacturer = MANUFACTURER_TERRAARMORIES
+	manufacturer = MANUFACTURER_SOLARARMORIES
 	recoil = 2
 	recoil_unwielded = 4
 	spread = 6
@@ -61,7 +61,7 @@
 	item_state = "model-h_suns"
 
 //not gauss pistol
-/obj/item/gun/ballistic/automatic/pistol/terragov
+/obj/item/gun/ballistic/automatic/pistol/solgov
 	name = "\improper Pistole C"
 	desc = "A favorite of the Terran Regency that is despised by the Solarian bureaucracy. Shifted out of military service centuries ago, though still popular among civilians. Chambered in 5.56mm caseless."
 	icon_state = "pistole-c"
@@ -76,7 +76,7 @@
 		/obj/item/ammo_box/magazine/pistol556mm,
 	)
 	fire_sound = 'sound/weapons/gun/pistol/pistolec.ogg'
-	manufacturer = MANUFACTURER_TERRAARMORIES
+	manufacturer = MANUFACTURER_SOLARARMORIES
 	load_sound = 'sound/weapons/gun/pistol/mag_insert.ogg'
 	load_empty_sound = 'sound/weapons/gun/pistol/mag_insert.ogg'
 	eject_sound = 'sound/weapons/gun/pistol/mag_release.ogg'
@@ -90,7 +90,7 @@
 
 	slot_flags = ITEM_SLOT_BELT
 
-/obj/item/gun/ballistic/automatic/pistol/terragov/old
+/obj/item/gun/ballistic/automatic/pistol/solgov/old
 	icon_state = "pistole-c-old"
 
 ///Rifles
@@ -110,16 +110,16 @@
 	item_state = "claris"
 	fire_sound = 'sound/weapons/gun/gauss/claris.ogg'
 	load_sound = 'sound/weapons/gun/gauss/sniper_reload.ogg'
-	default_cell_type = /obj/item/stock_parts/cell/gun/terragov
+	default_cell_type = /obj/item/stock_parts/cell/gun/solgov
 	allowed_cell_types = list(
-		/obj/item/stock_parts/cell/gun/terragov,
+		/obj/item/stock_parts/cell/gun/solgov,
 	)
 	fire_delay = 0.4 SECONDS
 	bolt_type = BOLT_TYPE_NO_BOLT
 	internal_magazine = TRUE
 	show_magazine_on_sprite = FALSE
 	empty_indicator = FALSE
-	manufacturer = MANUFACTURER_TERRAARMORIES
+	manufacturer = MANUFACTURER_SOLARARMORIES
 	fire_select_icon_state_prefix = "pellet_"
 
 	slot_flags = ITEM_SLOT_BACK
@@ -150,9 +150,9 @@
 	item_state = "gar"
 	fire_sound = 'sound/weapons/gun/gauss/gar.ogg'
 	load_sound = 'sound/weapons/gun/gauss/rifle_reload.ogg'
-	default_cell_type = /obj/item/stock_parts/cell/gun/terragov
+	default_cell_type = /obj/item/stock_parts/cell/gun/solgov
 	allowed_cell_types = list(
-		/obj/item/stock_parts/cell/gun/terragov,
+		/obj/item/stock_parts/cell/gun/solgov,
 	)
 	burst_size = 1
 
@@ -160,7 +160,7 @@
 
 	actions_types = list()
 	empty_indicator = FALSE
-	manufacturer = MANUFACTURER_TERRAARMORIES
+	manufacturer = MANUFACTURER_SOLARARMORIES
 
 	slot_flags = ITEM_SLOT_BACK
 
@@ -182,12 +182,12 @@
 	item_state = "gar_suns"
 
 ///Sniper
-/obj/item/gun/ballistic/rifle/terragov
+/obj/item/gun/ballistic/rifle/solgov
 	name = "SSG-669C"
 	desc = "A bolt-action sniper rifle used by Solarian troops. Beloved for its rotary design and accuracy. Chambered in 8x58mm Caseless."
-	default_ammo_type = /obj/item/ammo_box/magazine/internal/boltaction/terragov
+	default_ammo_type = /obj/item/ammo_box/magazine/internal/boltaction/solgov
 	allowed_ammo_types = list(
-		/obj/item/ammo_box/magazine/internal/boltaction/terragov,
+		/obj/item/ammo_box/magazine/internal/boltaction/solgov,
 	)
 	icon_state = "ssg669c"
 	item_state = "ssg669c"
@@ -203,7 +203,7 @@
 	zoom_amt = 10 //Long range, enough to see in front of you, but no tiles behind you.
 	zoom_out_amt = 5
 
-	manufacturer = MANUFACTURER_TERRAARMORIES
+	manufacturer = MANUFACTURER_SOLARARMORIES
 	spread = -5
 	spread_unwielded = 20
 	recoil = 1

@@ -67,7 +67,7 @@
       as "SolGov" equipment
   - balance: SolGov loadouts have X4 instead of emags
   - imageadd: new SolGov sprites (when i get around to it)
-  - imagedel: old TerraGov sprites (when i get around to it)
+  - imagedel: old SolGov sprites (when i get around to it)
 2020-10-17:
   Superyodeler:
   - bugfix: SM doesn't pull as hard

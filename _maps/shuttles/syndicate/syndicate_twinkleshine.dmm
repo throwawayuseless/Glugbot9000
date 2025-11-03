@@ -175,7 +175,7 @@
 	pixel_y = 7;
 	pixel_x = 9
 	},
-/obj/item/reagent_containers/food/snacks/donut/berry{
+/obj/item/food/donut/berry{
 	pixel_x = -4;
 	color = "#730622";
 	name = "suspicious red donut"
@@ -2423,7 +2423,7 @@
 	pixel_x = 2;
 	pixel_y = -7
 	},
-/obj/item/reagent_containers/food/snacks/donut/choco{
+/obj/item/food/donut/choco{
 	pixel_x = 3;
 	pixel_y = 7
 	},
@@ -7323,7 +7323,7 @@
 /obj/item/radio/headset/syndicate/alt{
 	keyslot = null
 	},
-/obj/item/storage/belt/sabre/terragov,
+/obj/item/storage/belt/sabre/solgov,
 /obj/item/storage/guncase/pistol/modelh,
 /obj/item/storage/box/ammo/ferroslug,
 /turf/open/floor/mineral/plastitanium,
@@ -7435,11 +7435,6 @@
 	},
 /obj/structure/closet/emcloset,
 /obj/effect/spawner/random/maintenance/four,
-/obj/item/reagent_containers/food/snacks/burger/red{
-	name = "suspicious red burger";
-	desc = "A suspicious looking burger.";
-	color = "#730622"
-	},
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 1
 	},
@@ -8877,7 +8872,7 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 6
 	},
-/obj/structure/sign/poster/terragov/suns{
+/obj/structure/sign/poster/solgov/suns{
 	pixel_x = 32
 	},
 /obj/structure/crate_shelf,

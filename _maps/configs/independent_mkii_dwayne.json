@@ -46,6 +46,10 @@
 	"enabled": true,
 	"space_spawn": false,
 
+	"token_icon_state": "ship_generic",
+	"tranist_x_offset": -5,
+	"tranist_y_offset": -5,
+
 	"architect": "MarkSuckerberg",
 	"contributors": [
 		"Sadhorizon - Refit/Redesign"

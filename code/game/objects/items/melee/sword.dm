@@ -18,6 +18,7 @@
 /obj/item/melee/sword/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 30, 95, 5) //fast and effective, but as a sword, it might damage the results.
+	AddComponent(/datum/component/jousting, max_tile_charge = 7, min_tile_charge = 4)
 
 //cruft
 /obj/item/melee/sword/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)
@@ -73,6 +74,7 @@
 /obj/item/melee/sword/mass/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/two_handed, force_unwielded = 20, force_wielded = 22, icon_wielded = "[base_icon_state]_w")
+
 
 /obj/item/melee/sword/mass/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)
 	. = ..()
@@ -154,9 +156,9 @@
 	if(istype(B))
 		playsound(B, 'sound/items/sheath.ogg', 25, TRUE)
 
-/obj/item/melee/sword/sabre/terragov
+/obj/item/melee/sword/sabre/solgov
 	name = "solarian sabre"
-	desc = "A refined ceremonial blade often given to soldiers and high ranking officials of TerraGov."
+	desc = "A refined ceremonial blade often given to soldiers and high ranking officials of SolGov."
 	icon_state = "sabresolgov"
 	item_state = "sabresolgov"
 
@@ -369,10 +371,10 @@
 /obj/item/melee/sword/vibro/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 20, 105)
-	AddComponent(/datum/component/two_handed, force_multiplier=2, icon_wielded="[base_icon_state]1")
+	AddComponent(/datum/component/two_handed, force_multiplier=2, icon_wielded="[base_icon_state]_on")
 
 /obj/item/melee/sword/vibro/update_icon_state()
-	icon_state = "[base_icon_state]0"
+	icon_state = "[base_icon_state]"
 	return ..()
 
 /obj/item/melee/sword/vibro/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)

@@ -212,10 +212,10 @@
 	mask = /obj/item/clothing/mask/gas/clown_hat
 	gloves = /obj/item/clothing/gloves/color/plasmaman/clown
 
-/datum/outfit/plasmaman/terragov
-	name = "Plasmaterragov"
-	head = /obj/item/clothing/head/helmet/space/plasmaman/terragov
-	uniform = /obj/item/clothing/under/plasmaman/terragov
+/datum/outfit/plasmaman/solgov
+	name = "Plasmasolgov"
+	head = /obj/item/clothing/head/helmet/space/plasmaman/solgov
+	uniform = /obj/item/clothing/under/plasmaman/solgov
 	gloves = /obj/item/clothing/gloves/color/plasmaman/white
 
 /datum/outfit/plasmaman/ngr

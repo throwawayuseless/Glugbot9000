@@ -1,7 +1,7 @@
 GLOBAL_LIST_INIT(command_positions, list(
 	"Captain",
 	"Head of Personnel",
-	"TerraGov Representative",
+	"SolGov Representative",
 	"Head of Security",
 	"Chief Engineer",
 	"Research Director",
@@ -37,7 +37,7 @@ GLOBAL_LIST_INIT(supply_positions, list(
 
 GLOBAL_LIST_INIT(service_positions, list(
 	"Head of Personnel",
-	"TerraGov Representative",
+	"SolGov Representative",
 	"Bartender",
 	"Botanist",
 	"Cook",

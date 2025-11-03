@@ -44,8 +44,13 @@
 	"enabled": true,
 	"space_spawn": false,
 
+	"token_icon_state": "ship_generic",
+	"tranist_x_offset": -15,
+	"tranist_y_offset": -10,
+
 	"architect": "Zevo",
 	"contributors": [
 		"Unknown"
 	]
 }
+
