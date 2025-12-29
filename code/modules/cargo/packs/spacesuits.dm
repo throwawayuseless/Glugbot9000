@@ -142,14 +142,14 @@
 	crate_type = /obj/structure/closet/crate/secure/plasma
 	faction = /datum/faction/nt
 
-/datum/supply_pack/spacesuits/sci_hardsuit
-	name = "Scientific Hardsuit Crate"
-	desc = "Contains one science hardsuit, designed to provide safety under advanced experimental conditions, or while handling explosives."
-	cost = 2000
-	contains = list(/obj/item/clothing/suit/space/hardsuit/rd)
-	crate_name = "scientific hardsuit crate"
-	crate_type = /obj/structure/closet/crate/secure/science
-	faction = /datum/faction/nt
+///datum/supply_pack/spacesuits/sci_hardsuit
+//	name = "Scientific Hardsuit Crate"
+//	desc = "Contains one science hardsuit, designed to provide safety under advanced experimental conditions, or while handling explosives."
+//	cost = 2000
+//	contains = list(/obj/item/clothing/suit/space/hardsuit/rd)
+//	crate_name = "scientific hardsuit crate"
+//	crate_type = /obj/structure/closet/crate/secure/science
+//	faction = /datum/faction/nt
 
 /datum/supply_pack/spacesuits/atmos_hardsuit
 	name = "Atmospherics Hardsuit Crate"

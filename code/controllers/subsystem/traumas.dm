@@ -12,15 +12,14 @@ SUBSYSTEM_DEF(traumas)
 
 /datum/controller/subsystem/traumas/Initialize()
 	//phobia types is to pull from randomly for brain traumas, e.g. conspiracies is for special assignment only
-	phobia_types = sortList(list("spiders", "space", "security", "clowns", "greytide", "lizards",
+	phobia_types = sortList(list("spiders", "space", "security", "greytide", "lizards",
 						"skeletons", "snakes", "robots", "doctors", "authority", "the supernatural",
-						"aliens", "strangers", "birds", "falling", "anime"))
+						"aliens", "strangers", "birds", "falling", "anime", "clowns")) //PENTEST RESTORED CLOWNS
 
 	phobia_regexes = list(
 		"spiders"          = construct_phobia_regex("spiders"),
 		"space"            = construct_phobia_regex("space"),
 		"security"         = construct_phobia_regex("security"),
-		"clowns"           = construct_phobia_regex("clowns"),
 		"greytide"         = construct_phobia_regex("greytide"),
 		"lizards"          = construct_phobia_regex("lizards"),
 		"skeletons"        = construct_phobia_regex("skeletons"),
@@ -34,7 +33,8 @@ SUBSYSTEM_DEF(traumas)
 		"conspiracies"     = construct_phobia_regex("conspiracies"),
 		"birds"            = construct_phobia_regex("birds"),
 		"falling"          = construct_phobia_regex("falling"),
-		"anime"            = construct_phobia_regex("anime")
+		"anime"            = construct_phobia_regex("anime"),
+		"clowns"           = construct_phobia_regex("clowns") //PENTEST RESTORED CLOWNS
 	)
 
 	phobia_mobs = list(
@@ -64,12 +64,6 @@ SUBSYSTEM_DEF(traumas)
 			/obj/item/clothing/under/rank/security/head_of_security, /obj/item/clothing/under/rank/security/detective,
 			/obj/item/melee/baton, /obj/item/gun/energy/taser, /obj/item/restraints/handcuffs,
 			/obj/machinery/door/airlock/security, /obj/effect/hallucination/simple/securitron)),
-
-		"clowns"    = typecacheof(list(
-			/obj/item/clothing/under/rank/civilian/clown,
-			/obj/item/clothing/mask/gas/clown_hat, /obj/item/instrument/bikehorn,
-			/obj/item/grown/bananapeel, /obj/item/reagent_containers/food/snacks/cheesiehonkers,
-			/obj/item/trash/cheesie)),
 
 		"greytide"  = typecacheof(list(
 			/obj/item/clothing/under/color/grey, /obj/item/melee/baton/cattleprod,
@@ -147,7 +141,13 @@ SUBSYSTEM_DEF(traumas)
 			/obj/item/clothing/suit/space/space_ninja,
 			/obj/item/clothing/mask/gas/space_ninja, /obj/item/clothing/shoes/space_ninja, /obj/item/clothing/gloves/space_ninja,
 			/obj/item/melee/sword/vibro, /obj/item/melee/sword/energy_katana, /obj/item/toy/katana,
-			/obj/item/melee/sword/katana, /obj/structure/window/paperframe, /obj/structure/mineral_door/paperframe))
+			/obj/item/melee/sword/katana, /obj/structure/window/paperframe, /obj/structure/mineral_door/paperframe)),
+
+		"clowns"    = typecacheof(list( //PENTEST RESTORED CLOWNS
+			/obj/item/clothing/under/rank/civilian/clown,
+			/obj/item/clothing/mask/gas/clown_hat, /obj/item/instrument/bikehorn,
+			/obj/item/grown/bananapeel, /obj/item/reagent_containers/food/snacks/cheesiehonkers,
+			/obj/item/trash/cheesie)), //PENTEST RESTORED CLOWNS
 	)
 
 	phobia_turfs = list(

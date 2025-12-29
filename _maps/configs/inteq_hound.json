@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Hound-class Corvette",
 	"map_short_name": "Hound-class",
-	"map_path": "_maps/shuttles/inteq/inteq_hound.dmm",
+	"map_path": "_maps/PentestMaps/Shuttles/inteq/inteq_hound.dmm",
 	"faction": "/datum/faction/inteq",
 	"prefix": "IRMV",
 	"manufacturer": "Hardline Salvage and Mining",

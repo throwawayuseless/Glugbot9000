@@ -60,10 +60,11 @@
 	id = "wasteplanet_icwbase"
 	suffix = "wasteplanet_icwbase.dmm"
 	ruin_tags = list(RUIN_TAG_BOSS_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER, RUIN_TAG_HAZARDOUS)
-	ruin_mission_types = list(
+/*	ruin_mission_types = list(
 		/datum/mission/ruin/multiple/notes,
 		/datum/mission/ruin/signaled/kill/kitt
 	)
+*/
 
 /* Aurora wrote these */
 

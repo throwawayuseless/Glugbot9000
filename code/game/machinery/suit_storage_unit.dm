@@ -123,9 +123,9 @@
 	mask_type = /obj/item/clothing/mask/breath/medical
 	storage_type = /obj/item/tank/internals/oxygen
 
-/obj/machinery/suit_storage_unit/rd
-	suit_type = /obj/item/clothing/suit/space/hardsuit/rd
-	mask_type = /obj/item/clothing/mask/breath
+///obj/machinery/suit_storage_unit/rd
+//	suit_type = /obj/item/clothing/suit/space/hardsuit/rd
+//	mask_type = /obj/item/clothing/mask/breath
 
 /obj/machinery/suit_storage_unit/syndicate
 	suit_type = /obj/item/clothing/suit/space/hardsuit/syndi

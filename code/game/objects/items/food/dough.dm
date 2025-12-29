@@ -15,9 +15,9 @@
 
 // Dough + rolling pin = flat dough
 /obj/item/food/dough/make_processable()
-	AddElement(/datum/element/processable, TOOL_ROLLINGPIN, /obj/item/food/dough, 1, 3 SECONDS, table_required = TRUE, /*screentip_verb = "Flatten"*/)
+	AddElement(/datum/element/processable, TOOL_ROLLINGPIN, /obj/item/food/flatdough, 1, 3 SECONDS, table_required = TRUE, /*screentip_verb = "Flatten"*/)
 
-/obj/item/food/dough
+/obj/item/food/flatdough
 	name = "flat dough"
 	desc = "A flattened dough."
 	icon = 'icons/obj/food/food_ingredients.dmi'
@@ -28,12 +28,12 @@
 	foodtypes = GRAIN
 
 /*
-/obj/item/food/dough/make_microwaveable()
+/obj/item/food/flatdough/make_microwaveable()
 	AddElement(/datum/element/microwavable, /obj/item/food/pizzabread)
 */
 
 // sliceable into 3xdoughslices
-/obj/item/food/dough/make_processable()
+/obj/item/food/flatdough/make_processable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/doughslice, 3, 3 SECONDS, table_required = TRUE, /*screentip_verb = "Slice"*/)
 
 /obj/item/food/pizzabread

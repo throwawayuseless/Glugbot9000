@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Boyardee-class Entertainment Vessel",
 	"map_short_name": "Boyardee-class",
-	"map_path": "_maps/shuttles/independent/independent_boyardee.dmm",
+	"map_path": "_maps/PentestMaps/Shuttles/independent/independent_boyardee.dmm",
 	"faction": "/datum/faction/independent",
 	"prefix": "ISV",
 	"manufacturer": "Conagra Manufacturing",

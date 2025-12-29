@@ -139,9 +139,12 @@
 	SIGNAL_HANDLER
 
 	var/mob/living/carbon/carbon_parent = parent
+
+	// PENTEST ADDITION - START - Mimes can't sign
 	if(carbon_parent.mind?.miming)
 		to_chat(carbon_parent, span_green("You stop yourself from signing in favor of the artform of mimery!"))
 		return COMPONENT_CANNOT_SPEAK
+	// PENTEST ADDITION - END
 
 	switch(check_signables_state())
 		if(SIGN_HANDS_FULL) // Full hands

@@ -302,7 +302,7 @@
 	name = "jelly crepe"
 	time = 40
 	reqs = list(
-		/obj/item/food/dough = 1,
+		/obj/item/food/flatdough = 1,
 		/datum/reagent/consumable/milk = 1,
 		/datum/reagent/consumable/cherryjelly = 5
 	)

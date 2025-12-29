@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Box-class Hospital Ship",
 	"map_short_name": "Box-class",
-	"map_path": "_maps/shuttles/independent/independent_box.dmm",
+	"map_path": "_maps/PentestMaps/Shuttles/independent/independent_box.dmm",
 	"faction": "/datum/faction/independent",
 	"prefix": "IMV",
 	"manufacturer": "UNKNOWN",

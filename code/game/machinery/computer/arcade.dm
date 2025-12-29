@@ -13,7 +13,6 @@ GLOBAL_LIST_INIT(arcade_prize_pool, list(
 		/obj/item/toy/prize/deathripley = 1,
 		/obj/item/toy/prize/gygax = 1,
 		/obj/item/toy/prize/durand = 1,
-		/obj/item/toy/prize/honk = 1,
 		/obj/item/toy/prize/marauder = 1,
 		/obj/item/toy/prize/seraph = 1,
 		/obj/item/toy/prize/touro = 1,
@@ -50,7 +49,8 @@ GLOBAL_LIST_INIT(arcade_prize_pool, list(
 		/obj/item/storage/belt/military/snack = 2,
 		/obj/item/toy/brokenradio = 2,
 		/obj/item/toy/braintoy = 2,
-		/obj/item/clothing/glasses/trickblindfold = 2))
+		/obj/item/clothing/glasses/trickblindfold = 2,
+		/obj/item/toy/prize/honk = 1)) //PENTEST RESTORED
 
 /obj/machinery/computer/arcade
 	name = "random arcade"

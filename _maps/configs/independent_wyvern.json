@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Wyvern-class Sloop",
 	"map_short_name": "Wyvern-class",
-	"map_path": "_maps/shuttles/independent/independent_wyvern.dmm",
+	"map_path": "_maps/PentestMaps/Shuttles/independent/independent_wyvern.dmm",
 	"faction": "/datum/faction/independent",
 	"prefix": "ISV",
 	"manufacturer": "UNKNOWN",

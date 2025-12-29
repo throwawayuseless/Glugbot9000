@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Gecko-class Salvage Runner",
 	"map_short_name": "Gecko-class",
-	"map_path": "_maps/shuttles/nanotrasen/nanotrasen_gecko.dmm",
+	"map_path": "_maps/PentestMaps/Shuttles/nanotrasen/nanotrasen_gecko.dmm",
 	"faction": "/datum/faction/nt",
 	"prefix": "NTSV",
 	"manufacturer": "Nanotrasen Spaceworks",

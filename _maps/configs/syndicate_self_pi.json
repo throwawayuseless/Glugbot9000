@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Pi-class Robotics Cruiser",
 	"map_short_name": "Pi-class",
-	"map_path": "_maps/shuttles/syndicate/syndicate_self_pi.dmm",
+	"map_path": "_maps/PentestMaps/Shuttles/syndicate/syndicate_self_pi.dmm",
 	"faction": "/datum/faction/syndicate/self",
 	"prefix": "SELF",
 	"manufacturer": "Cybersun",

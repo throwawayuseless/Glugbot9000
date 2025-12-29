@@ -56,8 +56,8 @@
 	if(!ishuman(user))
 		return
 	var/mob/living/carbon/human/H = user
-	if(H.mind?.miming)
-		return
+	if(H.mind?.miming) //PENTEST ADDITION - START - Mimes can't scream
+		return // PENTEST ADDITION - END
 	if(ishumanbasic(H))
 		if(user.gender == FEMALE)
 			return pick('sound/voice/human/femalescream_1.ogg', 'sound/voice/human/femalescream_2.ogg', 'sound/voice/human/femalescream_3.ogg', 'sound/voice/human/femalescream_4.ogg', 'sound/voice/human/femalescream_5.ogg')
@@ -278,7 +278,7 @@
 /datum/emote/living/carbon/human/robot_tongue/no
 	key = "no"
 	key_third_person = "no"
-	message = "emits an negative blip."
+	message = "emits a negative blip."
 
 /datum/emote/living/carbon/human/robot_tongue/no/run_emote(mob/user, params)
 	. = ..()
@@ -315,9 +315,6 @@
 	. = ..()
 	if(.)
 		playsound(user.loc, 'sound/machines/synth_yes.ogg', 50)
-
-// the following emote were originally clown-locked and synthetic exclusive
-// since clowns have been removed I see no reason to let it collect dust
 
 /datum/emote/living/carbon/human/robot_tongue/sad
 	key = "sad"

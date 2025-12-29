@@ -1,10 +1,10 @@
 //Misc Medal hub IDs
+#define MEDAL_CLOWNCARKING 		"Round and Full" //PENTEST ACHIVEMENTS START
+#define MEDAL_THANKSALOT 		"The Best Driver" //PENTEST ACHIVEMENTS END
 #define MEDAL_METEOR 			"Your Life Before Your Eyes"
 #define MEDAL_PULSE 			"Jackpot"
 #define MEDAL_TIMEWASTE 		"Overextended The Joke"
 #define MEDAL_RODSUPLEX 		"Feat of Strength"
-#define MEDAL_CLOWNCARKING 		"Round and Full"
-#define MEDAL_THANKSALOT 		"The Best Driver"
 #define MEDAL_HELBITALJANKEN	"Hel-bent on Winning"
 #define MEDAL_MATERIALCRAFT 	"Getting an Upgrade"
 
@@ -49,12 +49,12 @@
 	var/hub_password = "REPLACEME"
 
 	var/list/valid_medals = list(
+						MEDAL_CLOWNCARKING, //PENTEST ACHIVEMENTS START
+						MEDAL_THANKSALOT, //PENTEST ACHIVEMENTS END
 						MEDAL_METEOR,
 						MEDAL_PULSE,
 						MEDAL_TIMEWASTE,
 						MEDAL_RODSUPLEX,
-						MEDAL_CLOWNCARKING,
-						MEDAL_THANKSALOT,
 						MEDAL_HELBITALJANKEN,
 						MEDAL_MATERIALCRAFT,
 						BOSS_MEDAL_ANY,

@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Basilisk-class Assault Cruiser",
 	"map_short_name": "Basilisk-class",
-	"map_path": "_maps/shuttles/independent/independent_basilisk.dmm",
+	"map_path": "_maps/PentestMaps/Shuttles/independent/independent_basilisk.dmm",
 	"faction": "/datum/faction/independent",
 	"prefix": "ISV",
 	"manufacturer": "UNKNOWN",

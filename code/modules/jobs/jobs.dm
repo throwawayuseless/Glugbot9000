@@ -46,10 +46,11 @@ GLOBAL_LIST_INIT(service_positions, list(
 	"Psychologist",
 	"Lawyer",
 	"Chaplain",
-	"Clown",
-	"Mime",
 	"Prisoner",
-	"Assistant"))
+	"Assistant",
+	"Clown", // PENTEST RESTORE - Clown job
+	"Mime" // PENTEST RESTORE - Mime job
+	))
 
 
 GLOBAL_LIST_INIT(security_positions, list(

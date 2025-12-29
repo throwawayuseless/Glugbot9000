@@ -53,7 +53,7 @@
 	var/fin_mask  = "topfin"
 	var/obj/effect/supplypod_rubble/rubble
 	var/obj/effect/engineglow/glow_effect
-	var/list/reverseOptionList = list("Mobs"=FALSE,"Objects"=FALSE,"Anchored"=FALSE,"Underfloor"=FALSE,"Wallmounted"=FALSE,"Floors"=FALSE,"Walls"=FALSE)
+	var/list/reverseOptionList = list("Mobs"=FALSE,"Unanchored"=FALSE,"Anchored"=FALSE,"Underfloor"=FALSE,"Wallmounted"=FALSE,"Floors"=FALSE,"Walls"=FALSE,"Mecha"=FALSE)
 	var/list/turfs_in_cargo = list()
 
 /obj/structure/closet/supplypod/bluespacepod
@@ -355,6 +355,7 @@
 		if(mob_to_insert.anchored || mob_to_insert.incorporeal_move)
 			return FALSE
 		mob_to_insert.stop_pulling()
+		return TRUE
 
 	else if(isobj(to_insert))
 		var/obj/obj_to_insert = to_insert
@@ -366,6 +367,10 @@
 			return FALSE
 		if(istype(obj_to_insert, /obj/effect/supplypod_rubble))
 			return FALSE
+		if(ismecha(obj_to_insert))
+			if(!reverseOptionList["Mecha"])
+				return FALSE
+			return TRUE
 		/*
 		if((obj_to_insert.comp_lookup && obj_to_insert.comp_lookup[COMSIG_OBJ_HIDE]) && reverseOptionList["Underfloor"])
 			return TRUE

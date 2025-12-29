@@ -46,8 +46,8 @@
 	// how do species that don't breathe talk? magic, that's what.
 	if(!HAS_TRAIT_FROM(src, TRAIT_NOBREATH, SPECIES_TRAIT) && !getorganslot(ORGAN_SLOT_LUNGS))
 		return FALSE
-	if(mind)
-		return !mind.miming
+	if(mind) // PENTEST ADDITION - START - Mimes can't talk
+		return !mind.miming // PENTEST ADDITION - END
 	return TRUE
 
 /mob/living/carbon/human/proc/SetSpecialVoice(new_voice)

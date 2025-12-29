@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Bubble-class Colonial Ship",
 	"map_short_name": "Bubble-class",
-	"map_path": "_maps/shuttles/independent/independent_bubble.dmm",
+	"map_path": "_maps/PentestMaps/Shuttles/independent/independent_bubble.dmm",
 	"faction": "/datum/faction/independent",
 	"prefix": "ISV",
 	"manufacturer": "Nanotrasen Spaceworks",

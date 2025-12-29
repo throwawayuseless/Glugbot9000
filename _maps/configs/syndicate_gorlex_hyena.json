@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Hyena-class Wrecking Tug",
 	"map_short_name": "Hyena-class",
-	"map_path": "_maps/shuttles/syndicate/syndicate_gorlex_hyena.dmm",
+	"map_path": "_maps/PentestMaps/Shuttles/syndicate/syndicate_gorlex_hyena.dmm",
 	"faction": "/datum/faction/syndicate/ngr",
 	"prefix": "NGRV",
 	"manufacturer": "Not A Company LLC",

@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Ramzi Clique Light-class",
 	"map_short_name": "Ramzi Light-class",
-	"map_path": "_maps/PentestMaps/Shuttles/ramzi_light.dmm",
+	"map_path": "_maps/PentestMaps/Shuttles/ramzi/ramzi_light.dmm",
 	"faction": "/datum/faction/ramzi",
 	"prefix": "RCSV",
 	"manufacturer": "Unknown",

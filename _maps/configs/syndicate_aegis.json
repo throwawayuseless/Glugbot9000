@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Aegis-class Long Term Exploration Ship",
 	"map_short_name": "Aegis-class",
-	"map_path": "_maps/shuttles/syndicate/syndicate_aegis.dmm",
+	"map_path": "_maps/PentestMaps/Shuttles/syndicate/syndicate_aegis.dmm",
 	"faction": "/datum/faction/syndicate/suns",
 	"prefix": "SUNS",
 	"manufacturer": "UNKNOWN",

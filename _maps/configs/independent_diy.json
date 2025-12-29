@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "BYOS-class Do-It-Yourself Enthusiast Special",
 	"map_short_name": "BYO-class",
-	"map_path": "_maps/shuttles/independent/independent_diy.dmm",
+	"map_path": "_maps/PentestMaps/Shuttles/independent/independent_diy.dmm",
 	"faction": "/datum/faction/independent",
 	"prefix": "IMV",
 	"manufacturer": "IKEA",
@@ -31,7 +31,7 @@
 	"starting_funds": 0,
 	"enabled": true,
 	"space_spawn": false,
-	
+
 	"architect": "Unknown",
 	"contributors": [
 		"Ossa / SYNAPSE - Porting to Pentest",

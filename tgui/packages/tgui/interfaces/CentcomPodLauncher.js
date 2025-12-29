@@ -437,7 +437,7 @@ const ViewTabHolder = (props, context) => {
       title="View"
       buttons={
         <>
-          {!!data.customDropoff && data.effectReverse === 1 && (
+          {!!data.customDropoff && data.effectReverse && (
             <Button
               inline
               color="transparent"
@@ -473,7 +473,7 @@ const ViewTabHolder = (props, context) => {
             }}
           />
           <span style={pod_grey}>|</span>
-          {!!data.customDropoff && data.effectReverse === 1 && (
+          {!!data.customDropoff && data.effectReverse && (
             <Button
               inline
               color="transparent"
@@ -698,7 +698,7 @@ const ReverseMenu = (props, context) => {
       title="Reverse"
       buttons={
         <Button
-          icon={data.effectReverse === 1 ? 'toggle-on' : 'toggle-off'}
+          icon={data.effectReverse ? 'toggle-on' : 'toggle-off'}
           selected={data.effectReverse}
           tooltip={multiline`
             Doesn't send items.
@@ -716,7 +716,7 @@ const ReverseMenu = (props, context) => {
         />
       }
     >
-      {data.effectReverse === 1 && (
+      {data.effectReverse && (
         <Stack fill vertical>
           <Stack.Item maxHeight="20px">
             <Button
@@ -758,8 +758,8 @@ const ReverseMenu = (props, context) => {
                 disabled={!data.effectReverse}
                 selected={
                   option.key
-                    ? data.reverse_option_list[option.key]
-                    : data.reverse_option_list[option.title]
+                    ? data.reverseOptionList[option.key]
+                    : data.reverseOptionList[option.title]
                 }
                 tooltip={option.title}
                 onClick={() =>

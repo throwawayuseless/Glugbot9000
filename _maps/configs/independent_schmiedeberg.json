@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Schmiedeberg-class Pharmacology Ship",
 	"map_short_name": "Schmiedeberg-class",
-	"map_path": "_maps/shuttles/independent/independent_schmiedeberg.dmm",
+	"map_path": "_maps/PentestMaps/Shuttles/independent/independent_schmiedeberg.dmm",
 	"faction": "/datum/faction/independent",
 	"prefix": "IMV",
 	"manufacturer": "UNKNOWN",
