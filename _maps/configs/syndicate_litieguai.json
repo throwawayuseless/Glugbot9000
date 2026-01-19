@@ -31,7 +31,7 @@
 		},
 		"Cybersun Medical Intern": {
 			"outfit": "/datum/outfit/job/syndicate/assistant/cybersun",
-			"slots": 3
+			"slots": 1
 		}
 	},
 	"limit": 2,
@@ -41,6 +41,6 @@
 
 	"architect": "Apogee-dev",
 	"contributors": [
-		"No Contributors"
+		"FSlashN"
 	]
 }

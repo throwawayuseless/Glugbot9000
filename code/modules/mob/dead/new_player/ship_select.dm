@@ -195,6 +195,7 @@
 			continue
 		var/list/ship_data = list(
 			"name" = T.name,
+			"shortName" = T.short_name,
 			"faction" = T.faction.name,
 			"desc" = T.description,
 			"tags" = T.tags,

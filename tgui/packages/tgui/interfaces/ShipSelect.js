@@ -331,19 +331,19 @@ export const ShipSelect = (props, context) => {
                   }
                   key={template.name + ' Image'}
                 >
-                  <a
-                    href={
-                      'https://github.com/PentestSS13/Pentest/tree/master/_maps/shuttles/_images/' +
-                      template.name + // template.name is the ships map_name from its .json file
-                      '.png?raw=true'
+                  <img
+                    src={
+                      template.shortName ? resolveAsset(template.shortName) : ''
                     }
-                    rel="noreferrer"
-                  >
-                    <img
-                      src={template.name ? resolveAsset(template.name) : ''}
-                      width={'100%'}
-                    />
-                  </a>
+                    width={'100%'}
+                    style={{ cursor: 'pointer' }}
+                    onClick={() => {
+                      if (template.shortName) {
+                        const url = resolveAsset(template.shortName);
+                        window.open(url, '_blank');
+                      }
+                    }}
+                  />
                 </Collapsible>
                 <Divider horizontal />
               </Collapsible>

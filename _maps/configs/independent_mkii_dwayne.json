@@ -1,7 +1,7 @@
 {
 	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
 	"map_name": "Mark.II Dwayne-class Long Range Mining Transport",
-	"map_short_name": "Mk.II Dwayne-class",
+	"map_short_name": "MkII Dwayne-class",
 	"map_path": "_maps/shuttles/independent/independent_dwayne.dmm",
 	"faction": "/datum/faction/independent",
 	"prefix": "SV",

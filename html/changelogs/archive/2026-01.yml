@@ -1,0 +1,14 @@
+2026-01-15:
+  FslashN:
+  - rscadd: Adds the Inteq Javelin-class patrol ship, an ultra-small ship.
+  - rscadd: Revamped the Li-Tieguai to fix issues, improve on certain aspects, and
+      revamp the look a bit.
+  LettuceGuardian:
+  - rscadd: Alternate skin variants for the SKM, SKM-24u, M23, and M11.
+  - balance: Small tweaks to 12G slugs, AP and damage slightly buffed to 15 and 50,
+      respectively. Depot price is on-par with buckshot.
+  - balance: Shotgun ADS is now effectively a singular tile.
+  - balance: Boomslang RPM buffed to 0.75.
+  - spellcheck: CHOCs still a nerd.
+  Ossa88:
+  - bugfix: Ship preview system is better
