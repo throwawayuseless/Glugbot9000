@@ -1831,7 +1831,8 @@
 /turf/open/floor/plasteel/tech,
 /area/hangar)
 "XT" = (
-/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/window/plasma/reinforced/plastitanium/indestructible,
+/obj/structure/grille/indestructible,
 /turf/open/floor/plating{
 	planetary_atmos = 1
 	},

@@ -31,9 +31,7 @@
 	dir = 4
 	},
 /obj/machinery/light/directional/north,
-/obj/machinery/camera/autoname{
-	dir = 2
-	},
+/obj/machinery/camera/autoname,
 /obj/structure/ore_box,
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/cargo)
@@ -104,8 +102,7 @@
 	},
 /obj/structure/chair/sofa/blue/corpo/left/directional/east,
 /obj/structure/sign/painting/library{
-	pixel_x = -31;
-	pixel_y = 0
+	pixel_x = -31
 	},
 /obj/machinery/newscaster/directional/north,
 /obj/machinery/light/directional/west,
@@ -388,9 +385,7 @@
 /obj/effect/turf_decal/trimline/opaque/nsorange/filled/line{
 	dir = 1
 	},
-/obj/machinery/camera/autoname{
-	dir = 2
-	},
+/obj/machinery/camera/autoname,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/patterned,
 /area/ship/storage/equip)
@@ -525,15 +520,16 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/dark/visible{
 	dir = 5
+	},
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	icon_state = "0-4"
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engines/starboard)
@@ -559,8 +555,7 @@
 	pixel_y = 6
 	},
 /obj/item/stamp/nanotrasen/ns{
-	pixel_x = -8;
-	pixel_y = 0
+	pixel_x = -8
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/storage/equip)
@@ -696,7 +691,6 @@
 /area/ship/cargo)
 "kj" = (
 /obj/machinery/coffeemaker{
-	pixel_x = 0;
 	pixel_y = 7
 	},
 /obj/structure/table,
@@ -987,6 +981,10 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
+/obj/machinery/door/poddoor/shutters{
+	id = "magpie_starboard_engines";
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engines/starboard)
 "qI" = (
@@ -1047,29 +1045,16 @@
 /obj/structure/bed/bunk,
 /obj/structure/bed/bunk/top,
 /obj/item/bedsheet/purple{
-	pixel_x = 0;
 	pixel_y = 15
 	},
 /obj/item/bedsheet,
 /turf/open/floor/carpet/cyan,
 /area/ship/crew/dorm)
-"ss" = (
-/obj/machinery/power/ship_gravity,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 9
-	},
-/turf/open/floor/plating,
-/area/ship/engineering/engines/starboard)
 "sC" = (
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/effect/turf_decal/trimline/opaque/vired/filled/warning{
-	dir = 2
-	},
+/obj/effect/turf_decal/trimline/opaque/vired/filled/warning,
 /obj/effect/turf_decal/trimline/opaque/vired/filled/warning{
 	dir = 1
 	},
@@ -1101,9 +1086,7 @@
 	dir = 8
 	},
 /obj/machinery/light/directional/west,
-/obj/machinery/camera/autoname{
-	dir = 2
-	},
+/obj/machinery/camera/autoname,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "sI" = (
@@ -1247,8 +1230,7 @@
 	dir = 10
 	},
 /obj/structure/sign/painting/library{
-	pixel_x = -31;
-	pixel_y = 0
+	pixel_x = -31
 	},
 /obj/effect/decal/cleanable/confetti,
 /turf/open/floor/plasteel/dark,
@@ -1259,9 +1241,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
-/obj/effect/turf_decal/trimline/opaque/vired/filled/corner{
-	dir = 2
-	},
+/obj/effect/turf_decal/trimline/opaque/vired/filled/corner,
 /obj/machinery/light_switch{
 	pixel_x = -21;
 	pixel_y = 4;
@@ -1441,11 +1421,9 @@
 	},
 /obj/structure/bed/roller,
 /obj/machinery/firealarm/directional/east{
-	pixel_x = 32;
 	pixel_y = 6
 	},
 /obj/structure/sign/nanotrasen{
-	pixel_x = 0;
 	pixel_y = -32
 	},
 /obj/machinery/light/directional/south,
@@ -1453,8 +1431,7 @@
 	dir = 10
 	},
 /obj/machinery/iv_drip{
-	pixel_x = -13;
-	pixel_y = 0
+	pixel_x = -13
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
@@ -1626,7 +1603,6 @@
 /obj/structure/table,
 /obj/effect/turf_decal/siding/white,
 /obj/machinery/jukebox/boombox{
-	pixel_x = 0;
 	pixel_y = 10
 	},
 /obj/item/toy/balloon{
@@ -1641,6 +1617,13 @@
 	},
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 8
+	},
+/obj/machinery/button/door{
+	pixel_y = -6;
+	pixel_x = -23;
+	name = "Engine Blast Doors";
+	id = "magpie_portside_engines";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
@@ -1770,7 +1753,6 @@
 	dir = 10
 	},
 /obj/structure/sign/nanotrasen/ns{
-	pixel_x = 0;
 	pixel_y = -31
 	},
 /obj/item/radio/weather_monitor,
@@ -2034,10 +2016,6 @@
 /area/ship/medical)
 "BY" = (
 /obj/machinery/power/shuttle/engine/electric,
-/obj/machinery/door/poddoor/shutters{
-	id = "magpie_portside_engines";
-	dir = 4
-	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -2046,16 +2024,14 @@
 "Ce" = (
 /obj/structure/table/reinforced,
 /obj/machinery/firealarm/directional/south{
-	pixel_x = 7;
-	pixel_y = -32
+	pixel_x = 7
 	},
 /obj/machinery/recharger{
 	pixel_x = -10;
 	pixel_y = 10
 	},
 /obj/structure/sign/nanotrasen/vigilitas{
-	pixel_x = -30;
-	pixel_y = 0
+	pixel_x = -30
 	},
 /obj/item/paper_bin{
 	pixel_x = 5;
@@ -2070,7 +2046,6 @@
 	pixel_y = 5
 	},
 /obj/structure/sign/poster/official/random{
-	pixel_x = 0;
 	pixel_y = 31
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -2107,9 +2082,7 @@
 	},
 /obj/effect/turf_decal/borderfloor,
 /obj/machinery/newscaster/directional/north,
-/obj/machinery/camera/autoname{
-	dir = 2
-	},
+/obj/machinery/camera/autoname,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/ship/cargo)
@@ -2120,6 +2093,10 @@
 /area/ship/engineering/engines/port)
 "CI" = (
 /obj/machinery/atmospherics/components/unary/shuttle/heater,
+/obj/machinery/door/poddoor/shutters{
+	id = "magpie_portside_engines";
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
 "CM" = (
@@ -2187,19 +2164,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/cargo)
-"Dr" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 10
-	},
-/obj/machinery/button/door{
-	pixel_y = -6;
-	pixel_x = -23;
-	name = "Engine Blast Doors";
-	id = "magpie_portside_engines";
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/ship/engineering/engines/port)
 "Dx" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -2330,7 +2294,6 @@
 	},
 /obj/machinery/turretid/ship{
 	pixel_y = -31;
-	pixel_x = 0;
 	id = "magpie_grid"
 	},
 /obj/machinery/camera/emp_proof{
@@ -2412,7 +2375,6 @@
 	dir = 8
 	},
 /obj/structure/sign/poster/official/safety_eye_protection{
-	pixel_x = 0;
 	pixel_y = -30
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -2426,7 +2388,6 @@
 	},
 /obj/structure/table,
 /obj/item/toy/cards/deck{
-	pixel_x = 0;
 	pixel_y = 6
 	},
 /turf/open/floor/plasteel,
@@ -2606,13 +2567,17 @@
 /obj/item/clothing/mask/gas/explorer,
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/item/tank/internals/oxygen,
-/obj/item/clothing/suit/space/hardsuit/mining/heavy,
+/obj/item/clothing/suit/space/hardsuit/mining/heavy/ns,
 /turf/open/floor/plasteel/patterned,
 /area/ship/storage/equip)
 "Ie" = (
 /obj/machinery/power/smes/shuttle,
 /obj/structure/cable{
 	icon_state = "0-8"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "magpie_portside_engines";
+	dir = 4
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
@@ -2640,9 +2605,7 @@
 /obj/machinery/atmospherics/pipe/layer_manifold/visible{
 	dir = 8
 	},
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 2
-	},
+/obj/effect/turf_decal/borderfloorblack,
 /obj/effect/turf_decal/borderfloor{
 	dir = 1
 	},
@@ -2776,7 +2739,6 @@
 	},
 /obj/structure/sink/kitchen{
 	dir = 4;
-	pixel_x = 0;
 	pixel_y = -4
 	},
 /obj/machinery/airalarm/directional/south,
@@ -2845,9 +2807,7 @@
 /obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/o2{
 	dir = 4
 	},
-/obj/effect/turf_decal/borderfloorblack/corner{
-	dir = 2
-	},
+/obj/effect/turf_decal/borderfloorblack/corner,
 /obj/effect/turf_decal/borderfloor{
 	dir = 9
 	},
@@ -2862,8 +2822,7 @@
 	},
 /obj/structure/dresser{
 	dir = 8;
-	pixel_x = -5;
-	pixel_y = 0
+	pixel_x = -5
 	},
 /obj/item/flashlight/lamp/green{
 	pixel_x = -6;
@@ -2923,6 +2882,10 @@
 /area/ship/cargo)
 "Nc" = (
 /obj/machinery/atmospherics/components/unary/shuttle/heater,
+/obj/machinery/door/poddoor/shutters{
+	id = "magpie_starboard_engines";
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engines/starboard)
 "Nz" = (
@@ -3133,10 +3096,6 @@
 /area/ship/external/dark)
 "Pq" = (
 /obj/machinery/power/shuttle/engine/fueled/plasma,
-/obj/machinery/door/poddoor/shutters{
-	id = "magpie_portside_engines";
-	dir = 4
-	},
 /turf/open/floor/engine/hull,
 /area/ship/engineering/engines/port)
 "Pt" = (
@@ -3190,10 +3149,6 @@
 /area/ship/engineering/engines/starboard)
 "QE" = (
 /obj/machinery/power/shuttle/engine/fueled/plasma,
-/obj/machinery/door/poddoor/shutters{
-	id = "magpie_starboard_engines";
-	dir = 4
-	},
 /turf/open/floor/engine/hull,
 /area/ship/engineering/engines/starboard)
 "QR" = (
@@ -3218,7 +3173,6 @@
 /area/ship/engineering/engines/starboard)
 "Rg" = (
 /obj/structure/sign/poster/contraband/random{
-	pixel_x = 0;
 	pixel_y = 31
 	},
 /obj/machinery/atmospherics/components/unary/portables_connector{
@@ -3516,7 +3470,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/structure/sign/warning/nosmoking/circle{
 	icon_state = "smokingold";
-	pixel_x = 0;
 	pixel_y = 26;
 	name = "\improper SMOKING ALLOWED sign";
 	desc = "A warning sign which reads 'SMOKING ALLOWED'."
@@ -3588,7 +3541,6 @@
 /obj/machinery/light/directional/west,
 /obj/structure/bed/bunk/top,
 /obj/item/bedsheet/black{
-	pixel_x = 0;
 	pixel_y = 14
 	},
 /obj/item/bedsheet/blue,
@@ -3672,7 +3624,6 @@
 	dir = 1
 	},
 /obj/machinery/firealarm/directional/east{
-	pixel_x = 32;
 	pixel_y = 6
 	},
 /turf/open/floor/wood,
@@ -3750,10 +3701,6 @@
 /area/ship/engineering/engines/starboard)
 "Yj" = (
 /obj/machinery/power/shuttle/engine/electric,
-/obj/machinery/door/poddoor/shutters{
-	id = "magpie_starboard_engines";
-	dir = 4
-	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -3877,7 +3824,7 @@ Ag
 (3,1,1) = {"
 Ws
 mh
-Dr
+tf
 Ie
 Ie
 Ws
@@ -3892,7 +3839,7 @@ Ag
 OD
 qH
 qH
-ss
+SL
 fh
 OD
 Ag

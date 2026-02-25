@@ -19,6 +19,11 @@ export const PersonalCrafting = (props, context) => {
   const recipes = [];
   for (let category of Object.keys(crafting_recipes)) {
     const subcategories = crafting_recipes[category];
+    // PENTEST FIX - START: skip null/undefined categories
+    if (!subcategories) {
+      continue;
+    }
+    // PENTEST FIX - END
     if ('has_subcats' in subcategories) {
       for (let subcategory of Object.keys(subcategories)) {
         if (subcategory === 'has_subcats') {
@@ -32,11 +37,15 @@ export const PersonalCrafting = (props, context) => {
         });
         // Push recipes
         const _recipes = subcategories[subcategory];
-        for (let recipe of _recipes) {
-          recipes.push({
-            ...recipe,
-            category: subcategory,
-          });
+        // PENTEST FIX - START: skip null/undefined categories
+        if (_recipes && Array.isArray(_recipes)) {
+          for (let recipe of _recipes) {
+            recipes.push({
+              ...recipe,
+              category: subcategory,
+            });
+          }
+          // PENTEST FIX - END
         }
       }
       continue;
@@ -48,11 +57,15 @@ export const PersonalCrafting = (props, context) => {
     });
     // Push recipes
     const _recipes = crafting_recipes[category];
-    for (let recipe of _recipes) {
-      recipes.push({
-        ...recipe,
-        category,
-      });
+    // PENTEST FIX - START: skip null/undefined categories
+    if (_recipes && Array.isArray(_recipes)) {
+      for (let recipe of _recipes) {
+        recipes.push({
+          ...recipe,
+          category,
+        });
+      }
+      // PENTEST FIX - END
     }
   }
   // Sort out the tab state

@@ -32,9 +32,13 @@
 			"outfit": "/datum/outfit/job/independent/security/merc",
 			"slots": 1
 		},
+		"Mechanic": {
+			"outfit": "/datum/outfit/job/independent/engineer",
+			"slots": 1
+		},
 		"Deckhand": {
 			"outfit": "/datum/outfit/job/independent/assistant/cheap",
-			"slots": 2
+			"slots": 1
 		}
 	},
 	"limit": 1,

@@ -64,12 +64,3 @@
 		..()
 		new L.plank_type(src.loc, 1 + round(potency / 25))
 
-/mob/living/simple_animal/chicken/rabbit/normal
-	icon_state = "rabbit_brown"
-	icon_living = "rabbit_brown"
-	icon_dead = "b_rabbit_dead"
-	icon_prefix = "rabbit_brown"
-	minbodytemp = 0
-	eggsleft = 0
-	egg_type = null
-	speak = list()

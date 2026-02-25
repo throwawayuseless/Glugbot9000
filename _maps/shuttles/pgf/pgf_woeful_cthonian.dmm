@@ -85,7 +85,7 @@
 	pixel_y = 3;
 	pixel_x = 7
 	},
-/obj/item/reagent_containers/food/snacks/friedegg{
+/obj/item/food/friedegg{
 	pixel_y = -1;
 	pixel_x = -5
 	},
@@ -3800,7 +3800,8 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/turf/open/floor/plasteel/stairs/modern/dark{
+/turf/open/floor/plasteel/stairs{
+	icon = 'icons/obj/stairs.dmi';
 	dir = 8
 	},
 /area/ship/bridge)

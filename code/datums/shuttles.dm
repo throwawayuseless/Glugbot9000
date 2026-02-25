@@ -479,6 +479,14 @@
 	token_icon_state = "ship_tiny_generic"
 	prefix = "SV"
 
+/datum/map_template/shuttle/subshuttles/flea
+	file_name = "ramzi_flea"
+	name = "Flea-class Boarding Cutter"
+	faction = /datum/faction/ramzi
+	token_icon_state = "ship_tiny_generic"
+	prefix = "ISV"
+
+//PENTEST ADDITIONS
 /datum/map_template/shuttle/subshuttles/falcon
 	file_name = "nanotrasen_falcon"
 	name = "Falcon Dropship"

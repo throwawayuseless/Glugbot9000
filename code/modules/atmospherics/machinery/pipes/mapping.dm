@@ -29,6 +29,7 @@
 	##Fulltype/hidden {					\
 		hide = TRUE;					\
 		FASTDMM_PROP(pipe_group = "atmos-[piping_layer]-"+Type+"-hidden");\
+		alpha = 128;					\
 	}									\
 	##Fulltype/hidden/layer2 {			\
 		piping_layer = 2;				\
@@ -45,7 +46,7 @@
 	##Fulltype/hidden/layer5 {			\
 		piping_layer = 5;				\
 		icon_state = Iconbase + "-5";	\
-	}
+	}	// PENTEST EDIT - ##Fulltype/hidden - adding `alpha = 128;`
 
 #define HELPER_PARTIAL_NAMED(Fulltype, Type, Iconbase, Color, Name) \
 	HELPER_PARTIAL(Fulltype, Type, Iconbase, Color)	\

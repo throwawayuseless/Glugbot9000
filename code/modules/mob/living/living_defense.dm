@@ -1,7 +1,7 @@
 
 /mob/living/proc/run_armor_check(
 		def_zone = null, attack_flag = "melee", armour_penetration = 0,
-		silent = FALSE, absorb_text = null, soften_text = null, penetrated_text = null
+		absorb_text = null, soften_text = null, penetrated_text = null, silent = FALSE
 	)
 	var/base_armor = getarmor(def_zone, attack_flag)
 	// if negative or 0 armor, no modifications are necessary
@@ -54,7 +54,8 @@
 	var/armor = run_armor_check(def_zone, P.flag, P.armour_penetration, silent = TRUE)
 	var/on_hit_state = P.on_hit(src, armor, piercing_hit)
 	if(!P.nodamage && on_hit_state != BULLET_ACT_BLOCK && !QDELETED(src)) //QDELETED literally just for the instagib rifle. Yeah.
-		apply_damage(P.damage, P.damage_type, def_zone, armor, sharpness = TRUE)
+		var/attack_direction = get_dir(P.starting, src)
+		apply_damage(P.damage, P.damage_type, def_zone, armor, wound_bonus=P.wound_bonus, bare_wound_bonus=P.bare_wound_bonus, sharpness = P.sharpness, attack_direction = attack_direction)
 		recoil_camera(src, clamp((P.damage-armor)/4,0.5,10), clamp((P.damage-armor)/4,0.5,10), P.damage/8, P.Angle)
 		apply_effects(P.stun, P.knockdown, P.unconscious, P.irradiate, P.slur, P.stutter, P.eyeblur, P.drowsy, armor, P.stamina, P.jitter, P.paralyze, P.immobilize)
 		if(P.dismemberment)
@@ -84,21 +85,19 @@
 
 		dtype = I.damtype
 		if(!blocked)
-			visible_message(span_danger("[src] is hit by [I]!"), \
-							span_userdanger("You're hit by [I]!"))
-			if(!I.throwforce)
-				return
-			var/armor = run_armor_check(
-				zone, "melee", I.armour_penetration, FALSE,
-				"Your armor has protected your [parse_zone(zone)].",
-				"Your armor has softened a hit to your [parse_zone(zone)]."
-			)
-			apply_damage(I.throwforce, dtype, zone, armor)
-			var/mob/thrown_by = I.thrownby?.resolve()
-			if(thrown_by)
-				log_combat(thrown_by, src, "threw and hit", I)
+			if(I.thrownby)
+				log_combat(I.thrownby, src, "threw and hit", I)
+			if(!nosell_hit)
+				visible_message(
+					span_danger("[src] is hit by [I]!"),
+					span_userdanger("You're hit by [I]!"),
+				)
+				if(!I.throwforce)
+					return
+				var/armor = run_armor_check(zone, "melee", I.armour_penetration, "Your armor has protected your [parse_zone(zone)].", "Your armor has softened hit to your [parse_zone(zone)].",I.armour_penetration)
+				apply_damage(I.throwforce, dtype, zone, armor, sharpness=I.get_sharpness(), wound_bonus=(nosell_hit * CANT_WOUND))
 		else
-			return 1
+			return TRUE
 	else
 		playsound(loc, 'sound/weapons/genhit.ogg', 50, TRUE, -1) //Item sounds are handled in the item itself
 
@@ -414,14 +413,21 @@
 	return 20
 
 //called when the mob receives a bright flash
-/mob/living/proc/flash_act(intensity = 1, override_blindness_check = 0, affect_silicon = 0, visual = 0, type = /atom/movable/screen/fullscreen/flash)
+/mob/living/proc/flash_act(intensity = 1, override_blindness_check = 0, affect_silicon = 0, visual = 0, type = /atom/movable/screen/fullscreen/flash, length = 2.5 SECONDS) //PENTEST EDIT START
 	if(HAS_TRAIT(src, TRAIT_NOFLASH))
 		return FALSE
-	if(get_eye_protection() < intensity && (override_blindness_check || !is_blind()))
-		overlay_fullscreen("flash", type)
-		addtimer(CALLBACK(src, PROC_REF(clear_fullscreen), "flash", 25), 25)
-		return TRUE
-	return FALSE
+	if(get_eye_protection() >= intensity)
+		return FALSE
+	if(is_blind() && !(override_blindness_check || affect_silicon))
+		return FALSE
+	// this forces any kind of flash (namely normal and static) to use a black screen for photosensitive players
+	// it absolutely isn't an ideal solution since sudden flashes to black can apparently still trigger epilepsy, but byond apparently doesn't let you freeze screens
+	// and this is apparently at least less likely to trigger issues than a full white/static flash
+	if(client?.prefs?.darkened_flash)
+		type = /atom/movable/screen/fullscreen/flash/black
+	overlay_fullscreen("flash", type)
+	addtimer(CALLBACK(src, PROC_REF(clear_fullscreen), "flash", length), length)
+	return TRUE //PENTEST EDIT END
 
 //called when the mob receives a loud bang
 /mob/living/proc/soundbang_act()

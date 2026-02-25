@@ -45,6 +45,81 @@
 		body += "<A href='byond://?_src_=holder;[HrefToken()];editrights=[(GLOB.admin_datums[M.client.ckey] || GLOB.deadmins[M.client.ckey]) ? "rank" : "add"];key=[M.key]'>[M.client.holder ? M.client.holder.rank : "Player"]</A>"
 		if(CONFIG_GET(flag/use_exp_tracking))
 			body += "<A href='byond://?_src_=holder;[HrefToken()];getplaytimewindow=[REF(M)]'>" + M.client.get_exp_living(FALSE) + "</a>"
+	else if(M.ckey)
+		// For mobs without clients (dead bodies, etc), still show the ckey info
+		body += " (ckey: <b>[M.ckey]</b>)"
+
+	// PENTEST ADDITION - Show death record status if available
+	var/target_ckey = M.ckey || M.client?.ckey
+
+	// If no ckey on mob, try to find it from death records by checking this mob reference
+	if(!target_ckey)
+		for(var/datum/death_restoration_record/record in GLOB.death_restoration_registry)
+			if(record.original_mob_ref == M)
+				target_ckey = record.player_ckey
+				body += " (ckey: <b>[target_ckey]</b> from death record)"
+				break
+
+	if(target_ckey)
+		// First check if THIS specific mob has a death record (using mob reference only)
+		var/datum/death_restoration_record/this_mob_record = null
+		for(var/datum/death_restoration_record/record in GLOB.death_restoration_registry)
+			if(record.original_mob_ref == M)
+				this_mob_record = record
+				break
+
+		if(this_mob_record)
+			// This IS an old dead body - show its abandonment status
+			var/status = this_mob_record.get_ckey_status()
+			var/status_color = "#88ccff" // Default blue for ghosted
+			var/status_symbol = ""
+
+			if(status == "Ghosted (DNR)" || status == "New Character" || status == "New Character (Dead)")
+				status_color = "#ff3333" // Red for abandoned
+				status_symbol = "❌ "
+			else if(status == "Ghosted")
+				status_color = "#88ccff" // Blue for ghosted
+			else if(status == "Alive")
+				status_color = "#00ff00" // Green for alive
+			else if(status == "Disconnected")
+				status_color = "#ff6666" // Pale red for disconnected
+				status_symbol = "⏸ "
+
+			body += "<br><b>Current Status:</b> <span style='color: [status_color]; font-weight: bold;'>[status_symbol][status]</span>"
+			if(status == "Disconnected")
+				body += " <span style='color: #aaaaaa;'>(body still theirs)</span>"
+		else
+			// This is NOT an old dead body - check if the ckey has ANY death records (abandoned bodies elsewhere)
+			var/has_abandoned_body = FALSE
+			for(var/datum/death_restoration_record/record in GLOB.death_restoration_registry)
+				if(record.player_ckey == target_ckey)
+					has_abandoned_body = TRUE
+					break
+
+			// Show status for current character
+			var/current_status = ""
+			var/status_color = "#00ff00"
+
+			if(isobserver(M))
+				current_status = "Ghosted"
+				status_color = "#88ccff"
+			else if(M.stat == DEAD)
+				current_status = "Dead (not recorded)"
+				status_color = "#ff6666"
+			else if(M.stat == UNCONSCIOUS)
+				current_status = "Unconscious"
+				status_color = "#ffaa00"
+			else
+				current_status = "Alive"
+				status_color = "#00ff00"
+
+			if(has_abandoned_body)
+				body += "<br><b>Death Record Status:</b> <span style='color: [status_color]; font-weight: bold;'>[current_status]</span> <span style='color: #ffaa00;'>(Has an abandoned body)</span>"
+			else
+				body += "<br><b>Status:</b> <span style='color: [status_color]; font-weight: bold;'>[current_status]</span>"
+	else
+		// No ckey found anywhere - this is an NPC or mob that was never player-controlled
+		body += "<br><b>Status:</b> <span style='color: #aaaaaa; font-weight: bold;'>NPC</span>"
 
 	if(isnewplayer(M))
 		body += " <B>Hasn't Entered Game</B> "

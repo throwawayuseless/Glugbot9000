@@ -12,3 +12,311 @@
   - spellcheck: CHOCs still a nerd.
   Ossa88:
   - bugfix: Ship preview system is better
+2026-01-30:
+  FslashN:
+  - rscadd: It is now possible to obtain two more varieties of ERT hardsuits (with
+      identical stats).
+  HanSolo1519:
+  - rscadd: Added Pajamas to Loadout and Clothesmate.
+  LettuceGuardian:
+  - bugfix: cm24 mag being invisible
+  Ossa88:
+  - admin: New Admin investigation tool
+  - rscadd: More realistic make_babies().
+  - balance: Prevents corgi/cat explosions.
+  - bugfix: Female Animals now properly identifies children.
+  - admin: Admin's can turn on the make_babies() debug messages (useful for those
+      adding new animals who will need the functionality)
+  - rscadd: framework for players to push PR's to include their own pets
+  - admin: Admin functionality to spawn new custom pets, test to see if they are included
+      in the custom code, and generate spawn checks.
+  - rscadd: cargo pets now spawn with random names.
+  - rscadd: cargo cats now spawn with random sprites.
+  kimimimicry:
+  - rscadd: Added a Space Cleaner Spray upgrade for janitor cyborgs.
+2026-01-31:
+  Ossa88:
+  - balance: Vickland is 10 rounds again. Strippers are 5 instead of 8
+  - rscadd: Pulls out unused 308 box sprites for 308 to replace Inteq ammosprite
+  - bugfix: Ice Lodge now has 8x50 instead of 308
+  - rscadd: The number of the shaft you are in is now in the hangar.
+  - rscadd: Absolution-Lux "Solferino" chassis for silicon use.
+  - bugfix: Infinite carry-throwing
+  - balance: Wire Tangle hazards can now be cut with wirecutters, rejoice!
+  - rscdel: you can no longer purchase the downpour or solaris
+  - bugfix: Missing sprite mgr and hardline glasses overlay, and display overlays
+      in other helmets.
+  - rscadd: Basic Mob Hivebots
+  - balance: Fix on mix reagent explosions being underpowered.
+  - balance: there are now less active ruin missions
+  - balance: Slightly less spread on the military viper, HP shadow, and HP montagne
+  - rscadd: Reagent grinder in cargo 500 cr buy buy buy
+  - balance: mortars and large mortars cost 0 stamina down from however much it used
+      to be. Grind harder.
+  - balance: indie cobra is now burst fire
+  - rscadd: You can now dry people off with towels. Yourself included.
+  - rscadd: Rollies now have an inhand sprite.
+  - rscdel: Removed smokers cigarette preference letting them smoke any cigarette
+  - rscadd: Added the Ramzi Elite Hardsuit
+  - balance: Ramzi Stormtroopers now wear the Ramzi Elite Hardsuit
+  - bugfix: added snouted varition define for head/robot/lizard
+  - rscadd: New Black Market inventory
+  - rscadd: Black Market guns come in cases, clothing packs come in duffelbags
+  - rscdel: Cruft items from Black Market
+  - balance: Black Market prices and stock
+  - bugfix: Cycler Shotgun
+  - rscadd: rain can now extinguish fires on you, and will occasionally rinse the
+      blood off your armor
+  - balance: kinetic crushers now do knockback && won't fall out of your hands
+  - bugfix: turrets set to not target humans will now not target humans
+  - bugfix: vi hardsuit sprites back
+  - bugfix: Black market camoflauge set
+  - bugfix: Flametrooper corpse outfit no longer spawns with unintended bag contents.
+  - bugfix: Simple mob surgeons and flametroopers dont drop pirate radios
+  - rscadd: Resprites the floral shirt and adds two new variants of it
+  - rscadd: Added new Syndicate softsuits to the game in several factional colours
+  - rscadd: New Ramzi softsuit mobs on Scrapping Station
+  - balance: Blackmarket and Cargo now provide the new softsuits replacing the old
+      ones
+  - rscdel: a few speech related brain traumas
+  - bugfix: Frontiersmen simplemobs dropping unintended items
+  - rscadd: touches up mulder and business hairs
+  - rscadd: C-20r Cobra now has an integrated suppressor
+  - bugfix: Fixed hotspots immediately deleting themselves
+  - balance: Firebrand price reduced to 700 from 1250
+  - bugfix: Commander Tiyak drops pulse slugs.
+  - balance: Reinforced the Falmouth's walls and made its atmos more robust, amongst
+      other layout tweaks, like 2000 starting budget
+  - rscadd: Fax to the Falmouth and a Mechanic slot to replace a Deckhand
+  - bugfix: Black Market discount power cells
+  - rscadd: NGR kepori suit
+  - bugfix: teceti foods should be more flavorful
+  - bugfix: Fixed sparks passing through walls and windows
+  - rscadd: Added a filing cabinet to the Arke-class.
+  - bugfix: Cobra attachments.
+  - balance: tactical armor vests no longer block syringes
+  - bugfix: rottweiler ammo boxes take specialist ammo
+  - bugfix: 8x50mmR stripper clips can hold specialty ammo again
+  - bugfix: fixed .300 speedloaders so that they can take .300 TRAC, and also gives
+      .300 TRAC sprites
+  - balance: welding goggles now fit in technician's pouches
+  - balance: bodycameras now fit in command and technician's pouches
+  - bugfix: bunnies should function properly again
+  - bugfix: Fixed tape recorders not formatting text properly
+  - rscadd: Added the seclite to outpost cargo
+  - balance: Adjusted rail light attachment price in accordance with added seclite
+  - balance: Heatproof lattice now requires only normal rods
+  - rscadd: cybersun ships now have tecetian foods on them
+  - bugfix: Cycler shotgun examine and worn icon
+  - balance: stardrop capsules have been replaced by patches
+  - bugfix: removes skeleton spawners on rockvalley stash
+  - bugfix: Various issues in the Icemoon Training Facility have been resolved and
+      airlock names are now up to date.
+  - rscadd: Remaps Nanotrasen Ice Outpost
+  - rscadd: Added a CMO PGF doctor variant
+  - balance: Overhauled the Woeful Cthonian
+  - bugfix: fixed missing items on three PGF ships
+  - bugfix: PGF marine armor crates and PGF navy coat crates now have unique paths
+  - balance: moved the rear colossus turrets
+  - rscdel: Removed combat exosuits from cargo. Other methods of getting player-accessible
+      exosuits unchanged.
+  - rscdel: Removed the BRM-6 breaching rockets from cargo and removes SRM-8 missile
+      rack from Jungle Cavecrew
+  - rscdel: Removes Omni Protolathes and Circuit Imprinters from the rare board drop
+      pool
+  - balance: EMPs hurt cyber stuff less
+  - balance: ships can no longer hail themselves
+  - rscdel: Removed Leapers from jungle veins
+  - rscdel: Removed waste veins
+  - balance: Added greater ore variety to normal jungle veins
+  - code_imp: oxygen lockers no longer have a chance to contain NOTHING or vanish
+      leaving behind nothing but a red toolbox
+  - rscadd: oxygen lockers now have phorid accessories! Enjoy having more than one
+      tank!
+  - rscadd: resprites spiky ponytail, long emo, bunhead3, and adds long bun
+  - rscadd: cargo pants to the game
+  - bugfix: Mil cobra rail slots for real
+  - bugfix: refa-li recipe fixed
+  - rscdel: Legion posibrain loot.
+  - rscdel: Rods of asclepius can no longer randomly spawn in jungles
+  - rscadd: you can now find certain tecetian foods at randomgen gardens.
+  - bugfix: Fixed Drinkening Names to (more or less) include the Reagent name within
+  - rscadd: teceti foods now come with protein
+  - bugfix: chicken meat now has its old sprite
+  - balance: Increased .44's damage and reduced recoil on the M20 Auto Elite
+  - bugfix: Hoodies are now warm
+  - rscadd: the woods
+  - rscadd: cirrus interior got remodeled. go see the desk.
+  - rscadd: reworks the majority of the Atira's interior
+  - balance: Tweaks to Cavecrew, including no more wind, a minor change to the Frontiersmen
+      Heavy, ammo box changes, and other minor things
+  - rscadd: Sun Hat
+  - rscadd: Added a stamp for every CLIP division.
+  - rscadd: Typhon, Atlas and Arke now have correct stamps mapped in.
+  - rscadd: New Shield Sprites
+  - rscadd: Blackmarket Spike Shield
+  - balance: Shields now block more and can be repaired in exchange for slowdown
+  - balance: Ballistic Shield in cargo price increased
+  - bugfix: Overalls now correctly show their alt state
+  - rscadd: Added wintercoats and other misc clothes to the Arke wardrobe.
+  - bugfix: you can roll sleeves down with alt-click again
+  - bugfix: if you get shocked by a shutter it now cancels the interact like intended
+  - bugfix: Fixed Donut sprite and re-added toast recipes. Slightly decreased jelly
+      consumption
+  - balance: Military and Security belts can now fit one Medium-Sized Pistol (And
+      Other Small Energy Weapons)
+  - bugfix: Fixed storage's exception_hold so some items can actually be exempted
+      from a size restriction
+  - bugfix: the miras ration is real
+  - bugfix: you can now properly tell when someone has an excessive amount of wet
+      stacks
+  - bugfix: Coffee Supplies have had their UPC codes changed to become Civilian Products.
+  - bugfix: Smart Fridge and Grinder boards have had their UPC codes changed to Machinery.
+  - bugfix: All the overalls should appear in loadout now
+  - balance: Mauler has better spread and changed description to reflect this. Frontiersmen
+      officers are subsequently more accurate
+  - rscdel: Removed Woodsman extended mag
+  - balance: Woodsman fire delay nerfed to old levels
+  - rscadd: Added the HP Invictus, a slow-firing, unwieldy 20-round LMG chambered
+      in .308. Available only to the SRM.
+  - rscadd: ponchos
+  - bugfix: Ship engine shutter position has been standardized.
+  - balance: gives cybersun bridge a door bolt button
+  - balance: Adjusted damage, AP, firerate, and laser amount on the E-SG laser shotgun
+      to be less
+  - rscadd: New coat for independent captains wardrobes
+  - rscadd: Added Chest Rig to cargo and Leather Bandolier leather sheet recipe
+  - balance: Slightly reduced assault belt cost
+  - bugfix: less space wind on beaches
+  - bugfix: Ammo Cans will no longer prompt you to reskin the box upon an alt click
+      if the box had been spawned as a pre-skinned variety.
+  - rscadd: resprite and add new hairs
+  - rscadd: Made lipstick colours softer
+  - rscadd: Bank cards at outpost for 100 credits.
+  - balance: Ion rifle price reduced from 10k to 3500
+  - balance: Ion rifle has a six second cooldown between shots.
+  - balance: Shotgun magazine prices
+  - rscadd: Wasp, Semi-Auto Mauler, F3, Mower
+  - rscadd: Wasp Frontiersmen
+  - bugfix: Energy weapon lens are indestructible.
+  - rscadd: A small hermit trade post has been detected on the surface of your nearest
+      sand planet
+  - bugfix: Rebellion turrets no longer give you infinite .50
+  - rscadd: Adds the Roach and Flea, Ramzi vessels
+  - bugfix: everyone is now less flammable on examine
+  - bugfix: Crab Rangoon has a recipe again
+  - rscadd: Added warning signs to mine fields
+  - refactor: 'Refactored minefield spawned to be more better c:'
+  - rscadd: The Ramzi faction has chosen to train its troops to use their left hands.
+  - rscadd: Blood filtration surgery and tool for the surgery
+  - rscadd: You can now use a shotgun on a door to breach through the door
+  - balance: Hexacrete now requires Stable Plasma to create.
+  - balance: Max damage from heavy explosions to items is now 150, from 250
+  - balance: ID cards are indestructible.
+  - rscadd: you can now purchase duffelbags at da outpost
+  - balance: pulling a crate now slows you down
+  - admin: Added the ability to enforce two-factor authentication onto admins.
+  - bugfix: Gets TGUI <i>FUNCTIONAL</i>, but not necessarily smooth on 516. There's
+      still going to be a lot of issues, but at least it'll be playable.
+  - bugfix: grass on beaches being invisible sometimes
+  - rscadd: Added organic wounds
+  - rscdel: Removed IPC structure
+  - rscadd: minor tweaks to tackle numbers
+  - bugfix: rest of the food repathing, report any visible issues
+  - rscadd: adds the N+S hardsuit to the game and puts it on the harrier and magpie
+  - balance: removes goliath plating on hardsuits
+  - rscadd: resprites the hermit rifle and zip pistol
+  - balance: reworks the zip pistol, removes safeties off the zip pistol and hermit
+      rifle
+  - rscadd: remodels the fore of the cirrus
+  - rscadd: half-stair decal
+  - bugfix: you can now map specific coffee cartridges
+  - rscadd: replaces a large amount of planetary turfs on ruins (jungle, lava, space)
+      with their updated overmap 5 counterparts. please report any atmos issues or
+      missing sprites.
+  - bugfix: fixed unset icon files for various planetary turfs
+  - bugfix: fixed large turf offset in mapping software for 70x70 planetary turfs
+      (shouldnt be player facing, needs review)
+  - bugfix: removed some decals inside walls on NT_ice & NGR_rock outposts that were
+      causing warnings
+  - rscdel: removed unused lavaland and wasteplanet grass types
+  - rscdel: removed legacy lavaland grass types
+  - bugfix: minute bar fluff un-regressed
+  - rscdel: random minefields
+  - bugfix: holocalls now report who's calling
+  - balance: thronglers deal more damage but have a wound bonus based on your armor
+      and spread the damage out
+  - bugfix: Fixed being able to understand sign language without knowing sign language
+  - code_imp: Refactors sign language into an actual language
+  - balance: Decreased amount of plasma in flooded rooms in Onehalf and added some
+      misc tweaks like blood packs
+  - rscadd: Kiwi-class Prospector, a mining vessel operated by N+S Logistics
+  - code_imp: Processing consoles now use a range distance variable to detect furnaces.
+  - rscadd: Various Ramzi Clique Clothing
+  - rscadd: Reflavoured the Mudskipper to be a Hardline vessel. Many changes including
+      new walls, decal-style, and shuffling around of equipment and machinery
+  - rscadd: Indie engineers now start with olive overalls
+  - balance: Indie engineer roles no longer start with toolbelts and insulated gloves.
+      Both of these now spawn in engineer's closets.
+  - refactor: Drunkenness is now a status effect. The drunk alert should no longer
+      persist on aheals and in some rare cases, and should overrall act a bit more
+      consistently.
+  - refactor: Dizziness is now a status effect, similar to above. You no longer should
+      be stuck with an off center client view if you get very dizzy.
+  - refactor: Refactored status effect examine text. Should overall have slightly
+      better grammar and more consistent span uses.
+  - refactor: Jitterriness is now a status effect
+  - rscdel: some contractor related cruft that i didn't want to update
+  - balance: Shields block slightly less, have less integrity, slow you down much
+      more, and now require time and 10 plasteel to repaiar
+  - bugfix: you can no longer telekinetically execute people
+  - bugfix: dual wielding automatic firing guns will no longer force you to magdump
+      both of the guns in an unstoppable rage
+  - bugfix: you can no longer get infinite attachment slots by pretending to remove
+      existing attachments so the gun thinks it can hold more
+  - balance: allows bodycameras to be worn around the neck
+  - balance: Prevents most automatic guns from mounting scopes (along with a few more
+      like the E50 and Accelerator laser cannon)
+  - balance: Locks the long scope to the Illestren, lever-actions, and Beacon
+  - balance: Decreased medium scope zoom to give you only about 4 tiles of extra visibility
+  - balance: Hydra DMR can no longer mount extended or casket mags
+  - bugfix: f4 can take scope again. whoops.
+  - bugfix: Invictus magazine is now in cargo
+  - server: the build chain used in TGS has been fixed so that "#define CBS" is properly
+      prepended to shiptest.dme, and suppresses compiler warnings regarding building
+      the dme directly.
+  - bugfix: Fixed manifest and join menu UIs not updating properly
+  - bugfix: Fixed certain text characters breaking memos
+  - bugfix: armor bugfix, likely nothing player-facing
+  - rscadd: Vigilitas Deepstorage, space ruin
+  - rscdel: Bigderelict1
+  - rscadd: Venetia-class Superyacht
+  - bugfix: Onehalf's holofields are now anchored
+  - bugfix: you can live laugh love again
+  - rscadd: Adds a wide variety of changes to the Harrier
+  - code_imp: Added a glass full of Bridge Bunny as a placeable object
+  - balance: F4 and variants no longer have a scope attachment and instead have an
+      integrated scope
+  - rscdel: removed gibtonite from sand planet randomgen
+  - rscadd: Resprites polo, button up, alt sports bra and tank top
+  - rscadd: Suit Storage Unit locks respect access
+  - rscdel: EMPs randomize locker access
+  - bugfix: The inventory of coats and labcoat is accessible again.
+  - rscdel: spraypainting clothing
+  - balance: you can no longer purchase concealed weapons bays on the black market
+  - balance: Solaris scope removed, Solaris power cost increased, Solaris cycle time
+      increased
+  - bugfix: modularization file structure
+  - bugfix: Food names
+  - bugfix: Food descriptions
+  - rscadd: Removed Ruins
+  - rscadd: Removed from Shiptest Vendor to Ice Outpost
+  - rscadd: medibogs can use their lollipop, gumball, icecream tool again
+  - rscadd: Translation gloves for signer
+  - bugfix: 'new ships got wiring and atmos fixes
+
+      fix more color variations for syndi armor'
+  - bugfix: you can spray paint clothes again
+  - balance: hyposprays can go in chem smart fridges and chem bags
+  - balance: indestructible plastitiaum windows are no longer able to be unmounted.
+  - bugfix: gold slime cores spawn the correct version of mouse

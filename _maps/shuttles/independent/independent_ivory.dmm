@@ -2686,7 +2686,6 @@
 	},
 /obj/item/storage/backpack/satchel/eng,
 /obj/item/storage/backpack/industrial,
-/obj/item/clothing/under/rank/engineering/engineer,
 /obj/item/clothing/suit/hazardvest,
 /obj/item/clothing/suit/toggle/hazard,
 /obj/item/clothing/head/hardhat/weldhat/dblue,
@@ -2701,6 +2700,8 @@
 /obj/item/clothing/glasses/welding{
 	pixel_y = -3
 	},
+/obj/item/storage/belt/utility/full/engi,
+/obj/item/clothing/gloves/color/yellow,
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
 "YF" = (

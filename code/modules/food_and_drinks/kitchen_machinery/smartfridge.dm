@@ -357,7 +357,7 @@
 	desc = "A refrigerated storage unit for food."
 
 /obj/machinery/smartfridge/food/accept_check(obj/item/O)
-	if(istype(O, /obj/item/reagent_containers/food/snacks/))
+	if(IS_EDIBLE(O))
 		return TRUE
 	return FALSE
 
@@ -424,7 +424,8 @@
 					/obj/item/reagent_containers/glass/beaker,
 					/obj/item/reagent_containers/spray,
 					/obj/item/reagent_containers/medigel,
-					/obj/item/reagent_containers/chem_pack
+					/obj/item/reagent_containers/chem_pack,
+					/obj/item/reagent_containers/hypospray // PENTEST ADDITION
 	))
 
 	if(istype(O, /obj/item/storage/pill_bottle))

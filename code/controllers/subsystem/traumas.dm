@@ -55,7 +55,7 @@ SUBSYSTEM_DEF(traumas)
 	)
 
 	phobia_objs = list(
-		"snakes" = typecacheof(list(/obj/item/rod_of_asclepius, /obj/item/toy/plush/snakeplushie)),
+		"snakes" = typecacheof(list(/obj/item/toy/plush/snakeplushie)),
 
 		"spiders"   = typecacheof(list(/obj/structure/spider, /obj/item/toy/plush/spider)),
 
@@ -136,7 +136,7 @@ SUBSYSTEM_DEF(traumas)
 
 		"anime" = typecacheof(list(
 			/obj/item/clothing/under/costume/schoolgirl, /obj/item/food/sashimi,
-			/obj/item/reagent_containers/food/snacks/chawanmushi,
+			/obj/item/food/chawanmushi,
 			/obj/item/reagent_containers/food/drinks/bottle/sake, /obj/item/throwing_star,
 			/obj/item/clothing/suit/space/space_ninja,
 			/obj/item/clothing/mask/gas/space_ninja, /obj/item/clothing/shoes/space_ninja, /obj/item/clothing/gloves/space_ninja,
@@ -146,7 +146,7 @@ SUBSYSTEM_DEF(traumas)
 		"clowns"    = typecacheof(list( //PENTEST RESTORED CLOWNS
 			/obj/item/clothing/under/rank/civilian/clown,
 			/obj/item/clothing/mask/gas/clown_hat, /obj/item/instrument/bikehorn,
-			/obj/item/grown/bananapeel, /obj/item/reagent_containers/food/snacks/cheesiehonkers,
+			/obj/item/grown/bananapeel, /obj/item/food/cheesiehonkers,
 			/obj/item/trash/cheesie)), //PENTEST RESTORED CLOWNS
 	)
 

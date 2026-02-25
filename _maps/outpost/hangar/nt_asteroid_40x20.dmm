@@ -961,7 +961,7 @@
 /area/hangar)
 "wm" = (
 /obj/structure/grille/indestructible,
-/obj/structure/window/plasma/reinforced/plastitanium,
+/obj/structure/window/plasma/reinforced/plastitanium/indestructible,
 /turf/open/floor/plating{
 	planetary_atmos = 1
 	},

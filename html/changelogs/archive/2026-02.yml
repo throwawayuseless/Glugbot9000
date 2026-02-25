@@ -1,0 +1,69 @@
+2026-02-02:
+  GeneralThrax:
+  - rscadd: 'added emergency first-aid autoinjectors and hypovolemic-response autoinjectors
+      to specialist medical first-aid kits fix: increased volume of epipens so that
+      all listed reagents are spawned'
+2026-02-03:
+  Ossa88:
+  - bugfix: some bleed_mod calculations to prevent insta death by blood loss
+2026-02-04:
+  Ossa88:
+  - bugfix: fixes a few doors which got nulled which allowed phasons to break in
+2026-02-10:
+  Ossa88:
+  - bugfix: random pentest posters work again
+2026-02-13:
+  Frenjo:
+  - rscadd: Remastered Swarmer mob sprites for consistent shading and alpha values
+      across variants and colours.
+  FslashN:
+  - rscadd: Bambulance (Cirrus subshuttle) improved with new wiring, a locker, and
+      a wall-mounted crew monitor.
+  - rscadd: Beluga has been remastered. Feel the luxury and safety of its interior;
+      you shall not be disappointed.
+  KnigTheThrasher:
+  - bugfix: fixed missing o2 gas sensors in caravan
+  LettuceGuardian, Shy_Kitty, EnterTheJake:
+  - rscadd: MOD expanded storage, EMP shields, and springlock modules, along paint
+      kits, are now purchasable at the depot.
+  - rscadd: Expanded storage modules now allow for bulky items to be carried inside.
+  - rscadd: Other less-than-legal modules have found their way into the private markets...
+  - balance: MOD units are now huge.
+  - balance: MOD chestplates now equip and de-equip instantly.
+  - bugfix: Sealed modsuit helmets not allowing internals.
+  - bugfix: Siemens coefficient on hardsuits/MODsuits matters now.
+  - bugfix: Power kick module runtiming on walls.
+  - qol: More skins for the safeguard and engineering MOD.
+  Ossa88:
+  - bugfix: corrects some atmos issues
+  - rscadd: Encryption Keys are added to cargo
+  - bugfix: Default Lawset is now Crewmov Lawset
+  Summy Sunshine:
+  - rscadd: Gorlax Scout-cruiser
+2026-02-21:
+  KOCMODECAHTHUK:
+  - code_imp: Visual distinction for pipes in sDMM for mappers, and appear transparent
+      in-game
+  Ossa88:
+  - bugfix: Plant Data Disks no longer forget their information.
+  - bugfix: Outposts are more secure
+  Ravellon:
+  - bugfix: 'no more wine_flavor taste for you
+
+      :cl:
+
+      <!-- Both :cl:''s are required for the changelog to work! You can put your name
+      to the right of the first :cl: if you want to overwrite your GitHub username
+      as author ingame. -->
+
+      <!-- You can use multiple of the same prefix (they''re only used for the icon
+      ingame) and delete the unneeded ones. Despite some of the tags, changelogs should
+      generally represent how a player might be affected by the changes rather than
+      a summary of the PR''s contents. -->'
+  Ryll/Shaps:
+  - qol: Adds a new preference for photosensitive players in the OOC preferences menu
+      to replace the bright white flash from things like flashes/flashbangs with a
+      solid black screen.
+  nednaZ, Imenvs, RKz:
+  - bugfix: ghosts are now 50% more spooky (they now properly float)
+  - bugfix: ghosts remember they can float after orbiting

@@ -25,7 +25,7 @@ export const FishingCalculator = (props, context) => {
   const [bait, setBait] = useLocalState<string>(
     context,
     'bait',
-    '/obj/item/reagent_containers/food/snacks/bait/worm'
+    '/obj/item/food/bait/worm'
   );
   const [spot, setSpot] = useLocalState<string>(
     context,

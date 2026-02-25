@@ -138,6 +138,9 @@ GLOBAL_LIST_INIT(admin_verbs_spawn, list(
 	/client/proc/spawn_outpost, /* Allows admins to spawn a new outpost. */
 	/client/proc/spawn_overmap,
 	/client/proc/spawn_jump_point,
+	/client/proc/view_dead_players, // PENTEST ADDITION - View death records
+	/client/proc/test_gib_restoration, // PENTEST ADDITION - Test death recording
+	/client/proc/check_ckey_status, // PENTEST ADDITION - Check if a ckey is connected
 	))
 GLOBAL_PROTECT(admin_verbs_spawn)
 GLOBAL_LIST_INIT(admin_verbs_server, world.AVerbsServer())
@@ -219,6 +222,10 @@ GLOBAL_PROTECT(admin_verbs_debug)
 	/client/proc/toggle_cdn,
 	/datum/admins/proc/delete_all_missions,
 	/client/proc/cmd_admin_toggle_fov,
+	/client/proc/toggle_breeding_debug,
+	/client/proc/test_custom_pets,
+	/client/proc/test_random_pet_selection,
+	/client/proc/spawn_random_custom_pet,
 	)
 GLOBAL_LIST_INIT(admin_verbs_possess, list(/proc/possess, /proc/release))
 GLOBAL_PROTECT(admin_verbs_possess)
@@ -786,3 +793,10 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 
 	src << link("?debug=profile&type=sendmaps&window=test")
 #endif
+
+/client/proc/admin_2fa_verify()
+	set name = "Verify Admin"
+	set category = "Admin"
+
+	var/datum/admins/admin = GLOB.admin_datums[ckey]
+	admin?.associate(src)

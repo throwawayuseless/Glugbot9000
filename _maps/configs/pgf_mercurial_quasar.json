@@ -1,7 +1,7 @@
 {
 	"$schema": "https://raw.githubusercontent.com/PentestSS13/Pentest/master/_maps/ship_config_schema.json",
-	"map_name": "Mercurial Quasar-class Rapid Reconnaissance Vessel",
-	"map_short_name": "Mer Quasar-class",
+	"map_name": "Mercurial Quasar-class Rapid Reconnaissance Corvette",
+	"map_short_name": "M. Quasar-class",
 	"map_path": "_maps/shuttles/pgf/pgf_mercurial_quasar.dmm",
 	"faction": "/datum/faction/pgf",
 	"prefix": "PGFN",
